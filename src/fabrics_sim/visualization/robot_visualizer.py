@@ -65,7 +65,7 @@ class RobotVisualizer():
         self.simulation_context.initialize_physics()
 
         # Create articulation view which we will use to teleport the robot joints
-        robot_range = "/World/Robot_[1-9]|[1-9][0-9]{1,3}|9000"
+        robot_range = "/World/Robot_.*"
         self.robots_view =\
             ArticulationView(prim_paths_expr=robot_range, name="robots_view")
         self.robots_view.initialize()

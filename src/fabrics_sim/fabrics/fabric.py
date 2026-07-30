@@ -291,7 +291,7 @@ class BaseFabric(torch.nn.Module):
 
             # Eval at perturbed position
             eps = 1e-5
-            q_eps = q + eps * qd
+            q_eps = self.integrate_root_position(q, qd, eps)
             x_eps, jac_eps = container.eval_taskmap(q_eps)
 
             # Eval at actual position
@@ -360,6 +360,10 @@ class BaseFabric(torch.nn.Module):
 
         return (root_metric, root_geometric_force, root_potential_force,
                 root_energy_metric, root_energy_force, energy)
+
+    def integrate_root_position(self, q, qd, timestep):
+        """First-order root-state integration used to estimate Jacobian rates."""
+        return q + timestep * qd
 
     def eval_natural(self, q, qd, timestep): #, metric_out, force_out, metric_inv_out):
         """
@@ -656,7 +660,13 @@ class BaseFabric(torch.nn.Module):
     def num_joints(self):
         return self._num_joints
     
-    def load_robot(self, robot_dir_name=None, robot_name=None, batch_size=None):
+    def load_robot(
+        self,
+        robot_dir_name=None,
+        robot_name=None,
+        batch_size=None,
+        floating_base=False,
+    ):
         """
         Loads the robot model and kinematics.
         -----------------------------
@@ -689,7 +699,16 @@ class BaseFabric(torch.nn.Module):
 
             # Convert to Warp object
             print('importing robot')
-            wp.sim.parse_urdf(robot_urdf_filename, builder, initial_transform)
+            wp.sim.parse_urdf(
+                robot_urdf_filename,
+                builder,
+                initial_transform,
+                floating=floating_base,
+            )
+
+            if floating_base:
+                # A free base contributes six tangent-space velocity DoFs.
+                self._num_joints += 6
             
             print('finalizing model')
             self.model = builder.finalize(device=self.device)
@@ -710,4 +729,3 @@ class BaseFabric(torch.nn.Module):
         self.metric_inv = torch.zeros(self.batch_size, self._num_joints, self._num_joints, device=self.device)
         self.L = torch.zeros(self.batch_size, self._num_joints, self._num_joints, device=self.device)
         self.L_inv = torch.zeros(self.batch_size, self._num_joints, self._num_joints, device=self.device)
-

@@ -1,0 +1,252 @@
+fabric_params:
+  # --------------------------------------------------------------------------
+  # Pelvis 6-D SE(3) task
+  # Ordering:
+  #   position:    world x, y, z
+  #   orientation: world rotation x, y, z
+  # --------------------------------------------------------------------------
+  pelvis_pose_attractor:
+    position_metric:
+      - 5.0
+      - 5.0
+      - 15.0
+
+    orientation_metric:
+      - 10.0
+      - 10.0
+      - 5.0
+
+    position_stiffness:
+      - 30.0
+      - 30.0
+      - 60.0
+
+    position_damping:
+      - 10.0
+      - 10.0
+      - 16.0
+
+    orientation_stiffness:
+      - 50.0
+      - 50.0
+      - 25.0
+
+    orientation_damping:
+      - 14.0
+      - 14.0
+      - 10.0
+
+  # --------------------------------------------------------------------------
+  # Four-end-effector 24-D SE(3) task
+  #
+  # Ordering of all 24-element vectors:
+  #   left_foot:  px py pz rx ry rz
+  #   right_foot: px py pz rx ry rz
+  #   left_hand:  px py pz rx ry rz
+  #   right_hand: px py pz rx ry rz
+  # --------------------------------------------------------------------------
+  end_effector_pose_attractor:
+    metric:
+      # left foot
+      - 15.0
+      - 15.0
+      - 20.0
+      - 12.0
+      - 12.0
+      - 8.0
+      # right foot
+      - 15.0
+      - 15.0
+      - 20.0
+      - 12.0
+      - 12.0
+      - 8.0
+      # left hand
+      - 2.0
+      - 2.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+      # right hand
+      - 2.0
+      - 2.0
+      - 2.0
+      - 1.0
+      - 1.0
+      - 1.0
+
+    stiffness:
+      # left foot
+      - 60.0
+      - 60.0
+      - 80.0
+      - 50.0
+      - 50.0
+      - 30.0
+      # right foot
+      - 60.0
+      - 60.0
+      - 80.0
+      - 50.0
+      - 50.0
+      - 30.0
+      # left hand
+      - 20.0
+      - 20.0
+      - 20.0
+      - 15.0
+      - 15.0
+      - 15.0
+      # right hand
+      - 20.0
+      - 20.0
+      - 20.0
+      - 15.0
+      - 15.0
+      - 15.0
+
+    damping:
+      # left foot
+      - 15.0
+      - 15.0
+      - 18.0
+      - 14.0
+      - 14.0
+      - 10.0
+      # right foot
+      - 15.0
+      - 15.0
+      - 18.0
+      - 14.0
+      - 14.0
+      - 10.0
+      # left hand
+      - 6.0
+      - 6.0
+      - 6.0
+      - 5.0
+      - 5.0
+      - 5.0
+      # right hand
+      - 6.0
+      - 6.0
+      - 6.0
+      - 5.0
+      - 5.0
+      - 5.0
+
+    # left foot, right foot, left hand, right hand
+    max_linear_acceleration:
+      - 15.0
+      - 15.0
+      - 10.0
+      - 10.0
+
+    max_angular_acceleration:
+      - 25.0
+      - 25.0
+      - 20.0
+      - 20.0
+
+  # --------------------------------------------------------------------------
+  # Root-space damping added after all task pullbacks.
+  # --------------------------------------------------------------------------
+  cspace_damping:
+    gain: 5.0
+
+  # Optional energy regulation.
+  speed_control:
+    active: false
+    energy_target: 10.0
+    damping: 100.0
+
+  # --------------------------------------------------------------------------
+  # Final generalized-acceleration and jerk limits.
+  #
+  # Ordering:
+  #   base linear(3), base angular(3), 29 actuated joints.
+  #
+  # Replace the 29 joint values with limits derived from the G1 model before
+  # hardware deployment. These values are conservative software defaults.
+  # --------------------------------------------------------------------------
+  joint_limits:
+    active: true
+
+    acceleration:
+      # floating base: linear + angular
+      - 20.0
+      - 20.0
+      - 20.0
+      - 30.0
+      - 30.0
+      - 30.0
+      # 29 actuated joints
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+      - 30.0
+
+    jerk:
+      # floating base: linear + angular
+      - 1000.0
+      - 1000.0
+      - 1000.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      # 29 actuated joints
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0
+      - 1500.0

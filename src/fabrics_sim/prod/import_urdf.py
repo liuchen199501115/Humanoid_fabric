@@ -15,8 +15,11 @@ collision data structures which can be slow.
 
 try:
     import urdfpy
-except:
-    pass
+except ImportError as exc:
+    raise ImportError(
+        "import_urdf requires the 'urdfpy' package. Install the project "
+        "dependencies and run urdfpy_patch.sh as described in README.md."
+    ) from exc
 
 from collections import OrderedDict
 import math
@@ -235,7 +238,6 @@ def parse_urdf_annotated(
             print("is floating")
         root = builder.add_body(origin=wp.transform_identity(),
                                 armature=0.,
-                                joint_armature=armature,
                                 com=com,
                                 I_m=I_m,
                                 m=m)

@@ -112,11 +112,11 @@ class RobotFrameOriginsTaskMap(BaseMap):
         # so we transpose the last two dimensions to get a
         # jacobian of shape (batch_size, num_links, 3, root_dim)
         # and then reshape it to (batch_size, num_links * 3, root_dim)
+        velocity_dim = jacobians.shape[2]
         jacobian = jacobians[:, self.link_indices, :, :].transpose(2,3).reshape(
-                        self.batch_size, len(self.link_indices) * 3, q.shape[1])
+                        self.batch_size, len(self.link_indices) * 3, velocity_dim)
 
         return (x, jacobian)
-
 
 
 
