@@ -1,0 +1,15 @@
+{
+  "last_time_s": 11.159,
+  "last_frame": 112.50006012000003,
+  "maximum_integrated_joint_error_rad": 0.3876289129257202,
+  "final_integrated_joint_error_rad": 0.3876289129257202,
+  "maximum_com_error_m": 0.74701988697052,
+  "final_com_error_m": 0.74701988697052,
+  "minimum_com_height_m": 0.22731620073318481,
+  "final_left_right_load_n": [
+    0.0,
+    0.0
+  ],
+  "recording": "acc_data/walk1_g1_md_source_anchor_four.reference_failure.npz",
+  "scope": "Diagnostics only; four-step success requires analyze_bounded_steps.py"
+}

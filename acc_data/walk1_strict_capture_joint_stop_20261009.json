@@ -1,0 +1,241 @@
+[
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.632,
+      "capture_margin": 0.01,
+      "landing_com_fraction": 0.5,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "swing": {
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_normalized_violation": 0.025099754333496094,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.13469012081623077
+        },
+        {
+          "iteration": 1,
+          "maximum_normalized_violation": 0.0007321385783143342,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12908683717250824
+        },
+        {
+          "iteration": 2,
+          "maximum_normalized_violation": 0.0,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12653298676013947
+        }
+      ],
+      "rejected": [],
+      "sampled_necessary_constraints_passed": true
+    },
+    "collision": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.03234860301017761,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "stops": [
+      {
+        "duration": 0.5,
+        "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00099756196, tolerance=2e-06"
+      },
+      {
+        "duration": 0.8,
+        "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0028605051, tolerance=2e-06"
+      },
+      {
+        "duration": 1.2,
+        "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0038341098, tolerance=2e-06"
+      }
+    ]
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "capture_margin": 0.01,
+      "landing_com_fraction": 0.5,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "swing": {
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_normalized_violation": 0.01142298337072134,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.13205602765083313
+        },
+        {
+          "iteration": 1,
+          "maximum_normalized_violation": 0.006363159976899624,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12648729979991913
+        },
+        {
+          "iteration": 2,
+          "maximum_normalized_violation": 0.0055421278811991215,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12396037578582764
+        },
+        {
+          "iteration": 3,
+          "maximum_normalized_violation": 0.005170278716832399,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.1228114515542984
+        },
+        {
+          "iteration": 4,
+          "maximum_normalized_violation": 0.0049842409789562225,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12228959798812866
+        },
+        {
+          "iteration": 5,
+          "maximum_normalized_violation": 0.0049079954624176025,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12205196917057037
+        },
+        {
+          "iteration": 6,
+          "maximum_normalized_violation": 0.004868493415415287,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12194409221410751
+        },
+        {
+          "iteration": 7,
+          "maximum_normalized_violation": 0.004850105382502079,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12189523875713348
+        },
+        {
+          "iteration": 8,
+          "maximum_normalized_violation": 0.004840282257646322,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12187738716602325
+        },
+        {
+          "iteration": 9,
+          "maximum_normalized_violation": 0.00483659515157342,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12186779081821442
+        },
+        {
+          "iteration": 10,
+          "maximum_normalized_violation": 0.004827551078051329,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12186001241207123
+        }
+      ],
+      "rejected": [
+        {
+          "iteration": 8,
+          "fraction": 0.5,
+          "violation": 0.004842624068260193
+        }
+      ],
+      "sampled_necessary_constraints_passed": false
+    },
+    "collision": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.03102821111679077,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "stops": []
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.635,
+      "capture_margin": 0.008,
+      "landing_com_fraction": 0.5,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "swing": {
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_normalized_violation": 0.03870758041739464,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.13362175226211548
+        },
+        {
+          "iteration": 1,
+          "maximum_normalized_violation": 0.01367797888815403,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12789395451545715
+        },
+        {
+          "iteration": 2,
+          "maximum_normalized_violation": 0.003026720602065325,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.125319242477417
+        },
+        {
+          "iteration": 3,
+          "maximum_normalized_violation": 0.0,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.12412257492542267
+        }
+      ],
+      "rejected": [],
+      "sampled_necessary_constraints_passed": true
+    },
+    "collision": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.03558129072189331,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "stops": [
+      {
+        "duration": 0.5,
+        "error": "No double-support pressure-center stopping preview"
+      },
+      {
+        "duration": 0.8,
+        "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0028210282, tolerance=2e-06"
+      },
+      {
+        "duration": 1.2,
+        "error": "No double-support pressure-center stopping preview"
+      }
+    ]
+  }
+]

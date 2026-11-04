@@ -1,0 +1,20 @@
+{
+  "source_frame_count": 7839,
+  "first_source_frame": 0.0,
+  "last_source_frame": 263.51942346859556,
+  "full_source_covered": false,
+  "final_support_settled": false,
+  "simulation_completed": true,
+  "controller_valid": true,
+  "peak_joint_rmse": 0.5891014933586121,
+  "peak_root_position_error": 2.8187501430511475,
+  "peak_root_orientation_error": 0.21853129478193306,
+  "tolerances": {
+    "joint_rmse_rad": 0.2,
+    "root_position_m": 0.2,
+    "root_orientation_rad": 0.35
+  },
+  "pkl_fidelity_passed": false,
+  "full_tracking_passed": false,
+  "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+}

@@ -1,0 +1,8 @@
+{
+  "mass_kg": 33.34114074707031,
+  "mass_normalized_max_error": [
+    1.4591383887818665e-06
+  ],
+  "left_foot_jacobian_max_error": 5.364418029785156e-07,
+  "right_foot_jacobian_max_error": 3.725290298461914e-07
+}

@@ -1,0 +1,26 @@
+{
+  "centroidal_soft_terminal": {
+    "window": [
+      5.7,
+      5.9
+    ],
+    "peak_observed_ankle_roll_acceleration": 606.748779296875,
+    "model_acceleration_error_rms": 71.89286804199219
+  },
+  "impact_recovery": {
+    "window": [
+      5.7,
+      5.9
+    ],
+    "peak_observed_ankle_roll_acceleration": 614.2320556640625,
+    "model_acceleration_error_rms": 87.38494110107422
+  },
+  "observed_toe": {
+    "window": [
+      5.7,
+      5.9
+    ],
+    "peak_observed_ankle_roll_acceleration": 54.199275970458984,
+    "model_acceleration_error_rms": 8.138687133789062
+  }
+}

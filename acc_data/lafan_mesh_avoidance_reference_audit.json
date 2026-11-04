@@ -1,0 +1,54 @@
+{
+  "pair_count": 440,
+  "scope": "Conservative sphere clearances evaluated on the old failed trajectory, not the new controller result.",
+  "samples": [
+    {
+      "time": 0.0,
+      "nearest_added_pair": [
+        "right_wrist_roll_link_cover_2",
+        "right_hip_pitch_link_cover_2"
+      ],
+      "sphere_gap": 0.3615421652793884
+    },
+    {
+      "time": 5.3,
+      "nearest_added_pair": [
+        "right_rubber_hand_cover_0",
+        "right_hip_roll_link_cover_1"
+      ],
+      "sphere_gap": -0.036344803869724274
+    },
+    {
+      "time": 5.5,
+      "nearest_added_pair": [
+        "right_rubber_hand_cover_0",
+        "right_hip_roll_link_cover_1"
+      ],
+      "sphere_gap": -0.056840814650058746
+    },
+    {
+      "time": 5.8,
+      "nearest_added_pair": [
+        "left_wrist_yaw_link_cover_0",
+        "left_hip_roll_link_cover_2"
+      ],
+      "sphere_gap": -0.08590783178806305
+    },
+    {
+      "time": 6.9,
+      "nearest_added_pair": [
+        "right_rubber_hand_cover_0",
+        "right_hip_roll_link_cover_2"
+      ],
+      "sphere_gap": 0.02798880636692047
+    },
+    {
+      "time": 7.0,
+      "nearest_added_pair": [
+        "left_rubber_hand_cover_0",
+        "left_hip_roll_link_cover_1"
+      ],
+      "sphere_gap": -0.05858921259641647
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "source_frames": 7839,
+  "minimum_reference_sole_height": -0.03016551211476326,
+  "frames_with_reference_penetration_over_2cm": 117,
+  "ambiguous_contact_frames": 514,
+  "largest_inferred_stance_xy_displacements": [
+    [
+      0.2167428731918335,
+      3219,
+      3233,
+      0
+    ],
+    [
+      0.2142769992351532,
+      3248,
+      3262,
+      0
+    ],
+    [
+      0.21359330415725708,
+      2631,
+      2650,
+      0
+    ],
+    [
+      0.20880131423473358,
+      3142,
+      3159,
+      1
+    ],
+    [
+      0.20758357644081116,
+      3174,
+      3188,
+      1
+    ]
+  ],
+  "scope": "Kinematic source audit after initial ground alignment. Stance displacement and 514 ambiguous frames use the historical ankle-speed plan. Current sole-corner plan has 28 ambiguous frames. Neither plan is ground truth.",
+  "contact_plan_method": "ankle_speed (historical diagnostic)"
+}

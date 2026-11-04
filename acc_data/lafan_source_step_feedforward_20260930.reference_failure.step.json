@@ -1,0 +1,42 @@
+{
+  "scope": "first_source_swing_and_touchdown",
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "source_step_passed": false,
+  "final_source_frame": 129.0,
+  "control_rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 5760,
+    "torque_updates": 5760,
+    "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.0029036258347332478,
+    "qp_wall_p99_seconds": 0.003406353467144072,
+    "qp_wall_max_seconds": 0.0066358111798763275,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  },
+  "swing_foot": "right",
+  "start_time": 10.218,
+  "planned_elapsed": 1.3000000000000007,
+  "landing_time": null,
+  "landing_position_error_m": 0.03848519515507487,
+  "final_forces_n": [
+    266.0990295410156,
+    0.0
+  ],
+  "final_sole_clearance_m": [
+    7.840516752788407e-07,
+    0.028629667640198024
+  ],
+  "max_swing_clearance_m": 0.0597535595492809,
+  "max_swing_com_error_m": 0.014241315424442291,
+  "final_com_error_m": 0.014241315424442291,
+  "peak_original_pkl_joint_rmse_rad": 0.3397432267665863,
+  "peak_original_pkl_root_error_m": 0.13063159584999084
+}

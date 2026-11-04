@@ -127,6 +127,17 @@ def load_motion_frame(
     return trajectory[frame:frame + 1], frame
 
 
+class _MotionUnpickler(pickle.Unpickler):
+    """Accept NumPy 2 array pickle paths when running with NumPy 1."""
+    def find_class(self, module, name):
+        try:
+            return super().find_class(module, name)
+        except ModuleNotFoundError as exc:
+            if module.startswith("numpy._core.") and exc.name in ("numpy._core", module):
+                return super().find_class(module.replace("numpy._core.", "numpy.core.", 1), name)
+            raise
+
+
 def load_motion_trajectory(
     motion_path: Path,
 ) -> tuple[torch.Tensor, float]:
@@ -134,7 +145,7 @@ def load_motion_trajectory(
     if not motion_path.is_file():
         raise FileNotFoundError(f"Motion PKL does not exist: {motion_path}")
     with motion_path.open("rb") as motion_file:
-        motion = pickle.load(motion_file)
+        motion = _MotionUnpickler(motion_file).load()
 
     required = {"root_pos", "root_rot", "dof_pos"}
     missing = sorted(required - set(motion))
@@ -187,6 +198,26 @@ def load_motion_trajectory(
     if not np.isfinite(fps) or fps <= 0.0:
         raise ValueError(f"Motion fps must be positive, got {fps}")
     return torch.from_numpy(q), fps
+
+
+def load_motion_contact_sequence(motion_path: Path) -> torch.Tensor | None:
+    """Load an optional precomputed left/right contact mask from a motion PKL."""
+    with motion_path.open("rb") as motion_file:
+        motion = _MotionUnpickler(motion_file).load()
+    sequence = motion.get("contact_sequence")
+    if sequence is None:
+        return None
+    sequence = as_numpy(sequence)
+    frame_count = as_numpy(motion["root_pos"]).shape[0]
+    if sequence.shape != (frame_count, 2):
+        raise ValueError(
+            "Expected contact_sequence (T,2), got "
+            f"{sequence.shape} for {frame_count} frames"
+        )
+    names = motion.get("contact_names", ["left_foot", "right_foot"])
+    if list(names) != ["left_foot", "right_foot"]:
+        raise ValueError(f"Unsupported contact_names ordering: {names}")
+    return torch.from_numpy(sequence.astype(np.bool_, copy=False))
 
 
 def visualize_isaacsim(
@@ -428,14 +459,15 @@ def main() -> None:
     qd = torch.zeros((1, 35), dtype=torch.float32)
 
     # Run FK once and use the current poses as consistent reference poses.
-    fabric.end_effector_pose_taskmap(q, None)
-    transforms = (
-        fabric.end_effector_pose_taskmap
-        .robot_kinematics.batch_link_transforms_torch[
-            :, fabric.end_effector_pose_taskmap.link_indices
-        ]
-        .clone()
-    )
+    group_transforms = []
+    for taskmap in (fabric.feet_pose_taskmap, fabric.hand_pose_taskmap):
+        taskmap(q, None)
+        group_transforms.append(
+            taskmap.robot_kinematics.batch_link_transforms_torch[
+                :, taskmap.link_indices
+            ].clone()
+        )
+    transforms = torch.cat(group_transforms, dim=1)
 
     pelvis_position_target = q[:, :3].clone()
     pelvis_position_target[:, 0] += 0.02
@@ -465,18 +497,17 @@ def main() -> None:
         )
     )
 
-    ee_x, ee_j = fabric.end_effector_pose_taskmap(q, None)
-    ee_xd = torch.bmm(ee_j, qd.unsqueeze(-1)).squeeze(-1)
-    ee_m, ee_f = (
-        fabric.taskmap_containers["end_effector_pose"]
-        .get_fabric("end_effector_pose_attractor")(
-            ee_x,
-            ee_xd,
-            fabric.fabrics_features["end_effector_pose"][
-                "end_effector_pose_attractor"
-            ],
-        )
-    )
+    group_values = {}
+    for label, task_name, fabric_name, taskmap in (
+        ("feet", "feet_pose", "feet_pose_attractor", fabric.feet_pose_taskmap),
+        ("hands", "hand_pose", "hand_pose_attractor", fabric.hand_pose_taskmap),
+    ):
+        x, jacobian = taskmap(q, None)
+        xd = torch.bmm(jacobian, qd.unsqueeze(-1)).squeeze(-1)
+        metric, force = fabric.taskmap_containers[task_name].get_fabric(
+            fabric_name
+        )(x, xd, fabric.fabrics_features[task_name][fabric_name])
+        group_values[label] = (x, jacobian, metric, force)
 
     qdd = fabric.compute_acceleration(q, qd)
 
@@ -505,10 +536,10 @@ def main() -> None:
         "pelvis J": (1, 6, 35),
         "pelvis M": (1, 6, 6),
         "pelvis f": (1, 6),
-        "end-effector x": (1, 24),
-        "end-effector J": (1, 24, 35),
-        "end-effector M": (1, 24, 24),
-        "end-effector f": (1, 24),
+        "feet x": (1, 12), "feet J": (1, 12, 35),
+        "feet M": (1, 12, 12), "feet f": (1, 12),
+        "hands x": (1, 12), "hands J": (1, 12, 35),
+        "hands M": (1, 12, 12), "hands f": (1, 12),
         "combined qdd": (1, 35),
         "integrated qd": (1, 35),
         "integrated q": (1, 36),
@@ -519,10 +550,14 @@ def main() -> None:
         "pelvis J": pelvis_j,
         "pelvis M": pelvis_m,
         "pelvis f": pelvis_f,
-        "end-effector x": ee_x,
-        "end-effector J": ee_j,
-        "end-effector M": ee_m,
-        "end-effector f": ee_f,
+        "feet x": group_values["feet"][0],
+        "feet J": group_values["feet"][1],
+        "feet M": group_values["feet"][2],
+        "feet f": group_values["feet"][3],
+        "hands x": group_values["hands"][0],
+        "hands J": group_values["hands"][1],
+        "hands M": group_values["hands"][2],
+        "hands f": group_values["hands"][3],
         "combined qdd": qdd,
         "integrated qd": qd_next,
         "integrated q": q_next,
@@ -537,7 +572,8 @@ def main() -> None:
         print(f"{name:20s} shape={tuple(value.shape)}")
 
     print(f"|pelvis error|={torch.linalg.vector_norm(pelvis_x).item():.6f}")
-    print(f"|end-effector error|={torch.linalg.vector_norm(ee_x).item():.6f}")
+    print(f"|feet error|={torch.linalg.vector_norm(group_values['feet'][0]).item():.6f}")
+    print(f"|hands error|={torch.linalg.vector_norm(group_values['hands'][0]).item():.6f}")
     print(f"|combined qdd|={torch.linalg.vector_norm(qdd).item():.6f}")
     print(f"integrated qd={qd_next[0].tolist()}")
     print(f"integrated q={q_next[0].tolist()}")
@@ -578,7 +614,7 @@ def main() -> None:
         pd_dt=np.asarray(PD_TIMESTEP, dtype=np.float32),
     )
     print(f"saved PD command: {OUTPUT_PATH}")
-    print("[pass] pelvis_pose + g1_end_effector_pose")
+    print("[pass] pelvis_pose + feet_pose + hand_pose")
 
     if args.visualize:
         visualize_isaacsim(

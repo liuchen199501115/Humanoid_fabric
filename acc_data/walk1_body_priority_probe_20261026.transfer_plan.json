@@ -1,0 +1,8 @@
+{
+  "sampled_joint_bounds_passed": false,
+  "support_lateral_offset": 0.0,
+  "initial_state": "measured q and v; initial acceleration assumed zero",
+  "scope": "double_support_unloading_only",
+  "bridge_dynamics_certified": false,
+  "measured_settle_seconds": 0.20000000000000015
+}

@@ -1,0 +1,137 @@
+{
+  "scope": "full_body_static_equilibrium_at_recorded_pose",
+  "record": "acc_data/walk1_velocity_unload_weight2_20261021.reference_failure.npz",
+  "time": 14.524000000000001,
+  "source_frame": 112.50024096000021,
+  "outgoing": "right",
+  "measured_vertical_load_n": [
+    251.40414428710938,
+    72.37220764160156
+  ],
+  "assumptions": [
+    "zero velocity and acceleration for offline equilibrium only",
+    "full rectangular soles, not observed contact patches",
+    "motor limits at 0.8 times online simulated effort table",
+    "contact-only case omits motor limits solely to isolate constraints"
+  ],
+  "effort_joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_yaw_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "effort_limits": [
+    70.4,
+    111.2,
+    70.4,
+    111.2,
+    20.0,
+    20.0,
+    70.4,
+    111.2,
+    70.4,
+    111.2,
+    20.0,
+    20.0,
+    70.4,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    4.0,
+    4.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    4.0,
+    4.0
+  ],
+  "cases": {
+    "full_model_with_motor_limits": {
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "minimum_outgoing_world_vertical_force_n": 71.62894268853265,
+      "minimum_outgoing_fraction": 0.21899743423326387,
+      "world_ankle_wrench": [
+        [
+          -27.956999753161657,
+          18.208246974943936,
+          255.44768695013923,
+          -21.927847107908963,
+          4.605693485458919,
+          -7.292402448656236
+        ],
+        [
+          27.956999753161657,
+          -18.208246974943936,
+          71.62894268853265,
+          -9.053205499581374,
+          0.8480175585683689,
+          3.456983215624554
+        ]
+      ],
+      "peak_motor_limit_ratio": 0.9999999999999998,
+      "base_equilibrium_residual": 5.1514348342607263e-14,
+      "inequality_violation": 8.171241461241152e-14
+    },
+    "contact_only_diagnostic": {
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "minimum_outgoing_world_vertical_force_n": 66.78958793964335,
+      "minimum_outgoing_fraction": 0.2042016515011395,
+      "world_ankle_wrench": [
+        [
+          26.24729815053418,
+          -15.803995325685635,
+          260.2870416990285,
+          -23.83183175110606,
+          2.7416612830837295,
+          7.007185107770349
+        ],
+        [
+          -26.247298150534185,
+          15.803995325685635,
+          66.78958793964335,
+          -7.116277986187696,
+          3.7820274340237052,
+          -3.6915074448637957
+        ]
+      ],
+      "peak_motor_limit_ratio": 1.1991098626645795,
+      "base_equilibrium_residual": 6.217248937900877e-15,
+      "inequality_violation": 3.552713678800501e-15
+    }
+  },
+  "dynamic_transfer_certified": false,
+  "full_four_step_tracking_passed": false
+}

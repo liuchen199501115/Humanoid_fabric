@@ -1,0 +1,50 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.0,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10751807689666748
+    }
+  ],
+  "rejected": [],
+  "sampled_necessary_constraints_passed": true,
+  "max_joint_bound_score": 0.0,
+  "peak_acceleration_ratio": 0.28112801909446716,
+  "peak_torque_ratio": 0.33368048071861267,
+  "candidate_options": {
+    "duration": 1.5,
+    "landing_height": 0.63,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.45,
+    "landing_fraction": 0.5,
+    "terminal_capture": "double_support",
+    "pelvis_pitch_offset": -0.2
+  },
+  "source_landing_pose": [
+    1.5049140453338623,
+    4.080635070800781,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7298399209976196,
+    0.6836180686950684
+  ],
+  "planned_landing_pose": [
+    1.4656130075454712,
+    4.327995300292969,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7298399209976196,
+    0.6836180686950684
+  ],
+  "landing_deviation_m": 0.2504628896713257,
+  "scope": "planned_first_source_step",
+  "simulation_validated": false,
+  "full_pkl_tracking": false,
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 1.5
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "score": 0.9001600742340088,
+    "max_acceleration_ratio": 1.9001600742340088,
+    "torque": 0.5057387351989746
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.25,
+    "score": 0.7975765466690063,
+    "max_acceleration_ratio": 1.7975765466690063,
+    "torque": 0.4895758330821991
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0011527152, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.25,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0048760031, tolerance=2e-06"
+  },
+  {
+    "duration": 1.4,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "score": 0.9163757562637329,
+    "max_acceleration_ratio": 1.916375756263733,
+    "torque": 0.5097929835319519
+  },
+  {
+    "duration": 1.4,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.25,
+    "score": 0.7286428213119507,
+    "max_acceleration_ratio": 1.7286428213119507,
+    "torque": 0.4813784658908844
+  },
+  {
+    "duration": 1.4,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0030516449, tolerance=2e-06"
+  },
+  {
+    "duration": 1.4,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.25,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00012198796, tolerance=2e-06"
+  },
+  {
+    "duration": 1.2,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "score": 0.9759421348571777,
+    "max_acceleration_ratio": 1.9759421348571777,
+    "torque": 0.5132723450660706
+  },
+  {
+    "duration": 1.2,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.25,
+    "score": 0.865966796875,
+    "max_acceleration_ratio": 1.865966796875,
+    "torque": 0.5057159066200256
+  },
+  {
+    "duration": 1.2,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.005921185, tolerance=2e-06"
+  },
+  {
+    "duration": 1.2,
+    "landing_height": 0.58,
+    "swing_phase_blend": 0.25,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0032476832, tolerance=2e-06"
+  }
+]

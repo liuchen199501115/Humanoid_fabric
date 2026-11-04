@@ -1,0 +1,132 @@
+[
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "seconds": [
+      0.0021929251961410046,
+      0.001239631325006485,
+      0.0009621847420930862
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "seconds": [
+      0.001203285064548254,
+      0.0010412037372589111,
+      0.0009371805936098099
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "seconds": [
+      0.0006495770066976547,
+      0.0006418363191187382,
+      0.0006352677009999752
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "seconds": [
+      0.0010454892180860043,
+      0.0006215497851371765,
+      0.0006227409467101097
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "seconds": [
+      0.0006814352236688137,
+      0.0005886638537049294,
+      0.0006031249649822712
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "seconds": [
+      0.0012718169018626213,
+      0.0010115308687090874,
+      0.0009430688805878162
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_source_body_daqp_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "seconds": [
+      0.0006256182678043842,
+      0.000560603104531765,
+      0.0005725580267608166
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_source_body_daqp_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "seconds": [
+      0.0006751189939677715,
+      0.0005826740525662899,
+      0.0005738320760428905
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": true
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "seconds": [
+      0.000598421785980463,
+      0.0005527609027922153,
+      0.0005472279153764248
+    ],
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "valid": false
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "seconds": [
+      0.0007259179838001728,
+      0.0005620997399091721,
+      0.0007173893973231316
+    ],
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "valid": false
+  }
+]

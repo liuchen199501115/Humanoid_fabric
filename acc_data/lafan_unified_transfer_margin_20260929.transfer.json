@@ -1,0 +1,18 @@
+{
+  "scope": "first_transfer_and_lift",
+  "full_pkl_tracking": false,
+  "duration": 11.998000000000001,
+  "final_source_frame": 114.03624096000021,
+  "control_updates": 6000,
+  "simulation_control_hz": 499.99999999999955,
+  "transfer_passed": true,
+  "support": "left",
+  "release_time": 7.306,
+  "post_release_duration": 4.692000000000001,
+  "final_second": {
+    "min_swing_clearance_m": 0.03896243192022666,
+    "max_swing_force_n": 0.0,
+    "min_stance_force_n": 320.1994934082031,
+    "max_com_error_m": 0.010540399700403214
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "error": "Source step rejected: required torque/contact/acceleration/joint-braking/collision bounds failed; see acc_data/walk1_staged_measured_upper_20261004.json",
+  "initial_record": "acc_data/walk1_staged_baseline_v2_20261004/transfer.npz",
+  "full_pkl_tracking": false
+}

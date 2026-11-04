@@ -1,0 +1,146 @@
+{
+  "runs": [
+    {
+      "scope": "first_transfer_and_lift",
+      "full_pkl_tracking": false,
+      "duration": 14.524000000000001,
+      "final_source_frame": 112.50024096000021,
+      "control_updates": 7263,
+      "simulation_control_hz": 499.99999999999955,
+      "transfer_passed": false,
+      "load_diagnostics": {
+        "foot_order": [
+          "left",
+          "right"
+        ],
+        "final_load_n": [
+          184.17587280273438,
+          135.74700927734375
+        ],
+        "final_second_min_load_n": [
+          171.2830810546875,
+          124.87847900390625
+        ],
+        "final_second_max_load_n": [
+          212.11318969726562,
+          147.45645141601562
+        ],
+        "final_second_min_load_fraction": [
+          0.5447114706039429,
+          0.38331711292266846
+        ],
+        "final_second_max_load_fraction": [
+          0.6166828274726868,
+          0.45528852939605713
+        ]
+      },
+      "final_reference_phase": "PREPARE_STEP",
+      "final_reference_rate": 0.0,
+      "final_second_max_com_error_m": 0.00495520792901516,
+      "constraint_diagnostics": {
+        "peak_joint_velocity_violation": 0.0,
+        "peak_measured_joint_velocity_violation": 0.0
+      },
+      "reason": "No commanded single support",
+      "record": "acc_data/walk1_velocity_tracking_20261021.reference_failure.npz",
+      "unload_weight": 0.0,
+      "process_exit_code": 1,
+      "stop_reason": "ReferenceManager PREPARE_STEP timed out after 6.00s at frame 113; progress is not success"
+    },
+    {
+      "scope": "first_transfer_and_lift",
+      "full_pkl_tracking": false,
+      "duration": 14.524000000000001,
+      "final_source_frame": 112.50024096000021,
+      "control_updates": 7263,
+      "simulation_control_hz": 499.99999999999955,
+      "transfer_passed": false,
+      "load_diagnostics": {
+        "foot_order": [
+          "left",
+          "right"
+        ],
+        "final_load_n": [
+          253.82058715820312,
+          73.6559829711914
+        ],
+        "final_second_min_load_n": [
+          240.96571350097656,
+          71.54851531982422
+        ],
+        "final_second_max_load_n": [
+          264.979736328125,
+          75.8940200805664
+        ],
+        "final_second_min_load_fraction": [
+          0.7619834542274475,
+          0.21699759364128113
+        ],
+        "final_second_max_load_fraction": [
+          0.7830023765563965,
+          0.23801656067371368
+        ]
+      },
+      "final_reference_phase": "PREPARE_STEP",
+      "final_reference_rate": 0.0,
+      "final_second_max_com_error_m": 0.004770819563418627,
+      "constraint_diagnostics": {
+        "peak_joint_velocity_violation": 0.0,
+        "peak_measured_joint_velocity_violation": 0.0
+      },
+      "reason": "No commanded single support",
+      "record": "acc_data/walk1_velocity_unload_weight_20261021.reference_failure.npz",
+      "unload_weight": 0.0001,
+      "process_exit_code": 1,
+      "stop_reason": "ReferenceManager PREPARE_STEP timed out after 6.00s at frame 113; progress is not success"
+    },
+    {
+      "scope": "first_transfer_and_lift",
+      "full_pkl_tracking": false,
+      "duration": 14.524000000000001,
+      "final_source_frame": 112.50024096000021,
+      "control_updates": 7263,
+      "simulation_control_hz": 499.99999999999955,
+      "transfer_passed": false,
+      "load_diagnostics": {
+        "foot_order": [
+          "left",
+          "right"
+        ],
+        "final_load_n": [
+          251.40414428710938,
+          72.37220764160156
+        ],
+        "final_second_min_load_n": [
+          234.94325256347656,
+          71.94878387451172
+        ],
+        "final_second_max_load_n": [
+          270.95416259765625,
+          76.29717254638672
+        ],
+        "final_second_min_load_fraction": [
+          0.7625803351402283,
+          0.21390056610107422
+        ],
+        "final_second_max_load_fraction": [
+          0.7860994338989258,
+          0.23741962015628815
+        ]
+      },
+      "final_reference_phase": "PREPARE_STEP",
+      "final_reference_rate": 0.0,
+      "final_second_max_com_error_m": 0.004713459871709347,
+      "constraint_diagnostics": {
+        "peak_joint_velocity_violation": 0.0,
+        "peak_measured_joint_velocity_violation": 0.0
+      },
+      "reason": "No commanded single support",
+      "record": "acc_data/walk1_velocity_unload_weight2_20261021.reference_failure.npz",
+      "unload_weight": 0.0002,
+      "process_exit_code": 1,
+      "stop_reason": "ReferenceManager PREPARE_STEP timed out after 6.00s at frame 113; progress is not success"
+    }
+  ],
+  "full_four_step_tracking_passed": false
+}

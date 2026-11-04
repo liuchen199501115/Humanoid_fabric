@@ -1,0 +1,109 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.05446793884038925,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.14171098172664642
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.029150377959012985,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.1362687647342682
+    },
+    {
+      "iteration": 2,
+      "maximum_normalized_violation": 0.018328895792365074,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13370975852012634
+    },
+    {
+      "iteration": 3,
+      "maximum_normalized_violation": 0.013642947189509869,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13250897824764252
+    },
+    {
+      "iteration": 4,
+      "maximum_normalized_violation": 0.011554628610610962,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13194356858730316
+    },
+    {
+      "iteration": 5,
+      "maximum_normalized_violation": 0.010668144561350346,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13167880475521088
+    },
+    {
+      "iteration": 6,
+      "maximum_normalized_violation": 0.010289140976965427,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.1315557062625885
+    },
+    {
+      "iteration": 7,
+      "maximum_normalized_violation": 0.010120747610926628,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13149824738502502
+    },
+    {
+      "iteration": 8,
+      "maximum_normalized_violation": 0.010064010508358479,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13146933913230896
+    },
+    {
+      "iteration": 9,
+      "maximum_normalized_violation": 0.010030415840446949,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13145866990089417
+    },
+    {
+      "iteration": 10,
+      "maximum_normalized_violation": 0.010019658133387566,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.13145166635513306
+    }
+  ],
+  "rejected": [],
+  "sampled_necessary_constraints_passed": false,
+  "options": {
+    "duration": 1.5,
+    "landing_height": 0.635,
+    "capture_margin": 0.01,
+    "landing_com_fraction": 0.5,
+    "clearance": 0.02,
+    "swing_phase_blend": 0.6,
+    "body_join": "endpoint",
+    "pelvis_pitch_offset": -0.15,
+    "terminal_capture": "double_support",
+    "com_preview": "optimized",
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.0
+  },
+  "collision": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.03423963487148285,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "sphere_cover"
+  },
+  "scope": "Measured stopped boundary hypothesis, no physical simulation or preceding-reference continuity certification",
+  "goal_unchanged": true,
+  "goal": [
+    [
+      1.5049140453338623,
+      4.080635070800781,
+      0.053519319742918015,
+      -0.02445637807250023,
+      -0.1385621428489685,
+      -0.7159838080406189,
+      0.6837905049324036
+    ]
+  ]
+}

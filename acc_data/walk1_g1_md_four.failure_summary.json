@@ -1,0 +1,18 @@
+{
+  "record": "acc_data/walk1_g1_md_four.reference_failure.npz",
+  "completed_source_steps": 0,
+  "final_frame": 112.50006012000003,
+  "final_time_s": 14.524000000000001,
+  "final_left_right_load_n": [
+    103.88996887207031,
+    228.84945678710938
+  ],
+  "final_left_load_fraction": 0.31222620606422424,
+  "final_com_error_m": 0.1077583059668541,
+  "last_second_mean_load_n": [
+    74.21733093261719,
+    254.597412109375
+  ],
+  "last_second_max_com_error_m": 0.11780586838722229,
+  "max_predicted_speed_violation": 0.0
+}

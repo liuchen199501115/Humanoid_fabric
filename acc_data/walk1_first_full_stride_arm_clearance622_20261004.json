@@ -1,0 +1,88 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.02153878013292948,
+      "wrench_pass_fraction": 0.9094540612516645,
+      "max_velocity_ratio": 0.12696479260921478
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.0005857110023498499,
+      "wrench_pass_fraction": 0.9813581890812251,
+      "max_velocity_ratio": 0.12004657834768295
+    },
+    {
+      "iteration": 2,
+      "maximum_normalized_violation": 0.0,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.1169871911406517
+    }
+  ],
+  "rejected": [],
+  "sampled_necessary_constraints_passed": true,
+  "fixed_source_frame": null,
+  "maximum_step_distance": null,
+  "max_joint_bound_score": 0.0,
+  "peak_acceleration_ratio": 0.18903855979442596,
+  "peak_torque_ratio": 0.7328368425369263,
+  "candidate_options": {
+    "duration": 1.5,
+    "landing_height": 0.622,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.6,
+    "pelvis_pitch_offset": -0.3,
+    "landing_com_fraction": 0.5,
+    "landing_com_lateral_offset": 0.005,
+    "body_join": "endpoint",
+    "clearance": 0.01,
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.004,
+    "terminal_capture": "double_support",
+    "com_preview": "optimized"
+  },
+  "contact_search_depth": 0.004,
+  "contact_search_requires_measured_load": true,
+  "source_landing_pose": [
+    1.5049140453338623,
+    4.080635070800781,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7298399209976196,
+    0.6836180686950684
+  ],
+  "planned_landing_pose": [
+    1.5049140453338623,
+    4.080635070800781,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7298399209976196,
+    0.6836180686950684
+  ],
+  "landing_deviation_m": 0.0,
+  "scope": "planned_source_step",
+  "simulation_validated": false,
+  "full_pkl_tracking": false,
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 1.5,
+  "collision_audit": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.0448724664747715,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "convex_mesh"
+  },
+  "worst_joint_bound": {
+    "time": 0.0,
+    "joint": "left_hip_pitch_joint",
+    "acceleration": 0.0,
+    "lower": -145.79270935058594,
+    "upper": 194.0792999267578
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "default",
+    "seconds": 0.0034633190371096134,
+    "iterations": 200,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -2865.415207463509
+  },
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "rho10",
+    "seconds": 0.0039390819147229195,
+    "iterations": 250,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -2865.415207463509
+  },
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "scale50",
+    "seconds": 0.0046204859390854836,
+    "iterations": 225,
+    "status": "solved",
+    "residual": 3.197442310920451e-14,
+    "objective": -2865.41520746351
+  },
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "eps5",
+    "seconds": 0.003947640769183636,
+    "iterations": 175,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -2865.415207463509
+  },
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "rho001",
+    "seconds": 0.003731353674083948,
+    "iterations": 225,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -2865.415207463509
+  },
+  {
+    "frame": 3200,
+    "stage": "priority_problem_",
+    "setting": "interval100",
+    "seconds": 0.0061896671541035175,
+    "iterations": 425,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -2865.415207463509
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "default",
+    "seconds": 0.20863168127834797,
+    "iterations": 18350,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -4785.538119571607
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "rho10",
+    "seconds": 0.6759895579889417,
+    "iterations": 60050,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -4785.538119571607
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "scale50",
+    "seconds": 0.15027545392513275,
+    "iterations": 13575,
+    "status": "solved",
+    "residual": 2.2737367544323206e-13,
+    "objective": -4785.538119571605
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "eps5",
+    "seconds": 0.1347498414106667,
+    "iterations": 12025,
+    "status": "solved",
+    "residual": 0.0022148653863420797,
+    "objective": -4771.032844185931
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "rho001",
+    "seconds": 0.015080677345395088,
+    "iterations": 1275,
+    "status": "solved",
+    "residual": 0.0004141692808556918,
+    "objective": -4785.979275409994
+  },
+  {
+    "frame": 3200,
+    "stage": "problem_",
+    "setting": "interval100",
+    "seconds": 0.18613438587635756,
+    "iterations": 16925,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -4785.538119571607
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "default",
+    "seconds": 0.00599767966195941,
+    "iterations": 450,
+    "status": "solved",
+    "residual": 5.684341886080802e-14,
+    "objective": -16221.66420860179
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "rho10",
+    "seconds": 0.004171092063188553,
+    "iterations": 275,
+    "status": "solved",
+    "residual": 5.684341886080802e-14,
+    "objective": -16221.66420860179
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "scale50",
+    "seconds": 0.0069045452401041985,
+    "iterations": 450,
+    "status": "solved",
+    "residual": 1.7053025658242404e-13,
+    "objective": -16221.664208601778
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "eps5",
+    "seconds": 0.005614730063825846,
+    "iterations": 425,
+    "status": "solved",
+    "residual": 5.684341886080802e-14,
+    "objective": -16221.66420860179
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "rho001",
+    "seconds": 0.004997872281819582,
+    "iterations": 375,
+    "status": "solved",
+    "residual": 1.7053025658242404e-13,
+    "objective": -16221.664208601786
+  },
+  {
+    "frame": 3300,
+    "stage": "priority_problem_",
+    "setting": "interval100",
+    "seconds": 0.00969792390242219,
+    "iterations": 300,
+    "status": "solved",
+    "residual": 5.684341886080802e-14,
+    "objective": -16221.66420860179
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "default",
+    "seconds": 0.2259448692202568,
+    "iterations": 20725,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -9664.9587507441
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "rho10",
+    "seconds": 0.8410487361252308,
+    "iterations": 76175,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -9664.9587507441
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "scale50",
+    "seconds": 0.1192869977094233,
+    "iterations": 10900,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -9664.958750744081
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "eps5",
+    "seconds": 0.12712011067196727,
+    "iterations": 11725,
+    "status": "solved",
+    "residual": 0.0003429101199188267,
+    "objective": -9651.69839401952
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "rho001",
+    "seconds": 0.09086238080635667,
+    "iterations": 8275,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -9664.9587507441
+  },
+  {
+    "frame": 3300,
+    "stage": "problem_",
+    "setting": "interval100",
+    "seconds": 0.10950594581663609,
+    "iterations": 10300,
+    "status": "solved",
+    "residual": 1.1368683772161603e-13,
+    "objective": -9664.9587507441
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "default",
+    "seconds": 0.019005957059562206,
+    "iterations": 1950,
+    "status": "solved",
+    "residual": 0.00032240985960996227,
+    "objective": -2056.9161672686428
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "rho10",
+    "seconds": 0.01666920492425561,
+    "iterations": 1675,
+    "status": "solved",
+    "residual": 4.004303082894012e-05,
+    "objective": -2056.9162842583833
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "scale50",
+    "seconds": 0.02020273730158806,
+    "iterations": 1925,
+    "status": "solved",
+    "residual": 0.0003069661015899783,
+    "objective": -2056.9160961636658
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "eps5",
+    "seconds": 0.015982563141733408,
+    "iterations": 1625,
+    "status": "solved",
+    "residual": 0.0014451046841728044,
+    "objective": -2056.9084123605985
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "rho001",
+    "seconds": 0.011131200939416885,
+    "iterations": 1100,
+    "status": "solved",
+    "residual": 0.00023308166011837272,
+    "objective": -2056.918000395891
+  },
+  {
+    "frame": 3700,
+    "stage": "priority_problem_",
+    "setting": "interval100",
+    "seconds": 0.01745260925963521,
+    "iterations": 1800,
+    "status": "solved",
+    "residual": 0.0002999887061001516,
+    "objective": -2056.9161785469814
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "default",
+    "seconds": 0.9654270382598042,
+    "iterations": 100000,
+    "status": "maximum iterations reached",
+    "residual": 0.010106114165752356,
+    "objective": -7094.130101018134
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "rho10",
+    "seconds": 0.9634483070112765,
+    "iterations": 100000,
+    "status": "maximum iterations reached",
+    "residual": 0.011385201817525115,
+    "objective": 3428.603207827262
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "scale50",
+    "seconds": 0.960441782604903,
+    "iterations": 100000,
+    "status": "maximum iterations reached",
+    "residual": 0.010018653505933006,
+    "objective": -6989.767798978279
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "eps5",
+    "seconds": 0.9770055967383087,
+    "iterations": 100000,
+    "status": "solved inaccurate",
+    "residual": 0.010106114165752356,
+    "objective": -7094.130101018134
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "rho001",
+    "seconds": 0.9781526131555438,
+    "iterations": 100000,
+    "status": "maximum iterations reached",
+    "residual": 0.006612116682989555,
+    "objective": -1023.4922389872081
+  },
+  {
+    "frame": 3700,
+    "stage": "problem_",
+    "setting": "interval100",
+    "seconds": 0.9662303361110389,
+    "iterations": 100000,
+    "status": "maximum iterations reached",
+    "residual": 0.010078319381076284,
+    "objective": -7069.164384585129
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "duration": 0.24,
+    "error": "No double-support pressure-center stopping preview"
+  },
+  {
+    "duration": 0.25,
+    "error": "No double-support pressure-center stopping preview"
+  },
+  {
+    "duration": 0.26,
+    "error": "No double-support pressure-center stopping preview"
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.04121682047843933,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "max_velocity_ratio": 0.1151372641324997,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.2720844139690698,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.27
+  },
+  {
+    "sampled_necessary_constraints_passed": false,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.04121682047843933,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "max_velocity_ratio": 0.11984914541244507,
+    "max_joint_bound_violation": 1.1972391605377197,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.272625873828832,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.28
+  },
+  {
+    "sampled_necessary_constraints_passed": false,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.04121682047843933,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "max_velocity_ratio": 0.13948509097099304,
+    "max_joint_bound_violation": 18.442333221435547,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.28297151324458464,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.3
+  },
+  {
+    "duration": 0.35,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00013542175, tolerance=2e-06"
+  },
+  {
+    "duration": 0.4,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00016856194, tolerance=2e-06"
+  }
+]

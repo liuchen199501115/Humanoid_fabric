@@ -1,0 +1,148 @@
+{
+  "scope": "Historical lifted pose with zero rate hypothesis; offline only",
+  "source_record": "acc_data/walk1_strict_four_transfer_20261008.reference_failure.npz",
+  "ground_offset_m": -0.021463990211486816,
+  "stance_source_minus_anchor_m": [
+    0.000438690185546875,
+    -0.006772041320800781,
+    0.0041198693215847015
+  ],
+  "candidates": [
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "first_sample",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00020802021, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 56,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.755804419517517,
+      "velocity_ratio": {
+        "maximum": 0.1694430112838745,
+        "time": 1.375
+      },
+      "torque_ratio": {
+        "maximum": 1.4654529094696045,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 1.4267700910568237,
+        "time": 1.375
+      },
+      "joint_bound_score": {
+        "maximum": 1.755804419517517,
+        "time": 1.375
+      },
+      "exact_wrench_score": {
+        "maximum": 1.052938461303711,
+        "time": 1.35
+      }
+    },
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00020205975, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 56,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.706024408340454,
+      "velocity_ratio": {
+        "maximum": 0.1684645116329193,
+        "time": 1.375
+      },
+      "torque_ratio": {
+        "maximum": 1.4706095457077026,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 1.3793023824691772,
+        "time": 1.375
+      },
+      "joint_bound_score": {
+        "maximum": 1.706024408340454,
+        "time": 1.375
+      },
+      "exact_wrench_score": {
+        "maximum": 1.0606807470321655,
+        "time": 1.35
+      }
+    },
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "endpoint",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=4.5895576e-06, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 56,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.5595693960785864,
+      "velocity_ratio": {
+        "maximum": 0.09293197095394135,
+        "time": 1.375
+      },
+      "torque_ratio": {
+        "maximum": 1.5102571249008179,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 0.28119683265686035,
+        "time": 1.375
+      },
+      "joint_bound_score": {
+        "maximum": 0.4299853444099426,
+        "time": 1.375
+      },
+      "exact_wrench_score": {
+        "maximum": 1.1249183416366577,
+        "time": 1.35
+      }
+    }
+  ],
+  "simulation_validated": false
+}

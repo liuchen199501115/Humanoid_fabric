@@ -1,0 +1,16 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 4,
+  "measured_steps": 0,
+  "landings": [],
+  "continuous": true,
+  "initial_partial_step": true,
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "controller_valid": false,
+  "steps_tracking_passed": false,
+  "stable_final_support": false,
+  "stopped_at_tracking_steps": false,
+  "stop_reason": "QP validation failed",
+  "failed_time_s": 0.434
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.021232103928923607,
+    "joint_score": 0.021232103928923607
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.17656448483467102,
+    "joint_score": 0.17656448483467102
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.6906697750091553,
+    "joint_score": 0.6906697750091553
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.020292248328526812,
+    "joint_score": 0.016724655404686928
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.2676818370819092,
+    "joint_score": 0.2676818370819092
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.612,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.8369667530059814,
+    "joint_score": 0.8369667530059814
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.019669876495997107,
+    "joint_score": 0.01016339473426342
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.26689308881759644,
+    "joint_score": 0.26689308881759644
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.836403489112854,
+    "joint_score": 0.836403489112854
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.020504242181777953,
+    "joint_score": 0.00830161850899458
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.2921014130115509,
+    "joint_score": 0.2921014130115509
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.616,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 1.037570834159851,
+    "joint_score": 1.037570834159851
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.01987685362497965,
+    "joint_score": 0.008046908304095268
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.292631059885025,
+    "joint_score": 0.292631059885025
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 1.0489164590835571,
+    "joint_score": 1.0489164590835571
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.5,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.03995579853653908,
+    "joint_score": 0.03995579853653908
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.55,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 0.3676387667655945,
+    "joint_score": 0.3676387667655945
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.62,
+      "pelvis_pitch_offset": -0.34,
+      "landing_com_fraction": 0.6,
+      "body_join": "endpoint",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized"
+    },
+    "score": 1.3573384284973145,
+    "joint_score": 1.3573384284973145
+  }
+]

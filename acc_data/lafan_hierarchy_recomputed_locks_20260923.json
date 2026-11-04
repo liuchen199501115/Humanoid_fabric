@@ -1,0 +1,20 @@
+[
+  {
+    "snapshot": "lafan_balance_first_500hz_20260923",
+    "second_stage_accepted": true,
+    "tracking_accepted": true,
+    "tracking_residual": 6.758037425639365e-09,
+    "status": [
+      "DAQP 1; KKT certified"
+    ]
+  },
+  {
+    "snapshot": "lafan_balance_first_retry_500hz_20260923",
+    "second_stage_accepted": true,
+    "tracking_accepted": true,
+    "tracking_residual": 6.258566997985326e-08,
+    "status": [
+      "DAQP 1; KKT certified"
+    ]
+  }
+]

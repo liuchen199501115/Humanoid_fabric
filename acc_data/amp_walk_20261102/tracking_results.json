@@ -1,0 +1,271 @@
+{
+  "status": "failed_full_tracking",
+  "source": "/home/sky/Humanoid_fabric/retarget/amp_reference/amp_walk_1ms.pkl",
+  "source_unchanged": true,
+  "source_frames": 2000,
+  "source_fps": 200.0,
+  "source_duration_s": 9.995,
+  "implemented": [
+    "Explicit --motion-start-in-motion with analytic initial q/v and geometric sole contact seed",
+    "Fresh PhysX contact reports after one passive physics step, without resetting subsequent live states",
+    "Constant source-clock derivatives at the initial boundary; no static warmup",
+    "Existing source acceleration preservation, pelvis reference, observed contact patches and swing priorities available in dynamic mode"
+  ],
+  "validation": "53 targeted regression tests passed",
+  "runs": [
+    {
+      "name": "dynamic",
+      "configuration": "Initial dynamic Fabric/MIT",
+      "failed_time_s": 2.212,
+      "last_recorded_source_frame": 442.2,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 442.2,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 1.5923779010772705,
+        "peak_root_position_error": 1.0148636102676392,
+        "peak_root_orientation_error": 3.1391829042258865,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 1.0730189085006714,
+      "min_com_height_m": 0.08228196948766708,
+      "last_measured_contact_mode": 3,
+      "last_commanded_contact_mode": 1,
+      "last_qp_status": [
+        "DAQP -1; rejected"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.14752575755119324,
+        "com_error_m": 0.03658713027834892,
+        "left_foot_position_error_m": 0.018209831789135933
+      },
+      "first_reported_self_contact_s": 0.1125
+    },
+    {
+      "name": "dynamic_contact",
+      "configuration": "Fabric/MIT + patches (unprimed)",
+      "failed_time_s": 0.28700000000000003,
+      "last_recorded_source_frame": 57.2,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 57.2,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 1.4242676496505737,
+        "peak_root_position_error": 0.28393998742103577,
+        "peak_root_orientation_error": 2.04924554898764,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 0.19350102543830872,
+      "min_com_height_m": 0.5160032510757446,
+      "last_measured_contact_mode": 1,
+      "last_commanded_contact_mode": 1,
+      "last_qp_status": [
+        "DAQP -1; rejected"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.867515504360199,
+        "com_error_m": 0.03676764667034149,
+        "left_foot_position_error_m": 0.17748959362506866
+      },
+      "first_reported_self_contact_s": 0.0565
+    },
+    {
+      "name": "dynamic_primed",
+      "configuration": "Fabric/MIT + fresh contacts",
+      "failed_time_s": 0.384,
+      "last_recorded_source_frame": 76.6,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 76.6,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 1.0257514715194702,
+        "peak_root_position_error": 0.06373027712106705,
+        "peak_root_orientation_error": 1.4161387180081162,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 0.020891379565000534,
+      "min_com_height_m": 0.6873213648796082,
+      "last_measured_contact_mode": 2,
+      "last_commanded_contact_mode": 2,
+      "last_qp_status": [
+        "DAQP -1; rejected"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.054107245057821274,
+        "com_error_m": 0.0005377588677220047,
+        "left_foot_position_error_m": 0.02541487291455269
+      },
+      "first_reported_self_contact_s": 0.134
+    },
+    {
+      "name": "dynamic_wbc",
+      "configuration": "Posture WBC / DAQP",
+      "failed_time_s": 0.10400000000000001,
+      "last_recorded_source_frame": 20.400000000000002,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 20.400000000000002,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.01792377233505249,
+        "peak_root_position_error": 0.002772244857624173,
+        "peak_root_orientation_error": 0.03250290767349158,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 0.0017357824835926294,
+      "min_com_height_m": 0.6983276009559631,
+      "last_measured_contact_mode": 2,
+      "last_commanded_contact_mode": 2,
+      "last_qp_status": [
+        "DAQP -4; rejected"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.016904214397072792,
+        "com_error_m": 0.0013215233338996768,
+        "left_foot_position_error_m": 0.008799703791737556
+      },
+      "first_reported_self_contact_s": null
+    },
+    {
+      "name": "dynamic_wbc_osqp",
+      "configuration": "Posture WBC / OSQP",
+      "failed_time_s": 0.154,
+      "last_recorded_source_frame": 30.4,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 30.4,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.11454154551029205,
+        "peak_root_position_error": 0.009573591873049736,
+        "peak_root_orientation_error": 0.2426236384626612,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 0.004172747489064932,
+      "min_com_height_m": 0.6930493712425232,
+      "last_measured_contact_mode": 3,
+      "last_commanded_contact_mode": 2,
+      "last_qp_status": [
+        "primal infeasible"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.016902204602956772,
+        "com_error_m": 0.0013216569786891341,
+        "left_foot_position_error_m": 0.008800147101283073
+      },
+      "first_reported_self_contact_s": 0.134
+    },
+    {
+      "name": "dynamic_swing",
+      "configuration": "Swing WBC / DAQP",
+      "failed_time_s": 0.126,
+      "last_recorded_source_frame": 24.8,
+      "full_tracking_passed": false,
+      "fidelity_audit": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 24.8,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.21814323961734772,
+        "peak_root_position_error": 0.009536958299577236,
+        "peak_root_orientation_error": 0.014128387943192555,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+      },
+      "peak_com_error_m": 0.004316609352827072,
+      "min_com_height_m": 0.6974974870681763,
+      "last_measured_contact_mode": 2,
+      "last_commanded_contact_mode": 2,
+      "last_qp_status": [
+        "DAQP -4; rejected"
+      ],
+      "at_100ms": {
+        "time_s": 0.1,
+        "joint_rmse_rad": 0.11670547723770142,
+        "com_error_m": 0.0013038115575909615,
+        "left_foot_position_error_m": 0.004093702882528305
+      },
+      "first_reported_self_contact_s": null
+    }
+  ],
+  "conclusion": "Dynamic initialization executes, but full motion tracking and first planned support transfer remain unverified/failed. Later clock progress in an unstable run is not tracking success.",
+  "source_dynamics_audit": "source_dynamics_audit.json",
+  "plot": "tracking_comparison.png",
+  "commands": {
+    "fabric": "bash acc_data/amp_walk_20261102/run_dynamic.sh",
+    "wbc": "bash acc_data/amp_walk_20261102/run_dynamic_wbc.sh",
+    "swing_wbc": "bash acc_data/amp_walk_20261102/run_dynamic_swing.sh"
+  }
+}

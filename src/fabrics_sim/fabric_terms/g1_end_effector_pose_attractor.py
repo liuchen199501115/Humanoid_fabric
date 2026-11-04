@@ -8,17 +8,12 @@ from fabrics_sim.fabric_terms.fabric_term import BaseFabricTerm
 class G1EndEffectorPoseAttractor(BaseFabricTerm):
     """PD acceleration policy written in Fabric natural form.
 
-    Task order:
-        left_foot  [position(3), orientation(3)]
-        right_foot [position(3), orientation(3)]
-        left_hand  [position(3), orientation(3)]
-        right_hand [position(3), orientation(3)]
+    Each instance controls one selectable end-effector group (feet or hands).
+    Every end effector contributes [position(3), orientation(3)].
 
     Optional features contain the desired world-frame twists in the same
-    ordering and have shape (batch_size, 24).
+    ordering and have the same shape as the task map output.
     """
-
-    TASK_DIMENSION = 24
 
     def __init__(
         self,
@@ -41,11 +36,15 @@ class G1EndEffectorPoseAttractor(BaseFabricTerm):
         self.metric_diagonal = self._read_vector(
             params, "metric", device
         )
+        self.task_dimension = self.metric_diagonal.numel()
+        if self.task_dimension == 0 or self.task_dimension % 6 != 0:
+            raise ValueError("metric length must be a positive multiple of 6.")
+        self.num_end_effectors = self.task_dimension // 6
         self.stiffness = self._read_vector(
-            params, "stiffness", device
+            params, "stiffness", device, self.task_dimension
         )
         self.damping = self._read_vector(
-            params, "damping", device
+            params, "damping", device, self.task_dimension
         )
         self.max_linear_acceleration = self._read_limit(
             params, "max_linear_acceleration", device
@@ -54,27 +53,27 @@ class G1EndEffectorPoseAttractor(BaseFabricTerm):
             params, "max_angular_acceleration", device
         )
 
-    @classmethod
+    @staticmethod
     def _read_vector(
-        cls,
         params: dict,
         key: str,
         device: str,
+        expected_size: int | None = None,
     ) -> torch.Tensor:
         value = torch.as_tensor(
             params[key],
             dtype=torch.float32,
             device=device,
         ).reshape(-1)
-        if value.numel() != cls.TASK_DIMENSION:
+        if expected_size is not None and value.numel() != expected_size:
             raise ValueError(
-                f"{key} must have {cls.TASK_DIMENSION} values; "
+                f"{key} must have {expected_size} values; "
                 f"got {value.numel()}."
             )
         return value
 
-    @staticmethod
     def _read_limit(
+        self,
         params: dict,
         key: str,
         device: str,
@@ -84,16 +83,18 @@ class G1EndEffectorPoseAttractor(BaseFabricTerm):
             dtype=torch.float32,
             device=device,
         ).reshape(-1)
-        if value.numel() not in (1, 4):
-            raise ValueError(f"{key} must contain one or four values.")
+        if value.numel() not in (1, self.num_end_effectors):
+            raise ValueError(
+                f"{key} must contain one or {self.num_end_effectors} values."
+            )
         if value.numel() == 1:
-            value = value.repeat(4)
+            value = value.repeat(self.num_end_effectors)
         return value
 
     def metric_eval(self, x, xd, features):
-        if x.shape[-1] != self.TASK_DIMENSION:
+        if x.shape[-1] != self.task_dimension:
             raise ValueError(
-                f"Expected a 24-D task, got {x.shape[-1]}."
+                f"Expected a {self.task_dimension}-D task, got {x.shape[-1]}."
             )
 
         metric = torch.diag_embed(
@@ -129,25 +130,33 @@ class G1EndEffectorPoseAttractor(BaseFabricTerm):
         return vector * scale
 
     def force_eval(self, x, xd, features):
+        zeros = torch.zeros_like(x)
         if features is None:
-            target_twist = torch.zeros_like(x)
-        else:
+            target_twist, target_acceleration = zeros, zeros
+        elif torch.is_tensor(features):
             if features.shape != x.shape:
                 raise ValueError(
                     "Desired end-effector twist must have shape "
                     f"{tuple(x.shape)}, got {tuple(features.shape)}."
                 )
-            target_twist = features
+            target_twist, target_acceleration = features, zeros
+        elif isinstance(features, dict):
+            target_twist = features.get("velocity", zeros)
+            target_acceleration = features.get("acceleration", zeros)
+            if target_twist.shape != x.shape or target_acceleration.shape != x.shape:
+                raise ValueError("End-effector reference tensors must match task shape.")
+        else:
+            raise TypeError("End-effector reference must be a tensor or dict.")
 
         velocity_error = xd - target_twist
         desired_acceleration = (
-            -self.stiffness * x
+            target_acceleration - self.stiffness * x
             -self.damping * velocity_error
         )
 
         # Limit each end effector independently.
         limited_blocks = []
-        for index in range(4):
+        for index in range(self.num_end_effectors):
             block = desired_acceleration[:, 6 * index:6 * (index + 1)]
             linear = self._limit_vector_norm(
                 block[:, :3],

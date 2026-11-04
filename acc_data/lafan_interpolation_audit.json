@@ -1,0 +1,14 @@
+{
+  "scope": "First 180 source frames, unit speed, 500 Hz finite differences; no robot simulation",
+  "maximum_interpolation_joint_difference_rad": 0.013090333183573388,
+  "linear": {
+    "peak_joint_acceleration": 9449.40358400348,
+    "p99_joint_acceleration": 129.92325797679848,
+    "fraction_over_task_cap_30": 0.03194046408431173
+  },
+  "pchip": {
+    "peak_joint_acceleration": 833.3559569368432,
+    "p99_joint_acceleration": 67.50270378695072,
+    "fraction_over_task_cap_30": 0.043403901266524915
+  }
+}

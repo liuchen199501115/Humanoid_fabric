@@ -1,0 +1,8 @@
+{
+  "iterations": 34,
+  "seconds": 0.04940074682235718,
+  "original_residual": 0.013154983520507812,
+  "refined_residual": 2.4442670110147446e-12,
+  "float32_residual": 1.3755751808730565e-05,
+  "constraints_unchanged": true
+}

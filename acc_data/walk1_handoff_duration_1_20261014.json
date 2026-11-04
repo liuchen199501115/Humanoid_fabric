@@ -1,0 +1,132 @@
+{
+  "scope": "Full-model constrained-reference penalty search; no live tracking",
+  "options": {
+    "duration": 1.0,
+    "body_join": "endpoint",
+    "pelvis_pitch_offset": -0.15,
+    "com_preview": "full_body_source",
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.0
+  },
+  "boundary": {
+    "record": "acc_data/walk1_unload_verified_20261012.npz",
+    "velocity": "measured",
+    "acceleration": "WBC prediction, not measured"
+  },
+  "interior_enabled": true,
+  "body_parameters_enabled": true,
+  "best": {
+    "evaluation": 1,
+    "parameters": [
+      0.038199577736173246,
+      0.0727776270110723,
+      0.021990194684886135,
+      -0.023046778417579024,
+      -0.14086291361379638,
+      -0.6124893665079362,
+      0.00011175192640613778,
+      -0.00014346983489169573,
+      0.0002552193631899149,
+      -0.003644216454685901,
+      -0.035463423223713327,
+      -0.13885438199983174
+    ],
+    "objective": 3.420566431604313,
+    "score": 0.9323958195745944,
+    "collision": {
+      "checked": true,
+      "passed": false,
+      "maximum_violation": 1.5972490310668945,
+      "minimum_cover_distance": 0.05650658905506134,
+      "violating_samples": 2,
+      "worst_time": 0.8833333333333333,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "worst_wrench_sole_heights_m": [
+      -2.8494190815187004e-07,
+      0.012988744378089903
+    ],
+    "entry_error": {
+      "q": 0.0,
+      "v": 2.759043127298355e-08,
+      "a": 2.0675361156463623e-07
+    },
+    "endpoint_position_error_m": 1.4578789659935865e-06,
+    "endpoint_quaternion_error": 2.528810796320613e-07,
+    "peak_torque_joint": "left_ankle_pitch_joint",
+    "peak_wrench_constraint_index": 9,
+    "support_contact_velocity_max": 0.017561445012688637,
+    "support_contact_acceleration_max": 0.3105772137641907,
+    "peak_torque_ratio": 1.1360523700714111,
+    "peak_wrench_score": 0.5649968385696411,
+    "max_joint_bound_score": 0.10597231239080429,
+    "worst_constraint_times": {
+      "torque_ratio": 0.8833333333333333,
+      "exact_wrench_score": 0.8833333333333333,
+      "joint_bound_score": 0.7666666666666666
+    },
+    "goal_unchanged": true,
+    "sample_count": 61
+  },
+  "evaluations": 1,
+  "optimizer_success": false,
+  "optimizer_message": "Maximum number of function evaluations has been exceeded.",
+  "history": [
+    {
+      "evaluation": 1,
+      "parameters": [
+        0.038199577736173246,
+        0.0727776270110723,
+        0.021990194684886135,
+        -0.023046778417579024,
+        -0.14086291361379638,
+        -0.6124893665079362,
+        0.00011175192640613778,
+        -0.00014346983489169573,
+        0.0002552193631899149,
+        -0.003644216454685901,
+        -0.035463423223713327,
+        -0.13885438199983174
+      ],
+      "objective": 3.420566431604313,
+      "score": 0.9323958195745944,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 1.5972490310668945,
+        "minimum_cover_distance": 0.05650658905506134,
+        "violating_samples": 2,
+        "worst_time": 0.8833333333333333,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "worst_wrench_sole_heights_m": [
+        -2.8494190815187004e-07,
+        0.012988744378089903
+      ],
+      "entry_error": {
+        "q": 0.0,
+        "v": 2.759043127298355e-08,
+        "a": 2.0675361156463623e-07
+      },
+      "endpoint_position_error_m": 1.4578789659935865e-06,
+      "endpoint_quaternion_error": 2.528810796320613e-07,
+      "peak_torque_joint": "left_ankle_pitch_joint",
+      "peak_wrench_constraint_index": 9,
+      "support_contact_velocity_max": 0.017561445012688637,
+      "support_contact_acceleration_max": 0.3105772137641907,
+      "peak_torque_ratio": 1.1360523700714111,
+      "peak_wrench_score": 0.5649968385696411,
+      "max_joint_bound_score": 0.10597231239080429,
+      "worst_constraint_times": {
+        "torque_ratio": 0.8833333333333333,
+        "exact_wrench_score": 0.8833333333333333,
+        "joint_bound_score": 0.7666666666666666
+      },
+      "goal_unchanged": true,
+      "sample_count": 61
+    }
+  ],
+  "simulation_validated": false
+}

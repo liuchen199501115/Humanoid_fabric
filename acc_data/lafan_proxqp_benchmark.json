@@ -1,0 +1,56 @@
+[
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.005977253895252943,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 13,
+    "primal": 1.2674519211941515e-09,
+    "dual": 0.0003320756039286721
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "time_seconds": 0.008749206084758043,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 14,
+    "primal": 328.978583411179,
+    "dual": 40857.597751607136
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.015302443876862526,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 27,
+    "primal": 3.391604819213967e-08,
+    "dual": 1.8312611279824864e-05
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "time_seconds": 0.015617284923791885,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 37,
+    "primal": 329.27941811239475,
+    "dual": 8104564.665848478
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.030660707969218493,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 32,
+    "primal": 8434.88886413028,
+    "dual": 8491292.562061757
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "time_seconds": 0.022556380834430456,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 14,
+    "primal": 8435.00616727198,
+    "dual": 32458320494.982044
+  }
+]

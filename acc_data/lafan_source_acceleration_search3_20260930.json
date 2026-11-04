@@ -1,0 +1,50 @@
+[
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.7,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.030400524, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.9,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0091093415, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.62,
+    "swing_phase_blend": 0.7,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.034105133, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.62,
+    "swing_phase_blend": 0.9,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.057079796, tolerance=2e-06"
+  },
+  {
+    "duration": 1.6,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.7,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00072198268, tolerance=2e-06"
+  },
+  {
+    "duration": 1.6,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.9,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00079000997, tolerance=2e-06"
+  },
+  {
+    "duration": 1.6,
+    "landing_height": 0.62,
+    "swing_phase_blend": 0.7,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.019802528, tolerance=2e-06"
+  },
+  {
+    "duration": 1.6,
+    "landing_height": 0.62,
+    "swing_phase_blend": 0.9,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.030463479, tolerance=2e-06"
+  }
+]

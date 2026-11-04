@@ -1,0 +1,23 @@
+{
+  "method": "pchip",
+  "frames": 199,
+  "fps": 30.0,
+  "requested_speed": 1.0,
+  "playback_speed": 1.0,
+  "planning_acceleration_cap": null,
+  "acceleration_cap_enabled": false,
+  "constant_rate_peak_joint_velocity": 28.34258794784546,
+  "constant_rate_peak_joint_acceleration": 1700.218015909195,
+  "full_tracking_passed": false,
+  "limitations": [
+    "Clock derivatives are applied online; preparation is not an online acceleration guarantee",
+    "Contact, collision and dynamics feasibility require separate controller checks",
+    "Missing source joint-name metadata remains a loader assumption"
+  ],
+  "motion": "retarget/lafan/walk1_g1.pkl",
+  "contact_source": "retarget/lafan/walk1_g1_with_contacts.pkl",
+  "contact_labels_present": true,
+  "reference_policy": "direct_full_body_pkl",
+  "reduced_model_preview": false,
+  "capture_point_gate": false
+}

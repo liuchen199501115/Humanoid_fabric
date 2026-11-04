@@ -1,0 +1,83 @@
+{
+  "momentum_optimization": {
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_normalized_violation": 3.0508114844560623,
+        "wrench_pass_fraction": 0.7256857855361596,
+        "max_velocity_ratio": 0.5694589018821716
+      },
+      {
+        "iteration": 1,
+        "maximum_normalized_violation": 0.879999704658985,
+        "wrench_pass_fraction": 0.7805486284289277,
+        "max_velocity_ratio": 0.5689626932144165
+      },
+      {
+        "iteration": 2,
+        "maximum_normalized_violation": 0.08068174123764038,
+        "wrench_pass_fraction": 0.9376558603491272,
+        "max_velocity_ratio": 0.5682560801506042
+      }
+    ],
+    "rejected": [
+      {
+        "iteration": 2,
+        "fraction": 0.5,
+        "violation": 0.12283235788345337
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.25,
+        "violation": 0.1017565131187439
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.125,
+        "violation": 0.09121805429458618
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.0625,
+        "violation": 0.08594977855682373
+      }
+    ],
+    "sampled_necessary_constraints_passed": false
+  },
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 0.8,
+  "landing_height": 0.62,
+  "body_smoothing_passes": 4,
+  "sampled_kinematics_passed": true,
+  "sample_count": 401,
+  "requested_samples": 401,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 0.9376558603491272,
+  "outside_physical_sole_fraction": 0.0,
+  "max_joint_velocity_ratio": 0.5682560801506042,
+  "final_com_velocity": [
+    -0.3343696892261505,
+    -0.9331324696540833,
+    4.427247901617193e-08
+  ],
+  "cop_min": [
+    -0.03381500020623207,
+    -0.017458055168390274
+  ],
+  "cop_max": [
+    0.05257613584399223,
+    0.022180907428264618
+  ]
+}

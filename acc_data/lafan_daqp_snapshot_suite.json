@@ -1,0 +1,482 @@
+[
+  {
+    "recording": "acc_data/lafan_aligned_warm_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.001933279912918806,
+    "repeat_seconds": [
+      0.0009837052784860134
+    ],
+    "accepted": true,
+    "physical_residual": 3.218758592993254e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_aligned_warm_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0010994123294949532,
+    "repeat_seconds": [
+      0.0006417711265385151
+    ],
+    "accepted": true,
+    "physical_residual": 3.1778801812265556e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_continuous_landing_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006713620387017727,
+    "repeat_seconds": [
+      0.000634544063359499
+    ],
+    "accepted": true,
+    "physical_residual": 2.770581032380414e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 19
+  },
+  {
+    "recording": "acc_data/lafan_continuous_landing_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007286230102181435,
+    "repeat_seconds": [
+      0.0007257969118654728
+    ],
+    "accepted": true,
+    "physical_residual": 2.2877699734635826e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 38
+  },
+  {
+    "recording": "acc_data/lafan_moving_zmp_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007963101379573345,
+    "repeat_seconds": [
+      0.0006150146946310997
+    ],
+    "accepted": true,
+    "physical_residual": 8.526512829121202e-14,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_moving_zmp_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0009760376997292042,
+    "repeat_seconds": [
+      0.0006301659159362316
+    ],
+    "accepted": true,
+    "physical_residual": 2.844746660457531e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_point_damped_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006307270377874374,
+    "repeat_seconds": [
+      0.0005809799768030643
+    ],
+    "accepted": true,
+    "physical_residual": 3.218758592993254e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_point_damped_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007736729457974434,
+    "repeat_seconds": [
+      0.0006024399772286415
+    ],
+    "accepted": true,
+    "physical_residual": 3.1778801812265556e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006080130115151405,
+    "repeat_seconds": [
+      0.0006812713108956814
+    ],
+    "accepted": true,
+    "physical_residual": 2.1875834477214084e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0012884531170129776,
+    "repeat_seconds": [
+      0.0011602938175201416
+    ],
+    "accepted": true,
+    "physical_residual": 3.3160585388714026e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.000630826223641634,
+    "repeat_seconds": [
+      0.0005940445698797703
+    ],
+    "accepted": true,
+    "physical_residual": 4.516165219570212e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0011596176773309708,
+    "repeat_seconds": [
+      0.0009992369450628757
+    ],
+    "accepted": true,
+    "physical_residual": 3.254285729781259e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_search_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006240508519113064,
+    "repeat_seconds": [
+      0.000585709698498249
+    ],
+    "accepted": true,
+    "physical_residual": 4.516165219570212e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_swing_search_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0009551886469125748,
+    "repeat_seconds": [
+      0.0006205979734659195
+    ],
+    "accepted": true,
+    "physical_residual": 3.254285729781259e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_toe_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006283428519964218,
+    "repeat_seconds": [
+      0.0006157350726425648
+    ],
+    "accepted": true,
+    "physical_residual": 2.5049819532031725e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 14
+  },
+  {
+    "recording": "acc_data/lafan_source_toe_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007201060652732849,
+    "repeat_seconds": [
+      0.0006019119173288345
+    ],
+    "accepted": true,
+    "physical_residual": 1.6610324227173123e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_transfer_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006396239623427391,
+    "repeat_seconds": [
+      0.0005965647287666798
+    ],
+    "accepted": true,
+    "physical_residual": 3.510054469302304e-10,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_source_transfer_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.001034789253026247,
+    "repeat_seconds": [
+      0.000984475016593933
+    ],
+    "accepted": true,
+    "physical_residual": 2.4650503860357276e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.000814222265034914,
+    "repeat_seconds": [
+      0.0006159860640764236
+    ],
+    "accepted": true,
+    "physical_residual": 1.6919798895287386e-13,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0008977320976555347,
+    "repeat_seconds": [
+      0.0006137443706393242
+    ],
+    "accepted": true,
+    "physical_residual": 2.48228104737791e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006242687813937664,
+    "repeat_seconds": [
+      0.0005737491883337498
+    ],
+    "accepted": true,
+    "physical_residual": 3.78810871559665e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007184837013483047,
+    "repeat_seconds": [
+      0.0005886279977858067
+    ],
+    "accepted": true,
+    "physical_residual": 9.239747855716018e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3300.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007590926252305508,
+    "repeat_seconds": [
+      0.0005919360555708408
+    ],
+    "accepted": true,
+    "physical_residual": 2.7400304247748863e-13,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3300.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007641180418431759,
+    "repeat_seconds": [
+      0.0005968292243778706
+    ],
+    "accepted": true,
+    "physical_residual": 1.3703704837553232e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3400.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007395087741315365,
+    "repeat_seconds": [
+      0.0005781329236924648
+    ],
+    "accepted": true,
+    "physical_residual": 1.9344525981068728e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3400.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006895782425999641,
+    "repeat_seconds": [
+      0.0005831192247569561
+    ],
+    "accepted": true,
+    "physical_residual": 2.177236169131902e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3700.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006207269616425037,
+    "repeat_seconds": [
+      0.0005574882961809635
+    ],
+    "accepted": true,
+    "physical_residual": 1.4885870314174099e-12,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_toe_release_500hz_20260923.qp_3700.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006976071745157242,
+    "repeat_seconds": [
+      0.00057643698528409
+    ],
+    "accepted": true,
+    "physical_residual": 2.41193731653766e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0006498908624053001,
+    "repeat_seconds": [
+      0.0006213667802512646
+    ],
+    "accepted": true,
+    "physical_residual": 2.134559196065311e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 21
+  },
+  {
+    "recording": "acc_data/lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0009999461472034454,
+    "repeat_seconds": [
+      0.0006290418095886707
+    ],
+    "accepted": true,
+    "physical_residual": 1.7616130776332284e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_transfer_hysteresis_500hz_20260923.qp_3400.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007501151412725449,
+    "repeat_seconds": [
+      0.0006291433237493038
+    ],
+    "accepted": true,
+    "physical_residual": 4.860556401808935e-13,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_transfer_hysteresis_500hz_20260923.qp_3400.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0007218350656330585,
+    "repeat_seconds": [
+      0.0006080567836761475
+    ],
+    "accepted": true,
+    "physical_residual": 3.395328462829639e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  }
+]

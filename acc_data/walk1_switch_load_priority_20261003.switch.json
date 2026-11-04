@@ -1,0 +1,34 @@
+{
+  "scope": "one_measured_support_switch",
+  "support_switch_passed": true,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "new_support": "right",
+  "old_support_observed": true,
+  "release_time": 14.268,
+  "post_release_duration": 5.73,
+  "final_second": {
+    "min_swing_clearance_m": 0.038274752785800954,
+    "max_swing_force_n": 0.0,
+    "min_stance_force_n": 319.60931396484375,
+    "max_com_error_m": 0.0011235051788389683
+  },
+  "controller_validated": true,
+  "control_rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 10000,
+    "torque_updates": 10000,
+    "maximum_qp_period_error_seconds": 2.444225377651321e-15,
+    "maximum_torque_period_error_seconds": 2.444225377651321e-15,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.003938259091228247,
+    "qp_wall_p99_seconds": 0.005337470802478493,
+    "qp_wall_max_seconds": 0.017242029774934053,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  }
+}

@@ -502,14 +502,15 @@ def main() -> None:
 
             # Recover the four desired end-effector poses from the retargeted
             # reference configuration.
-            fabric.end_effector_pose_taskmap(reference_q, None)
-            end_effector_transforms = (
-                fabric.end_effector_pose_taskmap
-                .robot_kinematics.batch_link_transforms_torch[
-                    :, fabric.end_effector_pose_taskmap.link_indices
-                ]
-                .clone()
-            )
+            group_transforms = []
+            for taskmap in (fabric.feet_pose_taskmap, fabric.hand_pose_taskmap):
+                taskmap(reference_q, None)
+                group_transforms.append(
+                    taskmap.robot_kinematics.batch_link_transforms_torch[
+                        :, taskmap.link_indices
+                    ].clone()
+                )
+            end_effector_transforms = torch.cat(group_transforms, dim=1)
 
             # Update both reference-motion tasks.
             fabric.set_motion_targets(

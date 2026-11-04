@@ -1,0 +1,15 @@
+{
+  "frames": 250,
+  "fps": 50.0,
+  "duration_seconds": 5.0,
+  "checkpoint_step": 10000,
+  "world_heading_deg": 0.0,
+  "generated_joint_clamp_fraction": 0.008620689655172414,
+  "max_root_speed": 2.523324489593506,
+  "max_joint_speed": 7.653594017028809,
+  "root_height_range": [
+    0.5773183107376099,
+    0.7797980904579163
+  ],
+  "physical_tracking_validated": false
+}

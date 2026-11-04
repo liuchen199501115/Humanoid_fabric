@@ -1,0 +1,167 @@
+[
+  {
+    "seed": "source",
+    "height": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00053111464, tolerance=2e-06, saturated_joints=[]"
+  },
+  {
+    "seed": "source",
+    "height": -0.02,
+    "values": [
+      [
+        true,
+        83.13472645242089
+      ],
+      [
+        true,
+        105.83521629031924
+      ],
+      [
+        true,
+        97.18054369636732
+      ],
+      [
+        true,
+        67.96490188625216
+      ],
+      [
+        true,
+        42.195730377196575
+      ],
+      [
+        true,
+        17.8836169786367
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ]
+    ]
+  },
+  {
+    "seed": "source",
+    "height": 0.02,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00029173493, tolerance=2e-06, saturated_joints=[]"
+  },
+  {
+    "seed": "measured",
+    "height": 0.0,
+    "values": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        true,
+        51.810794698921896
+      ],
+      [
+        true,
+        13.040096591058914
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ]
+    ]
+  },
+  {
+    "seed": "measured",
+    "height": -0.02,
+    "values": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        true,
+        51.56669600244562
+      ],
+      [
+        true,
+        13.023901788269619
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ],
+      [
+        true,
+        -0.0
+      ]
+    ]
+  },
+  {
+    "seed": "measured",
+    "height": 0.02,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0012994781, tolerance=2e-06, saturated_joints=[]"
+  }
+]

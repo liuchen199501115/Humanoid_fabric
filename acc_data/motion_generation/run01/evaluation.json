@@ -1,0 +1,15 @@
+{
+  "windows": 128,
+  "checkpoint_step": 10000,
+  "sampling_steps": 50,
+  "normalized_future_mse": 0.44844385981559753,
+  "hold_last_frame_mse": 0.387102872133255,
+  "joint_rmse_radians": 0.18713460862636566,
+  "root_position_rmse_m": 0.06417704373598099,
+  "moving_prediction_fraction": 0.890625,
+  "mean_heading_cosine_moving": 0.8921176791191101,
+  "mean_seam_joint_speed_rad_s": 1.168170478194952,
+  "joint_limit_violation_fraction": 0.004353448275862069,
+  "physical_tracking_validated": false,
+  "note": "Single stochastic sample per window; multiple futures can be valid. Heading cosine excludes <2cm displacement."
+}

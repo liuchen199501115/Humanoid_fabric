@@ -1,0 +1,34 @@
+{
+  "seventh_event": {
+    "step": 7,
+    "swing": "left",
+    "source_frame": 581.2,
+    "time": 2.906,
+    "landing_error_m": 0.0377757102050175,
+    "goal": [
+      4.278519630432129,
+      -0.14150755107402802,
+      0.039208877831697464
+    ],
+    "measured_load_n": 195.09326171875,
+    "source_contact_onset_goal": [
+      4.237865924835205,
+      -0.13226552307605743,
+      0.04355829209089279
+    ]
+  },
+  "peak_verified_unloaded_clearance_m": 0.08585198905337049,
+  "eighth_step": {
+    "step": 8,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 0.01899666475684958,
+    "best_loaded_landing_error_m": 0.6675115823745728,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

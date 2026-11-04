@@ -1,0 +1,40 @@
+[
+  {
+    "event": 5,
+    "time": 1.446,
+    "frame": 289.2,
+    "measured_root_height_deficit_m": 0.050504088401794434,
+    "requested_midpoint_m": 0.10600000000000001,
+    "ik": [
+      {
+        "takeoff_frame": 289,
+        "end_frame": 352,
+        "requested_midpoint_clearance_m": 0.10600000000000001,
+        "feasible_target_m": 0.10600000000000001,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ],
+    "orientation_slack_rad": 0.01,
+    "original_landing_endpoint_preserved": true
+  },
+  {
+    "event": 6,
+    "time": 1.866,
+    "frame": 373.20000000000005,
+    "measured_root_height_deficit_m": 0.0874437689781189,
+    "requested_midpoint_m": 0.10600000000000001,
+    "ik": [
+      {
+        "takeoff_frame": 373,
+        "end_frame": 450,
+        "requested_midpoint_clearance_m": 0.10600000000000001,
+        "feasible_target_m": 0.10600000000000001,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ],
+    "orientation_slack_rad": 0.01,
+    "original_landing_endpoint_preserved": true
+  }
+]

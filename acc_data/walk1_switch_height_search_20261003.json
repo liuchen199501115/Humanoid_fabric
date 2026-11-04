@@ -1,0 +1,41 @@
+[
+  {
+    "height_offset": 0.0,
+    "error": "No transfer inside the support sole satisfies joint braking/limit margins: [{'offset': 0.0, 'reason': 'Transfer joint bound at t=1.1400: right_ankle_roll_joint, violation=0.0324107'}, {'offset': -0.004, 'reason': 'Transfer joint bound at t=0.9800: right_ankle_roll_joint, violation=0.0135768'}, {'offset': 0.004, 'reason': 'Transfer joint bound at t=1.5600: right_ankle_roll_joint, violation=0.0032907'}, {'offset': -0.008, 'reason': 'Transfer joint bound at t=0.8800: right_ankle_roll_joint, violation=0.00775869'}, {'offset': 0.008, 'reason': 'Transfer joint bound at t=2.4000: left_ankle_pitch_joint, violation=0.0801259'}, {'offset': -0.012, 'reason': 'Transfer joint bound at t=0.8200: right_ankle_roll_joint, violation=0.0647323'}, {'offset': 0.012, 'reason': 'Transfer joint bound at t=2.4000: left_ankle_pitch_joint, violation=0.313471'}, {'offset': -0.016, 'reason': 'Transfer joint bound at t=0.7600: right_ankle_roll_joint, violation=0.0544668'}, {'offset': 0.016, 'reason': 'Transfer joint bound at t=2.3800: left_ankle_pitch_joint, violation=0.03492'}, {'offset': -0.019, 'reason': 'Transfer joint bound at t=0.7200: right_ankle_roll_joint, violation=0.032574'}, {'offset': 0.019, 'reason': 'Transfer joint bound at t=2.3800: left_ankle_pitch_joint, violation=0.191224'}]"
+  },
+  {
+    "height_offset": 0.01,
+    "samples": 1502,
+    "sample_dt": 0.002,
+    "max_joint_bound_violation": 0.0,
+    "minimum_terminal_leg_margin": 0.05973951518535614,
+    "support_lateral_offset": 0.008,
+    "rejected": [
+      {
+        "offset": 0.0,
+        "reason": "Transfer joint bound at t=1.2800: right_ankle_roll_joint, violation=0.00558499"
+      },
+      {
+        "offset": -0.004,
+        "reason": "Transfer joint bound at t=1.0600: right_ankle_roll_joint, violation=0.0258804"
+      },
+      {
+        "offset": 0.004,
+        "reason": "Transfer endpoint leaves insufficient joint margin: 0.05146302282810211"
+      },
+      {
+        "offset": -0.008,
+        "reason": "Transfer joint bound at t=0.9400: right_ankle_roll_joint, violation=0.0432515"
+      }
+    ],
+    "sampled_joint_bounds_passed": true
+  },
+  {
+    "height_offset": 0.02,
+    "error": "No transfer inside the support sole satisfies joint braking/limit margins: [{'offset': 0.0, 'reason': 'Transfer joint bound at t=1.2200: left_knee_joint, violation=1.40904'}, {'offset': -0.004, 'reason': 'Transfer joint bound at t=1.1800: right_ankle_roll_joint, violation=0.00451497'}, {'offset': 0.004, 'reason': 'Transfer joint bound at t=1.2400: left_knee_joint, violation=2.86841'}, {'offset': -0.008, 'reason': 'Transfer joint bound at t=1.0000: right_ankle_roll_joint, violation=0.0213159'}, {'offset': 0.008, 'reason': 'Transfer joint bound at t=1.2400: left_knee_joint, violation=0.997796'}, {'offset': -0.012, 'reason': 'Transfer joint bound at t=0.9000: right_ankle_roll_joint, violation=0.0472765'}, {'offset': 0.012, 'reason': 'Transfer joint bound at t=1.2600: left_knee_joint, violation=2.50028'}, {'offset': -0.016, 'reason': 'Transfer joint bound at t=0.8200: right_ankle_roll_joint, violation=0.0352891'}, {'offset': 0.016, 'reason': 'Transfer joint bound at t=1.2600: left_knee_joint, violation=0.846425'}, {'offset': -0.019, 'reason': 'Transfer joint bound at t=0.7800: right_ankle_roll_joint, violation=0.0628063'}, {'offset': 0.019, 'reason': 'Transfer joint bound at t=1.2800: left_knee_joint, violation=2.86815'}]"
+  },
+  {
+    "height_offset": 0.03,
+    "error": "No transfer inside the support sole satisfies joint braking/limit margins: [{'offset': 0.0, 'reason': 'Transfer joint bound at t=1.0200: left_knee_joint, violation=0.573844'}, {'offset': -0.004, 'reason': 'Transfer joint bound at t=1.0200: left_knee_joint, violation=1.71241'}, {'offset': 0.004, 'reason': 'Transfer joint bound at t=1.0400: left_knee_joint, violation=3.56341'}, {'offset': -0.008, 'reason': 'Transfer joint bound at t=1.0200: left_knee_joint, violation=2.9698'}, {'offset': 0.008, 'reason': 'Transfer joint bound at t=1.0400: left_knee_joint, violation=2.39641'}, {'offset': -0.012, 'reason': 'Transfer joint bound at t=0.9600: right_ankle_roll_joint, violation=0.0347209'}, {'offset': 0.012, 'reason': 'Transfer joint bound at t=1.0400: left_knee_joint, violation=1.34918'}, {'offset': -0.016, 'reason': 'Transfer joint bound at t=0.8600: right_ankle_roll_joint, violation=0.0267315'}, {'offset': 0.016, 'reason': 'Transfer joint bound at t=1.0400: left_knee_joint, violation=0.426505'}, {'offset': -0.019, 'reason': 'Transfer joint bound at t=0.8200: right_ankle_roll_joint, violation=0.0869146'}, {'offset': 0.019, 'reason': 'Transfer joint bound at t=1.0600: left_knee_joint, violation=3.77932'}]"
+  }
+]

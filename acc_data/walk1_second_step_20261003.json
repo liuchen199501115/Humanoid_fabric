@@ -1,0 +1,86 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 1.4234804436564443,
+      "wrench_pass_fraction": 0.948069241011984,
+      "max_velocity_ratio": 0.20544858276844025
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.4369172155857086,
+      "wrench_pass_fraction": 0.9893475366178429,
+      "max_velocity_ratio": 0.20524632930755615
+    },
+    {
+      "iteration": 2,
+      "maximum_normalized_violation": 0.2416706532239914,
+      "wrench_pass_fraction": 0.9986684420772304,
+      "max_velocity_ratio": 0.20517130196094513
+    }
+  ],
+  "rejected": [
+    {
+      "iteration": 2,
+      "fraction": 0.5,
+      "violation": 0.24211804568767548
+    },
+    {
+      "iteration": 2,
+      "fraction": 0.25,
+      "violation": 0.24189329147338867
+    },
+    {
+      "iteration": 2,
+      "fraction": 0.125,
+      "violation": 0.24179211258888245
+    },
+    {
+      "iteration": 2,
+      "fraction": 0.0625,
+      "violation": 0.2417127937078476
+    }
+  ],
+  "sampled_necessary_constraints_passed": false,
+  "max_joint_bound_score": 0.2416706532239914,
+  "peak_acceleration_ratio": 0.5636416077613831,
+  "peak_torque_ratio": 0.39032241702079773,
+  "candidate_options": {
+    "duration": 1.5,
+    "landing_height": 0.63,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.45,
+    "landing_fraction": 0.5,
+    "landing_search_depth": 0.004,
+    "terminal_capture": "double_support",
+    "pelvis_pitch_offset": -0.2
+  },
+  "contact_search_depth": 0.004,
+  "contact_search_requires_measured_load": true,
+  "source_landing_pose": [
+    1.6180938482284546,
+    3.4408485889434814,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7072040438652039,
+    0.707009494304657
+  ],
+  "planned_landing_pose": [
+    1.6327927112579346,
+    4.004004001617432,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7072040438652039,
+    0.707009494304657
+  ],
+  "landing_deviation_m": 0.5633472204208374,
+  "scope": "planned_first_source_step",
+  "simulation_validated": false,
+  "full_pkl_tracking": false,
+  "start_frame": 129,
+  "end_frame": 155,
+  "duration": 1.5
+}

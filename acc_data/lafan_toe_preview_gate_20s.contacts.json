@@ -1,0 +1,97 @@
+{
+  "last_time": 7.62,
+  "takeoffs": [
+    {
+      "time": 5.28,
+      "support": 1,
+      "com_target_jump": 0.01248460728675127
+    },
+    {
+      "time": 7.36,
+      "support": 2,
+      "com_target_jump": 0.03355878219008446
+    }
+  ],
+  "commanded_support_partial_contact_onsets": [
+    {
+      "time": 4.74,
+      "foot": "left",
+      "patch": "toe"
+    },
+    {
+      "time": 4.92,
+      "foot": "left",
+      "patch": "toe"
+    },
+    {
+      "time": 5.42,
+      "foot": "left",
+      "patch": "heel"
+    },
+    {
+      "time": 6.04,
+      "foot": "left",
+      "patch": "edge_or_point"
+    },
+    {
+      "time": 6.18,
+      "foot": "left",
+      "patch": "toe"
+    },
+    {
+      "time": 5.2,
+      "foot": "right",
+      "patch": "edge_or_point"
+    },
+    {
+      "time": 7.44,
+      "foot": "right",
+      "patch": "heel"
+    },
+    {
+      "time": 7.48,
+      "foot": "right",
+      "patch": "heel"
+    },
+    {
+      "time": 7.54,
+      "foot": "right",
+      "patch": "heel"
+    }
+  ],
+  "patch_sample_counts": {
+    "left": {
+      "area": 289,
+      "edge_or_point": 5,
+      "heel": 4,
+      "toe": 70,
+      "unloaded": 14
+    },
+    "right": {
+      "area": 332,
+      "edge_or_point": 2,
+      "heel": 8,
+      "toe": 4,
+      "unloaded": 36
+    }
+  },
+  "scope": "Observed loaded contact points (>0.5 N, separation <=1 mm), not planned contacts. Area labels describe sampled point extent, not a guaranteed rigid flat-foot constraint. Contact force buffers are diagnostic; net forces remain the controller observation.",
+  "toe_off": {
+    "active_samples": 60,
+    "maximum_toe_anchor_error": 0.0030382392270224537,
+    "activations": [
+      {
+        "time": 6.16,
+        "foot": 0
+      }
+    ],
+    "releases": [
+      {
+        "time": 7.36,
+        "foot": 0,
+        "old_foot_normal_force": 44.193138122558594,
+        "mode": 2
+      }
+    ]
+  }
+}

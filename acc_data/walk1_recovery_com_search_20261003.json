@@ -1,0 +1,82 @@
+[
+  {
+    "com_fraction": 0.3,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.65,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.3,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.3,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.67,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00031746179, tolerance=2e-06"
+  },
+  {
+    "com_fraction": 0.35,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.65,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.35,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.35,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.67,
+    "pitch": -0.2,
+    "acceleration_violation": 21.827016830444336,
+    "joint": "left_knee_joint"
+  },
+  {
+    "com_fraction": 0.4,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.65,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.4,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "com_fraction": 0.4,
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.67,
+    "pitch": -0.2,
+    "acceleration_violation": 3.9614791870117188,
+    "joint": "left_knee_joint"
+  }
+]

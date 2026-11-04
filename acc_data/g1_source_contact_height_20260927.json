@@ -1,0 +1,61 @@
+[
+  {
+    "time": 5.1,
+    "frame": 129,
+    "source_height": 0.6641499996185303,
+    "results": [
+      {
+        "requested": null,
+        "feasible": true,
+        "height": 0.660746157169342,
+        "joint_rmse": 0.07253561168909073
+      },
+      {
+        "requested": 0.6641499996185303,
+        "feasible": false,
+        "error": "Could not find joint-limited flat-foot reference geometry"
+      },
+      {
+        "requested": 0.6541499996185303,
+        "feasible": true,
+        "height": 0.6541489958763123,
+        "joint_rmse": 0.08631879091262817
+      },
+      {
+        "requested": 0.6441499996185303,
+        "feasible": true,
+        "height": 0.6441586017608643,
+        "joint_rmse": 0.12991949915885925
+      }
+    ]
+  },
+  {
+    "time": 5.95,
+    "frame": 155,
+    "source_height": 0.6601840257644653,
+    "results": [
+      {
+        "requested": null,
+        "feasible": true,
+        "height": 0.645317018032074,
+        "joint_rmse": 0.07843386381864548
+      },
+      {
+        "requested": 0.6601840257644653,
+        "feasible": false,
+        "error": "Could not find joint-limited flat-foot reference geometry"
+      },
+      {
+        "requested": 0.6501840257644653,
+        "feasible": false,
+        "error": "Could not find joint-limited flat-foot reference geometry"
+      },
+      {
+        "requested": 0.6401840257644653,
+        "feasible": true,
+        "height": 0.6401841044425964,
+        "joint_rmse": 0.07733995467424393
+      }
+    ]
+  }
+]

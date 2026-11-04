@@ -1,0 +1,26 @@
+{
+  "priority_level_0_": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "accepted": true,
+    "seconds": 0.002047338057309389,
+    "violation": 5.593676632997813e-10
+  },
+  "priority_level_1_": {
+    "status": [
+      "DAQP 1; KKT polished"
+    ],
+    "accepted": true,
+    "seconds": 0.0026273452676832676,
+    "violation": 5.684341886080802e-14
+  },
+  "problem_": {
+    "status": [
+      "DAQP 1; KKT polished"
+    ],
+    "accepted": true,
+    "seconds": 0.002291562967002392,
+    "violation": 1.7763568394002505e-14
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "control_time": 5.662,
+  "filtered_ground": [
+    [
+      [
+        0.0,
+        0.0,
+        181.0045928955078
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "force_by_ground_collider_N": {
+    "right_ankle_roll_link -> /World/GroundPlane/collisionPlane": 80.96520602703094,
+    "left_ankle_roll_link -> /World/GroundPlane/collisionPlane": 65.3590519214049,
+    "left_ankle_roll_link -> /World/GroundPlane/geom": 181.00460432469845
+  },
+  "cause": "Two coincident active ground colliders; the old filter captured only geom."
+}

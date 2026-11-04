@@ -1,0 +1,122 @@
+[
+  {
+    "forward": 0.0,
+    "lateral": -0.019,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.4400: left_ankle_roll_joint, violation=0.00166187"
+  },
+  {
+    "forward": 0.0,
+    "lateral": -0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0415429"
+  },
+  {
+    "forward": 0.0,
+    "lateral": 0.0,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.8200: left_ankle_roll_joint, violation=0.0101121"
+  },
+  {
+    "forward": 0.0,
+    "lateral": 0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0266524"
+  },
+  {
+    "forward": -0.02,
+    "lateral": -0.019,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.4600: left_ankle_roll_joint, violation=0.00287245"
+  },
+  {
+    "forward": -0.02,
+    "lateral": -0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0308164"
+  },
+  {
+    "forward": -0.02,
+    "lateral": 0.0,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.8200: left_ankle_roll_joint, violation=0.00300246"
+  },
+  {
+    "forward": -0.02,
+    "lateral": 0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0213674"
+  },
+  {
+    "forward": -0.04,
+    "lateral": -0.019,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.4800: left_ankle_roll_joint, violation=0.00461535"
+  },
+  {
+    "forward": -0.04,
+    "lateral": -0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0219734"
+  },
+  {
+    "forward": -0.04,
+    "lateral": 0.0,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.8400: left_ankle_roll_joint, violation=0.105917"
+  },
+  {
+    "forward": -0.04,
+    "lateral": 0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0167555"
+  },
+  {
+    "forward": 0.04,
+    "lateral": -0.019,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.4200: left_ankle_roll_joint, violation=0.0172301"
+  },
+  {
+    "forward": 0.04,
+    "lateral": -0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0665771"
+  },
+  {
+    "forward": 0.04,
+    "lateral": 0.0,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.8200: left_ankle_roll_joint, violation=0.0263507"
+  },
+  {
+    "forward": 0.04,
+    "lateral": 0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0385159"
+  },
+  {
+    "forward": 0.06,
+    "lateral": -0.019,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.4000: left_ankle_roll_joint, violation=0.0108858"
+  },
+  {
+    "forward": 0.06,
+    "lateral": -0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=1.0400: left_ankle_roll_joint, violation=0.0109968"
+  },
+  {
+    "forward": 0.06,
+    "lateral": 0.0,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.8200: left_ankle_roll_joint, violation=0.0353586"
+  },
+  {
+    "forward": 0.06,
+    "lateral": 0.012,
+    "passed": false,
+    "error": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0449903"
+  }
+]

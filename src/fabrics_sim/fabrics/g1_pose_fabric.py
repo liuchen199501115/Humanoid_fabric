@@ -14,10 +14,12 @@ from fabrics_sim.taskmaps.g1_end_effector_pose_taskmap import (
 from fabrics_sim.fabric_terms.g1_end_effector_pose_attractor import (
     G1EndEffectorPoseAttractor,
 )
+from fabrics_sim.taskmaps.g1_center_of_mass import G1CenterOfMassTaskMap
+from fabrics_sim.fabric_terms.center_of_mass import CenterOfMassAttractor
 
 
 class G1PoseFabric(BaseFabric):
-    """Whole-body G1 reference-motion Fabric with two tracking tasks."""
+    """Whole-body G1 Fabric with pelvis, COM, feet and hand tasks."""
 
     NUM_ACTUATED_JOINTS = 29
     CONFIGURATION_DIMENSION = 7 + NUM_ACTUATED_JOINTS
@@ -43,8 +45,9 @@ class G1PoseFabric(BaseFabric):
         frame_groups: dict[
             str, tuple[str, str, str, str]
         ] | None = None,
+        task_profile: str = "legacy",
     ):
-        """Construct the two-task G1 Fabric.
+        """Construct the whole-body G1 Fabric.
 
         Args:
             batch_size:
@@ -67,6 +70,11 @@ class G1PoseFabric(BaseFabric):
             raise ValueError("batch_size must be positive.")
         if timestep <= 0.0:
             raise ValueError("timestep must be positive.")
+        if task_profile not in ("legacy", "dynamics-aware"):
+            raise ValueError("task_profile must be legacy or dynamics-aware.")
+        if task_profile == "dynamics-aware" and graph_capturable:
+            raise ValueError("Dynamics-aware task evaluation does not yet support CUDA graph capture.")
+        self.task_profile = task_profile
 
         self.control_timestep = float(timestep)
         self.robot_dir_name = robot_dir_name
@@ -97,8 +105,47 @@ class G1PoseFabric(BaseFabric):
 
         self._check_floating_base_support()
 
-        # Register both tracking tasks exactly once.
+        # Register all tracking tasks exactly once.
         self.construct_fabric()
+        self.dynamics_tasks = None
+        if task_profile == "dynamics-aware":
+            from fabrics_sim.fabrics.dynamics_aware import DynamicsAwareTasks
+            self.dynamics_tasks = DynamicsAwareTasks(self)
+
+    def compute_task_requests(self, q, qd):
+        """Physical acceleration/momentum-rate intentions for task-level WBC."""
+        self._validate_state(q, qd)
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Task requests require task_profile='dynamics-aware'.")
+        return self.dynamics_tasks.compute(q, qd)
+
+    def set_contact_state(self, active):
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Contact gating requires the dynamics-aware profile.")
+        self.dynamics_tasks.set_contact_state(active)
+
+    def set_centroidal_momentum_target(self, reference, reference_rate=None):
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Momentum tracking requires the dynamics-aware profile.")
+        self.dynamics_tasks.set_momentum_target(reference, reference_rate)
+
+    def set_body_orientation_target(self, quaternion_xyzw, omega_ref=None, alpha_ref=None, link="pelvis"):
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Body orientation requests require the dynamics-aware profile.")
+        self.dynamics_tasks.set_body_target(quaternion_xyzw, omega_ref, alpha_ref, link)
+
+    def set_collision_obstacles(self, spheres):
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Collision requests require the dynamics-aware profile.")
+        self.dynamics_tasks.set_obstacles(spheres)
+
+    def set_hand_task_active(self, active):
+        if self.dynamics_tasks is None:
+            raise RuntimeError("Hand gating requires the dynamics-aware profile.")
+        mask = self.dynamics_tasks.hand_active
+        if active.shape != mask.shape or active.device != mask.device or active.dtype != torch.bool:
+            raise ValueError("Hand activation must be boolean [B,2] on the model device.")
+        mask.copy_(active)
 
     def _check_floating_base_support(self) -> None:
         """Fail early when this is run with the original fixed-base class."""
@@ -163,21 +210,49 @@ class G1PoseFabric(BaseFabric):
             pelvis_term,
         )
 
-    def add_end_effector_pose_task(self) -> None:
-        """Add the unified 24-D feet-and-hands SE(3) tracking task."""
-        taskmap_name = "end_effector_pose"
-        fabric_name = "end_effector_pose_attractor"
+    def add_center_of_mass_task(self) -> None:
+        """Add whole-body COM tracking using URDF link inertial data."""
+        taskmap_name = "center_of_mass"
+        fabric_name = "center_of_mass_attractor"
+        self.center_of_mass_taskmap = G1CenterOfMassTaskMap(
+            urdf_path=self.urdf_path,
+            batch_size=self.batch_size,
+            device=self.device,
+        )
+        self.add_taskmap(
+            taskmap_name,
+            self.center_of_mass_taskmap,
+            graph_capturable=self.graph_capturable,
+        )
+        self.add_fabric(
+            taskmap_name,
+            fabric_name,
+            CenterOfMassAttractor(
+                is_forcing_policy=True,
+                params=self.fabric_params[fabric_name],
+                device=self.device,
+                graph_capturable=self.graph_capturable,
+            ),
+        )
 
-        self.end_effector_pose_taskmap = G1EndEffectorPoseTaskMap(
+    def _add_end_effector_group_task(
+        self,
+        taskmap_name: str,
+        fabric_name: str,
+        end_effector_order: tuple[str, str],
+    ) -> G1EndEffectorPoseTaskMap:
+        """Add one independent 12-D two-end-effector SE(3) task."""
+        taskmap = G1EndEffectorPoseTaskMap(
             urdf_path=self.urdf_path,
             batch_size=self.batch_size,
             device=self.device,
             frame_groups=self.end_effector_frame_groups,
+            end_effector_order=end_effector_order,
         )
 
         self.add_taskmap(
             taskmap_name,
-            self.end_effector_pose_taskmap,
+            taskmap,
             graph_capturable=self.graph_capturable,
         )
 
@@ -193,22 +268,71 @@ class G1PoseFabric(BaseFabric):
             fabric_name,
             end_effector_term,
         )
+        return taskmap
+
+    def add_feet_pose_task(self) -> None:
+        """Add the independent 12-D left/right-foot pose task."""
+        self.feet_pose_taskmap = self._add_end_effector_group_task(
+            "feet_pose",
+            "feet_pose_attractor",
+            ("left_foot", "right_foot"),
+        )
+
+    def add_hand_pose_task(self) -> None:
+        """Add the independent 12-D left/right-hand pose task."""
+        self.hand_pose_taskmap = self._add_end_effector_group_task(
+            "hand_pose",
+            "hand_pose_attractor",
+            ("left_hand", "right_hand"),
+        )
 
     def construct_fabric(self) -> None:
-        """Register the two tracking tasks.
+        """Register pelvis, COM, feet and hand tracking tasks.
 
         This function is called once from ``__init__``. Do not call it in the
         50 Hz control loop.
         """
         self.add_pelvis_pose_task()
-        self.add_end_effector_pose_task()
+        self.add_center_of_mass_task()
+        self.add_feet_pose_task()
+        self.add_hand_pose_task()
+        self.add_joint_posture_task()
         self.add_root_regularizer()
+
+    def add_joint_posture_task(self) -> None:
+        from fabrics_sim.taskmaps.joint_posture import JointPostureTaskMap
+        from fabrics_sim.fabric_terms.joint_posture import JointPostureAttractor
+
+        self.joint_posture_taskmap = JointPostureTaskMap(self.batch_size, self.device)
+        self.add_taskmap("joint_posture", self.joint_posture_taskmap,
+                         graph_capturable=self.graph_capturable)
+        self.joint_posture_term = JointPostureAttractor(
+            is_forcing_policy=True,
+            params=self.fabric_params["joint_posture_attractor"],
+            device=self.device, graph_capturable=self.graph_capturable,
+        )
+        # Other users of G1PoseFabric retain the previous behavior until
+        # they explicitly provide a joint posture target.
+        self.joint_posture_term.params["toggle"] = 0.0
+        self.add_fabric("joint_posture", "joint_posture_attractor", self.joint_posture_term)
+
+    def set_joint_posture_target(self, position, velocity=None, acceleration=None) -> None:
+        self.joint_posture_taskmap.set_target(position)
+        if velocity is not None and (velocity.shape != position.shape or not torch.isfinite(velocity).all()):
+            raise ValueError("Joint velocity target must be finite and match position shape.")
+        if acceleration is not None and (acceleration.shape != position.shape or not torch.isfinite(acceleration).all()):
+            raise ValueError("Joint acceleration target must be finite and match position shape.")
+        self.fabrics_features["joint_posture"]["joint_posture_attractor"] = velocity if acceleration is None else {
+            "velocity": torch.zeros_like(position) if velocity is None else velocity,
+            "acceleration": acceleration,
+        }
+        self.joint_posture_term.params["toggle"] = 1.0
 
     def add_root_regularizer(self) -> None:
         """Keep the 35-D pullback metric invertible.
 
-        The two tracking tasks have only 30 task dimensions in total, so their
-        combined 35-D pullback cannot be full rank without regularization.
+        The tracking-task pullback is not guaranteed to be full rank in the
+        35-D tangent space, so retain a small isotropic regularizer.
         """
         from fabrics_sim.fabric_terms.isotropic_inertia import IsotropicInertia
         from fabrics_sim.taskmaps.floating_base_identity import (
@@ -268,12 +392,39 @@ class G1PoseFabric(BaseFabric):
     # ------------------------------------------------------------------
     # Target updates
     # ------------------------------------------------------------------
+    def set_center_of_mass_target(
+        self,
+        position_target: torch.Tensor,
+        velocity_target: torch.Tensor | None = None,
+        acceleration_target: torch.Tensor | None = None,
+    ) -> None:
+        """Set world-frame COM position, velocity and acceleration references."""
+        expected = (self.batch_size, 3)
+        if tuple(position_target.shape) != expected:
+            raise ValueError(f"position_target must be {expected}.")
+        if velocity_target is not None and tuple(velocity_target.shape) != expected:
+            raise ValueError(f"velocity_target must be {expected}.")
+        if acceleration_target is not None and tuple(acceleration_target.shape) != expected:
+            raise ValueError(f"acceleration_target must be {expected}.")
+        self.center_of_mass_taskmap.set_target(position_target)
+        self.fabrics_features["center_of_mass"]["center_of_mass_attractor"] = (
+            velocity_target if acceleration_target is None else {
+                "velocity": torch.zeros_like(position_target) if velocity_target is None else velocity_target,
+                "acceleration": acceleration_target,
+            })
+
+    def compute_center_of_mass(self, q: torch.Tensor) -> torch.Tensor:
+        """Compute the G1 whole-body COM represented by the Fabric URDF."""
+        return self.center_of_mass_taskmap.compute_position(q)
+
     def set_pelvis_target(
         self,
         pelvis_position_target: torch.Tensor,
         pelvis_quaternion_target_xyzw: torch.Tensor,
         pelvis_linear_velocity_target: torch.Tensor | None = None,
         pelvis_angular_velocity_target: torch.Tensor | None = None,
+        pelvis_linear_acceleration_target: torch.Tensor | None = None,
+        pelvis_angular_acceleration_target: torch.Tensor | None = None,
     ) -> None:
         """Update the retargeted pelvis reference.
 
@@ -306,15 +457,28 @@ class G1PoseFabric(BaseFabric):
             orientation_target=pelvis_quaternion_target_xyzw,
         )
 
-        if (
-            pelvis_linear_velocity_target is None
-            and pelvis_angular_velocity_target is None
-        ):
+        references = (
+            pelvis_linear_velocity_target,
+            pelvis_angular_velocity_target,
+            pelvis_linear_acceleration_target,
+            pelvis_angular_acceleration_target,
+        )
+        if all(value is None for value in references):
             target_twist = None
         elif (
             pelvis_linear_velocity_target is not None
             and pelvis_angular_velocity_target is not None
+            and pelvis_linear_acceleration_target is None
+            and pelvis_angular_acceleration_target is None
         ):
+            if tuple(pelvis_linear_velocity_target.shape) != expected_position:
+                raise ValueError(f"pelvis_linear_velocity_target must be {expected_position}.")
+            if tuple(pelvis_angular_velocity_target.shape) != expected_position:
+                raise ValueError(f"pelvis_angular_velocity_target must be {expected_position}.")
+            target_twist = torch.cat(
+                (pelvis_linear_velocity_target, pelvis_angular_velocity_target), dim=-1
+            )
+        elif all(value is not None for value in references):
             if tuple(pelvis_linear_velocity_target.shape) != expected_position:
                 raise ValueError(
                     "pelvis_linear_velocity_target must be "
@@ -325,16 +489,17 @@ class G1PoseFabric(BaseFabric):
                     "pelvis_angular_velocity_target must be "
                     f"{expected_position}."
                 )
-            target_twist = torch.cat(
-                (
-                    pelvis_linear_velocity_target,
-                    pelvis_angular_velocity_target,
-                ),
-                dim=-1,
-            )
+            if tuple(pelvis_linear_acceleration_target.shape) != expected_position:
+                raise ValueError("pelvis_linear_acceleration_target must be (batch_size, 3).")
+            if tuple(pelvis_angular_acceleration_target.shape) != expected_position:
+                raise ValueError("pelvis_angular_acceleration_target must be (batch_size, 3).")
+            target_twist = {
+                "velocity": torch.cat((pelvis_linear_velocity_target, pelvis_angular_velocity_target), dim=-1),
+                "acceleration": torch.cat((pelvis_linear_acceleration_target, pelvis_angular_acceleration_target), dim=-1),
+            }
         else:
             raise ValueError(
-                "Provide both pelvis target velocities or neither one."
+                "Provide pelvis target velocity and acceleration references together."
             )
 
         self.fabrics_features["pelvis_pose"][
@@ -347,6 +512,8 @@ class G1PoseFabric(BaseFabric):
         quaternion_target_xyzw: torch.Tensor,
         linear_velocity_target: torch.Tensor | None = None,
         angular_velocity_target: torch.Tensor | None = None,
+        linear_acceleration_target: torch.Tensor | None = None,
+        angular_acceleration_target: torch.Tensor | None = None,
     ) -> None:
         """Update feet-and-hands retargeting references.
 
@@ -373,47 +540,142 @@ class G1PoseFabric(BaseFabric):
                 f"got {tuple(quaternion_target_xyzw.shape)}."
             )
 
-        self.end_effector_pose_taskmap.set_target(
-            position_target=position_target,
-            quaternion_target_xyzw=quaternion_target_xyzw,
+        references = (
+            linear_velocity_target, angular_velocity_target,
+            linear_acceleration_target, angular_acceleration_target,
+        )
+        velocity_only = (
+            linear_velocity_target is not None and angular_velocity_target is not None
+            and linear_acceleration_target is None and angular_acceleration_target is None
+        )
+        if not (all(value is None for value in references) or velocity_only or all(value is not None for value in references)):
+            raise ValueError(
+                "Provide all end-effector velocity and acceleration references or neither."
+            )
+        if linear_velocity_target is not None:
+            if tuple(linear_velocity_target.shape) != expected_position:
+                raise ValueError(f"linear_velocity_target must be {expected_position}.")
+            if tuple(angular_velocity_target.shape) != expected_position:
+                raise ValueError(f"angular_velocity_target must be {expected_position}.")
+            if linear_acceleration_target is not None:
+                if tuple(linear_acceleration_target.shape) != expected_position:
+                    raise ValueError(f"linear_acceleration_target must be {expected_position}.")
+                if tuple(angular_acceleration_target.shape) != expected_position:
+                    raise ValueError(f"angular_acceleration_target must be {expected_position}.")
+
+        self.set_feet_targets(
+            position_target[:, :2], quaternion_target_xyzw[:, :2],
+            None if linear_velocity_target is None else linear_velocity_target[:, :2],
+            None if angular_velocity_target is None else angular_velocity_target[:, :2],
+            None if linear_acceleration_target is None else linear_acceleration_target[:, :2],
+            None if angular_acceleration_target is None else angular_acceleration_target[:, :2],
+        )
+        self.set_hand_targets(
+            position_target[:, 2:], quaternion_target_xyzw[:, 2:],
+            None if linear_velocity_target is None else linear_velocity_target[:, 2:],
+            None if angular_velocity_target is None else angular_velocity_target[:, 2:],
+            None if linear_acceleration_target is None else linear_acceleration_target[:, 2:],
+            None if angular_acceleration_target is None else angular_acceleration_target[:, 2:],
         )
 
-        if (
-            linear_velocity_target is None
-            and angular_velocity_target is None
-        ):
+    def _set_group_targets(
+        self, task_name, fabric_name, taskmap, position_target,
+        quaternion_target_xyzw, linear_velocity_target=None,
+        angular_velocity_target=None, linear_acceleration_target=None,
+        angular_acceleration_target=None,
+    ) -> None:
+        expected_position = (self.batch_size, 2, 3)
+        expected_quaternion = (self.batch_size, 2, 4)
+        if tuple(position_target.shape) != expected_position:
+            raise ValueError(f"position_target must be {expected_position}.")
+        if tuple(quaternion_target_xyzw.shape) != expected_quaternion:
+            raise ValueError(f"quaternion_target_xyzw must be {expected_quaternion}.")
+        taskmap.set_target(position_target, quaternion_target_xyzw)
+        references = (linear_velocity_target, angular_velocity_target,
+                      linear_acceleration_target, angular_acceleration_target)
+        if all(value is None for value in references):
             target_twist = None
         elif (
             linear_velocity_target is not None
             and angular_velocity_target is not None
+            and linear_acceleration_target is None
+            and angular_acceleration_target is None
         ):
             if tuple(linear_velocity_target.shape) != expected_position:
-                raise ValueError(
-                    "linear_velocity_target must be "
-                    f"{expected_position}."
-                )
+                raise ValueError(f"linear_velocity_target must be {expected_position}.")
             if tuple(angular_velocity_target.shape) != expected_position:
-                raise ValueError(
-                    "angular_velocity_target must be "
-                    f"{expected_position}."
-                )
-
-            # (B, 4, 3) + (B, 4, 3) -> (B, 4, 6) -> (B, 24)
+                raise ValueError(f"angular_velocity_target must be {expected_position}.")
             target_twist = torch.cat(
-                (
-                    linear_velocity_target,
-                    angular_velocity_target,
-                ),
-                dim=-1,
-            ).reshape(self.batch_size, 24)
+                (linear_velocity_target, angular_velocity_target), dim=-1
+            ).reshape(self.batch_size, 12)
+        elif all(value is not None for value in references):
+            if tuple(linear_velocity_target.shape) != expected_position:
+                raise ValueError(f"linear_velocity_target must be {expected_position}.")
+            if tuple(angular_velocity_target.shape) != expected_position:
+                raise ValueError(f"angular_velocity_target must be {expected_position}.")
+            if tuple(linear_acceleration_target.shape) != expected_position:
+                raise ValueError(f"linear_acceleration_target must be {expected_position}.")
+            if tuple(angular_acceleration_target.shape) != expected_position:
+                raise ValueError(f"angular_acceleration_target must be {expected_position}.")
+            target_twist = {
+                "velocity": torch.cat((linear_velocity_target, angular_velocity_target), dim=-1).reshape(self.batch_size, 12),
+                "acceleration": torch.cat((linear_acceleration_target, angular_acceleration_target), dim=-1).reshape(self.batch_size, 12),
+            }
         else:
-            raise ValueError(
-                "Provide both end-effector target velocities or neither one."
-            )
+            raise ValueError("Provide all group velocity and acceleration references or neither.")
+        self.fabrics_features[task_name][fabric_name] = target_twist
 
-        self.fabrics_features["end_effector_pose"][
-            "end_effector_pose_attractor"
-        ] = target_twist
+    def set_feet_targets(self, position_target, quaternion_target_xyzw,
+                         linear_velocity_target=None, angular_velocity_target=None,
+                         linear_acceleration_target=None, angular_acceleration_target=None):
+        """Update the independent left/right-foot tracking references."""
+        self._set_group_targets(
+            "feet_pose", "feet_pose_attractor", self.feet_pose_taskmap,
+            position_target, quaternion_target_xyzw,
+            linear_velocity_target, angular_velocity_target,
+            linear_acceleration_target, angular_acceleration_target,
+        )
+
+    def anchor_support_feet(self, anchors, active):
+        """Replace planted-foot references, preserving every swing-foot reference.
+
+        Call after setting motion targets and refreshing touchdown anchors.
+        Anchors are world-frame xyz + xyzw, shaped (batch, 2, 7).
+        """
+        if tuple(anchors.shape) != (self.batch_size, 2, 7):
+            raise ValueError("anchors must have shape (batch_size, 2, 7).")
+        if tuple(active.shape) != (self.batch_size, 2) or active.dtype != torch.bool:
+            raise ValueError("active must be a boolean (batch_size, 2) tensor.")
+        if not torch.isfinite(anchors).all():
+            raise ValueError("anchors must be finite.")
+        mask = active.unsqueeze(-1)
+        position = torch.where(mask, anchors[..., :3], self.feet_pose_taskmap.position_target)
+        quaternion = torch.where(mask, anchors[..., 3:], self.feet_pose_taskmap.quaternion_target)
+        features = self.fabrics_features["feet_pose"]["feet_pose_attractor"]
+        velocity = features.get("velocity") if isinstance(features, dict) else features
+        acceleration = features.get("acceleration") if isinstance(features, dict) else None
+
+        def masked_parts(reference):
+            if reference is None:
+                return None, None
+            reference = reference.reshape(self.batch_size, 2, 6)
+            reference = torch.where(mask, torch.zeros_like(reference), reference)
+            return reference[..., :3], reference[..., 3:]
+
+        linear_v, angular_v = masked_parts(velocity)
+        linear_a, angular_a = masked_parts(acceleration)
+        self.set_feet_targets(position, quaternion, linear_v, angular_v, linear_a, angular_a)
+
+    def set_hand_targets(self, position_target, quaternion_target_xyzw,
+                         linear_velocity_target=None, angular_velocity_target=None,
+                         linear_acceleration_target=None, angular_acceleration_target=None):
+        """Update the independent left/right-hand tracking references."""
+        self._set_group_targets(
+            "hand_pose", "hand_pose_attractor", self.hand_pose_taskmap,
+            position_target, quaternion_target_xyzw,
+            linear_velocity_target, angular_velocity_target,
+            linear_acceleration_target, angular_acceleration_target,
+        )
 
     def set_motion_targets(
         self,
@@ -425,8 +687,12 @@ class G1PoseFabric(BaseFabric):
         pelvis_angular_velocity_target: torch.Tensor | None = None,
         end_effector_linear_velocity_target: torch.Tensor | None = None,
         end_effector_angular_velocity_target: torch.Tensor | None = None,
+        pelvis_linear_acceleration_target: torch.Tensor | None = None,
+        pelvis_angular_acceleration_target: torch.Tensor | None = None,
+        end_effector_linear_acceleration_target: torch.Tensor | None = None,
+        end_effector_angular_acceleration_target: torch.Tensor | None = None,
     ) -> None:
-        """Update both tracking tasks in one control-loop call."""
+        """Update pelvis, feet and hand tracking tasks in one call."""
         self.set_pelvis_target(
             pelvis_position_target=pelvis_position_target,
             pelvis_quaternion_target_xyzw=(
@@ -438,6 +704,8 @@ class G1PoseFabric(BaseFabric):
             pelvis_angular_velocity_target=(
                 pelvis_angular_velocity_target
             ),
+            pelvis_linear_acceleration_target=pelvis_linear_acceleration_target,
+            pelvis_angular_acceleration_target=pelvis_angular_acceleration_target,
         )
 
         self.set_end_effector_targets(
@@ -451,6 +719,8 @@ class G1PoseFabric(BaseFabric):
             angular_velocity_target=(
                 end_effector_angular_velocity_target
             ),
+            linear_acceleration_target=end_effector_linear_acceleration_target,
+            angular_acceleration_target=end_effector_angular_acceleration_target,
         )
 
     # ------------------------------------------------------------------
@@ -488,6 +758,19 @@ class G1PoseFabric(BaseFabric):
         canonical acceleration is therefore ``qdd = -M_inv @ f``.
         """
         self._validate_state(q, qd)
+        if self.dynamics_tasks is not None:
+            requests = self.compute_task_requests(q, qd)
+            metric = self.dynamics_tasks.config["regularization"] * torch.eye(
+                35, device=q.device, dtype=q.dtype).expand(q.shape[0], -1, -1).clone()
+            force = torch.zeros_like(qd)
+            for request in requests:
+                task_metric, task_force = request.natural_form()
+                metric += task_metric
+                force += task_force
+            acceleration = torch.linalg.solve(metric, -force.unsqueeze(-1)).squeeze(-1)
+            if not torch.isfinite(acceleration).all():
+                raise FloatingPointError("Dynamics-aware acceleration contains NaN or Inf.")
+            return acceleration
         dt = self.control_timestep if timestep is None else float(timestep)
 
         metric, force, metric_inverse = self.forward(q, qd, dt)

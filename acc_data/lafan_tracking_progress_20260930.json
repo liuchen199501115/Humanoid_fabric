@@ -1,0 +1,51 @@
+{
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "source_frames": 7839,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "physical_experiment": {
+    "final_source_frame": 129.0,
+    "right_foot_clearance_m": 0.028629667640198024,
+    "right_foot_force_n": 0.0,
+    "max_com_tracking_error_m": 0.014241315424442291,
+    "simulation_500hz_passed": true,
+    "real_time_500hz_passed": false
+  },
+  "baseline_landing_clearance_m": 0.02326288272393867,
+  "candidate_inverse_dynamics_passed": true,
+  "candidate_runtime_reference_bounds_passed": false,
+  "candidate_max_acceleration_ratio": 1.9693312644958496,
+  "worst_joint_bound": {
+    "acceleration_ratio": 1.9067362546920776,
+    "joint_bound_violation": 151.22848510742188,
+    "worst_joint_bound": "right_knee_joint",
+    "time": 1.27,
+    "torque_ratio": 0.5087085962295532,
+    "worst_joint": "right_hip_pitch_joint",
+    "wrench_violation": 0.0,
+    "friction_violation": 0.0,
+    "normal_force_violation": 0.0,
+    "cop_violation": 0.0,
+    "yaw_violation": 0.0,
+    "swing_clearance": 0.0020212866365909576,
+    "base_residual": 1.1920928955078125e-07,
+    "contact_velocity": 2.4586915969848633e-07,
+    "contact_acceleration": 5.21540641784668e-07
+  },
+  "changes": [
+    "Add actual torque, full wrench cone, acceleration and measured-joint braking bounds to source-step preflight",
+    "Preserve checked reference feedforward while limiting feedback; opt-in for source-step experiment",
+    "Require observed lift and measured flat loaded touchdown; no fictitious contact",
+    "Restore normal acceleration limit in launcher after higher-limit experiment also failed"
+  ],
+  "remaining": [
+    "Find whole-body reference that satisfies current joint braking/limit constraints",
+    "Plan measured landing and outgoing-foot release with continuous q/v/a",
+    "Validate alternating support and all source frames"
+  ],
+  "records": [
+    "acc_data/lafan_source_step_physical_retry_20260930.reference_failure.npz",
+    "acc_data/lafan_source_step_feedforward_20260930.reference_failure.npz",
+    "acc_data/lafan_full_dynamics_1p3_20260930.dynamics.json"
+  ]
+}

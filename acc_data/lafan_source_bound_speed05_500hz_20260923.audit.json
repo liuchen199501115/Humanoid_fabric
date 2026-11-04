@@ -1,0 +1,41 @@
+{
+  "failure_time": 10.068,
+  "reason": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 11]], position=[-0.25185737013816833], velocity=[-0.16650985181331635], minimum_acceleration=[97.60474395751953], maximum_acceleration=[32.338226318359375].",
+  "tracking": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 135.25526709060398,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.46918073296546936,
+    "peak_root_position_error": 0.26724255084991455,
+    "peak_root_orientation_error": 1.233439083675189,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 5034,
+    "torque_updates": 5034,
+    "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.0019899241160601377,
+    "qp_wall_p99_seconds": 0.0037283113226294516,
+    "qp_wall_max_seconds": 0.02652059542015195,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  }
+}

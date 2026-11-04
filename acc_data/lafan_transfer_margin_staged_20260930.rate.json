@@ -1,0 +1,17 @@
+{
+  "qp_hz": 500,
+  "torque_hz": 500,
+  "qp_updates": 6000,
+  "torque_updates": 6000,
+  "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+  "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+  "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+  "torque_uses_expected_qp_updates": true,
+  "simulation_rate_passed": true,
+  "qp_wall_time_valid": true,
+  "qp_wall_median_seconds": 0.010219803545624018,
+  "qp_wall_p99_seconds": 1.2757336500613108,
+  "qp_wall_max_seconds": 2.6768341548740864,
+  "all_qp_solves_within_period": false,
+  "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+}

@@ -1,0 +1,8 @@
+{
+  "monotonic": true,
+  "rate_bounds": true,
+  "exact_partition": true,
+  "derivative_consistency": true,
+  "velocity_error": 3.3345119732075545e-07,
+  "acceleration_error": 6.786141000247881e-06
+}

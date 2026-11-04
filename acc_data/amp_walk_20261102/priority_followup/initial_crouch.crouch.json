@@ -1,0 +1,12 @@
+{
+  "depth_m": 0.025,
+  "start_frame": -60,
+  "ramp_frames": 60,
+  "end_frame": 700,
+  "max_pose_ik_residual": 1.9997358322143555e-05,
+  "peak_joint_rmse_rad": 0.1753813624382019,
+  "feet_positions_preserved": true,
+  "max_relaxed_orientation_rad": 0.001659328700043261,
+  "relaxed_orientation_samples": 66,
+  "source_unchanged": true
+}

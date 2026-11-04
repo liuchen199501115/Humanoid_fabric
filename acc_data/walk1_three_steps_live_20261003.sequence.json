@@ -1,0 +1,73 @@
+{
+  "scope": "3_adapted_source_steps",
+  "sequence_passed": true,
+  "expected_steps": 3,
+  "expected_end_frame": 176.0,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "landings": [
+    {
+      "step": 1,
+      "swing": "right",
+      "time": 11.662,
+      "source_frame": 128.79243412969527,
+      "adapted_landing_error_m": 0.005392012199259021,
+      "original_landing_error_m": 0.2558538336026881,
+      "maximum_swing_clearance_m": 0.06107126708633586,
+      "measured_load_n": 54.5667839050293,
+      "single_support_observed": true
+    },
+    {
+      "step": 2,
+      "swing": "left",
+      "time": 19.124,
+      "source_frame": 154.58146686856867,
+      "adapted_landing_error_m": 0.008369763968567066,
+      "original_landing_error_m": 0.6843761885225986,
+      "maximum_swing_clearance_m": 0.03865475824219174,
+      "measured_load_n": 128.3663787841797,
+      "single_support_observed": true
+    },
+    {
+      "step": 3,
+      "swing": "right",
+      "time": 26.674,
+      "source_frame": 175.6619540100191,
+      "adapted_landing_error_m": 0.008615255694188428,
+      "original_landing_error_m": 1.041376868434022,
+      "maximum_swing_clearance_m": 0.029907552129589017,
+      "measured_load_n": 56.72121810913086,
+      "single_support_observed": true
+    }
+  ],
+  "final_source_frame": 176.0,
+  "source_clock_monotonic": true,
+  "minimum_source_frame_increment": 0.0,
+  "stopped_hold_duration_s": 4.778000000000002,
+  "final_second": {
+    "minimum_foot_loads_n": [
+      59.13352584838867,
+      253.14364624023438
+    ],
+    "maximum_com_error_m": 0.0011378978379070759,
+    "maximum_com_speed_m_s": 0.000717734967398582
+  },
+  "qp_and_servo_validated": true,
+  "control_rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 16000,
+    "torque_updates": 16000,
+    "maximum_qp_period_error_seconds": 2.444225377651321e-15,
+    "maximum_torque_period_error_seconds": 2.444225377651321e-15,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.004896880593150854,
+    "qp_wall_p99_seconds": 0.005553038269281388,
+    "qp_wall_max_seconds": 0.009004601743072271,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  }
+}

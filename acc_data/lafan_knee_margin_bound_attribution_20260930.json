@@ -1,0 +1,54 @@
+{
+  "scope": "offline_bound_diagnostic_only",
+  "runtime_bounds_changed": false,
+  "rows": [
+    {
+      "braking_acceleration": 5.0,
+      "barrier_bandwidth": null,
+      "max_violation": 37.694522857666016,
+      "joint": "right_ankle_pitch_joint",
+      "time": 1.28375,
+      "q": 0.09228558838367462,
+      "v": -3.1515018939971924,
+      "a": -32.69452667236328,
+      "lo": 4.999995231628418,
+      "hi": 2602.0478515625
+    },
+    {
+      "braking_acceleration": 5.0,
+      "barrier_bandwidth": 8.0,
+      "max_violation": 37.694522857666016,
+      "joint": "right_ankle_pitch_joint",
+      "time": 1.28375,
+      "q": 0.09228558838367462,
+      "v": -3.1515018939971924,
+      "a": -32.69452667236328,
+      "lo": 4.999995231628418,
+      "hi": 74.8281478881836
+    },
+    {
+      "braking_acceleration": 20.0,
+      "barrier_bandwidth": 8.0,
+      "max_violation": 31.129322052001953,
+      "joint": "right_ankle_pitch_joint",
+      "time": 1.2675,
+      "q": 0.1381499171257019,
+      "v": -2.4361135959625244,
+      "a": -53.643978118896484,
+      "lo": -22.51465606689453,
+      "hi": 60.446617126464844
+    },
+    {
+      "braking_acceleration": 20.0,
+      "barrier_bandwidth": 16.0,
+      "max_violation": 4.592128753662109,
+      "joint": "left_ankle_pitch_joint",
+      "time": 1.25125,
+      "q": -0.8007074594497681,
+      "v": -0.3592248260974884,
+      "a": 1.2806720733642578,
+      "lo": 5.872800827026367,
+      "hi": 337.7178955078125
+    }
+  ]
+}

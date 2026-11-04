@@ -1,0 +1,39 @@
+{
+  "tracking": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 134.27035320178538,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.21787714958190918,
+    "peak_root_position_error": 0.14679768681526184,
+    "peak_root_orientation_error": 0.15213643343761077,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "cadence": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 3002,
+    "torque_updates": 3002,
+    "maximum_qp_period_error_seconds": 6.678685382510707e-16,
+    "maximum_torque_period_error_seconds": 6.678685382510707e-16,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.003453274955973029,
+    "qp_wall_p99_seconds": 1.131409561401233,
+    "qp_wall_max_seconds": 2.6938573620282114,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  }
+}

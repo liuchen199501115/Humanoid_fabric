@@ -1,0 +1,75 @@
+[
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.3,
+    "clearance": 0.0,
+    "score": 0.4140915870666504,
+    "max_acceleration_ratio": 1.4140915870666504,
+    "torque": 0.3647308051586151
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.3,
+    "clearance": 0.01,
+    "score": 0.4661160707473755,
+    "max_acceleration_ratio": 1.4661160707473755,
+    "torque": 0.38851186633110046
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.3,
+    "clearance": 0.02,
+    "score": 0.4932975769042969,
+    "max_acceleration_ratio": 1.4932975769042969,
+    "torque": 0.40510427951812744
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.5,
+    "clearance": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0028266548, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.5,
+    "clearance": 0.01,
+    "score": 0.47651374340057373,
+    "max_acceleration_ratio": 1.4765137434005737,
+    "torque": 0.4729144275188446
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.5,
+    "clearance": 0.02,
+    "score": 0.38288581371307373,
+    "max_acceleration_ratio": 1.3828858137130737,
+    "torque": 0.45250558853149414
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.6,
+    "clearance": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.029620634, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.6,
+    "clearance": 0.01,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.034621283, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.6,
+    "clearance": 0.02,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0012846895, tolerance=2e-06"
+  }
+]

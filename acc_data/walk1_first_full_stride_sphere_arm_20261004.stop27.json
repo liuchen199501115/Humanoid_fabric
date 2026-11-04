@@ -1,0 +1,21 @@
+{
+  "sampled_necessary_constraints_passed": true,
+  "samples": 136,
+  "collision_audit": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.04121682047843933,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "sphere_cover"
+  },
+  "max_velocity_ratio": 0.1151372641324997,
+  "max_joint_bound_violation": 0.0,
+  "wrench_infeasible_samples": 0,
+  "peak_torque_ratio": 0.2720696421910098,
+  "scope": "double_support_stop_nominal_reference",
+  "simulation_validated": false,
+  "full_pkl_tracking": false
+}

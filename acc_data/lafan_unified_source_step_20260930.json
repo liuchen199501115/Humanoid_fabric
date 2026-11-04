@@ -1,0 +1,37 @@
+{
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 0.8,
+  "landing_height": 0.62,
+  "sampled_kinematics_passed": true,
+  "sample_count": 401,
+  "requested_samples": 401,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 0.6384039900249376,
+  "outside_physical_sole_fraction": 0.33915211970074816,
+  "max_joint_velocity_ratio": 0.5470722913742065,
+  "final_com_velocity": [
+    -0.32206952571868896,
+    -0.9799057841300964,
+    5.236334033043022e-08
+  ],
+  "cop_min": [
+    -0.17613522708415985,
+    -0.1315801441669464
+  ],
+  "cop_max": [
+    0.28035807609558105,
+    0.159591943025589
+  ]
+}

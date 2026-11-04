@@ -1,0 +1,64 @@
+{
+  "full_dynamics_in_optimization": true,
+  "momentum_optimization": {
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_normalized_violation": 1.0295570716261861,
+        "wrench_pass_fraction": 0.847926267281106,
+        "max_velocity_ratio": 0.3727591633796692
+      },
+      {
+        "iteration": 1,
+        "maximum_normalized_violation": 0.13400366343557835,
+        "wrench_pass_fraction": 0.9815668202764977,
+        "max_velocity_ratio": 0.372633159160614
+      },
+      {
+        "iteration": 2,
+        "maximum_normalized_violation": 0.0,
+        "wrench_pass_fraction": 1.0,
+        "max_velocity_ratio": 0.37250563502311707
+      }
+    ],
+    "rejected": [],
+    "sampled_necessary_constraints_passed": true
+  },
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 1.3,
+  "landing_height": 0.61,
+  "body_smoothing_passes": 4,
+  "swing_phase_blend": 0.2,
+  "sampled_kinematics_passed": true,
+  "sample_count": 651,
+  "requested_samples": 651,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 1.0,
+  "outside_physical_sole_fraction": 0.0,
+  "max_joint_velocity_ratio": 0.37250563502311707,
+  "final_com_velocity": [
+    -0.3027362525463104,
+    -0.8593108654022217,
+    6.918598671745713e-08
+  ],
+  "cop_min": [
+    0.0011038893135264516,
+    -0.01004788838326931
+  ],
+  "cop_max": [
+    0.032907985150814056,
+    0.007442643400281668
+  ]
+}

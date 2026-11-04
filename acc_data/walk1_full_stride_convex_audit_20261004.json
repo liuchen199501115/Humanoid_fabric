@@ -1,0 +1,10 @@
+{
+  "checked": true,
+  "passed": false,
+  "maximum_violation": 6.820682048797607,
+  "minimum_cover_distance": -0.015462363138794899,
+  "violating_samples": 876,
+  "worst_time": 0.542,
+  "acceleration_residual_tolerance": 1e-05,
+  "geometry": "convex_mesh"
+}

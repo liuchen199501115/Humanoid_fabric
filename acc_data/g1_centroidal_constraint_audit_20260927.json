@@ -1,0 +1,52 @@
+{
+  "scope": "Offline constraint ablation only; no relaxed solution sent to simulation",
+  "time": 5.9,
+  "results": {
+    "all_constraints": {
+      "feasible": false,
+      "error": "No bounded centroidal preview reaches the original landing and capture region"
+    },
+    "without_terminal_capture": {
+      "feasible": false,
+      "error": "No bounded centroidal preview reaches the original landing and capture region"
+    },
+    "without_terminal_momentum": {
+      "feasible": true,
+      "duration": 0.65,
+      "violation": 1.1294597201949585e-11,
+      "terminal_velocity": [
+        0.1381299791222452,
+        -1.2110203124059844
+      ],
+      "terminal_momentum": [
+        1.8008713291489,
+        3.521378237116118
+      ],
+      "capture": [
+        1.587292991201434,
+        3.3673306866974864
+      ]
+    },
+    "without_acceleration_cap": {
+      "feasible": false,
+      "error": "No bounded centroidal preview reaches the original landing and capture region"
+    },
+    "without_capture_and_terminal_momentum": {
+      "feasible": true,
+      "duration": 0.65,
+      "violation": 5.520188472996068e-12,
+      "terminal_velocity": [
+        0.1381299788773856,
+        -1.2110203124080974
+      ],
+      "terminal_momentum": [
+        1.8008713300755241,
+        3.5213782476816125
+      ],
+      "capture": [
+        1.5872929911383498,
+        3.367330686696951
+      ]
+    }
+  }
+}

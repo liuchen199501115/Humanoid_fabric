@@ -28,6 +28,8 @@ class QPSolution:
     iters: int
     obj: Tensor
     lam_eq: Tensor | None = None
+    status_ok: Tensor | None = None
+    """Optional native solver status; an explicit failure cannot pass validation."""
 
 class ADMMSolver:
     """GPU-batched ADMM QP solver."""
@@ -79,10 +81,6 @@ class ADMMSolver:
             n_eq   = qp.b_eq.shape[1]
             lam_eq = (warm_lam_eq.clone() if warm_lam_eq is not None
                       else torch.zeros(B, n_eq, device=device, dtype=dtype))
-            rho_eq = self.rho_eq
-            AtA_eq = torch.bmm(qp.A_eq.transpose(1, 2), qp.A_eq)
-        else:
-            AtA_eq = None
 
         GtG = torch.bmm(qp.G.transpose(1, 2), qp.G)
         I_n = torch.eye(n, device=device, dtype=dtype).unsqueeze(0)
@@ -90,16 +88,31 @@ class ADMMSolver:
 
         def _factorize(rho_val: Tensor) -> tuple:
             M = qp.H + rho_val * (GtG + I_n)
-            if has_eq:
-                M = M + rho_eq * AtA_eq
-            return torch.linalg.lu_factor(M)
+            if not has_eq:
+                return torch.linalg.lu_factor(M)
+
+            # Enforce equalities through the KKT system instead of an
+            # augmented-Lagrangian penalty. Contact/dynamics rows have very
+            # different scales; a fixed equality penalty can leave large
+            # residuals or prevent box constraints from converging.
+            kkt = torch.zeros(
+                B, n + n_eq, n + n_eq, device=device, dtype=dtype
+            )
+            kkt[:, :n, :n] = M
+            kkt[:, :n, n:] = qp.A_eq.transpose(1, 2)
+            kkt[:, n:, :n] = qp.A_eq
+            # A caller may retain structurally masked or redundant equality
+            # rows. Tiny dual regularization keeps the KKT factorization
+            # nonsingular without materially relaxing physical equalities.
+            dual_regularization = max(
+                1.0e-9, float(torch.finfo(dtype).eps)
+            )
+            kkt[:, n:, n:] = -dual_regularization * torch.eye(
+                n_eq, device=device, dtype=dtype
+            ).unsqueeze(0)
+            return torch.linalg.lu_factor(kkt)
 
         LU, pivots = _factorize(rho_t)
-
-        if has_eq:
-            Atb_eq = torch.bmm(
-                qp.A_eq.transpose(1, 2), qp.b_eq.unsqueeze(-1)
-            ).squeeze(-1)
 
         iters_used = 0
         r_ineq = torch.zeros(B, m, device=device, dtype=dtype)
@@ -117,10 +130,16 @@ class ADMMSolver:
                 + (z_box - u_box)
             )
             if has_eq:
-                rhs = rhs + rho_eq * Atb_eq - torch.bmm(
-                    qp.A_eq.transpose(1, 2), lam_eq.unsqueeze(-1)
+                kkt_rhs = torch.cat((rhs, qp.b_eq), dim=1)
+                kkt_solution = torch.linalg.lu_solve(
+                    LU, pivots, kkt_rhs.unsqueeze(-1)
                 ).squeeze(-1)
-            z = torch.linalg.lu_solve(LU, pivots, rhs.unsqueeze(-1)).squeeze(-1)
+                z = kkt_solution[:, :n]
+                lam_eq = kkt_solution[:, n:]
+            else:
+                z = torch.linalg.lu_solve(
+                    LU, pivots, rhs.unsqueeze(-1)
+                ).squeeze(-1)
 
             Gz = torch.bmm(qp.G, z.unsqueeze(-1)).squeeze(-1)
             y  = torch.minimum(Gz + u, qp.b)
@@ -133,8 +152,10 @@ class ADMMSolver:
             u_box = u_box + r_box
 
             if has_eq:
-                eq_res = torch.bmm(qp.A_eq, z.unsqueeze(-1)).squeeze(-1) - qp.b_eq
-                lam_eq = lam_eq + rho_eq * eq_res
+                eq_res = (
+                    torch.bmm(qp.A_eq, z.unsqueeze(-1)).squeeze(-1)
+                    - qp.b_eq
+                )
 
             iters_used = it + 1
 

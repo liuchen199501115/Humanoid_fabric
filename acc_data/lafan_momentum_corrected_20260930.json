@@ -1,0 +1,88 @@
+{
+  "momentum_optimization": {
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_normalized_violation": 3.9085633009672165,
+        "wrench_pass_fraction": 0.6483790523690773,
+        "max_velocity_ratio": 0.565004825592041
+      },
+      {
+        "iteration": 1,
+        "maximum_normalized_violation": 1.567279443144798,
+        "wrench_pass_fraction": 0.7231920199501247,
+        "max_velocity_ratio": 0.5646493434906006
+      },
+      {
+        "iteration": 2,
+        "maximum_normalized_violation": 0.5568142868578434,
+        "wrench_pass_fraction": 0.9102244389027432,
+        "max_velocity_ratio": 0.5640156865119934
+      },
+      {
+        "iteration": 3,
+        "maximum_normalized_violation": 0.12306869029998779,
+        "wrench_pass_fraction": 0.970074812967581,
+        "max_velocity_ratio": 0.5635029077529907
+      }
+    ],
+    "rejected": [
+      {
+        "iteration": 3,
+        "fraction": 0.5,
+        "violation": 0.14010393619537354
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.25,
+        "violation": 0.13158750534057617
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.125,
+        "violation": 0.12732678651809692
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.0625,
+        "violation": 0.12519896030426025
+      }
+    ],
+    "sampled_necessary_constraints_passed": false
+  },
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 0.8,
+  "landing_height": 0.62,
+  "sampled_kinematics_passed": true,
+  "sample_count": 401,
+  "requested_samples": 401,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 0.970074812967581,
+  "outside_physical_sole_fraction": 0.0,
+  "max_joint_velocity_ratio": 0.5635029077529907,
+  "final_com_velocity": [
+    -0.3361155390739441,
+    -0.9250742197036743,
+    -5.288772975120537e-09
+  ],
+  "cop_min": [
+    -0.01735036075115204,
+    -0.000840331835206598
+  ],
+  "cop_max": [
+    0.022336918860673904,
+    0.024856137111783028
+  ]
+}

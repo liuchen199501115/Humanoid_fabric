@@ -1,0 +1,20 @@
+[
+  {
+    "run": "pelvis_handover",
+    "first_unconfirmed_step": 5,
+    "flight_evidence": true,
+    "peak_unloaded_clearance_m": 0.06530807136610983,
+    "longest_loaded_goal_hold_s": 0.0,
+    "required_hold_s": 0.05,
+    "required_clearance_m": 0.02
+  },
+  {
+    "run": "convex_collision",
+    "first_unconfirmed_step": 2,
+    "flight_evidence": false,
+    "peak_unloaded_clearance_m": 0.015715711197542823,
+    "longest_loaded_goal_hold_s": 0.4620000000000004,
+    "required_hold_s": 0.05,
+    "required_clearance_m": 0.02
+  }
+]

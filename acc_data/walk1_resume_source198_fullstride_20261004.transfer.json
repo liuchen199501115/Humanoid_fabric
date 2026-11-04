@@ -1,0 +1,19 @@
+{
+  "samples": 1502,
+  "sample_dt": 0.002,
+  "max_joint_bound_violation": 0.0,
+  "minimum_terminal_leg_margin": 0.06169585883617401,
+  "support_lateral_offset": 0.004,
+  "rejected": [
+    {
+      "offset": 0.0,
+      "reason": "Transfer endpoint leaves insufficient joint margin: 0.053402796387672424"
+    },
+    {
+      "offset": -0.004,
+      "reason": "Transfer joint bound at t=1.3800: right_ankle_roll_joint, violation=0.040076"
+    }
+  ],
+  "sampled_joint_bounds_passed": true,
+  "pelvis_roll_offset": 0.0
+}

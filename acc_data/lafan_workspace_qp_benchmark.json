@@ -1,0 +1,37 @@
+{
+  "False": {
+    "median_seconds": 0.0012287171557545662,
+    "iterations": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "status": [
+      "solved"
+    ],
+    "maximum_constraint_error": 2.1316282072803006e-14
+  },
+  "True": {
+    "median_seconds": 0.0008213091641664505,
+    "iterations": [
+      125,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ],
+    "status": [
+      "solved"
+    ],
+    "maximum_constraint_error": 5.684341886080802e-14
+  },
+  "maximum_solution_difference": 1.891351075755665e-09
+}

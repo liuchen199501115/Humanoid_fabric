@@ -1,0 +1,8 @@
+{
+  "scope": "Scheduler-only replay with ideal synthetic contact observations; NOT physics validation",
+  "source_frames": 7839,
+  "last_source_frame": 7838.0,
+  "simulated_clock_seconds": 370.08,
+  "swings": 346,
+  "complete": true
+}

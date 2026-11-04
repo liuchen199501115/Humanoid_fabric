@@ -1,0 +1,9 @@
+[
+  {
+    "T": 0.5,
+    "iteration": 0,
+    "wrench_infeasible": 0,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.4869964967141282
+  }
+]

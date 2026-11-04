@@ -1,0 +1,18 @@
+{
+  "joint_velocity_limits_enabled": true,
+  "software_acceleration_and_braking_limits_enabled": false,
+  "smoke_seconds": 6,
+  "control_updates": 3000,
+  "all_qp_validated": true,
+  "speed_violation_max": {
+    "history_joint_velocity_violation": 0.0,
+    "history_measured_joint_velocity_violation": 0.0
+  },
+  "tests_passed": 20,
+  "full_four_step_tracking_passed": false,
+  "process_exit_code": 1,
+  "unloading_started": false,
+  "overall_unloading_test_passed": false,
+  "process_failure_reason": "Transfer did not start",
+  "smoke_record": "acc_data/walk1_joint_velocity_smoke_20261019.npz"
+}

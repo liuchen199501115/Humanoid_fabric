@@ -1,0 +1,123 @@
+{
+  "scope": "fixed_frame_recovery",
+  "recovery_passed": true,
+  "source_steps": 3,
+  "recovery_steps": 1,
+  "fixed_source_frame": 176,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "physical_sequence": {
+    "scope": "4_physical_steps",
+    "sequence_passed": true,
+    "expected_steps": 4,
+    "expected_end_frame": 176.0,
+    "full_pkl_tracking": false,
+    "continuous_walking": false,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "right",
+        "time": 11.662,
+        "source_frame": 128.79243412969527,
+        "adapted_landing_error_m": 0.005392012199259021,
+        "original_landing_error_m": 0.2558538336026881,
+        "maximum_swing_clearance_m": 0.06107126708633586,
+        "measured_load_n": 54.5667839050293,
+        "single_support_observed": true
+      },
+      {
+        "step": 2,
+        "swing": "left",
+        "time": 19.124,
+        "source_frame": 154.58146686856867,
+        "adapted_landing_error_m": 0.008369763968567066,
+        "original_landing_error_m": 0.6843761885225986,
+        "maximum_swing_clearance_m": 0.03865475824219174,
+        "measured_load_n": 128.3663787841797,
+        "single_support_observed": true
+      },
+      {
+        "step": 3,
+        "swing": "right",
+        "time": 26.674,
+        "source_frame": 175.6619540100191,
+        "adapted_landing_error_m": 0.008615255694188428,
+        "original_landing_error_m": 1.041376868434022,
+        "maximum_swing_clearance_m": 0.029907552129589017,
+        "measured_load_n": 56.72121810913086,
+        "single_support_observed": true
+      },
+      {
+        "step": 4,
+        "swing": "left",
+        "time": 34.122,
+        "source_frame": 176.0,
+        "adapted_landing_error_m": 0.008673922613148087,
+        "original_landing_error_m": 0.3004266843588613,
+        "maximum_swing_clearance_m": 0.029836524993879718,
+        "measured_load_n": 19.681442260742188,
+        "single_support_observed": true
+      }
+    ],
+    "final_source_frame": 176.0,
+    "source_clock_monotonic": true,
+    "minimum_source_frame_increment": 0.0,
+    "stopped_hold_duration_s": 5.327999999999996,
+    "final_second": {
+      "minimum_foot_loads_n": [
+        230.83177185058594,
+        82.0663070678711
+      ],
+      "maximum_com_error_m": 0.0011440813541412354,
+      "maximum_com_speed_m_s": 0.0004924151790707354
+    },
+    "qp_and_servo_validated": true,
+    "control_rate": {
+      "qp_hz": 500,
+      "torque_hz": 500,
+      "qp_updates": 20000,
+      "torque_updates": 20000,
+      "maximum_qp_period_error_seconds": 4.661201979949681e-15,
+      "maximum_torque_period_error_seconds": 4.661201979949681e-15,
+      "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+      "torque_uses_expected_qp_updates": true,
+      "simulation_rate_passed": true,
+      "qp_wall_time_valid": true,
+      "qp_wall_median_seconds": 0.004902360495179892,
+      "qp_wall_p99_seconds": 0.005417423341423272,
+      "qp_wall_max_seconds": 0.010300775989890099,
+      "all_qp_solves_within_period": false,
+      "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+    }
+  },
+  "reference_unchanged": true,
+  "source_clock_held": true,
+  "recovery_count_verified": true,
+  "initial_foot_xy_error_m": [
+    0.7106440774984306,
+    1.0414992419806905
+  ],
+  "final_foot_xy_error_m": [
+    0.3004518511651591,
+    1.0415254432345467
+  ],
+  "initial_foot_rms_error_m": 0.8915536091368675,
+  "final_foot_rms_error_m": 0.7665006731156503,
+  "initial_root_xy_error_m": 0.7657317452101674,
+  "final_root_xy_error_m": 0.6746785340071751,
+  "error_reduction_verified": true,
+  "fixed_target_reached": false,
+  "stage": "three_source_steps_plus_one_fixed_frame_recovery_validated",
+  "recording": "acc_data/walk1_fixed_frame_recovery_live_20261003.npz",
+  "previous_source_sequence_recording": "acc_data/walk1_three_steps_live_20261003.npz",
+  "regression_tests_passed": 103,
+  "full_run_exit_code": 1,
+  "source_phase": 176.0,
+  "simulation_end_time": 39.998,
+  "stop_reason": "Bounded fixed-frame recovery hold; original reference not reached, full source coverage remains incomplete",
+  "next_transfer": {
+    "planning_passed": false,
+    "reason": "Left ankle roll braking bounds violated in all tested lateral offsets from measured stopped stance",
+    "report": "acc_data/walk1_recovery_right_actual_20261003.rejected.json"
+  }
+}

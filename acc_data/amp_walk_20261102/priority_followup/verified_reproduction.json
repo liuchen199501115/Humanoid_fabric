@@ -1,0 +1,137 @@
+{
+  "verified_landing_events": 6,
+  "legacy_fixed_goal_events": 4,
+  "audit_change_q_bit_identical": true,
+  "audit_change_qd_bit_identical": true,
+  "samples_compared": 2000,
+  "last_compared_time": 3.998,
+  "strict_full_tracking_passed": false,
+  "landings": [
+    {
+      "step": 1,
+      "swing": "left",
+      "source_frame": 37.6,
+      "time": 0.188,
+      "landing_error_m": 0.011972491394771561,
+      "goal": [
+        1.5789246559143066,
+        0.1788153499364853,
+        0.03835587203502655
+      ],
+      "measured_load_n": 605.34326171875,
+      "source_contact_onset_goal": [
+        1.5718071460723877,
+        0.19158045947551727,
+        0.04952828213572502
+      ],
+      "joint_rmse_rad": 0.11588385701179504,
+      "root_position_error_m": 0.014802136458456516,
+      "root_angle_error_rad": 0.10533162006049357
+    },
+    {
+      "step": 2,
+      "swing": "right",
+      "source_frame": 82.0,
+      "time": 0.41000000000000003,
+      "landing_error_m": 0.028535341591269282,
+      "goal": [
+        2.0718159675598145,
+        -0.09186406433582306,
+        0.04756303131580353
+      ],
+      "measured_load_n": 239.07078552246094,
+      "source_contact_onset_goal": [
+        2.0546042919158936,
+        -0.09282495826482773,
+        0.06013905629515648
+      ],
+      "joint_rmse_rad": 0.1706492006778717,
+      "root_position_error_m": 0.023684414103627205,
+      "root_angle_error_rad": 0.12005380311561117
+    },
+    {
+      "step": 3,
+      "swing": "left",
+      "source_frame": 173.6,
+      "time": 0.868,
+      "landing_error_m": 0.034382262147400124,
+      "goal": [
+        2.4584169387817383,
+        0.10430409014225006,
+        0.04060667008161545
+      ],
+      "measured_load_n": 217.9410400390625,
+      "source_contact_onset_goal": [
+        2.405056953430176,
+        0.1028435006737709,
+        0.04537191241979599
+      ],
+      "joint_rmse_rad": 0.1028505191206932,
+      "root_position_error_m": 0.019920846447348595,
+      "root_angle_error_rad": 0.12260210375301882
+    },
+    {
+      "step": 4,
+      "swing": "right",
+      "source_frame": 266.8,
+      "time": 1.334,
+      "landing_error_m": 0.015569419013002024,
+      "goal": [
+        2.9772298336029053,
+        -0.1719239354133606,
+        0.049913592636585236
+      ],
+      "measured_load_n": 205.052001953125,
+      "source_contact_onset_goal": [
+        2.9594597816467285,
+        -0.17393580079078674,
+        0.06212610751390457
+      ],
+      "joint_rmse_rad": 0.13867910206317902,
+      "root_position_error_m": 0.028784411028027534,
+      "root_angle_error_rad": 0.19191285361812122
+    },
+    {
+      "step": 5,
+      "swing": "left",
+      "source_frame": 385.2,
+      "time": 1.926,
+      "landing_error_m": 0.033735798485666414,
+      "goal": [
+        3.397911310195923,
+        -0.02142232470214367,
+        0.03972550854086876
+      ],
+      "measured_load_n": 575.4781494140625,
+      "source_contact_onset_goal": [
+        3.341783285140991,
+        -0.006188534665852785,
+        0.048299893736839294
+      ],
+      "joint_rmse_rad": 0.2171744406223297,
+      "root_position_error_m": 0.09627576917409897,
+      "root_angle_error_rad": 0.21092217325511764
+    },
+    {
+      "step": 6,
+      "swing": "right",
+      "source_frame": 496.40000000000003,
+      "time": 2.482,
+      "landing_error_m": 0.003786090373065112,
+      "goal": [
+        3.902688980102539,
+        -0.29024752974510193,
+        0.03502804785966873
+      ],
+      "measured_load_n": 469.0313415527344,
+      "source_contact_onset_goal": [
+        3.8741705417633057,
+        -0.29721948504447937,
+        0.06121489033102989
+      ],
+      "joint_rmse_rad": 0.21872438490390778,
+      "root_position_error_m": 0.08484195917844772,
+      "root_angle_error_rad": 0.17168200295671746
+    }
+  ]
+}

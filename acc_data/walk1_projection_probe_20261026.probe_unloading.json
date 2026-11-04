@@ -1,0 +1,39 @@
+{
+  "scope": "double_support_unloading_only",
+  "full_pkl_tracking": false,
+  "unloading_passed": true,
+  "measured_steps": 0,
+  "support": "left",
+  "checks": {
+    "completed": true,
+    "full_window": true,
+    "double_support": true,
+    "unloaded": true,
+    "support_loaded": true,
+    "com_tracking": true,
+    "body_settled": true,
+    "qp_valid": true,
+    "controller_valid": true
+  },
+  "initial_load_n": [
+    187.8766632080078,
+    124.43213653564453
+  ],
+  "final_load_n": [
+    324.827880859375,
+    3.9858741760253906
+  ],
+  "final_second": {
+    "max_outgoing_load_n": 5.372199535369873,
+    "min_support_load_n": 312.64288330078125,
+    "max_com_error_m": 0.004958490375429392,
+    "max_com_speed_m_s": 0.0018912132363766432,
+    "max_prediction_error_n": 16.499847412109375
+  },
+  "peak_effort_ratio": 0.800000011920929,
+  "peak_base_error": 3.0517578125e-05,
+  "peak_contact_error": 6.67572021484375e-06,
+  "peak_friction_error": 7.62939453125e-06,
+  "peak_bound_error": 0.0,
+  "controller_gate_scope": "pre-release recorded QP, speed and finite-state checks"
+}

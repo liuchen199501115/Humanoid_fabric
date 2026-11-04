@@ -1,0 +1,14 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 4,
+  "measured_steps": 0,
+  "landings": [],
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "last_time_s": 28.946,
+  "last_source_frame": 112.50004906328444,
+  "controller_valid": null,
+  "controller_validation_available": false,
+  "stable_final_support": false,
+  "steps_tracking_passed": false
+}

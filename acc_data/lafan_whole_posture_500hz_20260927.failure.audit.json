@@ -1,0 +1,51 @@
+{
+  "tracking": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 155.0,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.5173055529594421,
+    "peak_root_position_error": 0.10188105702400208,
+    "peak_root_orientation_error": 0.9141615468812643,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 3504,
+    "torque_updates": 3504,
+    "maximum_qp_period_error_seconds": 6.678685382510707e-16,
+    "maximum_torque_period_error_seconds": 6.678685382510707e-16,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.0028637440409511328,
+    "qp_wall_p99_seconds": 0.005636106198653579,
+    "qp_wall_max_seconds": 0.008867328986525536,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  },
+  "priority_level_0_feasibility": {
+    "success": false,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "priority_level_1_feasibility": {
+    "success": false,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "problem_feasibility": {
+    "success": false,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  }
+}

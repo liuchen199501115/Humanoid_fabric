@@ -1,0 +1,17 @@
+{
+  "recording": "acc_data/lafan_unified_reference_motion_20260928.npz",
+  "control_updates": 1000,
+  "source_frame": 50.25000000000004,
+  "all_unified": true,
+  "moving_samples": 900,
+  "max_absolute_errors": {
+    "joint_position": 0.0,
+    "feet_position": 0.0,
+    "pelvis_position": 0.0,
+    "com_position": 0.0,
+    "com_velocity": 0.0,
+    "com_acceleration": 0.0
+  },
+  "reference_consistency_passed": true,
+  "scope": "Reference consistency only; 2 s double-support segment, not full PKL or foot-switch validation."
+}

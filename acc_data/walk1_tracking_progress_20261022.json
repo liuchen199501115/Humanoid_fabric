@@ -1,0 +1,24 @@
+{
+  "unloading_record": "acc_data/walk1_settled_unload_20261021.npz",
+  "unloading_passed": true,
+  "physical_steps_completed": 0,
+  "full_four_step_tracking_passed": false,
+  "original_landing_frames": [
+    129,
+    155,
+    176,
+    198
+  ],
+  "effort_limit_scale": 0.8,
+  "initial_samples": 601,
+  "initial_score": 0.1537062684694926,
+  "optimization_evaluations": 80,
+  "optimizer_converged": false,
+  "dense_samples": 1201,
+  "dense_score": 0.10528494517008463,
+  "dense_peak_torque_ratio": 1.0191371440887451,
+  "dense_peak_wrench_score": 0.05868516117334366,
+  "first_landing_position_error_m": 6.212305265762552e-07,
+  "first_landing_goal_unchanged": true,
+  "candidate_accepted_for_live_execution": false
+}

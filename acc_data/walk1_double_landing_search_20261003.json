@@ -1,0 +1,114 @@
+[
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.3,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.032607183, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.3,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.031066524, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.3,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.12268313, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.3,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0072890688, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.35,
+    "pelvis_pitch": -0.3,
+    "score": 1.3010627478361128,
+    "acceleration": 1.7201920747756958,
+    "torque": 0.9748380184173584,
+    "joint": 0.6894574165344238,
+    "wrench": 0.47391796112060547
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.35,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0034649302, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.35,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.054453947, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.35,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.096638031, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.4,
+    "pelvis_pitch": -0.3,
+    "score": 0.5529708117246628,
+    "acceleration": 0.868916928768158,
+    "torque": 0.4635627269744873,
+    "joint": 0.20250506699085236,
+    "wrench": 0.1724592000246048
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.4,
+    "pelvis_pitch": -0.3,
+    "score": 0.34163229912519455,
+    "acceleration": 0.659623384475708,
+    "torque": 0.42395728826522827,
+    "joint": 0.13660132884979248,
+    "wrench": 0.08764123916625977
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.5,
+    "landing_com_fraction": 0.4,
+    "pelvis_pitch": -0.3,
+    "score": 1.2486067488789556,
+    "acceleration": 1.7526942491531372,
+    "torque": 0.9963172674179077,
+    "joint": 0.8457196950912476,
+    "wrench": 0.47040167450904846
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.615,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.4,
+    "pelvis_pitch": -0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.023218228, tolerance=2e-06"
+  }
+]

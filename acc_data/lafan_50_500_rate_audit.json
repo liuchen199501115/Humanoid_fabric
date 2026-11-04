@@ -1,0 +1,14 @@
+{
+  "recording": "acc_data/lafan_contact_servo_height_50hz_20s.failure.npz",
+  "qp_updates": 288,
+  "torque_updates": 2880,
+  "qp_interval_min": 0.019999999999999574,
+  "qp_interval_max": 0.020000000000000462,
+  "torque_interval_min": 0.0019999999999997797,
+  "torque_interval_max": 0.002000000000000668,
+  "physics_interval_min": 0.0020000000949949026,
+  "physics_interval_max": 0.0020000000949949026,
+  "ten_torque_updates_per_qp": true,
+  "torque_clock_matches_physics": true,
+  "full_tracking_achieved": false
+}

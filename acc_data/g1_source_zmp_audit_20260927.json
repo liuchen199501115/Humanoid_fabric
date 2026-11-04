@@ -1,0 +1,154 @@
+[
+  {
+    "time": 5.2,
+    "source_height": 0.6811739206314087,
+    "com_acc": [
+      0.30504825711250305,
+      -0.7046263813972473,
+      0.1236153095960617
+    ],
+    "zmp_zero_momentum": [
+      1.561429500579834,
+      4.517026901245117
+    ],
+    "zmp_source_momentum": [
+      1.5532952129711481,
+      4.508869576450687
+    ],
+    "no_momentum_polygon_violation": 0.0650816380009469,
+    "source_momentum_polygon_violation": 0.07402762894416215
+  },
+  {
+    "time": 5.3,
+    "source_height": 0.68100905418396,
+    "com_acc": [
+      -0.40665873885154724,
+      -0.6494982242584229,
+      -0.32431384921073914
+    ],
+    "zmp_zero_momentum": [
+      1.6157094240188599,
+      4.505770683288574
+    ],
+    "zmp_source_momentum": [
+      1.5845276741535883,
+      4.451403940932751
+    ],
+    "no_momentum_polygon_violation": 0.012534838151874172,
+    "source_momentum_polygon_violation": 0.04929654556042751
+  },
+  {
+    "time": 5.5,
+    "source_height": 0.6786169409751892,
+    "com_acc": [
+      -0.09561370313167572,
+      -1.4789336919784546,
+      -0.9272580742835999
+    ],
+    "zmp_zero_momentum": [
+      1.603939175605774,
+      4.525228977203369
+    ],
+    "zmp_source_momentum": [
+      1.6604051887713103,
+      4.488366534367554
+    ],
+    "no_momentum_polygon_violation": 0.02234275745655001,
+    "source_momentum_polygon_violation": 0.0
+  },
+  {
+    "time": 5.7,
+    "source_height": 0.667453408241272,
+    "com_acc": [
+      -0.5603898167610168,
+      -0.31844237446784973,
+      1.2030240297317505
+    ],
+    "zmp_zero_momentum": [
+      1.6287287473678589,
+      4.349214553833008
+    ],
+    "zmp_source_momentum": [
+      1.6114340008573669,
+      4.338014222408646
+    ],
+    "no_momentum_polygon_violation": 0.10188891988678694,
+    "source_momentum_polygon_violation": 0.11081365438679924
+  },
+  {
+    "time": 6.2,
+    "source_height": 0.6739033460617065,
+    "com_acc": [
+      0.17887958884239197,
+      0.5033416152000427,
+      -0.3458561301231384
+    ],
+    "zmp_zero_momentum": [
+      1.5441551208496094,
+      4.038089752197266
+    ],
+    "zmp_source_momentum": [
+      1.5332605989112125,
+      4.030252251025718
+    ],
+    "no_momentum_polygon_violation": 0.006385247968970997,
+    "source_momentum_polygon_violation": 0.0
+  },
+  {
+    "time": 6.5,
+    "source_height": 0.676182746887207,
+    "com_acc": [
+      0.04131900891661644,
+      0.43017950654029846,
+      0.02699427679181099
+    ],
+    "zmp_zero_momentum": [
+      1.5525907278060913,
+      3.936859369277954
+    ],
+    "zmp_source_momentum": [
+      1.550615422405124,
+      3.933131741905418
+    ],
+    "no_momentum_polygon_violation": 0.018419470126461945,
+    "source_momentum_polygon_violation": 0.01665300586895002
+  },
+  {
+    "time": 6.8,
+    "source_height": 0.6737388372421265,
+    "com_acc": [
+      -0.015728767961263657,
+      -0.21249084174633026,
+      -0.05291101336479187
+    ],
+    "zmp_zero_momentum": [
+      1.556125521659851,
+      3.9102282524108887
+    ],
+    "zmp_source_momentum": [
+      1.556028181279013,
+      3.9089389084636377
+    ],
+    "no_momentum_polygon_violation": 0.03422260489144158,
+    "source_momentum_polygon_violation": 0.03551560270241794
+  },
+  {
+    "time": 7.0,
+    "source_height": 0.6723817586898804,
+    "com_acc": [
+      -0.03474758565425873,
+      -0.5396615266799927,
+      -0.2223431020975113
+    ],
+    "zmp_zero_momentum": [
+      1.5560295581817627,
+      3.8824501037597656
+    ],
+    "zmp_source_momentum": [
+      1.5532716407057536,
+      3.8878962072812686
+    ],
+    "no_momentum_polygon_violation": 0.06038025270147429,
+    "source_momentum_polygon_violation": 0.05515445643604533
+  }
+]

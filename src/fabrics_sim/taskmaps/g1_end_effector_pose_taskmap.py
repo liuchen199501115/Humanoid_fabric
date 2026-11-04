@@ -122,7 +122,7 @@ def _so3_left_jacobian_inverse(
 
 
 class G1EndEffectorPoseTaskMap(BaseMap):
-    """24-D task map for both feet and both hands."""
+    """SE(3) task map for a selectable group of G1 end effectors."""
 
     END_EFFECTOR_ORDER = (
         "left_foot",
@@ -144,14 +144,22 @@ class G1EndEffectorPoseTaskMap(BaseMap):
         batch_size: int,
         device: str,
         frame_groups: dict[str, tuple[str, str, str, str]] | None = None,
+        end_effector_order: tuple[str, ...] | None = None,
     ):
         super().__init__(device)
         self.batch_size = batch_size
         self.frame_groups = (
             self.DEFAULT_FRAME_GROUPS if frame_groups is None else frame_groups
         )
+        self.end_effector_order = (
+            self.END_EFFECTOR_ORDER
+            if end_effector_order is None
+            else tuple(end_effector_order)
+        )
+        if not self.end_effector_order:
+            raise ValueError("end_effector_order must not be empty.")
 
-        for name in self.END_EFFECTOR_ORDER:
+        for name in self.end_effector_order:
             if name not in self.frame_groups:
                 raise KeyError(f"Missing frame group for {name}.")
             if len(self.frame_groups[name]) < 1:
@@ -168,7 +176,7 @@ class G1EndEffectorPoseTaskMap(BaseMap):
         )
 
         link_names = [
-            self.frame_groups[name][0] for name in self.END_EFFECTOR_ORDER
+            self.frame_groups[name][0] for name in self.end_effector_order
         ]
 
         self.link_indices = torch.tensor(
@@ -182,7 +190,7 @@ class G1EndEffectorPoseTaskMap(BaseMap):
 
         # Mask the world-frame angular axes that affect each end effector.
         angular_mask = torch.zeros(
-            4,
+            len(self.end_effector_order),
             self.robot_kinematics.velocity_dim,
             dtype=torch.float32,
             device=device,
@@ -200,10 +208,10 @@ class G1EndEffectorPoseTaskMap(BaseMap):
         self.angular_mask = angular_mask
 
         self.position_target = torch.zeros(
-            batch_size, 4, 3, device=device
+            batch_size, len(self.end_effector_order), 3, device=device
         )
         self.quaternion_target = torch.zeros(
-            batch_size, 4, 4, device=device
+            batch_size, len(self.end_effector_order), 4, device=device
         )
         self.quaternion_target[..., 3] = 1.0
 
@@ -214,11 +222,12 @@ class G1EndEffectorPoseTaskMap(BaseMap):
     ) -> None:
         """Set retargeted end-effector targets.
 
-        position_target:          (batch_size, 4, 3)
-        quaternion_target_xyzw:   (batch_size, 4, 4)
+        position_target:          (batch_size, num_end_effectors, 3)
+        quaternion_target_xyzw:   (batch_size, num_end_effectors, 4)
         """
-        expected_position = (self.batch_size, 4, 3)
-        expected_quaternion = (self.batch_size, 4, 4)
+        count = len(self.end_effector_order)
+        expected_position = (self.batch_size, count, 3)
+        expected_quaternion = (self.batch_size, count, 4)
         if tuple(position_target.shape) != expected_position:
             raise ValueError(
                 f"position_target must be {expected_position}, "
@@ -350,7 +359,7 @@ class G1EndEffectorPoseTaskMap(BaseMap):
         task_errors = []
         task_jacobians = []
 
-        for end_effector_index in range(4):
+        for end_effector_index in range(len(self.end_effector_order)):
             origin = positions[:, end_effector_index]
             current_rotation = current_rotations[:, end_effector_index]
             jac_origin = position_jacobians[:, end_effector_index]

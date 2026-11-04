@@ -1,0 +1,20 @@
+{
+  "scope": "measured_recovery_left_support_transfer",
+  "source_recording": "acc_data/walk1_recovery_pair_live_20261004.npz",
+  "start_time": 34.67,
+  "release_time": 36.718,
+  "following_step_start_time": 39.718,
+  "commanded_local_rotation_rad": [
+    -0.10000000460500684,
+    -9.478070939698416e-09,
+    -3.951508182173978e-08
+  ],
+  "measured_local_rotation_rad": [
+    -0.10830165089621652,
+    0.003753250763336285,
+    -0.003762786841553181
+  ],
+  "maximum_final_half_second_orientation_error_rad": 0.0022712312177178688,
+  "stance_load_min_n": 323.11419677734375,
+  "swing_load_max_n": 0.0
+}

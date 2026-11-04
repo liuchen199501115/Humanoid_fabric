@@ -1,0 +1,7 @@
+{
+  "through_sixth_landing_time_s": 2.482,
+  "peak_joint_rmse_rad": 0.2793075740337372,
+  "peak_root_position_error_m": 0.13136553764343262,
+  "peak_root_orientation_error_rad": 0.4401448965072632,
+  "strict_tracking_passed": false
+}

@@ -1,0 +1,34 @@
+{
+  "actual_requests_match_snapshots": true,
+  "control_trajectory_unchanged": true,
+  "rows": [
+    {
+      "time": 1.6,
+      "actual_request": [
+        1.9546524286270142,
+        4.598518371582031,
+        -1.539384365081787
+      ],
+      "recorded_request": [
+        1.9546524286270142,
+        4.598518371582031,
+        -1.539384365081787
+      ],
+      "source": "wbc_task_request"
+    },
+    {
+      "time": 1.1,
+      "actual_request": [
+        0.32973170280456543,
+        0.05662190914154053,
+        -2.0067524909973145
+      ],
+      "recorded_request": [
+        0.32973170280456543,
+        0.05662190914154053,
+        -2.0067524909973145
+      ],
+      "source": "wbc_task_request"
+    }
+  ]
+}

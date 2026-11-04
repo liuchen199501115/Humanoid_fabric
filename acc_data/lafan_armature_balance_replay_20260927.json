@@ -1,0 +1,50 @@
+[
+  {
+    "recording": "acc_data/lafan_armature_balance_500hz_20260927.failure.npz",
+    "stage": "priority_level_0_",
+    "backend": "daqp",
+    "cold_seconds": 0.0024893288500607014,
+    "repeat_seconds": [
+      0.0006588329561054707,
+      0.0005836780183017254
+    ],
+    "accepted": true,
+    "physical_residual": 5.684341886080802e-14,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  },
+  {
+    "recording": "acc_data/lafan_armature_balance_500hz_20260927.failure.npz",
+    "stage": "priority_level_1_",
+    "backend": "daqp",
+    "cold_seconds": 0.0003089839592576027,
+    "repeat_seconds": [
+      0.00040071876719594,
+      0.0002496819943189621
+    ],
+    "accepted": false,
+    "physical_residual": 327.29443359375,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 0
+  },
+  {
+    "recording": "acc_data/lafan_armature_balance_500hz_20260927.failure.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.00104830926284194,
+    "repeat_seconds": [
+      0.0005823709070682526,
+      0.0005763801746070385
+    ],
+    "accepted": true,
+    "physical_residual": 1.2931877790833823e-11,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 1
+  }
+]

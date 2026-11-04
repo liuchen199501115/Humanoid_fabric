@@ -1,0 +1,57 @@
+{
+  "tracking": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 135.4854961442086,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.31708016991615295,
+    "peak_root_position_error": 0.1843593269586563,
+    "peak_root_orientation_error": 0.16665949485196555,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 2999,
+    "torque_updates": 2999,
+    "maximum_qp_period_error_seconds": 6.678685382510707e-16,
+    "maximum_torque_period_error_seconds": 6.678685382510707e-16,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.0019951541908085346,
+    "qp_wall_p99_seconds": 0.003836711440235376,
+    "qp_wall_max_seconds": 0.013159391935914755,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  },
+  "response": [
+    {
+      "time": 5.8,
+      "max_torque_difference": 0.0,
+      "right_ankle_pitch_predicted": 2.8786544799804688,
+      "right_ankle_pitch_measured": 34.120914459228516,
+      "left_ankle_roll_predicted": -2.8285789489746094,
+      "left_ankle_roll_measured": -13.050764083862305
+    },
+    {
+      "time": 5.9,
+      "max_torque_difference": 0.0,
+      "right_ankle_pitch_predicted": 8.195035934448242,
+      "right_ankle_pitch_measured": 47.71220397949219,
+      "left_ankle_roll_predicted": 12.987862586975098,
+      "left_ankle_roll_measured": 12.868880271911621
+    }
+  ]
+}

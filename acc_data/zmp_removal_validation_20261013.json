@@ -1,0 +1,21 @@
+{
+  "scope": "remove_legacy_zmp",
+  "applied": true,
+  "changed_files": 29,
+  "regression_tests": {
+    "passed": 89,
+    "log": "/tmp/g1_without_zmp_review_tests.log"
+  },
+  "startup_simulation": {
+    "duration_s": 6,
+    "record": "/tmp/g1_without_zmp_smoke.npz",
+    "numerical_pipeline_passed": true,
+    "controller_validation_passed": true,
+    "unloading_passed": false,
+    "limitation": "Transfer did not start; no four-step tracking success claimed"
+  },
+  "prior_unloading_record": "acc_data/walk1_unload_verified_20261012.npz",
+  "prior_unloading_record_predates_cleanup": true,
+  "patch": "/tmp/g1_remove_zmp.patch",
+  "backup": "/tmp/g1_before_zmp_removal.tar.gz"
+}

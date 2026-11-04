@@ -1,0 +1,165 @@
+[
+  {
+    "time": 0.9500000000000001,
+    "requested_com_acc": [
+      -0.37515127658843994,
+      -1.192931890487671,
+      4.279321670532227
+    ],
+    "predicted_com_acc": [
+      -0.30700099565488426,
+      -2.9375023069047037,
+      6.174828203224754
+    ],
+    "tests": {
+      "xyz": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 3012.5068360641358
+      },
+      "xy": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2702.905426244063
+      },
+      "y": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2722.8933680876935
+      }
+    }
+  },
+  {
+    "time": 1.1,
+    "requested_com_acc": [
+      -0.2836132049560547,
+      0.13934898376464844,
+      -1.7767062187194824
+    ],
+    "predicted_com_acc": [
+      0.5097389404051519,
+      -2.175754786114509,
+      2.4025028831730326
+    ],
+    "tests": {
+      "xyz": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2624.8793495960863
+      },
+      "xy": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2661.679758395921
+      },
+      "y": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2635.852368921037
+      }
+    }
+  },
+  {
+    "time": 1.2,
+    "requested_com_acc": [
+      0.19730591773986816,
+      2.281418800354004,
+      -4.78892707824707
+    ],
+    "predicted_com_acc": [
+      -0.1939913387539309,
+      0.12019491168925356,
+      -5.471848411805735
+    ],
+    "tests": {
+      "xyz": {
+        "feasible": null,
+        "solver_status_code": 4,
+        "status": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+      },
+      "xy": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2533.568880530957
+      },
+      "y": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2460.3760486631513
+      }
+    }
+  },
+  {
+    "time": 1.4000000000000001,
+    "requested_com_acc": [
+      0.34598982334136963,
+      2.3176331520080566,
+      -0.13224291801452637
+    ],
+    "predicted_com_acc": [
+      -0.4062336031309607,
+      1.7104982849686994,
+      2.0439439245907316
+    ],
+    "tests": {
+      "xyz": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 978.0466546325929
+      },
+      "xy": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 1682.7024360128657
+      },
+      "y": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 881.5275729186449
+      }
+    }
+  },
+  {
+    "time": 1.6,
+    "requested_com_acc": [
+      1.9576176404953003,
+      4.598518371582031,
+      -2.171448230743408
+    ],
+    "predicted_com_acc": [
+      0.978318877670671,
+      -0.48522278435863675,
+      -2.281288863035787
+    ],
+    "tests": {
+      "xyz": {
+        "feasible": null,
+        "solver_status_code": 4,
+        "status": "(HiGHS Status 0: Not Set)"
+      },
+      "xy": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2830.40016495947
+      },
+      "y": {
+        "feasible": true,
+        "solver_status_code": 0,
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_acceleration": 2660.4122125923923
+      }
+    }
+  }
+]

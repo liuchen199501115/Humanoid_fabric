@@ -1,0 +1,43 @@
+{
+  "scope": "Offline exact recorded reference dynamics, optimistic full soles, real 0.8 motor budget; not a closed-loop certificate",
+  "rows": [
+    {
+      "time": 9.200000000000001,
+      "feasible": false,
+      "contact_velocity": 0.005922025069594383,
+      "contact_acceleration": 0.19265492260456085
+    },
+    {
+      "time": 9.5,
+      "feasible": true,
+      "contact_velocity": 1.6614794731140137e-06,
+      "contact_acceleration": 0.0033067483454942703,
+      "minimum_outgoing_load_n": 77.39455135700805,
+      "peak_torque_ratio": 1.0
+    },
+    {
+      "time": 10.0,
+      "feasible": true,
+      "contact_velocity": 1.862645149230957e-08,
+      "contact_acceleration": 1.4901161193847656e-08,
+      "minimum_outgoing_load_n": 15.978375023927999,
+      "peak_torque_ratio": 0.7851622610814852
+    },
+    {
+      "time": 10.5,
+      "feasible": true,
+      "contact_velocity": 7.450580596923828e-09,
+      "contact_acceleration": 3.4691765904426575e-08,
+      "minimum_outgoing_load_n": -0.0,
+      "peak_torque_ratio": 0.40186238288879395
+    },
+    {
+      "time": 10.8,
+      "feasible": true,
+      "contact_velocity": 5.587935447692871e-09,
+      "contact_acceleration": 3.9748556446284056e-08,
+      "minimum_outgoing_load_n": -0.0,
+      "peak_torque_ratio": 0.4048939228057861
+    }
+  ]
+}

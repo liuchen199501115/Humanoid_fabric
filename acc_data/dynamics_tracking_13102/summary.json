@@ -1,0 +1,46 @@
+{
+  "pkl": "retarget/output/B2A_131_02_stageii.pkl",
+  "pkl_sha256": "ac71ed3a0f3e273500c6e5fbb6ec6dae6b7c9a8f140c4f3a3a6674fd9e50e552",
+  "frames": 1247,
+  "fps": 120,
+  "profile": "dynamics-aware",
+  "gpu": "RTX 4090 D",
+  "self_collisions_enabled": true,
+  "reference_modified": false,
+  "model_comparison": {
+    "mass_kg": 33.34114074707031,
+    "mass_normalized_max_error": [
+      1.4591383887818665e-06
+    ],
+    "left_foot_jacobian_max_error": 5.364418029785156e-07,
+    "right_foot_jacobian_max_error": 3.725290298461914e-07
+  },
+  "tracking": {
+    "requested_duration_s": 4,
+    "warmup_s": 1,
+    "failure_time_s": 1.3800000000000001,
+    "played_motion_s": 0.3800000000000001,
+    "last_recorded_frame": 43.20000000000001,
+    "peak_recorded_com_error_m": 0.05514504760503769,
+    "peak_recorded_joint_reference_rmse_rad": 0.47304439544677734,
+    "failure_contact_mode": 3,
+    "failure_normal_forces_N": [
+      0,
+      2337.28271484375
+    ],
+    "failure_contact_acceleration_error": 0.6896762847900391,
+    "failure_friction_violation": 2.7141032218933105,
+    "passed": false
+  },
+  "hold": {
+    "duration_s": 2,
+    "warmup_s": 5,
+    "passed": true,
+    "final_com_error_m": 0.009435296058654785,
+    "peak_recorded_com_error_m": 0.009445203468203545,
+    "peak_recorded_joint_reference_rmse_rad": 0.0460260845720768,
+    "final_servo_rmse_rad": 0.022643908858299255,
+    "final_joint_reference_rmse_rad": 0.044443726539611816
+  },
+  "unit_tests_passed": 55
+}

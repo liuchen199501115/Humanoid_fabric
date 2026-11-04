@@ -1,0 +1,15 @@
+[
+  {
+    "record": "acc_data/walk1_sphere_arm_live_20261004.failure.npz",
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "feasible": false
+  },
+  {
+    "record": "acc_data/walk1_staged_baseline_v2_20261004/standing.qp_0000.npz",
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "feasible": true,
+    "maximum_constraint_violation": 7.431920856504348e-09
+  }
+]

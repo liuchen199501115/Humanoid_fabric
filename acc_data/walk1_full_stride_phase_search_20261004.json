@@ -1,0 +1,897 @@
+[
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0077295415, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0029666368, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0014263185, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8672271370887756], velocity=[-0.7121216058731079], minimum_acceleration=[1495.343994140625], maximum_acceleration=[97.20687866210938]."
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8618187308311462], velocity=[-0.8270183801651001], minimum_acceleration=[200.69081115722656], maximum_acceleration=[98.69908905029297]."
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0075038569, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.0674395486712454,
+    "joint_score": 0.7517244219779968
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.4078235626220703,
+    "joint_score": 0.6963877081871033
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.5055196471512318,
+    "joint_score": 0.46740731596946716
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.38985227048397064,
+    "joint_score": 0.34992149472236633
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.18275844678282735,
+    "joint_score": 0.171342670917511
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.22213727235794067,
+    "joint_score": 0.22213727235794067
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.7528544068336485,
+    "joint_score": 1.112248420715332
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.5941832065582275,
+    "joint_score": 0.8517986536026001
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.1395119950175283,
+    "joint_score": 0.973992109298706
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.7131653726100922,
+    "joint_score": 0.5389585494995117
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.4979459345340729], velocity=[10.957076072692871], minimum_acceleration=[-259.8326416015625], maximum_acceleration=[-1565.0238037109375]."
+  },
+  {
+    "options": {
+      "duration": 1.2,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.741564005613327,
+    "joint_score": 0.5390380024909973
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0095877321, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0020031738, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.002922056, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8661453127861023], velocity=[-0.6771314144134521], minimum_acceleration=[1207.3929443359375], maximum_acceleration=[96.57780456542969]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8632066249847412], velocity=[-0.8102378845214844], minimum_acceleration=[539.2741088867188], maximum_acceleration=[98.51942443847656]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0089074923, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.9785901643335818,
+    "joint_score": 0.7490742802619934
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.2800064086914062,
+    "joint_score": 0.6846858263015747
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.521540816873312,
+    "joint_score": 0.35983914136886597
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.4159947745501995,
+    "joint_score": 0.3391379714012146
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.1721225529909134,
+    "joint_score": 0.1721225529909134
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.21090078353881836,
+    "joint_score": 0.21090078353881836
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.5800078287720678,
+    "joint_score": 1.3475924730300903
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.509859323501587,
+    "joint_score": 0.8818434476852417
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.4118007272481916,
+    "joint_score": 1.0268017053604126
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.788674585521221,
+    "joint_score": 0.5229597091674805
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.023100916, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00014609098, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.010522497, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8649302124977112], velocity=[-0.7809556722640991], minimum_acceleration=[955.5298461914062], maximum_acceleration=[98.16122436523438]."
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0034436574, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8617443442344666], velocity=[-0.6622312664985657], minimum_acceleration=[99.70061492919922], maximum_acceleration=[96.0577392578125]."
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8635187745094299], velocity=[-0.80955570936203], minimum_acceleration=[616.9703979492188], maximum_acceleration=[98.52848815917969]."
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.59,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0093040299, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.1154652461409567,
+    "joint_score": 0.6713491082191467
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.283118486404419,
+    "joint_score": 0.6048595905303955
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.37574897333979607,
+    "joint_score": 0.34822553396224976
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.3168626129627228,
+    "joint_score": 0.3168626129627228
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.17716862261295319,
+    "joint_score": 0.17716862261295319
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.2061784565448761,
+    "joint_score": 0.2061784565448761
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.898625202476978,
+    "joint_score": 1.3751728534698486
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.0,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 1.4009193405508993,
+    "joint_score": 0.8207418918609619
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.9482566118240356,
+    "joint_score": 0.9482566118240356
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.3,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "score": 0.5908189229667187,
+    "joint_score": 0.5164662599563599
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.2,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.042156119, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 2.0,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.3,
+      "landing_com_fraction": 0.5,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.001494851, tolerance=2e-06"
+  }
+]

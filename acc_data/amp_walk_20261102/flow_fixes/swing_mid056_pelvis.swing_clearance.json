@@ -1,0 +1,11 @@
+{
+  "mid_swing_clearance_m": 0.056,
+  "peak_joint_rmse_rad": 0.14258061349391937,
+  "max_joint_change_rad": 0.626105546951294,
+  "original_source_retained_for_audit": true,
+  "landing_endpoints_preserved": true,
+  "pelvis_preserved": true,
+  "geometry": "enabled USD sphere/cube foot colliders",
+  "adaptation_policy": "Fill each source midpoint clearance deficit with one smooth bump",
+  "changed_source_frames": 171
+}

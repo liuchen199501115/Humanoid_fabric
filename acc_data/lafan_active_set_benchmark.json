@@ -1,0 +1,26 @@
+[
+  {
+    "frame": 3200,
+    "certified": true,
+    "median_seconds": 0.0012043977621942759,
+    "max_seconds": 0.00278305122628808,
+    "solution_delta_max": 1.466957934326274e-05,
+    "equality_residual": 1.1368683772161603e-13,
+    "inequality_residual": 5.1181281435219717e-14
+  },
+  {
+    "frame": 3300,
+    "certified": true,
+    "median_seconds": 0.0009865895844995975,
+    "max_seconds": 0.0012504798360168934,
+    "solution_delta_max": 8.259799415100133e-06,
+    "equality_residual": 5.115907697472721e-13,
+    "inequality_residual": 4.5075054799781356e-14
+  },
+  {
+    "frame": 3700,
+    "certified": false,
+    "median_seconds": 0.0007588386069983244,
+    "max_seconds": 0.0011816262267529964
+  }
+]

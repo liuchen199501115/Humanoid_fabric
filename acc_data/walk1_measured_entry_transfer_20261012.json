@@ -1,0 +1,62 @@
+{
+  "source_record": "acc_data/walk1_no_reduced_four_20261009.reference_failure.npz",
+  "acceleration_assumption": "zero reference acceleration, not measured acceleration",
+  "simulation_validated": false,
+  "preflight": {
+    "samples": 1502,
+    "sample_dt": 0.002,
+    "max_joint_bound_violation": 0.0,
+    "minimum_terminal_leg_margin": 0.057739853858947754,
+    "support_lateral_offset": -0.019,
+    "rejected": [
+      {
+        "offset": 0.0,
+        "reason": "Transfer joint bound at t=1.1200: left_ankle_roll_joint, violation=0.0176432"
+      },
+      {
+        "offset": -0.004,
+        "reason": "Transfer joint bound at t=1.2000: left_ankle_roll_joint, violation=0.11542"
+      },
+      {
+        "offset": 0.004,
+        "reason": "Transfer joint bound at t=1.0800: left_ankle_roll_joint, violation=0.116927"
+      },
+      {
+        "offset": -0.008,
+        "reason": "Transfer joint bound at t=1.2800: left_ankle_roll_joint, violation=0.0743163"
+      },
+      {
+        "offset": 0.008,
+        "reason": "Transfer joint bound at t=1.0400: left_ankle_roll_joint, violation=0.164567"
+      },
+      {
+        "offset": -0.012,
+        "reason": "Transfer joint bound at t=1.4000: left_ankle_roll_joint, violation=0.0188754"
+      },
+      {
+        "offset": 0.012,
+        "reason": "Transfer joint bound at t=1.0000: left_ankle_roll_joint, violation=0.159864"
+      },
+      {
+        "offset": -0.016,
+        "reason": "Transfer endpoint leaves insufficient joint margin: 0.05176651477813721"
+      },
+      {
+        "offset": 0.016,
+        "reason": "Transfer joint bound at t=0.9600: left_ankle_roll_joint, violation=0.103024"
+      }
+    ],
+    "sampled_joint_bounds_passed": true,
+    "pelvis_roll_offset": 0.0,
+    "measured_entry": true,
+    "initial_velocity_max": 0.013029126450419426,
+    "initial_acceleration_max": 0.0,
+    "entry_max_reference_foot_offset_m": 0.0013541958760470152,
+    "entry_max_reference_foot_rotation_rad": 0.008259454742074013,
+    "exact_contact_reference": false,
+    "full_dynamics_validated": false
+  },
+  "initial_q_error": 5.960464477539063e-08,
+  "initial_v_error": 0.0,
+  "initial_a_error": 0.0
+}

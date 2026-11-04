@@ -1,0 +1,69 @@
+{
+  "scope": "Sampled exact PCHIP source acceleration and optimistic full soles. LP minimizes torque/0.8-motor-budget ratio, with NO hard torque ceiling; infeasible means no allowed contact wrench even with unrestricted actuator torque. Contact plan is inferred; impacts not modeled. This is not a whole-clip impossibility proof.",
+  "rows": [
+    {
+      "time_s": 0.0,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.02,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.05,
+      "planned_contact_mode": 2,
+      "feasible": true,
+      "peak_torque_ratio": 0.4631176190427174,
+      "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "within_motor_budget": true
+    },
+    {
+      "time_s": 0.08,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.1,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.12,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.14,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    },
+    {
+      "time_s": 0.15,
+      "planned_contact_mode": 2,
+      "feasible": false,
+      "peak_torque_ratio": null,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "within_motor_budget": false
+    }
+  ]
+}

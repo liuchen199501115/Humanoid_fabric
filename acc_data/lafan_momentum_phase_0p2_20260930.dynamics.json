@@ -1,0 +1,42 @@
+{
+  "failure_interval": {
+    "start": 1.022,
+    "end": 1.078,
+    "samples": 22,
+    "swing_clearance_min": 0.0009392127394676208,
+    "swing_clearance_max": 0.01831693947315216
+  },
+  "scope": "offline_rigid_body_single_support_with_motor_armature",
+  "candidate": "acc_data/lafan_momentum_phase_0p2_20260930.npz",
+  "support": "left",
+  "samples": 551,
+  "inverse_dynamics_passed": false,
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "worst_torque_sample": {
+    "time": 1.066,
+    "torque_ratio": 0.9158439040184021,
+    "worst_joint": "right_hip_pitch_joint",
+    "wrench_violation": 49.78462219238281,
+    "friction_violation": 49.78462219238281,
+    "normal_force_violation": 0.0,
+    "cop_violation": 0.0,
+    "yaw_violation": 7.20174503326416,
+    "swing_clearance": 0.0028964541852474213,
+    "base_residual": 7.62939453125e-06,
+    "contact_velocity": 1.0244548320770264e-07,
+    "contact_acceleration": 6.854534149169922e-07
+  },
+  "max_wrench_violation": 49.78462219238281,
+  "wrench_pass_fraction": 0.9600725952813067,
+  "max_contact_velocity": 4.172325134277344e-07,
+  "max_contact_acceleration": 4.1425228118896484e-06,
+  "unchecked": [
+    "collision",
+    "impact",
+    "landing continuation",
+    "closed-loop tracking",
+    "continuous inter-sample bounds"
+  ]
+}

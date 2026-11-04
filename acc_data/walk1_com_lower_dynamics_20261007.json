@@ -1,0 +1,467 @@
+{
+  "scope": "Sampled exact-reference necessary conditions; not a closed-loop WBC test",
+  "full_tracking_passed": false,
+  "simulation_run": false,
+  "candidate": "acc_data/walk1_com_lower_20261007/partial.npz",
+  "source_frames": 10,
+  "samples": 10,
+  "stride": 1,
+  "includes_transition_neighbors": true,
+  "contact_model": "Rigid full six-dimensional flat soles; rolling/impact not modeled",
+  "collision_model": "Enabled runtime sphere covers; overlap is not proof of mesh penetration",
+  "thresholds": {
+    "contact_twist": 0.001,
+    "contact_acceleration": 0.001,
+    "joint_braking": 1e-05,
+    "torque_ratio": 1
+  },
+  "sampled_necessary_conditions_passed": false,
+  "failures": {
+    "contact": 0,
+    "torque_or_wrench": 0,
+    "joint_braking": 10,
+    "collision": 10
+  },
+  "rows": [
+    {
+      "frame": 114.0,
+      "time": 15.671137038985574,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.26762161604845686,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          0.9948149919509888,
+          -0.74040287733078,
+          326.4764404296875
+        ],
+        "cop_local_m": [
+          0.03367391601204872,
+          -0.011338009499013424
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 3.725290298461914e-09,
+      "contact_acceleration_max": 1.83936208486557e-08,
+      "joint_braking_violation": 1.1140196323394775,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 6.155710697174072,
+        "minimum_cover_distance": -0.0590238943696022
+      }
+    },
+    {
+      "frame": 115.0,
+      "time": 15.80860315336264,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.2620500926029761,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          0.781093180179596,
+          -0.7519509792327881,
+          324.8463439941406
+        ],
+        "cop_local_m": [
+          0.04153747484087944,
+          -0.00922925490885973
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 1.4901161193847656e-08,
+      "contact_acceleration_max": 1.6763806343078613e-08,
+      "joint_braking_violation": 1.4989389181137085,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.132146835327148,
+        "minimum_cover_distance": -0.06849250197410583
+      }
+    },
+    {
+      "frame": 116.0,
+      "time": 15.946069267739706,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.27518827836060594,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          1.264643669128418,
+          0.3866700828075409,
+          329.1842346191406
+        ],
+        "cop_local_m": [
+          0.043246474117040634,
+          -0.011853116564452648
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 3.725290298461914e-09,
+      "contact_acceleration_max": 3.562308847904205e-08,
+      "joint_braking_violation": 1.455306053161621,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.248572826385498,
+        "minimum_cover_distance": -0.0781349316239357
+      }
+    },
+    {
+      "frame": 117.0,
+      "time": 16.08353538211677,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.3436259195959737,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          0.30117303133010864,
+          -1.1274101734161377,
+          328.03717041015625
+        ],
+        "cop_local_m": [
+          0.054392337799072266,
+          -0.008316395804286003
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 1.862645149230957e-09,
+      "contact_acceleration_max": 1.1175870895385742e-07,
+      "joint_braking_violation": 1.3002675771713257,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.523106575012207,
+        "minimum_cover_distance": -0.08682622015476227
+      }
+    },
+    {
+      "frame": 118.0,
+      "time": 16.221001496493837,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.38407214370754594,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          0.9640308022499084,
+          -0.24080432951450348,
+          326.9497985839844
+        ],
+        "cop_local_m": [
+          0.06067098677158356,
+          -0.008292644284665585
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 3.725290298461914e-09,
+      "contact_acceleration_max": 2.8259819373488426e-08,
+      "joint_braking_violation": 1.3495500087738037,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.562067031860352,
+        "minimum_cover_distance": -0.09254224598407745
+      }
+    },
+    {
+      "frame": 119.0,
+      "time": 16.358467610870907,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.43186397907779756,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          1.1518709659576416,
+          -0.20427410304546356,
+          325.9477844238281
+        ],
+        "cop_local_m": [
+          0.068363256752491,
+          -0.007784278132021427
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 7.450580596923828e-09,
+      "contact_acceleration_max": 5.587935447692871e-08,
+      "joint_braking_violation": 1.5166783332824707,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "left_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.471606254577637,
+        "minimum_cover_distance": -0.09559448063373566
+      }
+    },
+    {
+      "frame": 120.0,
+      "time": 16.495933725247973,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.5040314488117141,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          -0.2602406442165375,
+          -0.2517874240875244,
+          327.8303527832031
+        ],
+        "cop_local_m": [
+          0.07959675043821335,
+          -0.007990761660039425
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 7.450580596923828e-09,
+      "contact_acceleration_max": 3.119930624961853e-08,
+      "joint_braking_violation": 2.012145757675171,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "right_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.317951202392578,
+        "minimum_cover_distance": -0.0962427631020546
+      }
+    },
+    {
+      "frame": 121.0,
+      "time": 16.63339983962504,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.5424888639129468,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          1.0835648775100708,
+          -0.423936665058136,
+          327.0660400390625
+        ],
+        "cop_local_m": [
+          0.08560945838689804,
+          -0.006963847205042839
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 7.450580596923828e-09,
+      "contact_acceleration_max": 3.725290298461914e-09,
+      "joint_braking_violation": 2.153024196624756,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "right_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 7.134790897369385,
+        "minimum_cover_distance": -0.09524752199649811
+      }
+    },
+    {
+      "frame": 122.0,
+      "time": 16.770865954002105,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.5876797606524929,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          1.442142367362976,
+          -0.834360659122467,
+          326.299560546875
+        ],
+        "cop_local_m": [
+          0.0929798111319542,
+          -0.005730729084461927
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 1.1175870895385742e-08,
+      "contact_acceleration_max": 9.313225746154785e-09,
+      "joint_braking_violation": 2.4607601165771484,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "right_ankle_roll_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 6.846507549285889,
+        "minimum_cover_distance": -0.09304796159267426
+      }
+    },
+    {
+      "frame": 123.0,
+      "time": 16.90833206837917,
+      "mode": 1,
+      "passed": false,
+      "allocation": {
+        "feasible": true,
+        "peak_torque_ratio": 0.6202282817769308,
+        "reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "sole_wrench_diagnostic": {
+        "force_local_n": [
+          2.3204214572906494,
+          -1.1414729356765747,
+          325.8044128417969
+        ],
+        "cop_local_m": [
+          0.09827632457017899,
+          -0.004507466219365597
+        ],
+        "nominal_rectangle_m": {
+          "x": [
+            -0.05,
+            0.12
+          ],
+          "y": [
+            -0.025,
+            0.025
+          ]
+        }
+      },
+      "contact_twist_max": 1.4901161193847656e-08,
+      "contact_acceleration_max": 3.771856427192688e-08,
+      "joint_braking_violation": 10.503318786621094,
+      "joint_braking_passed": false,
+      "joint_braking_reason": null,
+      "worst_joint": "right_knee_joint",
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 6.553377151489258,
+        "minimum_cover_distance": -0.08901198208332062
+      }
+    }
+  ]
+}

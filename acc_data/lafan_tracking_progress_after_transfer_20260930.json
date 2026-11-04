@@ -1,0 +1,253 @@
+{
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "source_frames": 7839,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "latest_verified_transfer": {
+    "scope": "first_transfer_and_lift",
+    "full_pkl_tracking": false,
+    "duration": 11.998000000000001,
+    "final_source_frame": 114.03624096000021,
+    "control_updates": 6000,
+    "simulation_control_hz": 499.99999999999955,
+    "transfer_passed": true,
+    "support": "left",
+    "release_time": 7.218,
+    "post_release_duration": 4.780000000000001,
+    "final_second": {
+      "min_swing_clearance_m": 0.03874528524756897,
+      "max_swing_force_n": 0.0,
+      "min_stance_force_n": 321.0476989746094,
+      "max_com_error_m": 0.0009022862068377435
+    }
+  },
+  "transfer_joint_tracking": {
+    "min_final_second_leg_margin_rad": 0.05372639000415802,
+    "min_final_second_reference_leg_margin_rad": 0.05572301149368286,
+    "max_final_second_joint_tracking_error_rad": 0.257510781288147
+  },
+  "control_rate": {
+    "qp_hz": 500,
+    "torque_hz": 500,
+    "qp_updates": 6000,
+    "torque_updates": 6000,
+    "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+    "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+    "torque_uses_expected_qp_updates": true,
+    "simulation_rate_passed": true,
+    "qp_wall_time_valid": true,
+    "qp_wall_median_seconds": 0.010219803545624018,
+    "qp_wall_p99_seconds": 1.2757336500613108,
+    "qp_wall_max_seconds": 2.6768341548740864,
+    "all_qp_solves_within_period": false,
+    "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+  },
+  "next_source_step_preflight": {
+    "runtime_acceleration_and_joint_bounds_passed": false,
+    "reference_constraints_passed": false,
+    "qp_acceleration_limit_scale": 5.0,
+    "joint_limit_barrier_bandwidth": 8.0,
+    "max_acceleration_ratio": 1.972299575805664,
+    "worst_joint_bound_sample": {
+      "acceleration_ratio": 1.9204055070877075,
+      "joint_bound_violation": 150.82632446289062,
+      "worst_joint_bound": "right_knee_joint",
+      "time": 1.27,
+      "torque_ratio": 0.5129882097244263,
+      "worst_joint": "right_hip_pitch_joint",
+      "wrench_violation": 2.8366241455078125,
+      "friction_violation": 2.8366241455078125,
+      "normal_force_violation": 0.0,
+      "cop_violation": 0.0,
+      "yaw_violation": 0.0,
+      "swing_clearance": 0.0020209215581417084,
+      "base_residual": 0.0,
+      "contact_velocity": 1.9371509552001953e-07,
+      "contact_acceleration": 4.470348358154297e-07
+    },
+    "failure_interval": {
+      "start": 1.264,
+      "end": 1.272,
+      "samples": 5,
+      "swing_clearance_min": 0.001692991703748703,
+      "swing_clearance_max": 0.003194645047187805
+    },
+    "scope": "offline_rigid_body_single_support_with_motor_armature",
+    "candidate": "acc_data/lafan_source_margin_staged_20260930.npz",
+    "support": "left",
+    "samples": 651,
+    "inverse_dynamics_passed": false,
+    "simulation_validated": false,
+    "ready_for_tracking": false,
+    "full_pkl_tracking": false,
+    "worst_torque_sample": {
+      "acceleration_ratio": 1.972299575805664,
+      "joint_bound_violation": 139.7628631591797,
+      "worst_joint_bound": "right_knee_joint",
+      "time": 1.266,
+      "torque_ratio": 0.5205657482147217,
+      "worst_joint": "right_hip_pitch_joint",
+      "wrench_violation": 2.764862060546875,
+      "friction_violation": 2.764862060546875,
+      "normal_force_violation": 0.0,
+      "cop_violation": 0.0,
+      "yaw_violation": 0.0,
+      "swing_clearance": 0.002771954983472824,
+      "base_residual": 1.1920928955078125e-07,
+      "contact_velocity": 3.241002559661865e-07,
+      "contact_acceleration": 4.76837158203125e-07
+    },
+    "max_wrench_violation": 3.3026275634765625,
+    "wrench_pass_fraction": 0.9923195084485407,
+    "max_contact_velocity": 3.725290298461914e-07,
+    "max_contact_acceleration": 2.6673078536987305e-06,
+    "unchecked": [
+      "collision",
+      "impact",
+      "landing continuation",
+      "closed-loop tracking",
+      "continuous inter-sample bounds"
+    ]
+  },
+  "changes": [
+    "Search transfer reference inside support sole using unchanged runtime joint bounds",
+    "Gate release on measured COM position/velocity and leg tracking errors as well as observed load",
+    "Activate COM priority after transfer begins; retain startup task weighting",
+    "Default bounded experiment launchers to staged COM priority and validated DAQP backend"
+  ],
+  "verification": {
+    "unit_tests_passed": 95,
+    "log": "/tmp/g1_transfer_final_regression_20260930.log"
+  },
+  "remaining": [
+    "Plan a first swing and landing satisfying full wrench, acceleration and joint braking bounds",
+    "Plan a continuous landing-to-opposite-foot transition",
+    "Verify both support switches and all source frames",
+    "Meet the real-time 2 ms control budget"
+  ],
+  "validated_transfer_backends": {
+    "osqp": {
+      "transfer": {
+        "scope": "first_transfer_and_lift",
+        "full_pkl_tracking": false,
+        "duration": 11.998000000000001,
+        "final_source_frame": 114.03624096000021,
+        "control_updates": 6000,
+        "simulation_control_hz": 499.99999999999955,
+        "transfer_passed": true,
+        "support": "left",
+        "release_time": 7.218,
+        "post_release_duration": 4.780000000000001,
+        "final_second": {
+          "min_swing_clearance_m": 0.03874528524756897,
+          "max_swing_force_n": 0.0,
+          "min_stance_force_n": 321.0476989746094,
+          "max_com_error_m": 0.0009022862068377435
+        }
+      },
+      "rate": {
+        "qp_hz": 500,
+        "torque_hz": 500,
+        "qp_updates": 6000,
+        "torque_updates": 6000,
+        "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+        "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+        "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+        "torque_uses_expected_qp_updates": true,
+        "simulation_rate_passed": true,
+        "qp_wall_time_valid": true,
+        "qp_wall_median_seconds": 0.010219803545624018,
+        "qp_wall_p99_seconds": 1.2757336500613108,
+        "qp_wall_max_seconds": 2.6768341548740864,
+        "all_qp_solves_within_period": false,
+        "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+      }
+    },
+    "daqp": {
+      "transfer": {
+        "scope": "first_transfer_and_lift",
+        "full_pkl_tracking": false,
+        "duration": 11.998000000000001,
+        "final_source_frame": 114.03624096000021,
+        "control_updates": 6000,
+        "simulation_control_hz": 499.99999999999955,
+        "transfer_passed": true,
+        "support": "left",
+        "release_time": 7.218,
+        "post_release_duration": 4.780000000000001,
+        "final_second": {
+          "min_swing_clearance_m": 0.038722492190063344,
+          "max_swing_force_n": 0.0,
+          "min_stance_force_n": 320.07391357421875,
+          "max_com_error_m": 0.0009178921463899314
+        }
+      },
+      "rate": {
+        "qp_hz": 500,
+        "torque_hz": 500,
+        "qp_updates": 6000,
+        "torque_updates": 6000,
+        "maximum_qp_period_error_seconds": 1.1084883011491797e-15,
+        "maximum_torque_period_error_seconds": 1.1084883011491797e-15,
+        "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+        "torque_uses_expected_qp_updates": true,
+        "simulation_rate_passed": true,
+        "qp_wall_time_valid": true,
+        "qp_wall_median_seconds": 0.0037501780316233635,
+        "qp_wall_p99_seconds": 0.0043528703926131165,
+        "qp_wall_max_seconds": 0.006719957105815411,
+        "all_qp_solves_within_period": false,
+        "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+      }
+    }
+  },
+  "default_backend": "daqp",
+  "reference_preflight": {
+    "samples": 1502,
+    "sample_dt": 0.002,
+    "max_joint_bound_violation": 0.0,
+    "minimum_terminal_leg_margin": 0.05569639801979065,
+    "support_lateral_offset": -0.016,
+    "rejected": [
+      {
+        "offset": 0.0,
+        "reason": "Transfer joint bound at t=1.1800: left_ankle_roll_joint, violation=0.0897078"
+      },
+      {
+        "offset": -0.004,
+        "reason": "Transfer joint bound at t=1.2400: left_ankle_roll_joint, violation=0.0215378"
+      },
+      {
+        "offset": 0.004,
+        "reason": "Transfer joint bound at t=1.1200: left_ankle_roll_joint, violation=0.0648044"
+      },
+      {
+        "offset": -0.008,
+        "reason": "Transfer joint bound at t=1.3400: left_ankle_roll_joint, violation=0.031508"
+      },
+      {
+        "offset": 0.008,
+        "reason": "Transfer joint bound at t=1.0800: left_ankle_roll_joint, violation=0.127771"
+      },
+      {
+        "offset": -0.012,
+        "reason": "Transfer joint bound at t=1.5400: left_ankle_roll_joint, violation=0.00597014"
+      },
+      {
+        "offset": 0.012,
+        "reason": "Transfer joint bound at t=1.0400: left_ankle_roll_joint, violation=0.137649"
+      }
+    ],
+    "sampled_joint_bounds_passed": true
+  },
+  "reference_search": {
+    "coarse_candidates_evaluated": 16,
+    "accepted": 0,
+    "reports": [
+      "acc_data/lafan_knee_margin_search_20260930.json",
+      "acc_data/lafan_knee_margin_refined_20260930.json"
+    ],
+    "runtime_bounds_relaxed": false
+  }
+}

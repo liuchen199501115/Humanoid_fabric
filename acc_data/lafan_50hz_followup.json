@@ -1,0 +1,172 @@
+{
+  "full_tracking_achieved": false,
+  "trials": [
+    {
+      "source_frame_count": 7839,
+      "first_source_frame": 0.0,
+      "last_source_frame": 131.166,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.5766450762748718,
+      "peak_root_position_error": 0.2311692088842392,
+      "peak_root_orientation_error": 0.4013577879760161,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+      "recording": "acc_data/lafan_source_soft_joint_brake_50hz_20s.failure.npz",
+      "failure_time": 6.54,
+      "control_frequency": 50,
+      "physics_frequency": 500,
+      "history_step_min": 0.019999999999999574,
+      "history_step_max": 0.020000000000000462,
+      "contact_transitions": [
+        {
+          "time": 5.28,
+          "mode": 1
+        },
+        {
+          "time": 6.0600000000000005,
+          "mode": 3
+        }
+      ]
+    },
+    {
+      "source_frame_count": 7839,
+      "first_source_frame": 0.0,
+      "last_source_frame": 4.704000000000001,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.42583057284355164,
+      "peak_root_position_error": 0.011720133014023304,
+      "peak_root_orientation_error": 0.10129334932265047,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+      "recording": "acc_data/lafan_source_pchip_adaptive_50hz_20s.failure.npz",
+      "failure_time": 1.56,
+      "control_frequency": 50,
+      "physics_frequency": 500,
+      "history_step_min": 0.019999999999999796,
+      "history_step_max": 0.020000000000000018,
+      "contact_transitions": []
+    },
+    {
+      "source_frame_count": 7839,
+      "first_source_frame": 0.0,
+      "last_source_frame": 130.53600000000003,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.6092630624771118,
+      "peak_root_position_error": 0.29205605387687683,
+      "peak_root_orientation_error": 0.9044206561169218,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+      "recording": "acc_data/lafan_source_servo_pchip_50hz_20s.failure.npz",
+      "failure_time": 6.5600000000000005,
+      "control_frequency": 50,
+      "physics_frequency": 500,
+      "history_step_min": 0.019999999999999574,
+      "history_step_max": 0.020000000000000462,
+      "contact_transitions": [
+        {
+          "time": 5.28,
+          "mode": 1
+        },
+        {
+          "time": 6.16,
+          "mode": 3
+        }
+      ]
+    },
+    {
+      "source_frame_count": 7839,
+      "first_source_frame": 0.0,
+      "last_source_frame": 130.53600000000003,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.6092630624771118,
+      "peak_root_position_error": 0.29205605387687683,
+      "peak_root_orientation_error": 0.9044206561169218,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+      "recording": "acc_data/lafan_source_observed_patch_50hz_20s.failure.npz",
+      "failure_time": 6.5600000000000005,
+      "control_frequency": 50,
+      "physics_frequency": 500,
+      "history_step_min": 0.019999999999999574,
+      "history_step_max": 0.020000000000000462,
+      "contact_transitions": [
+        {
+          "time": 5.28,
+          "mode": 1
+        },
+        {
+          "time": 6.16,
+          "mode": 3
+        }
+      ]
+    },
+    {
+      "source_frame_count": 7839,
+      "first_source_frame": 0.0,
+      "last_source_frame": 129.0,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.3166584372520447,
+      "peak_root_position_error": 0.163656085729599,
+      "peak_root_orientation_error": 0.278799397705153,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+      "recording": "acc_data/lafan_source_grounded_servo_50hz_20s.failure.npz",
+      "failure_time": 6.18,
+      "control_frequency": 50,
+      "physics_frequency": 500,
+      "history_step_min": 0.019999999999999574,
+      "history_step_max": 0.020000000000000462,
+      "contact_transitions": [
+        {
+          "time": 5.28,
+          "mode": 1
+        }
+      ]
+    }
+  ]
+}

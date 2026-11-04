@@ -1,0 +1,122 @@
+{
+  "scope": "Offline full-model COM adaptation, historical zero-rate boundary; NOT physical tracking",
+  "source_record": "acc_data/walk1_strict_four_transfer_20261008.reference_failure.npz",
+  "ground_offset_m": -0.021463990211486816,
+  "candidates": [
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.25,
+      "held_upper_body": true,
+      "options": {
+        "duration": 0.8,
+        "body_join": "endpoint",
+        "pelvis_pitch_offset": -0.15,
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "score": 1.2311384901404379,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 1.6336227655410767,
+        "minimum_cover_distance": 0.030196383595466614,
+        "violating_samples": 7,
+        "worst_time": 0.37333333333333335,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "com_end_offset_m": [
+        0.012245744466781616,
+        0.06569123268127441,
+        -0.06
+      ],
+      "peak_torque_ratio": 1.1726680994033813,
+      "peak_wrench_score": 0.5715726017951965,
+      "worst_wrench_time_s": 0.7466666666666667,
+      "support_cop_min_m": [
+        -0.0948714092373848,
+        -0.06924553960561752
+      ],
+      "support_cop_max_m": [
+        0.17506036162376404,
+        0.05666723847389221
+      ],
+      "peak_acceleration_ratio": 0.3380500078201294,
+      "max_joint_bound_score": 0.09677460789680481,
+      "goal_unchanged": true
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.5,
+      "held_upper_body": true,
+      "options": {
+        "duration": 0.8,
+        "body_join": "endpoint",
+        "pelvis_pitch_offset": -0.15,
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0021573678, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.25,
+      "held_upper_body": true,
+      "options": {
+        "duration": 1.2,
+        "body_join": "endpoint",
+        "pelvis_pitch_offset": -0.15,
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "score": 0.9984343200922011,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.07579407095909119,
+        "minimum_cover_distance": 0.03019721806049347,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "com_end_offset_m": [
+        0.012245744466781616,
+        0.06569123268127441,
+        -0.06
+      ],
+      "peak_torque_ratio": 1.1820427179336548,
+      "peak_wrench_score": 0.6046172380447388,
+      "worst_wrench_time_s": 1.2,
+      "support_cop_min_m": [
+        -0.02204201929271221,
+        -0.05993737280368805
+      ],
+      "support_cop_max_m": [
+        0.17955714464187622,
+        0.012644326314330101
+      ],
+      "peak_acceleration_ratio": 0.15024802088737488,
+      "max_joint_bound_score": 0.03922688215970993,
+      "goal_unchanged": true
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.5,
+      "held_upper_body": true,
+      "options": {
+        "duration": 1.2,
+        "body_join": "endpoint",
+        "pelvis_pitch_offset": -0.15,
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.002126798, tolerance=2e-06"
+    }
+  ],
+  "simulation_validated": false
+}

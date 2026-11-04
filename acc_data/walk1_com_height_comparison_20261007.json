@@ -1,0 +1,72 @@
+{
+  "full_tracking_passed": false,
+  "simulation_run": false,
+  "height_comparison": [
+    {
+      "report": "acc_data/walk1_anchored_com_small_20261004/report.json",
+      "offset_local_m": [
+        -0.06,
+        0.06
+      ],
+      "projected_frames": 7,
+      "requested_frames": 15,
+      "failed_frames": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "report": "acc_data/walk1_com_lower_20261007/report.json",
+      "offset_local_m": [
+        -0.06,
+        0.06,
+        -0.04
+      ],
+      "projected_frames": 10,
+      "requested_frames": 15,
+      "failed_frames": [
+        124,
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "report": "acc_data/walk1_com_lower8_20261007/report.json",
+      "offset_local_m": [
+        -0.06,
+        0.06,
+        -0.08
+      ],
+      "projected_frames": 9,
+      "requested_frames": 15,
+      "failed_frames": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ]
+    }
+  ],
+  "lower4cm_audit": {
+    "report": "acc_data/walk1_com_lower_dynamics_20261007.json",
+    "samples": 10,
+    "failures": {
+      "contact": 0,
+      "torque_or_wrench": 0,
+      "joint_braking": 10,
+      "collision": 10
+    },
+    "peak_torque_ratio": 0.6202282817769308
+  },
+  "next_required_work": "Jointly adapt upper-body collision clearance and leg braking while retaining source swing targets; resolve last five IK frames and plan continuous measured-state handoff."
+}

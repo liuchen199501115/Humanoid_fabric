@@ -1,0 +1,172 @@
+{
+  "source": "retarget/amp_reference/amp_walk_1ms.pkl",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "retained_change": "Pass measured ground normal forces to dynamic-start contact switching, independently of legacy source-clock gating.",
+  "default_record": "acc_data/amp_walk_20261102/continuation/measured_load.failure.npz",
+  "default_result": {
+    "source_frame_count": 2000,
+    "first_source_frame": 0.0,
+    "last_source_frame": 483.2,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.7681174874305725,
+    "peak_root_position_error": 0.9734032154083252,
+    "peak_root_orientation_error": 2.1934401563108032,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_clip_tracking_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+    "expected_landings": 29,
+    "measured_landings": 4,
+    "all_source_landings_verified": false,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "QP validation failed",
+    "failed_time_s": 2.418,
+    "failed_source_frame": 483.6
+  },
+  "contact_audit_before": {
+    "window_s": [
+      0.0,
+      1.7
+    ],
+    "ignored_loaded_contact_samples": 5,
+    "times_s": [
+      0.316,
+      0.522,
+      1.262,
+      1.264,
+      1.266
+    ]
+  },
+  "contact_audit_after": {
+    "window_s": [
+      0.0,
+      1.7
+    ],
+    "ignored_loaded_contact_samples": 0,
+    "times_s": []
+  },
+  "first_four_peak_joint_rmse_rad": 0.210302472114563,
+  "original_joint_rmse_tolerance_rad": 0.2,
+  "experimental_profiles_enabled_by_default": false,
+  "trials": [
+    {
+      "name": "baseline",
+      "measured_landings": 4,
+      "expected_landings": 29,
+      "failed_time_s": null,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.21519076824188232
+    },
+    {
+      "name": "clearance_margin",
+      "measured_landings": 4,
+      "expected_landings": 29,
+      "failed_time_s": 2.136,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.3187631070613861
+    },
+    {
+      "name": "height_clearance",
+      "measured_landings": 3,
+      "expected_landings": 29,
+      "failed_time_s": 2.348,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.29841938614845276
+    },
+    {
+      "name": "lateral_priority",
+      "measured_landings": 0,
+      "expected_landings": 29,
+      "failed_time_s": 4.266,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 1.152406096458435
+    },
+    {
+      "name": "limit_priority",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "failed_time_s": 1.036,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.9717996120452881
+    },
+    {
+      "name": "loaded_sole_approach",
+      "measured_landings": 0,
+      "expected_landings": 29,
+      "failed_time_s": 0.10400000000000001,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.014374157413840294
+    },
+    {
+      "name": "measured_load",
+      "measured_landings": 4,
+      "expected_landings": 29,
+      "failed_time_s": 2.418,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.7681174874305725
+    },
+    {
+      "name": "phase_unload",
+      "measured_landings": 3,
+      "expected_landings": 29,
+      "failed_time_s": 1.472,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.43473705649375916
+    },
+    {
+      "name": "physics_substeps",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "failed_time_s": 1.322,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 1.0353742837905884
+    },
+    {
+      "name": "physics_velocity8",
+      "measured_landings": 4,
+      "expected_landings": 29,
+      "failed_time_s": 2.122,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.32846736907958984
+    },
+    {
+      "name": "posture_last",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "failed_time_s": 0.336,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.6641829609870911
+    },
+    {
+      "name": "soft_sole_approach",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "failed_time_s": 1.772,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.8261053562164307
+    },
+    {
+      "name": "sole_approach",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "failed_time_s": 0.912,
+      "steps_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.8863170742988586
+    }
+  ],
+  "source_unchanged": true,
+  "full_motion_tracking_passed": false,
+  "validation": {
+    "tests": 484,
+    "passed": true,
+    "log": "acc_data/amp_walk_20261102/continuation/regression.log"
+  }
+}

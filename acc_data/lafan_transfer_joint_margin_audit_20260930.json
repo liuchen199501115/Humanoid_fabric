@@ -1,0 +1,90 @@
+[
+  {
+    "offset": 0.0,
+    "worst": {
+      "t": 2.67,
+      "violation": 1.6582649946212769,
+      "joint": "left_ankle_roll_joint"
+    },
+    "final": {
+      "t": 3.0,
+      "violation": 1.6385040283203125,
+      "joint": "left_ankle_roll_joint"
+    },
+    "max_velocity": 0.0,
+    "final_left_roll": 0.23740161955356598,
+    "end_com": [
+      [
+        1.64974844455719,
+        4.547319412231445,
+        0.6614639163017273
+      ]
+    ]
+  },
+  {
+    "offset": -0.015,
+    "worst": {
+      "t": 0.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "final": {
+      "t": 3.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "max_velocity": 0.0,
+    "final_left_roll": 0.20807059109210968,
+    "end_com": [
+      [
+        1.634824514389038,
+        4.545810222625732,
+        0.6614639163017273
+      ]
+    ]
+  },
+  {
+    "offset": -0.017,
+    "worst": {
+      "t": 0.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "final": {
+      "t": 3.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "max_velocity": 0.0,
+    "final_left_roll": 0.20413583517074585,
+    "end_com": [
+      [
+        1.6328346729278564,
+        4.545608997344971,
+        0.6614639163017273
+      ]
+    ]
+  },
+  {
+    "offset": -0.019,
+    "worst": {
+      "t": 0.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "final": {
+      "t": 3.0,
+      "violation": 0.0,
+      "joint": "left_hip_pitch_joint"
+    },
+    "max_velocity": 0.0,
+    "final_left_roll": 0.20019513368606567,
+    "end_com": [
+      [
+        1.6308448314666748,
+        4.545407772064209,
+        0.6614639163017273
+      ]
+    ]
+  }
+]

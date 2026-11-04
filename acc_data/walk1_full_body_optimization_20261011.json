@@ -1,0 +1,4465 @@
+{
+  "scope": "Full-model constrained-reference penalty search; no live tracking",
+  "options": {
+    "duration": 1.2,
+    "body_join": "endpoint",
+    "pelvis_pitch_offset": -0.15,
+    "com_preview": "full_body_source",
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.0
+  },
+  "best": {
+    "evaluation": 160,
+    "parameters": [
+      0.023685127017889746,
+      0.07060753088741482,
+      0.0008959147551888223,
+      -0.002137642389108998,
+      -0.12216533819676341,
+      -0.045285613961283874
+    ],
+    "objective": 0.30503497629557175,
+    "score": 0.5521810501813889,
+    "collision": {
+      "checked": true,
+      "passed": false,
+      "maximum_violation": 0.011448323726654053,
+      "minimum_cover_distance": 0.030914321541786194,
+      "violating_samples": 2,
+      "worst_time": 0.72,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "peak_torque_ratio": 1.138500690460205,
+    "peak_wrench_score": 0.5466845631599426,
+    "max_joint_bound_score": 0.034109700471162796,
+    "goal_unchanged": true,
+    "sample_count": 21
+  },
+  "evaluations": 160,
+  "optimizer_success": false,
+  "optimizer_message": "Maximum number of function evaluations has been exceeded.",
+  "history": [
+    {
+      "evaluation": 1,
+      "parameters": [
+        0.0122457445,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.9296185920875717,
+      "score": 0.9612022787332534,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.07555641233921051,
+        "minimum_cover_distance": 0.030243083834648132,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1820402145385742,
+      "peak_wrench_score": 0.6046136617660522,
+      "max_joint_bound_score": 0.032925963401794434,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 2,
+      "parameters": [
+        0.006737620787507359,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 1.2474082983760322,
+      "score": 1.1158241778612135,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.04842212796211243,
+        "minimum_cover_distance": 0.03058725595474243,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1802815198898315,
+      "peak_wrench_score": 0.5987116694450378,
+      "max_joint_bound_score": 0.03388477489352226,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 3,
+      "parameters": [
+        0.023262379212492634,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4387412891974558,
+      "score": 0.6520892381668091,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.1162794679403305,
+        "minimum_cover_distance": 0.02972540259361267,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1849199533462524,
+      "peak_wrench_score": 0.6164190173149109,
+      "max_joint_bound_score": 0.03737008944153786,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 4,
+      "parameters": [
+        0.03347524157501472,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4320221784227128,
+      "score": 0.6424994096159935,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.13862426578998566,
+        "minimum_cover_distance": 0.029453113675117493,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1868345737457275,
+      "peak_wrench_score": 0.6273408532142639,
+      "max_joint_bound_score": 0.0428648516535759,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 5,
+      "parameters": [
+        0.028550990417275025,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4038269174477611,
+      "score": 0.6220812797546387,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.12977595627307892,
+        "minimum_cover_distance": 0.029559507966041565,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1860049962997437,
+      "peak_wrench_score": 0.6220812797546387,
+      "max_joint_bound_score": 0.04021663963794708,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 6,
+      "parameters": [
+        0.02921765732578757,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4051364645752642,
+      "score": 0.6227924823760986,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.13140010833740234,
+        "minimum_cover_distance": 0.02954275906085968,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1861268281936646,
+      "peak_wrench_score": 0.6227924823760986,
+      "max_joint_bound_score": 0.04057488217949867,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 7,
+      "parameters": [
+        0.027772625136493794,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4024189737488628,
+      "score": 0.6212508082389832,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.12832149863243103,
+        "minimum_cover_distance": 0.029580995440483093,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1858586072921753,
+      "peak_wrench_score": 0.6212508082389832,
+      "max_joint_bound_score": 0.03979884460568428,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 8,
+      "parameters": [
+        0.026049864491146026,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3990847260415047,
+      "score": 0.6193914413452148,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.12425364553928375,
+        "minimum_cover_distance": 0.029631108045578003,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1855086088180542,
+      "peak_wrench_score": 0.6193914413452148,
+      "max_joint_bound_score": 0.038870107382535934,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 9,
+      "parameters": [
+        0.024985139857840406,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3969358858807388,
+      "score": 0.6182636022567749,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.12118582427501678,
+        "minimum_cover_distance": 0.029665842652320862,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.185293436050415,
+      "peak_wrench_score": 0.6182636022567749,
+      "max_joint_bound_score": 0.03829750046133995,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 10,
+      "parameters": [
+        0.02431847300221797,
+        0.0656912327,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.4017103507886377,
+      "score": 0.6224634945392609,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.11937147378921509,
+        "minimum_cover_distance": 0.02968837320804596,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1851569414138794,
+      "peak_wrench_score": 0.6175551414489746,
+      "max_joint_bound_score": 0.03793882951140404,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 11,
+      "parameters": [
+        0.024985139857840406,
+        0.054376941012509464,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.6504514933771057,
+      "score": 0.7305645942687988,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.34165313839912415,
+        "minimum_cover_distance": 0.026785507798194885,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2581100463867188,
+      "peak_wrench_score": 0.7305645942687988,
+      "max_joint_bound_score": 0.03902852535247803,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 12,
+      "parameters": [
+        0.024985139857840406,
+        0.07562305898749053,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35741430915503086,
+      "score": 0.5978413745760918,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.032299816608428955,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1211684942245483,
+      "peak_wrench_score": 0.5192853212356567,
+      "max_joint_bound_score": 0.03765854984521866,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 13,
+      "parameters": [
+        0.024985139857840406,
+        0.08875388202501892,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.367296326567887,
+      "score": 0.6060497723519802,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03568209707736969,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.035096526145935,
+      "peak_wrench_score": 0.3863438665866852,
+      "max_joint_bound_score": 0.03682078421115875,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 14,
+      "parameters": [
+        0.024985139857840406,
+        0.08129911665403738,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3616704837473628,
+      "score": 0.6013904586434364,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03378686308860779,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0842864513397217,
+      "peak_wrench_score": 0.4623315632343292,
+      "max_joint_bound_score": 0.03729722276329994,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 15,
+      "parameters": [
+        0.024985139857840406,
+        0.06750776405003786,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.36685307343180984,
+      "score": 0.6002199053764343,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.08117350935935974,
+        "minimum_cover_distance": 0.030097633600234985,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1736023426055908,
+      "peak_wrench_score": 0.6002199053764343,
+      "max_joint_bound_score": 0.03818017244338989,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 16,
+      "parameters": [
+        0.024985139857840406,
+        0.07628972580146999,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3579110208391829,
+      "score": 0.5982566513121128,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.032501623034477234,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1168502569198608,
+      "peak_wrench_score": 0.5126197934150696,
+      "max_joint_bound_score": 0.03761660307645798,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 17,
+      "parameters": [
+        0.024985139857840406,
+        0.07252329215011356,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3550907442348384,
+      "score": 0.5958949103951454,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03140425682067871,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1412386894226074,
+      "peak_wrench_score": 0.5502711534500122,
+      "max_joint_bound_score": 0.03785867616534233,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 18,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3537315404275857,
+      "score": 0.5946941561996937,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.008390530943870544,
+        "minimum_cover_distance": 0.030882447957992554,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1535933017730713,
+      "peak_wrench_score": 0.5693402290344238,
+      "max_joint_bound_score": 0.03798021376132965,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 19,
+      "parameters": [
+        0.024985139857840406,
+        0.06942352531273659,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3554161358421075,
+      "score": 0.5950288735330105,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.03683443367481232,
+        "minimum_cover_distance": 0.030578404664993286,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.161242961883545,
+      "peak_wrench_score": 0.5811481475830078,
+      "max_joint_bound_score": 0.03805806487798691,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 20,
+      "parameters": [
+        0.024985139857840406,
+        0.07127419762700198,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3541667654309464,
+      "score": 0.5951191186904907,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031059622764587402,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1492877006530762,
+      "peak_wrench_score": 0.562696099281311,
+      "max_joint_bound_score": 0.037938520312309265,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 21,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -0.08262379212492643,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 100.0,
+      "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 11]], position=[0.25287508964538574], velocity=[0.004282496869564056], minimum_acceleration=[-29.807723999023438], maximum_acceleration=[-270.91351318359375]."
+    },
+    {
+      "evaluation": 22,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.08262379212492635,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 1.5042792696467904,
+      "score": 1.2264906316995619,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03192342817783356,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1536916494369507,
+      "peak_wrench_score": 0.5693581104278564,
+      "max_joint_bound_score": 0.023625381290912628,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 23,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.18475241575014717,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 5.415777979408759,
+      "score": 2.327182412147522,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.034318774938583374,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1509499549865723,
+      "peak_wrench_score": 0.8893613219261169,
+      "max_joint_bound_score": 0.019200580194592476,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 24,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.1256164945114925,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 2.733864469651303,
+      "score": 1.6534401923418043,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03278385102748871,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.152921438217163,
+      "peak_wrench_score": 0.6172670722007751,
+      "max_joint_bound_score": 0.020313451066613197,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 25,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.01950483150029439,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.44308018071644595,
+      "score": 0.6656426824629307,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031054899096488953,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1538069248199463,
+      "peak_wrench_score": 0.5696418285369873,
+      "max_joint_bound_score": 0.03395499661564827,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 26,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -0.024612079927194233,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.42546376239587236,
+      "score": 0.6518754065036774,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.022852063179016113,
+        "minimum_cover_distance": 0.0307314395904541,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1531662940979004,
+      "peak_wrench_score": 0.5687138438224792,
+      "max_joint_bound_score": 0.04305500537157059,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 27,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -0.0038580663483566077,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.36454794954293807,
+      "score": 0.6036733165383339,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.011246174573898315,
+        "minimum_cover_distance": 0.03085772693157196,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.15354585647583,
+      "peak_wrench_score": 0.569271981716156,
+      "max_joint_bound_score": 0.038777902722358704,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 28,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -0.004524733072247646,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3664225205539676,
+      "score": 0.6052173562347889,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.01159621775150299,
+        "minimum_cover_distance": 0.030849263072013855,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1535264253616333,
+      "peak_wrench_score": 0.5692431330680847,
+      "max_joint_bound_score": 0.03891414403915405,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 29,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.005065766554136276,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.373785477413237,
+      "score": 0.611359242349863,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.005035296082496643,
+        "minimum_cover_distance": 0.03092639148235321,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1536670923233032,
+      "peak_wrench_score": 0.5694465637207031,
+      "max_joint_bound_score": 0.03693554550409317,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 30,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -0.0006864549355194444,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3556583346233195,
+      "score": 0.5963007807731628,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.009149506688117981,
+        "minimum_cover_distance": 0.030877351760864258,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1535940170288086,
+      "peak_wrench_score": 0.5693424344062805,
+      "max_joint_bound_score": 0.03812292218208313,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 31,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0015106981627114888,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3576322282839701,
+      "score": 0.597976416349411,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.00751224160194397,
+        "minimum_cover_distance": 0.0308944433927536,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1536118984222412,
+      "peak_wrench_score": 0.5693665146827698,
+      "max_joint_bound_score": 0.03767018765211105,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 32,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        -1.9788258671005698e-05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35380277842652774,
+      "score": 0.5947498492896557,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.008683040738105774,
+        "minimum_cover_distance": 0.030882298946380615,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.15360426902771,
+      "peak_wrench_score": 0.5693578720092773,
+      "max_joint_bound_score": 0.03798519819974899,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 33,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3537582812668639,
+      "score": 0.594722468405962,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.007966607809066772,
+        "minimum_cover_distance": 0.030891448259353638,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1536126136779785,
+      "peak_wrench_score": 0.5693693161010742,
+      "max_joint_bound_score": 0.03784734755754471,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 34,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.08262379212492643,
+        0.0,
+        0.0
+      ],
+      "objective": 0.37585492534469866,
+      "score": 0.6130700819194317,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03539516031742096,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1393322944641113,
+      "peak_wrench_score": 0.5472176671028137,
+      "max_joint_bound_score": 0.036465950310230255,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 35,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        0.08262379212492635,
+        0.0,
+        0.0
+      ],
+      "objective": 0.6895902225854122,
+      "score": 0.671573281288147,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.48844605684280396,
+        "minimum_cover_distance": 0.026567742228507996,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.213056206703186,
+      "peak_wrench_score": 0.671573281288147,
+      "max_joint_bound_score": 0.03988323733210564,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 36,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.18475241575014723,
+        0.0,
+        0.0
+      ],
+      "objective": 6.932245688347811,
+      "score": 0.6374012567102909,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 2.5545969009399414,
+        "minimum_cover_distance": 0.03539460897445679,
+        "violating_samples": 2,
+        "worst_time": 0.96,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1136332750320435,
+      "peak_wrench_score": 0.5074633955955505,
+      "max_joint_bound_score": 0.06975193321704865,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 37,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0038401314010573367,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3529890825561406,
+      "score": 0.5941288433969021,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03114078938961029,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1530672311782837,
+      "peak_wrench_score": 0.5685210824012756,
+      "max_joint_bound_score": 0.03775521740317345,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 38,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.03749941866400349,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3626888804668744,
+      "score": 0.6022365652024746,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.033654406666755676,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1478403806686401,
+      "peak_wrench_score": 0.5604056119918823,
+      "max_joint_bound_score": 0.03693617880344391,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 39,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        0.029186148585196775,
+        0.0,
+        0.0
+      ],
+      "objective": 0.41052382972883367,
+      "score": 0.6082874611020088,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.2012714445590973,
+        "minimum_cover_distance": 0.02915455400943756,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.162410020828247,
+      "peak_wrench_score": 0.5890264511108398,
+      "max_joint_bound_score": 0.0385630801320076,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 40,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.016696835098406346,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35668351543865473,
+      "score": 0.5972298681735992,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.032039836049079895,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.151184320449829,
+      "peak_wrench_score": 0.5655967593193054,
+      "max_joint_bound_score": 0.0374397337436676,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 41,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        0.008774785031721322,
+        0.0,
+        0.0
+      ],
+      "objective": 0.36352895131315877,
+      "score": 0.5989389382302761,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.06928996741771698,
+        "minimum_cover_distance": 0.03033500909805298,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1547768115997314,
+      "peak_wrench_score": 0.571179986000061,
+      "max_joint_bound_score": 0.03806205838918686,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 42,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.008750955230158217,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35439737007033045,
+      "score": 0.5953128337860107,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031473711133003235,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1523823738098145,
+      "peak_wrench_score": 0.567456841468811,
+      "max_joint_bound_score": 0.03763365373015404,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 43,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        0.000978337911024532,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3544779866979675,
+      "score": 0.5951917618513107,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.014991775155067444,
+        "minimum_cover_distance": 0.030824005603790283,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1537317037582397,
+      "peak_wrench_score": 0.5695548057556152,
+      "max_joint_bound_score": 0.037872474640607834,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 44,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.004506798124682357,
+        0.0,
+        0.0
+      ],
+      "objective": 0.3531757992998053,
+      "score": 0.5942859575152397,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03118567168712616,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1529818773269653,
+      "peak_wrench_score": 0.568388819694519,
+      "max_joint_bound_score": 0.037737730890512466,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 45,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35250807458646627,
+      "score": 0.5937239043414593,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03102223575115204,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1533324718475342,
+      "peak_wrench_score": 0.5689331293106079,
+      "max_joint_bound_score": 0.03779890015721321,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 46,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0008621535924424179,
+        0.0,
+        0.0
+      ],
+      "objective": 0.35318606877889747,
+      "score": 0.5942913591861725,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.001961931586265564,
+        "minimum_cover_distance": 0.030943989753723145,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1534918546676636,
+      "peak_wrench_score": 0.5691814422607422,
+      "max_joint_bound_score": 0.03782695159316063,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 47,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0027026450959093673,
+        0.0,
+        0.0
+      ],
+      "objective": 0.352659488134732,
+      "score": 0.5938514024019241,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031065016984939575,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1532303094863892,
+      "peak_wrench_score": 0.5687752962112427,
+      "max_joint_bound_score": 0.03778091445565224,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 48,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.9442719099991592,
+        0.0
+      ],
+      "objective": 1.8053139496824957,
+      "score": 1.343619719147682,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.0320330411195755,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1825075149536133,
+      "peak_wrench_score": 0.6479542255401611,
+      "max_joint_bound_score": 0.0329950712621212,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 49,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        0.9442719099991583,
+        0.0
+      ],
+      "objective": 100.0,
+      "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 11]], position=[0.25654834508895874], velocity=[0.17226986587047577], minimum_acceleration=[-32.73060989379883], maximum_acceleration=[-1273.2210693359375]."
+    },
+    {
+      "evaluation": 50,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -2.1114561800016824,
+        0.0
+      ],
+      "objective": 8.06517844097715,
+      "score": 2.839925780892372,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.034084126353263855,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2185636758804321,
+      "peak_wrench_score": 1.0925941467285156,
+      "max_joint_bound_score": 0.03746892139315605,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 51,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -1.3850025593070368,
+        0.0
+      ],
+      "objective": 3.641771563783475,
+      "score": 1.908342622220516,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03277598321437836,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.196133017539978,
+      "peak_wrench_score": 0.7176918983459473,
+      "max_joint_bound_score": 0.034684062004089355,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 52,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.22291236000336545,
+        0.0
+      ],
+      "objective": 0.34524706394705973,
+      "score": 0.5875772833824158,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03118756413459778,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1602129936218262,
+      "peak_wrench_score": 0.5875772833824158,
+      "max_joint_bound_score": 0.03220083564519882,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 53,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.03474762449447788,
+        0.0
+      ],
+      "objective": 0.3410030952291311,
+      "score": 0.5839547030627728,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03104233741760254,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1544095277786255,
+      "peak_wrench_score": 0.5718469023704529,
+      "max_joint_bound_score": 0.036926962435245514,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 54,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.1237053458039623,
+        0.0
+      ],
+      "objective": 0.3355807397548496,
+      "score": 0.5792933106422424,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031107112765312195,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1571590900421143,
+      "peak_wrench_score": 0.5792933106422424,
+      "max_joint_bound_score": 0.03469346463680267,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 55,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.11543279688395897,
+        0.0
+      ],
+      "objective": 0.334784224458474,
+      "score": 0.5786054134368896,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031100526452064514,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.156906247138977,
+      "peak_wrench_score": 0.5786054134368896,
+      "max_joint_bound_score": 0.03490142151713371,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 56,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.09486549801426712,
+        0.0
+      ],
+      "objective": 0.3327917470761719,
+      "score": 0.5768810510635376,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031085312366485596,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.156268835067749,
+      "peak_wrench_score": 0.5768810510635376,
+      "max_joint_bound_score": 0.03541870787739754,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 57,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.0719025136610749,
+        0.0
+      ],
+      "objective": 0.3305723455652334,
+      "score": 0.5749542117118835,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031071916222572327,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1555559635162354,
+      "peak_wrench_score": 0.5749542117118835,
+      "max_joint_bound_score": 0.035994887351989746,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 58,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.0577106088476701,
+        0.0
+      ],
+      "objective": 0.3335508755896084,
+      "score": 0.5775386355817318,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031058385968208313,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1551146507263184,
+      "peak_wrench_score": 0.5737621784210205,
+      "max_joint_bound_score": 0.03635140880942345,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 59,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.0775263287422695,
+        0.0
+      ],
+      "objective": 0.3311149241154112,
+      "score": 0.5754258632659912,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031072378158569336,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1557308435440063,
+      "peak_wrench_score": 0.5754258632659912,
+      "max_joint_bound_score": 0.03585252910852432,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 60,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06648168838745751,
+        0.0
+      ],
+      "objective": 0.33071522810393117,
+      "score": 0.5750784538686275,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03106449544429779,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1553853750228882,
+      "peak_wrench_score": 0.5744954943656921,
+      "max_joint_bound_score": 0.036128927022218704,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 61,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.07037706950541862,
+        0.0
+      ],
+      "objective": 0.3304066368996281,
+      "score": 0.5748100876808167,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031067073345184326,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1554982662200928,
+      "peak_wrench_score": 0.5748100876808167,
+      "max_joint_bound_score": 0.036032531410455704,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 62,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06957241211853653,
+        0.0
+      ],
+      "objective": 0.33032975890023764,
+      "score": 0.5747432112693787,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03106638789176941,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1554735898971558,
+      "peak_wrench_score": 0.5747432112693787,
+      "max_joint_bound_score": 0.036051154136657715,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 63,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        0.0
+      ],
+      "objective": 0.3302317215968742,
+      "score": 0.5746579170227051,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031065955758094788,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1554462909698486,
+      "peak_wrench_score": 0.5746579170227051,
+      "max_joint_bound_score": 0.03608284145593643,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 64,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.0676622398028938,
+        0.0
+      ],
+      "objective": 0.33032372534938803,
+      "score": 0.5747379623353481,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031065180897712708,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1554248332977295,
+      "peak_wrench_score": 0.574599027633667,
+      "max_joint_bound_score": 0.03610100597143173,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 65,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.9442719099991592
+      ],
+      "objective": 0.5912333495298231,
+      "score": 0.547129649668932,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.5402615070343018,
+        "minimum_cover_distance": 0.026938647031784058,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0235790014266968,
+      "peak_wrench_score": 0.4064302146434784,
+      "max_joint_bound_score": 0.03888901323080063,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 66,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        0.9442719099991583
+      ],
+      "objective": 1.492297667270023,
+      "score": 1.221596360206604,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.035050079226493835,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.5373482704162598,
+      "peak_wrench_score": 1.221596360206604,
+      "max_joint_bound_score": 0.03335578367114067,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 67,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -2.1114561800016824
+      ],
+      "objective": 1.9417251661805324,
+      "score": 0.8230925798416138,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 1.124385952949524,
+        "minimum_cover_distance": 0.023932963609695435,
+        "violating_samples": 4,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2823247909545898,
+      "peak_wrench_score": 0.8230925798416138,
+      "max_joint_bound_score": 0.04689347743988037,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 68,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.44608291956206486
+      ],
+      "objective": 0.39120640988743505,
+      "score": 0.5616249404847622,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.2752886414527893,
+        "minimum_cover_distance": 0.028839096426963806,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.03299880027771,
+      "peak_wrench_score": 0.37187767028808594,
+      "max_joint_bound_score": 0.03739850968122482,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 69,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.3775014875169389
+      ],
+      "objective": 0.37267181368763347,
+      "score": 0.5636291466653347,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.2345079928636551,
+        "minimum_cover_distance": 0.029143452644348145,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0484009981155396,
+      "peak_wrench_score": 0.3981367349624634,
+      "max_joint_bound_score": 0.03719556704163551,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 70,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        0.12737102490878438
+      ],
+      "objective": 0.438146386295557,
+      "score": 0.66192626953125,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03181032836437225,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2069624662399292,
+      "peak_wrench_score": 0.66192626953125,
+      "max_joint_bound_score": 0.03570995479822159,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 71,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.21803940836211616
+      ],
+      "objective": 0.34123674021142164,
+      "score": 0.5682391002774239,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.13542918860912323,
+        "minimum_cover_distance": 0.029906317591667175,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0841643810272217,
+      "peak_wrench_score": 0.45911967754364014,
+      "max_joint_bound_score": 0.03672277554869652,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 72,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        0.00961272324179252
+      ],
+      "objective": 0.33784596385891064,
+      "score": 0.5812451839447021,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03111979365348816,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1593347787857056,
+      "peak_wrench_score": 0.5812451839447021,
+      "max_joint_bound_score": 0.03605427220463753,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 73,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.07734265341953647
+      ],
+      "objective": 0.32937775450234275,
+      "score": 0.5723118670284748,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.042858853936195374,
+        "minimum_cover_distance": 0.030638128519058228,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.124148964881897,
+      "peak_wrench_score": 0.5216432213783264,
+      "max_joint_bound_score": 0.03630904480814934,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 74,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.09488126859238585
+      ],
+      "objective": 0.32993629560434035,
+      "score": 0.571797963231802,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.054620370268821716,
+        "minimum_cover_distance": 0.030543774366378784,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1170638799667358,
+      "peak_wrench_score": 0.5096397995948792,
+      "max_joint_bound_score": 0.03636006638407707,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 75,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.07323685184075907
+      ],
+      "objective": 0.3292461835485825,
+      "score": 0.5724290274083614,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.03963826596736908,
+        "minimum_cover_distance": 0.030660897493362427,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1258121728897095,
+      "peak_wrench_score": 0.5244598984718323,
+      "max_joint_bound_score": 0.03629636764526367,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 76,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.04159113011271074
+      ],
+      "objective": 0.32904120503234574,
+      "score": 0.5733375325798988,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.018035486340522766,
+        "minimum_cover_distance": 0.03083719313144684,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1386222839355469,
+      "peak_wrench_score": 0.5461580157279968,
+      "max_joint_bound_score": 0.036203816533088684,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 77,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.052885392453917345
+      ],
+      "objective": 0.32901794884286084,
+      "score": 0.5730143636465073,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.025932371616363525,
+        "minimum_cover_distance": 0.030771657824516296,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1340572834014893,
+      "peak_wrench_score": 0.5384252667427063,
+      "max_joint_bound_score": 0.036236170679330826,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 78,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.04969280751958569
+      ],
+      "objective": 0.32900093804017705,
+      "score": 0.5731019079685211,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02356143295764923,
+        "minimum_cover_distance": 0.030792877078056335,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1353368759155273,
+      "peak_wrench_score": 0.5405945777893066,
+      "max_joint_bound_score": 0.03622858226299286,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 79,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.04836737498176551
+      ],
+      "objective": 0.3290159171127175,
+      "score": 0.5731485672295094,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.022729650139808655,
+        "minimum_cover_distance": 0.030796527862548828,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1358739137649536,
+      "peak_wrench_score": 0.541504442691803,
+      "max_joint_bound_score": 0.03622463718056679,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 80,
+      "parameters": [
+        0.024985139857840406,
+        0.07060753088741482,
+        0.0006468784082891682,
+        -0.0019996398975903875,
+        -0.06839186070310023,
+        -0.050565295563566044
+      ],
+      "objective": 0.3290133662273407,
+      "score": 0.5730891488492489,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.024128690361976624,
+        "minimum_cover_distance": 0.030784428119659424,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1349868774414062,
+      "peak_wrench_score": 0.5400015115737915,
+      "max_joint_bound_score": 0.03623054176568985,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 81,
+      "parameters": [
+        0.03772453521568081,
+        0.07552382907482964,
+        0.0012937568165783365,
+        -0.003999279795180775,
+        -0.13678372140620046,
+        -0.09938561503917138
+      ],
+      "objective": 0.39806556553710326,
+      "score": 0.6309243738651276,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03175853192806244,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0878212451934814,
+      "peak_wrench_score": 0.47702476382255554,
+      "max_joint_bound_score": 0.04101509600877762,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 82,
+      "parameters": [
+        0.006737620787507361,
+        0.06356557619408756,
+        -0.00027969037773870314,
+        0.0008645829434585596,
+        0.029570542329420288,
+        0.02148564541334424
+      ],
+      "objective": 1.3334391363416493,
+      "score": 1.151281490921974,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.08938716351985931,
+        "minimum_cover_distance": 0.03012484312057495,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2019517421722412,
+      "peak_wrench_score": 0.6324355006217957,
+      "max_joint_bound_score": 0.033946599811315536,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 83,
+      "parameters": [
+        0.023262379212492638,
+        0.06994269517110586,
+        0.0005594004210831333,
+        -0.0017292266775221516,
+        -0.059143163824492556,
+        -0.04297280152660924
+      ],
+      "objective": 0.33928710295171316,
+      "score": 0.581575732678175,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0325080007314682,
+        "minimum_cover_distance": 0.030691981315612793,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1417136192321777,
+      "peak_wrench_score": 0.5492440462112427,
+      "max_joint_bound_score": 0.03557994216680527,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 84,
+      "parameters": [
+        0.03347524157501472,
+        0.07388397144920514,
+        0.0010779870544023284,
+        -0.0033322891836347138,
+        -0.1139712494955814,
+        -0.08281031259753215
+      ],
+      "objective": 0.374111763802641,
+      "score": 0.611646369099617,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.000694960355758667,
+        "minimum_cover_distance": 0.03138616681098938,
+        "violating_samples": 1,
+        "worst_time": 0.6,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1037522554397583,
+      "peak_wrench_score": 0.49817848205566406,
+      "max_joint_bound_score": 0.03941873088479042,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 85,
+      "parameters": [
+        0.027651724066038455,
+        0.07163660037942056,
+        0.0007822816750624668,
+        -0.002418200435451049,
+        -0.0827075052527395,
+        -0.060094404461249
+      ],
+      "objective": 0.3425528632819159,
+      "score": 0.5852087289094925,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.009143680334091187,
+        "minimum_cover_distance": 0.03095829486846924,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1254509687423706,
+      "peak_wrench_score": 0.5272458791732788,
+      "max_joint_bound_score": 0.037229981273412704,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 86,
+      "parameters": [
+        0.02464440405950965,
+        0.07047603651576947,
+        0.0006295765957085824,
+        -0.0019461562841424256,
+        -0.06656260942378776,
+        -0.048363692756610545
+      ],
+      "objective": 0.3273220867306965,
+      "score": 0.571566715836525,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.025170937180519104,
+        "minimum_cover_distance": 0.030769124627113342,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366126537322998,
+      "peak_wrench_score": 0.5423247218132019,
+      "max_joint_bound_score": 0.03609955310821533,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 87,
+      "parameters": [
+        0.025338055839900807,
+        0.0707437257502146,
+        0.0006647987037445202,
+        -0.0020550353742517617,
+        -0.07028650169719716,
+        -0.051069433762393965
+      ],
+      "objective": 0.3307705837229218,
+      "score": 0.5747074149549007,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02195383608341217,
+        "minimum_cover_distance": 0.03080955147743225,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.134031057357788,
+      "peak_wrench_score": 0.5388284921646118,
+      "max_joint_bound_score": 0.03636099025607109,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 88,
+      "parameters": [
+        0.024612656121566507,
+        0.07046378457402658,
+        0.0006279645054180896,
+        -0.0019411729673056294,
+        -0.06639216958041783,
+        -0.048239852956915394
+      ],
+      "objective": 0.32717717837143945,
+      "score": 0.5714173316955566,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.025679007172584534,
+        "minimum_cover_distance": 0.030767768621444702,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1367275714874268,
+      "peak_wrench_score": 0.5424826741218567,
+      "max_joint_bound_score": 0.036087766289711,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 89,
+      "parameters": [
+        0.02409689623652444,
+        0.07026474613328826,
+        0.0006017753556096505,
+        -0.0018602166883977755,
+        -0.063623295766298,
+        -0.04622801833103219
+      ],
+      "objective": 0.32465285226725915,
+      "score": 0.5690824128687382,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02824994921684265,
+        "minimum_cover_distance": 0.03073810040950775,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1386308670043945,
+      "peak_wrench_score": 0.54505854845047,
+      "max_joint_bound_score": 0.03589200600981712,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 90,
+      "parameters": [
+        0.023778139097534703,
+        0.07014173361184418,
+        0.0005855895708915724,
+        -0.0018101829564300055,
+        -0.06191203763861238,
+        -0.044984636152492444
+      ],
+      "objective": 0.3230940197152832,
+      "score": 0.5676309466362,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.029818251729011536,
+        "minimum_cover_distance": 0.0307234525680542,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1398096084594727,
+      "peak_wrench_score": 0.5466575026512146,
+      "max_joint_bound_score": 0.03577376529574394,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 91,
+      "parameters": [
+        0.023581136351482374,
+        0.07006570769254994,
+        0.0005755862058012114,
+        -0.0017792604094899215,
+        -0.06085442195217817,
+        -0.04421618370514899
+      ],
+      "objective": 0.3265492714698226,
+      "score": 0.5706141591072083,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.030801832675933838,
+        "minimum_cover_distance": 0.030708879232406616,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.14054536819458,
+      "peak_wrench_score": 0.5476595163345337,
+      "max_joint_bound_score": 0.03569956496357918,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 92,
+      "parameters": [
+        0.023881291499089106,
+        0.07018154146382967,
+        0.0005908274224107694,
+        -0.001826374278850461,
+        -0.06246581468062538,
+        -0.045387004733703884
+      ],
+      "objective": 0.3236008338611441,
+      "score": 0.5681023821234703,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.029334574937820435,
+        "minimum_cover_distance": 0.030725747346878052,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1394267082214355,
+      "peak_wrench_score": 0.5461382865905762,
+      "max_joint_bound_score": 0.03581303730607033,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 93,
+      "parameters": [
+        0.023702890744419777,
+        0.07011269429469974,
+        0.0005817686254289287,
+        -0.0017983715945176075,
+        -0.06150806439342957,
+        -0.044691113436345284
+      ],
+      "objective": 0.3227416202271214,
+      "score": 0.5672940872609615,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.03031565248966217,
+        "minimum_cover_distance": 0.030719459056854248,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1400806903839111,
+      "peak_wrench_score": 0.5470266342163086,
+      "max_joint_bound_score": 0.035744503140449524,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 94,
+      "parameters": [
+        0.0236563847045973,
+        0.07009474700969438,
+        0.0005794071512638552,
+        -0.0017910717714023196,
+        -0.06125839519736099,
+        -0.04450970642129615
+      ],
+      "objective": 0.3235688679888915,
+      "score": 0.5680239647626877,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.030292630195617676,
+        "minimum_cover_distance": 0.030713632702827454,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1402580738067627,
+      "peak_wrench_score": 0.5472661852836609,
+      "max_joint_bound_score": 0.035728294402360916,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 95,
+      "parameters": [
+        0.023727827648450134,
+        0.07012231776996214,
+        0.0005830348664343849,
+        -0.0018022858170392278,
+        -0.061641938978439684,
+        -0.04478838530344
+      ],
+      "objective": 0.32283930115344206,
+      "score": 0.5673981159925461,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02997797727584839,
+        "minimum_cover_distance": 0.03071725368499756,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1399986743927002,
+      "peak_wrench_score": 0.5469181537628174,
+      "max_joint_bound_score": 0.03575544431805611,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 96,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.04462182212239418
+      ],
+      "objective": 0.3226545047335987,
+      "score": 0.5672128759324551,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.030398324131965637,
+        "minimum_cover_distance": 0.030718892812728882,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1401581764221191,
+      "peak_wrench_score": 0.5471330881118774,
+      "max_joint_bound_score": 0.035739317536354065,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 97,
+      "parameters": [
+        0.02367414843112733,
+        0.07010160226256065,
+        0.0005803091541313584,
+        -0.0017938600557204974,
+        -0.06135376034431532,
+        -0.044578997735247254
+      ],
+      "objective": 0.3228861753512253,
+      "score": 0.5674207471311092,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.030329376459121704,
+        "minimum_cover_distance": 0.03071478009223938,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1401864290237427,
+      "peak_wrench_score": 0.5471682548522949,
+      "max_joint_bound_score": 0.03573528304696083,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 98,
+      "parameters": [
+        0.023693619967410613,
+        0.0701091165813997,
+        0.0005812978758127311,
+        -0.0017969164064911382,
+        -0.06145829392379499,
+        -0.044654950735955434
+      ],
+      "objective": 0.3226768104011736,
+      "score": 0.5672497563064098,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0300753116607666,
+        "minimum_cover_distance": 0.03071923553943634,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1401149034500122,
+      "peak_wrench_score": 0.547072172164917,
+      "max_joint_bound_score": 0.035742320120334625,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 99,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.9442719099991594
+      ],
+      "objective": 0.5977602562542401,
+      "score": 0.5485329665243626,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.5448594689369202,
+        "minimum_cover_distance": 0.026902705430984497,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0274813175201416,
+      "peak_wrench_score": 0.4117434322834015,
+      "max_joint_bound_score": 0.03841301053762436,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 100,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        0.9442719099991581
+      ],
+      "objective": 1.5005932237399975,
+      "score": 1.2249870300292969,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03494863212108612,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.5404430627822876,
+      "peak_wrench_score": 1.2249870300292969,
+      "max_joint_bound_score": 0.0328831672668457,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 101,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -2.1114561800016824
+      ],
+      "objective": 1.948144626708018,
+      "score": 0.8287803530693054,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 1.1230617761611938,
+        "minimum_cover_distance": 0.023926526308059692,
+        "violating_samples": 5,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2864667177200317,
+      "peak_wrench_score": 0.8287803530693054,
+      "max_joint_bound_score": 0.047194670885801315,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 102,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.44672766457149493
+      ],
+      "objective": 0.3887137346935461,
+      "score": 0.5555699467658997,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.2829412817955017,
+        "minimum_cover_distance": 0.02876649796962738,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.035839319229126,
+      "peak_wrench_score": 0.37527331709861755,
+      "max_joint_bound_score": 0.03692391887307167,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 103,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.37016669692502846
+      ],
+      "objective": 0.3677886066970684,
+      "score": 0.5577881708741188,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.2380356341600418,
+        "minimum_cover_distance": 0.029101818799972534,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0530627965927124,
+      "peak_wrench_score": 0.4046259820461273,
+      "max_joint_bound_score": 0.03669731691479683,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 104,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        0.13190417479494787
+      ],
+      "objective": 0.4463917770478396,
+      "score": 0.668125569820404,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03171941637992859,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2116060256958008,
+      "peak_wrench_score": 0.668125569820404,
+      "max_joint_bound_score": 0.03522268682718277,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 105,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.2244993338144472
+      ],
+      "objective": 0.3379133673410326,
+      "score": 0.5619998909533024,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.14855803549289703,
+        "minimum_cover_distance": 0.029790818691253662,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0857855081558228,
+      "peak_wrench_score": 0.4604015052318573,
+      "max_joint_bound_score": 0.036267638206481934,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 106,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.08836530723537409
+      ],
+      "objective": 0.32388255292839624,
+      "score": 0.5659405961632729,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.05994826555252075,
+        "minimum_cover_distance": 0.03048063814640045,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1224431991577148,
+      "peak_wrench_score": 0.5171351432800293,
+      "max_joint_bound_score": 0.03586750105023384,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 107,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.014095124073114175
+      ],
+      "objective": 0.3241966476646539,
+      "score": 0.569309376180172,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.00913684070110321,
+        "minimum_cover_distance": 0.03088127076625824,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1525071859359741,
+      "peak_wrench_score": 0.568045973777771,
+      "max_joint_bound_score": 0.03564926236867905,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 108,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.055376795534421534
+      ],
+      "objective": 0.3228090102548429,
+      "score": 0.5669000446796417,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.03785960376262665,
+        "minimum_cover_distance": 0.03065696358680725,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1357927322387695,
+      "peak_wrench_score": 0.5397419333457947,
+      "max_joint_bound_score": 0.03577038273215294,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 109,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.053604081085139275
+      ],
+      "objective": 0.32274972036938365,
+      "score": 0.5669411160051823,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.036434754729270935,
+        "minimum_cover_distance": 0.030666455626487732,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1365073919296265,
+      "peak_wrench_score": 0.540952742099762,
+      "max_joint_bound_score": 0.03576502948999405,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 110,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.038513002366604175
+      ],
+      "objective": 0.32274343874217043,
+      "score": 0.5675108060240746,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02597929537296295,
+        "minimum_cover_distance": 0.030748218297958374,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1426204442977905,
+      "peak_wrench_score": 0.5513039231300354,
+      "max_joint_bound_score": 0.03572111204266548,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 111,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.04595228064768443
+      ],
+      "objective": 0.3226615287376655,
+      "score": 0.5671660304069519,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.031372323632240295,
+        "minimum_cover_distance": 0.030708014965057373,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1396093368530273,
+      "peak_wrench_score": 0.5462050437927246,
+      "max_joint_bound_score": 0.03574317693710327,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 112,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3226351082437076,
+      "score": 0.5671870782971382,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.030560210347175598,
+        "minimum_cover_distance": 0.03071141242980957,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1398882865905762,
+      "peak_wrench_score": 0.5466760993003845,
+      "max_joint_bound_score": 0.03574232757091522,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 113,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.042968896384601586
+      ],
+      "objective": 0.3226392265410116,
+      "score": 0.5672565549612045,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.029312580823898315,
+        "minimum_cover_distance": 0.030723899602890015,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1408283710479736,
+      "peak_wrench_score": 0.5482676029205322,
+      "max_joint_bound_score": 0.035734422504901886,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 114,
+      "parameters": [
+        0.023685127017889746,
+        0.07010583904183347,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.04440070658932553
+      ],
+      "objective": 0.32264254439625994,
+      "score": 0.5672125965356827,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.03020620346069336,
+        "minimum_cover_distance": 0.030719682574272156,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.140236735343933,
+      "peak_wrench_score": 0.5472674369812012,
+      "max_joint_bound_score": 0.03573804721236229,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 115,
+      "parameters": [
+        0.023685127017889746,
+        0.054376941012509464,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.6134384520472658,
+      "score": 0.7025384306907654,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.3462343215942383,
+        "minimum_cover_distance": 0.02683168649673462,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2408677339553833,
+      "peak_wrench_score": 0.7025384306907654,
+      "max_joint_bound_score": 0.03675438463687897,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 116,
+      "parameters": [
+        0.023685127017889746,
+        0.07562305898749053,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3256364439518445,
+      "score": 0.5706456378102303,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.032231733202934265,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1043177843093872,
+      "peak_wrench_score": 0.4917277693748474,
+      "max_joint_bound_score": 0.03538825362920761,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 117,
+      "parameters": [
+        0.023685127017889746,
+        0.08875388202501892,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3350850408572301,
+      "score": 0.5788653045892715,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03553561866283417,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0185368061065674,
+      "peak_wrench_score": 0.3591504395008087,
+      "max_joint_bound_score": 0.034550782293081284,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 118,
+      "parameters": [
+        0.023685127017889746,
+        0.081321467986787,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32971829551542997,
+      "score": 0.5742110200226307,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03369101881980896,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.0673878192901611,
+      "peak_wrench_score": 0.4346636235713959,
+      "max_joint_bound_score": 0.03502340242266655,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 119,
+      "parameters": [
+        0.023685127017889746,
+        0.06750776405003786,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3364110415060483,
+      "score": 0.5729697532951832,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0900927484035492,
+        "minimum_cover_distance": 0.030069664120674133,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1565829515457153,
+      "peak_wrench_score": 0.5724589228630066,
+      "max_joint_bound_score": 0.035905882716178894,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 120,
+      "parameters": [
+        0.023685127017889746,
+        0.07252329215011356,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3234126062642171,
+      "score": 0.5686937719583511,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031352922320365906,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1243170499801636,
+      "peak_wrench_score": 0.5226234197616577,
+      "max_joint_bound_score": 0.035585153847932816,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 121,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32242016497322423,
+      "score": 0.5674941353499889,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.019250229001045227,
+        "minimum_cover_distance": 0.03084428608417511,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366546154022217,
+      "peak_wrench_score": 0.5416834354400635,
+      "max_joint_bound_score": 0.03570857271552086,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 122,
+      "parameters": [
+        0.023685127017889746,
+        0.06942352531273659,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3254241063037623,
+      "score": 0.5685618035495281,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.046492815017700195,
+        "minimum_cover_distance": 0.03053857386112213,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1442763805389404,
+      "peak_wrench_score": 0.553455114364624,
+      "max_joint_bound_score": 0.035784848034381866,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 123,
+      "parameters": [
+        0.023685127017889746,
+        0.07127419756152278,
+        0.0005808666225614253,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32255384948594906,
+      "score": 0.5679209604859352,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.004430815577507019,
+        "minimum_cover_distance": 0.03101469576358795,
+        "violating_samples": 2,
+        "worst_time": 0.6,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1323548555374146,
+      "peak_wrench_score": 0.5350393652915955,
+      "max_joint_bound_score": 0.035665854811668396,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 124,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        -0.0826237921249264,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 100.0,
+      "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 11]], position=[0.2522872984409332], velocity=[0.041453927755355835], minimum_acceleration=[-30.364850997924805], maximum_acceleration=[-142.55140686035156]."
+    },
+    {
+      "evaluation": 125,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.08262379212492638,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 1.6361833460817368,
+      "score": 1.2791338264942167,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03198578953742981,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1367172002792358,
+      "peak_wrench_score": 0.5416494607925415,
+      "max_joint_bound_score": 0.024847904220223427,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 126,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.1847524157501472,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 5.891437879915273,
+      "score": 2.4272284358739853,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03450292348861694,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1339411735534668,
+      "peak_wrench_score": 0.9297645688056946,
+      "max_joint_bound_score": 0.01949268952012062,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 127,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.12494253391810978,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 3.047353988031808,
+      "score": 1.7456672042608259,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03288020193576813,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1359633207321167,
+      "peak_wrench_score": 0.6545134782791138,
+      "max_joint_bound_score": 0.02165868878364563,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 128,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.01950483150029441,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.5009250412603579,
+      "score": 0.7077588587999344,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0015617460012435913,
+        "minimum_cover_distance": 0.031033411622047424,
+        "violating_samples": 1,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.136855125427246,
+      "peak_wrench_score": 0.5419661998748779,
+      "max_joint_bound_score": 0.031798750162124634,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 129,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        -0.010666682961188861,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3531674167524579,
+      "score": 0.5936353355646133,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.027649685740470886,
+        "minimum_cover_distance": 0.03074641525745392,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.136475920677185,
+      "peak_wrench_score": 0.5414227843284607,
+      "max_joint_bound_score": 0.038030996918678284,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 130,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        -0.013033591129693376,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3598168439362597,
+      "score": 0.5991371236741543,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0291813462972641,
+        "minimum_cover_distance": 0.030732452869415283,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.136434555053711,
+      "peak_wrench_score": 0.5413620471954346,
+      "max_joint_bound_score": 0.038518380373716354,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 131,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        -0.005919418933410107,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3399969491462705,
+      "score": 0.5825948789715767,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02408643066883087,
+        "minimum_cover_distance": 0.030784621834754944,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1365588903427124,
+      "peak_wrench_score": 0.5415445566177368,
+      "max_joint_bound_score": 0.03705073520541191,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 132,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0037917805937757627,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3342510081035983,
+      "score": 0.577912375330925,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.016379699110984802,
+        "minimum_cover_distance": 0.030870243906974792,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366920471191406,
+      "peak_wrench_score": 0.5417367219924927,
+      "max_joint_bound_score": 0.035045817494392395,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 133,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3218587550251173,
+      "score": 0.5670173913240433,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.01870916783809662,
+        "minimum_cover_distance": 0.030846863985061646,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366565227508545,
+      "peak_wrench_score": 0.5416854023933411,
+      "max_joint_bound_score": 0.03564384952187538,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 134,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        -0.000649886514904039,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3257021415399852,
+      "score": 0.5703559964895248,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0199042409658432,
+        "minimum_cover_distance": 0.030829742550849915,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366252899169922,
+      "peak_wrench_score": 0.5416399240493774,
+      "max_joint_bound_score": 0.035962436348199844,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 135,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.001562581426528408,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3246966512487819,
+      "score": 0.5695344768464565,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.018086761236190796,
+        "minimum_cover_distance": 0.030853018164634705,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.136668086051941,
+      "peak_wrench_score": 0.5417024493217468,
+      "max_joint_bound_score": 0.03550608083605766,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 136,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.00022924808384923673,
+        -0.0017955833101994296,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.323353334225873,
+      "score": 0.5683190077543259,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.019153058528900146,
+        "minimum_cover_distance": 0.03084118664264679,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366480588912964,
+      "peak_wrench_score": 0.5416735410690308,
+      "max_joint_bound_score": 0.03578106686472893,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 137,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.08262379212492645,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3436669434463036,
+      "score": 0.5862311348319054,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03549136221408844,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1226392984390259,
+      "peak_wrench_score": 0.5199456214904785,
+      "max_joint_bound_score": 0.037389807403087616,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 138,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        0.08262379212492633,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.6790362704003927,
+      "score": 0.6552680134773254,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.4996599853038788,
+        "minimum_cover_distance": 0.026534661650657654,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2034205198287964,
+      "peak_wrench_score": 0.6552680134773254,
+      "max_joint_bound_score": 0.037718676030635834,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 139,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.18475241575014725,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 2.925095080653123,
+      "score": 0.6106101796030998,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 1.597576379776001,
+        "minimum_cover_distance": 0.035491153597831726,
+        "violating_samples": 2,
+        "worst_time": 0.96,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.096972942352295,
+      "peak_wrench_score": 0.4802440106868744,
+      "max_joint_bound_score": 0.050503965467214584,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 140,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.009936353000879186,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3234676908937415,
+      "score": 0.5687422007322311,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031381428241729736,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.135495901107788,
+      "peak_wrench_score": 0.5398819446563721,
+      "max_joint_bound_score": 0.035445354878902435,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 141,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.04070629891165696,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3319448905522935,
+      "score": 0.576146587729454,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.0336756706237793,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1306109428405762,
+      "peak_wrench_score": 0.5322999358177185,
+      "max_joint_bound_score": 0.0347011461853981,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 142,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        0.025418476433555607,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3746883651113535,
+      "score": 0.5796426795423031,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.1967300921678543,
+        "minimum_cover_distance": 0.029249578714370728,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1492677927017212,
+      "peak_wrench_score": 0.567005455493927,
+      "max_joint_bound_score": 0.036309342831373215,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 143,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        0.0035679901766196816,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32756543795608556,
+      "score": 0.5696114972233772,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.05575105547904968,
+        "minimum_cover_distance": 0.030506223440170288,
+        "violating_samples": 3,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1373870372772217,
+      "peak_wrench_score": 0.5428213477134705,
+      "max_joint_bound_score": 0.03577510640025139,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 144,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.014786863366535122,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32478826308577635,
+      "score": 0.5699019767343998,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.031714051961898804,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1347779035568237,
+      "peak_wrench_score": 0.5387670993804932,
+      "max_joint_bound_score": 0.035328805446624756,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 145,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.00802146225782797,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3229345205527341,
+      "score": 0.5682732798159122,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03125333786010742,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1357722282409668,
+      "peak_wrench_score": 0.5403122305870056,
+      "max_joint_bound_score": 0.03549281507730484,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 146,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.0035946853388691804,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32176108710123597,
+      "score": 0.5672063566744328,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0061673372983932495,
+        "minimum_cover_distance": 0.03095877170562744,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1364011764526367,
+      "peak_wrench_score": 0.5412894487380981,
+      "max_joint_bound_score": 0.03559906408190727,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 147,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.0008587867423391095,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32265539973944773,
+      "score": 0.5674720630049706,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.025116875767707825,
+        "minimum_cover_distance": 0.03078719973564148,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1367839574813843,
+      "peak_wrench_score": 0.5418844223022461,
+      "max_joint_bound_score": 0.035665810108184814,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 148,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.004261352032220843,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3219078153985491,
+      "score": 0.567364402115345,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0023346543312072754,
+        "minimum_cover_distance": 0.03100581467151642,
+        "violating_samples": 2,
+        "worst_time": 0.6,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1363123655319214,
+      "peak_wrench_score": 0.5411511063575745,
+      "max_joint_bound_score": 0.035583917051553726,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 149,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.0029280186455175185,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.3216626149100022,
+      "score": 0.567049615085125,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.0108327716588974,
+        "minimum_cover_distance": 0.030916109681129456,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1364997625350952,
+      "peak_wrench_score": 0.5414418578147888,
+      "max_joint_bound_score": 0.03561494126915932,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 150,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.06141269924647523,
+        -0.045285613961283874
+      ],
+      "objective": 0.32158927896374073,
+      "score": 0.5668529197573662,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.016341552138328552,
+        "minimum_cover_distance": 0.030865326523780823,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1366122961044312,
+      "peak_wrench_score": 0.5416169166564941,
+      "max_joint_bound_score": 0.0356348492205143,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 151,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.9442719099991592,
+        -0.045285613961283874
+      ],
+      "objective": 1.913677155233368,
+      "score": 1.3833572044968603,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03189273178577423,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.164025902748108,
+      "peak_wrench_score": 0.6152086853981018,
+      "max_joint_bound_score": 0.033590544015169144,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 152,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        0.9442719099991583,
+        -0.045285613961283874
+      ],
+      "objective": 100.0,
+      "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 11]], position=[0.25560158491134644], velocity=[0.16826510429382324], minimum_acceleration=[-32.60594177246094], maximum_acceleration=[-1034.528564453125]."
+    },
+    {
+      "evaluation": 153,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -2.1114561800016824,
+        -0.045285613961283874
+      ],
+      "objective": 8.292706190379661,
+      "score": 2.879705920815468,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.034011200070381165,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.2002884149551392,
+      "peak_wrench_score": 1.1086028814315796,
+      "max_joint_bound_score": 0.03795800358057022,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 154,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -1.3823964146352852,
+        -0.045285613961283874
+      ],
+      "objective": 3.782038347486143,
+      "score": 1.9447463452816007,
+      "collision": {
+        "checked": true,
+        "passed": true,
+        "maximum_violation": 0.0,
+        "minimum_cover_distance": 0.03265225887298584,
+        "violating_samples": 0,
+        "worst_time": null,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1776556968688965,
+      "peak_wrench_score": 0.7323377728462219,
+      "max_joint_bound_score": 0.035231947898864746,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 155,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.2229123600033655,
+        -0.045285613961283874
+      ],
+      "objective": 0.3292502263101569,
+      "score": 0.5737959295511246,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.002908185124397278,
+        "minimum_cover_distance": 0.031002774834632874,
+        "violating_samples": 1,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1416316032409668,
+      "peak_wrench_score": 0.5550858378410339,
+      "max_joint_bound_score": 0.03157740458846092,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 156,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        0.03215610869512138,
+        -0.045285613961283874
+      ],
+      "objective": 0.4356148960951187,
+      "score": 0.6596010066568851,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.02326817810535431,
+        "minimum_cover_distance": 0.030799850821495056,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1336941719055176,
+      "peak_wrench_score": 0.5337980389595032,
+      "max_joint_bound_score": 0.03798491135239601,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 157,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.17327798690129242,
+        -0.045285613961283874
+      ],
+      "objective": 0.31719854828599836,
+      "score": 0.5631565935909748,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.007293790578842163,
+        "minimum_cover_distance": 0.030957862734794617,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1400854587554932,
+      "peak_wrench_score": 0.5509411096572876,
+      "max_joint_bound_score": 0.032825078815221786,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 158,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.16029565093089107,
+        -0.045285613961283874
+      ],
+      "objective": 0.31407537064628266,
+      "score": 0.5603602975606918,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.008468031883239746,
+        "minimum_cover_distance": 0.030946463346481323,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1396867036819458,
+      "peak_wrench_score": 0.5498653054237366,
+      "max_joint_bound_score": 0.033150799572467804,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 159,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.08678561994847907,
+        -0.045285613961283874
+      ],
+      "objective": 0.3135303122388523,
+      "score": 0.5597514919936657,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.014442279934883118,
+        "minimum_cover_distance": 0.03088538348674774,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.1374011039733887,
+      "peak_wrench_score": 0.5437338352203369,
+      "max_joint_bound_score": 0.03499874845147133,
+      "goal_unchanged": true,
+      "sample_count": 21
+    },
+    {
+      "evaluation": 160,
+      "parameters": [
+        0.023685127017889746,
+        0.07060753088741482,
+        0.0008959147551888223,
+        -0.002137642389108998,
+        -0.12216533819676341,
+        -0.045285613961283874
+      ],
+      "objective": 0.30503497629557175,
+      "score": 0.5521810501813889,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 0.011448323726654053,
+        "minimum_cover_distance": 0.030914321541786194,
+        "violating_samples": 2,
+        "worst_time": 0.72,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "peak_torque_ratio": 1.138500690460205,
+      "peak_wrench_score": 0.5466845631599426,
+      "max_joint_bound_score": 0.034109700471162796,
+      "goal_unchanged": true,
+      "sample_count": 21
+    }
+  ],
+  "simulation_validated": false
+}

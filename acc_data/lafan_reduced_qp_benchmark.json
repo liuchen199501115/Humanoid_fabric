@@ -1,0 +1,22 @@
+{
+  "priority_problem_": {
+    "variables": 29,
+    "constraints": 866,
+    "reduction_seconds": 0.001369427889585495,
+    "solve_seconds": 0.009391052182763815,
+    "status": "solved",
+    "iterations": 425,
+    "maximum_original_violation": 8.100187187665142e-13,
+    "objective": -16221.664208597667
+  },
+  "problem_": {
+    "variables": 29,
+    "constraints": 924,
+    "reduction_seconds": 0.001138507854193449,
+    "solve_seconds": 0.7438257448375225,
+    "status": "solved",
+    "iterations": 33800,
+    "maximum_original_violation": 7.744915819785092e-13,
+    "objective": -9664.958750744096
+  }
+}

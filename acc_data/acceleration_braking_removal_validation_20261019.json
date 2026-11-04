@@ -1,0 +1,12 @@
+{
+  "software_acceleration_limits_enabled": false,
+  "joint_braking_limits_enabled": false,
+  "tests_passed": 27,
+  "smoke_record": "acc_data/walk1_no_acc_braking_smoke_20261018.npz",
+  "smoke_seconds": 6,
+  "validated_control_updates": 3000,
+  "unloading_started": false,
+  "offline_audit": "acc_data/walk1_no_acc_braking_check_20261018.json",
+  "full_four_step_tracking_passed": false,
+  "completed_steps": 0
+}

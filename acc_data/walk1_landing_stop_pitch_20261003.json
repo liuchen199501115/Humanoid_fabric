@@ -1,0 +1,98 @@
+[
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.4,
+    "capture_time": 0.25,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.168"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.4,
+    "capture_time": 0.25,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2774881553649902,
+    "error": "double support wrench infeasible at 0.168"
+  },
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.4,
+    "capture_time": 0.3,
+    "joint_violation": 1.0523229837417603,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.176"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.4,
+    "capture_time": 0.3,
+    "joint_violation": 3.4726333618164062,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.176"
+  },
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.6,
+    "capture_time": 0.25,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.18"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.6,
+    "capture_time": 0.25,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.18"
+  },
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.6,
+    "capture_time": 0.3,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.20400000000000001"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.6,
+    "capture_time": 0.3,
+    "joint_violation": 0.0,
+    "torque_ratio": 0.2630677946401906,
+    "error": "double support wrench infeasible at 0.216"
+  },
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.8,
+    "capture_time": 0.25,
+    "joint_violation": 0.17843127250671387,
+    "torque_ratio": 0.2627039656264237,
+    "error": "double support wrench infeasible at 0.20800000000000002"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.8,
+    "capture_time": 0.25,
+    "joint_violation": 0.024181604385375977,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.20800000000000002"
+  },
+  {
+    "pelvis_pitch": -0.2,
+    "duration": 0.8,
+    "capture_time": 0.3,
+    "joint_violation": 0.7440221309661865,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.20800000000000002"
+  },
+  {
+    "pelvis_pitch": -0.4,
+    "duration": 0.8,
+    "capture_time": 0.3,
+    "joint_violation": 0.5407854318618774,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible at 0.224"
+  }
+]

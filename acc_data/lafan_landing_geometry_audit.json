@@ -1,0 +1,1887 @@
+{
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "source_frames": 7839,
+  "landings": 340,
+  "failures": 81,
+  "full_tracking_achieved": false,
+  "results": [
+    {
+      "frame": 129,
+      "height": 0.6463682055473328,
+      "root_z_delta": -0.017139017581939697,
+      "max_joint_delta": 0.2820291817188263
+    },
+    {
+      "frame": 155,
+      "height": 0.6243000030517578,
+      "root_z_delta": -0.043582916259765625,
+      "max_joint_delta": 0.382671058177948
+    },
+    {
+      "frame": 176,
+      "height": 0.6407484412193298,
+      "root_z_delta": -0.02499443292617798,
+      "max_joint_delta": 0.26405057311058044
+    },
+    {
+      "frame": 198,
+      "height": 0.6341814994812012,
+      "root_z_delta": -0.03548794984817505,
+      "max_joint_delta": 0.26160573959350586
+    },
+    {
+      "frame": 219,
+      "height": 0.6431707143783569,
+      "root_z_delta": -0.028164684772491455,
+      "max_joint_delta": 0.22996073961257935
+    },
+    {
+      "frame": 242,
+      "height": 0.6364365220069885,
+      "root_z_delta": -0.04206418991088867,
+      "max_joint_delta": 0.29282140731811523
+    },
+    {
+      "frame": 263,
+      "height": 0.6534587144851685,
+      "root_z_delta": -0.028107941150665283,
+      "max_joint_delta": 0.21903638541698456
+    },
+    {
+      "frame": 283,
+      "height": 0.6754621267318726,
+      "root_z_delta": -0.0171663761138916,
+      "max_joint_delta": 0.08993600308895111
+    },
+    {
+      "frame": 337,
+      "height": 0.687110960483551,
+      "root_z_delta": -0.009004712104797363,
+      "max_joint_delta": 0.14813950657844543
+    },
+    {
+      "frame": 382,
+      "height": 0.686326265335083,
+      "root_z_delta": -0.01222836971282959,
+      "max_joint_delta": 0.1528373807668686
+    },
+    {
+      "frame": 454,
+      "height": 0.6676667332649231,
+      "root_z_delta": -0.005825996398925781,
+      "max_joint_delta": 0.1250806748867035
+    },
+    {
+      "frame": 481,
+      "height": 0.6326974034309387,
+      "root_z_delta": -0.04265207052230835,
+      "max_joint_delta": 0.32304972410202026
+    },
+    {
+      "frame": 505,
+      "height": 0.6263942122459412,
+      "root_z_delta": -0.049526214599609375,
+      "max_joint_delta": 0.38609787821769714
+    },
+    {
+      "frame": 526,
+      "height": 0.6418555378913879,
+      "root_z_delta": -0.031484007835388184,
+      "max_joint_delta": 0.2664225995540619
+    },
+    {
+      "frame": 550,
+      "height": 0.6351036429405212,
+      "root_z_delta": -0.037323951721191406,
+      "max_joint_delta": 0.3126456141471863
+    },
+    {
+      "frame": 572,
+      "height": 0.6479690074920654,
+      "root_z_delta": -0.024789392948150635,
+      "max_joint_delta": 0.22639165818691254
+    },
+    {
+      "frame": 596,
+      "height": 0.6372795701026917,
+      "root_z_delta": -0.03426766395568848,
+      "max_joint_delta": 0.3298763632774353
+    },
+    {
+      "frame": 619,
+      "height": 0.656039834022522,
+      "root_z_delta": -0.0180971622467041,
+      "max_joint_delta": 0.19601412117481232
+    },
+    {
+      "frame": 644,
+      "height": 0.6695071458816528,
+      "root_z_delta": -0.012758493423461914,
+      "max_joint_delta": 0.2165924459695816
+    },
+    {
+      "frame": 675,
+      "height": 0.6582334041595459,
+      "root_z_delta": -0.013049066066741943,
+      "max_joint_delta": 0.17018058896064758
+    },
+    {
+      "frame": 700,
+      "height": 0.6508830785751343,
+      "root_z_delta": -0.022517383098602295,
+      "max_joint_delta": 0.19747763872146606
+    },
+    {
+      "frame": 722,
+      "height": 0.6549530625343323,
+      "root_z_delta": -0.02653813362121582,
+      "max_joint_delta": 0.2350102663040161
+    },
+    {
+      "frame": 747,
+      "height": 0.6542708873748779,
+      "root_z_delta": -0.028746962547302246,
+      "max_joint_delta": 0.22707833349704742
+    },
+    {
+      "frame": 770,
+      "height": 0.6480898261070251,
+      "root_z_delta": -0.031048238277435303,
+      "max_joint_delta": 0.3145512342453003
+    },
+    {
+      "frame": 793,
+      "height": 0.6527740955352783,
+      "root_z_delta": -0.024144470691680908,
+      "max_joint_delta": 0.24541130661964417
+    },
+    {
+      "frame": 814,
+      "height": 0.6770555973052979,
+      "root_z_delta": -0.003264188766479492,
+      "max_joint_delta": 0.11186929047107697
+    },
+    {
+      "frame": 837,
+      "height": 0.6889460682868958,
+      "root_z_delta": -0.006476223468780518,
+      "max_joint_delta": 0.11794731765985489
+    },
+    {
+      "frame": 866,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 890,
+      "height": 0.6405125856399536,
+      "root_z_delta": -0.01769578456878662,
+      "max_joint_delta": 0.1816164255142212
+    },
+    {
+      "frame": 911,
+      "height": 0.6458328366279602,
+      "root_z_delta": -0.028015613555908203,
+      "max_joint_delta": 0.28786301612854004
+    },
+    {
+      "frame": 933,
+      "height": 0.6387642621994019,
+      "root_z_delta": -0.03230172395706177,
+      "max_joint_delta": 0.18533354997634888
+    },
+    {
+      "frame": 955,
+      "height": 0.6388209462165833,
+      "root_z_delta": -0.03550302982330322,
+      "max_joint_delta": 0.2834635078907013
+    },
+    {
+      "frame": 976,
+      "height": 0.637836217880249,
+      "root_z_delta": -0.04022485017776489,
+      "max_joint_delta": 0.400197833776474
+    },
+    {
+      "frame": 997,
+      "height": 0.6414186358451843,
+      "root_z_delta": -0.030871093273162842,
+      "max_joint_delta": 0.2875603437423706
+    },
+    {
+      "frame": 1018,
+      "height": 0.6531535387039185,
+      "root_z_delta": -0.023117125034332275,
+      "max_joint_delta": 0.208166241645813
+    },
+    {
+      "frame": 1041,
+      "height": 0.6832459568977356,
+      "root_z_delta": -0.01468271017074585,
+      "max_joint_delta": 0.2848805785179138
+    },
+    {
+      "frame": 1086,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 1106,
+      "height": 0.6455503702163696,
+      "root_z_delta": -0.027601003646850586,
+      "max_joint_delta": 0.2652076482772827
+    },
+    {
+      "frame": 1128,
+      "height": 0.643187940120697,
+      "root_z_delta": -0.030633926391601562,
+      "max_joint_delta": 0.23959887027740479
+    },
+    {
+      "frame": 1150,
+      "height": 0.6584323644638062,
+      "root_z_delta": -0.020874857902526855,
+      "max_joint_delta": 0.18449878692626953
+    },
+    {
+      "frame": 1171,
+      "height": 0.676620364189148,
+      "root_z_delta": -0.014191031455993652,
+      "max_joint_delta": 0.09659893810749054
+    },
+    {
+      "frame": 1202,
+      "height": 0.6706252098083496,
+      "root_z_delta": -0.025703251361846924,
+      "max_joint_delta": 0.536888837814331
+    },
+    {
+      "frame": 1238,
+      "height": 0.6581358909606934,
+      "root_z_delta": -0.010825574398040771,
+      "max_joint_delta": 0.2389465570449829
+    },
+    {
+      "frame": 1260,
+      "height": 0.6702021956443787,
+      "root_z_delta": -0.014639854431152344,
+      "max_joint_delta": 0.21836882829666138
+    },
+    {
+      "frame": 1288,
+      "height": 0.6603085398674011,
+      "root_z_delta": -0.01509779691696167,
+      "max_joint_delta": 0.3739084005355835
+    },
+    {
+      "frame": 1315,
+      "height": 0.6671369671821594,
+      "root_z_delta": -0.015530407428741455,
+      "max_joint_delta": 0.40493109822273254
+    },
+    {
+      "frame": 1343,
+      "height": 0.6675271987915039,
+      "root_z_delta": -0.004429340362548828,
+      "max_joint_delta": 0.38742244243621826
+    },
+    {
+      "frame": 1367,
+      "height": 0.6715724468231201,
+      "root_z_delta": -0.010476469993591309,
+      "max_joint_delta": 0.2216559648513794
+    },
+    {
+      "frame": 1394,
+      "height": 0.6643489599227905,
+      "root_z_delta": -0.010643422603607178,
+      "max_joint_delta": 0.26585477590560913
+    },
+    {
+      "frame": 1425,
+      "height": 0.6586245894432068,
+      "root_z_delta": -0.017896413803100586,
+      "max_joint_delta": 0.27070486545562744
+    },
+    {
+      "frame": 1452,
+      "height": 0.6572237014770508,
+      "root_z_delta": -0.023743867874145508,
+      "max_joint_delta": 0.23513226211071014
+    },
+    {
+      "frame": 1475,
+      "height": 0.6649834513664246,
+      "root_z_delta": -0.0072247982025146484,
+      "max_joint_delta": 0.12244933843612671
+    },
+    {
+      "frame": 1498,
+      "height": 0.6574608087539673,
+      "root_z_delta": -0.032099008560180664,
+      "max_joint_delta": 0.31720808148384094
+    },
+    {
+      "frame": 1517,
+      "height": 0.6731723546981812,
+      "root_z_delta": -0.014436841011047363,
+      "max_joint_delta": 0.2608450651168823
+    },
+    {
+      "frame": 1543,
+      "height": 0.6628665924072266,
+      "root_z_delta": -0.02873218059539795,
+      "max_joint_delta": 0.2273833155632019
+    },
+    {
+      "frame": 1565,
+      "height": 0.6754635572433472,
+      "root_z_delta": -0.012516021728515625,
+      "max_joint_delta": 0.16580212116241455
+    },
+    {
+      "frame": 1591,
+      "height": 0.6595461368560791,
+      "root_z_delta": -0.02195143699645996,
+      "max_joint_delta": 0.17249730229377747
+    },
+    {
+      "frame": 1613,
+      "height": 0.6775477528572083,
+      "root_z_delta": -0.010968685150146484,
+      "max_joint_delta": 0.1314902901649475
+    },
+    {
+      "frame": 1641,
+      "height": 0.6520265936851501,
+      "root_z_delta": -0.03092414140701294,
+      "max_joint_delta": 0.3070460557937622
+    },
+    {
+      "frame": 1665,
+      "height": 0.6691341996192932,
+      "root_z_delta": -0.01628243923187256,
+      "max_joint_delta": 0.1615302711725235
+    },
+    {
+      "frame": 1690,
+      "height": 0.6601703763008118,
+      "root_z_delta": -0.01864546537399292,
+      "max_joint_delta": 0.1844937950372696
+    },
+    {
+      "frame": 1716,
+      "height": 0.6529442667961121,
+      "root_z_delta": -0.023556888103485107,
+      "max_joint_delta": 0.3139549195766449
+    },
+    {
+      "frame": 1741,
+      "height": 0.6599599719047546,
+      "root_z_delta": -0.014625787734985352,
+      "max_joint_delta": 0.21921029686927795
+    },
+    {
+      "frame": 1768,
+      "height": 0.6465253233909607,
+      "root_z_delta": -0.031182587146759033,
+      "max_joint_delta": 0.3233942985534668
+    },
+    {
+      "frame": 1793,
+      "height": 0.6584057211875916,
+      "root_z_delta": -0.020705044269561768,
+      "max_joint_delta": 0.22739720344543457
+    },
+    {
+      "frame": 1819,
+      "height": 0.6559538841247559,
+      "root_z_delta": -0.023840367794036865,
+      "max_joint_delta": 0.2568129599094391
+    },
+    {
+      "frame": 1843,
+      "height": 0.6740255355834961,
+      "root_z_delta": -0.00376814603805542,
+      "max_joint_delta": 0.10607817769050598
+    },
+    {
+      "frame": 1869,
+      "height": 0.6799518465995789,
+      "root_z_delta": -0.006955444812774658,
+      "max_joint_delta": 0.4170718491077423
+    },
+    {
+      "frame": 1896,
+      "height": 0.6746587157249451,
+      "root_z_delta": -0.0036152005195617676,
+      "max_joint_delta": 0.4764830768108368
+    },
+    {
+      "frame": 1921,
+      "height": 0.6890577673912048,
+      "root_z_delta": -0.0020540356636047363,
+      "max_joint_delta": 0.07015560567378998
+    },
+    {
+      "frame": 1945,
+      "height": 0.6415530443191528,
+      "root_z_delta": 0.007026016712188721,
+      "max_joint_delta": 0.25480836629867554
+    },
+    {
+      "frame": 1964,
+      "height": 0.676233172416687,
+      "root_z_delta": -0.013245165348052979,
+      "max_joint_delta": 0.35490673780441284
+    },
+    {
+      "frame": 1992,
+      "height": 0.6628413200378418,
+      "root_z_delta": 0.001267850399017334,
+      "max_joint_delta": 0.2454492747783661
+    },
+    {
+      "frame": 2013,
+      "height": 0.6821227669715881,
+      "root_z_delta": -0.010840892791748047,
+      "max_joint_delta": 0.29868119955062866
+    },
+    {
+      "frame": 2040,
+      "height": 0.6523770093917847,
+      "root_z_delta": 0.00676727294921875,
+      "max_joint_delta": 0.15696540474891663
+    },
+    {
+      "frame": 2062,
+      "height": 0.6841346621513367,
+      "root_z_delta": -0.013798654079437256,
+      "max_joint_delta": 0.2830159664154053
+    },
+    {
+      "frame": 2093,
+      "height": 0.6750227212905884,
+      "root_z_delta": -0.0034255385398864746,
+      "max_joint_delta": 0.21222996711730957
+    },
+    {
+      "frame": 2116,
+      "height": 0.6829834580421448,
+      "root_z_delta": -0.012923002243041992,
+      "max_joint_delta": 0.25316229462623596
+    },
+    {
+      "frame": 2144,
+      "height": 0.6717419028282166,
+      "root_z_delta": -0.011642694473266602,
+      "max_joint_delta": 0.38973692059516907
+    },
+    {
+      "frame": 2169,
+      "height": 0.6903332471847534,
+      "root_z_delta": -0.0043485164642333984,
+      "max_joint_delta": 0.10093942284584045
+    },
+    {
+      "frame": 2200,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2223,
+      "height": 0.6542389392852783,
+      "root_z_delta": -0.03843498229980469,
+      "max_joint_delta": 0.3894360363483429
+    },
+    {
+      "frame": 2245,
+      "height": 0.6642343401908875,
+      "root_z_delta": -0.020470857620239258,
+      "max_joint_delta": 0.15640823543071747
+    },
+    {
+      "frame": 2267,
+      "height": 0.6675625443458557,
+      "root_z_delta": -0.02524203062057495,
+      "max_joint_delta": 0.235503688454628
+    },
+    {
+      "frame": 2282,
+      "height": 0.6736913323402405,
+      "root_z_delta": -0.021011650562286377,
+      "max_joint_delta": 0.5399258732795715
+    },
+    {
+      "frame": 2295,
+      "height": 0.6829619407653809,
+      "root_z_delta": -0.015049219131469727,
+      "max_joint_delta": 0.30740609765052795
+    },
+    {
+      "frame": 2330,
+      "height": 0.6593152284622192,
+      "root_z_delta": -0.02873706817626953,
+      "max_joint_delta": 0.23456139862537384
+    },
+    {
+      "frame": 2358,
+      "height": 0.6423469185829163,
+      "root_z_delta": -0.03680765628814697,
+      "max_joint_delta": 0.29170694947242737
+    },
+    {
+      "frame": 2379,
+      "height": 0.6591362953186035,
+      "root_z_delta": -0.032988667488098145,
+      "max_joint_delta": 0.34143590927124023
+    },
+    {
+      "frame": 2404,
+      "height": 0.6390913128852844,
+      "root_z_delta": -0.03288978338241577,
+      "max_joint_delta": 0.2900354862213135
+    },
+    {
+      "frame": 2427,
+      "height": 0.6560686230659485,
+      "root_z_delta": -0.02713412046432495,
+      "max_joint_delta": 0.2706218361854553
+    },
+    {
+      "frame": 2453,
+      "height": 0.6612683534622192,
+      "root_z_delta": -0.017340362071990967,
+      "max_joint_delta": 0.24043439328670502
+    },
+    {
+      "frame": 2478,
+      "height": 0.6053176522254944,
+      "root_z_delta": -0.04844105243682861,
+      "max_joint_delta": 0.5664464831352234
+    },
+    {
+      "frame": 2498,
+      "height": 0.597373366355896,
+      "root_z_delta": -0.05341583490371704,
+      "max_joint_delta": 1.011419653892517
+    },
+    {
+      "frame": 2514,
+      "height": 0.5915661454200745,
+      "root_z_delta": -0.05264854431152344,
+      "max_joint_delta": 1.0045626163482666
+    },
+    {
+      "frame": 2531,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2546,
+      "height": 0.5997510552406311,
+      "root_z_delta": -0.04831099510192871,
+      "max_joint_delta": 1.0319243669509888
+    },
+    {
+      "frame": 2562,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2577,
+      "height": 0.6175374388694763,
+      "root_z_delta": -0.03816193342208862,
+      "max_joint_delta": 0.8028184771537781
+    },
+    {
+      "frame": 2590,
+      "height": 0.6585946083068848,
+      "root_z_delta": -0.024953067302703857,
+      "max_joint_delta": 0.20943917334079742
+    },
+    {
+      "frame": 2606,
+      "height": 0.6763300895690918,
+      "root_z_delta": -0.016375184059143066,
+      "max_joint_delta": 0.2024916708469391
+    },
+    {
+      "frame": 2620,
+      "height": 0.6854511499404907,
+      "root_z_delta": -0.021603524684906006,
+      "max_joint_delta": 0.20211264491081238
+    },
+    {
+      "frame": 2629,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2650,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2666,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2681,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2697,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2712,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2728,
+      "height": 0.5987891554832458,
+      "root_z_delta": -0.045944154262542725,
+      "max_joint_delta": 0.9851953387260437
+    },
+    {
+      "frame": 2744,
+      "height": 0.5993925929069519,
+      "root_z_delta": -0.04629272222518921,
+      "max_joint_delta": 0.969653308391571
+    },
+    {
+      "frame": 2760,
+      "height": 0.6001450419425964,
+      "root_z_delta": -0.04506891965866089,
+      "max_joint_delta": 0.8854683041572571
+    },
+    {
+      "frame": 2776,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2791,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2805,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2822,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2837,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2853,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2868,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2884,
+      "height": 0.6191167831420898,
+      "root_z_delta": -0.028027832508087158,
+      "max_joint_delta": 0.8063687086105347
+    },
+    {
+      "frame": 2899,
+      "height": 0.6228294372558594,
+      "root_z_delta": -0.04996854066848755,
+      "max_joint_delta": 0.5606169104576111
+    },
+    {
+      "frame": 2917,
+      "height": 0.6094614267349243,
+      "root_z_delta": -0.05018258094787598,
+      "max_joint_delta": 0.7584403157234192
+    },
+    {
+      "frame": 2934,
+      "height": 0.6091885566711426,
+      "root_z_delta": -0.04304534196853638,
+      "max_joint_delta": 1.017115831375122
+    },
+    {
+      "frame": 2950,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 2965,
+      "height": 0.6076535582542419,
+      "root_z_delta": -0.04488563537597656,
+      "max_joint_delta": 1.0157568454742432
+    },
+    {
+      "frame": 2980,
+      "height": 0.5968459844589233,
+      "root_z_delta": -0.04764646291732788,
+      "max_joint_delta": 0.9619452953338623
+    },
+    {
+      "frame": 2995,
+      "height": 0.6036301255226135,
+      "root_z_delta": -0.033518195152282715,
+      "max_joint_delta": 0.917093813419342
+    },
+    {
+      "frame": 3010,
+      "height": 0.6003143787384033,
+      "root_z_delta": -0.040848612785339355,
+      "max_joint_delta": 0.9015824794769287
+    },
+    {
+      "frame": 3025,
+      "height": 0.6064950227737427,
+      "root_z_delta": -0.037480831146240234,
+      "max_joint_delta": 0.7816142439842224
+    },
+    {
+      "frame": 3041,
+      "height": 0.6168544292449951,
+      "root_z_delta": -0.016792654991149902,
+      "max_joint_delta": 0.8054438829421997
+    },
+    {
+      "frame": 3056,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3073,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3087,
+      "height": 0.6306816935539246,
+      "root_z_delta": -0.02489691972732544,
+      "max_joint_delta": 0.5478855967521667
+    },
+    {
+      "frame": 3100,
+      "height": 0.6554601192474365,
+      "root_z_delta": -0.011925220489501953,
+      "max_joint_delta": 0.3568061888217926
+    },
+    {
+      "frame": 3111,
+      "height": 0.6797930002212524,
+      "root_z_delta": -0.009584963321685791,
+      "max_joint_delta": 0.1338953822851181
+    },
+    {
+      "frame": 3125,
+      "height": 0.6608045101165771,
+      "root_z_delta": -0.010171234607696533,
+      "max_joint_delta": 0.19738325476646423
+    },
+    {
+      "frame": 3142,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3159,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3173,
+      "height": 0.6016167402267456,
+      "root_z_delta": -0.03407639265060425,
+      "max_joint_delta": 0.8841161727905273
+    },
+    {
+      "frame": 3188,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3203,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3218,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3233,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3248,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3262,
+      "height": 0.5932411551475525,
+      "root_z_delta": -0.03902781009674072,
+      "max_joint_delta": 1.062269687652588
+    },
+    {
+      "frame": 3277,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3291,
+      "height": 0.5877634882926941,
+      "root_z_delta": -0.05036139488220215,
+      "max_joint_delta": 0.9434866905212402
+    },
+    {
+      "frame": 3306,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3321,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3336,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3351,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3366,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3381,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3396,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3411,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3426,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3443,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3458,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 3473,
+      "height": 0.6045156717300415,
+      "root_z_delta": -0.03650832176208496,
+      "max_joint_delta": 0.914120614528656
+    },
+    {
+      "frame": 3489,
+      "height": 0.6134129762649536,
+      "root_z_delta": -0.028216063976287842,
+      "max_joint_delta": 0.9061875343322754
+    },
+    {
+      "frame": 3504,
+      "height": 0.6107665300369263,
+      "root_z_delta": -0.029459118843078613,
+      "max_joint_delta": 0.8959163427352905
+    },
+    {
+      "frame": 3519,
+      "height": 0.6050562262535095,
+      "root_z_delta": -0.04046422243118286,
+      "max_joint_delta": 0.8536771535873413
+    },
+    {
+      "frame": 3534,
+      "height": 0.6180616617202759,
+      "root_z_delta": -0.0320926308631897,
+      "max_joint_delta": 0.770868718624115
+    },
+    {
+      "frame": 3548,
+      "height": 0.6471058130264282,
+      "root_z_delta": -0.023235678672790527,
+      "max_joint_delta": 0.4143086373806
+    },
+    {
+      "frame": 3561,
+      "height": 0.6758996248245239,
+      "root_z_delta": -0.010600864887237549,
+      "max_joint_delta": 0.1614008992910385
+    },
+    {
+      "frame": 3570,
+      "height": 0.68882155418396,
+      "root_z_delta": -0.010236501693725586,
+      "max_joint_delta": 0.044256389141082764
+    },
+    {
+      "frame": 3646,
+      "height": 0.6632195711135864,
+      "root_z_delta": -0.026406466960906982,
+      "max_joint_delta": 0.368760347366333
+    },
+    {
+      "frame": 3682,
+      "height": 0.6623917818069458,
+      "root_z_delta": -0.017353534698486328,
+      "max_joint_delta": 0.21603725850582123
+    },
+    {
+      "frame": 3711,
+      "height": 0.6673899292945862,
+      "root_z_delta": -0.01977628469467163,
+      "max_joint_delta": 0.17260393500328064
+    },
+    {
+      "frame": 3740,
+      "height": 0.6656848192214966,
+      "root_z_delta": -0.0179215669631958,
+      "max_joint_delta": 0.22423866391181946
+    },
+    {
+      "frame": 3766,
+      "height": 0.6629500389099121,
+      "root_z_delta": -0.018906354904174805,
+      "max_joint_delta": 0.1444990336894989
+    },
+    {
+      "frame": 3791,
+      "height": 0.6660633087158203,
+      "root_z_delta": -0.01660686731338501,
+      "max_joint_delta": 0.22531931102275848
+    },
+    {
+      "frame": 3817,
+      "height": 0.6596197485923767,
+      "root_z_delta": -0.02015596628189087,
+      "max_joint_delta": 0.19642922282218933
+    },
+    {
+      "frame": 3842,
+      "height": 0.6633764505386353,
+      "root_z_delta": -0.016469180583953857,
+      "max_joint_delta": 0.2076433300971985
+    },
+    {
+      "frame": 3869,
+      "height": 0.6553993225097656,
+      "root_z_delta": -0.019401490688323975,
+      "max_joint_delta": 0.1849796175956726
+    },
+    {
+      "frame": 3893,
+      "height": 0.6617715358734131,
+      "root_z_delta": -0.01637333631515503,
+      "max_joint_delta": 0.23433110117912292
+    },
+    {
+      "frame": 3918,
+      "height": 0.6647575497627258,
+      "root_z_delta": -0.018674492835998535,
+      "max_joint_delta": 0.17569313943386078
+    },
+    {
+      "frame": 3938,
+      "height": 0.6899033784866333,
+      "root_z_delta": -0.005633056163787842,
+      "max_joint_delta": 0.078339584171772
+    },
+    {
+      "frame": 3960,
+      "height": 0.6864376664161682,
+      "root_z_delta": -0.004904270172119141,
+      "max_joint_delta": 0.44446617364883423
+    },
+    {
+      "frame": 3996,
+      "height": 0.6939753890037537,
+      "root_z_delta": 4.3511390686035156e-05,
+      "max_joint_delta": 0.04012849181890488
+    },
+    {
+      "frame": 4029,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 4053,
+      "height": 0.6694865226745605,
+      "root_z_delta": -0.009967327117919922,
+      "max_joint_delta": 0.16447031497955322
+    },
+    {
+      "frame": 4076,
+      "height": 0.6604368686676025,
+      "root_z_delta": -0.014200150966644287,
+      "max_joint_delta": 0.1794094443321228
+    },
+    {
+      "frame": 4098,
+      "height": 0.6599166989326477,
+      "root_z_delta": -0.017054319381713867,
+      "max_joint_delta": 0.17092615365982056
+    },
+    {
+      "frame": 4123,
+      "height": 0.6491199135780334,
+      "root_z_delta": -0.03264421224594116,
+      "max_joint_delta": 0.2430085986852646
+    },
+    {
+      "frame": 4146,
+      "height": 0.6567304730415344,
+      "root_z_delta": -0.0239560604095459,
+      "max_joint_delta": 0.2686372399330139
+    },
+    {
+      "frame": 4172,
+      "height": 0.6562503576278687,
+      "root_z_delta": -0.0263938307762146,
+      "max_joint_delta": 0.22271761298179626
+    },
+    {
+      "frame": 4197,
+      "height": 0.6637006402015686,
+      "root_z_delta": -0.019169747829437256,
+      "max_joint_delta": 0.1909712851047516
+    },
+    {
+      "frame": 4223,
+      "height": 0.6607853174209595,
+      "root_z_delta": -0.026110291481018066,
+      "max_joint_delta": 0.1842956244945526
+    },
+    {
+      "frame": 4244,
+      "height": 0.685356080532074,
+      "root_z_delta": -0.011723220348358154,
+      "max_joint_delta": 0.07555568218231201
+    },
+    {
+      "frame": 4270,
+      "height": 0.6875696182250977,
+      "root_z_delta": -0.015858054161071777,
+      "max_joint_delta": 0.21098384261131287
+    },
+    {
+      "frame": 4305,
+      "height": 0.6684934496879578,
+      "root_z_delta": -0.017264902591705322,
+      "max_joint_delta": 0.18692591786384583
+    },
+    {
+      "frame": 4342,
+      "height": 0.6823731660842896,
+      "root_z_delta": -0.025709986686706543,
+      "max_joint_delta": 0.2954736351966858
+    },
+    {
+      "frame": 4370,
+      "height": 0.6703177690505981,
+      "root_z_delta": -0.01569420099258423,
+      "max_joint_delta": 0.19155718386173248
+    },
+    {
+      "frame": 4397,
+      "height": 0.6556116342544556,
+      "root_z_delta": -0.027414381504058838,
+      "max_joint_delta": 0.2246476411819458
+    },
+    {
+      "frame": 4424,
+      "height": 0.657046377658844,
+      "root_z_delta": -0.017527282238006592,
+      "max_joint_delta": 0.17423449456691742
+    },
+    {
+      "frame": 4457,
+      "height": 0.6232008934020996,
+      "root_z_delta": -0.025569617748260498,
+      "max_joint_delta": 0.15258288383483887
+    },
+    {
+      "frame": 4481,
+      "height": 0.6649366021156311,
+      "root_z_delta": -0.012369990348815918,
+      "max_joint_delta": 0.16793879866600037
+    },
+    {
+      "frame": 4505,
+      "height": 0.6312013864517212,
+      "root_z_delta": -0.024274051189422607,
+      "max_joint_delta": 0.30961209535598755
+    },
+    {
+      "frame": 4538,
+      "height": 0.6676464080810547,
+      "root_z_delta": -0.010297834873199463,
+      "max_joint_delta": 0.1815422773361206
+    },
+    {
+      "frame": 4559,
+      "height": 0.6394913196563721,
+      "root_z_delta": -0.009888231754302979,
+      "max_joint_delta": 0.24937856197357178
+    },
+    {
+      "frame": 4590,
+      "height": 0.667381227016449,
+      "root_z_delta": -0.0032638907432556152,
+      "max_joint_delta": 0.10712510347366333
+    },
+    {
+      "frame": 4611,
+      "height": 0.6485778093338013,
+      "root_z_delta": -0.008291900157928467,
+      "max_joint_delta": 0.21349568665027618
+    },
+    {
+      "frame": 4639,
+      "height": 0.6705888509750366,
+      "root_z_delta": -0.002588927745819092,
+      "max_joint_delta": 0.10348451137542725
+    },
+    {
+      "frame": 4660,
+      "height": 0.6461769938468933,
+      "root_z_delta": -0.006671249866485596,
+      "max_joint_delta": 0.21094731986522675
+    },
+    {
+      "frame": 4690,
+      "height": 0.6632935404777527,
+      "root_z_delta": -0.008567392826080322,
+      "max_joint_delta": 0.14040663838386536
+    },
+    {
+      "frame": 4710,
+      "height": 0.6491872072219849,
+      "root_z_delta": -0.00617825984954834,
+      "max_joint_delta": 0.24699166417121887
+    },
+    {
+      "frame": 4739,
+      "height": 0.6705316305160522,
+      "root_z_delta": -0.01142054796218872,
+      "max_joint_delta": 0.140651136636734
+    },
+    {
+      "frame": 4759,
+      "height": 0.6488116979598999,
+      "root_z_delta": -0.012933731079101562,
+      "max_joint_delta": 0.1939137578010559
+    },
+    {
+      "frame": 4791,
+      "height": 0.6674739718437195,
+      "root_z_delta": -0.01086336374282837,
+      "max_joint_delta": 0.13785113394260406
+    },
+    {
+      "frame": 4811,
+      "height": 0.6470773220062256,
+      "root_z_delta": -0.011101961135864258,
+      "max_joint_delta": 0.171227365732193
+    },
+    {
+      "frame": 4841,
+      "height": 0.6489101052284241,
+      "root_z_delta": -0.01234811544418335,
+      "max_joint_delta": 0.30614471435546875
+    },
+    {
+      "frame": 4857,
+      "height": 0.6429976224899292,
+      "root_z_delta": -0.009261250495910645,
+      "max_joint_delta": 0.16377848386764526
+    },
+    {
+      "frame": 4887,
+      "height": 0.679660439491272,
+      "root_z_delta": -0.004326462745666504,
+      "max_joint_delta": 0.11882421374320984
+    },
+    {
+      "frame": 4907,
+      "height": 0.6496167182922363,
+      "root_z_delta": -0.00917065143585205,
+      "max_joint_delta": 0.16905388236045837
+    },
+    {
+      "frame": 4932,
+      "height": 0.6711580753326416,
+      "root_z_delta": -0.009515881538391113,
+      "max_joint_delta": 0.15892425179481506
+    },
+    {
+      "frame": 4950,
+      "height": 0.6520718932151794,
+      "root_z_delta": -0.012798130512237549,
+      "max_joint_delta": 0.23324038088321686
+    },
+    {
+      "frame": 4978,
+      "height": 0.6664891839027405,
+      "root_z_delta": -0.00862663984298706,
+      "max_joint_delta": 0.05505557358264923
+    },
+    {
+      "frame": 5001,
+      "height": 0.6321650147438049,
+      "root_z_delta": -0.02234470844268799,
+      "max_joint_delta": 0.11837850511074066
+    },
+    {
+      "frame": 5020,
+      "height": 0.643629789352417,
+      "root_z_delta": -0.010699689388275146,
+      "max_joint_delta": 0.09787878394126892
+    },
+    {
+      "frame": 5034,
+      "height": 0.6175397038459778,
+      "root_z_delta": -0.016851842403411865,
+      "max_joint_delta": 0.0897093415260315
+    },
+    {
+      "frame": 5054,
+      "height": 0.6602630615234375,
+      "root_z_delta": -0.004403829574584961,
+      "max_joint_delta": 0.061348866671323776
+    },
+    {
+      "frame": 5065,
+      "height": 0.6152575016021729,
+      "root_z_delta": -0.017830491065979004,
+      "max_joint_delta": 0.10309763252735138
+    },
+    {
+      "frame": 5087,
+      "height": 0.6534692645072937,
+      "root_z_delta": -0.006543278694152832,
+      "max_joint_delta": 0.07449644804000854
+    },
+    {
+      "frame": 5099,
+      "height": 0.5988267660140991,
+      "root_z_delta": -0.023373007774353027,
+      "max_joint_delta": 0.17358575761318207
+    },
+    {
+      "frame": 5120,
+      "height": 0.6423877477645874,
+      "root_z_delta": -0.010775625705718994,
+      "max_joint_delta": 0.15051090717315674
+    },
+    {
+      "frame": 5132,
+      "height": 0.6110566258430481,
+      "root_z_delta": -0.010773956775665283,
+      "max_joint_delta": 0.09716685116291046
+    },
+    {
+      "frame": 5150,
+      "height": 0.6610770225524902,
+      "root_z_delta": -0.0034216642379760742,
+      "max_joint_delta": 0.07976670563220978
+    },
+    {
+      "frame": 5165,
+      "height": 0.6029266119003296,
+      "root_z_delta": -0.010322868824005127,
+      "max_joint_delta": 0.09556682407855988
+    },
+    {
+      "frame": 5185,
+      "height": 0.650709331035614,
+      "root_z_delta": -0.0032813549041748047,
+      "max_joint_delta": 0.05927204340696335
+    },
+    {
+      "frame": 5200,
+      "height": 0.6137023568153381,
+      "root_z_delta": -0.00796419382095337,
+      "max_joint_delta": 0.0987953245639801
+    },
+    {
+      "frame": 5218,
+      "height": 0.6491940021514893,
+      "root_z_delta": -0.0076888203620910645,
+      "max_joint_delta": 0.10443115234375
+    },
+    {
+      "frame": 5236,
+      "height": 0.6299799680709839,
+      "root_z_delta": -0.005978226661682129,
+      "max_joint_delta": 0.10066716372966766
+    },
+    {
+      "frame": 5256,
+      "height": 0.6722560524940491,
+      "root_z_delta": 0.0006260871887207031,
+      "max_joint_delta": 0.0837254673242569
+    },
+    {
+      "frame": 5272,
+      "height": 0.6149370074272156,
+      "root_z_delta": -0.006283998489379883,
+      "max_joint_delta": 0.0876358151435852
+    },
+    {
+      "frame": 5292,
+      "height": 0.6644660234451294,
+      "root_z_delta": 0.0007789134979248047,
+      "max_joint_delta": 0.05594819784164429
+    },
+    {
+      "frame": 5309,
+      "height": 0.6521791219711304,
+      "root_z_delta": -0.0013236403465270996,
+      "max_joint_delta": 0.08132067322731018
+    },
+    {
+      "frame": 5336,
+      "height": 0.6735411882400513,
+      "root_z_delta": -0.00433272123336792,
+      "max_joint_delta": 0.12604737281799316
+    },
+    {
+      "frame": 5386,
+      "height": 0.6625325679779053,
+      "root_z_delta": -0.006204724311828613,
+      "max_joint_delta": 0.11999295651912689
+    },
+    {
+      "frame": 5395,
+      "height": 0.6693674325942993,
+      "root_z_delta": -0.007696330547332764,
+      "max_joint_delta": 0.06474016606807709
+    },
+    {
+      "frame": 5422,
+      "height": 0.674823522567749,
+      "root_z_delta": -0.010019898414611816,
+      "max_joint_delta": 0.19172795116901398
+    },
+    {
+      "frame": 5433,
+      "height": 0.6719753742218018,
+      "root_z_delta": -0.003790438175201416,
+      "max_joint_delta": 0.040759313851594925
+    },
+    {
+      "frame": 5462,
+      "height": 0.6741024851799011,
+      "root_z_delta": -0.010257303714752197,
+      "max_joint_delta": 0.18531456589698792
+    },
+    {
+      "frame": 5475,
+      "height": 0.6730543375015259,
+      "root_z_delta": -0.0029159188270568848,
+      "max_joint_delta": 0.06260637938976288
+    },
+    {
+      "frame": 5507,
+      "height": 0.6714375019073486,
+      "root_z_delta": -0.008680343627929688,
+      "max_joint_delta": 0.17142683267593384
+    },
+    {
+      "frame": 5518,
+      "height": 0.6657554507255554,
+      "root_z_delta": -0.005395054817199707,
+      "max_joint_delta": 0.0702173113822937
+    },
+    {
+      "frame": 5546,
+      "height": 0.6714603900909424,
+      "root_z_delta": -0.00814443826675415,
+      "max_joint_delta": 0.1656894087791443
+    },
+    {
+      "frame": 5558,
+      "height": 0.6631373763084412,
+      "root_z_delta": -0.006709754467010498,
+      "max_joint_delta": 0.06450171023607254
+    },
+    {
+      "frame": 5586,
+      "height": 0.6710922718048096,
+      "root_z_delta": -0.010321855545043945,
+      "max_joint_delta": 0.1700458526611328
+    },
+    {
+      "frame": 5599,
+      "height": 0.6707051396369934,
+      "root_z_delta": -0.005694270133972168,
+      "max_joint_delta": 0.053959861397743225
+    },
+    {
+      "frame": 5629,
+      "height": 0.6748978495597839,
+      "root_z_delta": -0.011013507843017578,
+      "max_joint_delta": 0.20333410799503326
+    },
+    {
+      "frame": 5642,
+      "height": 0.6714310050010681,
+      "root_z_delta": -0.0068364739418029785,
+      "max_joint_delta": 0.053942032158374786
+    },
+    {
+      "frame": 5670,
+      "height": 0.6711143851280212,
+      "root_z_delta": -0.013800442218780518,
+      "max_joint_delta": 0.13114413619041443
+    },
+    {
+      "frame": 5683,
+      "height": 0.6705085039138794,
+      "root_z_delta": -0.007963716983795166,
+      "max_joint_delta": 0.07094904780387878
+    },
+    {
+      "frame": 5715,
+      "height": 0.6728128790855408,
+      "root_z_delta": -0.011104047298431396,
+      "max_joint_delta": 0.13275697827339172
+    },
+    {
+      "frame": 5729,
+      "height": 0.674471378326416,
+      "root_z_delta": -0.006344139575958252,
+      "max_joint_delta": 0.05768623948097229
+    },
+    {
+      "frame": 5758,
+      "height": 0.6714967489242554,
+      "root_z_delta": -0.010410845279693604,
+      "max_joint_delta": 0.13697022199630737
+    },
+    {
+      "frame": 5772,
+      "height": 0.6739822030067444,
+      "root_z_delta": -0.006444215774536133,
+      "max_joint_delta": 0.05102832615375519
+    },
+    {
+      "frame": 5803,
+      "height": 0.6779295206069946,
+      "root_z_delta": -0.008498072624206543,
+      "max_joint_delta": 0.11392271518707275
+    },
+    {
+      "frame": 5814,
+      "height": 0.6701471209526062,
+      "root_z_delta": -0.00786501169204712,
+      "max_joint_delta": 0.07610370218753815
+    },
+    {
+      "frame": 5842,
+      "height": 0.6757619380950928,
+      "root_z_delta": -0.009707629680633545,
+      "max_joint_delta": 0.14219217002391815
+    },
+    {
+      "frame": 5854,
+      "height": 0.6719867587089539,
+      "root_z_delta": -0.007403671741485596,
+      "max_joint_delta": 0.05827489495277405
+    },
+    {
+      "frame": 5883,
+      "height": 0.6775752305984497,
+      "root_z_delta": -0.00780797004699707,
+      "max_joint_delta": 0.09360142052173615
+    },
+    {
+      "frame": 5894,
+      "height": 0.6731488704681396,
+      "root_z_delta": -0.00770878791809082,
+      "max_joint_delta": 0.07548195123672485
+    },
+    {
+      "frame": 5923,
+      "height": 0.6682672500610352,
+      "root_z_delta": -0.012062251567840576,
+      "max_joint_delta": 0.1369970440864563
+    },
+    {
+      "frame": 5935,
+      "height": 0.6723187565803528,
+      "root_z_delta": -0.008291423320770264,
+      "max_joint_delta": 0.08116675913333893
+    },
+    {
+      "frame": 5962,
+      "height": 0.6706991791725159,
+      "root_z_delta": -0.01908731460571289,
+      "max_joint_delta": 0.21759824454784393
+    },
+    {
+      "frame": 5978,
+      "height": 0.6757825016975403,
+      "root_z_delta": -0.010097205638885498,
+      "max_joint_delta": 0.10900819301605225
+    },
+    {
+      "frame": 6011,
+      "height": 0.6495658159255981,
+      "root_z_delta": -0.017713308334350586,
+      "max_joint_delta": 0.2039772868156433
+    },
+    {
+      "frame": 6035,
+      "height": 0.631949782371521,
+      "root_z_delta": -0.0284726619720459,
+      "max_joint_delta": 0.22055131196975708
+    },
+    {
+      "frame": 6059,
+      "height": 0.6187474131584167,
+      "root_z_delta": -0.04330873489379883,
+      "max_joint_delta": 0.451557993888855
+    },
+    {
+      "frame": 6080,
+      "height": 0.6087471842765808,
+      "root_z_delta": -0.04750031232833862,
+      "max_joint_delta": 0.4490416347980499
+    },
+    {
+      "frame": 6101,
+      "height": 0.6210612058639526,
+      "root_z_delta": -0.03755217790603638,
+      "max_joint_delta": 0.40386343002319336
+    },
+    {
+      "frame": 6123,
+      "height": 0.6109322905540466,
+      "root_z_delta": -0.04643768072128296,
+      "max_joint_delta": 0.4404717981815338
+    },
+    {
+      "frame": 6144,
+      "height": 0.6290673017501831,
+      "root_z_delta": -0.03204768896102905,
+      "max_joint_delta": 0.312091201543808
+    },
+    {
+      "frame": 6167,
+      "height": 0.6179056763648987,
+      "root_z_delta": -0.04686892032623291,
+      "max_joint_delta": 0.3954911530017853
+    },
+    {
+      "frame": 6187,
+      "height": 0.6390498876571655,
+      "root_z_delta": -0.020631730556488037,
+      "max_joint_delta": 0.22633704543113708
+    },
+    {
+      "frame": 6210,
+      "height": 0.6268535852432251,
+      "root_z_delta": -0.048680126667022705,
+      "max_joint_delta": 0.34607744216918945
+    },
+    {
+      "frame": 6231,
+      "height": 0.639366626739502,
+      "root_z_delta": -0.04050534963607788,
+      "max_joint_delta": 0.28162869811058044
+    },
+    {
+      "frame": 6253,
+      "height": 0.6422756314277649,
+      "root_z_delta": -0.04025435447692871,
+      "max_joint_delta": 0.26972609758377075
+    },
+    {
+      "frame": 6273,
+      "height": 0.6728341579437256,
+      "root_z_delta": -0.017639517784118652,
+      "max_joint_delta": 0.14696674048900604
+    },
+    {
+      "frame": 6297,
+      "height": 0.6666909456253052,
+      "root_z_delta": -0.027072787284851074,
+      "max_joint_delta": 0.19047021865844727
+    },
+    {
+      "frame": 6320,
+      "height": 0.6607118248939514,
+      "root_z_delta": -0.016173362731933594,
+      "max_joint_delta": 0.269401878118515
+    },
+    {
+      "frame": 6336,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6361,
+      "height": 0.6580919027328491,
+      "root_z_delta": -0.015275955200195312,
+      "max_joint_delta": 0.18677866458892822
+    },
+    {
+      "frame": 6386,
+      "height": 0.6420818567276001,
+      "root_z_delta": -0.012411892414093018,
+      "max_joint_delta": 0.17887505888938904
+    },
+    {
+      "frame": 6410,
+      "height": 0.6378570199012756,
+      "root_z_delta": -0.023677170276641846,
+      "max_joint_delta": 0.2639801800251007
+    },
+    {
+      "frame": 6436,
+      "height": 0.6338512897491455,
+      "root_z_delta": -0.011527419090270996,
+      "max_joint_delta": 0.0965057909488678
+    },
+    {
+      "frame": 6462,
+      "height": 0.644629955291748,
+      "root_z_delta": -0.018905282020568848,
+      "max_joint_delta": 0.2096339762210846
+    },
+    {
+      "frame": 6494,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6520,
+      "height": 0.6465559005737305,
+      "root_z_delta": -0.01181572675704956,
+      "max_joint_delta": 0.31181079149246216
+    },
+    {
+      "frame": 6545,
+      "height": 0.6376543045043945,
+      "root_z_delta": -0.00823134183883667,
+      "max_joint_delta": 0.14836648106575012
+    },
+    {
+      "frame": 6576,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6602,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6624,
+      "height": 0.6646425724029541,
+      "root_z_delta": -0.007860660552978516,
+      "max_joint_delta": 0.1584475040435791
+    },
+    {
+      "frame": 6647,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6673,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6695,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6720,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6744,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6767,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6793,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6806,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6884,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6908,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6934,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6958,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 6981,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7003,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7023,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7047,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7065,
+      "height": 0.6733010411262512,
+      "root_z_delta": 0.0007721781730651855,
+      "max_joint_delta": 0.06390982866287231
+    },
+    {
+      "frame": 7178,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7209,
+      "height": 0.6538968086242676,
+      "root_z_delta": -0.007097721099853516,
+      "max_joint_delta": 0.17778831720352173
+    },
+    {
+      "frame": 7237,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7260,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7285,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7308,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7334,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7358,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7385,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7405,
+      "height": 0.6827341318130493,
+      "root_z_delta": -0.005197286605834961,
+      "max_joint_delta": 0.07794710993766785
+    },
+    {
+      "frame": 7495,
+      "height": 0.6588625907897949,
+      "root_z_delta": -0.011530697345733643,
+      "max_joint_delta": 0.22773656249046326
+    },
+    {
+      "frame": 7511,
+      "height": 0.6737108826637268,
+      "root_z_delta": -0.0029767751693725586,
+      "max_joint_delta": 0.09231433272361755
+    },
+    {
+      "frame": 7529,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7552,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7572,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7588,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7606,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7621,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7637,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7655,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7672,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7691,
+      "height": 0.5958889722824097,
+      "root_z_delta": -0.010284483432769775,
+      "max_joint_delta": 0.43656817078590393
+    },
+    {
+      "frame": 7709,
+      "height": 0.6298694610595703,
+      "root_z_delta": -0.0016175508499145508,
+      "max_joint_delta": 0.08528304100036621
+    },
+    {
+      "frame": 7733,
+      "height": 0.6317808032035828,
+      "root_z_delta": -0.00022786855697631836,
+      "max_joint_delta": 0.20728011429309845
+    },
+    {
+      "frame": 7758,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7775,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7792,
+      "error": "Could not find joint-limited flat-foot reference geometry"
+    },
+    {
+      "frame": 7796,
+      "height": 0.650060772895813,
+      "root_z_delta": -0.005451798439025879,
+      "max_joint_delta": 0.03848995268344879
+    },
+    {
+      "frame": 7822,
+      "height": 0.6986209154129028,
+      "root_z_delta": -0.009413361549377441,
+      "max_joint_delta": 0.06033417582511902
+    }
+  ]
+}

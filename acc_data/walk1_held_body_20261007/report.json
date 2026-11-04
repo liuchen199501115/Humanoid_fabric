@@ -1,0 +1,133 @@
+{
+  "scope": "Offline fixed-mode projection; no transition, reset, or physics execution",
+  "full_tracking_passed": false,
+  "hold_measured_upper": true,
+  "hold_measured_pelvis": true,
+  "com_offset_local_m": [
+    -0.06,
+    0.06,
+    -0.04
+  ],
+  "com_offset_world_m": [
+    0.05302763730287552,
+    0.06624245643615723,
+    -0.04000008851289749
+  ],
+  "warm_start": true,
+  "candidate": "acc_data/walk1_c2_reference_contacts_20261004/candidate.npz",
+  "anchor_recording": "acc_data/walk1_staged_baseline_v2_20261004/transfer.npz",
+  "anchor_time_s": 15.998000000000001,
+  "ground_shift_m": -0.02146398276090622,
+  "requested_frames": 15,
+  "projected_frames": 11,
+  "failures": [
+    {
+      "frame": 124,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.00094659626, tolerance=2e-06"
+    },
+    {
+      "frame": 125,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.0027399212, tolerance=2e-06"
+    },
+    {
+      "frame": 126,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.0030483976, tolerance=2e-06"
+    },
+    {
+      "frame": 127,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.0020820424, tolerance=2e-06"
+    }
+  ],
+  "diagnostics": [
+    {
+      "frame": 114,
+      "stance_position_error_m": 4.470348358154297e-08,
+      "stance_twist_max": 5.820766091346741e-09,
+      "stance_acceleration_max": 4.540197551250458e-09,
+      "swing_position_change_m": 4.76837158203125e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 115,
+      "stance_position_error_m": 9.5367431640625e-07,
+      "stance_twist_max": 3.4924596548080444e-09,
+      "stance_acceleration_max": 3.636523615568876e-08,
+      "swing_position_change_m": 7.450580596923828e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 116,
+      "stance_position_error_m": 4.76837158203125e-07,
+      "stance_twist_max": 6.170012056827545e-09,
+      "stance_acceleration_max": 8.489587344229221e-08,
+      "swing_position_change_m": 1.0356307029724121e-06,
+      "com_change_m": 0.06624317169189453
+    },
+    {
+      "frame": 117,
+      "stance_position_error_m": 4.76837158203125e-07,
+      "stance_twist_max": 2.8230715543031693e-09,
+      "stance_acceleration_max": 5.3551048040390015e-09,
+      "swing_position_change_m": 4.76837158203125e-07,
+      "com_change_m": 0.06624269485473633
+    },
+    {
+      "frame": 118,
+      "stance_position_error_m": 4.76837158203125e-07,
+      "stance_twist_max": 1.3009412214159966e-08,
+      "stance_acceleration_max": 4.307366907596588e-09,
+      "swing_position_change_m": 1.1920928955078125e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 119,
+      "stance_position_error_m": 2.384185791015625e-07,
+      "stance_twist_max": 1.6298145055770874e-09,
+      "stance_acceleration_max": 3.841705620288849e-09,
+      "swing_position_change_m": 1.1920928955078125e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 120,
+      "stance_position_error_m": 1.601874828338623e-07,
+      "stance_twist_max": 5.704350769519806e-09,
+      "stance_acceleration_max": 1.949956640601158e-08,
+      "swing_position_change_m": 9.462237358093262e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 121,
+      "stance_position_error_m": 9.5367431640625e-07,
+      "stance_twist_max": 8.032657206058502e-09,
+      "stance_acceleration_max": 1.955777406692505e-08,
+      "swing_position_change_m": 1.944601535797119e-06,
+      "com_change_m": 0.06624174118041992
+    },
+    {
+      "frame": 122,
+      "stance_position_error_m": 4.470348358154297e-08,
+      "stance_twist_max": 4.540197551250458e-09,
+      "stance_acceleration_max": 8.614733815193176e-09,
+      "swing_position_change_m": 2.4959444999694824e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 123,
+      "stance_position_error_m": 1.1920928955078125e-07,
+      "stance_twist_max": 1.1525116860866547e-08,
+      "stance_acceleration_max": 2.0605511963367462e-08,
+      "swing_position_change_m": 2.086162567138672e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 128,
+      "stance_position_error_m": 4.76837158203125e-07,
+      "stance_twist_max": 2.1187588572502136e-08,
+      "stance_acceleration_max": 5.25509676663205e-07,
+      "swing_position_change_m": 4.6938657760620117e-07,
+      "com_change_m": 0.06624221801757812
+    }
+  ],
+  "diagnostic_reference_file": "partial.npz",
+  "complete_interval": false
+}

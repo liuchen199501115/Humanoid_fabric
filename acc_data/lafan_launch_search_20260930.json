@@ -1,0 +1,74 @@
+[
+  {
+    "duration": 0.7,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.1,
+    "score": 1.2080738544464111,
+    "max_acceleration_ratio": 2.1640326976776123,
+    "torque": 0.5484089851379395,
+    "joint_score": 1.2080738544464111
+  },
+  {
+    "duration": 1.0,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.1,
+    "score": 0.7145692706108093,
+    "max_acceleration_ratio": 1.6308166980743408,
+    "torque": 0.4517272114753723,
+    "joint_score": 0.7145692706108093
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.1,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  },
+  {
+    "duration": 0.7,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.2,
+    "score": 0.7354356646537781,
+    "max_acceleration_ratio": 1.7091648578643799,
+    "torque": 0.49854618310928345,
+    "joint_score": 0.7354356646537781
+  },
+  {
+    "duration": 1.0,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.2,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.2,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  },
+  {
+    "duration": 0.7,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.3,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  },
+  {
+    "duration": 1.0,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.3,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.2,
+    "speed": 0.3,
+    "error": "No constant-ZMP preview fits both support soles; dynamic step is unplanned"
+  }
+]

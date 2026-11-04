@@ -1,0 +1,38 @@
+{
+  "scope": "double_support_unloading_only",
+  "full_pkl_tracking": false,
+  "unloading_passed": false,
+  "measured_steps": 0,
+  "support": "left",
+  "checks": {
+    "completed": true,
+    "full_window": true,
+    "double_support": true,
+    "unloaded": true,
+    "support_loaded": true,
+    "com_tracking": true,
+    "body_settled": true,
+    "qp_valid": true,
+    "controller_valid": false
+  },
+  "initial_load_n": [
+    256.57427978515625,
+    72.0281753540039
+  ],
+  "final_load_n": [
+    328.4836730957031,
+    4.149555683135986
+  ],
+  "final_second": {
+    "max_outgoing_load_n": 5.0592427253723145,
+    "min_support_load_n": 310.80029296875,
+    "max_com_error_m": 0.0004181511758361012,
+    "max_com_speed_m_s": 0.0008155838586390018,
+    "max_prediction_error_n": 12.62872314453125
+  },
+  "peak_effort_ratio": 0.800000011920929,
+  "peak_base_error": 3.0517578125e-05,
+  "peak_contact_error": 3.4570693969726562e-06,
+  "peak_friction_error": 3.814697265625e-06,
+  "peak_bound_error": 0.0
+}

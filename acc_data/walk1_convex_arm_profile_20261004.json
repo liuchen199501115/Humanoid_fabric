@@ -1,0 +1,17 @@
+{
+  "first": {
+    "duration": 1.5,
+    "landing_height": 0.622,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.6,
+    "pelvis_pitch_offset": -0.3,
+    "landing_com_fraction": 0.5,
+    "landing_com_lateral_offset": 0.005,
+    "body_join": "endpoint",
+    "clearance": 0.01,
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.004,
+    "terminal_capture": "double_support",
+    "com_preview": "optimized"
+  }
+}

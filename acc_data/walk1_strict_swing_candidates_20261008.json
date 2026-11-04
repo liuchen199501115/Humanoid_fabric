@@ -1,0 +1,80 @@
+[
+  {
+    "variant": "source_body",
+    "score": 0.016651149590810137,
+    "collision": {
+      "checked": true,
+      "passed": false,
+      "maximum_violation": 7.5918097496032715,
+      "minimum_cover_distance": -0.08979462087154388,
+      "violating_samples": 31,
+      "worst_time": 0.8,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "goal": [
+      [
+        1.5049140453338623,
+        4.080635070800781,
+        0.053519319742918015,
+        -0.02445637807250023,
+        -0.1385621428489685,
+        -0.7159838080406189,
+        0.6837905049324036
+      ]
+    ],
+    "changed_landing": false
+  },
+  {
+    "variant": "held_upper",
+    "score": 0.01872546225786209,
+    "collision": {
+      "checked": true,
+      "passed": false,
+      "maximum_violation": 5.03009033203125,
+      "minimum_cover_distance": -0.05445870757102966,
+      "violating_samples": 31,
+      "worst_time": 0.8,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "goal": [
+      [
+        1.5049140453338623,
+        4.080635070800781,
+        0.053519319742918015,
+        -0.02445637807250023,
+        -0.1385621428489685,
+        -0.7159838080406189,
+        0.6837905049324036
+      ]
+    ],
+    "changed_landing": false
+  },
+  {
+    "variant": "held_body",
+    "score": 0.022433070465922356,
+    "collision": {
+      "checked": true,
+      "passed": false,
+      "maximum_violation": 6.813898086547852,
+      "minimum_cover_distance": -0.07553432881832123,
+      "violating_samples": 31,
+      "worst_time": 0.8,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "goal": [
+      [
+        1.5049140453338623,
+        4.080635070800781,
+        0.053519319742918015,
+        -0.02445637807250023,
+        -0.1385621428489685,
+        -0.7159838080406189,
+        0.6837905049324036
+      ]
+    ],
+    "changed_landing": false
+  }
+]

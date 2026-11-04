@@ -1,0 +1,34 @@
+[
+  {
+    "recording": "acc_data/lafan_line_promotion_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0019219140522181988,
+    "repeat_seconds": [
+      0.0007038586772978306,
+      0.000618848018348217
+    ],
+    "accepted": true,
+    "physical_residual": 8.122755801309722e-10,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 28
+  },
+  {
+    "recording": "acc_data/lafan_line_promotion_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.0025123050436377525,
+    "repeat_seconds": [
+      0.0014263419434428215,
+      0.0015336349606513977
+    ],
+    "accepted": true,
+    "physical_residual": 1.90418894402411e-08,
+    "status": [
+      "DAQP 1; KKT polished"
+    ],
+    "iterations": 19
+  }
+]

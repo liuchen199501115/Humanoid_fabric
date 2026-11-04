@@ -1,0 +1,135 @@
+{
+  "scope": "Offline full-model COM adaptation, historical zero-rate boundary; NOT physical tracking",
+  "source_record": "acc_data/walk1_strict_four_transfer_20261008.reference_failure.npz",
+  "ground_offset_m": -0.021463990211486816,
+  "candidates": [
+    {
+      "height_offset": -0.02,
+      "stance_fraction": 0.25,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.001123473, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.02,
+      "stance_fraction": 0.5,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00016134977, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.02,
+      "stance_fraction": 0.75,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0074240863, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.04,
+      "stance_fraction": 0.25,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00071065128, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.04,
+      "stance_fraction": 0.5,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0029038489, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.04,
+      "stance_fraction": 0.75,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0058878586, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.25,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "score": 0.9861371368169783,
+      "collision": {
+        "checked": true,
+        "passed": false,
+        "maximum_violation": 9.325279235839844,
+        "minimum_cover_distance": -0.09819577634334564,
+        "violating_samples": 24,
+        "worst_time": 0.9,
+        "acceleration_residual_tolerance": 1e-05,
+        "geometry": "sphere_cover"
+      },
+      "com_end_offset_m": [
+        0.01409214735031128,
+        0.06476008892059326,
+        -0.06
+      ],
+      "peak_torque_ratio": 1.2003467082977295,
+      "peak_acceleration_ratio": 0.0984475389122963,
+      "max_joint_bound_score": 0.023823479190468788,
+      "goal_unchanged": true
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.5,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0034594163, tolerance=2e-06"
+    },
+    {
+      "height_offset": -0.06,
+      "stance_fraction": 0.75,
+      "options": {
+        "duration": 1.5,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0063968524, tolerance=2e-06"
+    }
+  ],
+  "simulation_validated": false
+}

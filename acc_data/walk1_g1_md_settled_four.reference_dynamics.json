@@ -1,0 +1,71 @@
+{
+  "recording": "acc_data/walk1_g1_md_settled_four.reference_failure.npz",
+  "scope": "Necessary sampled conditions; optimistic full soles, 0.8 real motor budget, motor armature. Not a closed-loop certificate.",
+  "rows": [
+    {
+      "time_s": 9.5,
+      "wrench_allocation_feasible": true,
+      "solver_status": 0,
+      "max_stance_linear_speed_m_s": 0.0,
+      "max_stance_angular_speed_rad_s": 0.0,
+      "max_stance_linear_acceleration_m_s2": 0.0,
+      "max_stance_angular_acceleration_rad_s2": 0.0,
+      "peak_torque_budget_ratio": 1.0
+    },
+    {
+      "time_s": 9.887,
+      "wrench_allocation_feasible": true,
+      "solver_status": 0,
+      "max_stance_linear_speed_m_s": 0.0,
+      "max_stance_angular_speed_rad_s": 0.0,
+      "max_stance_linear_acceleration_m_s2": 0.0,
+      "max_stance_angular_acceleration_rad_s2": 0.0,
+      "peak_torque_budget_ratio": 1.0
+    },
+    {
+      "time_s": 9.888,
+      "wrench_allocation_feasible": false,
+      "solver_status": 2,
+      "max_stance_linear_speed_m_s": 0.022661954164505005,
+      "max_stance_angular_speed_rad_s": 0.13010600209236145,
+      "max_stance_linear_acceleration_m_s2": 0.07279600203037262,
+      "max_stance_angular_acceleration_rad_s2": 0.6154077053070068
+    },
+    {
+      "time_s": 10.0,
+      "wrench_allocation_feasible": false,
+      "solver_status": 2,
+      "max_stance_linear_speed_m_s": 0.0073834992945194244,
+      "max_stance_angular_speed_rad_s": 0.048147622495889664,
+      "max_stance_linear_acceleration_m_s2": 0.1620279848575592,
+      "max_stance_angular_acceleration_rad_s2": 0.9124788641929626
+    },
+    {
+      "time_s": 10.1,
+      "wrench_allocation_feasible": false,
+      "solver_status": 2,
+      "max_stance_linear_speed_m_s": 0.006131207570433617,
+      "max_stance_angular_speed_rad_s": 0.03461872786283493,
+      "max_stance_linear_acceleration_m_s2": 0.09264839440584183,
+      "max_stance_angular_acceleration_rad_s2": 0.5781266093254089
+    },
+    {
+      "time_s": 10.25,
+      "wrench_allocation_feasible": false,
+      "solver_status": 2,
+      "max_stance_linear_speed_m_s": 0.007708780467510223,
+      "max_stance_angular_speed_rad_s": 0.042965225875377655,
+      "max_stance_linear_acceleration_m_s2": 0.05882348492741585,
+      "max_stance_angular_acceleration_rad_s2": 0.32847678661346436
+    },
+    {
+      "time_s": 10.5,
+      "wrench_allocation_feasible": false,
+      "solver_status": 2,
+      "max_stance_linear_speed_m_s": 1.4901161193847656e-08,
+      "max_stance_angular_speed_rad_s": 2.9802322387695312e-08,
+      "max_stance_linear_acceleration_m_s2": 2.1420419216156006e-08,
+      "max_stance_angular_acceleration_rad_s2": 1.7229467630386353e-08
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.5034829378128052], velocity=[8.755499839782715], minimum_acceleration=[-224.9617919921875], maximum_acceleration=[-1848.4866943359375]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.01394467, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.077586927, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0077852416, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.02022272, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.11125946, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.508298933506012], velocity=[7.779747009277344], minimum_acceleration=[-209.657958984375], maximum_acceleration=[-2564.609130859375]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.5149407386779785], velocity=[5.678408145904541], minimum_acceleration=[-176.46160888671875], maximum_acceleration=[-3174.390869140625]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.1091694, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.5125617384910583], velocity=[3.6320478916168213], minimum_acceleration=[-143.56759643554688], maximum_acceleration=[-1556.460693359375]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.033279341, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.61,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.070377991, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.06925527, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.03261172, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.25,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.016112367, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.031286247, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.078402497, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.3,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.093455367, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.49622252583503723], velocity=[14.133746147155762], minimum_acceleration=[-310.549072265625], maximum_acceleration=[-2722.5068359375]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.091897868, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.35,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.050340328, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.45,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 10]], position=[0.5023534893989563], velocity=[17.698564529418945], minimum_acceleration=[-367.9785461425781], maximum_acceleration=[-6037.6572265625]."
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.6,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.04157988, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.63,
+      "pelvis_pitch_offset": -0.25,
+      "landing_com_fraction": 0.4,
+      "body_join": "distributed",
+      "body_smoothing_passes": 4,
+      "swing_phase_blend": 0.75,
+      "clearance": 0.01,
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.004,
+      "terminal_capture": "double_support"
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0011977591, tolerance=2e-06"
+  }
+]

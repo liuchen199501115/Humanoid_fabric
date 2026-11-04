@@ -1,0 +1,68 @@
+{
+  "priority_problem_": {
+    "False": {
+      "median_seconds": 0.006818732246756554,
+      "iterations": [
+        450,
+        450,
+        450,
+        450,
+        450,
+        450
+      ],
+      "status": [
+        "solved"
+      ],
+      "maximum_constraint_error": 1.1368683772161603e-13
+    },
+    "True": {
+      "median_seconds": 0.0017039300873875618,
+      "iterations": [
+        450,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": [
+        "solved"
+      ],
+      "maximum_constraint_error": 5.684341886080802e-14
+    },
+    "maximum_solution_difference": 1.1368683772161603e-13
+  },
+  "problem_": {
+    "False": {
+      "median_seconds": 0.22875809529796243,
+      "iterations": [
+        20725,
+        20725,
+        20725,
+        20725,
+        20725,
+        20725
+      ],
+      "status": [
+        "solved"
+      ],
+      "maximum_constraint_error": 5.684341886080802e-14
+    },
+    "True": {
+      "median_seconds": 0.0017755930311977863,
+      "iterations": [
+        20725,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": [
+        "solved"
+      ],
+      "maximum_constraint_error": 1.1368683772161603e-13
+    },
+    "maximum_solution_difference": 2.042810365310288e-14
+  }
+}

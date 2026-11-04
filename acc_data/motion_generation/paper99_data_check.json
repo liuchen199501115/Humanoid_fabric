@@ -1,0 +1,10 @@
+{
+  "shape": [
+    1623118,
+    99
+  ],
+  "all_finite": true,
+  "quaternion_norm_min": 0.9999998807907104,
+  "quaternion_norm_max": 1.0,
+  "offsets_valid": true
+}

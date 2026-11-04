@@ -1,0 +1,50 @@
+{
+  "scope": "nominal_rolling_transfer_wrench_and_torque",
+  "inactive_foot_wrench_fixed_to_zero": true,
+  "simulation_validated": false,
+  "samples": 1501,
+  "sample_dt": 0.002,
+  "passed": true,
+  "infeasible_samples": 0,
+  "peak_torque_ratio": 0.2721593153206124,
+  "peak_acceleration_ratio": 0.01646149531006813,
+  "joint_preflight": {
+    "samples": 1502,
+    "sample_dt": 0.002,
+    "max_joint_bound_violation": 0.0,
+    "minimum_terminal_leg_margin": 0.05854341387748718,
+    "support_lateral_offset": -0.012,
+    "rejected": [
+      {
+        "offset": 0.0,
+        "reason": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0542116"
+      },
+      {
+        "offset": -0.004,
+        "reason": "Transfer joint bound at t=1.2000: left_ankle_roll_joint, violation=0.0102104"
+      },
+      {
+        "offset": 0.004,
+        "reason": "Transfer joint bound at t=0.9600: left_ankle_roll_joint, violation=0.0603494"
+      },
+      {
+        "offset": -0.008,
+        "reason": "Transfer endpoint leaves insufficient joint margin: 0.0502161979675293"
+      },
+      {
+        "offset": 0.008,
+        "reason": "Transfer joint bound at t=0.8800: left_ankle_roll_joint, violation=0.0348417"
+      }
+    ],
+    "sampled_joint_bounds_passed": true,
+    "pelvis_roll_offset": -0.1
+  },
+  "source_recording": "acc_data/walk1_fixed_frame_recovery_live_20261003.npz",
+  "support": "left",
+  "pelvis_roll_offset": -0.1,
+  "transfer_duration": 2.0,
+  "lift_duration": 1.0,
+  "com_height_offset": -0.02,
+  "lift_height": 0.03,
+  "motor_armature": true
+}

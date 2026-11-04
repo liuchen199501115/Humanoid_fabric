@@ -1,0 +1,7 @@
+{
+  "frames": 50,
+  "fps": 50.0,
+  "world_heading_deg": 0.0,
+  "mean_link_head_fk_rmse_m": 0.029873584862798452,
+  "physical_tracking_validated": false
+}

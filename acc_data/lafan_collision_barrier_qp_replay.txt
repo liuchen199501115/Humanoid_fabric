@@ -1,0 +1,5 @@
+OSQP solved iterations 1325
+controller objective -51493.31188617003 max_constraint_violation 0.06178882888537651
+HiGHS feasibility: Optimization terminated successfully. (HiGHS Status 7: Optimal)
+feasible_only_not_optimized objective 2554319.169419898 max_constraint_violation 6.824343312672454e-10
+replay objective -51507.71131746977 max_constraint_violation 1.5987211554602254e-13

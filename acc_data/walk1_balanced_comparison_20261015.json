@@ -1,0 +1,57 @@
+{
+  "scope": "Same 1201-point offline comparison; not execution acceptance",
+  "families": {
+    "support_region": {
+      "baseline": 0.1808138648668925,
+      "candidate": 0.1786254700273275,
+      "improved": true
+    },
+    "friction": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "velocity": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "normal_force": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "exact_wrench": {
+      "baseline": 0.16997018456459045,
+      "candidate": 0.15032228827476501,
+      "improved": true
+    },
+    "torque": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "acceleration": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "joint_braking": {
+      "baseline": 0.02552872896194458,
+      "candidate": 0.023380810394883156,
+      "improved": true
+    },
+    "collision": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    },
+    "boundary": {
+      "baseline": 0.0,
+      "candidate": 0.0,
+      "improved": true
+    }
+  },
+  "all_families_nonregressing": true,
+  "simulation_validated": false
+}

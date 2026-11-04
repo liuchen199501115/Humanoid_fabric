@@ -1,0 +1,290 @@
+[
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8641325831413269], velocity=[-0.5721861124038696], minimum_acceleration=[651.73779296875], maximum_acceleration=[94.76985931396484]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8641160726547241], velocity=[-0.5749398469924927], minimum_acceleration=[648.9869995117188], maximum_acceleration=[94.8128662109375]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.864102303981781], velocity=[-0.5772618055343628], minimum_acceleration=[646.7058715820312], maximum_acceleration=[94.84913635253906]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.06688141822814941,
+    "acceleration": 0.46883025765419006,
+    "torque": 0.3892461359500885,
+    "joint": 0.06688141822814941,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.06129935011267662,
+    "acceleration": 0.4233246445655823,
+    "torque": 0.36311599612236023,
+    "joint": 0.06129935011267662,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.06113702058792114,
+    "acceleration": 0.388475239276886,
+    "torque": 0.359502375125885,
+    "joint": 0.06113702058792114,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.08933992683887482,
+    "acceleration": 0.5293619632720947,
+    "torque": 0.37480077147483826,
+    "joint": 0.08933992683887482,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.0791892260313034,
+    "acceleration": 0.4908115267753601,
+    "torque": 0.3671693205833435,
+    "joint": 0.0791892260313034,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.43,
+    "pelvis_pitch": -0.4,
+    "score": 0.07220075279474258,
+    "acceleration": 0.460478276014328,
+    "torque": 0.35025134682655334,
+    "joint": 0.07220075279474258,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8622606992721558], velocity=[-0.5682765245437622], minimum_acceleration=[181.81201171875], maximum_acceleration=[94.58750915527344]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8621575236320496], velocity=[-0.57706618309021], minimum_acceleration=[160.4129180908203], maximum_acceleration=[94.72154235839844]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 4]], position=[-0.8620703220367432], velocity=[-0.5846219062805176], minimum_acceleration=[142.390380859375], maximum_acceleration=[94.83684539794922]."
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.056493714451789856,
+    "acceleration": 0.4174027442932129,
+    "torque": 0.37341535091400146,
+    "joint": 0.056493714451789856,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.05739486217498779,
+    "acceleration": 0.37624049186706543,
+    "torque": 0.3630976378917694,
+    "joint": 0.05739486217498779,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.05803128704428673,
+    "acceleration": 0.3406326174736023,
+    "torque": 0.3594507873058319,
+    "joint": 0.05803128704428673,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.06585443764925003,
+    "acceleration": 0.45634180307388306,
+    "torque": 0.3584606945514679,
+    "joint": 0.06585443764925003,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.04501600190997124,
+    "acceleration": 0.41683804988861084,
+    "torque": 0.3536127805709839,
+    "joint": 0.04501600190997124,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.45,
+    "pelvis_pitch": -0.4,
+    "score": 0.04569041728973389,
+    "acceleration": 0.386109858751297,
+    "torque": 0.35003626346588135,
+    "joint": 0.04569041728973389,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0013532797, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0012550136, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.6,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0011716974, tolerance=2e-06"
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.07104343175888062,
+    "acceleration": 0.3801863193511963,
+    "torque": 0.3732309639453888,
+    "joint": 0.07104343175888062,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.0532631054520607,
+    "acceleration": 0.3407667875289917,
+    "torque": 0.3631284832954407,
+    "joint": 0.0532631054520607,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.605,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.055160924792289734,
+    "acceleration": 0.30593833327293396,
+    "torque": 0.3594745099544525,
+    "joint": 0.055160924792289734,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.65,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.09188344329595566,
+    "acceleration": 0.4109554588794708,
+    "torque": 0.3577495813369751,
+    "joint": 0.09188344329595566,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.7,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.09171323478221893,
+    "acceleration": 0.37028369307518005,
+    "torque": 0.35351768136024475,
+    "joint": 0.09171323478221893,
+    "wrench": 0.0
+  },
+  {
+    "duration": 1.3,
+    "landing_height": 0.61,
+    "swing_phase_blend": 0.75,
+    "landing_com_fraction": 0.47,
+    "pelvis_pitch": -0.4,
+    "score": 0.10353725403547287,
+    "acceleration": 0.3377508521080017,
+    "torque": 0.3499144911766052,
+    "joint": 0.10353725403547287,
+    "wrench": 0.0
+  }
+]

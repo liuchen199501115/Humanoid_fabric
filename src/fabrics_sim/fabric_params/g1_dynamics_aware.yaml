@@ -1,0 +1,43 @@
+# Soft task weights in physical units. These are initial tuning values, not HQP.
+hand_tracking: position  # Walking: retain hand path, allow wrist orientation to yield.
+regularization: 0.0001
+difference_step: 0.001
+managed_walking:
+  swing_metric_scale: 2.0
+  posture_metric_scale: 1.0
+momentum:
+  metric: [20.0, 20.0, 10.0]
+  damping: [4.0, 4.0, 3.0]
+  max_rate: [30.0, 30.0, 20.0]
+body:
+  link: pelvis
+  metric: [40.0, 40.0, 20.0]
+  stiffness: [50.0, 50.0, 25.0]
+  damping: [14.0, 14.0, 10.0]
+  max_acceleration: [25.0, 25.0, 20.0]
+collision:
+  safe_distance: 0.02
+  activation_distance: 0.10
+  metric: 2.0
+  stiffness: 0.0001
+  damping: 5.0
+  max_acceleration: 15.0
+  # Local spherical proxies, deliberately limited coverage; not mesh clearance.
+  spheres:
+    pelvis: {link: pelvis, center: [0.0, 0.0, -0.06], radius: 0.09}
+    chest: {link: torso_link, center: [0.0, 0.0, 0.18], radius: 0.12}
+    left_hand: {link: left_wrist_yaw_link, center: [0.04, 0.0, 0.0], radius: 0.045}
+    right_hand: {link: right_wrist_yaw_link, center: [0.04, 0.0, 0.0], radius: 0.045}
+    left_forearm: {link: left_elbow_link, center: [0.07, 0.0, 0.0], radius: 0.045}
+    right_forearm: {link: right_elbow_link, center: [0.07, 0.0, 0.0], radius: 0.045}
+    left_shin: {link: left_knee_link, center: [0.0, 0.0, -0.12], radius: 0.05}
+    right_shin: {link: right_knee_link, center: [0.0, 0.0, -0.12], radius: 0.05}
+  pairs:
+    - [left_hand, pelvis]
+    - [right_hand, pelvis]
+    - [left_hand, chest]
+    - [right_hand, chest]
+    - [left_forearm, chest]
+    - [right_forearm, chest]
+    - [left_hand, right_hand]
+    - [left_shin, right_shin]

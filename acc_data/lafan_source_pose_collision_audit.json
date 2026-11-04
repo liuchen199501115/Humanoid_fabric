@@ -1,0 +1,60 @@
+{
+  "scope": "Original source poses, convex mesh-hull intersection only; not a PhysX result.",
+  "samples": [
+    {
+      "source_frame": 100.02384522510626,
+      "convex_intersections": []
+    },
+    {
+      "source_frame": 110.00524392245512,
+      "convex_intersections": []
+    },
+    {
+      "source_frame": 120.00127719385623,
+      "convex_intersections": [
+        [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "source_frame": 129.0,
+      "convex_intersections": [
+        [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "source_frame": 135.01118505238628,
+      "convex_intersections": [
+        [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "source_frame": 140.02580750700383,
+      "convex_intersections": []
+    },
+    {
+      "source_frame": 145.03149678639252,
+      "convex_intersections": []
+    },
+    {
+      "source_frame": 147.9878671344356,
+      "convex_intersections": []
+    }
+  ]
+}

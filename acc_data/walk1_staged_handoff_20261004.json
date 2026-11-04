@@ -1,0 +1,48 @@
+{
+  "full_pkl_tracking": false,
+  "simulation_validated": false,
+  "recording": "acc_data/walk1_staged_baseline_v2_20261004/transfer.npz",
+  "first_step_preflight_passed": false,
+  "transfer_audit": {
+    "scope": "first_transfer_and_lift",
+    "full_pkl_tracking": false,
+    "duration": 15.998000000000001,
+    "final_source_frame": 114.03624096000021,
+    "control_updates": 8000,
+    "simulation_control_hz": 499.99999999999955,
+    "transfer_passed": true,
+    "support": "left",
+    "release_time": 11.218,
+    "post_release_duration": 4.780000000000001,
+    "final_second": {
+      "min_swing_clearance_m": 0.03907203653112446,
+      "max_swing_force_n": 0.0,
+      "min_stance_force_n": 321.2987060546875,
+      "max_com_error_m": 0.0019341220613569021
+    }
+  },
+  "handoff": {
+    "max_joint_error_rad": 0.2562733292579651,
+    "worst_joint": "left_shoulder_pitch_joint",
+    "root_position_error_m": 0.012131827883422375,
+    "root_orientation_error_rad": 0.0018269812094087142,
+    "max_velocity_error": 0.010911703109741211,
+    "measured_max_velocity": 0.010911703109741211,
+    "scope": "Measured state minus nominal handoff; no state reset or feasibility certificate"
+  },
+  "nominal_handoff_collision": {
+    "checked": true,
+    "passed": false,
+    "maximum_violation": 4.04904842376709,
+    "minimum_cover_distance": -0.043266378343105316
+  },
+  "measured_pose_static_collision": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.05680385231971741,
+    "scope": "Static pose check; measured acceleration is not assumed zero in physics"
+  },
+  "candidate_report": "acc_data/walk1_staged_handoff_20261004.candidate.json",
+  "rejection": "Source step rejected: required torque/contact/acceleration/joint-braking/collision bounds failed; see acc_data/walk1_staged_handoff_20261004.candidate.json"
+}

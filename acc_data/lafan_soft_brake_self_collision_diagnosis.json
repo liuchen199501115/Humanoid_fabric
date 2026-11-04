@@ -1,0 +1,80 @@
+{
+  "recording": "acc_data/lafan_soft_brake_contact_diagnosis_10s.failure.npz",
+  "same_state_as_uninstrumented": true,
+  "self_contacts": [
+    [
+      "5.5520000000000005",
+      "/World/G1/right_hip_yaw_link/collisions/right_hip_yaw_link/mesh",
+      "/World/G1/right_wrist_yaw_link/collisions/right_rubber_hand/mesh",
+      "-1.68713741004467e-05"
+    ],
+    [
+      "5.8",
+      "/World/G1/left_hip_pitch_link/collisions/left_hip_pitch_link/mesh",
+      "/World/G1/left_wrist_yaw_link/collisions/left_wrist_yaw_link/mesh",
+      "-3.427267074584961e-07"
+    ],
+    [
+      "7.0120000000000005",
+      "/World/G1/left_hip_yaw_link/collisions/left_hip_yaw_link/mesh",
+      "/World/G1/left_wrist_yaw_link/collisions/left_rubber_hand/mesh",
+      "-3.36524099111557e-05"
+    ]
+  ],
+  "wrist_impulse": [
+    {
+      "time": 7.008,
+      "velocity": -0.03680381551384926,
+      "predicted_acceleration": -1.4984385967254639,
+      "next_measured_acceleration": 3.9491467177872237
+    },
+    {
+      "time": 7.01,
+      "velocity": -0.02890552207827568,
+      "predicted_acceleration": -1.574317216873169,
+      "next_measured_acceleration": -2359.7517013541924
+    },
+    {
+      "time": 7.0120000000000005,
+      "velocity": -4.748408794403076,
+      "predicted_acceleration": 29.390947341918945,
+      "next_measured_acceleration": 29.194355010989543
+    },
+    {
+      "time": 7.014,
+      "velocity": -4.6900200843811035,
+      "predicted_acceleration": 29.404922485351562,
+      "next_measured_acceleration": 31.18515014648781
+    },
+    {
+      "time": 7.016,
+      "velocity": -4.627649784088135,
+      "predicted_acceleration": 29.413972854614258,
+      "next_measured_acceleration": 29.433012008670232
+    },
+    {
+      "time": 7.018,
+      "velocity": -4.568783760070801,
+      "predicted_acceleration": 29.41794776916504,
+      "next_measured_acceleration": 29.550790786733295
+    },
+    {
+      "time": 7.0200000000000005,
+      "velocity": -4.5096821784973145,
+      "predicted_acceleration": 29.558881759643555,
+      "next_measured_acceleration": 32.510995864871745
+    },
+    {
+      "time": 7.022,
+      "velocity": -4.444660186767578,
+      "predicted_acceleration": 29.511730194091797,
+      "next_measured_acceleration": 14705.810546876619
+    },
+    {
+      "time": 7.024,
+      "velocity": 24.966960906982422,
+      "predicted_acceleration": -49.52400207519531,
+      "next_measured_acceleration": -32.79876708984736
+    }
+  ]
+}

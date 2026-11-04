@@ -1,0 +1,84 @@
+{
+  "momentum_optimization": {
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_normalized_violation": 2.35202469676733,
+        "wrench_pass_fraction": 0.7894736842105263,
+        "max_velocity_ratio": 0.4009815752506256
+      },
+      {
+        "iteration": 1,
+        "maximum_normalized_violation": 0.6942530050873756,
+        "wrench_pass_fraction": 0.9745916515426497,
+        "max_velocity_ratio": 0.3995228409767151
+      },
+      {
+        "iteration": 2,
+        "maximum_normalized_violation": 0.02821195125579834,
+        "wrench_pass_fraction": 0.9927404718693285,
+        "max_velocity_ratio": 0.39811959862709045
+      }
+    ],
+    "rejected": [
+      {
+        "iteration": 2,
+        "fraction": 0.5,
+        "violation": 0.06466889381408691
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.25,
+        "violation": 0.04558485746383667
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.125,
+        "violation": 0.03689873218536377
+      },
+      {
+        "iteration": 2,
+        "fraction": 0.0625,
+        "violation": 0.03255516290664673
+      }
+    ],
+    "sampled_necessary_constraints_passed": false
+  },
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 1.1,
+  "landing_height": 0.62,
+  "body_smoothing_passes": 4,
+  "swing_phase_blend": 0.35,
+  "sampled_kinematics_passed": true,
+  "sample_count": 551,
+  "requested_samples": 551,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 0.9927404718693285,
+  "outside_physical_sole_fraction": 0.0,
+  "max_joint_velocity_ratio": 0.39811959862709045,
+  "final_com_velocity": [
+    -0.3078843057155609,
+    -0.8790839314460754,
+    2.305788626699723e-08
+  ],
+  "cop_min": [
+    -0.005772446747869253,
+    -0.019144805148243904
+  ],
+  "cop_max": [
+    0.06722217053174973,
+    0.010664334520697594
+  ]
+}

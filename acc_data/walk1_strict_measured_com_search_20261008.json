@@ -1,0 +1,248 @@
+[
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.635,
+      "landing_com_fraction": 0.35,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0016840026, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.635,
+      "landing_com_fraction": 0.4,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=2.5391579e-05, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.635,
+      "landing_com_fraction": 0.45,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "report": {
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_normalized_violation": 0.013638581832249957,
+          "wrench_pass_fraction": 0.9512195121951219,
+          "max_velocity_ratio": 0.13655182719230652
+        },
+        {
+          "iteration": 1,
+          "maximum_normalized_violation": 0.0,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.1306825429201126
+        }
+      ],
+      "rejected": [],
+      "sampled_necessary_constraints_passed": true
+    },
+    "collision": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.03936284780502319,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "worst_joint": "left_hip_pitch_joint",
+    "position": -0.24238307774066925,
+    "velocity": 0.0,
+    "acceleration": 0.0,
+    "allowed": [
+      -143.25228881835938,
+      196.61972045898438
+    ],
+    "time": 0.0
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.64,
+      "landing_com_fraction": 0.35,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00025109947, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.64,
+      "landing_com_fraction": 0.4,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=5.127117e-05, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.64,
+      "landing_com_fraction": 0.45,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "report": {
+      "history": [
+        {
+          "iteration": 0,
+          "maximum_normalized_violation": 0.12214881181716918,
+          "wrench_pass_fraction": 0.926829268292683,
+          "max_velocity_ratio": 0.1569167673587799
+        },
+        {
+          "iteration": 1,
+          "maximum_normalized_violation": 0.07584302872419357,
+          "wrench_pass_fraction": 0.975609756097561,
+          "max_velocity_ratio": 0.15090560913085938
+        },
+        {
+          "iteration": 2,
+          "maximum_normalized_violation": 0.07032747566699982,
+          "wrench_pass_fraction": 0.975609756097561,
+          "max_velocity_ratio": 0.14799004793167114
+        },
+        {
+          "iteration": 3,
+          "maximum_normalized_violation": 0.06712181866168976,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.1465662121772766
+        },
+        {
+          "iteration": 4,
+          "maximum_normalized_violation": 0.06535817682743073,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.14585784077644348
+        },
+        {
+          "iteration": 5,
+          "maximum_normalized_violation": 0.06432647258043289,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.14550718665122986
+        },
+        {
+          "iteration": 6,
+          "maximum_normalized_violation": 0.06380178034305573,
+          "wrench_pass_fraction": 1.0,
+          "max_velocity_ratio": 0.14533694088459015
+        }
+      ],
+      "rejected": [],
+      "sampled_necessary_constraints_passed": false
+    },
+    "collision": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.04185934364795685,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "sphere_cover"
+    },
+    "worst_joint": "right_knee_joint",
+    "position": 0.410383015871048,
+    "velocity": -2.378648281097412,
+    "acceleration": -0.16149498522281647,
+    "allowed": [
+      9.408771514892578,
+      192.90106201171875
+    ],
+    "time": 1.275
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.645,
+      "landing_com_fraction": 0.35,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0034441277, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.645,
+      "landing_com_fraction": 0.4,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0029656738, tolerance=2e-06"
+  },
+  {
+    "options": {
+      "duration": 1.5,
+      "landing_height": 0.645,
+      "landing_com_fraction": 0.45,
+      "clearance": 0.02,
+      "swing_phase_blend": 0.6,
+      "body_join": "endpoint",
+      "pelvis_pitch_offset": -0.15,
+      "terminal_capture": "double_support",
+      "com_preview": "optimized",
+      "landing_fraction": 1.0,
+      "landing_search_depth": 0.0
+    },
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00092802942, tolerance=2e-06"
+  }
+]

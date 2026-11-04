@@ -1,0 +1,32 @@
+{
+  "rates": {
+    "simulation_rate_passed": false,
+    "missing_fields": [
+      "servo_time",
+      "servo_physics_time",
+      "servo_qp_update_index"
+    ]
+  },
+  "tracking": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 129.45414000000002,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.22098729014396667,
+    "peak_root_position_error": 0.2080063372850418,
+    "peak_root_orientation_error": 0.2879532745654439,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "qp_wall_median_ms": 4.3488978408277035,
+  "qp_wall_p99_ms": 1084.6729244478047
+}

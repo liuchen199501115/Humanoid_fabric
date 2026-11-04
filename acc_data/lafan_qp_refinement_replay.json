@@ -1,0 +1,22 @@
+{
+  "priority_problem_": {
+    "status": [
+      "maximum iterations reached; SLSQP refined"
+    ],
+    "max_constraint_residual": 3.0517578125e-05,
+    "seconds": 0.8883803058415651,
+    "converged": [
+      true
+    ]
+  },
+  "problem_": {
+    "status": [
+      "solved"
+    ],
+    "max_constraint_residual": 1.9788742065429688e-05,
+    "seconds": 0.043887407053261995,
+    "converged": [
+      true
+    ]
+  }
+}

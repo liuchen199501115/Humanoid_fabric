@@ -1,4 +1,9 @@
 fabric_params:
+  joint_posture_attractor:
+    metric: 0.5
+    stiffness: 20.0
+    damping: 8.0
+    max_acceleration: 30.0
   # --------------------------------------------------------------------------
   # Pelvis 6-D SE(3) task
   # Ordering:
@@ -36,118 +41,40 @@ fabric_params:
       - 14.0
       - 10.0
 
+  # Whole-body COM task, computed from every URDF link inertial origin/mass.
+  # Highest-weight motion task: 10x previous COM metric, with every axis above
+  # other leaf task metrics. This is a soft preference, NOT lexicographic
+  # priority after Jacobian pullback or a relaxation of QP safety constraints.
+  # Keep horizontal emphasis and leave PD gains/acceleration limits unchanged.
+  center_of_mass_attractor:
+    metric: [250.0, 250.0, 80.0]
+    stiffness: [35.0, 35.0, 25.0]
+    damping: [12.0, 12.0, 10.0]
+    max_acceleration: [4.0, 4.0, 4.0]
+
   # --------------------------------------------------------------------------
-  # Four-end-effector 24-D SE(3) task
-  #
-  # Ordering of all 24-element vectors:
-  #   left_foot:  px py pz rx ry rz
-  #   right_foot: px py pz rx ry rz
-  #   left_hand:  px py pz rx ry rz
-  #   right_hand: px py pz rx ry rz
+  # Independent feet and hands SE(3) tasks. Each task is 12-D:
+  # left end effector [px py pz rx ry rz], then right end effector.
   # --------------------------------------------------------------------------
-  end_effector_pose_attractor:
-    metric:
-      # left foot
-      - 15.0
-      - 15.0
-      - 20.0
-      - 12.0
-      - 12.0
-      - 8.0
-      # right foot
-      - 15.0
-      - 15.0
-      - 20.0
-      - 12.0
-      - 12.0
-      - 8.0
-      # left hand
-      - 2.0
-      - 2.0
-      - 2.0
-      - 1.0
-      - 1.0
-      - 1.0
-      # right hand
-      - 2.0
-      - 2.0
-      - 2.0
-      - 1.0
-      - 1.0
-      - 1.0
+  feet_pose_attractor:
+    metric: [15.0, 15.0, 20.0, 12.0, 12.0, 8.0,
+             15.0, 15.0, 20.0, 12.0, 12.0, 8.0]
+    stiffness: [60.0, 60.0, 80.0, 50.0, 50.0, 30.0,
+                60.0, 60.0, 80.0, 50.0, 50.0, 30.0]
+    damping: [15.0, 15.0, 18.0, 14.0, 14.0, 10.0,
+              15.0, 15.0, 18.0, 14.0, 14.0, 10.0]
+    max_linear_acceleration: [15.0, 15.0]
+    max_angular_acceleration: [25.0, 25.0]
 
-    stiffness:
-      # left foot
-      - 60.0
-      - 60.0
-      - 80.0
-      - 50.0
-      - 50.0
-      - 30.0
-      # right foot
-      - 60.0
-      - 60.0
-      - 80.0
-      - 50.0
-      - 50.0
-      - 30.0
-      # left hand
-      - 20.0
-      - 20.0
-      - 20.0
-      - 15.0
-      - 15.0
-      - 15.0
-      # right hand
-      - 20.0
-      - 20.0
-      - 20.0
-      - 15.0
-      - 15.0
-      - 15.0
-
-    damping:
-      # left foot
-      - 15.0
-      - 15.0
-      - 18.0
-      - 14.0
-      - 14.0
-      - 10.0
-      # right foot
-      - 15.0
-      - 15.0
-      - 18.0
-      - 14.0
-      - 14.0
-      - 10.0
-      # left hand
-      - 6.0
-      - 6.0
-      - 6.0
-      - 5.0
-      - 5.0
-      - 5.0
-      # right hand
-      - 6.0
-      - 6.0
-      - 6.0
-      - 5.0
-      - 5.0
-      - 5.0
-
-    # left foot, right foot, left hand, right hand
-    max_linear_acceleration:
-      - 15.0
-      - 15.0
-      - 10.0
-      - 10.0
-
-    max_angular_acceleration:
-      - 25.0
-      - 25.0
-      - 20.0
-      - 20.0
+  hand_pose_attractor:
+    metric: [2.0, 2.0, 2.0, 1.0, 1.0, 1.0,
+             2.0, 2.0, 2.0, 1.0, 1.0, 1.0]
+    stiffness: [20.0, 20.0, 20.0, 15.0, 15.0, 15.0,
+                20.0, 20.0, 20.0, 15.0, 15.0, 15.0]
+    damping: [6.0, 6.0, 6.0, 5.0, 5.0, 5.0,
+              6.0, 6.0, 6.0, 5.0, 5.0, 5.0]
+    max_linear_acceleration: [10.0, 10.0]
+    max_angular_acceleration: [20.0, 20.0]
 
   # --------------------------------------------------------------------------
   # Root-space damping added after all task pullbacks.

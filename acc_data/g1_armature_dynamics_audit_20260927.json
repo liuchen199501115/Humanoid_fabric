@@ -1,0 +1,12 @@
+{
+  "uncorrected": {
+    "max_joint_rms": 96.01465606689453,
+    "mass_api_delta_max": 0.0,
+    "contacts": 0
+  },
+  "corrected_": {
+    "max_joint_rms": 0.008925400674343109,
+    "mass_api_delta_max": 0.0,
+    "contacts": 0
+  }
+}

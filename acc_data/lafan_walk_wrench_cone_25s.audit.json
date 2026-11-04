@@ -1,0 +1,29 @@
+{
+  "last_time": 14.82,
+  "controller_valid": false,
+  "simulation_completed": false,
+  "touchdown_count": 1,
+  "alternating": true,
+  "forward_distance": 0.06939511560665709,
+  "maximum_stance_slip": 0.0023692133836448193,
+  "touchdowns": [
+    {
+      "time": 8.32,
+      "settled_time": 8.82,
+      "foot": "right",
+      "position": [
+        1.4899715185165405,
+        4.406052112579346,
+        0.03639678657054901
+      ],
+      "normal_force": 117.86009216308594
+    }
+  ],
+  "final_source_frame": 130.51949967466646,
+  "final_phase": "PREPARE_STEP",
+  "final_wait_seconds": 5.99999999999996,
+  "peak_pkl_joint_rmse": 0.5891014337539673,
+  "peak_pkl_root_error": 0.32581034302711487,
+  "walking_segment_passed": false,
+  "criteria": "Complete simulation and controller checks; >=4 alternating touchdowns that complete load settling; >=0.2 m forward travel; <=0.02 m stance XY slip after initialization. This is a finite flat-ground segment, not full PKL fidelity."
+}

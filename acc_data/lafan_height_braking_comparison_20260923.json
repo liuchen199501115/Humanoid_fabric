@@ -1,0 +1,26 @@
+[
+  {
+    "braking_acceleration": null,
+    "duration": 1.003,
+    "min_height": 0.5758788710173014,
+    "drop": 0.036976026958620234
+  },
+  {
+    "braking_acceleration": 1.0,
+    "duration": 1.003,
+    "min_height": 0.5796079440722671,
+    "drop": 0.03324695390365451
+  },
+  {
+    "braking_acceleration": 2.0,
+    "duration": 1.003,
+    "min_height": 0.5962314204456303,
+    "drop": 0.016623477530291364
+  },
+  {
+    "braking_acceleration": 3.0,
+    "duration": 1.003,
+    "min_height": 0.6017725801321375,
+    "drop": 0.011082317843784106
+  }
+]

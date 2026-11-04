@@ -1,0 +1,5 @@
+OSQP maximum iterations reached iterations 100000
+controller objective 598070.8318972426 max_constraint_violation 1.523616075515747
+HiGHS feasibility: Optimization terminated successfully. (HiGHS Status 7: Optimal)
+feasible_only_not_optimized objective 5630877.822645208 max_constraint_violation 4.0027266834385955e-08
+iteration_limit_candidate_not_certified_optimal objective 1074361.069611064 max_constraint_violation 0.006568950858223843

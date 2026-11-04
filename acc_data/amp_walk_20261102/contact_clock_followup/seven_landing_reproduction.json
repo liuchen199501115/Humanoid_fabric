@@ -1,0 +1,12 @@
+{
+  "history_time": true,
+  "history_frame": true,
+  "history_q": true,
+  "history_qd": true,
+  "control_samples": 1764,
+  "all_identical": true,
+  "landing_reports_identical": true,
+  "verified_landing_events": 7,
+  "full_motion_tracking_passed": false,
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4"
+}

@@ -1,0 +1,8 @@
+{
+  "mid_swing_lift_m": 0.07,
+  "peak_joint_rmse_rad": 0.16343198716640472,
+  "max_joint_change_rad": 0.7176638245582581,
+  "original_source_retained_for_audit": true,
+  "landing_endpoints_preserved": true,
+  "pelvis_preserved": true
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 251,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.3891349790746721,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.5,
+    "pressure_margin": 0.006
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 251,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.3886171518898189,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.5,
+    "pressure_margin": 0.01
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 226,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.35561791991120034,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.45,
+    "pressure_margin": 0.006
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 276,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.4349653244863053,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.55,
+    "pressure_margin": 0.006
+  }
+]

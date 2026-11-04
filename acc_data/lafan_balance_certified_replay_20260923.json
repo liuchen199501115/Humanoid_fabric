@@ -1,0 +1,41 @@
+[
+  {
+    "recording": "acc_data/lafan_balance_certified_500hz_20260923.failure.npz",
+    "stage": "priority_level_0_",
+    "backend": "daqp",
+    "cold_seconds": 0.002119279932230711,
+    "repeat_seconds": [],
+    "accepted": true,
+    "physical_residual": 3.312425889134829e-10,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 38
+  },
+  {
+    "recording": "acc_data/lafan_balance_certified_500hz_20260923.failure.npz",
+    "stage": "priority_level_1_",
+    "backend": "daqp",
+    "cold_seconds": 0.012565390206873417,
+    "repeat_seconds": [],
+    "accepted": false,
+    "physical_residual": 1.724398170921404e-07,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "iterations": 116
+  },
+  {
+    "recording": "acc_data/lafan_balance_certified_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "backend": "daqp",
+    "cold_seconds": 0.01250768592581153,
+    "repeat_seconds": [],
+    "accepted": true,
+    "physical_residual": 2.965471423976851e-09,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 165
+  }
+]

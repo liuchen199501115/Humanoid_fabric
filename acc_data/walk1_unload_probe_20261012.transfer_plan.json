@@ -1,0 +1,50 @@
+{
+  "samples": 1502,
+  "sample_dt": 0.002,
+  "max_joint_bound_violation": 0.0,
+  "minimum_terminal_leg_margin": 0.05763481557369232,
+  "support_lateral_offset": -0.019,
+  "rejected": [
+    {
+      "offset": 0.0,
+      "reason": "Transfer joint bound at t=1.1200: left_ankle_roll_joint, violation=0.00373711"
+    },
+    {
+      "offset": -0.004,
+      "reason": "Transfer joint bound at t=1.2000: left_ankle_roll_joint, violation=0.112232"
+    },
+    {
+      "offset": 0.004,
+      "reason": "Transfer joint bound at t=1.0800: left_ankle_roll_joint, violation=0.0981736"
+    },
+    {
+      "offset": -0.008,
+      "reason": "Transfer joint bound at t=1.2800: left_ankle_roll_joint, violation=0.0796158"
+    },
+    {
+      "offset": 0.008,
+      "reason": "Transfer joint bound at t=1.0400: left_ankle_roll_joint, violation=0.140288"
+    },
+    {
+      "offset": -0.012,
+      "reason": "Transfer joint bound at t=1.4000: left_ankle_roll_joint, violation=0.0336053"
+    },
+    {
+      "offset": 0.012,
+      "reason": "Transfer joint bound at t=1.0000: left_ankle_roll_joint, violation=0.130008"
+    },
+    {
+      "offset": -0.016,
+      "reason": "Transfer endpoint leaves insufficient joint margin: 0.051624372601509094"
+    },
+    {
+      "offset": 0.016,
+      "reason": "Transfer joint bound at t=0.9600: left_ankle_roll_joint, violation=0.0667527"
+    }
+  ],
+  "sampled_joint_bounds_passed": true,
+  "pelvis_roll_offset": 0.0,
+  "initial_state": "measured q and v; initial acceleration assumed zero",
+  "scope": "double_support_unloading_only",
+  "bridge_dynamics_certified": false
+}

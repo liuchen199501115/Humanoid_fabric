@@ -1,0 +1,5580 @@
+[
+  {
+    "takeoff": 114,
+    "landing": 129,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6445842981338501,
+      "joint_rmse": 0.11171052604913712,
+      "root_position_error": 0.025022685527801514
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6446535587310791,
+      "joint_rmse": 0.13126656413078308,
+      "root_position_error": 0.02553657814860344
+    }
+  },
+  {
+    "takeoff": 137,
+    "landing": 155,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6086634993553162,
+      "joint_rmse": 0.14151932299137115,
+      "root_position_error": 0.07281962037086487
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6447381377220154,
+      "joint_rmse": 0.08248676359653473,
+      "root_position_error": 0.02252999320626259
+    }
+  },
+  {
+    "takeoff": 158,
+    "landing": 176,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6348989009857178,
+      "joint_rmse": 0.0781530886888504,
+      "root_position_error": 0.03471978381276131
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6456077694892883,
+      "joint_rmse": 0.11184585839509964,
+      "root_position_error": 0.016878580674529076
+    }
+  },
+  {
+    "takeoff": 180,
+    "landing": 198,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.624544620513916,
+      "joint_rmse": 0.09288247674703598,
+      "root_position_error": 0.05197085812687874
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.642388105392456,
+      "joint_rmse": 0.0871175080537796,
+      "root_position_error": 0.024354396387934685
+    }
+  },
+  {
+    "takeoff": 201,
+    "landing": 219,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6387228965759277,
+      "joint_rmse": 0.06737558543682098,
+      "root_position_error": 0.03615213930606842
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6421585083007812,
+      "joint_rmse": 0.12334078550338745,
+      "root_position_error": 0.028849227353930473
+    }
+  },
+  {
+    "takeoff": 224,
+    "landing": 242,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6255370378494263,
+      "joint_rmse": 0.11242658644914627,
+      "root_position_error": 0.061262890696525574
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6488513350486755,
+      "joint_rmse": 0.07510259747505188,
+      "root_position_error": 0.026563730090856552
+    }
+  },
+  {
+    "takeoff": 245,
+    "landing": 263,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6501323580741882,
+      "joint_rmse": 0.06514254957437515,
+      "root_position_error": 0.03378460183739662
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6525968909263611,
+      "joint_rmse": 0.11281197518110275,
+      "root_position_error": 0.028899766504764557
+    }
+  },
+  {
+    "takeoff": 269,
+    "landing": 283,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6760088205337524,
+      "joint_rmse": 0.032576147466897964,
+      "root_position_error": 0.04153217002749443
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6819353103637695,
+      "joint_rmse": 0.06569565832614899,
+      "root_position_error": 0.03836715593934059
+    }
+  },
+  {
+    "takeoff": 326,
+    "landing": 337,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.687985360622406,
+      "joint_rmse": 0.05246339738368988,
+      "root_position_error": 0.05040110647678375
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6906198859214783,
+      "joint_rmse": 0.0667213574051857,
+      "root_position_error": 0.04992462322115898
+    }
+  },
+  {
+    "takeoff": 367,
+    "landing": 382,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6879498958587646,
+      "joint_rmse": 0.05605168268084526,
+      "root_position_error": 0.05283868685364723
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6885180473327637,
+      "joint_rmse": 0.06529273092746735,
+      "root_position_error": 0.05311077460646629
+    }
+  },
+  {
+    "takeoff": 433,
+    "landing": 454,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6849949359893799,
+      "joint_rmse": 0.4040588438510895,
+      "root_position_error": 0.08864594995975494
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6876169443130493,
+      "joint_rmse": 0.4100446403026581,
+      "root_position_error": 0.0903552696108818
+    }
+  },
+  {
+    "takeoff": 461,
+    "landing": 481,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6238541007041931,
+      "joint_rmse": 0.1167188435792923,
+      "root_position_error": 0.057746969163417816
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6473235487937927,
+      "joint_rmse": 0.1084911972284317,
+      "root_position_error": 0.023459220305085182
+    }
+  },
+  {
+    "takeoff": 486,
+    "landing": 505,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6182788014411926,
+      "joint_rmse": 0.12031896412372589,
+      "root_position_error": 0.06592312455177307
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6428363919258118,
+      "joint_rmse": 0.09347996115684509,
+      "root_position_error": 0.03138773515820503
+    }
+  },
+  {
+    "takeoff": 509,
+    "landing": 526,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6375162601470947,
+      "joint_rmse": 0.07505493611097336,
+      "root_position_error": 0.038482263684272766
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6416411995887756,
+      "joint_rmse": 0.13187246024608612,
+      "root_position_error": 0.02989322319626808
+    }
+  },
+  {
+    "takeoff": 532,
+    "landing": 550,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.627387285232544,
+      "joint_rmse": 0.08780571818351746,
+      "root_position_error": 0.05184611678123474
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.637242317199707,
+      "joint_rmse": 0.10728950798511505,
+      "root_position_error": 0.03404473885893822
+    }
+  },
+  {
+    "takeoff": 555,
+    "landing": 572,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6431746482849121,
+      "joint_rmse": 0.0705171525478363,
+      "root_position_error": 0.034047503024339676
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6503564119338989,
+      "joint_rmse": 0.11538097262382507,
+      "root_position_error": 0.021719947457313538
+    }
+  },
+  {
+    "takeoff": 579,
+    "landing": 596,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6295590400695801,
+      "joint_rmse": 0.10212428122758865,
+      "root_position_error": 0.048571955412626266
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6433749198913574,
+      "joint_rmse": 0.09995375573635101,
+      "root_position_error": 0.025368427857756615
+    }
+  },
+  {
+    "takeoff": 601,
+    "landing": 619,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6528086066246033,
+      "joint_rmse": 0.059053994715213776,
+      "root_position_error": 0.02910822629928589
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.655286431312561,
+      "joint_rmse": 0.11229654401540756,
+      "root_position_error": 0.02484859898686409
+    }
+  },
+  {
+    "takeoff": 626,
+    "landing": 644,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6712103486061096,
+      "joint_rmse": 0.06666691601276398,
+      "root_position_error": 0.0538526326417923
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6800075173377991,
+      "joint_rmse": 0.03286802023649216,
+      "root_position_error": 0.05499854311347008
+    }
+  },
+  {
+    "takeoff": 658,
+    "landing": 675,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6561713814735413,
+      "joint_rmse": 0.05258680507540703,
+      "root_position_error": 0.019957760348916054
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6593244671821594,
+      "joint_rmse": 0.10499437898397446,
+      "root_position_error": 0.014995578676462173
+    }
+  },
+  {
+    "takeoff": 683,
+    "landing": 700,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6474243998527527,
+      "joint_rmse": 0.04577618092298508,
+      "root_position_error": 0.031214823946356773
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6483129262924194,
+      "joint_rmse": 0.101944200694561,
+      "root_position_error": 0.027571557089686394
+    }
+  },
+  {
+    "takeoff": 705,
+    "landing": 722,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6524590849876404,
+      "joint_rmse": 0.06628250330686569,
+      "root_position_error": 0.03070356883108616
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6520312428474426,
+      "joint_rmse": 0.11959885060787201,
+      "root_position_error": 0.031435515731573105
+    }
+  },
+  {
+    "takeoff": 730,
+    "landing": 747,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6495398879051208,
+      "joint_rmse": 0.06882800161838531,
+      "root_position_error": 0.03772744908928871
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6577396392822266,
+      "joint_rmse": 0.07786154001951218,
+      "root_position_error": 0.023899685591459274
+    }
+  },
+  {
+    "takeoff": 753,
+    "landing": 770,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6437206864356995,
+      "joint_rmse": 0.09134545922279358,
+      "root_position_error": 0.03946691006422043
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6543898582458496,
+      "joint_rmse": 0.10613355040550232,
+      "root_position_error": 0.021762901917099953
+    }
+  },
+  {
+    "takeoff": 776,
+    "landing": 793,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.648593544960022,
+      "joint_rmse": 0.06874912977218628,
+      "root_position_error": 0.033132992684841156
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6552790999412537,
+      "joint_rmse": 0.09085478633642197,
+      "root_position_error": 0.022342361509799957
+    }
+  },
+  {
+    "takeoff": 799,
+    "landing": 814,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6772412061691284,
+      "joint_rmse": 0.04513479396700859,
+      "root_position_error": 0.036184296011924744
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6811484694480896,
+      "joint_rmse": 0.07156457006931305,
+      "root_position_error": 0.0346476174890995
+    }
+  },
+  {
+    "takeoff": 831,
+    "landing": 837,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6892220973968506,
+      "joint_rmse": 0.03773656114935875,
+      "root_position_error": 0.02041569910943508
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6928730607032776,
+      "joint_rmse": 0.07665775716304779,
+      "root_position_error": 0.017877640202641487
+    }
+  },
+  {
+    "takeoff": 848,
+    "landing": 866,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 875,
+    "landing": 890,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6334496736526489,
+      "joint_rmse": 0.04520781710743904,
+      "root_position_error": 0.03142748400568962
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6391952633857727,
+      "joint_rmse": 0.09824427217245102,
+      "root_position_error": 0.020344877615571022
+    }
+  },
+  {
+    "takeoff": 895,
+    "landing": 911,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6436452865600586,
+      "joint_rmse": 0.07197186350822449,
+      "root_position_error": 0.032715797424316406
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6427515745162964,
+      "joint_rmse": 0.12760408222675323,
+      "root_position_error": 0.03315639868378639
+    }
+  },
+  {
+    "takeoff": 916,
+    "landing": 933,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.630905032157898,
+      "joint_rmse": 0.06742789596319199,
+      "root_position_error": 0.04567345976829529
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6418592929840088,
+      "joint_rmse": 0.09085047990083694,
+      "root_position_error": 0.027132859453558922
+    }
+  },
+  {
+    "takeoff": 937,
+    "landing": 955,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6299454569816589,
+      "joint_rmse": 0.10856639593839645,
+      "root_position_error": 0.052239056676626205
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6554824113845825,
+      "joint_rmse": 0.08253954350948334,
+      "root_position_error": 0.017182482406497
+    }
+  },
+  {
+    "takeoff": 959,
+    "landing": 976,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6302216053009033,
+      "joint_rmse": 0.12064283341169357,
+      "root_position_error": 0.05418569594621658
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6509107351303101,
+      "joint_rmse": 0.08554882556200027,
+      "root_position_error": 0.02225819043815136
+    }
+  },
+  {
+    "takeoff": 980,
+    "landing": 997,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6357662081718445,
+      "joint_rmse": 0.09449775516986847,
+      "root_position_error": 0.04221140220761299
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6477003693580627,
+      "joint_rmse": 0.1165870875120163,
+      "root_position_error": 0.02308697998523712
+    }
+  },
+  {
+    "takeoff": 1002,
+    "landing": 1018,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.648379921913147,
+      "joint_rmse": 0.06462417542934418,
+      "root_position_error": 0.03438941016793251
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6529073715209961,
+      "joint_rmse": 0.10751008987426758,
+      "root_position_error": 0.026470419019460678
+    }
+  },
+  {
+    "takeoff": 1024,
+    "landing": 1041,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6897187232971191,
+      "joint_rmse": 0.05367186293005943,
+      "root_position_error": 0.07096955925226212
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6907721757888794,
+      "joint_rmse": 0.06689319014549255,
+      "root_position_error": 0.0716802105307579
+    }
+  },
+  {
+    "takeoff": 1067,
+    "landing": 1086,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 1090,
+    "landing": 1106,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6390143632888794,
+      "joint_rmse": 0.08590308576822281,
+      "root_position_error": 0.03942091017961502
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6510170698165894,
+      "joint_rmse": 0.11511466652154922,
+      "root_position_error": 0.019310656934976578
+    }
+  },
+  {
+    "takeoff": 1110,
+    "landing": 1128,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6360496282577515,
+      "joint_rmse": 0.08464902639389038,
+      "root_position_error": 0.043559540063142776
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6465230584144592,
+      "joint_rmse": 0.09670832008123398,
+      "root_position_error": 0.025510260835289955
+    }
+  },
+  {
+    "takeoff": 1132,
+    "landing": 1150,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6547960042953491,
+      "joint_rmse": 0.052198369055986404,
+      "root_position_error": 0.027924736961722374
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.658227801322937,
+      "joint_rmse": 0.09959178417921066,
+      "root_position_error": 0.021479042246937752
+    }
+  },
+  {
+    "takeoff": 1157,
+    "landing": 1171,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6762901544570923,
+      "joint_rmse": 0.024367965757846832,
+      "root_position_error": 0.023624414578080177
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6820417642593384,
+      "joint_rmse": 0.05506470426917076,
+      "root_position_error": 0.01996946521103382
+    }
+  },
+  {
+    "takeoff": 1185,
+    "landing": 1202,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6687138080596924,
+      "joint_rmse": 0.14827390015125275,
+      "root_position_error": 0.035971976816654205
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6693659424781799,
+      "joint_rmse": 0.15295033156871796,
+      "root_position_error": 0.03590592369437218
+    }
+  },
+  {
+    "takeoff": 1214,
+    "landing": 1238,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.652164101600647,
+      "joint_rmse": 0.06165864318609238,
+      "root_position_error": 0.03255905956029892
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.652164101600647,
+      "joint_rmse": 0.061658743768930435,
+      "root_position_error": 0.032559093087911606
+    }
+  },
+  {
+    "takeoff": 1243,
+    "landing": 1260,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6673160195350647,
+      "joint_rmse": 0.07040510326623917,
+      "root_position_error": 0.023817766457796097
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6673160195350647,
+      "joint_rmse": 0.07040510326623917,
+      "root_position_error": 0.023817766457796097
+    }
+  },
+  {
+    "takeoff": 1268,
+    "landing": 1288,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6556478142738342,
+      "joint_rmse": 0.11784424632787704,
+      "root_position_error": 0.028561949729919434
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6556477546691895,
+      "joint_rmse": 0.1178443655371666,
+      "root_position_error": 0.028561873361468315
+    }
+  },
+  {
+    "takeoff": 1296,
+    "landing": 1315,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6605771780014038,
+      "joint_rmse": 0.12328068912029266,
+      "root_position_error": 0.03218856826424599
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6605772972106934,
+      "joint_rmse": 0.12328044325113297,
+      "root_position_error": 0.03218800574541092
+    }
+  },
+  {
+    "takeoff": 1325,
+    "landing": 1343,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6636675596237183,
+      "joint_rmse": 0.1219940185546875,
+      "root_position_error": 0.02959527261555195
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.663667619228363,
+      "joint_rmse": 0.1219944879412651,
+      "root_position_error": 0.02959529124200344
+    }
+  },
+  {
+    "takeoff": 1353,
+    "landing": 1367,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6657029390335083,
+      "joint_rmse": 0.07726084440946579,
+      "root_position_error": 0.031558871269226074
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6657029390335083,
+      "joint_rmse": 0.07726097106933594,
+      "root_position_error": 0.03155890852212906
+    }
+  },
+  {
+    "takeoff": 1379,
+    "landing": 1394,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6733961701393127,
+      "joint_rmse": 0.047221556305885315,
+      "root_position_error": 0.0573362298309803
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6750161051750183,
+      "joint_rmse": 0.0442054308950901,
+      "root_position_error": 0.057525720447301865
+    }
+  },
+  {
+    "takeoff": 1408,
+    "landing": 1425,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.663948118686676,
+      "joint_rmse": 0.05695192143321037,
+      "root_position_error": 0.03522665053606033
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6662479639053345,
+      "joint_rmse": 0.08767909556627274,
+      "root_position_error": 0.035955145955085754
+    }
+  },
+  {
+    "takeoff": 1437,
+    "landing": 1452,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6515268087387085,
+      "joint_rmse": 0.0774969756603241,
+      "root_position_error": 0.03893416374921799
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6666973829269409,
+      "joint_rmse": 0.09679432213306427,
+      "root_position_error": 0.01974469982087612
+    }
+  },
+  {
+    "takeoff": 1460,
+    "landing": 1475,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6641836166381836,
+      "joint_rmse": 0.037925366312265396,
+      "root_position_error": 0.015446475706994534
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.673862874507904,
+      "joint_rmse": 0.05970862880349159,
+      "root_position_error": 0.013586507178843021
+    }
+  },
+  {
+    "takeoff": 1485,
+    "landing": 1498,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6505642533302307,
+      "joint_rmse": 0.122764952480793,
+      "root_position_error": 0.05448833480477333
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6802130937576294,
+      "joint_rmse": 0.06426180154085159,
+      "root_position_error": 0.028025249019265175
+    }
+  },
+  {
+    "takeoff": 1501,
+    "landing": 1517,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6728367209434509,
+      "joint_rmse": 0.08406059443950653,
+      "root_position_error": 0.03386501222848892
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6729724407196045,
+      "joint_rmse": 0.09297490864992142,
+      "root_position_error": 0.03397402539849281
+    }
+  },
+  {
+    "takeoff": 1531,
+    "landing": 1543,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6585899591445923,
+      "joint_rmse": 0.07823731750249863,
+      "root_position_error": 0.03749747574329376
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6698212027549744,
+      "joint_rmse": 0.10330691933631897,
+      "root_position_error": 0.02015707641839981
+    }
+  },
+  {
+    "takeoff": 1550,
+    "landing": 1565,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6747943758964539,
+      "joint_rmse": 0.0738203227519989,
+      "root_position_error": 0.020335664972662926
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6749255657196045,
+      "joint_rmse": 0.08790583163499832,
+      "root_position_error": 0.020669542253017426
+    }
+  },
+  {
+    "takeoff": 1577,
+    "landing": 1591,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6564262509346008,
+      "joint_rmse": 0.04721429944038391,
+      "root_position_error": 0.029713526368141174
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6612282395362854,
+      "joint_rmse": 0.09973660111427307,
+      "root_position_error": 0.022375838831067085
+    }
+  },
+  {
+    "takeoff": 1598,
+    "landing": 1613,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6764295697212219,
+      "joint_rmse": 0.03695714473724365,
+      "root_position_error": 0.014732787385582924
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6769894361495972,
+      "joint_rmse": 0.07177603989839554,
+      "root_position_error": 0.014714857563376427
+    }
+  },
+  {
+    "takeoff": 1625,
+    "landing": 1641,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6486774682998657,
+      "joint_rmse": 0.08747564256191254,
+      "root_position_error": 0.04112115874886513
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6628885865211487,
+      "joint_rmse": 0.1012522354722023,
+      "root_position_error": 0.022996850311756134
+    }
+  },
+  {
+    "takeoff": 1650,
+    "landing": 1665,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6661980748176575,
+      "joint_rmse": 0.060874368995428085,
+      "root_position_error": 0.022360321134328842
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6732153296470642,
+      "joint_rmse": 0.08509980887174606,
+      "root_position_error": 0.012238708324730396
+    }
+  },
+  {
+    "takeoff": 1674,
+    "landing": 1690,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6588932871818542,
+      "joint_rmse": 0.05117049068212509,
+      "root_position_error": 0.038047488778829575
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6593747138977051,
+      "joint_rmse": 0.1098250150680542,
+      "root_position_error": 0.03735371679067612
+    }
+  },
+  {
+    "takeoff": 1701,
+    "landing": 1716,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6456258893013,
+      "joint_rmse": 0.11059512943029404,
+      "root_position_error": 0.0376305878162384
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6702712774276733,
+      "joint_rmse": 0.058611150830984116,
+      "root_position_error": 0.006285627838224173
+    }
+  },
+  {
+    "takeoff": 1724,
+    "landing": 1741,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6590433716773987,
+      "joint_rmse": 0.07326585799455643,
+      "root_position_error": 0.03419061750173569
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6585826277732849,
+      "joint_rmse": 0.11111550033092499,
+      "root_position_error": 0.03482914716005325
+    }
+  },
+  {
+    "takeoff": 1753,
+    "landing": 1768,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6395885348320007,
+      "joint_rmse": 0.11415686458349228,
+      "root_position_error": 0.044928357005119324
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6676508188247681,
+      "joint_rmse": 0.08192864060401917,
+      "root_position_error": 0.008321849629282951
+    }
+  },
+  {
+    "takeoff": 1776,
+    "landing": 1793,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6557212471961975,
+      "joint_rmse": 0.0654972493648529,
+      "root_position_error": 0.027583573013544083
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6645320057868958,
+      "joint_rmse": 0.09568402171134949,
+      "root_position_error": 0.01419895514845848
+    }
+  },
+  {
+    "takeoff": 1802,
+    "landing": 1819,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6513806581497192,
+      "joint_rmse": 0.09980747103691101,
+      "root_position_error": 0.03694014623761177
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6662209630012512,
+      "joint_rmse": 0.1029365062713623,
+      "root_position_error": 0.021222438663244247
+    }
+  },
+  {
+    "takeoff": 1827,
+    "landing": 1843,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6748201251029968,
+      "joint_rmse": 0.03875880688428879,
+      "root_position_error": 0.051451560109853745
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6775894165039062,
+      "joint_rmse": 0.07341094315052032,
+      "root_position_error": 0.05167212337255478
+    }
+  },
+  {
+    "takeoff": 1859,
+    "landing": 1869,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6783890128135681,
+      "joint_rmse": 0.11335176974534988,
+      "root_position_error": 0.009357285685837269
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6797735691070557,
+      "joint_rmse": 0.11755984276533127,
+      "root_position_error": 0.008572502061724663
+    }
+  },
+  {
+    "takeoff": 1880,
+    "landing": 1896,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6685198545455933,
+      "joint_rmse": 0.15168152749538422,
+      "root_position_error": 0.034705936908721924
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6685200333595276,
+      "joint_rmse": 0.15168119966983795,
+      "root_position_error": 0.03470601141452789
+    }
+  },
+  {
+    "takeoff": 1908,
+    "landing": 1921,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6865277290344238,
+      "joint_rmse": 0.031131979078054428,
+      "root_position_error": 0.036161087453365326
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6892200708389282,
+      "joint_rmse": 0.03838470205664635,
+      "root_position_error": 0.036255620419979095
+    }
+  },
+  {
+    "takeoff": 1929,
+    "landing": 1945,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6405115127563477,
+      "joint_rmse": 0.06152557209134102,
+      "root_position_error": 0.008506880141794682
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6406563520431519,
+      "joint_rmse": 0.06155739724636078,
+      "root_position_error": 0.008616761304438114
+    }
+  },
+  {
+    "takeoff": 1953,
+    "landing": 1964,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6732567548751831,
+      "joint_rmse": 0.10536623746156693,
+      "root_position_error": 0.01990891434252262
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6733558773994446,
+      "joint_rmse": 0.10631591826677322,
+      "root_position_error": 0.019878894090652466
+    }
+  },
+  {
+    "takeoff": 1977,
+    "landing": 1992,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6608235239982605,
+      "joint_rmse": 0.06867022067308426,
+      "root_position_error": 0.016953369602560997
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6614982485771179,
+      "joint_rmse": 0.06958334892988205,
+      "root_position_error": 0.017079291865229607
+    }
+  },
+  {
+    "takeoff": 2003,
+    "landing": 2013,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6794769763946533,
+      "joint_rmse": 0.087690070271492,
+      "root_position_error": 0.026452969759702682
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6798373460769653,
+      "joint_rmse": 0.09112492948770523,
+      "root_position_error": 0.026361914351582527
+    }
+  },
+  {
+    "takeoff": 2025,
+    "landing": 2040,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6512195467948914,
+      "joint_rmse": 0.042483918368816376,
+      "root_position_error": 0.014544052071869373
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6551566123962402,
+      "joint_rmse": 0.04189898818731308,
+      "root_position_error": 0.016647806391119957
+    }
+  },
+  {
+    "takeoff": 2049,
+    "landing": 2062,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.684989333152771,
+      "joint_rmse": 0.06978441774845123,
+      "root_position_error": 0.02686704881489277
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6855263113975525,
+      "joint_rmse": 0.07614962756633759,
+      "root_position_error": 0.02667240984737873
+    }
+  },
+  {
+    "takeoff": 2074,
+    "landing": 2093,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6744122505187988,
+      "joint_rmse": 0.07052653282880783,
+      "root_position_error": 0.012242039665579796
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6744122505187988,
+      "joint_rmse": 0.07052677869796753,
+      "root_position_error": 0.012242144905030727
+    }
+  },
+  {
+    "takeoff": 2103,
+    "landing": 2116,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6818481087684631,
+      "joint_rmse": 0.07235673069953918,
+      "root_position_error": 0.023180514574050903
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6823886036872864,
+      "joint_rmse": 0.07855076342821121,
+      "root_position_error": 0.02292970009148121
+    }
+  },
+  {
+    "takeoff": 2127,
+    "landing": 2144,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6688586473464966,
+      "joint_rmse": 0.11684051156044006,
+      "root_position_error": 0.020264940336346626
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.668858528137207,
+      "joint_rmse": 0.11683974415063858,
+      "root_position_error": 0.020265091210603714
+    }
+  },
+  {
+    "takeoff": 2155,
+    "landing": 2169,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6885589361190796,
+      "joint_rmse": 0.04397865757346153,
+      "root_position_error": 0.03131508827209473
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6895201206207275,
+      "joint_rmse": 0.06016410142183304,
+      "root_position_error": 0.030798688530921936
+    }
+  },
+  {
+    "takeoff": 2181,
+    "landing": 2200,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 2207,
+    "landing": 2223,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6489965319633484,
+      "joint_rmse": 0.11851780116558075,
+      "root_position_error": 0.0540810190141201
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6679592132568359,
+      "joint_rmse": 0.11992419511079788,
+      "root_position_error": 0.02802225388586521
+    }
+  },
+  {
+    "takeoff": 2229,
+    "landing": 2245,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6628315448760986,
+      "joint_rmse": 0.04373987019062042,
+      "root_position_error": 0.028931278735399246
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6751865744590759,
+      "joint_rmse": 0.06974200159311295,
+      "root_position_error": 0.0193474218249321
+    }
+  },
+  {
+    "takeoff": 2253,
+    "landing": 2267,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.664547324180603,
+      "joint_rmse": 0.08149436861276627,
+      "root_position_error": 0.032198432832956314
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6782269477844238,
+      "joint_rmse": 0.08689583092927933,
+      "root_position_error": 0.014158030040562153
+    }
+  },
+  {
+    "takeoff": 2279,
+    "landing": 2282,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6735767126083374,
+      "joint_rmse": 0.15296413004398346,
+      "root_position_error": 0.037946876138448715
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6743463277816772,
+      "joint_rmse": 0.1573617309331894,
+      "root_position_error": 0.037866272032260895
+    }
+  },
+  {
+    "takeoff": 2291,
+    "landing": 2295,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6837811470031738,
+      "joint_rmse": 0.09820583462715149,
+      "root_position_error": 0.016201913356781006
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6844736337661743,
+      "joint_rmse": 0.10859847813844681,
+      "root_position_error": 0.016280731186270714
+    }
+  },
+  {
+    "takeoff": 2312,
+    "landing": 2330,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6591943502426147,
+      "joint_rmse": 0.08047955483198166,
+      "root_position_error": 0.028874807059764862
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6676338315010071,
+      "joint_rmse": 0.10917307436466217,
+      "root_position_error": 0.017036452889442444
+    }
+  },
+  {
+    "takeoff": 2341,
+    "landing": 2358,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6356170177459717,
+      "joint_rmse": 0.09788873791694641,
+      "root_position_error": 0.04956422746181488
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6609964370727539,
+      "joint_rmse": 0.08880968391895294,
+      "root_position_error": 0.013139395974576473
+    }
+  },
+  {
+    "takeoff": 2364,
+    "landing": 2379,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6542100310325623,
+      "joint_rmse": 0.10877722501754761,
+      "root_position_error": 0.04364219307899475
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.670427680015564,
+      "joint_rmse": 0.10374150425195694,
+      "root_position_error": 0.018978582695126534
+    }
+  },
+  {
+    "takeoff": 2386,
+    "landing": 2404,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6334884762763977,
+      "joint_rmse": 0.09264887869358063,
+      "root_position_error": 0.04366555064916611
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.656690776348114,
+      "joint_rmse": 0.08925803005695343,
+      "root_position_error": 0.009751671925187111
+    }
+  },
+  {
+    "takeoff": 2410,
+    "landing": 2427,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6513392925262451,
+      "joint_rmse": 0.08841104805469513,
+      "root_position_error": 0.03804804012179375
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6624772548675537,
+      "joint_rmse": 0.11248592287302017,
+      "root_position_error": 0.020937521010637283
+    }
+  },
+  {
+    "takeoff": 2435,
+    "landing": 2453,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6583601832389832,
+      "joint_rmse": 0.07712594419717789,
+      "root_position_error": 0.03094622679054737
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6580530405044556,
+      "joint_rmse": 0.1259688287973404,
+      "root_position_error": 0.031877871602773666
+    }
+  },
+  {
+    "takeoff": 2461,
+    "landing": 2478,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5838894248008728,
+      "joint_rmse": 0.17774243652820587,
+      "root_position_error": 0.08703192323446274
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6354817748069763,
+      "joint_rmse": 0.08469710499048233,
+      "root_position_error": 0.023165974766016006
+    }
+  },
+  {
+    "takeoff": 2480,
+    "landing": 2498,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5183764100074768,
+      "joint_rmse": 0.3464992344379425,
+      "root_position_error": 0.1906014084815979
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6162264347076416,
+      "joint_rmse": 0.07923971116542816,
+      "root_position_error": 0.062430206686258316
+    }
+  },
+  {
+    "takeoff": 2498,
+    "landing": 2514,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5273187160491943,
+      "joint_rmse": 0.3161008954048157,
+      "root_position_error": 0.15671804547309875
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6219744682312012,
+      "joint_rmse": 0.05137055739760399,
+      "root_position_error": 0.019683275371789932
+    }
+  },
+  {
+    "takeoff": 2514,
+    "landing": 2531,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6054028272628784,
+      "joint_rmse": 0.10068874061107635,
+      "root_position_error": 0.06674109399318695
+    }
+  },
+  {
+    "takeoff": 2531,
+    "landing": 2546,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5248022675514221,
+      "joint_rmse": 0.3369408845901489,
+      "root_position_error": 0.17232154309749603
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6189322471618652,
+      "joint_rmse": 0.06750621646642685,
+      "root_position_error": 0.03543684631586075
+    }
+  },
+  {
+    "takeoff": 2546,
+    "landing": 2562,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5242015719413757,
+      "joint_rmse": 0.34845414757728577,
+      "root_position_error": 0.18895366787910461
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.616529643535614,
+      "joint_rmse": 0.07692748308181763,
+      "root_position_error": 0.0594962053000927
+    }
+  },
+  {
+    "takeoff": 2562,
+    "landing": 2577,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5816546678543091,
+      "joint_rmse": 0.2464316338300705,
+      "root_position_error": 0.10369567573070526
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6411294937133789,
+      "joint_rmse": 0.02985627017915249,
+      "root_position_error": 0.02805349789559841
+    }
+  },
+  {
+    "takeoff": 2577,
+    "landing": 2590,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6578283309936523,
+      "joint_rmse": 0.06287604570388794,
+      "root_position_error": 0.05828497186303139
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6710677146911621,
+      "joint_rmse": 0.07715824246406555,
+      "root_position_error": 0.05154157802462578
+    }
+  },
+  {
+    "takeoff": 2593,
+    "landing": 2606,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6745198965072632,
+      "joint_rmse": 0.06572020798921585,
+      "root_position_error": 0.03190993517637253
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6839629411697388,
+      "joint_rmse": 0.051712729036808014,
+      "root_position_error": 0.026020867750048637
+    }
+  },
+  {
+    "takeoff": 2616,
+    "landing": 2620,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6848510503768921,
+      "joint_rmse": 0.09225258976221085,
+      "root_position_error": 0.05445857346057892
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.686898410320282,
+      "joint_rmse": 0.11949574947357178,
+      "root_position_error": 0.05370372533798218
+    }
+  },
+  {
+    "takeoff": 2623,
+    "landing": 2629,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 2633,
+    "landing": 2650,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5156810879707336,
+      "joint_rmse": 0.3513892889022827,
+      "root_position_error": 0.18449975550174713
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6048136949539185,
+      "joint_rmse": 0.07481225579977036,
+      "root_position_error": 0.0526537224650383
+    }
+  },
+  {
+    "takeoff": 2650,
+    "landing": 2666,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5147331953048706,
+      "joint_rmse": 0.3781123459339142,
+      "root_position_error": 0.21828435361385345
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6076231002807617,
+      "joint_rmse": 0.11670855432748795,
+      "root_position_error": 0.09884247183799744
+    }
+  },
+  {
+    "takeoff": 2666,
+    "landing": 2681,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5339417457580566,
+      "joint_rmse": 0.3322146534919739,
+      "root_position_error": 0.1664719432592392
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.621211051940918,
+      "joint_rmse": 0.07199770957231522,
+      "root_position_error": 0.03754480928182602
+    }
+  },
+  {
+    "takeoff": 2681,
+    "landing": 2697,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6007063388824463,
+      "joint_rmse": 0.0951896458864212,
+      "root_position_error": 0.07235091924667358
+    }
+  },
+  {
+    "takeoff": 2697,
+    "landing": 2712,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5132113099098206,
+      "joint_rmse": 0.3516837954521179,
+      "root_position_error": 0.18599924445152283
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6142476797103882,
+      "joint_rmse": 0.06894703209400177,
+      "root_position_error": 0.051694683730602264
+    }
+  },
+  {
+    "takeoff": 2712,
+    "landing": 2728,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5203292965888977,
+      "joint_rmse": 0.34225261211395264,
+      "root_position_error": 0.1744399070739746
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6143612861633301,
+      "joint_rmse": 0.08424627035856247,
+      "root_position_error": 0.03676845133304596
+    }
+  },
+  {
+    "takeoff": 2728,
+    "landing": 2744,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5358543395996094,
+      "joint_rmse": 0.3162044584751129,
+      "root_position_error": 0.15322522819042206
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6259666681289673,
+      "joint_rmse": 0.06239628046751022,
+      "root_position_error": 0.03116285614669323
+    }
+  },
+  {
+    "takeoff": 2744,
+    "landing": 2760,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5431831479072571,
+      "joint_rmse": 0.2925465703010559,
+      "root_position_error": 0.1390361338853836
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6235030889511108,
+      "joint_rmse": 0.049220696091651917,
+      "root_position_error": 0.022330716252326965
+    }
+  },
+  {
+    "takeoff": 2760,
+    "landing": 2776,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5606188178062439,
+      "joint_rmse": 0.30194857716560364,
+      "root_position_error": 0.15201017260551453
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6306827664375305,
+      "joint_rmse": 0.10134013742208481,
+      "root_position_error": 0.08593454957008362
+    }
+  },
+  {
+    "takeoff": 2776,
+    "landing": 2791,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5737144947052002,
+      "joint_rmse": 0.2884249687194824,
+      "root_position_error": 0.15815679728984833
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6182355284690857,
+      "joint_rmse": 0.09209942072629929,
+      "root_position_error": 0.12207532674074173
+    }
+  },
+  {
+    "takeoff": 2791,
+    "landing": 2805,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5482221841812134,
+      "joint_rmse": 0.29460763931274414,
+      "root_position_error": 0.20955491065979004
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6188154220581055,
+      "joint_rmse": 0.09673292189836502,
+      "root_position_error": 0.16523012518882751
+    }
+  },
+  {
+    "takeoff": 2805,
+    "landing": 2822,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.537176787853241,
+      "joint_rmse": 0.3466869294643402,
+      "root_position_error": 0.21570485830307007
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5900927186012268,
+      "joint_rmse": 0.10790077596902847,
+      "root_position_error": 0.15414270758628845
+    }
+  },
+  {
+    "takeoff": 2822,
+    "landing": 2837,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5188491344451904,
+      "joint_rmse": 0.36261191964149475,
+      "root_position_error": 0.25593510270118713
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6005062460899353,
+      "joint_rmse": 0.12066507339477539,
+      "root_position_error": 0.19148671627044678
+    }
+  },
+  {
+    "takeoff": 2837,
+    "landing": 2853,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 2853,
+    "landing": 2868,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5538100600242615,
+      "joint_rmse": 0.32044944167137146,
+      "root_position_error": 0.18755073845386505
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6328530311584473,
+      "joint_rmse": 0.0773719847202301,
+      "root_position_error": 0.1204683855175972
+    }
+  },
+  {
+    "takeoff": 2868,
+    "landing": 2884,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5783611536026001,
+      "joint_rmse": 0.2595844268798828,
+      "root_position_error": 0.12409500032663345
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6268861293792725,
+      "joint_rmse": 0.052156221121549606,
+      "root_position_error": 0.07001026719808578
+    }
+  },
+  {
+    "takeoff": 2884,
+    "landing": 2899,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6142414212226868,
+      "joint_rmse": 0.16743949055671692,
+      "root_position_error": 0.10846038907766342
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6542883515357971,
+      "joint_rmse": 0.10886568576097488,
+      "root_position_error": 0.08121728152036667
+    }
+  },
+  {
+    "takeoff": 2901,
+    "landing": 2917,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5693795084953308,
+      "joint_rmse": 0.24941803514957428,
+      "root_position_error": 0.116465263068676
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6338862180709839,
+      "joint_rmse": 0.05484873801469803,
+      "root_position_error": 0.02175271511077881
+    }
+  },
+  {
+    "takeoff": 2918,
+    "landing": 2934,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5333977341651917,
+      "joint_rmse": 0.3408537805080414,
+      "root_position_error": 0.1736816167831421
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6198863387107849,
+      "joint_rmse": 0.08460240811109543,
+      "root_position_error": 0.04844099283218384
+    }
+  },
+  {
+    "takeoff": 2934,
+    "landing": 2950,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.532227098941803,
+      "joint_rmse": 0.34968116879463196,
+      "root_position_error": 0.18203839659690857
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.616224467754364,
+      "joint_rmse": 0.09459254890680313,
+      "root_position_error": 0.05607737973332405
+    }
+  },
+  {
+    "takeoff": 2950,
+    "landing": 2965,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5388429164886475,
+      "joint_rmse": 0.32978329062461853,
+      "root_position_error": 0.16220329701900482
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6243958473205566,
+      "joint_rmse": 0.0680917352437973,
+      "root_position_error": 0.03663947060704231
+    }
+  },
+  {
+    "takeoff": 2965,
+    "landing": 2980,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5238937735557556,
+      "joint_rmse": 0.32888010144233704,
+      "root_position_error": 0.17090991139411926
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.613818347454071,
+      "joint_rmse": 0.0694112628698349,
+      "root_position_error": 0.045953236520290375
+    }
+  },
+  {
+    "takeoff": 2980,
+    "landing": 2995,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5299347639083862,
+      "joint_rmse": 0.3215080499649048,
+      "root_position_error": 0.16083472967147827
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6108545064926147,
+      "joint_rmse": 0.08163631707429886,
+      "root_position_error": 0.04549363628029823
+    }
+  },
+  {
+    "takeoff": 2995,
+    "landing": 3010,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5394483208656311,
+      "joint_rmse": 0.2944784462451935,
+      "root_position_error": 0.14216230809688568
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6190616488456726,
+      "joint_rmse": 0.03400660678744316,
+      "root_position_error": 0.025985805317759514
+    }
+  },
+  {
+    "takeoff": 3010,
+    "landing": 3025,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5693773031234741,
+      "joint_rmse": 0.2550540268421173,
+      "root_position_error": 0.13265253603458405
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6375238299369812,
+      "joint_rmse": 0.05722428113222122,
+      "root_position_error": 0.08164633065462112
+    }
+  },
+  {
+    "takeoff": 3025,
+    "landing": 3041,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5914379358291626,
+      "joint_rmse": 0.23301827907562256,
+      "root_position_error": 0.12143710255622864
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6235201358795166,
+      "joint_rmse": 0.07775634527206421,
+      "root_position_error": 0.0987825021147728
+    }
+  },
+  {
+    "takeoff": 3041,
+    "landing": 3056,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5966317057609558,
+      "joint_rmse": 0.19819043576717377,
+      "root_position_error": 0.158060684800148
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6321510076522827,
+      "joint_rmse": 0.13497138023376465,
+      "root_position_error": 0.14170071482658386
+    }
+  },
+  {
+    "takeoff": 3057,
+    "landing": 3073,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5874797105789185,
+      "joint_rmse": 0.2600933611392975,
+      "root_position_error": 0.1088481992483139
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6339901685714722,
+      "joint_rmse": 0.06708063185214996,
+      "root_position_error": 0.05647312104701996
+    }
+  },
+  {
+    "takeoff": 3073,
+    "landing": 3087,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6122798919677734,
+      "joint_rmse": 0.17919008433818817,
+      "root_position_error": 0.07683984935283661
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6550318598747253,
+      "joint_rmse": 0.051580995321273804,
+      "root_position_error": 0.04887152090668678
+    }
+  },
+  {
+    "takeoff": 3088,
+    "landing": 3100,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6523253917694092,
+      "joint_rmse": 0.1067579910159111,
+      "root_position_error": 0.06969001889228821
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6669830083847046,
+      "joint_rmse": 0.06771402806043625,
+      "root_position_error": 0.06702005118131638
+    }
+  },
+  {
+    "takeoff": 3102,
+    "landing": 3111,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.67960524559021,
+      "joint_rmse": 0.0398859940469265,
+      "root_position_error": 0.0318673737347126
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6865189075469971,
+      "joint_rmse": 0.0381431058049202,
+      "root_position_error": 0.030233779922127724
+    }
+  },
+  {
+    "takeoff": 3114,
+    "landing": 3125,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6617864966392517,
+      "joint_rmse": 0.04750152677297592,
+      "root_position_error": 0.034068576991558075
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6676051020622253,
+      "joint_rmse": 0.04417341575026512,
+      "root_position_error": 0.03311896696686745
+    }
+  },
+  {
+    "takeoff": 3128,
+    "landing": 3142,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6622705459594727,
+      "joint_rmse": 0.11823959648609161,
+      "root_position_error": 0.17776073515415192
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6622702479362488,
+      "joint_rmse": 0.118239626288414,
+      "root_position_error": 0.17776070535182953
+    }
+  },
+  {
+    "takeoff": 3143,
+    "landing": 3159,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 3159,
+    "landing": 3173,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5680863857269287,
+      "joint_rmse": 0.26330408453941345,
+      "root_position_error": 0.14152751863002777
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6242035031318665,
+      "joint_rmse": 0.0846855565905571,
+      "root_position_error": 0.10082534700632095
+    }
+  },
+  {
+    "takeoff": 3173,
+    "landing": 3188,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5484948754310608,
+      "joint_rmse": 0.287962406873703,
+      "root_position_error": 0.23412469029426575
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5907036066055298,
+      "joint_rmse": 0.12695306539535522,
+      "root_position_error": 0.20481906831264496
+    }
+  },
+  {
+    "takeoff": 3188,
+    "landing": 3203,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5511429905891418,
+      "joint_rmse": 0.28914299607276917,
+      "root_position_error": 0.1342257410287857
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6191312074661255,
+      "joint_rmse": 0.08244840055704117,
+      "root_position_error": 0.06007590889930725
+    }
+  },
+  {
+    "takeoff": 3203,
+    "landing": 3218,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5196308493614197,
+      "joint_rmse": 0.32017749547958374,
+      "root_position_error": 0.16671843826770782
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6129676699638367,
+      "joint_rmse": 0.0523068867623806,
+      "root_position_error": 0.04323924705386162
+    }
+  },
+  {
+    "takeoff": 3218,
+    "landing": 3233,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6015498638153076,
+      "joint_rmse": 0.06528270989656448,
+      "root_position_error": 0.05280861258506775
+    }
+  },
+  {
+    "takeoff": 3233,
+    "landing": 3248,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5914921164512634,
+      "joint_rmse": 0.09562662243843079,
+      "root_position_error": 0.08483880013227463
+    }
+  },
+  {
+    "takeoff": 3248,
+    "landing": 3262,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5957005620002747,
+      "joint_rmse": 0.07782889902591705,
+      "root_position_error": 0.0539482980966568
+    }
+  },
+  {
+    "takeoff": 3262,
+    "landing": 3277,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5985578894615173,
+      "joint_rmse": 0.09084071964025497,
+      "root_position_error": 0.07094278186559677
+    }
+  },
+  {
+    "takeoff": 3277,
+    "landing": 3291,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5238467454910278,
+      "joint_rmse": 0.302425742149353,
+      "root_position_error": 0.15554745495319366
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6117112636566162,
+      "joint_rmse": 0.03387326002120972,
+      "root_position_error": 0.0339323952794075
+    }
+  },
+  {
+    "takeoff": 3291,
+    "landing": 3306,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5415026545524597,
+      "joint_rmse": 0.30752187967300415,
+      "root_position_error": 0.20665936172008514
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6104933023452759,
+      "joint_rmse": 0.1036447063088417,
+      "root_position_error": 0.15717221796512604
+    }
+  },
+  {
+    "takeoff": 3306,
+    "landing": 3321,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.585983157157898,
+      "joint_rmse": 0.25741881132125854,
+      "root_position_error": 0.18478155136108398
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 3321,
+    "landing": 3336,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5080815553665161,
+      "joint_rmse": 0.31342941522598267,
+      "root_position_error": 0.1998056322336197
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5979101657867432,
+      "joint_rmse": 0.07470402866601944,
+      "root_position_error": 0.12527398765087128
+    }
+  },
+  {
+    "takeoff": 3336,
+    "landing": 3351,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5205519199371338,
+      "joint_rmse": 0.32228514552116394,
+      "root_position_error": 0.16230888664722443
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6112011075019836,
+      "joint_rmse": 0.057431478053331375,
+      "root_position_error": 0.03924136236310005
+    }
+  },
+  {
+    "takeoff": 3351,
+    "landing": 3366,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5353078842163086,
+      "joint_rmse": 0.3126973807811737,
+      "root_position_error": 0.14583878219127655
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6137789487838745,
+      "joint_rmse": 0.07497139275074005,
+      "root_position_error": 0.028324570506811142
+    }
+  },
+  {
+    "takeoff": 3366,
+    "landing": 3381,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5334086418151855,
+      "joint_rmse": 0.31195810437202454,
+      "root_position_error": 0.15270693600177765
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6135045289993286,
+      "joint_rmse": 0.04384540021419525,
+      "root_position_error": 0.03397602215409279
+    }
+  },
+  {
+    "takeoff": 3381,
+    "landing": 3396,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5445911288261414,
+      "joint_rmse": 0.30683377385139465,
+      "root_position_error": 0.16285941004753113
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6210904717445374,
+      "joint_rmse": 0.09440247714519501,
+      "root_position_error": 0.09123511612415314
+    }
+  },
+  {
+    "takeoff": 3396,
+    "landing": 3411,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5968981981277466,
+      "joint_rmse": 0.21554887294769287,
+      "root_position_error": 0.13801683485507965
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6273943781852722,
+      "joint_rmse": 0.09666412323713303,
+      "root_position_error": 0.12560436129570007
+    }
+  },
+  {
+    "takeoff": 3411,
+    "landing": 3426,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5702056884765625,
+      "joint_rmse": 0.2309444397687912,
+      "root_position_error": 0.1907942146062851
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6024138927459717,
+      "joint_rmse": 0.17570024728775024,
+      "root_position_error": 0.17482978105545044
+    }
+  },
+  {
+    "takeoff": 3426,
+    "landing": 3443,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.55361407995224,
+      "joint_rmse": 0.30298927426338196,
+      "root_position_error": 0.14812320470809937
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6184945106506348,
+      "joint_rmse": 0.06810790300369263,
+      "root_position_error": 0.07551565766334534
+    }
+  },
+  {
+    "takeoff": 3443,
+    "landing": 3458,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5421763062477112,
+      "joint_rmse": 0.30708417296409607,
+      "root_position_error": 0.15074504911899567
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6162991523742676,
+      "joint_rmse": 0.04978318512439728,
+      "root_position_error": 0.05928431451320648
+    }
+  },
+  {
+    "takeoff": 3458,
+    "landing": 3473,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5529139637947083,
+      "joint_rmse": 0.28621894121170044,
+      "root_position_error": 0.12725980579853058
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6287016868591309,
+      "joint_rmse": 0.04295509681105614,
+      "root_position_error": 0.028322119265794754
+    }
+  },
+  {
+    "takeoff": 3473,
+    "landing": 3489,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5493013262748718,
+      "joint_rmse": 0.3136543333530426,
+      "root_position_error": 0.1489780843257904
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6231598854064941,
+      "joint_rmse": 0.06215277314186096,
+      "root_position_error": 0.05174284055829048
+    }
+  },
+  {
+    "takeoff": 3489,
+    "landing": 3504,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5641626119613647,
+      "joint_rmse": 0.2755025029182434,
+      "root_position_error": 0.1108766719698906
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6331735849380493,
+      "joint_rmse": 0.05673115327954292,
+      "root_position_error": 0.012498649768531322
+    }
+  },
+  {
+    "takeoff": 3504,
+    "landing": 3519,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5520327091217041,
+      "joint_rmse": 0.27971985936164856,
+      "root_position_error": 0.13147512078285217
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6247274875640869,
+      "joint_rmse": 0.04654335975646973,
+      "root_position_error": 0.03169454261660576
+    }
+  },
+  {
+    "takeoff": 3519,
+    "landing": 3534,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.5809659957885742,
+      "joint_rmse": 0.24839121103286743,
+      "root_position_error": 0.10085415095090866
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6408252120018005,
+      "joint_rmse": 0.04527029022574425,
+      "root_position_error": 0.02789022959768772
+    }
+  },
+  {
+    "takeoff": 3534,
+    "landing": 3548,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6363704204559326,
+      "joint_rmse": 0.1351936310529709,
+      "root_position_error": 0.04449336603283882
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6643284559249878,
+      "joint_rmse": 0.049420684576034546,
+      "root_position_error": 0.015651583671569824
+    }
+  },
+  {
+    "takeoff": 3550,
+    "landing": 3561,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6743902564048767,
+      "joint_rmse": 0.04614798352122307,
+      "root_position_error": 0.014900443144142628
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.683600664138794,
+      "joint_rmse": 0.0350227952003479,
+      "root_position_error": 0.007293540518730879
+    }
+  },
+  {
+    "takeoff": 3564,
+    "landing": 3570,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6893045902252197,
+      "joint_rmse": 0.019433917477726936,
+      "root_position_error": 0.031013457104563713
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6927409172058105,
+      "joint_rmse": 0.026561152189970016,
+      "root_position_error": 0.030527794733643532
+    }
+  },
+  {
+    "takeoff": 3643,
+    "landing": 3646,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.67989182472229,
+      "joint_rmse": 0.17969350516796112,
+      "root_position_error": 0.09204680472612381
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6806147694587708,
+      "joint_rmse": 0.17973385751247406,
+      "root_position_error": 0.09246637672185898
+    }
+  },
+  {
+    "takeoff": 3665,
+    "landing": 3682,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6569125056266785,
+      "joint_rmse": 0.10197243839502335,
+      "root_position_error": 0.03946631774306297
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6573396921157837,
+      "joint_rmse": 0.12926916778087616,
+      "root_position_error": 0.040186893194913864
+    }
+  },
+  {
+    "takeoff": 3694,
+    "landing": 3711,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.666107177734375,
+      "joint_rmse": 0.04364858567714691,
+      "root_position_error": 0.031988393515348434
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6657978892326355,
+      "joint_rmse": 0.09164045006036758,
+      "root_position_error": 0.031887441873550415
+    }
+  },
+  {
+    "takeoff": 3719,
+    "landing": 3740,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6626327633857727,
+      "joint_rmse": 0.07723163068294525,
+      "root_position_error": 0.03193805366754532
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.662600040435791,
+      "joint_rmse": 0.11003762483596802,
+      "root_position_error": 0.03281382843852043
+    }
+  },
+  {
+    "takeoff": 3749,
+    "landing": 3766,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6597931981086731,
+      "joint_rmse": 0.04002969712018967,
+      "root_position_error": 0.030175762251019478
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6616828441619873,
+      "joint_rmse": 0.08218009769916534,
+      "root_position_error": 0.026514505967497826
+    }
+  },
+  {
+    "takeoff": 3773,
+    "landing": 3791,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6642244458198547,
+      "joint_rmse": 0.07690344750881195,
+      "root_position_error": 0.019302107393741608
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6640951037406921,
+      "joint_rmse": 0.11050673574209213,
+      "root_position_error": 0.020425232127308846
+    }
+  },
+  {
+    "takeoff": 3799,
+    "landing": 3817,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6553475260734558,
+      "joint_rmse": 0.07442927360534668,
+      "root_position_error": 0.034298792481422424
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6548843383789062,
+      "joint_rmse": 0.10832073539495468,
+      "root_position_error": 0.0352347306907177
+    }
+  },
+  {
+    "takeoff": 3825,
+    "landing": 3842,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6604748368263245,
+      "joint_rmse": 0.08344178646802902,
+      "root_position_error": 0.021335063502192497
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6604763269424438,
+      "joint_rmse": 0.1061670258641243,
+      "root_position_error": 0.022255172953009605
+    }
+  },
+  {
+    "takeoff": 3851,
+    "landing": 3869,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6502576470375061,
+      "joint_rmse": 0.05169365927577019,
+      "root_position_error": 0.030063718557357788
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6525366902351379,
+      "joint_rmse": 0.10166884958744049,
+      "root_position_error": 0.02446722239255905
+    }
+  },
+  {
+    "takeoff": 3875,
+    "landing": 3893,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.659074604511261,
+      "joint_rmse": 0.07234172523021698,
+      "root_position_error": 0.020524969324469566
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6588820815086365,
+      "joint_rmse": 0.10817661881446838,
+      "root_position_error": 0.021734751760959625
+    }
+  },
+  {
+    "takeoff": 3901,
+    "landing": 3918,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6611289381980896,
+      "joint_rmse": 0.046872060745954514,
+      "root_position_error": 0.031072990968823433
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6624655723571777,
+      "joint_rmse": 0.10598024725914001,
+      "root_position_error": 0.02862456440925598
+    }
+  },
+  {
+    "takeoff": 3926,
+    "landing": 3938,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6907608509063721,
+      "joint_rmse": 0.026012616232037544,
+      "root_position_error": 0.028267769142985344
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6969498991966248,
+      "joint_rmse": 0.04088389500975609,
+      "root_position_error": 0.027771517634391785
+    }
+  },
+  {
+    "takeoff": 3956,
+    "landing": 3960,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6877860426902771,
+      "joint_rmse": 0.10515788942575455,
+      "root_position_error": 0.06891199201345444
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6877860426902771,
+      "joint_rmse": 0.10515788942575455,
+      "root_position_error": 0.06891199201345444
+    }
+  },
+  {
+    "takeoff": 3980,
+    "landing": 3996,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6928339600563049,
+      "joint_rmse": 0.06399151682853699,
+      "root_position_error": 0.02741578221321106
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6940171718597412,
+      "joint_rmse": 0.0647057369351387,
+      "root_position_error": 0.0268965195864439
+    }
+  },
+  {
+    "takeoff": 4009,
+    "landing": 4029,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 4036,
+    "landing": 4053,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6659383773803711,
+      "joint_rmse": 0.04540281742811203,
+      "root_position_error": 0.017794935032725334
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6711293458938599,
+      "joint_rmse": 0.0873856171965599,
+      "root_position_error": 0.009715110994875431
+    }
+  },
+  {
+    "takeoff": 4060,
+    "landing": 4076,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6585875749588013,
+      "joint_rmse": 0.03717426210641861,
+      "root_position_error": 0.021240029484033585
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6606359481811523,
+      "joint_rmse": 0.10154873877763748,
+      "root_position_error": 0.017902392894029617
+    }
+  },
+  {
+    "takeoff": 4082,
+    "landing": 4098,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6571821570396423,
+      "joint_rmse": 0.04217709228396416,
+      "root_position_error": 0.022482652217149734
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.664129912853241,
+      "joint_rmse": 0.09343942999839783,
+      "root_position_error": 0.01154863741248846
+    }
+  },
+  {
+    "takeoff": 4105,
+    "landing": 4123,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6438524127006531,
+      "joint_rmse": 0.07682821899652481,
+      "root_position_error": 0.04151831567287445
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6508975028991699,
+      "joint_rmse": 0.11248219758272171,
+      "root_position_error": 0.028093062341213226
+    }
+  },
+  {
+    "takeoff": 4128,
+    "landing": 4146,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6532700061798096,
+      "joint_rmse": 0.08273019641637802,
+      "root_position_error": 0.028531720861792564
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6529572606086731,
+      "joint_rmse": 0.12438415735960007,
+      "root_position_error": 0.029909949749708176
+    }
+  },
+  {
+    "takeoff": 4154,
+    "landing": 4172,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6511942148208618,
+      "joint_rmse": 0.056096721440553665,
+      "root_position_error": 0.03638054057955742
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6505044102668762,
+      "joint_rmse": 0.12182697653770447,
+      "root_position_error": 0.036150820553302765
+    }
+  },
+  {
+    "takeoff": 4179,
+    "landing": 4197,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6601276397705078,
+      "joint_rmse": 0.04999503120779991,
+      "root_position_error": 0.026829000562429428
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6615475416183472,
+      "joint_rmse": 0.10435027629137039,
+      "root_position_error": 0.023584231734275818
+    }
+  },
+  {
+    "takeoff": 4205,
+    "landing": 4223,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6574525237083435,
+      "joint_rmse": 0.04991144314408302,
+      "root_position_error": 0.03731537237763405
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6588248610496521,
+      "joint_rmse": 0.10727198421955109,
+      "root_position_error": 0.03405079245567322
+    }
+  },
+  {
+    "takeoff": 4231,
+    "landing": 4244,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6850847005844116,
+      "joint_rmse": 0.023696452379226685,
+      "root_position_error": 0.014846631325781345
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6910366415977478,
+      "joint_rmse": 0.03263873606920242,
+      "root_position_error": 0.009415151551365852
+    }
+  },
+  {
+    "takeoff": 4261,
+    "landing": 4270,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6888447403907776,
+      "joint_rmse": 0.08533649891614914,
+      "root_position_error": 0.016924869269132614
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6894566416740417,
+      "joint_rmse": 0.09637048840522766,
+      "root_position_error": 0.017139557749032974
+    }
+  },
+  {
+    "takeoff": 4286,
+    "landing": 4305,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6675736308097839,
+      "joint_rmse": 0.07864921540021896,
+      "root_position_error": 0.020670553669333458
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6684256792068481,
+      "joint_rmse": 0.09659848362207413,
+      "root_position_error": 0.020557094365358353
+    }
+  },
+  {
+    "takeoff": 4320,
+    "landing": 4342,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6822050213813782,
+      "joint_rmse": 0.08078370988368988,
+      "root_position_error": 0.031152840703725815
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6926886439323425,
+      "joint_rmse": 0.07721170783042908,
+      "root_position_error": 0.018050523474812508
+    }
+  },
+  {
+    "takeoff": 4351,
+    "landing": 4370,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6693040728569031,
+      "joint_rmse": 0.057916875928640366,
+      "root_position_error": 0.026862936094403267
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6720826625823975,
+      "joint_rmse": 0.11225490272045135,
+      "root_position_error": 0.02342839539051056
+    }
+  },
+  {
+    "takeoff": 4380,
+    "landing": 4397,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6511839032173157,
+      "joint_rmse": 0.06330087780952454,
+      "root_position_error": 0.038546208292245865
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6551281213760376,
+      "joint_rmse": 0.1136455088853836,
+      "root_position_error": 0.031877052038908005
+    }
+  },
+  {
+    "takeoff": 4405,
+    "landing": 4424,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6542431712150574,
+      "joint_rmse": 0.07685782760381699,
+      "root_position_error": 0.027477039024233818
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6546996235847473,
+      "joint_rmse": 0.09857857972383499,
+      "root_position_error": 0.028039712458848953
+    }
+  },
+  {
+    "takeoff": 4435,
+    "landing": 4457,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6216752529144287,
+      "joint_rmse": 0.06423906236886978,
+      "root_position_error": 0.06034659966826439
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6252891421318054,
+      "joint_rmse": 0.09810221940279007,
+      "root_position_error": 0.058931149542331696
+    }
+  },
+  {
+    "takeoff": 4463,
+    "landing": 4481,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6624706983566284,
+      "joint_rmse": 0.05396765097975731,
+      "root_position_error": 0.019416920840740204
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6684898138046265,
+      "joint_rmse": 0.059016551822423935,
+      "root_position_error": 0.014145543798804283
+    }
+  },
+  {
+    "takeoff": 4489,
+    "landing": 4505,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6294116377830505,
+      "joint_rmse": 0.09373336285352707,
+      "root_position_error": 0.026889437809586525
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.629906177520752,
+      "joint_rmse": 0.10591139644384384,
+      "root_position_error": 0.027177883312106133
+    }
+  },
+  {
+    "takeoff": 4516,
+    "landing": 4538,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6636406779289246,
+      "joint_rmse": 0.06113530695438385,
+      "root_position_error": 0.024083999916911125
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.673893928527832,
+      "joint_rmse": 0.05109081789851189,
+      "root_position_error": 0.016708694398403168
+    }
+  },
+  {
+    "takeoff": 4545,
+    "landing": 4559,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6408079266548157,
+      "joint_rmse": 0.08423196524381638,
+      "root_position_error": 0.010281679220497608
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6407400369644165,
+      "joint_rmse": 0.09671451151371002,
+      "root_position_error": 0.010376356542110443
+    }
+  },
+  {
+    "takeoff": 4573,
+    "landing": 4590,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6664135456085205,
+      "joint_rmse": 0.027972156181931496,
+      "root_position_error": 0.009930143132805824
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6692734956741333,
+      "joint_rmse": 0.04644663631916046,
+      "root_position_error": 0.008801067247986794
+    }
+  },
+  {
+    "takeoff": 4598,
+    "landing": 4611,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6491317749023438,
+      "joint_rmse": 0.06951919198036194,
+      "root_position_error": 0.010828204452991486
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6493797898292542,
+      "joint_rmse": 0.08557354658842087,
+      "root_position_error": 0.011030902154743671
+    }
+  },
+  {
+    "takeoff": 4622,
+    "landing": 4639,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6701403856277466,
+      "joint_rmse": 0.030687250196933746,
+      "root_position_error": 0.004675206262618303
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6719101071357727,
+      "joint_rmse": 0.05664975941181183,
+      "root_position_error": 0.0033045439049601555
+    }
+  },
+  {
+    "takeoff": 4647,
+    "landing": 4660,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6492072939872742,
+      "joint_rmse": 0.05291545018553734,
+      "root_position_error": 0.02007916569709778
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6498613357543945,
+      "joint_rmse": 0.0588720366358757,
+      "root_position_error": 0.02006635256111622
+    }
+  },
+  {
+    "takeoff": 4670,
+    "landing": 4690,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6606798768043518,
+      "joint_rmse": 0.04157337546348572,
+      "root_position_error": 0.01667129062116146
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6622148752212524,
+      "joint_rmse": 0.07384302467107773,
+      "root_position_error": 0.015625858679413795
+    }
+  },
+  {
+    "takeoff": 4696,
+    "landing": 4710,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6515572667121887,
+      "joint_rmse": 0.06978774815797806,
+      "root_position_error": 0.01923609897494316
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6523905396461487,
+      "joint_rmse": 0.08192040026187897,
+      "root_position_error": 0.0192278865724802
+    }
+  },
+  {
+    "takeoff": 4720,
+    "landing": 4739,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6698806285858154,
+      "joint_rmse": 0.04057808965444565,
+      "root_position_error": 0.01423040684312582
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6703909039497375,
+      "joint_rmse": 0.07673738151788712,
+      "root_position_error": 0.013083216734230518
+    }
+  },
+  {
+    "takeoff": 4746,
+    "landing": 4759,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6517629623413086,
+      "joint_rmse": 0.04312567040324211,
+      "root_position_error": 0.029086416587233543
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6526618599891663,
+      "joint_rmse": 0.06236359477043152,
+      "root_position_error": 0.02895292267203331
+    }
+  },
+  {
+    "takeoff": 4775,
+    "landing": 4791,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6666143536567688,
+      "joint_rmse": 0.04900293052196503,
+      "root_position_error": 0.0130073893815279
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6665683388710022,
+      "joint_rmse": 0.07057978212833405,
+      "root_position_error": 0.013283384963870049
+    }
+  },
+  {
+    "takeoff": 4797,
+    "landing": 4811,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6468053460121155,
+      "joint_rmse": 0.06727287918329239,
+      "root_position_error": 0.011593092232942581
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6473921537399292,
+      "joint_rmse": 0.08927510678768158,
+      "root_position_error": 0.011542308144271374
+    }
+  },
+  {
+    "takeoff": 4823,
+    "landing": 4841,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6431217193603516,
+      "joint_rmse": 0.09856025129556656,
+      "root_position_error": 0.027477962896227837
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6598027348518372,
+      "joint_rmse": 0.0462213009595871,
+      "root_position_error": 0.01457009557634592
+    }
+  },
+  {
+    "takeoff": 4844,
+    "landing": 4857,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6431394219398499,
+      "joint_rmse": 0.055424612015485764,
+      "root_position_error": 0.009336917661130428
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6438068747520447,
+      "joint_rmse": 0.06785743683576584,
+      "root_position_error": 0.008977784775197506
+    }
+  },
+  {
+    "takeoff": 4864,
+    "landing": 4887,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6786489486694336,
+      "joint_rmse": 0.04822684824466705,
+      "root_position_error": 0.009671651758253574
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6791785359382629,
+      "joint_rmse": 0.057022400200366974,
+      "root_position_error": 0.009620768018066883
+    }
+  },
+  {
+    "takeoff": 4895,
+    "landing": 4907,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6496561169624329,
+      "joint_rmse": 0.06175384297966957,
+      "root_position_error": 0.009088846854865551
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.650854229927063,
+      "joint_rmse": 0.07965414226055145,
+      "root_position_error": 0.008029603399336338
+    }
+  },
+  {
+    "takeoff": 4916,
+    "landing": 4932,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6695634722709656,
+      "joint_rmse": 0.03638026490807533,
+      "root_position_error": 0.015465104952454567
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6722184419631958,
+      "joint_rmse": 0.052859075367450714,
+      "root_position_error": 0.013201244175434113
+    }
+  },
+  {
+    "takeoff": 4937,
+    "landing": 4950,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6532121896743774,
+      "joint_rmse": 0.08441968262195587,
+      "root_position_error": 0.011049636639654636
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.653301477432251,
+      "joint_rmse": 0.08838582038879395,
+      "root_position_error": 0.011022799648344517
+    }
+  },
+  {
+    "takeoff": 4963,
+    "landing": 4978,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6669058799743652,
+      "joint_rmse": 0.02212662063539028,
+      "root_position_error": 0.015083390288054943
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6683024168014526,
+      "joint_rmse": 0.015448080375790596,
+      "root_position_error": 0.01437011081725359
+    }
+  },
+  {
+    "takeoff": 4987,
+    "landing": 5001,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6339842677116394,
+      "joint_rmse": 0.036081019788980484,
+      "root_position_error": 0.04365818575024605
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6339842677116394,
+      "joint_rmse": 0.036081019788980484,
+      "root_position_error": 0.04365818575024605
+    }
+  },
+  {
+    "takeoff": 5012,
+    "landing": 5020,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6448497772216797,
+      "joint_rmse": 0.037145186215639114,
+      "root_position_error": 0.012591252103447914
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6448497772216797,
+      "joint_rmse": 0.037145186215639114,
+      "root_position_error": 0.012591252103447914
+    }
+  },
+  {
+    "takeoff": 5024,
+    "landing": 5034,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6165138483047485,
+      "joint_rmse": 0.036041464656591415,
+      "root_position_error": 0.01986604370176792
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.616513729095459,
+      "joint_rmse": 0.03604131564497948,
+      "root_position_error": 0.01986604370176792
+    }
+  },
+  {
+    "takeoff": 5044,
+    "landing": 5054,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6604771018028259,
+      "joint_rmse": 0.021381471306085587,
+      "root_position_error": 0.010993080213665962
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6608580350875854,
+      "joint_rmse": 0.020454905927181244,
+      "root_position_error": 0.010886520147323608
+    }
+  },
+  {
+    "takeoff": 5057,
+    "landing": 5065,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6136332154273987,
+      "joint_rmse": 0.040892213582992554,
+      "root_position_error": 0.025138424709439278
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6136332750320435,
+      "joint_rmse": 0.040892262011766434,
+      "root_position_error": 0.025138499215245247
+    }
+  },
+  {
+    "takeoff": 5075,
+    "landing": 5087,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6535777449607849,
+      "joint_rmse": 0.026134490966796875,
+      "root_position_error": 0.006430600769817829
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6535776853561401,
+      "joint_rmse": 0.026134653016924858,
+      "root_position_error": 0.006430649198591709
+    }
+  },
+  {
+    "takeoff": 5089,
+    "landing": 5099,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5941494107246399,
+      "joint_rmse": 0.06573265045881271,
+      "root_position_error": 0.03464997932314873
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.5941494107246399,
+      "joint_rmse": 0.06573265045881271,
+      "root_position_error": 0.03464997932314873
+    }
+  },
+  {
+    "takeoff": 5106,
+    "landing": 5120,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6420721411705017,
+      "joint_rmse": 0.05110221728682518,
+      "root_position_error": 0.014253021217882633
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6420721411705017,
+      "joint_rmse": 0.05110221728682518,
+      "root_position_error": 0.014253021217882633
+    }
+  },
+  {
+    "takeoff": 5123,
+    "landing": 5132,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.611592710018158,
+      "joint_rmse": 0.02774776518344879,
+      "root_position_error": 0.019326215609908104
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6115926504135132,
+      "joint_rmse": 0.02774772420525551,
+      "root_position_error": 0.01932624913752079
+    }
+  },
+  {
+    "takeoff": 5140,
+    "landing": 5150,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6611976623535156,
+      "joint_rmse": 0.014779327437281609,
+      "root_position_error": 0.008364162407815456
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6617940664291382,
+      "joint_rmse": 0.014541277661919594,
+      "root_position_error": 0.008158531971275806
+    }
+  },
+  {
+    "takeoff": 5155,
+    "landing": 5165,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6020236015319824,
+      "joint_rmse": 0.030708342790603638,
+      "root_position_error": 0.02278865873813629
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6020233631134033,
+      "joint_rmse": 0.03070836327970028,
+      "root_position_error": 0.022788548842072487
+    }
+  },
+  {
+    "takeoff": 5173,
+    "landing": 5185,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.650743842124939,
+      "joint_rmse": 0.015120424330234528,
+      "root_position_error": 0.013583796098828316
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.650743842124939,
+      "joint_rmse": 0.015120421536266804,
+      "root_position_error": 0.01358381099998951
+    }
+  },
+  {
+    "takeoff": 5189,
+    "landing": 5200,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6130016446113586,
+      "joint_rmse": 0.027679502964019775,
+      "root_position_error": 0.010791465640068054
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6130016446113586,
+      "joint_rmse": 0.02767951227724552,
+      "root_position_error": 0.010791465640068054
+    }
+  },
+  {
+    "takeoff": 5207,
+    "landing": 5218,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6489289999008179,
+      "joint_rmse": 0.03250306844711304,
+      "root_position_error": 0.024692494422197342
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6489289999008179,
+      "joint_rmse": 0.032502979040145874,
+      "root_position_error": 0.024692494422197342
+    }
+  },
+  {
+    "takeoff": 5222,
+    "landing": 5236,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6293587684631348,
+      "joint_rmse": 0.032578762620687485,
+      "root_position_error": 0.007365703582763672
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6293587684631348,
+      "joint_rmse": 0.03257855400443077,
+      "root_position_error": 0.007365703582763672
+    }
+  },
+  {
+    "takeoff": 5244,
+    "landing": 5256,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6727649569511414,
+      "joint_rmse": 0.02333349920809269,
+      "root_position_error": 0.009363679215312004
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6733142137527466,
+      "joint_rmse": 0.022128567099571228,
+      "root_position_error": 0.009499218314886093
+    }
+  },
+  {
+    "takeoff": 5260,
+    "landing": 5272,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6144952178001404,
+      "joint_rmse": 0.037592194974422455,
+      "root_position_error": 0.01803526096045971
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6144950985908508,
+      "joint_rmse": 0.03759242221713066,
+      "root_position_error": 0.018035266548395157
+    }
+  },
+  {
+    "takeoff": 5278,
+    "landing": 5292,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6647570729255676,
+      "joint_rmse": 0.020974071696400642,
+      "root_position_error": 0.00683386018499732
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6647570729255676,
+      "joint_rmse": 0.02097410149872303,
+      "root_position_error": 0.0068338667042553425
+    }
+  },
+  {
+    "takeoff": 5297,
+    "landing": 5309,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6538691520690918,
+      "joint_rmse": 0.030084265395998955,
+      "root_position_error": 0.03242405876517296
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6538732647895813,
+      "joint_rmse": 0.030078288167715073,
+      "root_position_error": 0.03242376446723938
+    }
+  },
+  {
+    "takeoff": 5320,
+    "landing": 5336,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6728945374488831,
+      "joint_rmse": 0.04025551676750183,
+      "root_position_error": 0.018119322136044502
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6740711331367493,
+      "joint_rmse": 0.04587961360812187,
+      "root_position_error": 0.01804111711680889
+    }
+  },
+  {
+    "takeoff": 5370,
+    "landing": 5386,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6661079525947571,
+      "joint_rmse": 0.026893865317106247,
+      "root_position_error": 0.013447449542582035
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6684443354606628,
+      "joint_rmse": 0.04004751518368721,
+      "root_position_error": 0.013897041790187359
+    }
+  },
+  {
+    "takeoff": 5388,
+    "landing": 5395,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6694686412811279,
+      "joint_rmse": 0.019122732803225517,
+      "root_position_error": 0.008331649005413055
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6702327132225037,
+      "joint_rmse": 0.015437166206538677,
+      "root_position_error": 0.00765692675486207
+    }
+  },
+  {
+    "takeoff": 5411,
+    "landing": 5422,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6734519004821777,
+      "joint_rmse": 0.06057041138410568,
+      "root_position_error": 0.022257832810282707
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6737979054450989,
+      "joint_rmse": 0.09476987272500992,
+      "root_position_error": 0.0227670818567276
+    }
+  },
+  {
+    "takeoff": 5426,
+    "landing": 5433,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6722599267959595,
+      "joint_rmse": 0.013076430186629295,
+      "root_position_error": 0.020371245220303535
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6730042695999146,
+      "joint_rmse": 0.011839592829346657,
+      "root_position_error": 0.02021024376153946
+    }
+  },
+  {
+    "takeoff": 5448,
+    "landing": 5462,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6735703349113464,
+      "joint_rmse": 0.053269948810338974,
+      "root_position_error": 0.013102918863296509
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.673771858215332,
+      "joint_rmse": 0.09076645970344543,
+      "root_position_error": 0.013769454322755337
+    }
+  },
+  {
+    "takeoff": 5467,
+    "landing": 5475,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.673281192779541,
+      "joint_rmse": 0.01477501168847084,
+      "root_position_error": 0.00572297303006053
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6732813715934753,
+      "joint_rmse": 0.014775256626307964,
+      "root_position_error": 0.00572291761636734
+    }
+  },
+  {
+    "takeoff": 5495,
+    "landing": 5507,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6709644794464111,
+      "joint_rmse": 0.05990057438611984,
+      "root_position_error": 0.009436924941837788
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6710495352745056,
+      "joint_rmse": 0.08366270363330841,
+      "root_position_error": 0.010100489482283592
+    }
+  },
+  {
+    "takeoff": 5510,
+    "landing": 5518,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6658090353012085,
+      "joint_rmse": 0.016205402091145515,
+      "root_position_error": 0.009180860593914986
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6658090353012085,
+      "joint_rmse": 0.016205405816435814,
+      "root_position_error": 0.009180860593914986
+    }
+  },
+  {
+    "takeoff": 5535,
+    "landing": 5546,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6715528964996338,
+      "joint_rmse": 0.0472530834376812,
+      "root_position_error": 0.008022098802030087
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6715133786201477,
+      "joint_rmse": 0.08253568410873413,
+      "root_position_error": 0.008353343233466148
+    }
+  },
+  {
+    "takeoff": 5550,
+    "landing": 5558,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6629467606544495,
+      "joint_rmse": 0.016939986497163773,
+      "root_position_error": 0.009521087631583214
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6629467010498047,
+      "joint_rmse": 0.016940267756581306,
+      "root_position_error": 0.009521087631583214
+    }
+  },
+  {
+    "takeoff": 5575,
+    "landing": 5586,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6710731387138367,
+      "joint_rmse": 0.045942626893520355,
+      "root_position_error": 0.011620604433119297
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6709362864494324,
+      "joint_rmse": 0.0830579474568367,
+      "root_position_error": 0.011959418654441833
+    }
+  },
+  {
+    "takeoff": 5591,
+    "landing": 5599,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6709532141685486,
+      "joint_rmse": 0.011205459013581276,
+      "root_position_error": 0.006339638028293848
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6709532141685486,
+      "joint_rmse": 0.0112053994089365,
+      "root_position_error": 0.006339638028293848
+    }
+  },
+  {
+    "takeoff": 5617,
+    "landing": 5629,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6747774481773376,
+      "joint_rmse": 0.05969136953353882,
+      "root_position_error": 0.011847793124616146
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6747983694076538,
+      "joint_rmse": 0.0718732550740242,
+      "root_position_error": 0.011970714665949345
+    }
+  },
+  {
+    "takeoff": 5634,
+    "landing": 5642,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6720108985900879,
+      "joint_rmse": 0.01459028571844101,
+      "root_position_error": 0.010981610044836998
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6725775599479675,
+      "joint_rmse": 0.016561158001422882,
+      "root_position_error": 0.010669398121535778
+    }
+  },
+  {
+    "takeoff": 5657,
+    "landing": 5670,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6701380610466003,
+      "joint_rmse": 0.033539317548274994,
+      "root_position_error": 0.015472227707505226
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6722972989082336,
+      "joint_rmse": 0.0762714222073555,
+      "root_position_error": 0.0116721885278821
+    }
+  },
+  {
+    "takeoff": 5675,
+    "landing": 5683,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6707013249397278,
+      "joint_rmse": 0.015737300738692284,
+      "root_position_error": 0.00775754451751709
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6709491014480591,
+      "joint_rmse": 0.016333449631929398,
+      "root_position_error": 0.007490701042115688
+    }
+  },
+  {
+    "takeoff": 5701,
+    "landing": 5715,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6725062131881714,
+      "joint_rmse": 0.02948993630707264,
+      "root_position_error": 0.011682040989398956
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6740180253982544,
+      "joint_rmse": 0.06676185131072998,
+      "root_position_error": 0.009463273920118809
+    }
+  },
+  {
+    "takeoff": 5720,
+    "landing": 5729,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6747543215751648,
+      "joint_rmse": 0.015562377870082855,
+      "root_position_error": 0.008096113801002502
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6755934953689575,
+      "joint_rmse": 0.018934331834316254,
+      "root_position_error": 0.0074675604701042175
+    }
+  },
+  {
+    "takeoff": 5745,
+    "landing": 5758,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6714655160903931,
+      "joint_rmse": 0.04885522276163101,
+      "root_position_error": 0.011676433496177197
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6713809967041016,
+      "joint_rmse": 0.07360556721687317,
+      "root_position_error": 0.011891921050846577
+    }
+  },
+  {
+    "takeoff": 5763,
+    "landing": 5772,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.674115777015686,
+      "joint_rmse": 0.01768839731812477,
+      "root_position_error": 0.0068211336620152
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6756842136383057,
+      "joint_rmse": 0.026789886876940727,
+      "root_position_error": 0.005110098980367184
+    }
+  },
+  {
+    "takeoff": 5794,
+    "landing": 5803,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6779345273971558,
+      "joint_rmse": 0.04066270589828491,
+      "root_position_error": 0.010367323644459248
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6782466173171997,
+      "joint_rmse": 0.04703518748283386,
+      "root_position_error": 0.010239356197416782
+    }
+  },
+  {
+    "takeoff": 5806,
+    "landing": 5814,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.670189619064331,
+      "joint_rmse": 0.025900444015860558,
+      "root_position_error": 0.010979200713336468
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6702649593353271,
+      "joint_rmse": 0.026394380256533623,
+      "root_position_error": 0.010913087986409664
+    }
+  },
+  {
+    "takeoff": 5831,
+    "landing": 5842,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.67540442943573,
+      "joint_rmse": 0.05335202068090439,
+      "root_position_error": 0.010298149660229683
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.67554771900177,
+      "joint_rmse": 0.0709906592965126,
+      "root_position_error": 0.010558618232607841
+    }
+  },
+  {
+    "takeoff": 5846,
+    "landing": 5854,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6720427870750427,
+      "joint_rmse": 0.018613025546073914,
+      "root_position_error": 0.00885008368641138
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6721279621124268,
+      "joint_rmse": 0.019032256677746773,
+      "root_position_error": 0.008770228363573551
+    }
+  },
+  {
+    "takeoff": 5870,
+    "landing": 5883,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6760255098342896,
+      "joint_rmse": 0.04866325110197067,
+      "root_position_error": 0.020516803488135338
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6770508289337158,
+      "joint_rmse": 0.06144413352012634,
+      "root_position_error": 0.020120538771152496
+    }
+  },
+  {
+    "takeoff": 5886,
+    "landing": 5894,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6730952262878418,
+      "joint_rmse": 0.02880227006971836,
+      "root_position_error": 0.014226091094315052
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6730952858924866,
+      "joint_rmse": 0.02880200743675232,
+      "root_position_error": 0.014226025901734829
+    }
+  },
+  {
+    "takeoff": 5909,
+    "landing": 5923,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6676455736160278,
+      "joint_rmse": 0.037665627896785736,
+      "root_position_error": 0.013526152819395065
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6689499616622925,
+      "joint_rmse": 0.06832604855298996,
+      "root_position_error": 0.012071944773197174
+    }
+  },
+  {
+    "takeoff": 5926,
+    "landing": 5935,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6724563837051392,
+      "joint_rmse": 0.025563634932041168,
+      "root_position_error": 0.008602596819400787
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6729039549827576,
+      "joint_rmse": 0.028623314574360847,
+      "root_position_error": 0.008126361295580864
+    }
+  },
+  {
+    "takeoff": 5947,
+    "landing": 5962,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6691863536834717,
+      "joint_rmse": 0.07214779406785965,
+      "root_position_error": 0.021341798827052116
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6694009900093079,
+      "joint_rmse": 0.10229264944791794,
+      "root_position_error": 0.02207624539732933
+    }
+  },
+  {
+    "takeoff": 5967,
+    "landing": 5978,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6754539608955383,
+      "joint_rmse": 0.041544850915670395,
+      "root_position_error": 0.011025456711649895
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6755918860435486,
+      "joint_rmse": 0.04376324266195297,
+      "root_position_error": 0.010901985689997673
+    }
+  },
+  {
+    "takeoff": 5993,
+    "landing": 6011,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6488507390022278,
+      "joint_rmse": 0.05824536085128784,
+      "root_position_error": 0.025456510484218597
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6485688090324402,
+      "joint_rmse": 0.1164090558886528,
+      "root_position_error": 0.025293387472629547
+    }
+  },
+  {
+    "takeoff": 6019,
+    "landing": 6035,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6254138350486755,
+      "joint_rmse": 0.07145815342664719,
+      "root_position_error": 0.04061286523938179
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6376746892929077,
+      "joint_rmse": 0.09959444403648376,
+      "root_position_error": 0.0200115405023098
+    }
+  },
+  {
+    "takeoff": 6039,
+    "landing": 6059,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6032010912895203,
+      "joint_rmse": 0.15510164201259613,
+      "root_position_error": 0.07138611376285553
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6534216403961182,
+      "joint_rmse": 0.07473265379667282,
+      "root_position_error": 0.012792177498340607
+    }
+  },
+  {
+    "takeoff": 6062,
+    "landing": 6080,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5948624610900879,
+      "joint_rmse": 0.14576704800128937,
+      "root_position_error": 0.07089975476264954
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6315400004386902,
+      "joint_rmse": 0.10825678706169128,
+      "root_position_error": 0.015207687392830849
+    }
+  },
+  {
+    "takeoff": 6083,
+    "landing": 6101,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6082605123519897,
+      "joint_rmse": 0.13400226831436157,
+      "root_position_error": 0.060592908412218094
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6499158143997192,
+      "joint_rmse": 0.0922379121184349,
+      "root_position_error": 0.00907606165856123
+    }
+  },
+  {
+    "takeoff": 6105,
+    "landing": 6123,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.5945977568626404,
+      "joint_rmse": 0.14569242298603058,
+      "root_position_error": 0.07352838665246964
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6273776292800903,
+      "joint_rmse": 0.10998755693435669,
+      "root_position_error": 0.022716689854860306
+    }
+  },
+  {
+    "takeoff": 6126,
+    "landing": 6144,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6201400756835938,
+      "joint_rmse": 0.0946800485253334,
+      "root_position_error": 0.04761286824941635
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6437270045280457,
+      "joint_rmse": 0.11108130216598511,
+      "root_position_error": 0.012283184565603733
+    }
+  },
+  {
+    "takeoff": 6148,
+    "landing": 6167,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6028971672058105,
+      "joint_rmse": 0.1404428631067276,
+      "root_position_error": 0.07208602875471115
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6362859606742859,
+      "joint_rmse": 0.09364938735961914,
+      "root_position_error": 0.022357411682605743
+    }
+  },
+  {
+    "takeoff": 6170,
+    "landing": 6187,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.635161817073822,
+      "joint_rmse": 0.06231149286031723,
+      "root_position_error": 0.028482535853981972
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6381227374076843,
+      "joint_rmse": 0.12639674544334412,
+      "root_position_error": 0.022180145606398582
+    }
+  },
+  {
+    "takeoff": 6192,
+    "landing": 6210,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6146970987319946,
+      "joint_rmse": 0.1154976412653923,
+      "root_position_error": 0.06960126757621765
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6362717747688293,
+      "joint_rmse": 0.11408603936433792,
+      "root_position_error": 0.03493470698595047
+    }
+  },
+  {
+    "takeoff": 6213,
+    "landing": 6231,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6326888799667358,
+      "joint_rmse": 0.09304764866828918,
+      "root_position_error": 0.05270793288946152
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6508873701095581,
+      "joint_rmse": 0.1088002473115921,
+      "root_position_error": 0.025164935737848282
+    }
+  },
+  {
+    "takeoff": 6236,
+    "landing": 6253,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6353187561035156,
+      "joint_rmse": 0.0940447598695755,
+      "root_position_error": 0.051965758204460144
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6532570719718933,
+      "joint_rmse": 0.07759609073400497,
+      "root_position_error": 0.024642499163746834
+    }
+  },
+  {
+    "takeoff": 6258,
+    "landing": 6273,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.67257159948349,
+      "joint_rmse": 0.05122336745262146,
+      "root_position_error": 0.04306531324982643
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6808875203132629,
+      "joint_rmse": 0.0665898323059082,
+      "root_position_error": 0.03832756355404854
+    }
+  },
+  {
+    "takeoff": 6280,
+    "landing": 6297,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6652975082397461,
+      "joint_rmse": 0.05075211450457573,
+      "root_position_error": 0.029991311952471733
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6677588224411011,
+      "joint_rmse": 0.09816689789295197,
+      "root_position_error": 0.026978587731719017
+    }
+  },
+  {
+    "takeoff": 6306,
+    "landing": 6320,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6615504026412964,
+      "joint_rmse": 0.08225715160369873,
+      "root_position_error": 0.06964339315891266
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6745097637176514,
+      "joint_rmse": 0.05969700589776039,
+      "root_position_error": 0.06726545095443726
+    }
+  },
+  {
+    "takeoff": 6323,
+    "landing": 6336,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6341,
+    "landing": 6361,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6542892456054688,
+      "joint_rmse": 0.05557455122470856,
+      "root_position_error": 0.026933196932077408
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6622388958930969,
+      "joint_rmse": 0.04654278606176376,
+      "root_position_error": 0.019388524815440178
+    }
+  },
+  {
+    "takeoff": 6366,
+    "landing": 6386,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6394591927528381,
+      "joint_rmse": 0.05342484638094902,
+      "root_position_error": 0.02326778508722782
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.652012288570404,
+      "joint_rmse": 0.036332372575998306,
+      "root_position_error": 0.01608080416917801
+    }
+  },
+  {
+    "takeoff": 6391,
+    "landing": 6410,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6326586604118347,
+      "joint_rmse": 0.0727839395403862,
+      "root_position_error": 0.03353278711438179
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6445817351341248,
+      "joint_rmse": 0.07629317790269852,
+      "root_position_error": 0.01771303452551365
+    }
+  },
+  {
+    "takeoff": 6415,
+    "landing": 6436,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6312845349311829,
+      "joint_rmse": 0.029552560299634933,
+      "root_position_error": 0.020678440108895302
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6413924694061279,
+      "joint_rmse": 0.04059022292494774,
+      "root_position_error": 0.012808467261493206
+    }
+  },
+  {
+    "takeoff": 6442,
+    "landing": 6462,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6458329558372498,
+      "joint_rmse": 0.05436776578426361,
+      "root_position_error": 0.02494310401380062
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.64974045753479,
+      "joint_rmse": 0.06353086978197098,
+      "root_position_error": 0.02247157320380211
+    }
+  },
+  {
+    "takeoff": 6469,
+    "landing": 6494,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.620535671710968,
+      "joint_rmse": 0.09286762028932571,
+      "root_position_error": 0.032010093331336975
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6448937058448792,
+      "joint_rmse": 0.04939073324203491,
+      "root_position_error": 0.012395916506648064
+    }
+  },
+  {
+    "takeoff": 6497,
+    "landing": 6520,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6430575847625732,
+      "joint_rmse": 0.07638167589902878,
+      "root_position_error": 0.020345518365502357
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6519948840141296,
+      "joint_rmse": 0.0718994066119194,
+      "root_position_error": 0.011932666413486004
+    }
+  },
+  {
+    "takeoff": 6525,
+    "landing": 6545,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6339977979660034,
+      "joint_rmse": 0.060449060052633286,
+      "root_position_error": 0.020175881683826447
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6371094584465027,
+      "joint_rmse": 0.0820131003856659,
+      "root_position_error": 0.017088355496525764
+    }
+  },
+  {
+    "takeoff": 6553,
+    "landing": 6576,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6583,
+    "landing": 6602,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6607,
+    "landing": 6624,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6630,
+    "landing": 6647,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6655,
+    "landing": 6673,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6677,
+    "landing": 6695,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6700,
+    "landing": 6720,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6725,
+    "landing": 6744,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6747,
+    "landing": 6767,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6772,
+    "landing": 6793,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6797,
+    "landing": 6806,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.7104821801185608,
+      "joint_rmse": 0.10888098180294037,
+      "root_position_error": 0.10733706504106522
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.7126123905181885,
+      "joint_rmse": 0.10353942215442657,
+      "root_position_error": 0.10746606439352036
+    }
+  },
+  {
+    "takeoff": 6860,
+    "landing": 6884,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6888,
+    "landing": 6908,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6915,
+    "landing": 6934,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6939,
+    "landing": 6958,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6962,
+    "landing": 6981,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 6984,
+    "landing": 7003,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7005,
+    "landing": 7023,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7027,
+    "landing": 7047,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7050,
+    "landing": 7065,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6744440793991089,
+      "joint_rmse": 0.02932179905474186,
+      "root_position_error": 0.0289804395288229
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6769139766693115,
+      "joint_rmse": 0.024661531671881676,
+      "root_position_error": 0.029190558940172195
+    }
+  },
+  {
+    "takeoff": 7158,
+    "landing": 7178,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7187,
+    "landing": 7209,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7215,
+    "landing": 7237,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7242,
+    "landing": 7260,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7266,
+    "landing": 7285,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7290,
+    "landing": 7308,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7314,
+    "landing": 7334,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7341,
+    "landing": 7358,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7365,
+    "landing": 7385,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7391,
+    "landing": 7405,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6877369284629822,
+      "joint_rmse": 0.040632981806993484,
+      "root_position_error": 0.04758650064468384
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6901268362998962,
+      "joint_rmse": 0.03556375205516815,
+      "root_position_error": 0.04767388477921486
+    }
+  },
+  {
+    "takeoff": 7475,
+    "landing": 7495,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7502,
+    "landing": 7511,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6739933490753174,
+      "joint_rmse": 0.030574623495340347,
+      "root_position_error": 0.015010860748589039
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6789333820343018,
+      "joint_rmse": 0.022554509341716766,
+      "root_position_error": 0.014791765250265598
+    }
+  },
+  {
+    "takeoff": 7515,
+    "landing": 7529,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7531,
+    "landing": 7552,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6299042701721191,
+      "joint_rmse": 0.07536020129919052,
+      "root_position_error": 0.013146410696208477
+    }
+  },
+  {
+    "takeoff": 7556,
+    "landing": 7572,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7572,
+    "landing": 7588,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7590,
+    "landing": 7606,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7606,
+    "landing": 7621,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7623,
+    "landing": 7637,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7639,
+    "landing": 7655,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7657,
+    "landing": 7672,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7673,
+    "landing": 7691,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6003579497337341,
+      "joint_rmse": 0.058598294854164124,
+      "root_position_error": 0.01059885323047638
+    }
+  },
+  {
+    "takeoff": 7695,
+    "landing": 7709,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6329327821731567,
+      "joint_rmse": 0.046273957937955856,
+      "root_position_error": 0.06930822134017944
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6362540125846863,
+      "joint_rmse": 0.04280909150838852,
+      "root_position_error": 0.06906496733427048
+    }
+  },
+  {
+    "takeoff": 7721,
+    "landing": 7733,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6329761743545532,
+      "joint_rmse": 0.045653555542230606,
+      "root_position_error": 0.01012012455612421
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6329761743545532,
+      "joint_rmse": 0.045653533190488815,
+      "root_position_error": 0.010120299644768238
+    }
+  },
+  {
+    "takeoff": 7741,
+    "landing": 7758,
+    "stance": 1,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7759,
+    "landing": 7775,
+    "stance": 0,
+    "flat": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    },
+    "rolling": {
+      "converged": false,
+      "reason": "Could not find joint-limited flat-foot reference geometry"
+    }
+  },
+  {
+    "takeoff": 7776,
+    "landing": 7792,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.6444472670555115,
+      "joint_rmse": 0.039428047835826874,
+      "root_position_error": 0.022123057395219803
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6457381844520569,
+      "joint_rmse": 0.0394880510866642,
+      "root_position_error": 0.021688396111130714
+    }
+  },
+  {
+    "takeoff": 7794,
+    "landing": 7796,
+    "stance": 0,
+    "flat": {
+      "converged": true,
+      "height": 0.6513419151306152,
+      "joint_rmse": 0.02840600349009037,
+      "root_position_error": 0.025598235428333282
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6527314186096191,
+      "joint_rmse": 0.02907957322895527,
+      "root_position_error": 0.025520453229546547
+    }
+  },
+  {
+    "takeoff": 7812,
+    "landing": 7822,
+    "stance": 1,
+    "flat": {
+      "converged": true,
+      "height": 0.697024405002594,
+      "joint_rmse": 0.2207275778055191,
+      "root_position_error": 0.038770802319049835
+    },
+    "rolling": {
+      "converged": true,
+      "height": 0.6985808610916138,
+      "joint_rmse": 0.2222522795200348,
+      "root_position_error": 0.03801700100302696
+    }
+  }
+]

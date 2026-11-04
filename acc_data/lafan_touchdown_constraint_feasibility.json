@@ -1,0 +1,38 @@
+[
+  {
+    "recording": "lafan_source_early_touchdown_20s",
+    "time": 6.1000000000000005,
+    "highs_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "feasible": false,
+    "equality_rows": 47,
+    "inequality_rows": 110,
+    "offline_constraint_ablations": {
+      "waist_pitch_predicted_acceleration": {
+        "feasible_if_removed": true,
+        "scope": "Diagnostic only; controller constraints are unchanged."
+      },
+      "all_predicted_acceleration": {
+        "feasible_if_removed": true,
+        "scope": "Diagnostic only; controller constraints are unchanged."
+      }
+    }
+  },
+  {
+    "recording": "lafan_flat_spawn_500hz_8s",
+    "time": 6.112,
+    "highs_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "feasible": false,
+    "equality_rows": 47,
+    "inequality_rows": 110,
+    "offline_constraint_ablations": {
+      "waist_pitch_predicted_acceleration": {
+        "feasible_if_removed": true,
+        "scope": "Diagnostic only; controller constraints are unchanged."
+      },
+      "all_predicted_acceleration": {
+        "feasible_if_removed": true,
+        "scope": "Diagnostic only; controller constraints are unchanged."
+      }
+    }
+  }
+]

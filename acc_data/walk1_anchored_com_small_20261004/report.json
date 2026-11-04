@@ -1,0 +1,114 @@
+{
+  "scope": "Offline fixed-mode projection; no transition, reset, or physics execution",
+  "full_tracking_passed": false,
+  "com_offset_local_m": [
+    -0.06,
+    0.06
+  ],
+  "com_offset_world_m": [
+    0.05302772670984268,
+    0.06624244153499603,
+    -9.08110990849309e-08
+  ],
+  "warm_start": true,
+  "candidate": "acc_data/walk1_c2_reference_contacts_20261004/candidate.npz",
+  "anchor_recording": "acc_data/walk1_staged_baseline_v2_20261004/transfer.npz",
+  "anchor_time_s": 15.998000000000001,
+  "ground_shift_m": -0.02146398276090622,
+  "requested_frames": 15,
+  "projected_frames": 7,
+  "failures": [
+    {
+      "frame": 121,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.0099634677, tolerance=2e-06"
+    },
+    {
+      "frame": 122,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.017494667, tolerance=2e-06"
+    },
+    {
+      "frame": 123,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.021629371, tolerance=2e-06"
+    },
+    {
+      "frame": 124,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.023469269, tolerance=2e-06"
+    },
+    {
+      "frame": 125,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.025484562, tolerance=2e-06"
+    },
+    {
+      "frame": 126,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.027659893, tolerance=2e-06"
+    },
+    {
+      "frame": 127,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.027988434, tolerance=2e-06"
+    },
+    {
+      "frame": 128,
+      "reason": "Could not find joint-limited flat-foot reference geometry: residual=0.026159286, tolerance=2e-06"
+    }
+  ],
+  "diagnostics": [
+    {
+      "frame": 114,
+      "stance_position_error_m": 2.8312206268310547e-07,
+      "stance_twist_max": 6.984919309616089e-09,
+      "stance_acceleration_max": 6.28642737865448e-09,
+      "swing_position_change_m": 4.76837158203125e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 115,
+      "stance_position_error_m": 9.5367431640625e-07,
+      "stance_twist_max": 5.587935447692871e-09,
+      "stance_acceleration_max": 4.1676685214042664e-08,
+      "swing_position_change_m": 9.5367431640625e-07,
+      "com_change_m": 0.06624174118041992
+    },
+    {
+      "frame": 116,
+      "stance_position_error_m": 4.76837158203125e-07,
+      "stance_twist_max": 3.725290298461914e-09,
+      "stance_acceleration_max": 7.092603482306004e-08,
+      "swing_position_change_m": 6.258487701416016e-07,
+      "com_change_m": 0.06624174118041992
+    },
+    {
+      "frame": 117,
+      "stance_position_error_m": 7.450580596923828e-08,
+      "stance_twist_max": 1.1496013030409813e-08,
+      "stance_acceleration_max": 2.0459992811083794e-08,
+      "swing_position_change_m": 1.6391277313232422e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 118,
+      "stance_position_error_m": 4.6193599700927734e-07,
+      "stance_twist_max": 1.816079020500183e-08,
+      "stance_acceleration_max": 7.03730620443821e-08,
+      "swing_position_change_m": 4.917383193969727e-07,
+      "com_change_m": 0.06624221801757812
+    },
+    {
+      "frame": 119,
+      "stance_position_error_m": 7.450580596923828e-09,
+      "stance_twist_max": 2.4076143745332956e-08,
+      "stance_acceleration_max": 1.3224780559539795e-07,
+      "swing_position_change_m": 1.1920928955078125e-07,
+      "com_change_m": 0.06624126434326172
+    },
+    {
+      "frame": 120,
+      "stance_position_error_m": 6.593763828277588e-07,
+      "stance_twist_max": 4.209603332583356e-08,
+      "stance_acceleration_max": 8.754432201385498e-06,
+      "swing_position_change_m": 9.275972843170166e-07,
+      "com_change_m": 0.06624174118041992
+    }
+  ],
+  "diagnostic_reference_file": "partial.npz",
+  "complete_interval": false
+}

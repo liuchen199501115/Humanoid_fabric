@@ -1,0 +1,80 @@
+[
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.05971662700176239,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "convex_mesh"
+    },
+    "max_velocity_ratio": 0.1160043478012085,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.2693951505529682,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.26
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.059716638177633286,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "convex_mesh"
+    },
+    "max_velocity_ratio": 0.1160043478012085,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.27016870463013454,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.27
+  },
+  {
+    "sampled_necessary_constraints_passed": false,
+    "samples": 101,
+    "collision_audit": {
+      "checked": true,
+      "passed": true,
+      "maximum_violation": 0.0,
+      "minimum_cover_distance": 0.05971661955118179,
+      "violating_samples": 0,
+      "worst_time": null,
+      "acceleration_residual_tolerance": 1e-05,
+      "geometry": "convex_mesh"
+    },
+    "max_velocity_ratio": 0.12197121232748032,
+    "max_joint_bound_violation": 3.6868391036987305,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.27295441129727965,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.28
+  },
+  {
+    "duration": 0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=4.8875809e-06, tolerance=2e-06"
+  },
+  {
+    "duration": 0.35,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00012767315, tolerance=2e-06"
+  },
+  {
+    "duration": 0.4,
+    "error": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 3]], position=[0.01665135845541954], velocity=[-147.31527709960938], minimum_acceleration=[50178.05078125], maximum_acceleration=[2537.0859375]."
+  }
+]

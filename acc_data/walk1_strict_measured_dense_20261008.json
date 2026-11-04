@@ -1,0 +1,67 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.01793905695279439,
+      "wrench_pass_fraction": 0.9201065246338216,
+      "max_velocity_ratio": 0.12442861497402191
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.0002555437386035919,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.11775537580251694
+    },
+    {
+      "iteration": 2,
+      "maximum_normalized_violation": 6.121297337813303e-05,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.11479870229959488
+    },
+    {
+      "iteration": 3,
+      "maximum_normalized_violation": 0.0,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.11348730325698853
+    }
+  ],
+  "rejected": [],
+  "sampled_necessary_constraints_passed": true,
+  "options": {
+    "duration": 1.5,
+    "landing_height": 0.635,
+    "landing_com_fraction": 0.5,
+    "clearance": 0.02,
+    "swing_phase_blend": 0.6,
+    "body_join": "endpoint",
+    "pelvis_pitch_offset": -0.15,
+    "terminal_capture": "double_support",
+    "com_preview": "optimized",
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.0
+  },
+  "collision": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.039690062403678894,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "sphere_cover"
+  },
+  "scope": "Measured stopped boundary hypothesis, no physical simulation or preceding-reference continuity certification",
+  "goal_unchanged": true,
+  "goal": [
+    [
+      1.5049140453338623,
+      4.080635070800781,
+      0.053519319742918015,
+      -0.02445637807250023,
+      -0.1385621428489685,
+      -0.7159838080406189,
+      0.6837905049324036
+    ]
+  ],
+  "stop_error": "No double-support pressure-center stopping preview"
+}

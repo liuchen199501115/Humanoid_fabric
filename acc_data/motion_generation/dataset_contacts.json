@@ -1,0 +1,103 @@
+{
+  "accepted_clips": 1960,
+  "train_clips": 1764,
+  "validation_clips": 196,
+  "frames": 1623118,
+  "hours": 9.017322222222223,
+  "fps": 50.0,
+  "joint_limit_violation_fraction": 0.0,
+  "rejected": [
+    {
+      "path": "retarget/output/B2A_102_09_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_103_01_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_73_01_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_02_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_03_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_04_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_05_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_06_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_08_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_09_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_73_10_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_76_07_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_78_11_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_82_01_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_82_18_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_93_01_stageii.pkl",
+      "reason": "Fewer than 27 resampled frames"
+    },
+    {
+      "path": "retarget/output/B2A_93_02_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_03_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_04_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_05_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_06_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_07_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    },
+    {
+      "path": "retarget/output/B2A_93_08_stageii.pkl",
+      "reason": "Duplicate resampled motion"
+    }
+  ]
+}

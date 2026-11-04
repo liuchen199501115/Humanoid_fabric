@@ -1,0 +1,32 @@
+{
+  "full_pkl_tracking": false,
+  "stages": [
+    {
+      "stage": "standing",
+      "command": [
+        "bash",
+        "/home/sky/Humanoid_fabric/examples/run_lafan_tracking.sh",
+        "--flat-foot-spawn",
+        "--motion-warmup-duration",
+        "5",
+        "--transfer-balance-priority",
+        "--source-arm-roll-offset",
+        "0",
+        "--diagnose-qp-time",
+        "0",
+        "--diagnose-qp-time",
+        ".012",
+        "--duration",
+        "4",
+        "--output-path",
+        "/home/sky/Humanoid_fabric/acc_data/walk1_staged_baseline_20261004/standing.npz"
+      ],
+      "passed": false,
+      "returncode": 1,
+      "artifacts": [
+        "/home/sky/Humanoid_fabric/acc_data/walk1_staged_baseline_20261004/standing.log"
+      ]
+    }
+  ],
+  "policy": "Stop on first failed stage; unchanged control configuration across stages"
+}

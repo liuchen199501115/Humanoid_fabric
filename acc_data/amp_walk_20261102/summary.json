@@ -1,0 +1,53 @@
+{
+  "status": "failed_before_motion_playback",
+  "full_tracking_passed": false,
+  "source": "/home/sky/Humanoid_fabric/retarget/amp_reference/amp_walk_1ms.pkl",
+  "source_unchanged": true,
+  "source_frames": 2000,
+  "source_fps": 200.0,
+  "source_span_s": 9.995,
+  "configuration": "g1-md + g1-com-priority + mocap-pipeline; 1000 Hz control / 2000 Hz PhysX; full clip requested",
+  "attempts": [
+    {
+      "flat_foot_spawn": true,
+      "result": "Rejected before Isaac initialization: Flat-foot spawn would change the initial pose too far"
+    },
+    {
+      "flat_foot_spawn": false,
+      "result": "Isaac closed loop stopped on failed QP validation",
+      "exit_code": 1
+    }
+  ],
+  "failure_control_time_s": 0.043000000000000003,
+  "last_recorded_source_frame": 0.0,
+  "last_recorded_control_time_s": 0.042,
+  "interpretation": "Source starts with inferred right support, while existing warmup initializes double support. At failure logged measured normal forces were zero for both feet. This is an initialization/contact mismatch; the full moving clip has not been tested successfully.",
+  "failed_qp_log_values": {
+    "converged": false,
+    "contact_mode": 3,
+    "normal_forces_N": [
+      0.0,
+      0.0
+    ],
+    "friction_violation": 17.150161743164062,
+    "effort_violation": 187.0552215576172,
+    "collision_acceleration_error": 372.2256774902344
+  },
+  "run_command": "bash acc_data/amp_walk_20261102/run.sh",
+  "artifacts": {
+    "log": "acc_data/amp_walk_20261102/tracking.log",
+    "failure_snapshot": "acc_data/amp_walk_20261102/tracking.failure.npz",
+    "input_report": "acc_data/amp_walk_20261102/input_report.json"
+  },
+  "contact_plan": {
+    "method": "sole_corner",
+    "initial_mode": 2,
+    "mode_counts": [
+      0,
+      685,
+      887,
+      428
+    ],
+    "ambiguous_frames": 36
+  }
+}

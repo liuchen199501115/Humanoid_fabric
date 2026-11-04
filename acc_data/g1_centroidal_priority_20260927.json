@@ -1,0 +1,104 @@
+{
+  "5.8": {
+    "com_only": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        -4.191057370050988e-05,
+        8.364111686365305e-06,
+        -0.00013248245691754867
+      ],
+      "centroidal_momentum_residual": [
+        7.913999895249951,
+        -0.7064354740346417,
+        6.031734888805028
+      ]
+    },
+    "centroidal": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        -4.005395237882681e-05,
+        6.605068984644191e-06,
+        -0.00016290937704310782
+      ],
+      "centroidal_momentum_residual": [
+        1.287943712213746e-05,
+        4.946543370465406e-06,
+        1.1517369198799088e-05
+      ]
+    }
+  },
+  "6.5": {
+    "com_only": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        -1.6356947442064396e-06,
+        -4.294836087881393e-07,
+        -0.0001430656448007106
+      ],
+      "centroidal_momentum_residual": [
+        -5.088033919696991,
+        1.160057186655422,
+        -6.525242733850303
+      ]
+    },
+    "centroidal": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        -1.4981227444144096e-06,
+        6.238340154451905e-07,
+        -0.0001425698405207454
+      ],
+      "centroidal_momentum_residual": [
+        -1.0609365546088156e-06,
+        5.823481199485059e-07,
+        -3.034848077732022e-06
+      ]
+    }
+  },
+  "7.0": {
+    "com_only": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        -0.22486430321268736,
+        0.2738607611996686,
+        -1.6884030213845278
+      ],
+      "centroidal_momentum_residual": [
+        71.56086686278087,
+        20.325114090465867,
+        -22.94277469100581
+      ]
+    },
+    "centroidal": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "certified": true,
+      "center_of_mass_residual": [
+        0.3340711509305855,
+        -3.195247170909354,
+        -5.289529759692398
+      ],
+      "centroidal_momentum_residual": [
+        2.740451953952558,
+        0.6389270420841111,
+        -1.9081993337033385
+      ]
+    }
+  }
+}

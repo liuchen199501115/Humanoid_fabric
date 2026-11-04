@@ -1,0 +1,26 @@
+{
+  "exact_target_status": 0,
+  "exact_target_feasible": true,
+  "closest_status": 0,
+  "minimum_max_error": 5.022648963404208e-13,
+  "constraint_violation": 1.944302763234873e-08,
+  "closest_com_acceleration": [
+    -1.1633356809616033,
+    2.839651107788588,
+    0.8098573088646359
+  ],
+  "time_s": 10.25,
+  "requested_com_acceleration": [
+    -1.1633356809616089,
+    2.839651107788086,
+    0.8098573088645935
+  ],
+  "controller_com_acceleration": [
+    0.27210693983606254,
+    -0.2887917652632874,
+    -0.2655117726596986
+  ],
+  "controller_max_error": 3.128442873051373,
+  "affine_replay_error": 6.792219531259747e-08,
+  "scope": "Offline instantaneous COM-only optimum under ALL saved hard constraints. No controller change or closed-loop stability certificate."
+}

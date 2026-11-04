@@ -1,0 +1,50 @@
+[
+  {
+    "frame": 0,
+    "minimum_cover_distance": 0.2417033314704895,
+    "pair": [
+      "left_wrist_pitch_link_cover_0",
+      "torso_link_cover_2"
+    ]
+  },
+  {
+    "frame": 113,
+    "minimum_cover_distance": -0.03689669817686081,
+    "pair": [
+      "left_wrist_pitch_link_cover_2",
+      "left_hip_roll_link_cover_2"
+    ]
+  },
+  {
+    "frame": 114,
+    "minimum_cover_distance": -0.03861922770738602,
+    "pair": [
+      "left_wrist_pitch_link_cover_2",
+      "left_hip_roll_link_cover_2"
+    ]
+  },
+  {
+    "frame": 118,
+    "minimum_cover_distance": -0.053186461329460144,
+    "pair": [
+      "right_rubber_hand_cover_0",
+      "right_hip_roll_link_cover_0"
+    ]
+  },
+  {
+    "frame": 122,
+    "minimum_cover_distance": -0.07421468943357468,
+    "pair": [
+      "right_rubber_hand_cover_0",
+      "right_hip_roll_link_cover_1"
+    ]
+  },
+  {
+    "frame": 129,
+    "minimum_cover_distance": -0.0707598328590393,
+    "pair": [
+      "right_rubber_hand_cover_0",
+      "right_hip_roll_link_cover_1"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "time": 3.5,
+    "cutoff": 0.4,
+    "peak_active_bias": -1.2174268960952759,
+    "distance": 0.38403385877609253,
+    "row": 64
+  },
+  {
+    "time": 3.5,
+    "cutoff": 1.0,
+    "peak_active_bias": -1.2174268960952759,
+    "distance": 0.38403385877609253,
+    "row": 64
+  },
+  {
+    "time": 3.6,
+    "cutoff": 0.4,
+    "peak_active_bias": -1.7798895835876465,
+    "distance": 0.36843717098236084,
+    "row": 64
+  },
+  {
+    "time": 3.6,
+    "cutoff": 1.0,
+    "peak_active_bias": -1.7798895835876465,
+    "distance": 0.36843717098236084,
+    "row": 64
+  },
+  {
+    "time": 3.654,
+    "cutoff": 0.4,
+    "peak_active_bias": -2.4663639068603516,
+    "distance": 0.30415230989456177,
+    "row": 76
+  },
+  {
+    "time": 3.654,
+    "cutoff": 1.0,
+    "peak_active_bias": -2.4663639068603516,
+    "distance": 0.30415230989456177,
+    "row": 76
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "frame": 113,
+    "links": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ],
+    "sphere_cover_gap": -0.03689669817686081,
+    "convex_hulls_overlap": false,
+    "distance": 0.007760560958061738,
+    "solver_success": true,
+    "constraint_error": 6.938893903907228e-18
+  },
+  {
+    "frame": 114,
+    "links": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ],
+    "sphere_cover_gap": -0.03861922770738602,
+    "convex_hulls_overlap": false,
+    "distance": 0.0065353556166143694,
+    "solver_success": true,
+    "constraint_error": 3.469446951953614e-17
+  },
+  {
+    "frame": 118,
+    "links": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "sphere_cover_gap": -0.053186461329460144,
+    "convex_hulls_overlap": false,
+    "distance": 0.018151992062289957,
+    "solver_success": true,
+    "constraint_error": 1.3877787807814457e-17
+  },
+  {
+    "frame": 122,
+    "links": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "sphere_cover_gap": -0.07421468943357468,
+    "convex_hulls_overlap": false,
+    "distance": 0.0019157333148033648,
+    "solver_success": true,
+    "constraint_error": 3.469446951953614e-18
+  },
+  {
+    "frame": 129,
+    "links": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "sphere_cover_gap": -0.0707598328590393,
+    "convex_hulls_overlap": false,
+    "distance": 0.003942919693046434,
+    "solver_success": true,
+    "constraint_error": 2.3418766925686896e-17
+  }
+]

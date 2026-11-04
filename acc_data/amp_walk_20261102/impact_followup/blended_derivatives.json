@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "frame": 184.2,
+      "position_derivative_error": 3.739802939550785e-09,
+      "acceleration_error": 1.6221797238813451e-09
+    },
+    {
+      "frame": 189.3,
+      "position_derivative_error": 2.977361135414469e-09,
+      "acceleration_error": 1.3966586820401972e-07
+    },
+    {
+      "frame": 195.3,
+      "position_derivative_error": 1.3372365159636246e-09,
+      "acceleration_error": 2.3668636472962135e-07
+    },
+    {
+      "frame": 203.7,
+      "position_derivative_error": 3.807754112017392e-11,
+      "acceleration_error": 3.057820663343591e-09
+    },
+    {
+      "frame": 205.2,
+      "position_derivative_error": 4.496079550331267e-11,
+      "acceleration_error": 1.073530597750505e-09
+    }
+  ]
+}

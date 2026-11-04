@@ -1,0 +1,14 @@
+{
+  "0.02": {
+    "base_position_acceleration_error_max": 0.0022563962032151608,
+    "base_position_acceleration_error_p95": 0.001040362291093721,
+    "joint_acceleration_error_max": 0.0005176929718242462,
+    "joint_acceleration_error_p95": 0.00013723996036487632
+  },
+  "0.002": {
+    "base_position_acceleration_error_max": 0.21139772021783187,
+    "base_position_acceleration_error_p95": 0.1136388967926116,
+    "joint_acceleration_error_max": 0.05485740223187818,
+    "joint_acceleration_error_p95": 0.013250159519584413
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "scope": "Measured unloading boundary; offline necessary checks only",
+  "boundary": {
+    "time": 30.616,
+    "frame": 112.50004906328444,
+    "acceleration_source": "WBC prediction at the same sample; not measured acceleration",
+    "unloading": {
+      "scope": "double_support_unloading_only",
+      "full_pkl_tracking": false,
+      "unloading_passed": true,
+      "measured_steps": 0,
+      "support": "left",
+      "checks": {
+        "completed": true,
+        "full_window": true,
+        "double_support": true,
+        "unloaded": true,
+        "support_loaded": true,
+        "com_tracking": true,
+        "body_settled": true,
+        "qp_valid": true,
+        "controller_valid": true
+      },
+      "initial_load_n": [
+        256.57427978515625,
+        72.0281753540039
+      ],
+      "final_load_n": [
+        328.4836730957031,
+        4.149555683135986
+      ],
+      "final_second": {
+        "max_outgoing_load_n": 5.0592427253723145,
+        "min_support_load_n": 310.80029296875,
+        "max_com_error_m": 0.0004181511758361012,
+        "max_com_speed_m_s": 0.0008155838586390018,
+        "max_prediction_error_n": 12.62872314453125
+      },
+      "peak_effort_ratio": 0.800000011920929,
+      "peak_base_error": 3.0517578125e-05,
+      "peak_contact_error": 3.4570693969726562e-06,
+      "peak_friction_error": 3.814697265625e-06,
+      "peak_bound_error": 0.0
+    }
+  },
+  "source_record": "acc_data/walk1_unload_verified_20261012.npz",
+  "ground_offset_m": -0.02146398276090622,
+  "stance_source_minus_anchor_m": [
+    0.0007300376892089844,
+    -0.006772041320800781,
+    0.00411953404545784
+  ],
+  "candidates": [
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "first_sample",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "entry_error": {
+        "q": 0.0,
+        "v": 9.857467375695705e-08,
+        "a": 1.7043203115463257e-07
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00016719103, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 28,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.5487956702709196,
+      "velocity_ratio": {
+        "maximum": 0.09951344132423401,
+        "time": 0.1
+      },
+      "torque_ratio": {
+        "maximum": 1.4607386589050293,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 0.24487121403217316,
+        "time": 0.05
+      },
+      "joint_bound_score": {
+        "maximum": 0.25210657715797424,
+        "time": 1.35
+      },
+      "exact_wrench_score": {
+        "maximum": 1.0491135120391846,
+        "time": 1.35
+      },
+      "sampled_constraints_passed": false
+    },
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "distributed",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "entry_error": {
+        "q": 0.0,
+        "v": 1.958869688678533e-08,
+        "a": 2.039596438407898e-07
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00022691488, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 28,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.5474925637245176,
+      "velocity_ratio": {
+        "maximum": 0.08506052196025848,
+        "time": 1.35
+      },
+      "torque_ratio": {
+        "maximum": 1.4498770236968994,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 0.17374086380004883,
+        "time": 1.35
+      },
+      "joint_bound_score": {
+        "maximum": 0.30113276839256287,
+        "time": 1.35
+      },
+      "exact_wrench_score": {
+        "maximum": 1.0302094221115112,
+        "time": 1.35
+      },
+      "sampled_constraints_passed": false
+    },
+    {
+      "options": {
+        "duration": 1.5,
+        "clearance": 0.02,
+        "body_join": "endpoint",
+        "com_preview": "full_body_source",
+        "landing_fraction": 1.0,
+        "landing_search_depth": 0.0
+      },
+      "entry_error": {
+        "q": 0.0,
+        "v": 2.0054358174093068e-08,
+        "a": 2.039596438407898e-07
+      },
+      "error": "Could not find joint-limited flat-foot reference geometry: residual=2.4676323e-05, tolerance=2e-06",
+      "first_failed_time_s": 1.4000000000000001,
+      "completed_sample_count": 28,
+      "goal": [
+        [
+          1.5049140453338623,
+          4.080635070800781,
+          0.053519319742918015,
+          -0.02445637807250023,
+          -0.1385621428489685,
+          -0.7159838080406189,
+          0.6837905049324036
+        ]
+      ],
+      "prefix_constraint_score": 1.5305337384343145,
+      "velocity_ratio": {
+        "maximum": 0.06247226148843765,
+        "time": 1.35
+      },
+      "torque_ratio": {
+        "maximum": 1.490822196006775,
+        "time": 1.35
+      },
+      "acceleration_ratio": {
+        "maximum": 0.13166475296020508,
+        "time": 0.2
+      },
+      "joint_bound_score": {
+        "maximum": 0.15346264839172363,
+        "time": 1.35
+      },
+      "exact_wrench_score": {
+        "maximum": 1.096909999847412,
+        "time": 1.35
+      },
+      "sampled_constraints_passed": false
+    }
+  ],
+  "simulation_validated": false
+}

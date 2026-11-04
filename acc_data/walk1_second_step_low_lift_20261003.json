@@ -1,0 +1,88 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.08390703052282332,
+      "wrench_pass_fraction": 0.995004995004995,
+      "max_velocity_ratio": 0.056684620678424835
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.00416327640414238,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.05591525882482529
+    }
+  ],
+  "rejected": [
+    {
+      "iteration": 1,
+      "fraction": 0.5,
+      "violation": 0.004591413773596287
+    },
+    {
+      "iteration": 1,
+      "fraction": 0.25,
+      "violation": 0.004377604927867651
+    },
+    {
+      "iteration": 1,
+      "fraction": 0.125,
+      "violation": 0.004270288161933422
+    },
+    {
+      "iteration": 1,
+      "fraction": 0.0625,
+      "violation": 0.004216628614813089
+    }
+  ],
+  "sampled_necessary_constraints_passed": false,
+  "max_joint_bound_score": 0.00416327640414238,
+  "peak_acceleration_ratio": 0.1337909996509552,
+  "peak_torque_ratio": 0.29127299785614014,
+  "candidate_options": {
+    "duration": 2.0,
+    "landing_height": 0.66,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.85,
+    "clearance": 0.01,
+    "landing_com_fraction": 0.45,
+    "landing_fraction": 0.4,
+    "landing_search_depth": 0.004,
+    "terminal_capture": "double_support",
+    "pelvis_pitch_offset": -0.2
+  },
+  "contact_search_depth": 0.004,
+  "contact_search_requires_measured_load": true,
+  "source_landing_pose": [
+    1.6180938482284546,
+    3.4408485889434814,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7072040438652039,
+    0.707009494304657
+  ],
+  "planned_landing_pose": [
+    1.6357325315475464,
+    4.116634845733643,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7072040438652039,
+    0.707009494304657
+  ],
+  "landing_deviation_m": 0.6760163903236389,
+  "scope": "planned_first_source_step",
+  "simulation_validated": false,
+  "full_pkl_tracking": false,
+  "start_frame": 129,
+  "end_frame": 155,
+  "duration": 2.0,
+  "worst_joint_bound": {
+    "time": 0.614,
+    "joint": "right_ankle_roll_joint",
+    "acceleration": -0.8649409413337708,
+    "lower": -0.24044948816299438,
+    "upper": 26.869949340820312
+  }
+}

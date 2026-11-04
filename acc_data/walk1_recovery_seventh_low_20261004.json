@@ -1,0 +1,124 @@
+{
+  "history": [
+    {
+      "iteration": 0,
+      "maximum_normalized_violation": 0.0018343692645430565,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.11429522186517715
+    },
+    {
+      "iteration": 1,
+      "maximum_normalized_violation": 0.0015412801876664162,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10956690460443497
+    },
+    {
+      "iteration": 2,
+      "maximum_normalized_violation": 0.001401778543367982,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10740989446640015
+    },
+    {
+      "iteration": 3,
+      "maximum_normalized_violation": 0.0013353305403143167,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10642217099666595
+    },
+    {
+      "iteration": 4,
+      "maximum_normalized_violation": 0.0013033548602834344,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10596940666437149
+    },
+    {
+      "iteration": 5,
+      "maximum_normalized_violation": 0.0012880557915195823,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10576249659061432
+    },
+    {
+      "iteration": 6,
+      "maximum_normalized_violation": 0.0012808842584490776,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.1056690365076065
+    },
+    {
+      "iteration": 7,
+      "maximum_normalized_violation": 0.0012772077461704612,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.1056235283613205
+    },
+    {
+      "iteration": 8,
+      "maximum_normalized_violation": 0.0012755856150761247,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10560382902622223
+    },
+    {
+      "iteration": 9,
+      "maximum_normalized_violation": 0.0012747335713356733,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10559532791376114
+    },
+    {
+      "iteration": 10,
+      "maximum_normalized_violation": 0.001274348353035748,
+      "wrench_pass_fraction": 1.0,
+      "max_velocity_ratio": 0.10558978468179703
+    }
+  ],
+  "rejected": [],
+  "sampled_necessary_constraints_passed": false,
+  "fixed_source_frame": 176,
+  "maximum_step_distance": 0.42,
+  "max_joint_bound_score": 0.001274348353035748,
+  "peak_acceleration_ratio": 0.13370731472969055,
+  "peak_torque_ratio": 0.27698490023612976,
+  "candidate_options": {
+    "duration": 2.0,
+    "landing_height": 0.64,
+    "body_smoothing_passes": 4,
+    "swing_phase_blend": 0.85,
+    "body_join": "distributed",
+    "clearance": 0.01,
+    "landing_com_fraction": 0.4,
+    "landing_fraction": 0.6677279335140555,
+    "landing_search_depth": 0.004,
+    "terminal_capture": "double_support",
+    "pelvis_pitch_offset": -0.2
+  },
+  "contact_search_depth": 0.004,
+  "contact_search_requires_measured_load": true,
+  "source_landing_pose": [
+    1.4652290344238281,
+    2.857807159423828,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7226036787033081,
+    0.6912625432014465
+  ],
+  "planned_landing_pose": [
+    1.4656232595443726,
+    3.066805362701416,
+    0.03500000014901161,
+    0.0,
+    0.0,
+    -0.7226036787033081,
+    0.6912625432014465
+  ],
+  "landing_deviation_m": 0.20899857580661774,
+  "scope": "fixed_frame_recovery",
+  "simulation_validated": false,
+  "full_pkl_tracking": false,
+  "start_frame": 176,
+  "end_frame": 176,
+  "duration": 2.0,
+  "worst_joint_bound": {
+    "time": 1.028,
+    "joint": "left_ankle_roll_joint",
+    "acceleration": -0.03564057499170303,
+    "lower": -27.337190628051758,
+    "upper": -0.2267928123474121
+  }
+}

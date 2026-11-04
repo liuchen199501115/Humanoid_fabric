@@ -1,0 +1,38 @@
+[
+  {
+    "duration": 0.2,
+    "error": "No double-support pressure-center stopping preview"
+  },
+  {
+    "sampled_necessary_constraints_passed": true,
+    "samples": 101,
+    "max_velocity_ratio": 0.11843012273311615,
+    "max_joint_bound_violation": 0.0,
+    "wrench_infeasible_samples": 0,
+    "peak_torque_ratio": 0.2695562364720917,
+    "scope": "double_support_stop_nominal_reference",
+    "simulation_validated": false,
+    "full_pkl_tracking": false,
+    "duration": 0.25
+  },
+  {
+    "duration": 0.3,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=3.0040741e-05, tolerance=2e-06"
+  },
+  {
+    "duration": 0.35,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=7.635355e-05, tolerance=2e-06"
+  },
+  {
+    "duration": 0.4,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=6.3538551e-05, tolerance=2e-06"
+  },
+  {
+    "duration": 0.6,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0012004077, tolerance=2e-06"
+  },
+  {
+    "duration": 0.8,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00019592047, tolerance=2e-06"
+  }
+]

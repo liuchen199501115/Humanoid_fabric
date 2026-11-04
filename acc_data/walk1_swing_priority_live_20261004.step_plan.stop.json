@@ -1,0 +1,11 @@
+{
+  "sampled_necessary_constraints_passed": true,
+  "samples": 126,
+  "max_velocity_ratio": 0.11843012273311615,
+  "max_joint_bound_violation": 0.0,
+  "wrench_infeasible_samples": 0,
+  "peak_torque_ratio": 0.2695616470444622,
+  "scope": "double_support_stop_nominal_reference",
+  "simulation_validated": false,
+  "full_pkl_tracking": false
+}

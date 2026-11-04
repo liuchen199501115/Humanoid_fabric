@@ -1,0 +1,133 @@
+{
+  "samples": [
+    {
+      "time": 7.3,
+      "right_knee_velocity": -0.5916281342506409,
+      "predicted_right_knee_acceleration": 5.418678283691406,
+      "interval_observed_right_knee_acceleration": 0.09067058563232212,
+      "old_foot_normal_force": 46.5113525390625,
+      "mode": 3
+    },
+    {
+      "time": 7.32,
+      "right_knee_velocity": -0.5898147225379944,
+      "predicted_right_knee_acceleration": 5.525763988494873,
+      "interval_observed_right_knee_acceleration": 1.560938358306918,
+      "old_foot_normal_force": 45.18231201171875,
+      "mode": 3
+    },
+    {
+      "time": 7.34,
+      "right_knee_velocity": -0.5585959553718567,
+      "predicted_right_knee_acceleration": 5.392484188079834,
+      "interval_observed_right_knee_acceleration": 0.27992129325866055,
+      "old_foot_normal_force": 45.400997161865234,
+      "mode": 3
+    },
+    {
+      "time": 7.36,
+      "right_knee_velocity": -0.5529975295066833,
+      "predicted_right_knee_acceleration": 3.0766496658325195,
+      "interval_observed_right_knee_acceleration": -0.5380988121032829,
+      "old_foot_normal_force": 44.193138122558594,
+      "mode": 2
+    },
+    {
+      "time": 7.38,
+      "right_knee_velocity": -0.5637595057487488,
+      "predicted_right_knee_acceleration": 2.093214273452759,
+      "interval_observed_right_knee_acceleration": -4.078650474548246,
+      "old_foot_normal_force": 0.24595913290977478,
+      "mode": 2
+    },
+    {
+      "time": 7.4,
+      "right_knee_velocity": -0.6453325152397156,
+      "predicted_right_knee_acceleration": 0.7914164662361145,
+      "interval_observed_right_knee_acceleration": -5.2940666675568755,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.42,
+      "right_knee_velocity": -0.7512138485908508,
+      "predicted_right_knee_acceleration": -0.7682058811187744,
+      "interval_observed_right_knee_acceleration": -6.922215223312218,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.44,
+      "right_knee_velocity": -0.8896581530570984,
+      "predicted_right_knee_acceleration": -2.3035197257995605,
+      "interval_observed_right_knee_acceleration": -9.73178446292898,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.46,
+      "right_knee_velocity": -1.0842938423156738,
+      "predicted_right_knee_acceleration": -3.4370696544647217,
+      "interval_observed_right_knee_acceleration": -11.234980821609238,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.48,
+      "right_knee_velocity": -1.3089934587478638,
+      "predicted_right_knee_acceleration": -4.347391128540039,
+      "interval_observed_right_knee_acceleration": -15.638327598572111,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.5,
+      "right_knee_velocity": -1.6217600107192993,
+      "predicted_right_knee_acceleration": -4.4340057373046875,
+      "interval_observed_right_knee_acceleration": -16.842967271804422,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.5200000000000005,
+      "right_knee_velocity": -1.9586193561553955,
+      "predicted_right_knee_acceleration": 0.883302628993988,
+      "interval_observed_right_knee_acceleration": -18.39430332183877,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.54,
+      "right_knee_velocity": -2.326505422592163,
+      "predicted_right_knee_acceleration": 5.000037670135498,
+      "interval_observed_right_knee_acceleration": -18.124020099639473,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.5600000000000005,
+      "right_knee_velocity": -2.688985824584961,
+      "predicted_right_knee_acceleration": 5.000009536743164,
+      "interval_observed_right_knee_acceleration": -20.844066143036333,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.58,
+      "right_knee_velocity": -3.1058671474456787,
+      "predicted_right_knee_acceleration": 4.999989032745361,
+      "interval_observed_right_knee_acceleration": -22.72492647170968,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    },
+    {
+      "time": 7.6000000000000005,
+      "right_knee_velocity": -3.560365676879883,
+      "predicted_right_knee_acceleration": 5.322821140289307,
+      "interval_observed_right_knee_acceleration": -26.430845260620682,
+      "old_foot_normal_force": 0.0,
+      "mode": 2
+    }
+  ],
+  "scope": "20 ms average observed acceleration vs instantaneous QP prediction; interval includes changing torques and contacts, so differences alone do not identify a cause."
+}

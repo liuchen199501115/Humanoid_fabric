@@ -1,0 +1,39 @@
+[
+  {
+    "time": 1.1,
+    "active_collision_constraints": [
+      {
+        "qp_row": 435,
+        "pair_index": 438,
+        "pair": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_1"
+        ],
+        "measured_distance": 0.19243112206459045
+      },
+      {
+        "qp_row": 437,
+        "pair_index": 440,
+        "pair": [
+          "left_wrist_roll_link_cover_0",
+          "torso_link_cover_0"
+        ],
+        "measured_distance": 0.1025547981262207
+      }
+    ]
+  },
+  {
+    "time": 1.6,
+    "active_collision_constraints": [
+      {
+        "qp_row": 245,
+        "pair_index": 213,
+        "pair": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_1"
+        ],
+        "measured_distance": 0.1858508586883545
+      }
+    ]
+  }
+]

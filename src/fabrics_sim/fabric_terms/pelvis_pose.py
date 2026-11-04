@@ -108,33 +108,20 @@ class PelvisPoseAttractor(BaseFabricTerm):
         linear_velocity = xd[:, 0:3]
         angular_velocity = xd[:, 3:6]
 
-        # Optional reference task velocity:
-        # features = [reference_linear_velocity,
-        #             reference_angular_velocity]
-        if features is not None:
-            if features.shape != x.shape:
-                raise ValueError(
-                    "Pelvis pose velocity target must have shape "
-                    f"{x.shape}, got {features.shape}."
-                )
-
-            linear_velocity_error = (
-                linear_velocity - features[:, 0:3]
-            )
-
-            angular_velocity_error = (
-                angular_velocity - features[:, 3:6]
-            )
-        else:
-            linear_velocity_error = linear_velocity
-            angular_velocity_error = angular_velocity
+        reference_velocity, reference_acceleration = (
+            self._parse_reference(features, x)
+        )
+        linear_velocity_error = linear_velocity - reference_velocity[:, 0:3]
+        angular_velocity_error = angular_velocity - reference_velocity[:, 3:6]
 
         desired_linear_acceleration = (
+            reference_acceleration[:, 0:3]
             -self.position_stiffness * position_error
             -self.position_damping * linear_velocity_error
         )
 
         desired_angular_acceleration = (
+            reference_acceleration[:, 3:6]
             -self.orientation_stiffness * orientation_error
             -self.orientation_damping * angular_velocity_error
         )
@@ -160,3 +147,29 @@ class PelvisPoseAttractor(BaseFabricTerm):
             self.force = force
         else:
             self.force.copy_(force)
+
+    @staticmethod
+    def _parse_reference(features, x):
+        """Return desired task velocity and acceleration.
+
+        A tensor feature remains the legacy velocity-only interface.  A dict
+        permits the trajectory controller to add a feed-forward acceleration:
+        ``a_des = a_ref - Kp * e - Kd * (xd - xd_ref)``.
+        """
+        zeros = torch.zeros_like(x)
+        if features is None:
+            return zeros, zeros
+        if torch.is_tensor(features):
+            if features.shape != x.shape:
+                raise ValueError(
+                    "Pelvis pose velocity target must have shape "
+                    f"{x.shape}, got {features.shape}."
+                )
+            return features, zeros
+        if not isinstance(features, dict):
+            raise TypeError("Pelvis reference must be a tensor or dict.")
+        velocity = features.get("velocity", zeros)
+        acceleration = features.get("acceleration", zeros)
+        if velocity.shape != x.shape or acceleration.shape != x.shape:
+            raise ValueError("Pelvis reference tensors must match task shape.")
+        return velocity, acceleration

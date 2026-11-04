@@ -1,0 +1,1825 @@
+{
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "source_frames": 7839,
+  "landings": 340,
+  "failures": 112,
+  "full_tracking_achieved": false,
+  "results": [
+    {
+      "frame": 129,
+      "height": 0.6361966729164124,
+      "root_z_delta": -0.027960002422332764,
+      "max_joint_delta": 0.44488149881362915
+    },
+    {
+      "frame": 155,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 176,
+      "height": 0.6207824349403381,
+      "root_z_delta": -0.043482184410095215,
+      "max_joint_delta": 0.520430326461792
+    },
+    {
+      "frame": 198,
+      "height": 0.6152945160865784,
+      "root_z_delta": -0.05170297622680664,
+      "max_joint_delta": 0.5233967304229736
+    },
+    {
+      "frame": 219,
+      "height": 0.6257126331329346,
+      "root_z_delta": -0.044633567333221436,
+      "max_joint_delta": 0.4464344084262848
+    },
+    {
+      "frame": 242,
+      "height": 0.6205472350120544,
+      "root_z_delta": -0.05392652750015259,
+      "max_joint_delta": 0.5329990386962891
+    },
+    {
+      "frame": 263,
+      "height": 0.6437703967094421,
+      "root_z_delta": -0.03654831647872925,
+      "max_joint_delta": 0.3507183790206909
+    },
+    {
+      "frame": 283,
+      "height": 0.6761497855186462,
+      "root_z_delta": -0.015781164169311523,
+      "max_joint_delta": 0.13309325277805328
+    },
+    {
+      "frame": 337,
+      "height": 0.6886031627655029,
+      "root_z_delta": -0.00882565975189209,
+      "max_joint_delta": 0.14830288290977478
+    },
+    {
+      "frame": 382,
+      "height": 0.6894454956054688,
+      "root_z_delta": -0.009770691394805908,
+      "max_joint_delta": 0.17922154068946838
+    },
+    {
+      "frame": 454,
+      "height": 0.6847509145736694,
+      "root_z_delta": 0.014584600925445557,
+      "max_joint_delta": 2.083211898803711
+    },
+    {
+      "frame": 481,
+      "height": 0.6105438470840454,
+      "root_z_delta": -0.0626446008682251,
+      "max_joint_delta": 0.623212456703186
+    },
+    {
+      "frame": 505,
+      "height": 0.6051998138427734,
+      "root_z_delta": -0.0669674277305603,
+      "max_joint_delta": 0.6281515955924988
+    },
+    {
+      "frame": 526,
+      "height": 0.6242453455924988,
+      "root_z_delta": -0.04803919792175293,
+      "max_joint_delta": 0.49659860134124756
+    },
+    {
+      "frame": 550,
+      "height": 0.6143237352371216,
+      "root_z_delta": -0.05558997392654419,
+      "max_joint_delta": 0.550330638885498
+    },
+    {
+      "frame": 572,
+      "height": 0.6371373534202576,
+      "root_z_delta": -0.032457709312438965,
+      "max_joint_delta": 0.40862876176834106
+    },
+    {
+      "frame": 596,
+      "height": 0.619253396987915,
+      "root_z_delta": -0.04907470941543579,
+      "max_joint_delta": 0.551853597164154
+    },
+    {
+      "frame": 619,
+      "height": 0.6486619710922241,
+      "root_z_delta": -0.023235738277435303,
+      "max_joint_delta": 0.32859212160110474
+    },
+    {
+      "frame": 644,
+      "height": 0.6723839640617371,
+      "root_z_delta": -0.00978243350982666,
+      "max_joint_delta": 0.15217053890228271
+    },
+    {
+      "frame": 675,
+      "height": 0.6491337418556213,
+      "root_z_delta": -0.020947694778442383,
+      "max_joint_delta": 0.29254627227783203
+    },
+    {
+      "frame": 700,
+      "height": 0.6318110823631287,
+      "root_z_delta": -0.041371703147888184,
+      "max_joint_delta": 0.4527938663959503
+    },
+    {
+      "frame": 722,
+      "height": 0.6478750705718994,
+      "root_z_delta": -0.032891690731048584,
+      "max_joint_delta": 0.3193391263484955
+    },
+    {
+      "frame": 747,
+      "height": 0.639842689037323,
+      "root_z_delta": -0.04066735506057739,
+      "max_joint_delta": 0.38782715797424316
+    },
+    {
+      "frame": 770,
+      "height": 0.6365300416946411,
+      "root_z_delta": -0.03888815641403198,
+      "max_joint_delta": 0.4642243981361389
+    },
+    {
+      "frame": 793,
+      "height": 0.6449116468429565,
+      "root_z_delta": -0.028827428817749023,
+      "max_joint_delta": 0.3286289572715759
+    },
+    {
+      "frame": 814,
+      "height": 0.6770491003990173,
+      "root_z_delta": -0.0031276345252990723,
+      "max_joint_delta": 0.1517646163702011
+    },
+    {
+      "frame": 837,
+      "height": 0.6915690898895264,
+      "root_z_delta": -0.004683434963226318,
+      "max_joint_delta": 0.11309058964252472
+    },
+    {
+      "frame": 866,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 890,
+      "height": 0.6126609444618225,
+      "root_z_delta": -0.046594083309173584,
+      "max_joint_delta": 0.5573889017105103
+    },
+    {
+      "frame": 911,
+      "height": 0.6272696256637573,
+      "root_z_delta": -0.047707557678222656,
+      "max_joint_delta": 0.46414339542388916
+    },
+    {
+      "frame": 933,
+      "height": 0.6228788495063782,
+      "root_z_delta": -0.045512855052948,
+      "max_joint_delta": 0.4104733467102051
+    },
+    {
+      "frame": 955,
+      "height": 0.6242846250534058,
+      "root_z_delta": -0.04555994272232056,
+      "max_joint_delta": 0.5388023853302002
+    },
+    {
+      "frame": 976,
+      "height": 0.6249806880950928,
+      "root_z_delta": -0.04821044206619263,
+      "max_joint_delta": 0.5289769172668457
+    },
+    {
+      "frame": 997,
+      "height": 0.6228278875350952,
+      "root_z_delta": -0.04653877019882202,
+      "max_joint_delta": 0.5559170842170715
+    },
+    {
+      "frame": 1018,
+      "height": 0.6465061902999878,
+      "root_z_delta": -0.02733290195465088,
+      "max_joint_delta": 0.31765100359916687
+    },
+    {
+      "frame": 1041,
+      "height": 0.6880519390106201,
+      "root_z_delta": -0.009052574634552002,
+      "max_joint_delta": 0.19064916670322418
+    },
+    {
+      "frame": 1086,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 1106,
+      "height": 0.6225818991661072,
+      "root_z_delta": -0.048956334590911865,
+      "max_joint_delta": 0.5810140371322632
+    },
+    {
+      "frame": 1128,
+      "height": 0.6260799765586853,
+      "root_z_delta": -0.04492056369781494,
+      "max_joint_delta": 0.48570147156715393
+    },
+    {
+      "frame": 1150,
+      "height": 0.6462026238441467,
+      "root_z_delta": -0.03181803226470947,
+      "max_joint_delta": 0.3667133152484894
+    },
+    {
+      "frame": 1171,
+      "height": 0.676724910736084,
+      "root_z_delta": -0.013230741024017334,
+      "max_joint_delta": 0.1602262407541275
+    },
+    {
+      "frame": 1202,
+      "height": 0.6748823523521423,
+      "root_z_delta": -0.01982283592224121,
+      "max_joint_delta": 0.33952951431274414
+    },
+    {
+      "frame": 1238,
+      "height": 0.6497218012809753,
+      "root_z_delta": -0.02075117826461792,
+      "max_joint_delta": 0.2969171404838562
+    },
+    {
+      "frame": 1260,
+      "height": 0.663977324962616,
+      "root_z_delta": -0.021735548973083496,
+      "max_joint_delta": 0.2768235504627228
+    },
+    {
+      "frame": 1288,
+      "height": 0.6488544344902039,
+      "root_z_delta": -0.028788328170776367,
+      "max_joint_delta": 0.4597294330596924
+    },
+    {
+      "frame": 1315,
+      "height": 0.6614047288894653,
+      "root_z_delta": -0.02157008647918701,
+      "max_joint_delta": 0.39446502923965454
+    },
+    {
+      "frame": 1343,
+      "height": 0.6626717448234558,
+      "root_z_delta": -0.01143801212310791,
+      "max_joint_delta": 0.4262477159500122
+    },
+    {
+      "frame": 1367,
+      "height": 0.6650524139404297,
+      "root_z_delta": -0.018610239028930664,
+      "max_joint_delta": 0.26636648178100586
+    },
+    {
+      "frame": 1394,
+      "height": 0.6715900897979736,
+      "root_z_delta": -0.0025305747985839844,
+      "max_joint_delta": 0.16899743676185608
+    },
+    {
+      "frame": 1425,
+      "height": 0.655341386795044,
+      "root_z_delta": -0.021320879459381104,
+      "max_joint_delta": 0.4206652045249939
+    },
+    {
+      "frame": 1452,
+      "height": 0.644662082195282,
+      "root_z_delta": -0.03325986862182617,
+      "max_joint_delta": 0.457979679107666
+    },
+    {
+      "frame": 1475,
+      "height": 0.6583734750747681,
+      "root_z_delta": -0.012706995010375977,
+      "max_joint_delta": 0.3748401999473572
+    },
+    {
+      "frame": 1498,
+      "height": 0.6540930867195129,
+      "root_z_delta": -0.03155773878097534,
+      "max_joint_delta": 0.4815729260444641
+    },
+    {
+      "frame": 1517,
+      "height": 0.6736544370651245,
+      "root_z_delta": -0.013339579105377197,
+      "max_joint_delta": 0.27676188945770264
+    },
+    {
+      "frame": 1543,
+      "height": 0.6552762985229492,
+      "root_z_delta": -0.033226072788238525,
+      "max_joint_delta": 0.3983932435512543
+    },
+    {
+      "frame": 1565,
+      "height": 0.6738952994346619,
+      "root_z_delta": -0.013812363147735596,
+      "max_joint_delta": 0.2042151391506195
+    },
+    {
+      "frame": 1591,
+      "height": 0.6489285826683044,
+      "root_z_delta": -0.030698001384735107,
+      "max_joint_delta": 0.34612229466438293
+    },
+    {
+      "frame": 1613,
+      "height": 0.6718010306358337,
+      "root_z_delta": -0.01712089776992798,
+      "max_joint_delta": 0.21177516877651215
+    },
+    {
+      "frame": 1641,
+      "height": 0.6407680511474609,
+      "root_z_delta": -0.037869036197662354,
+      "max_joint_delta": 0.4896450638771057
+    },
+    {
+      "frame": 1665,
+      "height": 0.6616039872169495,
+      "root_z_delta": -0.02245265245437622,
+      "max_joint_delta": 0.30974310636520386
+    },
+    {
+      "frame": 1690,
+      "height": 0.6491818428039551,
+      "root_z_delta": -0.02846771478652954,
+      "max_joint_delta": 0.41901054978370667
+    },
+    {
+      "frame": 1716,
+      "height": 0.6473831534385681,
+      "root_z_delta": -0.02606862783432007,
+      "max_joint_delta": 0.4163350462913513
+    },
+    {
+      "frame": 1741,
+      "height": 0.650941014289856,
+      "root_z_delta": -0.023733139038085938,
+      "max_joint_delta": 0.4436052739620209
+    },
+    {
+      "frame": 1768,
+      "height": 0.6433298587799072,
+      "root_z_delta": -0.028767406940460205,
+      "max_joint_delta": 0.4455902576446533
+    },
+    {
+      "frame": 1793,
+      "height": 0.648312509059906,
+      "root_z_delta": -0.027768075466156006,
+      "max_joint_delta": 0.395018994808197
+    },
+    {
+      "frame": 1819,
+      "height": 0.6513761878013611,
+      "root_z_delta": -0.0248679518699646,
+      "max_joint_delta": 0.35478419065475464
+    },
+    {
+      "frame": 1843,
+      "height": 0.6743906140327454,
+      "root_z_delta": -0.0023780465126037598,
+      "max_joint_delta": 0.14821124076843262
+    },
+    {
+      "frame": 1869,
+      "height": 0.6780576705932617,
+      "root_z_delta": -0.009538471698760986,
+      "max_joint_delta": 0.3590981364250183
+    },
+    {
+      "frame": 1896,
+      "height": 0.6709176301956177,
+      "root_z_delta": -0.009567677974700928,
+      "max_joint_delta": 0.41884011030197144
+    },
+    {
+      "frame": 1921,
+      "height": 0.685310959815979,
+      "root_z_delta": -0.00724029541015625,
+      "max_joint_delta": 0.11129163205623627
+    },
+    {
+      "frame": 1945,
+      "height": 0.6413315534591675,
+      "root_z_delta": 0.004889488220214844,
+      "max_joint_delta": 0.23306536674499512
+    },
+    {
+      "frame": 1964,
+      "height": 0.6758928298950195,
+      "root_z_delta": -0.013166248798370361,
+      "max_joint_delta": 0.2594102621078491
+    },
+    {
+      "frame": 1992,
+      "height": 0.6639466285705566,
+      "root_z_delta": 0.00012362003326416016,
+      "max_joint_delta": 0.22279873490333557
+    },
+    {
+      "frame": 2013,
+      "height": 0.6791687607765198,
+      "root_z_delta": -0.013655602931976318,
+      "max_joint_delta": 0.24308434128761292
+    },
+    {
+      "frame": 2040,
+      "height": 0.6551088094711304,
+      "root_z_delta": 0.005972921848297119,
+      "max_joint_delta": 0.1018867939710617
+    },
+    {
+      "frame": 2062,
+      "height": 0.6846590042114258,
+      "root_z_delta": -0.0123291015625,
+      "max_joint_delta": 0.16781605780124664
+    },
+    {
+      "frame": 2093,
+      "height": 0.6738591194152832,
+      "root_z_delta": -0.0059642791748046875,
+      "max_joint_delta": 0.2083166092634201
+    },
+    {
+      "frame": 2116,
+      "height": 0.6806414723396301,
+      "root_z_delta": -0.014616072177886963,
+      "max_joint_delta": 0.1977405846118927
+    },
+    {
+      "frame": 2144,
+      "height": 0.6685064435005188,
+      "root_z_delta": -0.015878140926361084,
+      "max_joint_delta": 0.31604886054992676
+    },
+    {
+      "frame": 2169,
+      "height": 0.6897883415222168,
+      "root_z_delta": -0.006192028522491455,
+      "max_joint_delta": 0.1736905425786972
+    },
+    {
+      "frame": 2200,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2223,
+      "height": 0.6438792943954468,
+      "root_z_delta": -0.04429894685745239,
+      "max_joint_delta": 0.6004075407981873
+    },
+    {
+      "frame": 2245,
+      "height": 0.6600785255432129,
+      "root_z_delta": -0.022184908390045166,
+      "max_joint_delta": 0.37795475125312805
+    },
+    {
+      "frame": 2267,
+      "height": 0.6640915870666504,
+      "root_z_delta": -0.027077555656433105,
+      "max_joint_delta": 0.3418075442314148
+    },
+    {
+      "frame": 2282,
+      "height": 0.678213894367218,
+      "root_z_delta": -0.017886638641357422,
+      "max_joint_delta": 0.38798320293426514
+    },
+    {
+      "frame": 2295,
+      "height": 0.6874092817306519,
+      "root_z_delta": -0.011196672916412354,
+      "max_joint_delta": 0.25984978675842285
+    },
+    {
+      "frame": 2330,
+      "height": 0.6513470411300659,
+      "root_z_delta": -0.034321606159210205,
+      "max_joint_delta": 0.3977808356285095
+    },
+    {
+      "frame": 2358,
+      "height": 0.6272295117378235,
+      "root_z_delta": -0.04707711935043335,
+      "max_joint_delta": 0.5668551325798035
+    },
+    {
+      "frame": 2379,
+      "height": 0.6453551650047302,
+      "root_z_delta": -0.04373157024383545,
+      "max_joint_delta": 0.5526416301727295
+    },
+    {
+      "frame": 2404,
+      "height": 0.6180315613746643,
+      "root_z_delta": -0.0504644513130188,
+      "max_joint_delta": 0.6413927674293518
+    },
+    {
+      "frame": 2427,
+      "height": 0.6440998911857605,
+      "root_z_delta": -0.03613138198852539,
+      "max_joint_delta": 0.486861914396286
+    },
+    {
+      "frame": 2453,
+      "height": 0.6463636159896851,
+      "root_z_delta": -0.03329664468765259,
+      "max_joint_delta": 0.5198150277137756
+    },
+    {
+      "frame": 2478,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2498,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2514,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2531,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2546,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2562,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2577,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2590,
+      "height": 0.6566977500915527,
+      "root_z_delta": -0.02419722080230713,
+      "max_joint_delta": 0.3121340870857239
+    },
+    {
+      "frame": 2606,
+      "height": 0.6724566221237183,
+      "root_z_delta": -0.0215035080909729,
+      "max_joint_delta": 0.24473656713962555
+    },
+    {
+      "frame": 2620,
+      "height": 0.6843500733375549,
+      "root_z_delta": -0.025025546550750732,
+      "max_joint_delta": 0.25716614723205566
+    },
+    {
+      "frame": 2629,
+      "height": 0.6704383492469788,
+      "root_z_delta": -0.011639535427093506,
+      "max_joint_delta": 0.580166220664978
+    },
+    {
+      "frame": 2650,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2666,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2681,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2697,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2712,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2728,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2744,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2760,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2776,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2791,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2805,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2822,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2837,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2853,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2868,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2884,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2899,
+      "height": 0.6030222773551941,
+      "root_z_delta": -0.06541174650192261,
+      "max_joint_delta": 0.9389221668243408
+    },
+    {
+      "frame": 2917,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2934,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2950,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2965,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2980,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 2995,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3010,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3025,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3041,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3056,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3073,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3087,
+      "height": 0.6133888363838196,
+      "root_z_delta": -0.04085493087768555,
+      "max_joint_delta": 0.7625739574432373
+    },
+    {
+      "frame": 3100,
+      "height": 0.6506287455558777,
+      "root_z_delta": -0.018041789531707764,
+      "max_joint_delta": 0.433429092168808
+    },
+    {
+      "frame": 3111,
+      "height": 0.6809827089309692,
+      "root_z_delta": -0.0072789788246154785,
+      "max_joint_delta": 0.19058726727962494
+    },
+    {
+      "frame": 3125,
+      "height": 0.6623091101646423,
+      "root_z_delta": -0.008147239685058594,
+      "max_joint_delta": 0.19312360882759094
+    },
+    {
+      "frame": 3142,
+      "height": 0.6708916425704956,
+      "root_z_delta": 0.013919055461883545,
+      "max_joint_delta": 0.4076912999153137
+    },
+    {
+      "frame": 3159,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3173,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3188,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3203,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3218,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3233,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3248,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3262,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3277,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3291,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3306,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3321,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3336,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3351,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3366,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3381,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3396,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3411,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3426,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3443,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3458,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3473,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3489,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3504,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3519,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3534,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 3548,
+      "height": 0.6348726153373718,
+      "root_z_delta": -0.0347934365272522,
+      "max_joint_delta": 0.5780439376831055
+    },
+    {
+      "frame": 3561,
+      "height": 0.674176812171936,
+      "root_z_delta": -0.013043105602264404,
+      "max_joint_delta": 0.17796559631824493
+    },
+    {
+      "frame": 3570,
+      "height": 0.6895090937614441,
+      "root_z_delta": -0.010021626949310303,
+      "max_joint_delta": 0.04695723205804825
+    },
+    {
+      "frame": 3646,
+      "height": 0.6782573461532593,
+      "root_z_delta": -0.008169770240783691,
+      "max_joint_delta": 0.8845491409301758
+    },
+    {
+      "frame": 3682,
+      "height": 0.6571469306945801,
+      "root_z_delta": -0.02243626117706299,
+      "max_joint_delta": 0.2698991894721985
+    },
+    {
+      "frame": 3711,
+      "height": 0.6663811802864075,
+      "root_z_delta": -0.021007001399993896,
+      "max_joint_delta": 0.16475939750671387
+    },
+    {
+      "frame": 3740,
+      "height": 0.6601570248603821,
+      "root_z_delta": -0.023282766342163086,
+      "max_joint_delta": 0.27775052189826965
+    },
+    {
+      "frame": 3766,
+      "height": 0.653283417224884,
+      "root_z_delta": -0.02720743417739868,
+      "max_joint_delta": 0.27835196256637573
+    },
+    {
+      "frame": 3791,
+      "height": 0.6612471342086792,
+      "root_z_delta": -0.02123802900314331,
+      "max_joint_delta": 0.270047128200531
+    },
+    {
+      "frame": 3817,
+      "height": 0.6540902256965637,
+      "root_z_delta": -0.025119006633758545,
+      "max_joint_delta": 0.2560966908931732
+    },
+    {
+      "frame": 3842,
+      "height": 0.659797191619873,
+      "root_z_delta": -0.019709289073944092,
+      "max_joint_delta": 0.24142850935459137
+    },
+    {
+      "frame": 3869,
+      "height": 0.6374530792236328,
+      "root_z_delta": -0.03610575199127197,
+      "max_joint_delta": 0.41464880108833313
+    },
+    {
+      "frame": 3893,
+      "height": 0.6492723822593689,
+      "root_z_delta": -0.029878556728363037,
+      "max_joint_delta": 0.4144362807273865
+    },
+    {
+      "frame": 3918,
+      "height": 0.654549241065979,
+      "root_z_delta": -0.02719813585281372,
+      "max_joint_delta": 0.33739036321640015
+    },
+    {
+      "frame": 3938,
+      "height": 0.6911585330963135,
+      "root_z_delta": -0.004511475563049316,
+      "max_joint_delta": 0.08399996161460876
+    },
+    {
+      "frame": 3960,
+      "height": 0.6874119639396667,
+      "root_z_delta": -0.005334436893463135,
+      "max_joint_delta": 0.33139705657958984
+    },
+    {
+      "frame": 3996,
+      "height": 0.6898918747901917,
+      "root_z_delta": -0.005703270435333252,
+      "max_joint_delta": 0.3138747215270996
+    },
+    {
+      "frame": 4029,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 4053,
+      "height": 0.6567406058311462,
+      "root_z_delta": -0.022081196308135986,
+      "max_joint_delta": 0.3340747058391571
+    },
+    {
+      "frame": 4076,
+      "height": 0.6440154910087585,
+      "root_z_delta": -0.030149459838867188,
+      "max_joint_delta": 0.44623425602912903
+    },
+    {
+      "frame": 4098,
+      "height": 0.644618034362793,
+      "root_z_delta": -0.0307919979095459,
+      "max_joint_delta": 0.39337530732154846
+    },
+    {
+      "frame": 4123,
+      "height": 0.6304280757904053,
+      "root_z_delta": -0.04909402132034302,
+      "max_joint_delta": 0.5222280025482178
+    },
+    {
+      "frame": 4146,
+      "height": 0.646360456943512,
+      "root_z_delta": -0.03452259302139282,
+      "max_joint_delta": 0.36567574739456177
+    },
+    {
+      "frame": 4172,
+      "height": 0.6411504745483398,
+      "root_z_delta": -0.04074805974960327,
+      "max_joint_delta": 0.41375285387039185
+    },
+    {
+      "frame": 4197,
+      "height": 0.6511667966842651,
+      "root_z_delta": -0.031013548374176025,
+      "max_joint_delta": 0.35526320338249207
+    },
+    {
+      "frame": 4223,
+      "height": 0.6475974321365356,
+      "root_z_delta": -0.03745478391647339,
+      "max_joint_delta": 0.39091756939888
+    },
+    {
+      "frame": 4244,
+      "height": 0.685525119304657,
+      "root_z_delta": -0.011689186096191406,
+      "max_joint_delta": 0.12359872460365295
+    },
+    {
+      "frame": 4270,
+      "height": 0.6941540837287903,
+      "root_z_delta": -0.00934511423110962,
+      "max_joint_delta": 0.2516831159591675
+    },
+    {
+      "frame": 4305,
+      "height": 0.6709277033805847,
+      "root_z_delta": -0.014360785484313965,
+      "max_joint_delta": 0.1734231859445572
+    },
+    {
+      "frame": 4342,
+      "height": 0.6831783652305603,
+      "root_z_delta": -0.02350229024887085,
+      "max_joint_delta": 0.238443061709404
+    },
+    {
+      "frame": 4370,
+      "height": 0.6577029824256897,
+      "root_z_delta": -0.02797234058380127,
+      "max_joint_delta": 0.35883086919784546
+    },
+    {
+      "frame": 4397,
+      "height": 0.6406539678573608,
+      "root_z_delta": -0.040782034397125244,
+      "max_joint_delta": 0.43942660093307495
+    },
+    {
+      "frame": 4424,
+      "height": 0.6489593386650085,
+      "root_z_delta": -0.02652639150619507,
+      "max_joint_delta": 0.3050144910812378
+    },
+    {
+      "frame": 4457,
+      "height": 0.6114375591278076,
+      "root_z_delta": -0.03906536102294922,
+      "max_joint_delta": 0.3080731928348541
+    },
+    {
+      "frame": 4481,
+      "height": 0.6489883065223694,
+      "root_z_delta": -0.03138375282287598,
+      "max_joint_delta": 0.30246931314468384
+    },
+    {
+      "frame": 4505,
+      "height": 0.6353601813316345,
+      "root_z_delta": -0.018308818340301514,
+      "max_joint_delta": 0.20055851340293884
+    },
+    {
+      "frame": 4538,
+      "height": 0.6503651142120361,
+      "root_z_delta": -0.03069937229156494,
+      "max_joint_delta": 0.331481009721756
+    },
+    {
+      "frame": 4559,
+      "height": 0.630695104598999,
+      "root_z_delta": -0.019752323627471924,
+      "max_joint_delta": 0.43016573786735535
+    },
+    {
+      "frame": 4590,
+      "height": 0.6542541980743408,
+      "root_z_delta": -0.019716620445251465,
+      "max_joint_delta": 0.3079613447189331
+    },
+    {
+      "frame": 4611,
+      "height": 0.6494301557540894,
+      "root_z_delta": -0.006760239601135254,
+      "max_joint_delta": 0.223453551530838
+    },
+    {
+      "frame": 4639,
+      "height": 0.6575539112091064,
+      "root_z_delta": -0.018464744091033936,
+      "max_joint_delta": 0.37618687748908997
+    },
+    {
+      "frame": 4660,
+      "height": 0.6491119265556335,
+      "root_z_delta": -0.0033478140830993652,
+      "max_joint_delta": 0.1765856295824051
+    },
+    {
+      "frame": 4690,
+      "height": 0.6433714628219604,
+      "root_z_delta": -0.03204751014709473,
+      "max_joint_delta": 0.43958142399787903
+    },
+    {
+      "frame": 4710,
+      "height": 0.6535288095474243,
+      "root_z_delta": -0.0009565353393554688,
+      "max_joint_delta": 0.1963287889957428
+    },
+    {
+      "frame": 4739,
+      "height": 0.6533053517341614,
+      "root_z_delta": -0.03135925531387329,
+      "max_joint_delta": 0.564367413520813
+    },
+    {
+      "frame": 4759,
+      "height": 0.6538255214691162,
+      "root_z_delta": -0.007569730281829834,
+      "max_joint_delta": 0.08914175629615784
+    },
+    {
+      "frame": 4791,
+      "height": 0.6488239169120789,
+      "root_z_delta": -0.03326302766799927,
+      "max_joint_delta": 0.5652738213539124
+    },
+    {
+      "frame": 4811,
+      "height": 0.6475592255592346,
+      "root_z_delta": -0.01005929708480835,
+      "max_joint_delta": 0.20512521266937256
+    },
+    {
+      "frame": 4841,
+      "height": 0.6290891170501709,
+      "root_z_delta": -0.035147011280059814,
+      "max_joint_delta": 0.46148231625556946
+    },
+    {
+      "frame": 4857,
+      "height": 0.6493011116981506,
+      "root_z_delta": -0.0018547773361206055,
+      "max_joint_delta": 0.0973830372095108
+    },
+    {
+      "frame": 4887,
+      "height": 0.6751974821090698,
+      "root_z_delta": -0.010788500308990479,
+      "max_joint_delta": 0.23286175727844238
+    },
+    {
+      "frame": 4907,
+      "height": 0.6488221883773804,
+      "root_z_delta": -0.009633898735046387,
+      "max_joint_delta": 0.22584500908851624
+    },
+    {
+      "frame": 4932,
+      "height": 0.6546793580055237,
+      "root_z_delta": -0.030374348163604736,
+      "max_joint_delta": 0.3269056975841522
+    },
+    {
+      "frame": 4950,
+      "height": 0.653540849685669,
+      "root_z_delta": -0.010443806648254395,
+      "max_joint_delta": 0.29066193103790283
+    },
+    {
+      "frame": 4978,
+      "height": 0.6667369604110718,
+      "root_z_delta": -0.008356630802154541,
+      "max_joint_delta": 0.07168576121330261
+    },
+    {
+      "frame": 5001,
+      "height": 0.6341882348060608,
+      "root_z_delta": -0.019012749195098877,
+      "max_joint_delta": 0.08913791179656982
+    },
+    {
+      "frame": 5020,
+      "height": 0.6518276929855347,
+      "root_z_delta": 0.0011472105979919434,
+      "max_joint_delta": 0.10324366390705109
+    },
+    {
+      "frame": 5034,
+      "height": 0.627838134765625,
+      "root_z_delta": -0.0020735859870910645,
+      "max_joint_delta": 0.10669396072626114
+    },
+    {
+      "frame": 5054,
+      "height": 0.6650197505950928,
+      "root_z_delta": 0.0031577348709106445,
+      "max_joint_delta": 0.0970149040222168
+    },
+    {
+      "frame": 5065,
+      "height": 0.6276688575744629,
+      "root_z_delta": -0.0005777478218078613,
+      "max_joint_delta": 0.1346689909696579
+    },
+    {
+      "frame": 5087,
+      "height": 0.662264883518219,
+      "root_z_delta": 0.006773471832275391,
+      "max_joint_delta": 0.11428740620613098
+    },
+    {
+      "frame": 5099,
+      "height": 0.6110978126525879,
+      "root_z_delta": -0.006080269813537598,
+      "max_joint_delta": 0.20460323989391327
+    },
+    {
+      "frame": 5120,
+      "height": 0.6496579647064209,
+      "root_z_delta": -6.61015510559082e-05,
+      "max_joint_delta": 0.07020476460456848
+    },
+    {
+      "frame": 5132,
+      "height": 0.6211743354797363,
+      "root_z_delta": 0.0036762356758117676,
+      "max_joint_delta": 0.11244447529315948
+    },
+    {
+      "frame": 5150,
+      "height": 0.663935661315918,
+      "root_z_delta": 0.0012142062187194824,
+      "max_joint_delta": 0.0739772766828537
+    },
+    {
+      "frame": 5165,
+      "height": 0.6121588349342346,
+      "root_z_delta": 0.0028401613235473633,
+      "max_joint_delta": 0.119362011551857
+    },
+    {
+      "frame": 5185,
+      "height": 0.653107762336731,
+      "root_z_delta": 0.0004226565361022949,
+      "max_joint_delta": 0.05253991484642029
+    },
+    {
+      "frame": 5200,
+      "height": 0.6234249472618103,
+      "root_z_delta": 0.006370365619659424,
+      "max_joint_delta": 0.10772828757762909
+    },
+    {
+      "frame": 5218,
+      "height": 0.652280867099762,
+      "root_z_delta": -0.003349125385284424,
+      "max_joint_delta": 0.062470197677612305
+    },
+    {
+      "frame": 5236,
+      "height": 0.6333155632019043,
+      "root_z_delta": -0.0012153983116149902,
+      "max_joint_delta": 0.1130719780921936
+    },
+    {
+      "frame": 5256,
+      "height": 0.6738333702087402,
+      "root_z_delta": 0.003192603588104248,
+      "max_joint_delta": 0.08572347462177277
+    },
+    {
+      "frame": 5272,
+      "height": 0.6288208961486816,
+      "root_z_delta": 0.012639462947845459,
+      "max_joint_delta": 0.12737448513507843
+    },
+    {
+      "frame": 5292,
+      "height": 0.6651231050491333,
+      "root_z_delta": 0.0018360018730163574,
+      "max_joint_delta": 0.06349088996648788
+    },
+    {
+      "frame": 5309,
+      "height": 0.6506186723709106,
+      "root_z_delta": -0.0036986470222473145,
+      "max_joint_delta": 0.12137770652770996
+    },
+    {
+      "frame": 5336,
+      "height": 0.6688849925994873,
+      "root_z_delta": -0.010365426540374756,
+      "max_joint_delta": 0.18215298652648926
+    },
+    {
+      "frame": 5386,
+      "height": 0.666149377822876,
+      "root_z_delta": -0.002057373523712158,
+      "max_joint_delta": 0.08752016723155975
+    },
+    {
+      "frame": 5395,
+      "height": 0.6732754111289978,
+      "root_z_delta": -0.0023908019065856934,
+      "max_joint_delta": 0.1024896651506424
+    },
+    {
+      "frame": 5422,
+      "height": 0.666585385799408,
+      "root_z_delta": -0.019351303577423096,
+      "max_joint_delta": 0.36119335889816284
+    },
+    {
+      "frame": 5433,
+      "height": 0.675971508026123,
+      "root_z_delta": 0.0020366907119750977,
+      "max_joint_delta": 0.08381590992212296
+    },
+    {
+      "frame": 5462,
+      "height": 0.6649730801582336,
+      "root_z_delta": -0.020588815212249756,
+      "max_joint_delta": 0.36397427320480347
+    },
+    {
+      "frame": 5475,
+      "height": 0.6762707829475403,
+      "root_z_delta": 0.0018748044967651367,
+      "max_joint_delta": 0.07077637314796448
+    },
+    {
+      "frame": 5507,
+      "height": 0.6615175604820251,
+      "root_z_delta": -0.020328164100646973,
+      "max_joint_delta": 0.41747570037841797
+    },
+    {
+      "frame": 5518,
+      "height": 0.6705536246299744,
+      "root_z_delta": 0.0016083121299743652,
+      "max_joint_delta": 0.07553976774215698
+    },
+    {
+      "frame": 5546,
+      "height": 0.6601244211196899,
+      "root_z_delta": -0.02115917205810547,
+      "max_joint_delta": 0.4284994304180145
+    },
+    {
+      "frame": 5558,
+      "height": 0.6682418584823608,
+      "root_z_delta": 0.0008196830749511719,
+      "max_joint_delta": 0.07884788513183594
+    },
+    {
+      "frame": 5586,
+      "height": 0.6602892279624939,
+      "root_z_delta": -0.022477388381958008,
+      "max_joint_delta": 0.4219090938568115
+    },
+    {
+      "frame": 5599,
+      "height": 0.6752945780754089,
+      "root_z_delta": 0.0012938976287841797,
+      "max_joint_delta": 0.08975958824157715
+    },
+    {
+      "frame": 5629,
+      "height": 0.668949544429779,
+      "root_z_delta": -0.01782459020614624,
+      "max_joint_delta": 0.3802812099456787
+    },
+    {
+      "frame": 5642,
+      "height": 0.6741803884506226,
+      "root_z_delta": -0.0026485323905944824,
+      "max_joint_delta": 0.06513702869415283
+    },
+    {
+      "frame": 5670,
+      "height": 0.6601105332374573,
+      "root_z_delta": -0.02500772476196289,
+      "max_joint_delta": 0.33677780628204346
+    },
+    {
+      "frame": 5683,
+      "height": 0.6748806238174438,
+      "root_z_delta": -0.0014004111289978027,
+      "max_joint_delta": 0.08749315142631531
+    },
+    {
+      "frame": 5715,
+      "height": 0.6626574397087097,
+      "root_z_delta": -0.022136330604553223,
+      "max_joint_delta": 0.32217302918434143
+    },
+    {
+      "frame": 5729,
+      "height": 0.6769054532051086,
+      "root_z_delta": -0.0025886893272399902,
+      "max_joint_delta": 0.06920338422060013
+    },
+    {
+      "frame": 5758,
+      "height": 0.6626260876655579,
+      "root_z_delta": -0.02040928602218628,
+      "max_joint_delta": 0.37069904804229736
+    },
+    {
+      "frame": 5772,
+      "height": 0.6760398149490356,
+      "root_z_delta": -0.0032976269721984863,
+      "max_joint_delta": 0.07322509586811066
+    },
+    {
+      "frame": 5803,
+      "height": 0.6781772375106812,
+      "root_z_delta": -0.008069217205047607,
+      "max_joint_delta": 0.1137617826461792
+    },
+    {
+      "frame": 5814,
+      "height": 0.6729282140731812,
+      "root_z_delta": -0.003742694854736328,
+      "max_joint_delta": 0.07428471744060516
+    },
+    {
+      "frame": 5842,
+      "height": 0.6676079034805298,
+      "root_z_delta": -0.01954752206802368,
+      "max_joint_delta": 0.3672523498535156
+    },
+    {
+      "frame": 5854,
+      "height": 0.6756007075309753,
+      "root_z_delta": -0.001948237419128418,
+      "max_joint_delta": 0.07632477581501007
+    },
+    {
+      "frame": 5883,
+      "height": 0.6748418807983398,
+      "root_z_delta": -0.011193037033081055,
+      "max_joint_delta": 0.1436115801334381
+    },
+    {
+      "frame": 5894,
+      "height": 0.6756523251533508,
+      "root_z_delta": -0.004007220268249512,
+      "max_joint_delta": 0.0762285515666008
+    },
+    {
+      "frame": 5923,
+      "height": 0.6539514660835266,
+      "root_z_delta": -0.02896171808242798,
+      "max_joint_delta": 0.3953869342803955
+    },
+    {
+      "frame": 5935,
+      "height": 0.6752189993858337,
+      "root_z_delta": -0.0040146708488464355,
+      "max_joint_delta": 0.06849788874387741
+    },
+    {
+      "frame": 5962,
+      "height": 0.6595467925071716,
+      "root_z_delta": -0.0321505069732666,
+      "max_joint_delta": 0.47401881217956543
+    },
+    {
+      "frame": 5978,
+      "height": 0.6780602335929871,
+      "root_z_delta": -0.007039368152618408,
+      "max_joint_delta": 0.07284467667341232
+    },
+    {
+      "frame": 6011,
+      "height": 0.6335060596466064,
+      "root_z_delta": -0.03392529487609863,
+      "max_joint_delta": 0.5171744227409363
+    },
+    {
+      "frame": 6035,
+      "height": 0.6030790209770203,
+      "root_z_delta": -0.05668693780899048,
+      "max_joint_delta": 0.6483570337295532
+    },
+    {
+      "frame": 6059,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6080,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6101,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6123,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6144,
+      "height": 0.6069065928459167,
+      "root_z_delta": -0.051521122455596924,
+      "max_joint_delta": 0.6214607954025269
+    },
+    {
+      "frame": 6167,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6187,
+      "height": 0.6217638850212097,
+      "root_z_delta": -0.03739041090011597,
+      "max_joint_delta": 0.4250585734844208
+    },
+    {
+      "frame": 6210,
+      "height": 0.5986135601997375,
+      "root_z_delta": -0.07513409852981567,
+      "max_joint_delta": 0.7192419767379761
+    },
+    {
+      "frame": 6231,
+      "height": 0.6253281831741333,
+      "root_z_delta": -0.05020856857299805,
+      "max_joint_delta": 0.5296680927276611
+    },
+    {
+      "frame": 6253,
+      "height": 0.6299936175346375,
+      "root_z_delta": -0.04834914207458496,
+      "max_joint_delta": 0.43699806928634644
+    },
+    {
+      "frame": 6273,
+      "height": 0.6718044281005859,
+      "root_z_delta": -0.01855987310409546,
+      "max_joint_delta": 0.19780729711055756
+    },
+    {
+      "frame": 6297,
+      "height": 0.6549822092056274,
+      "root_z_delta": -0.03883552551269531,
+      "max_joint_delta": 0.401797354221344
+    },
+    {
+      "frame": 6320,
+      "height": 0.6627310514450073,
+      "root_z_delta": -0.017634809017181396,
+      "max_joint_delta": 0.23542740941047668
+    },
+    {
+      "frame": 6336,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6361,
+      "height": 0.6465319395065308,
+      "root_z_delta": -0.028669893741607666,
+      "max_joint_delta": 0.2866447865962982
+    },
+    {
+      "frame": 6386,
+      "height": 0.636851966381073,
+      "root_z_delta": -0.01839512586593628,
+      "max_joint_delta": 0.25576522946357727
+    },
+    {
+      "frame": 6410,
+      "height": 0.6183463335037231,
+      "root_z_delta": -0.043641746044158936,
+      "max_joint_delta": 0.4434948265552521
+    },
+    {
+      "frame": 6436,
+      "height": 0.6299013495445251,
+      "root_z_delta": -0.010507345199584961,
+      "max_joint_delta": 0.5829060077667236
+    },
+    {
+      "frame": 6462,
+      "height": 0.6391738057136536,
+      "root_z_delta": -0.025431692600250244,
+      "max_joint_delta": 0.2551860511302948
+    },
+    {
+      "frame": 6494,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6520,
+      "height": 0.6274009943008423,
+      "root_z_delta": -0.03368884325027466,
+      "max_joint_delta": 0.4278092384338379
+    },
+    {
+      "frame": 6545,
+      "height": 0.6205615401268005,
+      "root_z_delta": -0.025806188583374023,
+      "max_joint_delta": 0.38270246982574463
+    },
+    {
+      "frame": 6576,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6602,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6624,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6647,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6673,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6695,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6720,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6744,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6767,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6793,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6806,
+      "height": 0.7088953852653503,
+      "root_z_delta": -0.01647859811782837,
+      "max_joint_delta": 0.2953547537326813
+    },
+    {
+      "frame": 6884,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6908,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6934,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6958,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 6981,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7003,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7023,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7047,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7065,
+      "height": 0.6708129048347473,
+      "root_z_delta": -0.0049773454666137695,
+      "max_joint_delta": 0.09637528657913208
+    },
+    {
+      "frame": 7178,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7209,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7237,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7260,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7285,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7308,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7334,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7358,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7385,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7405,
+      "height": 0.6861843466758728,
+      "root_z_delta": -0.0038644075393676758,
+      "max_joint_delta": 0.1197221577167511
+    },
+    {
+      "frame": 7495,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7511,
+      "height": 0.6707043051719666,
+      "root_z_delta": -0.010479450225830078,
+      "max_joint_delta": 0.13667114078998566
+    },
+    {
+      "frame": 7529,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7552,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7572,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7588,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7606,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7621,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7637,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7655,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7672,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7691,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7709,
+      "height": 0.6333945393562317,
+      "root_z_delta": 0.0029084086418151855,
+      "max_joint_delta": 0.1335209310054779
+    },
+    {
+      "frame": 7733,
+      "height": 0.6337398290634155,
+      "root_z_delta": -0.00046366453170776367,
+      "max_joint_delta": 0.17722681164741516
+    },
+    {
+      "frame": 7758,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7775,
+      "error": "Could not find a nearby flat-foot spawn pose"
+    },
+    {
+      "frame": 7792,
+      "height": 0.6513862609863281,
+      "root_z_delta": 0.005693912506103516,
+      "max_joint_delta": 0.20171158015727997
+    },
+    {
+      "frame": 7796,
+      "height": 0.651344895362854,
+      "root_z_delta": -0.0037773847579956055,
+      "max_joint_delta": 0.08314249664545059
+    },
+    {
+      "frame": 7822,
+      "height": 0.6971505880355835,
+      "root_z_delta": -0.01226353645324707,
+      "max_joint_delta": 1.1072112321853638
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "momentum_optimization": {
+    "history": [
+      {
+        "iteration": 0,
+        "maximum_normalized_violation": 2.7009918242692947,
+        "wrench_pass_fraction": 0.8130671506352087,
+        "max_velocity_ratio": 0.5253046751022339
+      },
+      {
+        "iteration": 1,
+        "maximum_normalized_violation": 0.8486636802554129,
+        "wrench_pass_fraction": 0.8929219600725953,
+        "max_velocity_ratio": 0.5251124501228333
+      },
+      {
+        "iteration": 2,
+        "maximum_normalized_violation": 0.04145278409123419,
+        "wrench_pass_fraction": 0.9927404718693285,
+        "max_velocity_ratio": 0.5246001482009888
+      },
+      {
+        "iteration": 3,
+        "maximum_normalized_violation": 0.02946680784225464,
+        "wrench_pass_fraction": 0.9927404718693285,
+        "max_velocity_ratio": 0.5243781805038452
+      }
+    ],
+    "rejected": [
+      {
+        "iteration": 2,
+        "fraction": 0.5,
+        "violation": 0.04762369394302368
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.5,
+        "violation": 0.05500990152359009
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.25,
+        "violation": 0.04223740100860596
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.125,
+        "violation": 0.03585249185562134
+      },
+      {
+        "iteration": 3,
+        "fraction": 0.0625,
+        "violation": 0.032659173011779785
+      }
+    ],
+    "sampled_necessary_constraints_passed": false
+  },
+  "scope": "offline_first_source_step_candidate",
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "start_frame": 114,
+  "end_frame": 129,
+  "duration": 1.1,
+  "landing_height": 0.62,
+  "body_smoothing_passes": 4,
+  "sampled_kinematics_passed": true,
+  "sample_count": 551,
+  "requested_samples": 551,
+  "error": null,
+  "landing_xy": [
+    1.5049140453338623,
+    4.080635070800781
+  ],
+  "source_fps": 30.0,
+  "requires_landing_and_next_step": true,
+  "centroidal_wrench_pass_fraction": 0.9927404718693285,
+  "outside_physical_sole_fraction": 0.0,
+  "max_joint_velocity_ratio": 0.5243781805038452,
+  "final_com_velocity": [
+    -0.3106025755405426,
+    -0.8711860179901123,
+    5.934964164566736e-08
+  ],
+  "cop_min": [
+    -0.005973717197775841,
+    -0.014606324955821037
+  ],
+  "cop_max": [
+    0.04768631234765053,
+    0.010052909143269062
+  ]
+}

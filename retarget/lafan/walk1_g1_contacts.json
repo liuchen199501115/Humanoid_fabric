@@ -1,0 +1,83 @@
+{
+  "source": "retarget/lafan/walk1_g1.pkl",
+  "source_sha256": "a63809d6a3c7be0874fe4af4c0854ae46754a020dd7c494f007893f16af799cf",
+  "contact_plan_sha256": "fd1cac8c4ab3e3fc84b12453fc5bc6238c3b14d4199261060d2d9cc7a9f37504",
+  "output": "retarget/lafan/walk1_g1_with_contacts.pkl",
+  "sequence": "retarget/lafan/walk1_g1_contact_sequence.npy",
+  "shape": [
+    7839,
+    2
+  ],
+  "dtype": "bool",
+  "fps": 30.0,
+  "contact_names": [
+    "left_foot",
+    "right_foot"
+  ],
+  "method": "sole_corner",
+  "inferred": true,
+  "height_threshold_m": 0.025,
+  "speed_threshold_m_per_s": 0.2,
+  "confirmation_samples": 2,
+  "ground_shift_used_for_inference_m": -0.02146398276090622,
+  "sole_corners_in_ankle_frame_m": [
+    [
+      -0.05,
+      -0.025,
+      -0.035
+    ],
+    [
+      -0.05,
+      0.025,
+      -0.035
+    ],
+    [
+      0.12,
+      -0.025,
+      -0.035
+    ],
+    [
+      0.12,
+      0.025,
+      -0.035
+    ]
+  ],
+  "counts": {
+    "left_only": 2639,
+    "right_only": 2566,
+    "double_support": 2634,
+    "flight": 0
+  },
+  "ambiguous_frames": [
+    2496,
+    2529,
+    2560,
+    2648,
+    2664,
+    2679,
+    2695,
+    2710,
+    2820,
+    2835,
+    2851,
+    2866,
+    2932,
+    2948,
+    2993,
+    3157,
+    3186,
+    3231,
+    3246,
+    3260,
+    3275,
+    3304,
+    3487,
+    7600,
+    7601,
+    7604,
+    7632,
+    7633
+  ],
+  "ambiguity_policy": "Non-flight assumption: retain lower foot when neither foot passes candidate criteria, followed by temporal confirmation.",
+  "scope": "Kinematically inferred support candidates, not measured contact or a flat-foot constraint certificate. Original motion fields and source file are unchanged."
+}

@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "kind": "swing",
+      "start_frame": 0,
+      "end_frame": 129,
+      "takeoff_frame": 114,
+      "support": 0,
+      "inserted_double_support": false
+    },
+    {
+      "kind": "swing",
+      "start_frame": 129,
+      "end_frame": 155,
+      "takeoff_frame": 137,
+      "support": 1,
+      "inserted_double_support": false
+    },
+    {
+      "kind": "swing",
+      "start_frame": 155,
+      "end_frame": 176,
+      "takeoff_frame": 158,
+      "support": 0,
+      "inserted_double_support": false
+    },
+    {
+      "kind": "swing",
+      "start_frame": 176,
+      "end_frame": 198,
+      "takeoff_frame": 180,
+      "support": 1,
+      "inserted_double_support": false
+    }
+  ],
+  "landing_positions_world": [
+    [
+      1.5049140453338623,
+      4.080635070800781,
+      0.053519319742918015
+    ],
+    [
+      1.6180938482284546,
+      3.4408485889434814,
+      0.0493098646402359
+    ],
+    [
+      1.4652290344238281,
+      2.857807159423828,
+      0.05314144492149353
+    ],
+    [
+      1.5690572261810303,
+      2.256479501724243,
+      0.05757952854037285
+    ]
+  ],
+  "interpolation": "PCHIP passes original poses; C1, not C2",
+  "original_source_frame_count": 7839,
+  "source_positions_modified": false
+}

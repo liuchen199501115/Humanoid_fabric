@@ -1,0 +1,16 @@
+{
+  "priority_level_0_": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "violation": 2.623581352168003e-09,
+    "iterations": 65
+  },
+  "priority_level_1_": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "violation": 3.0183855415089056e-11,
+    "iterations": 281
+  }
+}

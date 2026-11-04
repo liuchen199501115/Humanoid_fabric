@@ -1,0 +1,59 @@
+{
+  "source": "acc_data/amp_walk_20261102/amp_walk_tracking.pkl",
+  "output": "acc_data/amp_walk_20261102/amp_walk_native_contacts.pkl",
+  "method": "Geometric inference from native G1 sole surface height <=1mm; no causal debounce delay; not measured ground truth",
+  "ground_shift": -0.00011001154780387878,
+  "ambiguous_frames": 3,
+  "suppressed_brief_grazes": [
+    [
+      45,
+      49
+    ],
+    [
+      539,
+      543
+    ]
+  ],
+  "first_four_events": [
+    {
+      "kind": "swing",
+      "start_frame": 0,
+      "end_frame": 21,
+      "takeoff_frame": 0,
+      "support": 1,
+      "direct_support_switch": true,
+      "starts_mid_swing": true,
+      "landing_window_end_frame": 104
+    },
+    {
+      "kind": "swing",
+      "start_frame": 21,
+      "end_frame": 67,
+      "takeoff_frame": 21,
+      "support": 0,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 184
+    },
+    {
+      "kind": "swing",
+      "start_frame": 67,
+      "end_frame": 164,
+      "takeoff_frame": 104,
+      "support": 1,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 289
+    },
+    {
+      "kind": "swing",
+      "start_frame": 164,
+      "end_frame": 256,
+      "takeoff_frame": 184,
+      "support": 0,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 373
+    }
+  ]
+}

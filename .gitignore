@@ -70,3 +70,12 @@ venv*/*
 
 # Jupyter files
 *checkpoint.ipynb
+
+# Machine-local verified training interpreter
+.runtime/
+
+# Local datasets and generated experiment data
+/acc_data/**/*.npz
+/retarget/**/*.npz
+/retarget/**/*.zip
+/retarget/**/*.tar.bz2

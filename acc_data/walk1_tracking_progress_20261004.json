@@ -1,0 +1,149 @@
+{
+  "scope": "fixed_frame_recovery",
+  "recovery_passed": true,
+  "source_steps": 3,
+  "recovery_steps": 2,
+  "fixed_source_frame": 176,
+  "full_pkl_tracking": false,
+  "continuous_walking": false,
+  "physical_sequence": {
+    "scope": "5_physical_steps",
+    "sequence_passed": true,
+    "expected_steps": 5,
+    "expected_end_frame": 176.0,
+    "full_pkl_tracking": false,
+    "continuous_walking": false,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "right",
+        "time": 11.662,
+        "source_frame": 128.79243412969527,
+        "adapted_landing_error_m": 0.005392012199259021,
+        "original_landing_error_m": 0.2558538336026881,
+        "maximum_swing_clearance_m": 0.06107126708633586,
+        "measured_load_n": 54.5667839050293,
+        "single_support_observed": true
+      },
+      {
+        "step": 2,
+        "swing": "left",
+        "time": 19.124,
+        "source_frame": 154.58146686856867,
+        "adapted_landing_error_m": 0.008369763968567066,
+        "original_landing_error_m": 0.6843761885225986,
+        "maximum_swing_clearance_m": 0.03865475824219174,
+        "measured_load_n": 128.3663787841797,
+        "single_support_observed": true
+      },
+      {
+        "step": 3,
+        "swing": "right",
+        "time": 26.674,
+        "source_frame": 175.6619540100191,
+        "adapted_landing_error_m": 0.008615255694188428,
+        "original_landing_error_m": 1.041376868434022,
+        "maximum_swing_clearance_m": 0.029907552129589017,
+        "measured_load_n": 56.72121810913086,
+        "single_support_observed": true
+      },
+      {
+        "step": 4,
+        "swing": "left",
+        "time": 34.122,
+        "source_frame": 176.0,
+        "adapted_landing_error_m": 0.008673922613148087,
+        "original_landing_error_m": 0.3004266843588613,
+        "maximum_swing_clearance_m": 0.029836524993879718,
+        "measured_load_n": 19.681442260742188,
+        "single_support_observed": true
+      },
+      {
+        "step": 5,
+        "swing": "right",
+        "time": 41.578,
+        "source_frame": 176.0,
+        "adapted_landing_error_m": 0.007653436253250064,
+        "original_landing_error_m": 0.6289352763119673,
+        "maximum_swing_clearance_m": 0.02983281529508531,
+        "measured_load_n": 28.182586669921875,
+        "single_support_observed": true
+      }
+    ],
+    "final_source_frame": 176.0,
+    "source_clock_monotonic": true,
+    "minimum_source_frame_increment": 0.0,
+    "stopped_hold_duration_s": 5.878,
+    "final_second": {
+      "minimum_foot_loads_n": [
+        80.29216766357422,
+        231.45840454101562
+      ],
+      "maximum_com_error_m": 0.0011317140888422728,
+      "maximum_com_speed_m_s": 0.0006027146701852073
+    },
+    "qp_and_servo_validated": true,
+    "control_rate": {
+      "qp_hz": 500,
+      "torque_hz": 500,
+      "qp_updates": 24000,
+      "torque_updates": 24000,
+      "maximum_qp_period_error_seconds": 4.661201979949681e-15,
+      "maximum_torque_period_error_seconds": 4.661201979949681e-15,
+      "maximum_physics_period_error_seconds": 9.499490256914545e-11,
+      "torque_uses_expected_qp_updates": true,
+      "simulation_rate_passed": true,
+      "qp_wall_time_valid": true,
+      "qp_wall_median_seconds": 0.004947261651977897,
+      "qp_wall_p99_seconds": 0.005409666458144783,
+      "qp_wall_max_seconds": 0.011980967130511999,
+      "all_qp_solves_within_period": false,
+      "scope": "Simulation cadence only. QP latency excludes other controller work; this is not a real-time deployment certificate."
+    }
+  },
+  "reference_unchanged": true,
+  "source_clock_held": true,
+  "recovery_count_verified": true,
+  "initial_foot_xy_error_m": [
+    0.7106440774984306,
+    1.0414992419806905
+  ],
+  "final_foot_xy_error_m": [
+    0.3005447298817835,
+    0.6289980650650457
+  ],
+  "initial_foot_rms_error_m": 0.8915536091368675,
+  "final_foot_rms_error_m": 0.49293290644634674,
+  "initial_root_xy_error_m": 0.7657317452101674,
+  "final_root_xy_error_m": 0.45468701207816037,
+  "error_reduction_verified": true,
+  "fixed_target_reached": false,
+  "stage": "three_source_steps_plus_two_fixed_frame_recovery_steps_validated",
+  "recording": "acc_data/walk1_recovery_pair_live_20261004.npz",
+  "previous_recording": "acc_data/walk1_fixed_frame_recovery_live_20261003.npz",
+  "regression_tests_passed": 105,
+  "source_phase": 176.0,
+  "simulation_end_time": 47.998,
+  "full_run_exit_code": 1,
+  "stop_reason": "Bounded five-step hold; fixed source target and full source coverage remain incomplete",
+  "recovery_left_transfer": {
+    "scope": "measured_recovery_left_support_transfer",
+    "source_recording": "acc_data/walk1_recovery_pair_live_20261004.npz",
+    "start_time": 34.67,
+    "release_time": 36.718,
+    "following_step_start_time": 39.718,
+    "commanded_local_rotation_rad": [
+      -0.10000000460500684,
+      -9.478070939698416e-09,
+      -3.951508182173978e-08
+    ],
+    "measured_local_rotation_rad": [
+      -0.10830165089621652,
+      0.003753250763336285,
+      -0.003762786841553181
+    ],
+    "maximum_final_half_second_orientation_error_rad": 0.0022712312177178688,
+    "stance_load_min_n": 323.11419677734375,
+    "swing_load_max_n": 0.0
+  }
+}

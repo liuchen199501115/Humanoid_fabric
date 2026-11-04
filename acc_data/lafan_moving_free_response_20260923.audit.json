@@ -1,0 +1,14 @@
+{
+  "ground_excluded": true,
+  "self_collisions_disabled": false,
+  "contact_records": [],
+  "maximum_joint_rms_error": 0.044838983565568924,
+  "first_step_maximum_acceleration_error": 0.044971466064453125,
+  "passive": {
+    "dof_friction_coefficients": 0.0,
+    "dof_friction_properties": 0.0,
+    "dof_armatures": 0.0,
+    "dof_stiffnesses": 0.0,
+    "dof_dampings": 0.0
+  }
+}

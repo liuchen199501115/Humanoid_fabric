@@ -1,0 +1,57 @@
+{
+  "scope": "next_transfer_from_measured_recovery_stop",
+  "planning_passed": false,
+  "simulation_validated": false,
+  "source_recording": "acc_data/walk1_fixed_frame_recovery_live_20261003.npz",
+  "fixed_source_frame": 176,
+  "support": "left",
+  "com_height_offset": -0.02,
+  "transfer_duration": 2.0,
+  "lift_height": 0.03,
+  "rejected": [
+    {
+      "offset": 0.0,
+      "reason": "Transfer joint bound at t=0.8200: left_ankle_roll_joint, violation=0.0178956"
+    },
+    {
+      "offset": -0.004,
+      "reason": "Transfer joint bound at t=0.8800: left_ankle_roll_joint, violation=0.0285758"
+    },
+    {
+      "offset": 0.004,
+      "reason": "Transfer joint bound at t=0.7800: left_ankle_roll_joint, violation=0.0633703"
+    },
+    {
+      "offset": -0.008,
+      "reason": "Transfer joint bound at t=0.9600: left_ankle_roll_joint, violation=0.0558849"
+    },
+    {
+      "offset": 0.008,
+      "reason": "Transfer joint bound at t=0.7400: left_ankle_roll_joint, violation=0.0675884"
+    },
+    {
+      "offset": -0.012,
+      "reason": "Transfer joint bound at t=1.0600: left_ankle_roll_joint, violation=0.0534897"
+    },
+    {
+      "offset": 0.012,
+      "reason": "Transfer joint bound at t=0.7000: left_ankle_roll_joint, violation=0.0323815"
+    },
+    {
+      "offset": -0.016,
+      "reason": "Transfer joint bound at t=1.2000: left_ankle_roll_joint, violation=0.0168126"
+    },
+    {
+      "offset": 0.016,
+      "reason": "Transfer joint bound at t=0.6800: left_ankle_roll_joint, violation=0.108317"
+    },
+    {
+      "offset": -0.019,
+      "reason": "Transfer joint bound at t=1.4400: left_ankle_roll_joint, violation=0.0177839"
+    },
+    {
+      "offset": 0.019,
+      "reason": "Transfer joint bound at t=0.6600: left_ankle_roll_joint, violation=0.114068"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Offline first-step refinement after measured unloading",
+  "physical_steps_completed": 0,
+  "full_four_step_tracking_passed": false,
+  "unloading_passed": true,
+  "dense_samples": 1201,
+  "conservative_margin_score": 0.04762912392616272,
+  "exact_wrench_violation": 0.0,
+  "peak_torque_ratio": 0.9546018838882446,
+  "first_landing_position_error_m": 5.617288252324215e-07,
+  "contact_motion_diagnostics": {
+    "scope": "Reference stance kinematics, not a closed-loop stability certificate",
+    "component_tolerance": 0.001,
+    "all_samples_within_tolerance": false,
+    "worst_velocity_time": 0.03,
+    "worst_acceleration_time": 0.0,
+    "after_0p2s_velocity_max": 8.568167686462402e-08,
+    "after_0p2s_acceleration_max": 5.990605131955817e-07
+  },
+  "live_swing_executed": false
+}

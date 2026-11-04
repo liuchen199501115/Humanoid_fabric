@@ -1,0 +1,15 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 4,
+  "measured_steps": 0,
+  "landings": [],
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "last_time_s": 32.59,
+  "last_source_frame": 114.0,
+  "controller_valid": null,
+  "controller_validation_available": false,
+  "stable_final_support": false,
+  "steps_tracking_passed": false,
+  "stop_reason": "Source step rejected: required torque/contact/acceleration/joint-braking/collision bounds failed; see acc_data/walk1_strict_four_transfer_20261008.step_plan.json"
+}

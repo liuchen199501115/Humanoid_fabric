@@ -1,0 +1,23 @@
+{
+  "method": "bspline",
+  "frames": 2000,
+  "fps": 200.0,
+  "requested_speed": 1.0,
+  "playback_speed": 1.0,
+  "planning_acceleration_cap": null,
+  "acceleration_cap_enabled": false,
+  "constant_rate_peak_joint_velocity": 13.106469811922016,
+  "constant_rate_peak_joint_acceleration": 2506.1044842004776,
+  "full_tracking_passed": false,
+  "limitations": [
+    "Clock derivatives are applied online; preparation is not an online acceleration guarantee",
+    "Contact, collision and dynamics feasibility require separate controller checks",
+    "Missing source joint-name metadata remains a loader assumption"
+  ],
+  "motion": "acc_data/amp_walk_20261102/amp_walk_tracking.pkl",
+  "contact_source": "acc_data/amp_walk_20261102/amp_walk_tracking.pkl",
+  "contact_labels_present": false,
+  "reference_policy": "direct_full_body_pkl",
+  "reduced_model_preview": false,
+  "capture_point_gate": false
+}

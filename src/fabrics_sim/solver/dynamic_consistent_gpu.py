@@ -38,6 +38,7 @@ No explicit matrix inverse is calculated.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import math
 from typing import Optional
 
 import torch
@@ -61,6 +62,7 @@ class ContactDetectorConfig:
     force_on: float = 20.0
     force_off: float = 10.0
     confirm_steps: int = 2
+    impact_force_on: Optional[float] = None
 
 
 @dataclass(frozen=True)
@@ -70,6 +72,8 @@ class ProjectionConfig:
     regularization: float = 1.0e-6
     contact_kp: float = 0.0
     contact_kd: float = 0.0
+    contact_stabilization_mask: tuple[float, ...] = (1.0,) * FOOT_TASK_DIM
+    contact_stabilization_max_acceleration: Optional[float] = None
     symmetrize_mass_matrix: bool = True
     filter_alpha_jdot_v: float = 0.0
 
@@ -107,6 +111,9 @@ class BatchedFootContactDetector:
             raise ValueError("force_on must be greater than force_off.")
         if config.confirm_steps < 1:
             raise ValueError("confirm_steps must be at least one.")
+        if config.impact_force_on is not None and (not math.isfinite(config.impact_force_on)
+                or config.impact_force_on < config.force_on):
+            raise ValueError('impact_force_on must be finite and at least force_on')
 
         self.num_envs = num_envs
         self.device = torch.device(device)
@@ -168,6 +175,10 @@ class BatchedFootContactDetector:
         )
 
         confirmed_on = self.on_counter >= self.config.confirm_steps
+        if self.config.impact_force_on is not None:
+            # A real short impact must not be discarded as force noise. Only
+            # acquisition is expedited; release retains its hysteresis/debounce.
+            confirmed_on |= normal_forces >= self.config.impact_force_on
         confirmed_off = self.off_counter >= self.config.confirm_steps
 
         self.contact = torch.where(
@@ -388,22 +399,44 @@ def dynamically_consistent_projection_masked(
         + jdot_v_c
     )
 
-    # Optional Baumgarte contact stabilization.
+    # Optional Baumgarte contact stabilization.  The six-element mask makes
+    # it possible to stabilize only the contact coordinates that should be
+    # anchored (for example, horizontal translation for a collision sole)
+    # without feeding impact-induced angular velocity back into the solve.
+    if len(config.contact_stabilization_mask) != FOOT_TASK_DIM:
+        raise ValueError(
+            "contact_stabilization_mask must contain exactly 6 values."
+        )
+    stabilization = torch.zeros_like(residual_before)
     if config.contact_kd != 0.0:
         contact_velocity = torch.bmm(
             Jc, generalized_velocity.unsqueeze(-1)
         ).squeeze(-1)
-        residual_before = (
-            residual_before + config.contact_kd * contact_velocity
-        )
+        stabilization = stabilization + config.contact_kd * contact_velocity
 
     if config.contact_kp != 0.0:
-        residual_before = (
-            residual_before
-            + config.contact_kp
-            * stacked_contact_pose_error
-            * active_row_mask
+        stabilization = (
+            stabilization + config.contact_kp * stacked_contact_pose_error
         )
+
+    stabilization_mask_per_foot = torch.as_tensor(
+        config.contact_stabilization_mask,
+        device=acc_fabric.device,
+        dtype=acc_fabric.dtype,
+    )
+    stabilization_mask = stabilization_mask_per_foot.repeat(2).unsqueeze(0)
+    stabilization = stabilization * stabilization_mask * active_row_mask
+    if config.contact_stabilization_max_acceleration is not None:
+        max_acceleration = config.contact_stabilization_max_acceleration
+        if max_acceleration <= 0.0:
+            raise ValueError(
+                "contact_stabilization_max_acceleration must be positive."
+            )
+        stabilization = stabilization.clamp(
+            min=-max_acceleration,
+            max=max_acceleration,
+        )
+    residual_before = residual_before + stabilization
 
     # Step 4: y = A^{-1} r.
     contact_solution = torch.linalg.solve(
@@ -478,6 +511,8 @@ class G1FabricContactProjector:
         right_jdot_v: Optional[Tensor] = None,
         left_contact_pose_error: Optional[Tensor] = None,
         right_contact_pose_error: Optional[Tensor] = None,
+        contact_mode_override: Optional[Tensor] = None,
+        contact_row_mask: Optional[Tensor] = None,
     ) -> ProjectionOutput:
         """
         Run one controller step.
@@ -493,11 +528,36 @@ class G1FabricContactProjector:
             right_jdot_v:            [B, 6], optional analytic value
             left_contact_pose_error: [B, 6], optional
             right_contact_pose_error:[B, 6], optional
+            contact_mode_override:   [B], optional planned modes (0..3).
+                                     When given, force detection is bypassed.
         """
         previous_contact = self.contact_detector.contact.clone()
-        left_contact, right_contact, contact_mode = (
-            self.contact_detector.update(foot_normal_forces)
-        )
+        if contact_mode_override is None:
+            left_contact, right_contact, contact_mode = (
+                self.contact_detector.update(foot_normal_forces)
+            )
+        else:
+            contact_mode = contact_mode_override.to(
+                device=self.device, dtype=torch.int64
+            )
+            if contact_mode.shape != (self.num_envs,):
+                raise ValueError(
+                    "contact_mode_override must have shape "
+                    f"[{self.num_envs}], got {tuple(contact_mode.shape)}."
+                )
+            if not bool(((contact_mode >= 0) & (contact_mode <= 3)).all()):
+                raise ValueError("contact_mode_override values must be 0..3.")
+            left_contact = (contact_mode == LEFT_SUPPORT) | (
+                contact_mode == DOUBLE_SUPPORT
+            )
+            right_contact = (contact_mode == RIGHT_SUPPORT) | (
+                contact_mode == DOUBLE_SUPPORT
+            )
+            # Keep state synchronized in case force detection is later reused.
+            self.contact_detector.contact[:, 0] = left_contact
+            self.contact_detector.contact[:, 1] = right_contact
+            self.contact_detector.on_counter.zero_()
+            self.contact_detector.off_counter.zero_()
 
         # Stack left/right Jacobians.
         stacked_jacobian = torch.cat(
@@ -544,6 +604,11 @@ class G1FabricContactProjector:
         active_row_mask = build_contact_row_mask(
             left_contact, right_contact, acc_fabric.dtype
         )
+        if contact_row_mask is not None:
+            if (contact_row_mask.shape != active_row_mask.shape or contact_row_mask.dtype != torch.bool
+                    or contact_row_mask.device != acc_fabric.device):
+                raise ValueError("contact_row_mask must be boolean [B,12] on the input device.")
+            active_row_mask = active_row_mask * contact_row_mask.to(acc_fabric.dtype)
 
         if (
             left_contact_pose_error is not None

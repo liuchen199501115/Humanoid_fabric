@@ -1,0 +1,95 @@
+[
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 0.7,
+    "position_violation": 3.3133888244628906,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 0.85,
+    "position_violation": 3.311281681060791,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 1.0,
+    "position_violation": 3.73146653175354,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 0.7,
+    "position_violation": 6.188733100891113,
+    "joint": "left_knee_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 0.85,
+    "position_violation": 2.3454227447509766,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 1.0,
+    "position_violation": 3.1740314960479736,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 0.7,
+    "position_violation": 8.36380386352539,
+    "joint": "left_knee_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 0.85,
+    "position_violation": 2.975419044494629,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": -0.2,
+    "blend": 1.0,
+    "position_violation": 3.6121175289154053,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 0.7,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00078555942, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 0.85,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00038912147, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.66,
+    "pitch": -0.2,
+    "blend": 1.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00099446997, tolerance=2e-06"
+  }
+]

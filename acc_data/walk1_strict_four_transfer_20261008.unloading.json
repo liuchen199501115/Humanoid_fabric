@@ -1,0 +1,13 @@
+{
+  "scope": "measured first unloading, not completed step",
+  "first_single_support_time_s": 29.594,
+  "last_time_s": 32.59,
+  "final_second_min_left_load_n": 320.9364013671875,
+  "final_second_max_right_load_n": 0.0,
+  "final_second_min_right_clearance_m": 0.038700919025213804,
+  "final_second_max_com_error_m": 0.0008984342566691339,
+  "physical_unloading_confirmed": true,
+  "steps_completed": 0,
+  "strict_four_steps_passed": false,
+  "reason": "Source step rejected: required torque/contact/acceleration/joint-braking/collision bounds failed; see acc_data/walk1_strict_four_transfer_20261008.step_plan.json"
+}

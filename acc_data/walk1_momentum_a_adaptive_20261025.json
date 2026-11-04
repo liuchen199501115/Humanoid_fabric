@@ -1,0 +1,284 @@
+{
+  "reference_parameter_bounds": [
+    [
+      -0.02,
+      0.05
+    ],
+    [
+      0.02,
+      0.11
+    ],
+    [
+      -0.35,
+      0.35
+    ],
+    [
+      -0.35,
+      0.35
+    ],
+    [
+      -4.0,
+      4.0
+    ],
+    [
+      -4.0,
+      4.0
+    ],
+    [
+      -0.06,
+      0.06
+    ],
+    [
+      -0.06,
+      0.06
+    ],
+    [
+      -0.06,
+      0.06
+    ],
+    [
+      -0.06,
+      0.06
+    ],
+    [
+      -0.03,
+      0.03
+    ],
+    [
+      -0.03,
+      0.03
+    ],
+    [
+      -0.03,
+      0.03
+    ],
+    [
+      -0.03,
+      0.03
+    ],
+    [
+      -0.03,
+      0.03
+    ],
+    [
+      -0.1,
+      -0.02
+    ],
+    [
+      -0.35,
+      0.05
+    ]
+  ],
+  "extended_reference_search": false,
+  "scope": "Fixed-parameter full-model reference audit; no optimization or live tracking",
+  "effort_limit_source": "unitree_g1_effort_limits",
+  "effort_limits": [
+    70.4000015258789,
+    111.20000457763672,
+    70.4000015258789,
+    111.20000457763672,
+    20.0,
+    20.0,
+    70.4000015258789,
+    111.20000457763672,
+    70.4000015258789,
+    111.20000457763672,
+    20.0,
+    20.0,
+    70.4000015258789,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    4.0,
+    4.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    4.0,
+    4.0
+  ],
+  "effort_joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_yaw_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "effort_limit_scale": 0.8,
+  "software_acceleration_limits_enabled": false,
+  "joint_braking_limits_enabled": false,
+  "options": {
+    "pelvis_roll_bump": -0.06,
+    "pelvis_roll_offset": 0.08,
+    "duration": 1.0,
+    "body_join": "endpoint",
+    "pelvis_pitch_offset": -0.15,
+    "com_preview": "full_body_source",
+    "landing_fraction": 1.0,
+    "landing_search_depth": 0.0
+  },
+  "boundary": {
+    "record": "acc_data/walk1_settled_unload_20261021.npz",
+    "velocity": "measured",
+    "acceleration": "WBC prediction, not measured"
+  },
+  "landing_rate": 1.0,
+  "refinement_report": null,
+  "late_com_parameters_enabled": true,
+  "early_com_parameters_enabled": true,
+  "interior_enabled": true,
+  "pelvis_parameters_enabled": false,
+  "body_parameters_enabled": true,
+  "optimizer_method": "Powell",
+  "objective_version": "max_plus_family_mean_squared_violation_v3",
+  "constraint_reference_peaks": null,
+  "best": {
+    "evaluation": 1,
+    "parameters": [
+      0.03962925647643201,
+      0.10010124327555912,
+      0.0233920019112408,
+      -0.2,
+      -0.21677834111946348,
+      -1.2,
+      0.007225995916529462,
+      -0.010170399060869403,
+      -0.0032045538807316393,
+      -0.016399354379812346,
+      0.0007623977156277009,
+      -0.007538909079161153,
+      0.0025625603248181777,
+      -0.0007757653066279499,
+      -0.004200030099502091,
+      -0.04786152732565094,
+      -0.21893372714063075
+    ],
+    "objective": 100.0,
+    "error": "Candidate sample t=0.783333s: Could not find joint-limited flat-foot reference geometry: residual=0.00088572502, tolerance=2e-06, saturated_joints=[]"
+  },
+  "evaluations": 1,
+  "optimizer_success": null,
+  "optimizer_message": null,
+  "audit_only": true,
+  "history": [
+    {
+      "evaluation": 1,
+      "parameters": [
+        0.03962925647643201,
+        0.10010124327555912,
+        0.0233920019112408,
+        -0.2,
+        -0.21677834111946348,
+        -1.2,
+        0.007225995916529462,
+        -0.010170399060869403,
+        -0.0032045538807316393,
+        -0.016399354379812346,
+        0.0007623977156277009,
+        -0.007538909079161153,
+        0.0025625603248181777,
+        -0.0007757653066279499,
+        -0.004200030099502091,
+        -0.04786152732565094,
+        -0.21893372714063075
+      ],
+      "objective": 100.0,
+      "error": "Candidate sample t=0.783333s: Could not find joint-limited flat-foot reference geometry: residual=0.00088572502, tolerance=2e-06, saturated_joints=[]"
+    }
+  ],
+  "simulation_validated": false,
+  "audit_sample_times": [
+    0.0,
+    0.016666666667,
+    0.033333333333,
+    0.05,
+    0.066666666667,
+    0.083333333333,
+    0.1,
+    0.116666666667,
+    0.133333333333,
+    0.15,
+    0.166666666667,
+    0.183333333333,
+    0.2,
+    0.216666666667,
+    0.233333333333,
+    0.25,
+    0.266666666667,
+    0.283333333333,
+    0.3,
+    0.316666666667,
+    0.333333333333,
+    0.35,
+    0.366666666667,
+    0.383333333333,
+    0.4,
+    0.416666666667,
+    0.433333333333,
+    0.45,
+    0.466666666667,
+    0.483333333333,
+    0.5,
+    0.516666666667,
+    0.533333333333,
+    0.55,
+    0.566666666667,
+    0.583333333333,
+    0.6,
+    0.616666666667,
+    0.633333333333,
+    0.65,
+    0.666666666667,
+    0.683333333333,
+    0.7,
+    0.716666666667,
+    0.733333333333,
+    0.75,
+    0.766666666667,
+    0.783333333333,
+    0.8,
+    0.816666666667,
+    0.833333333333,
+    0.85,
+    0.866666666667,
+    0.883333333333,
+    0.9,
+    0.916666666667,
+    0.933333333333,
+    0.95,
+    0.966666666667,
+    0.983333333333,
+    1.0
+  ],
+  "optimization_sample_times": []
+}

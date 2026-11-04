@@ -1,0 +1,43 @@
+{
+  "scope": "first_transfer_and_lift",
+  "full_pkl_tracking": false,
+  "duration": 14.524000000000001,
+  "final_source_frame": 112.50024096000021,
+  "control_updates": 7263,
+  "simulation_control_hz": 499.99999999999955,
+  "transfer_passed": false,
+  "load_diagnostics": {
+    "foot_order": [
+      "left",
+      "right"
+    ],
+    "final_load_n": [
+      253.82058715820312,
+      73.6559829711914
+    ],
+    "final_second_min_load_n": [
+      240.96571350097656,
+      71.54851531982422
+    ],
+    "final_second_max_load_n": [
+      264.979736328125,
+      75.8940200805664
+    ],
+    "final_second_min_load_fraction": [
+      0.7619834542274475,
+      0.21699759364128113
+    ],
+    "final_second_max_load_fraction": [
+      0.7830023765563965,
+      0.23801656067371368
+    ]
+  },
+  "final_reference_phase": "PREPARE_STEP",
+  "final_reference_rate": 0.0,
+  "final_second_max_com_error_m": 0.004770819563418627,
+  "constraint_diagnostics": {
+    "peak_joint_velocity_violation": 0.0,
+    "peak_measured_joint_velocity_violation": 0.0
+  },
+  "reason": "No commanded single support"
+}

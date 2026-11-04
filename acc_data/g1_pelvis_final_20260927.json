@@ -1,0 +1,10 @@
+{
+  "status": [
+    "DAQP 1; KKT certified"
+  ],
+  "center_of_mass_rms": 0.01995329081346586,
+  "feet_pose_rms": 2.7530256101496517,
+  "body_orientation_rms": 3.760320102042627,
+  "source_pelvis_orientation_rms": 2.0200011744041895,
+  "joint_posture_rms": 55.478846613796485
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "double_support_unloading_only",
+  "full_pkl_tracking": false,
+  "unloading_passed": false,
+  "measured_steps": 0,
+  "reason": "Transfer did not start"
+}

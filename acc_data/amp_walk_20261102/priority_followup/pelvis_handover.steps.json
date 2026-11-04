@@ -1,0 +1,99 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 29,
+  "measured_steps": 4,
+  "landings": [
+    {
+      "step": 1,
+      "swing": "left",
+      "source_frame": 37.6,
+      "time": 0.188,
+      "landing_error_m": 0.015148449979493725,
+      "goal": [
+        1.5718071460723877,
+        0.19158045947551727,
+        0.04952828213572502
+      ],
+      "measured_load_n": 604.871337890625
+    },
+    {
+      "step": 2,
+      "swing": "right",
+      "source_frame": 80.80000000000001,
+      "time": 0.404,
+      "landing_error_m": 0.025590809742077534,
+      "goal": [
+        2.0546042919158936,
+        -0.09282495826482773,
+        0.06013905629515648
+      ],
+      "measured_load_n": 221.26779174804688
+    },
+    {
+      "step": 3,
+      "swing": "left",
+      "source_frame": 181.6,
+      "time": 0.908,
+      "landing_error_m": 0.03233015617217553,
+      "goal": [
+        2.405056953430176,
+        0.1028435006737709,
+        0.04537191241979599
+      ],
+      "measured_load_n": 469.41552734375
+    },
+    {
+      "step": 4,
+      "swing": "right",
+      "source_frame": 266.8,
+      "time": 1.334,
+      "landing_error_m": 0.028920913586591157,
+      "goal": [
+        2.9594597816467285,
+        -0.17393580079078674,
+        0.06212610751390457
+      ],
+      "measured_load_n": 317.8249206542969
+    }
+  ],
+  "continuous": true,
+  "initial_partial_step": true,
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "controller_valid": false,
+  "steps_tracking_passed": false,
+  "stable_final_support": false,
+  "stopped_at_tracking_steps": false,
+  "stop_reason": "QP validation failed",
+  "failed_time_s": 2.344,
+  "pkl_fidelity": {
+    "source_frame_count": 2000,
+    "first_source_frame": 0.0,
+    "last_source_frame": 468.40000000000003,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.6375155448913574,
+    "peak_root_position_error": 0.7253572940826416,
+    "peak_root_orientation_error": 1.8750374434396544,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_clip_tracking_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "last_time_s": 2.342,
+  "last_source_frame": 468.40000000000003,
+  "controller_validation_available": false,
+  "ground_support_evidence_available": true,
+  "native_clearance_geometry_available": true,
+  "measured_mode_available": true,
+  "bounded_source_covered": false,
+  "pkl_fidelity_available": true,
+  "pkl_fidelity_passed": false
+}

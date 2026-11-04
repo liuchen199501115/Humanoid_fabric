@@ -1,0 +1,46 @@
+{
+  "5.8": {
+    "whole_posture": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "center_of_mass_rms": 0.020026612624869395,
+      "feet_pose_rms": null,
+      "body_orientation_rms": 6.613716428698376,
+      "source_pelvis_orientation_rms": 26.38927986388513,
+      "joint_posture_rms": 13.60601844882106
+    },
+    "body_orientation": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "center_of_mass_rms": 0.020038037644603213,
+      "feet_pose_rms": null,
+      "body_orientation_rms": 4.163050960334517,
+      "source_pelvis_orientation_rms": 16.514707729321874,
+      "joint_posture_rms": 73.4903487729398
+    }
+  },
+  "6.5": {
+    "whole_posture": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "center_of_mass_rms": 0.019955506204190124,
+      "feet_pose_rms": 3.990679011070467,
+      "body_orientation_rms": 2.9160198561092647,
+      "source_pelvis_orientation_rms": 6.135939613426107,
+      "joint_posture_rms": 2.7541673879072004
+    },
+    "body_orientation": {
+      "status": [
+        "DAQP 1; KKT certified"
+      ],
+      "center_of_mass_rms": 0.019953290879233858,
+      "feet_pose_rms": 2.741654731168367,
+      "body_orientation_rms": 3.7456356651706586,
+      "source_pelvis_orientation_rms": 2.011153191093217,
+      "joint_posture_rms": 59.43195275824466
+    }
+  }
+}

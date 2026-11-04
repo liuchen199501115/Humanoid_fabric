@@ -1,0 +1,117 @@
+[
+  {
+    "fraction": 0.4,
+    "height": 0.61,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0040216842, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.61,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0037857736, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.61,
+    "pitch": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0035458647, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": -0.2,
+    "position_violation": -0.0203529051971435,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": 0.0,
+    "position_violation": -0.02316505233764643,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": 0.2,
+    "position_violation": -0.02539915363311762,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.67,
+    "pitch": -0.2,
+    "position_violation": -0.05973865978717802,
+    "joint": "right_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.67,
+    "pitch": 0.0,
+    "position_violation": -0.05973865978717802,
+    "joint": "right_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.67,
+    "pitch": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00054174662, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.61,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0024224969, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.61,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0021689644, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.61,
+    "pitch": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0019130488, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": -0.2,
+    "position_violation": -0.02970874826431269,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": 0.0,
+    "position_violation": -0.030859177513122504,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.64,
+    "pitch": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0016667098, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.67,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00051633641, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.67,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0018501095, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.5,
+    "height": 0.67,
+    "pitch": 0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0045815557, tolerance=2e-06"
+  }
+]

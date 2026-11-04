@@ -1,0 +1,8 @@
+{
+  "status": [
+    "DAQP 1; KKT certified"
+  ],
+  "violation": 1.2396128568070708e-10,
+  "iterations": 344,
+  "scope": "Only second-stage locks rebuilt from certified float32 result; first-stage locks, physical constraints and all objectives unchanged"
+}

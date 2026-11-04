@@ -1,0 +1,116 @@
+{
+  "time": 5.9,
+  "frame": 133.44281667115035,
+  "initial": [
+    1.5677788257598877,
+    4.139537811279297,
+    -0.05263335630297661,
+    -0.5594407320022583,
+    1.7688194513320923,
+    -0.08798933774232864
+  ],
+  "goal": [
+    1.5517853498458862,
+    3.6786351203918457,
+    0.648241400718689
+  ],
+  "mass": 33.34114074707031,
+  "results": [
+    {
+      "momentum": false,
+      "duration": 0.65,
+      "status": "primal infeasible",
+      "primal_residual": 0.6077190004266574,
+      "dual_residual": 0.009539936234160063,
+      "lp_feasible": false
+    },
+    {
+      "momentum": false,
+      "duration": 0.8,
+      "status": "primal infeasible",
+      "primal_residual": 0.7138970979394276,
+      "dual_residual": 0.007117013192062659,
+      "lp_feasible": false
+    },
+    {
+      "momentum": false,
+      "duration": 1.0,
+      "status": "primal infeasible",
+      "primal_residual": 0.77865350189088,
+      "dual_residual": 0.00699963079257435,
+      "lp_feasible": false
+    },
+    {
+      "momentum": false,
+      "duration": 1.2,
+      "status": "primal infeasible",
+      "primal_residual": 0.7849108709833651,
+      "dual_residual": 0.00888022537703755,
+      "lp_feasible": false
+    },
+    {
+      "momentum": false,
+      "duration": 1.5,
+      "status": "primal infeasible",
+      "primal_residual": 0.7325648453761804,
+      "dual_residual": 0.001681107473615112,
+      "lp_feasible": false
+    },
+    {
+      "momentum": true,
+      "duration": 0.65,
+      "status": "solved",
+      "primal_residual": 6.524653008155301e-07,
+      "dual_residual": 3.07047078578355e-07,
+      "lp_feasible": true,
+      "lp_peak_momentum": 4.0,
+      "lp_peak_rate": 30.0,
+      "violation": 6.012879367744972e-07,
+      "peak_momentum": 4.000000335890606,
+      "peak_rate": 30.000000601287937,
+      "objective": -33.62867699509778
+    },
+    {
+      "momentum": true,
+      "duration": 0.8,
+      "status": "primal infeasible",
+      "primal_residual": 0.034487139787091586,
+      "dual_residual": 0.0008543924522493634,
+      "lp_feasible": false
+    },
+    {
+      "momentum": true,
+      "duration": 1.0,
+      "status": "primal infeasible",
+      "primal_residual": 0.07494401124363317,
+      "dual_residual": 0.0014242632591309045,
+      "lp_feasible": false
+    },
+    {
+      "momentum": true,
+      "duration": 1.2,
+      "status": "primal infeasible",
+      "primal_residual": 0.08754255126444302,
+      "dual_residual": 0.001908116172418747,
+      "lp_feasible": false
+    },
+    {
+      "momentum": true,
+      "duration": 1.5,
+      "status": "primal infeasible",
+      "primal_residual": 0.07155366010831013,
+      "dual_residual": 0.01504833484866063,
+      "lp_feasible": false
+    }
+  ],
+  "implemented_preview": {
+    "duration": 0.65,
+    "violation": 5.790092780233458e-09,
+    "stationarity": 5.213835946316081e-09,
+    "terminal_com": [
+      1.5517853499875083,
+      3.6786351203840444,
+      0.648241400718689
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "offline_rigid_body_single_support_with_motor_armature",
+  "candidate": "acc_data/lafan_momentum_phase_0p35_20260930.npz",
+  "support": "left",
+  "samples": 551,
+  "inverse_dynamics_passed": false,
+  "simulation_validated": false,
+  "ready_for_tracking": false,
+  "full_pkl_tracking": false,
+  "worst_torque_sample": {
+    "time": 1.058,
+    "torque_ratio": 1.081963062286377,
+    "worst_joint": "left_hip_pitch_joint",
+    "wrench_violation": 66.01504516601562,
+    "base_residual": 0.0,
+    "contact_velocity": 2.8312206268310547e-07,
+    "contact_acceleration": 1.5497207641601562e-06
+  },
+  "max_wrench_violation": 67.20040893554688,
+  "wrench_pass_fraction": 0.9782214156079855,
+  "max_contact_velocity": 5.21540641784668e-07,
+  "max_contact_acceleration": 4.06801700592041e-06,
+  "unchecked": [
+    "collision",
+    "impact",
+    "landing continuation",
+    "closed-loop tracking",
+    "continuous inter-sample bounds"
+  ]
+}

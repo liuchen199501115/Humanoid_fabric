@@ -1,0 +1,51 @@
+{
+  "status": "flow_fixes_verified_tracking_not_achieved",
+  "changes": [
+    "Ground-filtered support forces in contact detection and fast servo, independent of diagnostic flags",
+    "Separate total and ground force histories",
+    "Dynamic bounded landing validation including explicit partial first step and direct support switches",
+    "Keep moving source tail instead of truncating q/v/a at fourth landing",
+    "Require measured support, original landing targets, source coverage, controller validity and whole-history PKL fidelity"
+  ],
+  "tests_passed": 85,
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "source_unchanged": true,
+  "four_landing_frames": [
+    32,
+    79,
+    182,
+    268
+  ],
+  "first_landing_is_partial_step": true,
+  "runs": [
+    {
+      "name": "smoke",
+      "duration_s": 0.08,
+      "exit_code": 1,
+      "reason": "Correctly rejected incomplete four-step tracking (0/4); controller checks passed"
+    },
+    {
+      "name": "no_diagnostics",
+      "duration_s": 0.02,
+      "exit_code": 0,
+      "reason": "Ground force interface verified with diagnostic flags off"
+    },
+    {
+      "name": "contact_check",
+      "failed_time_s": 0.154,
+      "exit_code": 1,
+      "reason": "Physical tracking/OSQP failure remains; no landings certified"
+    }
+  ],
+  "collision_evidence": {
+    "time_s": 0.142,
+    "left_total_contact_force_z_n": 220.7804412841797,
+    "left_ground_force_z_n": 0.0,
+    "measured_support": "right"
+  },
+  "remaining": [
+    "Reference/contact timing coordination and dynamically feasible reference generation",
+    "Swing-foot collision and QP failure"
+  ],
+  "four_step_tracking_passed": false
+}

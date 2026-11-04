@@ -1,0 +1,196 @@
+[
+  {
+    "run": "unload_priority",
+    "diagnostic_only": true,
+    "official_pass_flags_unchanged": true,
+    "same_frame_source_pose_landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.011972491394771561,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 605.34326171875,
+        "root_angle_error_rad": 0.10533162006049357,
+        "root_position_error_m": 0.014802136458456516,
+        "joint_rmse_rad": 0.11588385701179504
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.0,
+        "time": 0.41000000000000003,
+        "landing_error_m": 0.028535341591269282,
+        "goal": [
+          2.0718159675598145,
+          -0.09186406433582306,
+          0.04756303131580353
+        ],
+        "measured_load_n": 239.07078552246094,
+        "root_angle_error_rad": 0.12005380311561117,
+        "root_position_error_m": 0.023684414103627205,
+        "joint_rmse_rad": 0.1706492006778717
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 173.6,
+        "time": 0.868,
+        "landing_error_m": 0.034382262147400124,
+        "goal": [
+          2.4584169387817383,
+          0.10430409014225006,
+          0.04060667008161545
+        ],
+        "measured_load_n": 217.9410400390625,
+        "root_angle_error_rad": 0.12260210375301882,
+        "root_position_error_m": 0.019920846447348595,
+        "joint_rmse_rad": 0.10285051167011261
+      },
+      {
+        "step": 4,
+        "swing": "right",
+        "source_frame": 266.8,
+        "time": 1.334,
+        "landing_error_m": 0.015569419013002024,
+        "goal": [
+          2.9772298336029053,
+          -0.1719239354133606,
+          0.049913592636585236
+        ],
+        "measured_load_n": 205.052001953125,
+        "root_angle_error_rad": 0.19191285361812122,
+        "root_position_error_m": 0.028784411028027534,
+        "joint_rmse_rad": 0.13867908716201782
+      },
+      {
+        "step": 5,
+        "swing": "left",
+        "source_frame": 386.8,
+        "time": 1.934,
+        "landing_error_m": 0.004041822166425348,
+        "goal": [
+          3.3979074954986572,
+          -0.021460290998220444,
+          0.03970704227685928
+        ],
+        "measured_load_n": 242.36473083496094,
+        "root_angle_error_rad": 0.23768654643764683,
+        "root_position_error_m": 0.09516549855470657,
+        "joint_rmse_rad": 0.22584420442581177
+      }
+    ],
+    "ideal_source_fifth_fixed_goal_max_hold_s": 0.02200000000000002,
+    "required_hold_s": 0.05
+  },
+  {
+    "run": "landing_tail",
+    "diagnostic_only": true,
+    "official_pass_flags_unchanged": true,
+    "same_frame_source_pose_landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.011972491394771561,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 605.34326171875,
+        "root_angle_error_rad": 0.10533162006049357,
+        "root_position_error_m": 0.014802136458456516,
+        "joint_rmse_rad": 0.11588385701179504
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.0,
+        "time": 0.41000000000000003,
+        "landing_error_m": 0.028535341591269282,
+        "goal": [
+          2.0718159675598145,
+          -0.09186406433582306,
+          0.04756303131580353
+        ],
+        "measured_load_n": 239.07078552246094,
+        "root_angle_error_rad": 0.12005380311561117,
+        "root_position_error_m": 0.023684414103627205,
+        "joint_rmse_rad": 0.1706492006778717
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 173.6,
+        "time": 0.868,
+        "landing_error_m": 0.034382262147400124,
+        "goal": [
+          2.4584169387817383,
+          0.10430409014225006,
+          0.04060667008161545
+        ],
+        "measured_load_n": 217.9410400390625,
+        "root_angle_error_rad": 0.12260210375301882,
+        "root_position_error_m": 0.019920846447348595,
+        "joint_rmse_rad": 0.10285051167011261
+      },
+      {
+        "step": 4,
+        "swing": "right",
+        "source_frame": 266.8,
+        "time": 1.334,
+        "landing_error_m": 0.015569419013002024,
+        "goal": [
+          2.9772298336029053,
+          -0.1719239354133606,
+          0.049913592636585236
+        ],
+        "measured_load_n": 205.052001953125,
+        "root_angle_error_rad": 0.19191285361812122,
+        "root_position_error_m": 0.028784411028027534,
+        "joint_rmse_rad": 0.13867908716201782
+      },
+      {
+        "step": 5,
+        "swing": "left",
+        "source_frame": 385.2,
+        "time": 1.926,
+        "landing_error_m": 0.033735798485666414,
+        "goal": [
+          3.397911310195923,
+          -0.02142232470214367,
+          0.03972550854086876
+        ],
+        "measured_load_n": 575.4781494140625,
+        "root_angle_error_rad": 0.21092217325511764,
+        "root_position_error_m": 0.09627576917409897,
+        "joint_rmse_rad": 0.2171744555234909
+      },
+      {
+        "step": 6,
+        "swing": "right",
+        "source_frame": 496.40000000000003,
+        "time": 2.482,
+        "landing_error_m": 0.003786090373065112,
+        "goal": [
+          3.902688980102539,
+          -0.29024752974510193,
+          0.03502804785966873
+        ],
+        "measured_load_n": 469.0313415527344,
+        "root_angle_error_rad": 0.17168200295671746,
+        "root_position_error_m": 0.08484195917844772,
+        "joint_rmse_rad": 0.21872437000274658
+      }
+    ],
+    "ideal_source_fifth_fixed_goal_max_hold_s": 0.02200000000000002,
+    "required_hold_s": 0.05
+  }
+]

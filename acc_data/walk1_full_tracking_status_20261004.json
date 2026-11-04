@@ -1,0 +1,245 @@
+{
+  "full_tracking_passed": false,
+  "validated_recording": "acc_data/walk1_recovery_pair_live_20261004.npz",
+  "validated_last_source_frame": 176,
+  "required_last_source_frame": 7838,
+  "whole_clip_audit": "acc_data/walk1_full_source_audit_20261004.json",
+  "legacy_schedule_first_obstacle": {
+    "frame": 433,
+    "reason": "Repeated support requires a same-side swing"
+  },
+  "same_support_repetitions": 6,
+  "direct_support_switches": 59,
+  "existing_prefix_fidelity": {
+    "source_frame_count": 7839,
+    "first_source_frame": 0.0,
+    "last_source_frame": 176.0,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": true,
+    "controller_valid": true,
+    "peak_joint_rmse": 0.3130852282047272,
+    "peak_root_position_error": 0.9641962647438049,
+    "peak_root_orientation_error": 0.22362665272731655,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+  },
+  "offline_sixth_recovery_passed": true,
+  "offline_sixth_recovery_simulation_validated": false,
+  "failed_candidates": [
+    {
+      "candidate": "resume_original_frame_198",
+      "passed": false,
+      "error": "RuntimeError: Could not find joint-limited flat-foot reference geometry: residual=0.0018692985, tolerance=2e-06"
+    },
+    {
+      "candidate": "seventh_recovery_height_066",
+      "passed": false,
+      "error": "RuntimeError: Could not find joint-limited flat-foot reference geometry: residual=2.4974346e-05, tolerance=2e-06"
+    },
+    {
+      "candidate": "seventh_recovery_height_064",
+      "passed": false,
+      "error": "RuntimeError: Source step rejected: required torque/contact/acceleration/joint-braking bounds failed; see acc_data/walk1_recovery_seventh_low_20261004.json"
+    }
+  ],
+  "tests_passed": 23,
+  "remaining_work": [
+    "Replan the initial source steps to satisfy original-PKL fidelity throughout the history",
+    "Resolve the remaining fixed-frame recovery and unshortened next-source landing constraints",
+    "Support repeated-side swings and direct contact transitions",
+    "Plan and validate the final double-support tail from 7822 through 7838",
+    "Run and audit closed-loop coverage through frame 7838"
+  ],
+  "latest_swing_priority_work": {
+    "source_priority_flags": [
+      "--source-swing-position-priority",
+      "--source-swing-pose-priority"
+    ],
+    "comparison": "acc_data/walk1_swing_priority_comparison_20261004.json",
+    "common_window_seconds": [
+      10.3,
+      10.87
+    ],
+    "maximum_position_error_before_m": 0.0998656153678894,
+    "maximum_position_error_after_m": 0.0013208891032263637,
+    "position_priority_failed_at_s": 11.448,
+    "pose_priority_failed_reason": "No measured touchdown at source frame 129; pelvis diverged",
+    "body_priority_failed_at_s": 10.848,
+    "collision_audit": "acc_data/walk1_full_stride_collision_audit_20261004.json",
+    "raw_source_collision_samples": "acc_data/walk1_original_collision_samples_20261004.json",
+    "reference_preflight_rejection": "acc_data/walk1_first_full_stride_collision_checked_20261004.json",
+    "regression_tests_passed": 58,
+    "blocking_issue": "Source/bridge reference conflicts with enabled wrist-body collision cover constraints; geometry validation and upper-body replanning required",
+    "full_tracking_passed": false
+  },
+  "latest_collision_geometry_work": {
+    "full_tracking_passed": false,
+    "regression_tests_passed": 71,
+    "convex_geometry_crosscheck": "acc_data/walk1_native_convex_crosscheck_20261004.json",
+    "original_source_audit_preserved": true,
+    "convex_arm_offset_rad": 0.2,
+    "convex_closed_loop_failures_s": [
+      3.656,
+      5.128
+    ],
+    "full_source_static_geometry_audit": "acc_data/walk1_full_arm_geometry_20261004.json",
+    "fixed_arm_offset_full_source_margin_violations": 797,
+    "sphere_arm_offset_rad": 0.3,
+    "sphere_swing_report": "acc_data/walk1_first_full_stride_sphere_arm_20261004.json",
+    "sphere_stop_report": "acc_data/walk1_first_full_stride_sphere_arm_20261004.stop27.json",
+    "sphere_offline_swing_and_stop_passed": true,
+    "sphere_closed_loop_failure_s": 0.014,
+    "sphere_closed_loop_record": "acc_data/walk1_sphere_arm_live_20261004.failure.npz",
+    "blocking_issue": "Offline source-step feasibility does not extend to closed-loop initialization/transfer. Convex geometry is experimental; sphere fallback also fails before swing. Full-source collision-safe reference and stable physical tracking remain unvalidated."
+  },
+  "latest_staged_baseline": {
+    "record": "acc_data/walk1_staged_baseline_v2_20261004/status.json",
+    "standing_passed": true,
+    "first_transfer_and_lift_passed": true,
+    "regression_tests_passed": 19,
+    "full_tracking_passed": false,
+    "final_source_frame": 114.03624096000021,
+    "next_required_validation": "Lift-lower contact cycle, then full original first landing; preserve this baseline configuration"
+  },
+  "latest_handoff_work": {
+    "full_tracking_passed": false,
+    "handoff_report": "acc_data/walk1_staged_handoff_20261004.json",
+    "measured_upper_candidate": "acc_data/walk1_staged_measured_upper_20261004.json",
+    "measured_upper_height_candidate": "acc_data/walk1_staged_measured_upper_h63_20261004.json",
+    "max_nominal_joint_error_rad": 0.2562733292579651,
+    "measured_pose_static_min_cover_distance_m": 0.05680385231971741,
+    "nominal_pose_min_cover_distance_m": -0.043266378343105316,
+    "measured_upper_swing_collision_passed": true,
+    "first_step_physical_execution": false,
+    "regression_tests_passed": 17,
+    "remaining_issue": "Measured upper-body candidates clear collision but violate ankle braking constraints; complete landing stop and continuous measured-state handoff remain unvalidated."
+  },
+  "latest_c2_dynamics_audit": {
+    "scope": "Sampled exact-reference necessary conditions; not a closed-loop WBC test",
+    "samples": 1454,
+    "failures": {
+      "contact": 1454,
+      "torque_or_wrench": 847,
+      "joint_braking": 588,
+      "collision": 1422
+    },
+    "sampled_necessary_conditions_passed": false,
+    "full_tracking_passed": false,
+    "simulation_run": false,
+    "report": "acc_data/walk1_c2_dynamics_20261004.json"
+  },
+  "latest_anchored_reference": {
+    "full_tracking_passed": false,
+    "simulation_run": false,
+    "requested_source_interval": [
+      114,
+      128
+    ],
+    "projected_samples": 14,
+    "failed_source_frame": 128,
+    "projection_report": "acc_data/walk1_anchored_first_partial_20261004/report.json",
+    "dynamics_report": "acc_data/walk1_anchored_first_wrench_20261004.json",
+    "contact_motion_failures_after_projection": 0,
+    "remaining_issue": "Required single-support CoP outside sole; collision and braking also fail; measured-state handoff and transitions remain unvalidated",
+    "tests_passed": 5
+  },
+  "latest_com_height_work": {
+    "full_tracking_passed": false,
+    "simulation_run": false,
+    "height_comparison": [
+      {
+        "report": "acc_data/walk1_anchored_com_small_20261004/report.json",
+        "offset_local_m": [
+          -0.06,
+          0.06
+        ],
+        "projected_frames": 7,
+        "requested_frames": 15,
+        "failed_frames": [
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128
+        ]
+      },
+      {
+        "report": "acc_data/walk1_com_lower_20261007/report.json",
+        "offset_local_m": [
+          -0.06,
+          0.06,
+          -0.04
+        ],
+        "projected_frames": 10,
+        "requested_frames": 15,
+        "failed_frames": [
+          124,
+          125,
+          126,
+          127,
+          128
+        ]
+      },
+      {
+        "report": "acc_data/walk1_com_lower8_20261007/report.json",
+        "offset_local_m": [
+          -0.06,
+          0.06,
+          -0.08
+        ],
+        "projected_frames": 9,
+        "requested_frames": 15,
+        "failed_frames": [
+          121,
+          122,
+          123,
+          124,
+          125,
+          126
+        ]
+      }
+    ],
+    "lower4cm_audit": {
+      "report": "acc_data/walk1_com_lower_dynamics_20261007.json",
+      "samples": 10,
+      "failures": {
+        "contact": 0,
+        "torque_or_wrench": 0,
+        "joint_braking": 10,
+        "collision": 10
+      },
+      "peak_torque_ratio": 0.6202282817769308
+    },
+    "next_required_work": "Jointly adapt upper-body collision clearance and leg braking while retaining source swing targets; resolve last five IK frames and plan continuous measured-state handoff."
+  },
+  "latest_held_body_work": {
+    "full_tracking_passed": false,
+    "simulation_run": false,
+    "projected_frames": 11,
+    "failed_source_frames": [
+      124,
+      125,
+      126,
+      127
+    ],
+    "audit": "acc_data/walk1_held_body_joint_audit_20261007.json",
+    "failures": {
+      "contact": 0,
+      "torque_or_wrench": 0,
+      "joint_braking": 11,
+      "collision": 1
+    },
+    "tests_passed": 7,
+    "remaining_issue": "Ankle protection margin and knee braking require joint posture/COM coordination; incomplete sample set is not an executable trajectory."
+  }
+}

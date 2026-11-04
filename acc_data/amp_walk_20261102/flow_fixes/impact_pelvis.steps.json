@@ -1,0 +1,30 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 4,
+  "measured_steps": 1,
+  "landings": [
+    {
+      "step": 1,
+      "swing": "left",
+      "source_frame": 38.4,
+      "time": 0.192,
+      "landing_error_m": 0.02188248448658495,
+      "goal": [
+        1.5718071460723877,
+        0.19158045947551727,
+        0.04952828213572502
+      ],
+      "measured_load_n": 294.16162109375
+    }
+  ],
+  "continuous": true,
+  "initial_partial_step": true,
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "controller_valid": false,
+  "steps_tracking_passed": false,
+  "stable_final_support": false,
+  "stopped_at_tracking_steps": false,
+  "stop_reason": "QP validation failed",
+  "failed_time_s": 0.766
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "takeoff_frame": 21,
+    "end_frame": 67,
+    "requested_midpoint_clearance_m": 0.066,
+    "feasible_target_m": 0.066,
+    "target_reduced": false,
+    "limiting_ik_failure": null
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "scope": "live-boundary first-step probe preflight",
+  "checks": {
+    "velocity": true,
+    "torque": false,
+    "wrench": true,
+    "collision": true,
+    "boundary": true,
+    "landing": true
+  },
+  "physical_sample_checks_passed": false,
+  "conservative_score": 0.9092079401016235,
+  "conservative_margin_is_online_wbc_constraint": false,
+  "entry_error": {
+    "q": 5.960464477539063e-08,
+    "v": 1.3795215636491776e-08,
+    "a": 1.0803341865539551e-07
+  },
+  "endpoint_position_error_m": 6.40587472844345e-07,
+  "collision": {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.034405916929244995,
+    "violating_samples": 0,
+    "worst_time": null,
+    "violation_times": [],
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "sphere_cover"
+  },
+  "peak_torque_ratio": 1.9092079401016235,
+  "peak_wrench_score": 0.0,
+  "support_contact_velocity_max": 0.002913202391937375,
+  "support_contact_acceleration_max": 0.19885793328285217,
+  "stance_entry_transient_s": 0.2,
+  "initial_acceleration_source": "same-tick WBC prediction, not measurement",
+  "source_landing_pose": [
+    [
+      1.5049140453338623,
+      4.080635070800781,
+      0.053519319742918015,
+      -0.02445637807250023,
+      -0.1385621428489685,
+      -0.7159838080406189,
+      0.6837905049324036
+    ]
+  ],
+  "samples": 1001,
+  "acceleration_and_braking_limits_enabled": false,
+  "simulation_validated": false,
+  "full_pkl_tracking": false
+}

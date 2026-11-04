@@ -1,0 +1,93 @@
+[
+  {
+    "recording": "lafan_source_early_touchdown_20s",
+    "mode_changes": [
+      {
+        "time": 5.28,
+        "mode_before": 3,
+        "mode_after": 1,
+        "target_position_jump_m": [
+          -0.011743783950805664,
+          -0.004080295562744141,
+          -0.0011402368545532227
+        ],
+        "position_vs_previous_derivatives_residual_m": [
+          -0.015206536722183306,
+          -0.005196207287907624,
+          -0.0008142558187246246
+        ],
+        "target_velocity_before": [
+          0.1773824691772461,
+          0.058318424969911575,
+          -0.015784721821546555
+        ],
+        "target_velocity_after": [
+          0.17310237884521484,
+          0.049189161509275436,
+          0.0
+        ],
+        "waist_pitch_position": -0.0631609708070755,
+        "waist_pitch_velocity": -0.34745216369628906
+      },
+      {
+        "time": 6.04,
+        "mode_before": 1,
+        "mode_after": 3,
+        "target_position_jump_m": [
+          0.0084763765335083,
+          -0.03045034408569336,
+          -0.02556633949279785
+        ],
+        "position_vs_previous_derivatives_residual_m": [
+          0.012427091789245517,
+          -0.01408722758293188,
+          -0.02556633949279785
+        ],
+        "target_velocity_before": [
+          -0.1895105540752411,
+          -0.7878862619400024,
+          0.0
+        ],
+        "target_velocity_after": [
+          -0.17462393641471863,
+          -0.6533597111701965,
+          0.0
+        ],
+        "waist_pitch_position": 0.286528617143631,
+        "waist_pitch_velocity": 4.207777976989746
+      }
+    ]
+  },
+  {
+    "recording": "lafan_flat_spawn_500hz_8s",
+    "mode_changes": [
+      {
+        "time": 5.33,
+        "mode_before": 3,
+        "mode_after": 1,
+        "target_position_jump_m": [
+          -0.015501022338867188,
+          -0.005964756011962891,
+          0.0006026625633239746
+        ],
+        "position_vs_previous_derivatives_residual_m": [
+          -0.015831529662847482,
+          -0.006075578333795058,
+          0.0006371934748589954
+        ],
+        "target_velocity_before": [
+          0.1657244861125946,
+          0.05565118417143822,
+          -0.017217520624399185
+        ],
+        "target_velocity_after": [
+          0.1600610911846161,
+          0.04790118336677551,
+          0.0
+        ],
+        "waist_pitch_position": 0.18704427778720856,
+        "waist_pitch_velocity": -0.09858563542366028
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "seconds": 0.0009932019747793674,
+    "status": 1,
+    "iterations": 23,
+    "primal": 1.687538997430238e-13,
+    "dual": 1.6784707304595692e-13
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "seconds": 0.00043504498898983,
+    "status": 1,
+    "iterations": 39,
+    "primal": 1.1368683772161603e-12,
+    "dual": 1.59539048638635e-13
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "seconds": 0.0013433881103992462,
+    "status": 1,
+    "iterations": 83,
+    "primal": 4.929390229335695e-14,
+    "dual": 3.0698485203525805e-13
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "seconds": 0.002695920877158642,
+    "status": 1,
+    "iterations": 182,
+    "primal": 2.9198865547641617e-12,
+    "dual": 8.985008338280475e-12
+  },
+  {
+    "file": "lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "seconds": 0.0005031349137425423,
+    "status": 1,
+    "iterations": 18,
+    "primal": 1.1368683772161603e-13,
+    "dual": 1.0379460992569372e-13
+  },
+  {
+    "file": "lafan_source_swing_lead_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "seconds": 0.0010689590126276016,
+    "status": 1,
+    "iterations": 35,
+    "primal": 2.5437429940211587e-12,
+    "dual": 1.0261236305098009e-13
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "seconds": 0.0005476679652929306,
+    "status": -1,
+    "iterations": 3,
+    "primal": 178662.49441524336,
+    "dual": 9.09323669496333
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "seconds": 0.00027925195172429085,
+    "status": -1,
+    "iterations": 3,
+    "primal": 13528.168975282819,
+    "dual": 37.21176197114174
+  }
+]

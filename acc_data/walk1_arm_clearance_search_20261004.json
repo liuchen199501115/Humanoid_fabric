@@ -1,0 +1,46 @@
+[
+  {
+    "checked": true,
+    "passed": false,
+    "maximum_violation": 0.47425588965415955,
+    "minimum_cover_distance": 0.018429117277264595,
+    "violating_samples": 8,
+    "worst_time": 0.6,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "convex_mesh",
+    "offset": 0.1
+  },
+  {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.0448724664747715,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "convex_mesh",
+    "offset": 0.2
+  },
+  {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.07404856383800507,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "convex_mesh",
+    "offset": 0.3
+  },
+  {
+    "checked": true,
+    "passed": true,
+    "maximum_violation": 0.0,
+    "minimum_cover_distance": 0.10618089139461517,
+    "violating_samples": 0,
+    "worst_time": null,
+    "acceleration_residual_tolerance": 1e-05,
+    "geometry": "convex_mesh",
+    "offset": 0.4
+  }
+]

@@ -204,6 +204,10 @@ def parse_urdf_annotated(
     if verbose:
         print("urdfpy loading:", filename)
     robot = urdfpy.URDF.load(filename)
+    # urdfpy synthesizes unit mass/inertia when <inertial> is absent.
+    # Frame-only links (IMUs/cameras) must not add fictitious rigid bodies.
+    declared_inertials = {link.attrib["name"] for link in ET.parse(filename).getroot().findall("link")
+                          if link.find("inertial") is not None}
     kinematic_tree = KinematicTree(robot)
     depth_first_joints = kinematic_tree.get_depth_first_joints()
     if verbose:
@@ -223,9 +227,10 @@ def parse_urdf_annotated(
     # import inertial properties from URDF if density is zero
     if verbose:
         print("importing inertial props")
-    if density == 0.0:
+    if density == 0.0 and robot.base_link.name in declared_inertials:
         com = urdfpy.matrix_to_xyz_rpy(robot.base_link.inertial.origin)[0:3]
-        I_m = wp.mat33(robot.base_link.inertial.inertia)
+        inertial_rotation = robot.base_link.inertial.origin[:3, :3]
+        I_m = wp.mat33(inertial_rotation @ robot.base_link.inertial.inertia @ inertial_rotation.T)
         m = robot.base_link.inertial.mass
     else:
         com = np.zeros(3)
@@ -325,9 +330,11 @@ def parse_urdf_annotated(
             if joint.dynamics.damping:
                 damping = joint.dynamics.damping
 
-        if density == 0.0:
+        if density == 0.0 and joint.child in declared_inertials:
             com = urdfpy.matrix_to_xyz_rpy(robot.link_map[joint.child].inertial.origin)[0:3]
-            I_m = wp.mat33(robot.link_map[joint.child].inertial.inertia)
+            inertial = robot.link_map[joint.child].inertial
+            inertial_rotation = inertial.origin[:3, :3]
+            I_m = wp.mat33(inertial_rotation @ inertial.inertia @ inertial_rotation.T)
             m = robot.link_map[joint.child].inertial.mass
         else:
             com = np.zeros(3)

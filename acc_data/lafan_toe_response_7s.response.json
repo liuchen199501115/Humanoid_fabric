@@ -1,0 +1,16 @@
+{
+  "dt": 0.002,
+  "predicted_right_knee_acceleration": 5.000037670135498,
+  "observed_right_knee_acceleration": 9.279847145080566,
+  "max_torque_difference": 0.0,
+  "outside_contact_dynamics_residual": 0.055525817123703976,
+  "maximum_acceleration_error": 22.166067123413086,
+  "observed_contact_velocity_derivative": [
+    0.8866076469421387,
+    0.9880530834197998,
+    0.024394743144512177,
+    -15.72316837310791,
+    20.876876831054688,
+    -8.501358032226562
+  ]
+}

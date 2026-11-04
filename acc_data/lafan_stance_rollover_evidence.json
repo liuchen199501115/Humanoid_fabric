@@ -1,0 +1,86 @@
+[
+  {
+    "time": 6.5,
+    "frame": 139.26152690487407,
+    "mode": 2,
+    "source_heel_rise_m": -0.0016357558593153956,
+    "actual_heel_rise_m": 2.113293378614918e-08,
+    "source_pitch_rad": -0.009650667198002338,
+    "actual_pitch_rad": 1.2431137521479407e-07,
+    "predicted_cop_x_m": -0.04556848594474574,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.3448147475719452
+  },
+  {
+    "time": 6.7,
+    "frame": 144.59818806218948,
+    "mode": 2,
+    "source_heel_rise_m": 0.008755321726202966,
+    "actual_heel_rise_m": -1.611454995383834e-07,
+    "source_pitch_rad": 0.051577452570199966,
+    "actual_pitch_rad": -9.479147031847163e-07,
+    "predicted_cop_x_m": 0.05972889705984593,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.18859454989433289
+  },
+  {
+    "time": 6.9,
+    "frame": 148.81298413280237,
+    "mode": 2,
+    "source_heel_rise_m": 0.020538769364356998,
+    "actual_heel_rise_m": 5.470301511263515e-07,
+    "source_pitch_rad": 0.12122144550085068,
+    "actual_pitch_rad": 3.217824418410259e-06,
+    "predicted_cop_x_m": -0.0437277566175443,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.4252830147743225
+  },
+  {
+    "time": 7.0,
+    "frame": 150.66794830398246,
+    "mode": 2,
+    "source_heel_rise_m": 0.029768737554550173,
+    "actual_heel_rise_m": 2.2793445330759733e-07,
+    "source_pitch_rad": 0.17619381844997406,
+    "actual_pitch_rad": 1.3407909018208015e-06,
+    "predicted_cop_x_m": 0.05508446115433463,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.6148608326911926
+  },
+  {
+    "time": 7.1000000000000005,
+    "frame": 152.48847325810553,
+    "mode": 2,
+    "source_heel_rise_m": 0.04348450183868408,
+    "actual_heel_rise_m": -1.9664625932188773e-07,
+    "source_pitch_rad": 0.25898656249046326,
+    "actual_pitch_rad": -1.1567427019403161e-06,
+    "predicted_cop_x_m": 0.05234048429580488,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.7491846680641174
+  },
+  {
+    "time": 7.2,
+    "frame": 154.3378502004969,
+    "mode": 2,
+    "source_heel_rise_m": 0.07218836426734924,
+    "actual_heel_rise_m": -1.3274452534469014e-08,
+    "source_pitch_rad": 0.4393812417984009,
+    "actual_pitch_rad": -7.808501492058456e-08,
+    "predicted_cop_x_m": 0.08023972211783066,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.8223507404327393
+  },
+  {
+    "time": 7.25,
+    "frame": 155.2643720583152,
+    "mode": 3,
+    "source_heel_rise_m": 0.092103511095047,
+    "actual_heel_rise_m": 6.046812096233331e-07,
+    "source_pitch_rad": 0.5746036171913147,
+    "actual_pitch_rad": 3.5569482919205556e-06,
+    "predicted_cop_x_m": 0.10515367532816312,
+    "measured_loaded_toe_line": true,
+    "right_ankle_pitch_rad": -0.8511258363723755
+  }
+]

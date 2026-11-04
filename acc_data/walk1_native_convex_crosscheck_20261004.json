@@ -1,0 +1,42 @@
+[
+  {
+    "frame": 113,
+    "pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ],
+    "convex_distance": 0.0077605582773685455
+  },
+  {
+    "frame": 114,
+    "pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ],
+    "convex_distance": 0.006535353604704142
+  },
+  {
+    "frame": 118,
+    "pair": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "convex_distance": 0.018151992931962013
+  },
+  {
+    "frame": 122,
+    "pair": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "convex_distance": 0.0019157328642904758
+  },
+  {
+    "frame": 129,
+    "pair": [
+      "right_rubber_hand",
+      "right_hip_roll_link"
+    ],
+    "convex_distance": 0.0039429208263754845
+  }
+]

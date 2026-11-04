@@ -1,0 +1,94 @@
+[
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.64,
+    "pitch": -0.2,
+    "acceleration_violation": 2.1242284774780273,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.64,
+    "pitch": -0.1,
+    "acceleration_violation": 2.038421869277954,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 1.3772666454315186,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.66,
+    "pitch": -0.1,
+    "acceleration_violation": 1.2965961694717407,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.68,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=2.7537346e-05, tolerance=2e-06"
+  },
+  {
+    "cap": 0.38,
+    "fraction": 0.533847246153345,
+    "height": 0.68,
+    "pitch": -0.1,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00023125112, tolerance=2e-06"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.64,
+    "pitch": -0.2,
+    "acceleration_violation": 2.058706283569336,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.64,
+    "pitch": -0.1,
+    "acceleration_violation": 1.9728333950042725,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 1.3205645084381104,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.66,
+    "pitch": -0.1,
+    "acceleration_violation": 1.2405647039413452,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.68,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.00091743097, tolerance=2e-06"
+  },
+  {
+    "cap": 0.42,
+    "fraction": 0.5900416931168551,
+    "height": 0.68,
+    "pitch": -0.1,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0013265684, tolerance=2e-06"
+  }
+]

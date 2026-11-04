@@ -1,0 +1,74 @@
+[
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.007534394972026348,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 49,
+    "n_reduced": 29,
+    "primal": 1.8047785488306545e-12,
+    "dual": 9.607610540474099e-11,
+    "minimum_multiplier": -5.17546592189377e-108,
+    "complementarity": 8.43687480343062e-16
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.qp_2750.npz",
+    "stage": "problem_",
+    "time_seconds": 0.0056492299772799015,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 27,
+    "n_reduced": 29,
+    "primal": 2.7744917474592512e-11,
+    "dual": 2.620459405022757e-12,
+    "minimum_multiplier": -3.3134545302786625e-27,
+    "complementarity": 4.530807611806708e-10
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.04440326290205121,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 525,
+    "n_reduced": 29,
+    "primal": 1.1435297153639112e-12,
+    "dual": 8.475555760695253e-11,
+    "minimum_multiplier": 0.0,
+    "complementarity": 4.2018007832839156e-14
+  },
+  {
+    "file": "lafan_transfer_hysteresis_500hz_20260923.qp_3200.npz",
+    "stage": "problem_",
+    "time_seconds": 0.07399964798241854,
+    "status": "QPSolverOutput.PROXQP_SOLVED",
+    "iterations": 792,
+    "n_reduced": 29,
+    "primal": 7.389644451905042e-13,
+    "dual": 9.936768075036184e-11,
+    "minimum_multiplier": 0.0,
+    "complementarity": 7.15873532585579e-12
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "priority_problem_",
+    "time_seconds": 0.011624739039689302,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 68,
+    "n_reduced": 29,
+    "primal": 8435.126131245197,
+    "dual": 72.08491710303278,
+    "minimum_multiplier": -0.0,
+    "complementarity": 9528561167849216.0
+  },
+  {
+    "file": "lafan_timed_takeoff_500hz_20260923.failure.npz",
+    "stage": "problem_",
+    "time_seconds": 0.00572965107858181,
+    "status": "QPSolverOutput.PROXQP_PRIMAL_INFEASIBLE",
+    "iterations": 22,
+    "n_reduced": 29,
+    "primal": 8435.126189476194,
+    "dual": 41246473920.3117,
+    "minimum_multiplier": -0.0,
+    "complementarity": 1.5296874026843046e+16
+  }
+]

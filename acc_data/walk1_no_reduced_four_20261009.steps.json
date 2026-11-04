@@ -1,0 +1,22 @@
+{
+  "scope": "bounded source steps, unchanged landing targets",
+  "expected_steps": 4,
+  "measured_steps": 0,
+  "landings": [],
+  "measured_steps_complete": false,
+  "full_pkl_tracking": false,
+  "last_time_s": 30.95,
+  "last_source_frame": 112.50004906328444,
+  "controller_valid": null,
+  "controller_validation_available": false,
+  "stable_final_support": false,
+  "steps_tracking_passed": false,
+  "stop_reason": "ReferenceManager PREPARE_STEP timed out after 6.00s at frame 113; progress is not success",
+  "final_loads_left_right_n": [
+    204.5918731689453,
+    140.9790802001953
+  ],
+  "max_com_error_last_second_m": 0.0051339552737772465,
+  "wrench_target_ever_active": false,
+  "commanded_single_support_ticks": 0
+}

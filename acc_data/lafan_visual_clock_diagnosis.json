@@ -1,0 +1,33 @@
+{
+  "baseline": "acc_data/lafan_source_changes_compact_regression_35s.npz",
+  "user_failure": "acc_data/lafan_alternating_preview.failure.npz",
+  "failure_time_reported_by_controller": 0.02,
+  "option_differences": {
+    "early_touchdown": {
+      "baseline": null,
+      "failure": false
+    },
+    "flat_foot_spawn": {
+      "baseline": null,
+      "failure": false
+    },
+    "output_path": {
+      "baseline": "acc_data/lafan_source_changes_compact_regression_35s.npz",
+      "failure": "acc_data/lafan_alternating_preview.npz"
+    },
+    "show_isaac_window": {
+      "baseline": false,
+      "failure": true
+    }
+  },
+  "identical_initial_records": {
+    "history_q": true,
+    "history_qd": true,
+    "history_qdd_predicted": true,
+    "history_torque_qp_total": true,
+    "servo_torque": true,
+    "servo_velocity": true
+  },
+  "cause": "The visual path called World.step(render=True) every nominal 2 ms torque update while rendering_dt was 20 ms. The local Isaac SimulationContext implementation uses app.update() for this call, coupling physics progression to the rendering interval. Headless step(render=False) advances a single physics step.",
+  "fix": "Always step physics with render=False, render separately at 50 Hz, and verify each torque update advances exactly 2 ms of physics."
+}

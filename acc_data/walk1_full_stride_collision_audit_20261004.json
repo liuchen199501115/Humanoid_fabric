@@ -1,0 +1,15 @@
+{
+  "worst": {
+    "time": 0.802,
+    "violation": 6.991477966308594,
+    "distance": -0.06571392714977264,
+    "pair": [
+      "right_rubber_hand_cover_2",
+      "right_hip_yaw_link_cover_2"
+    ]
+  },
+  "minimum_distance": -0.0806347206234932,
+  "violating_samples": 876,
+  "samples": 876,
+  "full_tracking_passed": false
+}

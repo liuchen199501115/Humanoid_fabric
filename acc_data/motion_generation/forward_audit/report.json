@@ -1,0 +1,95 @@
+{
+  "source": "acc_data/motion_generation/forward.pkl",
+  "frames": 1250,
+  "fps": 50.0,
+  "assumed_commit_frames": 12,
+  "boundary_note": "Assumes two seed frames; tests initial seed seam and each committed chunk, not a 25-frame period.",
+  "root_height_m": [
+    0.6348206400871277,
+    0.8571778535842896
+  ],
+  "root_tilt_degrees": {
+    "mean": 12.01122022367808,
+    "p95": 23.487718042398,
+    "maximum": 31.77043582194731
+  },
+  "joint_limit_violation_fraction": 0.0,
+  "joint_speed_rad_s": {
+    "mean": 1.3725394304033467,
+    "p95": 3.576229363679883,
+    "maximum": 8.756586909294128
+  },
+  "root_speed_m_s": {
+    "mean": 0.3284856777823906,
+    "p95": 0.9485284248825628,
+    "maximum": 2.038924494636483
+  },
+  "root_angular_speed_rad_s": {
+    "mean": 0.5087662399878283,
+    "p95": 1.6051619168402154,
+    "maximum": 3.980820969137832
+  },
+  "max_joint_acceleration_rad_s2": {
+    "mean": 45.29799323884221,
+    "p95": 231.49604909121987,
+    "maximum": 454.27605509757996
+  },
+  "seam_joint_speed_rad_s": {
+    "mean": 4.196033895445558,
+    "p95": 6.777343116700648,
+    "maximum": 8.756586909294128
+  },
+  "inside_joint_speed_rad_s": {
+    "mean": 1.1163467753001235,
+    "p95": 2.2576595842838287,
+    "maximum": 3.6009877920150757
+  },
+  "seam_root_speed_m_s": {
+    "mean": 0.9097329552996194,
+    "p95": 1.7634943179447828,
+    "maximum": 2.038924494636483
+  },
+  "inside_root_speed_m_s": {
+    "mean": 0.2749918197854558,
+    "p95": 0.6805837584157473,
+    "maximum": 1.3400377739837726
+  },
+  "seam_joint_acceleration_rad_s2": {
+    "mean": 221.599355348959,
+    "p95": 365.2294110506772,
+    "maximum": 454.27605509757996
+  },
+  "inside_joint_acceleration_rad_s2": {
+    "mean": 29.270596683377047,
+    "p95": 166.03515204042188,
+    "maximum": 433.4217309951782
+  },
+  "worst_joint_transition_frame": 890,
+  "worst_joint_transition_time_s": 17.8,
+  "foot_checks": {
+    "left": {
+      "min_sole_height_m": -0.11897522727996374,
+      "frames_penetrating_over_1cm_fraction": 0.7176,
+      "candidate_point_intervals": 916,
+      "candidate_horizontal_speed_m_s": {
+        "mean": 0.31972458226635925,
+        "p95": 0.7952179537389444,
+        "maximum": 2.7319482379769515
+      },
+      "candidate_speed_over_0_1m_s_fraction": 0.925764192139738
+    },
+    "right": {
+      "min_sole_height_m": -0.1450303213504623,
+      "frames_penetrating_over_1cm_fraction": 0.6424,
+      "candidate_point_intervals": 501,
+      "candidate_horizontal_speed_m_s": {
+        "mean": 0.4417715529924145,
+        "p95": 1.3907024789181484,
+        "maximum": 3.6718378948689385
+      },
+      "candidate_speed_over_0_1m_s_fraction": 0.9301397205588823
+    }
+  },
+  "physical_tracking_validated": false,
+  "foot_check_note": "Heuristic only: same sole sphere within +/-2cm ground on both frames and vertical speed <0.1m/s. No contact force; includes possible near-ground swing."
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "single-process preprocessing-to-online-WBC smoke run",
+  "physical_simulation_run": true,
+  "process_returncode": 0,
+  "control_updates": 3000,
+  "last_time_s": 5.998,
+  "final_source_frame": 6.365205010450082,
+  "source_completed": false,
+  "controller_validation_passed": true,
+  "full_pkl_tracking": false,
+  "contact_modes": [
+    3
+  ],
+  "unit_tests_passed": 14,
+  "record": "acc_data/walk1_pipeline_20261007.npz",
+  "limitations": [
+    "Only initial double support was exercised; no contact-switch certification"
+  ]
+}

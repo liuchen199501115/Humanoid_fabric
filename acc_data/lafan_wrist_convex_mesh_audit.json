@@ -1,0 +1,81 @@
+{
+  "scope": "Offline convex hulls of URDF meshes; not a substitute for PhysX contact reports.",
+  "samples": [
+    {
+      "time": 6.9,
+      "convex_intersections": []
+    },
+    {
+      "time": 6.98,
+      "convex_intersections": []
+    },
+    {
+      "time": 7.0,
+      "convex_intersections": []
+    },
+    {
+      "time": 7.01,
+      "convex_intersections": [
+        [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "time": 7.016,
+      "convex_intersections": [
+        [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "time": 7.022,
+      "convex_intersections": [
+        [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ]
+      ]
+    },
+    {
+      "time": 7.03,
+      "convex_intersections": [
+        [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ]
+      ]
+    }
+  ]
+}

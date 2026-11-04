@@ -1,0 +1,404 @@
+{
+  "full_tracking_achieved": false,
+  "trials": [
+    {
+      "recording": "acc_data/lafan_implicit_contact_servo_50hz_20s.failure.npz",
+      "last_simulation_time": 6.44,
+      "last_source_frame": 130.94400000000002,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.5183723568916321,
+      "peak_root_error": 0.28261539340019226,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.0673854034546366e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_lateral_implicit_50hz_20s.reference_failure.npz",
+      "last_simulation_time": 9.02,
+      "last_source_frame": 135.50746318083452,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.5506855249404907,
+      "peak_root_error": 0.13109691441059113,
+      "full_tracking_achieved": false,
+      "failure_reason": "ReferenceManager lost support: expected 3, observed 2"
+    },
+    {
+      "recording": "acc_data/lafan_reference_height_50hz_20s.failure.npz",
+      "last_simulation_time": 7.46,
+      "last_source_frame": 154.96653480160552,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.34538090229034424,
+      "peak_root_error": 0.1990269124507904,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.551859411032865e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_full_com_no_momentum_50hz_20s.failure.npz",
+      "last_simulation_time": 6.18,
+      "last_source_frame": 129.0,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.6040096879005432,
+      "peak_root_error": 0.23149089515209198,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.943892027928996e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_synchronized_com_50hz_20s.failure.npz",
+      "last_simulation_time": 6.28,
+      "last_source_frame": 129.0,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.4472132623195648,
+      "peak_root_error": 0.24976490437984467,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.991389482787099e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_support_height_50hz_20s.failure.npz",
+      "last_simulation_time": 6.22,
+      "last_source_frame": 129.0,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.3284679651260376,
+      "peak_root_error": 0.16135840117931366,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.9628910080958804e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_clearance_com_50hz_20s.failure.npz",
+      "last_simulation_time": 7.1000000000000005,
+      "last_source_frame": 148.67132888074843,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.4755041003227234,
+      "peak_root_error": 0.35176360607147217,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.380868580649121e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_clearance_lateral_50hz_20s.reference_failure.npz",
+      "last_simulation_time": 8.120000000000001,
+      "last_source_frame": 156.50746362446375,
+      "source_frames": 7839,
+      "landings": 2,
+      "peak_joint_rmse": 0.691636323928833,
+      "peak_root_error": 0.2680722773075104,
+      "full_tracking_achieved": false,
+      "failure_reason": "ReferenceManager lost support: expected 3, observed 1"
+    },
+    {
+      "recording": "acc_data/lafan_position_lateral_50hz_20s.failure.npz",
+      "last_simulation_time": 5.78,
+      "last_source_frame": 124.74206656895004,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.7059402465820312,
+      "peak_root_error": 0.16446785628795624,
+      "full_tracking_achieved": false,
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.753902226260152e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_pose_lateral_50hz_20s.failure.npz",
+      "last_simulation_time": 6.68,
+      "last_source_frame": 133.2061325599724,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.9727087616920471,
+      "peak_root_error": 0.1652556210756302,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.005129032086254842
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.181379284455943e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_aligned_momentum_50hz_20s.failure.npz",
+      "last_simulation_time": 6.84,
+      "last_source_frame": 132.17400000000004,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.5872887372970581,
+      "peak_root_error": 0.23297354578971863,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.12822793638495333
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.2573752051234806e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_dynamic_endpoint_50hz_20s.reference_failure.npz",
+      "last_simulation_time": 10.700000000000001,
+      "last_source_frame": 112.50749904697918,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.24946711957454681,
+      "peak_root_error": 0.14092950522899628,
+      "full_tracking_achieved": false,
+      "failure_reason": "ReferenceManager PREPARE_STEP timed out after 6.02s at frame 113; progress is not success",
+      "landing_xy_error_m": []
+    },
+    {
+      "recording": "acc_data/lafan_forward_endpoint_50hz_20s.failure.npz",
+      "last_simulation_time": 6.36,
+      "last_source_frame": 129.0,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.2849942743778229,
+      "peak_root_error": 0.1880199909210205,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.029387443120868e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_continuous_momentum_50hz_20s.failure.npz",
+      "last_simulation_time": 6.26,
+      "last_source_frame": 133.34976375310848,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.4621795117855072,
+      "peak_root_error": 0.10407261550426483,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.0325165747343127
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.981889988262765e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_body_barrier_50hz_20s.failure.npz",
+      "last_simulation_time": 6.8,
+      "last_source_frame": 147.91851586522517,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.5396513342857361,
+      "peak_root_error": 0.20992730557918549,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.03593049764038736
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.238376224956596e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_speed_pose_50hz_20s.failure.npz",
+      "last_simulation_time": 6.48,
+      "last_source_frame": 137.60784035356934,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.6287687420845032,
+      "peak_root_error": 0.11511171609163284,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.0035959566111650873
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.086384383621521e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_com_pose_50hz_20s.failure.npz",
+      "last_simulation_time": 6.08,
+      "last_source_frame": 129.0,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 1.1250543594360352,
+      "peak_root_error": 0.13748939335346222,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.005620977313834855
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.896394581952677e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_com_pose_damped_50hz_20s.failure.npz",
+      "last_simulation_time": 5.96,
+      "last_source_frame": 126.47832673774722,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.7829114198684692,
+      "peak_root_error": 0.13814949989318848,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.839397641452024e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_com_pose_sync_50hz_20s.failure.npz",
+      "last_simulation_time": 6.9,
+      "last_source_frame": 145.785106458742,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.6916928887367249,
+      "peak_root_error": 0.1454843431711197,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.004653999332564816
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.285873679814699e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_com_pose_sync_refined_50hz_20s.failure.npz",
+      "last_simulation_time": 7.28,
+      "last_source_frame": 152.9383001366472,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.8157991170883179,
+      "peak_root_error": 0.14703688025474548,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [
+        0.004653999332564816
+      ],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 3.466363995840993e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_upper_priority_50hz_20s.failure.npz",
+      "last_simulation_time": 6.0,
+      "last_source_frame": 127.02187929755125,
+      "source_frames": 7839,
+      "landings": 0,
+      "peak_joint_rmse": 0.23387271165847778,
+      "peak_root_error": 0.10576171427965164,
+      "full_tracking_achieved": false,
+      "landing_xy_error_m": [],
+      "rates": {
+        "qp_dt": 0.020000000000000018,
+        "torque_dt": 0.0020000000000000018,
+        "torque_updates_per_qp": [
+          10
+        ],
+        "physics_clock_max_error": 2.8583966216189083e-07
+      }
+    },
+    {
+      "recording": "acc_data/lafan_nominal_servo_50hz_20s.reference_failure.npz",
+      "last_simulation_time": 6.22,
+      "last_source_frame": 132.57581100248677,
+      "source_frames": 7839,
+      "landings": 1,
+      "peak_joint_rmse": 0.3683961033821106,
+      "peak_root_error": 0.1119311973452568,
+      "full_tracking_achieved": false,
+      "failure_reason": "ReferenceManager lost support: expected 3, observed 2",
+      "landing_xy_error_m": [
+        0.014606314975749487
+      ]
+    }
+  ]
+}

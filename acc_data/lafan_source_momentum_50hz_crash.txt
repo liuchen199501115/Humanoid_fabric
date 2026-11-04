@@ -1,0 +1,50 @@
+Process 1608089: /home/sky/anaconda3/envs/humanoid_fabric/bin/python examples/test_g1.py --motion-pkl retarget/lafan/walk1_g1.pkl --reference-manager --direct-wbc --tracking-servo --contact-aware-servo --reference-footsteps source --dynamic-reference --swing-metric-scale 10 --toe-off --toe-transfer-load-fraction .65 --early-touchdown --flat-foot-spawn --control-frequency 50 --source-pelvis-weight 1 --source-momentum-reference --transfer-balance-priority --swing-height-priority --swing-lateral-priority --joint-limit-avoidance-weight 20 --variable-height-preview --qp-solver osqp --adaptive-toe-contact --motion-interpolation pchip --wrist-hip-avoidance --wrist-hip-barrier --report-self-contacts --diagnose-com --duration 20 --output-path acc_data/lafan_source_momentum_50hz_20s.npz
+Python v3.11.11 (/home/sky/anaconda3/envs/humanoid_fabric/bin/python3.11)
+
+Thread 1608089 (idle): "MainThread"
+    stack (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/shape_base.py:456)
+    dynamics (/home/sky/Humanoid_fabric/src/fabrics_sim/reference/lipm.py:44)
+    fun_wrapped (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/base.py:23)
+    fun (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/base.py:154)
+    rk_step (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/rk.py:64)
+    _step_impl (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/rk.py:144)
+    step (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/base.py:197)
+    solve_ivp (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/integrate/_ivp/ivp.py:655)
+    __init__ (/home/sky/Humanoid_fabric/src/fabrics_sim/reference/lipm.py:46)
+    main (/home/sky/Humanoid_fabric/examples/test_g1.py:2345)
+    <module> (/home/sky/Humanoid_fabric/examples/test_g1.py:4027)
+Thread 1608323 (idle): "ThreadPoolExecutor-0_0"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608324 (idle): "ThreadPoolExecutor-0_1"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608329 (idle): "ThreadPoolExecutor-0_2"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608402 (idle): "ThreadPoolExecutor-0_3"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608414 (idle): "ThreadPoolExecutor-0_4"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608416 (idle): "ThreadPoolExecutor-0_5"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)
+Thread 1608497 (idle): "asyncio_0"
+    _worker (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/concurrent/futures/thread.py:81)
+    run (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:982)
+    _bootstrap_inner (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1045)
+    _bootstrap (/home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/threading.py:1002)

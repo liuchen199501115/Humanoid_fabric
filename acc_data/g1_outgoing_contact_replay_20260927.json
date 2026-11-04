@@ -1,0 +1,131 @@
+{
+  "scope": "Recorded observation replay only; no physical state reset or forward simulation",
+  "samples": [
+    {
+      "time": 5.79,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0005014423033748067,
+      "new_anchor_distance_to_loaded_centroid": 2.7755575615628914e-17
+    },
+    {
+      "time": 5.792,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0005207619044269946,
+      "new_anchor_distance_to_loaded_centroid": 1.9594306066940847e-05
+    },
+    {
+      "time": 5.7940000000000005,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0005386808281248347,
+      "new_anchor_distance_to_loaded_centroid": 3.775807934343257e-05
+    },
+    {
+      "time": 5.796,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0005615805729518434,
+      "new_anchor_distance_to_loaded_centroid": 6.077573297517802e-05
+    },
+    {
+      "time": 5.798,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0005785700675050417,
+      "new_anchor_distance_to_loaded_centroid": 7.797241621068e-05
+    },
+    {
+      "time": 5.8,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.000602058435489118,
+      "new_anchor_distance_to_loaded_centroid": 0.00010151655177990818
+    },
+    {
+      "time": 5.8020000000000005,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.000622481709151417,
+      "new_anchor_distance_to_loaded_centroid": 0.00012209800733737304
+    },
+    {
+      "time": 5.804,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.036410620988660894,
+      "new_anchor_distance_to_loaded_centroid": 6.938893903907228e-18
+    },
+    {
+      "time": 5.806,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.03641956372822391,
+      "new_anchor_distance_to_loaded_centroid": 6.699912057887334e-05
+    },
+    {
+      "time": 5.808,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.03642944469695218,
+      "new_anchor_distance_to_loaded_centroid": 7.399389127529754e-05
+    },
+    {
+      "time": 5.8100000000000005,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.03643619892693824,
+      "new_anchor_distance_to_loaded_centroid": 8.279768578712185e-05
+    },
+    {
+      "time": 5.812,
+      "kind": "line",
+      "old_anchor_distance_to_loaded_centroid": 0.01838692258497702,
+      "new_anchor_distance_to_loaded_centroid": 2.384185791015625e-07
+    },
+    {
+      "time": 5.814,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0007235027258515564,
+      "new_anchor_distance_to_loaded_centroid": 1.3877787807814457e-17
+    },
+    {
+      "time": 5.816,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0007373953246387837,
+      "new_anchor_distance_to_loaded_centroid": 2.124269705064151e-05
+    },
+    {
+      "time": 5.8180000000000005,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0007559197875326722,
+      "new_anchor_distance_to_loaded_centroid": 4.5047479556268784e-05
+    },
+    {
+      "time": 5.82,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0007782892669899486,
+      "new_anchor_distance_to_loaded_centroid": 6.981095223383113e-05
+    },
+    {
+      "time": 5.822,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0008034503687660153,
+      "new_anchor_distance_to_loaded_centroid": 9.641299284453682e-05
+    },
+    {
+      "time": 5.824,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0008155815769606941,
+      "new_anchor_distance_to_loaded_centroid": 0.00011342110855012101
+    },
+    {
+      "time": 5.8260000000000005,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0008348534312523281,
+      "new_anchor_distance_to_loaded_centroid": 0.0001338900439183515
+    },
+    {
+      "time": 5.846,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.001029055195949573,
+      "new_anchor_distance_to_loaded_centroid": 0.00034021001197336026
+    },
+    {
+      "time": 5.848,
+      "kind": "point",
+      "old_anchor_distance_to_loaded_centroid": 0.0010459682882743748,
+      "new_anchor_distance_to_loaded_centroid": 0.00035537782566566066
+    }
+  ]
+}

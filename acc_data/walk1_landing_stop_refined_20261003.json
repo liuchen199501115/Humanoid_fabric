@@ -1,0 +1,65 @@
+[
+  {
+    "duration": 0.6,
+    "capture_time": 0.35,
+    "joint_violation": 1.4865171909332275,
+    "torque_ratio": 0.2693266085442051,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 0.6,
+    "capture_time": 0.4,
+    "joint_violation": 3.243619918823242,
+    "torque_ratio": 0.26971343118157065,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 0.6,
+    "capture_time": 0.45,
+    "joint_violation": 5.0858917236328125,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.0,
+    "capture_time": 0.35,
+    "joint_violation": 3.0810744762420654,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.0,
+    "capture_time": 0.4,
+    "joint_violation": 3.812974452972412,
+    "torque_ratio": 0.273561243408892,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.0,
+    "capture_time": 0.45,
+    "joint_violation": 4.520676136016846,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.4,
+    "capture_time": 0.35,
+    "joint_violation": 6.30279541015625,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.4,
+    "capture_time": 0.4,
+    "joint_violation": 6.636376857757568,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  },
+  {
+    "duration": 1.4,
+    "capture_time": 0.45,
+    "joint_violation": 6.969869613647461,
+    "torque_ratio": 0.2578906111414648,
+    "error": "double support wrench infeasible"
+  }
+]

@@ -1,0 +1,326 @@
+{
+  "source": "retarget/amp_reference/amp_walk_1ms.pkl",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "source_unchanged": true,
+  "full_motion_tracking_passed": false,
+  "experimental_candidate": "landing_tail_verified.failure.npz",
+  "verified_landing_events": 6,
+  "strict_six_step_tracking_passed": false,
+  "expected_landing_events": 29,
+  "fidelity": {
+    "through_sixth_landing_time_s": 2.482,
+    "peak_joint_rmse_rad": 0.2793075740337372,
+    "peak_root_position_error_m": 0.13136553764343262,
+    "peak_root_orientation_error_rad": 0.4401448965072632,
+    "strict_tracking_passed": false
+  },
+  "reproduction": {
+    "verified_landing_events": 6,
+    "legacy_fixed_goal_events": 4,
+    "audit_change_q_bit_identical": true,
+    "audit_change_qd_bit_identical": true,
+    "samples_compared": 2000,
+    "last_compared_time": 3.998,
+    "strict_full_tracking_passed": false,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.011972491394771561,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 605.34326171875,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ],
+        "joint_rmse_rad": 0.11588385701179504,
+        "root_position_error_m": 0.014802136458456516,
+        "root_angle_error_rad": 0.10533162006049357
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.0,
+        "time": 0.41000000000000003,
+        "landing_error_m": 0.028535341591269282,
+        "goal": [
+          2.0718159675598145,
+          -0.09186406433582306,
+          0.04756303131580353
+        ],
+        "measured_load_n": 239.07078552246094,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ],
+        "joint_rmse_rad": 0.1706492006778717,
+        "root_position_error_m": 0.023684414103627205,
+        "root_angle_error_rad": 0.12005380311561117
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 173.6,
+        "time": 0.868,
+        "landing_error_m": 0.034382262147400124,
+        "goal": [
+          2.4584169387817383,
+          0.10430409014225006,
+          0.04060667008161545
+        ],
+        "measured_load_n": 217.9410400390625,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ],
+        "joint_rmse_rad": 0.1028505191206932,
+        "root_position_error_m": 0.019920846447348595,
+        "root_angle_error_rad": 0.12260210375301882
+      },
+      {
+        "step": 4,
+        "swing": "right",
+        "source_frame": 266.8,
+        "time": 1.334,
+        "landing_error_m": 0.015569419013002024,
+        "goal": [
+          2.9772298336029053,
+          -0.1719239354133606,
+          0.049913592636585236
+        ],
+        "measured_load_n": 205.052001953125,
+        "source_contact_onset_goal": [
+          2.9594597816467285,
+          -0.17393580079078674,
+          0.06212610751390457
+        ],
+        "joint_rmse_rad": 0.13867910206317902,
+        "root_position_error_m": 0.028784411028027534,
+        "root_angle_error_rad": 0.19191285361812122
+      },
+      {
+        "step": 5,
+        "swing": "left",
+        "source_frame": 385.2,
+        "time": 1.926,
+        "landing_error_m": 0.033735798485666414,
+        "goal": [
+          3.397911310195923,
+          -0.02142232470214367,
+          0.03972550854086876
+        ],
+        "measured_load_n": 575.4781494140625,
+        "source_contact_onset_goal": [
+          3.341783285140991,
+          -0.006188534665852785,
+          0.048299893736839294
+        ],
+        "joint_rmse_rad": 0.2171744406223297,
+        "root_position_error_m": 0.09627576917409897,
+        "root_angle_error_rad": 0.21092217325511764
+      },
+      {
+        "step": 6,
+        "swing": "right",
+        "source_frame": 496.40000000000003,
+        "time": 2.482,
+        "landing_error_m": 0.003786090373065112,
+        "goal": [
+          3.902688980102539,
+          -0.29024752974510193,
+          0.03502804785966873
+        ],
+        "measured_load_n": 469.0313415527344,
+        "source_contact_onset_goal": [
+          3.8741705417633057,
+          -0.29721948504447937,
+          0.06121489033102989
+        ],
+        "joint_rmse_rad": 0.21872438490390778,
+        "root_position_error_m": 0.08484195917844772,
+        "root_angle_error_rad": 0.17168200295671746
+      }
+    ]
+  },
+  "retained_changes": [
+    "Continuous tracking audits original same-frame source foot-link positions; retains fixed-contact-onset comparison",
+    "Reports next unconfirmed step and missing flight/load/position/hold evidence"
+  ],
+  "unchanged_gates": {
+    "min_flight_clearance_m": 0.02,
+    "min_support_force_n": 100,
+    "min_landing_force_n": 20,
+    "landing_error_m": 0.04,
+    "landing_hold_s": 0.05,
+    "joint_rmse_rad": 0.2,
+    "root_position_m": 0.2,
+    "root_angle_rad": 0.35
+  },
+  "evaluation_defect": {
+    "event": 5,
+    "source_contact_onset_frame": 352,
+    "source_link_translation_after_touchdown_m": 0.056,
+    "ideal_source_max_fixed_goal_hold_s": 0.022,
+    "required_hold_s": 0.05
+  },
+  "validation": {
+    "regression_tests": 490,
+    "regression_passed": true,
+    "log": "/home/sky/Humanoid_fabric/acc_data/amp_walk_20261102/priority_followup/regression.log"
+  },
+  "trials": [
+    {
+      "run": "braking_capped",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 1,
+      "full_tracking_passed": false,
+      "last_time_s": 0.71,
+      "failed_time_s": 0.712,
+      "peak_joint_rmse_rad": 0.22673796117305756,
+      "peak_root_orientation_error_rad": 0.4674648485018843
+    },
+    {
+      "run": "convex_collision",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 1,
+      "full_tracking_passed": false,
+      "last_time_s": 2.132,
+      "failed_time_s": 2.134,
+      "peak_joint_rmse_rad": 0.48226219415664673,
+      "peak_root_orientation_error_rad": 1.0922137853439848
+    },
+    {
+      "run": "convex_crouch",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 2,
+      "full_tracking_passed": false,
+      "last_time_s": 1.6420000000000001,
+      "failed_time_s": 1.6440000000000001,
+      "peak_joint_rmse_rad": 0.48864004015922546,
+      "peak_root_orientation_error_rad": 1.3316077473033783
+    },
+    {
+      "run": "half_speed",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 2,
+      "full_tracking_passed": false,
+      "last_time_s": 2.334,
+      "failed_time_s": 2.336,
+      "peak_joint_rmse_rad": 0.9952381253242493,
+      "peak_root_orientation_error_rad": 2.420330921432188
+    },
+    {
+      "run": "initial_crouch",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 1,
+      "full_tracking_passed": false,
+      "last_time_s": 1.154,
+      "failed_time_s": 1.156,
+      "peak_joint_rmse_rad": 0.2573544979095459,
+      "peak_root_orientation_error_rad": 0.8358809803341243
+    },
+    {
+      "run": "landing_tail",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 4,
+      "full_tracking_passed": false,
+      "last_time_s": 3.998,
+      "failed_time_s": null,
+      "peak_joint_rmse_rad": 0.9127822518348694,
+      "peak_root_orientation_error_rad": 1.7780176375721428
+    },
+    {
+      "run": "landing_tail_repeat",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 4,
+      "full_tracking_passed": false,
+      "last_time_s": 2.548,
+      "failed_time_s": null,
+      "peak_joint_rmse_rad": 0.2793075740337372,
+      "peak_root_orientation_error_rad": 0.44014449459182575
+    },
+    {
+      "run": "landing_tail_verified",
+      "goal_policy": "source_pose",
+      "measured_landings": 6,
+      "full_tracking_passed": false,
+      "last_time_s": 4.98,
+      "failed_time_s": 4.982,
+      "peak_joint_rmse_rad": 1.1166372299194336,
+      "peak_root_orientation_error_rad": 2.402144854906247
+    },
+    {
+      "run": "later_tails",
+      "goal_policy": "source_pose",
+      "measured_landings": 6,
+      "full_tracking_passed": false,
+      "last_time_s": 5.604,
+      "failed_time_s": 5.606,
+      "peak_joint_rmse_rad": 1.0190153121948242,
+      "peak_root_orientation_error_rad": 2.0173313848553835
+    },
+    {
+      "run": "momentum_priority",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 0,
+      "full_tracking_passed": false,
+      "last_time_s": 1.928,
+      "failed_time_s": 1.93,
+      "peak_joint_rmse_rad": 1.1047426462173462,
+      "peak_root_orientation_error_rad": 1.7614476129085062
+    },
+    {
+      "run": "pelvis_handover",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 4,
+      "full_tracking_passed": false,
+      "last_time_s": 2.342,
+      "failed_time_s": 2.344,
+      "peak_joint_rmse_rad": 0.6375155448913574,
+      "peak_root_orientation_error_rad": 1.8750374434396544
+    },
+    {
+      "run": "unload_priority",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 5,
+      "full_tracking_passed": false,
+      "last_time_s": 3.998,
+      "failed_time_s": null,
+      "peak_joint_rmse_rad": 1.1338778734207153,
+      "peak_root_orientation_error_rad": 3.140558853633044
+    },
+    {
+      "run": "unload_priority_physics8",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 2,
+      "full_tracking_passed": false,
+      "last_time_s": 2.076,
+      "failed_time_s": 2.078,
+      "peak_joint_rmse_rad": 0.6081814765930176,
+      "peak_root_orientation_error_rad": 1.2883316567577805
+    },
+    {
+      "run": "unload_weight_control",
+      "goal_policy": "fixed_contact_onset",
+      "measured_landings": 4,
+      "full_tracking_passed": false,
+      "last_time_s": 2.61,
+      "failed_time_s": 2.612,
+      "peak_joint_rmse_rad": 0.7251701354980469,
+      "peak_root_orientation_error_rad": 2.8326638398003507
+    }
+  ],
+  "unexecuted_configuration": {
+    "run": "braking",
+    "reason": "Finite predicted-acceleration limits required; capped variant was run separately"
+  }
+}

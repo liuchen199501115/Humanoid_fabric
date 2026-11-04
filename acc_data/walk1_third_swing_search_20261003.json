@@ -1,0 +1,123 @@
+[
+  {
+    "fraction": 0.3,
+    "height": 0.62,
+    "pitch": -0.2,
+    "acceleration_violation": 0.6841761469841003,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.3,
+    "height": 0.62,
+    "pitch": 0.0,
+    "acceleration_violation": 0.4359349310398102,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.3,
+    "height": 0.64,
+    "pitch": -0.2,
+    "acceleration_violation": 0.13935793936252594,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.3,
+    "height": 0.64,
+    "pitch": 0.0,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "fraction": 0.3,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "fraction": 0.3,
+    "height": 0.66,
+    "pitch": 0.0,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.62,
+    "pitch": -0.2,
+    "acceleration_violation": 3.1947076320648193,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.62,
+    "pitch": 0.0,
+    "acceleration_violation": 3.61499285697937,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.64,
+    "pitch": -0.2,
+    "acceleration_violation": 0.14887040853500366,
+    "joint": "left_ankle_roll_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.64,
+    "pitch": 0.0,
+    "acceleration_violation": 0.0,
+    "joint": "left_hip_pitch_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.66,
+    "pitch": -0.2,
+    "acceleration_violation": 0.46939051151275635,
+    "joint": "right_knee_joint"
+  },
+  {
+    "fraction": 0.35,
+    "height": 0.66,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0017057471, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.62,
+    "pitch": -0.2,
+    "acceleration_violation": 4.449121475219727,
+    "joint": "left_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.62,
+    "pitch": 0.0,
+    "acceleration_violation": 9.924033164978027,
+    "joint": "right_ankle_pitch_joint"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=4.9054623e-05, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.64,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0050530327, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.66,
+    "pitch": -0.2,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0014321804, tolerance=2e-06"
+  },
+  {
+    "fraction": 0.4,
+    "height": 0.66,
+    "pitch": 0.0,
+    "error": "Could not find joint-limited flat-foot reference geometry: residual=0.0019559972, tolerance=2e-06"
+  }
+]

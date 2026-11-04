@@ -1,0 +1,242 @@
+{
+  "baseline": {
+    "failure_time": 5.22,
+    "last_reference_frame": 111.0,
+    "pkl_joint_rmse_mean": 0.11094490438699722,
+    "pkl_joint_rmse_peak": 0.3725583255290985,
+    "pkl_joint_rmse_last": 0.21031291782855988,
+    "root_error_peak": 0.0461852103471756,
+    "contact_transitions": [
+      {
+        "time": 0.0,
+        "mode": 3,
+        "frame": 0.0
+      }
+    ]
+  },
+  "manager": {
+    "failure_time": 7.74,
+    "last_reference_frame": 147.09599999999995,
+    "pkl_joint_rmse_mean": 0.14522819221019745,
+    "pkl_joint_rmse_peak": 0.37267228960990906,
+    "pkl_joint_rmse_last": 0.3539133667945862,
+    "root_error_peak": 0.629801869392395,
+    "contact_transitions": [
+      {
+        "time": 0.0,
+        "mode": 3,
+        "frame": 0.0
+      },
+      {
+        "time": 5.3,
+        "mode": 1,
+        "frame": 109.20000000000009
+      }
+    ],
+    "phase_transitions": [
+      {
+        "time": 0.0,
+        "phase": "INITIALIZE",
+        "frame": 0.0
+      },
+      {
+        "time": 1.0,
+        "phase": "TRACK",
+        "frame": 0.006
+      },
+      {
+        "time": 4.68,
+        "phase": "PREPARE_STEP",
+        "frame": 95.99400000000007
+      },
+      {
+        "time": 4.7,
+        "phase": "TRACK",
+        "frame": 96.58800000000008
+      },
+      {
+        "time": 4.72,
+        "phase": "PREPARE_STEP",
+        "frame": 97.18200000000007
+      },
+      {
+        "time": 5.3,
+        "phase": "SWING",
+        "frame": 109.20000000000009
+      }
+    ],
+    "max_wait_seconds": 1.5000000000000009
+  },
+  "manager_braking": {
+    "file": "lafan_manager_brake_8s.npz",
+    "last_sample_time": 7.98,
+    "simulation_completed": true,
+    "controller_valid": true,
+    "gait_completed": false,
+    "status": "waiting_for_contact",
+    "last_reference_frame": 130.50746751175296,
+    "final_phase": "LANDING",
+    "final_rate": 0.0,
+    "final_wait_seconds": 2.2800000000000016,
+    "pkl_joint_rmse_peak": 0.37267225980758667,
+    "pkl_joint_rmse_last": 0.15720747411251068,
+    "root_error_peak": 0.3130892813205719,
+    "root_error_last": 0.29317641258239746,
+    "final_feet": [
+      [
+        1.6497036218643188,
+        4.56778621673584,
+        0.03499968349933624,
+        5.736568255088059e-06,
+        -5.595028596871998e-06,
+        -0.6761098504066467,
+        0.7368009090423584
+      ],
+      [
+        1.5255141258239746,
+        4.220006465911865,
+        0.12493538111448288,
+        -0.01077157724648714,
+        -0.0785767212510109,
+        -0.7174959778785706,
+        0.6920327544212341
+      ]
+    ],
+    "final_normal_forces": [
+      327.455322265625,
+      0.0
+    ],
+    "contact_transitions": [
+      {
+        "time": 0.0,
+        "mode": 3,
+        "frame": 0.0
+      },
+      {
+        "time": 5.22,
+        "mode": 1,
+        "frame": 106.99339869727847
+      }
+    ],
+    "phase_transitions": [
+      {
+        "time": 0.0,
+        "phase": "INITIALIZE",
+        "frame": 0.0
+      },
+      {
+        "time": 1.0,
+        "phase": "TRACK",
+        "frame": 0.006
+      },
+      {
+        "time": 4.62,
+        "phase": "PREPARE_STEP",
+        "frame": 94.20000000000007
+      },
+      {
+        "time": 5.22,
+        "phase": "SWING",
+        "frame": 106.99339869727847
+      },
+      {
+        "time": 5.72,
+        "phase": "LANDING",
+        "frame": 117.49147713451792
+      }
+    ]
+  },
+  "manager_landing": {
+    "file": "lafan_manager_landing_current_10s.npz",
+    "last_sample_time": 9.98,
+    "simulation_completed": true,
+    "controller_valid": true,
+    "gait_completed": false,
+    "status": "waiting_for_contact",
+    "last_reference_frame": 130.50746751175296,
+    "final_phase": "LANDING",
+    "final_rate": 0.0,
+    "final_wait_seconds": 4.279999999999997,
+    "pkl_joint_rmse_peak": 0.37267225980758667,
+    "pkl_joint_rmse_last": 0.1775287240743637,
+    "root_error_peak": 0.3119405210018158,
+    "root_error_last": 0.2643505930900574,
+    "final_feet": [
+      [
+        1.649698257446289,
+        4.567856788635254,
+        0.03499944508075714,
+        1.4068874406802934e-05,
+        -1.1040283425245434e-05,
+        -0.6761361956596375,
+        0.7367767095565796
+      ],
+      [
+        1.5253723859786987,
+        4.209819793701172,
+        0.11229755729436874,
+        -0.02374076656997204,
+        -0.022632673382759094,
+        -0.7214767336845398,
+        0.6916613578796387
+      ]
+    ],
+    "final_normal_forces": [
+      328.432373046875,
+      0.0
+    ],
+    "contact_transitions": [
+      {
+        "time": 0.0,
+        "mode": 3,
+        "frame": 0.0
+      },
+      {
+        "time": 5.22,
+        "mode": 1,
+        "frame": 106.99339869727847
+      }
+    ],
+    "phase_transitions": [
+      {
+        "time": 0.0,
+        "phase": "INITIALIZE",
+        "frame": 0.0
+      },
+      {
+        "time": 1.0,
+        "phase": "TRACK",
+        "frame": 0.006
+      },
+      {
+        "time": 4.62,
+        "phase": "PREPARE_STEP",
+        "frame": 94.20000000000007
+      },
+      {
+        "time": 5.22,
+        "phase": "SWING",
+        "frame": 106.99339869727847
+      },
+      {
+        "time": 5.72,
+        "phase": "LANDING",
+        "frame": 117.49147713451792
+      }
+    ],
+    "final_managed_feet_position": [
+      [
+        1.6494840383529663,
+        4.555545330047607,
+        0.04577149450778961
+      ],
+      [
+        1.5116556882858276,
+        4.063694000244141,
+        0.03500000014901161
+      ]
+    ],
+    "final_right_position_error": 0.16587889194488525
+  },
+  "interpretation": "Different wall-time/source-frame coverage: these runs do not establish a tracking-quality improvement. Latest run stalls at first touchdown. Controller validity is not gait success."
+}

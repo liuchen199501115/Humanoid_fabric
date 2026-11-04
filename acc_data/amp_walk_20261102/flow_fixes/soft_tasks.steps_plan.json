@@ -1,0 +1,72 @@
+{
+  "events": [
+    {
+      "kind": "swing",
+      "start_frame": 0,
+      "end_frame": 32,
+      "takeoff_frame": 0,
+      "support": 1,
+      "direct_support_switch": true,
+      "starts_mid_swing": true,
+      "landing_window_end_frame": 113
+    },
+    {
+      "kind": "swing",
+      "start_frame": 32,
+      "end_frame": 79,
+      "takeoff_frame": 32,
+      "support": 0,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 192
+    },
+    {
+      "kind": "swing",
+      "start_frame": 79,
+      "end_frame": 182,
+      "takeoff_frame": 113,
+      "support": 1,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 296
+    },
+    {
+      "kind": "swing",
+      "start_frame": 182,
+      "end_frame": 268,
+      "takeoff_frame": 192,
+      "support": 0,
+      "direct_support_switch": false,
+      "starts_mid_swing": false,
+      "landing_window_end_frame": 382
+    }
+  ],
+  "landing_positions_world": [
+    [
+      1.5791012048721313,
+      0.18171699345111847,
+      0.04018903523683548
+    ],
+    [
+      2.070002555847168,
+      -0.09205038100481033,
+      0.049218013882637024
+    ],
+    [
+      2.458315849304199,
+      0.10208116471767426,
+      0.03956901282072067
+    ],
+    [
+      2.977963447570801,
+      -0.17189975082874298,
+      0.04929458349943161
+    ]
+  ],
+  "continuous": true,
+  "contact_source": "acc_data/amp_walk_20261102/amp_walk_dynamic.pkl",
+  "contact_plan_verified": false,
+  "interpolation": "pchip-analytic",
+  "original_source_frame_count": 2000,
+  "source_positions_modified": false
+}

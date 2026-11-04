@@ -1,0 +1,75 @@
+{
+  "scope": "full_body_static_equilibrium_at_recorded_pose",
+  "record": "acc_data/walk1_velocity_unload_weight2_20261021.reference_failure.npz",
+  "time": 14.524000000000001,
+  "source_frame": 112.50024096000021,
+  "outgoing": "right",
+  "measured_vertical_load_n": [
+    251.40414428710938,
+    72.37220764160156
+  ],
+  "assumptions": [
+    "zero velocity and acceleration for offline equilibrium only",
+    "full rectangular soles, not observed contact patches",
+    "motor limits at 0.8 times model URDF effort",
+    "contact-only case omits motor limits solely to isolate constraints"
+  ],
+  "cases": {
+    "full_model_with_motor_limits": {
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "minimum_outgoing_world_vertical_force_n": 66.78958793964338,
+      "minimum_outgoing_fraction": 0.2042016515011396,
+      "world_ankle_wrench": [
+        [
+          26.24729815053418,
+          -15.803995325685651,
+          260.28704169902846,
+          -23.831831751106055,
+          2.741661283083728,
+          7.007185107770349
+        ],
+        [
+          -26.24729815053418,
+          15.803995325685651,
+          66.78958793964338,
+          -7.116277986187701,
+          3.782027434023706,
+          -3.6915074448637943
+        ]
+      ],
+      "peak_motor_limit_ratio": 0.5995549313322897,
+      "base_equilibrium_residual": 6.217248937900877e-15,
+      "inequality_violation": 2.6645352591003757e-15
+    },
+    "contact_only_diagnostic": {
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "minimum_outgoing_world_vertical_force_n": 66.78958793964335,
+      "minimum_outgoing_fraction": 0.2042016515011395,
+      "world_ankle_wrench": [
+        [
+          26.24729815053418,
+          -15.803995325685635,
+          260.2870416990285,
+          -23.83183175110606,
+          2.7416612830837295,
+          7.007185107770349
+        ],
+        [
+          -26.247298150534185,
+          15.803995325685635,
+          66.78958793964335,
+          -7.116277986187696,
+          3.7820274340237052,
+          -3.6915074448637957
+        ]
+      ],
+      "peak_motor_limit_ratio": 0.5995549313322898,
+      "base_equilibrium_residual": 6.217248937900877e-15,
+      "inequality_violation": 3.552713678800501e-15
+    }
+  },
+  "dynamic_transfer_certified": false,
+  "full_four_step_tracking_passed": false
+}

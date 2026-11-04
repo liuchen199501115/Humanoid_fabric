@@ -1,0 +1,6 @@
+{
+  "sigma_seconds": 0.02,
+  "peak_joint_rmse_rad": 0.020729735493659973,
+  "max_joint_change_rad": 0.07929754257202148,
+  "original_source_retained_for_audit": true
+}

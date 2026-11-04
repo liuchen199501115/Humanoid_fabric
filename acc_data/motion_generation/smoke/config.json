@@ -1,0 +1,23 @@
+{
+  "dataset": "acc_data/motion_generation/dataset.npz",
+  "output": "acc_data/motion_generation/smoke",
+  "steps": 200,
+  "batch_size": 32,
+  "horizon": 25,
+  "stride": 5,
+  "width": 128,
+  "layers": 4,
+  "heads": 4,
+  "diffusion_steps": 1000,
+  "lr": 0.0002,
+  "velocity_weight": 0.1,
+  "condition_noise": 0.01,
+  "eval_every": 50,
+  "stats_windows": 4096,
+  "device": "cpu",
+  "threads": 4,
+  "seed": 42,
+  "train_windows": 285999,
+  "validation_windows": 29143,
+  "parameters": 840230
+}
