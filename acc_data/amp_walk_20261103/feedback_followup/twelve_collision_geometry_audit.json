@@ -1,0 +1,730 @@
+[
+  {
+    "time": 3.8000000000000003,
+    "kind": "observed",
+    "sphere_minimum": 0.07596929371356964,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.13487006723880768,
+    "convex_pair": [
+      "right_wrist_roll_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.8000000000000003,
+    "kind": "source",
+    "sphere_minimum": 0.055480778217315674,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.11416945606470108,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.8200000000000003,
+    "kind": "observed",
+    "sphere_minimum": 0.07552668452262878,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.1333615928888321,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.8200000000000003,
+    "kind": "source",
+    "sphere_minimum": 0.06664736568927765,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.13027948141098022,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.84,
+    "kind": "observed",
+    "sphere_minimum": 0.07674193382263184,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.13443447649478912,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.84,
+    "kind": "source",
+    "sphere_minimum": 0.060119181871414185,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.14191459119319916,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.86,
+    "kind": "observed",
+    "sphere_minimum": 0.07743515074253082,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.13565409183502197,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.86,
+    "kind": "source",
+    "sphere_minimum": 0.05276788771152496,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.13605061173439026,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.88,
+    "kind": "observed",
+    "sphere_minimum": 0.07714951038360596,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.1361844539642334,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.88,
+    "kind": "source",
+    "sphere_minimum": 0.03844979405403137,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.12284683436155319,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.9,
+    "kind": "observed",
+    "sphere_minimum": 0.07640811800956726,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.13618414103984833,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.9,
+    "kind": "source",
+    "sphere_minimum": 0.021324127912521362,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.10567788034677505,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.92,
+    "kind": "observed",
+    "sphere_minimum": 0.07528573274612427,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.1356581449508667,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.92,
+    "kind": "source",
+    "sphere_minimum": 0.004964977502822876,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.08617529273033142,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.94,
+    "kind": "observed",
+    "sphere_minimum": 0.0730859637260437,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.1333998143672943,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.94,
+    "kind": "source",
+    "sphere_minimum": -0.010236665606498718,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.06670133024454117,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.96,
+    "kind": "observed",
+    "sphere_minimum": 0.0700746476650238,
+    "sphere_pair": [
+      31,
+      50
+    ],
+    "convex_minimum": 0.1303291618824005,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.96,
+    "kind": "source",
+    "sphere_minimum": -0.022080719470977783,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.05024538189172745,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.98,
+    "kind": "observed",
+    "sphere_minimum": 0.06645616888999939,
+    "sphere_pair": [
+      31,
+      50
+    ],
+    "convex_minimum": 0.1289070099592209,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 3.98,
+    "kind": "source",
+    "sphere_minimum": -0.031082764267921448,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.03847578912973404,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0,
+    "kind": "observed",
+    "sphere_minimum": 0.06960687041282654,
+    "sphere_pair": [
+      31,
+      50
+    ],
+    "convex_minimum": 0.13102658092975616,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0,
+    "kind": "source",
+    "sphere_minimum": -0.04025392234325409,
+    "sphere_pair": [
+      28,
+      25
+    ],
+    "convex_minimum": 0.0295940600335598,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0200000000000005,
+    "kind": "observed",
+    "sphere_minimum": 0.07504603266716003,
+    "sphere_pair": [
+      31,
+      50
+    ],
+    "convex_minimum": 0.13309243321418762,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0200000000000005,
+    "kind": "source",
+    "sphere_minimum": -0.04539249837398529,
+    "sphere_pair": [
+      28,
+      25
+    ],
+    "convex_minimum": 0.023606490343809128,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.04,
+    "kind": "observed",
+    "sphere_minimum": 0.0787297785282135,
+    "sphere_pair": [
+      31,
+      43
+    ],
+    "convex_minimum": 0.13437873125076294,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.04,
+    "kind": "source",
+    "sphere_minimum": -0.045375972986221313,
+    "sphere_pair": [
+      28,
+      20
+    ],
+    "convex_minimum": 0.020114058628678322,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0600000000000005,
+    "kind": "observed",
+    "sphere_minimum": 0.07954147458076477,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.13547000288963318,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.0600000000000005,
+    "kind": "source",
+    "sphere_minimum": -0.044619351625442505,
+    "sphere_pair": [
+      28,
+      20
+    ],
+    "convex_minimum": 0.019399644806981087,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.08,
+    "kind": "observed",
+    "sphere_minimum": 0.07486496865749359,
+    "sphere_pair": [
+      8,
+      22
+    ],
+    "convex_minimum": 0.1377132087945938,
+    "convex_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.08,
+    "kind": "source",
+    "sphere_minimum": -0.04108704626560211,
+    "sphere_pair": [
+      26,
+      21
+    ],
+    "convex_minimum": 0.023382561281323433,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.1,
+    "kind": "observed",
+    "sphere_minimum": 0.06747263669967651,
+    "sphere_pair": [
+      8,
+      22
+    ],
+    "convex_minimum": 0.13829466700553894,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.1,
+    "kind": "source",
+    "sphere_minimum": -0.03877125680446625,
+    "sphere_pair": [
+      26,
+      21
+    ],
+    "convex_minimum": 0.027957666665315628,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.12,
+    "kind": "observed",
+    "sphere_minimum": 0.06030818819999695,
+    "sphere_pair": [
+      8,
+      22
+    ],
+    "convex_minimum": 0.13035938143730164,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.12,
+    "kind": "source",
+    "sphere_minimum": -0.037208206951618195,
+    "sphere_pair": [
+      26,
+      21
+    ],
+    "convex_minimum": 0.0316493920981884,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.14,
+    "kind": "observed",
+    "sphere_minimum": 0.05380885303020477,
+    "sphere_pair": [
+      8,
+      22
+    ],
+    "convex_minimum": 0.1229989305138588,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.14,
+    "kind": "source",
+    "sphere_minimum": -0.03727186471223831,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.03375091776251793,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.16,
+    "kind": "observed",
+    "sphere_minimum": 0.05095812678337097,
+    "sphere_pair": [
+      8,
+      22
+    ],
+    "convex_minimum": 0.1191132590174675,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.16,
+    "kind": "source",
+    "sphere_minimum": -0.039522066712379456,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.03229822963476181,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.18,
+    "kind": "observed",
+    "sphere_minimum": 0.04705488681793213,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.12126056849956512,
+    "convex_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.18,
+    "kind": "source",
+    "sphere_minimum": -0.03656390309333801,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.03126847743988037,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.2,
+    "kind": "observed",
+    "sphere_minimum": 0.04190404713153839,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.12691208720207214,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.2,
+    "kind": "source",
+    "sphere_minimum": -0.03350147604942322,
+    "sphere_pair": [
+      28,
+      25
+    ],
+    "convex_minimum": 0.033658336848020554,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.22,
+    "kind": "observed",
+    "sphere_minimum": 0.03806370496749878,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.12147624790668488,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.22,
+    "kind": "source",
+    "sphere_minimum": -0.021506384015083313,
+    "sphere_pair": [
+      28,
+      25
+    ],
+    "convex_minimum": 0.0458584688603878,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.24,
+    "kind": "observed",
+    "sphere_minimum": 0.03558403253555298,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.11643446236848831,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.24,
+    "kind": "source",
+    "sphere_minimum": -0.0028273165225982666,
+    "sphere_pair": [
+      26,
+      18
+    ],
+    "convex_minimum": 0.06164459139108658,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time": 4.26,
+    "kind": "observed",
+    "sphere_minimum": 0.04109577834606171,
+    "sphere_pair": [
+      26,
+      22
+    ],
+    "convex_minimum": 0.12280132621526718,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time": 4.26,
+    "kind": "source",
+    "sphere_minimum": 0.004725143313407898,
+    "sphere_pair": [
+      26,
+      19
+    ],
+    "convex_minimum": 0.06728973239660263,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time": 4.28,
+    "kind": "observed",
+    "sphere_minimum": 0.046639323234558105,
+    "sphere_pair": [
+      8,
+      50
+    ],
+    "convex_minimum": 0.1295720487833023,
+    "convex_pair": [
+      "left_wrist_roll_link",
+      "torso_link"
+    ]
+  },
+  {
+    "time": 4.28,
+    "kind": "source",
+    "sphere_minimum": 0.006489291787147522,
+    "sphere_pair": [
+      26,
+      19
+    ],
+    "convex_minimum": 0.06723399460315704,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time": 4.3,
+    "kind": "observed",
+    "sphere_minimum": 0.06528159976005554,
+    "sphere_pair": [
+      8,
+      50
+    ],
+    "convex_minimum": 0.1472322642803192,
+    "convex_pair": [
+      "left_wrist_roll_link",
+      "torso_link"
+    ]
+  },
+  {
+    "time": 4.3,
+    "kind": "source",
+    "sphere_minimum": 0.007834672927856445,
+    "sphere_pair": [
+      26,
+      19
+    ],
+    "convex_minimum": 0.06752781569957733,
+    "convex_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  }
+]

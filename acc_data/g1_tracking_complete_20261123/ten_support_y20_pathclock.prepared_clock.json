@@ -1,0 +1,16 @@
+{
+  "path": "acc_data/g1_tracking_complete_20261123/prepared_path_clock_support_y20_c2.npz",
+  "sha256": "4dab7e806538510ff43ed4111ba606630fdc62bffa473670d63f0ff1122eed3d",
+  "start_time_s": 3.1538139127151346,
+  "end_time_s": 5.41431140045032,
+  "minimum_speed": 0.4302511534478649,
+  "maximum_speed": 1.2427260143762668,
+  "prefix_equality_residual": [
+    0.0,
+    2.3262238801891044e-09,
+    -4.1724309407520366e-07
+  ],
+  "original_source_retained": true,
+  "runtime_optimizer": false,
+  "full_tracking_passed": false
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_anchor_cone16_816",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--contact-friction-refine-start",
+      "4.08",
+      "--contact-friction-rays",
+      "16"
+    ]
+  },
+  {
+    "name": "ten_anchor_cone16_780",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--contact-friction-refine-start",
+      "3.9",
+      "--contact-friction-rays",
+      "16"
+    ]
+  },
+  {
+    "name": "ten_sh16_cone16_816",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--contact-friction-refine-start",
+      "4.08",
+      "--contact-friction-rays",
+      "16",
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  }
+]

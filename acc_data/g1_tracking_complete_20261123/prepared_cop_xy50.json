@@ -1,0 +1,9 @@
+{
+  "method": "Offline linearized CoP fit with frozen reference angular momentum",
+  "xy_bound_mm": 50.0,
+  "parent_sha256": "252e70b94866fb566bfad2885925da0f03cd01bfee4e16b512e89f9037b1288a",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "offline_solver_status": "maximum iterations reached",
+  "full_tracking_passed": false,
+  "preflight_passed": false
+}

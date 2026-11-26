@@ -1,0 +1,49 @@
+{
+  "trial": "ten_limit_task",
+  "joint_stops": [],
+  "root_angular_intervals": [
+    {
+      "start_s": 3.2,
+      "end_s": 3.6,
+      "mean_predicted_root_angular_acceleration": [
+        -2.3063368797302246,
+        -1.7186654806137085,
+        -3.479095697402954
+      ],
+      "mean_observed_root_angular_acceleration": [
+        -2.3628219962119887,
+        -1.590738967061073,
+        -5.022592339664754
+      ]
+    },
+    {
+      "start_s": 3.65,
+      "end_s": 3.75,
+      "mean_predicted_root_angular_acceleration": [
+        -12.80080795288086,
+        11.673903465270996,
+        36.04909133911133
+      ],
+      "mean_observed_root_angular_acceleration": [
+        -18.549683261662686,
+        4.564578998834443,
+        42.44455114006961
+      ]
+    },
+    {
+      "start_s": 3.79,
+      "end_s": 3.82,
+      "mean_predicted_root_angular_acceleration": [
+        65.86326599121094,
+        -74.71255493164062,
+        23.811264038085938
+      ],
+      "mean_observed_root_angular_acceleration": [
+        83.3842754363971,
+        -213.1083086132825,
+        -15.43749570846182
+      ]
+    }
+  ],
+  "note": "Outward QP predictions while a joint is stationary at its physical stop identify unmodeled stop reactions. Interval differences can also include foot impacts; this is diagnostic evidence, not a causal proof in isolation."
+}

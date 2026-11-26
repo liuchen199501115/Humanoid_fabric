@@ -1,0 +1,274 @@
+[
+  {
+    "step": 7,
+    "extended": true,
+    "original_end_frame": 549,
+    "end_frame": 554,
+    "feasibility": [
+      {
+        "takeoff_frame": 485,
+        "end_frame": 554,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.041005859374999995,
+        "target_reduced": true,
+        "limiting_ik_failure": "Swing lift IK failed at frame 520: residual 2.03038e-05"
+      }
+    ]
+  },
+  {
+    "step": 8,
+    "extended": true,
+    "original_end_frame": 640,
+    "end_frame": 646,
+    "feasibility": [
+      {
+        "takeoff_frame": 572,
+        "end_frame": 646,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 9,
+    "extended": true,
+    "original_end_frame": 762,
+    "end_frame": 774,
+    "feasibility": [
+      {
+        "takeoff_frame": 677,
+        "end_frame": 774,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.07736328125,
+        "target_reduced": true,
+        "limiting_ik_failure": "Swing lift IK failed at frame 704: residual 2.11447e-05"
+      }
+    ]
+  },
+  {
+    "step": 10,
+    "extended": false
+  },
+  {
+    "step": 11,
+    "extended": true,
+    "original_end_frame": 884,
+    "end_frame": 890,
+    "feasibility": [
+      {
+        "takeoff_frame": 802,
+        "end_frame": 890,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 12,
+    "extended": false
+  },
+  {
+    "step": 13,
+    "extended": true,
+    "original_end_frame": 1013,
+    "end_frame": 1026,
+    "feasibility": [
+      {
+        "takeoff_frame": 955,
+        "end_frame": 1026,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 14,
+    "extended": false
+  },
+  {
+    "step": 15,
+    "extended": true,
+    "original_end_frame": 1113,
+    "end_frame": 1124,
+    "feasibility": [
+      {
+        "takeoff_frame": 1073,
+        "end_frame": 1124,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 16,
+    "extended": false
+  },
+  {
+    "step": 17,
+    "extended": true,
+    "original_end_frame": 1244,
+    "end_frame": 1254,
+    "feasibility": [
+      {
+        "takeoff_frame": 1198,
+        "end_frame": 1254,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 18,
+    "extended": false
+  },
+  {
+    "step": 19,
+    "extended": true,
+    "original_end_frame": 1368,
+    "end_frame": 1379,
+    "feasibility": [
+      {
+        "takeoff_frame": 1325,
+        "end_frame": 1379,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 20,
+    "extended": true,
+    "original_end_frame": 1447,
+    "end_frame": 1449,
+    "feasibility": [
+      {
+        "takeoff_frame": 1397,
+        "end_frame": 1449,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 21,
+    "extended": true,
+    "original_end_frame": 1502,
+    "end_frame": 1511,
+    "feasibility": [
+      {
+        "takeoff_frame": 1454,
+        "end_frame": 1511,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.020336914062499996,
+        "target_reduced": true,
+        "limiting_ik_failure": "Swing lift IK failed at frame 1487: residual 3.31104e-05"
+      }
+    ]
+  },
+  {
+    "step": 22,
+    "extended": false
+  },
+  {
+    "step": 23,
+    "extended": true,
+    "original_end_frame": 1623,
+    "end_frame": 1632,
+    "feasibility": [
+      {
+        "takeoff_frame": 1581,
+        "end_frame": 1632,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 24,
+    "extended": true,
+    "original_end_frame": 1682,
+    "end_frame": 1685,
+    "feasibility": [
+      {
+        "takeoff_frame": 1655,
+        "end_frame": 1685,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 25,
+    "extended": true,
+    "original_end_frame": 1754,
+    "end_frame": 1767,
+    "feasibility": [
+      {
+        "takeoff_frame": 1688,
+        "end_frame": 1767,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 26,
+    "extended": false
+  },
+  {
+    "step": 27,
+    "extended": true,
+    "original_end_frame": 1848,
+    "end_frame": 1860,
+    "feasibility": [
+      {
+        "takeoff_frame": 1799,
+        "end_frame": 1860,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.085,
+        "target_reduced": false,
+        "limiting_ik_failure": null
+      }
+    ]
+  },
+  {
+    "step": 28,
+    "extended": false
+  },
+  {
+    "step": 29,
+    "extended": true,
+    "original_end_frame": 1958,
+    "end_frame": 1969,
+    "feasibility": [
+      {
+        "takeoff_frame": 1915,
+        "end_frame": 1969,
+        "requested_midpoint_clearance_m": 0.085,
+        "feasible_target_m": 0.018759765625,
+        "target_reduced": true,
+        "limiting_ik_failure": "Swing lift IK failed at frame 1947: residual 2.52277e-05"
+      }
+    ]
+  }
+]

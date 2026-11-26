@@ -1,0 +1,82 @@
+[
+  {
+    "trial": "ten_floor3_smooth16_source_root1000_cap1",
+    "start_time": 3.8000000000000003,
+    "end_time": 3.94,
+    "desired_vertical_acc_range": [
+      -3.0,
+      22.788471221923828
+    ],
+    "reference_vertical_acc_range": [
+      -14.995877265930176,
+      26.634647369384766
+    ],
+    "desired_acc_integral": 0.3724419624805452,
+    "reference_acc_integral": -0.002673529267309068,
+    "measured_com_velocity_change": 0.8777299523353577,
+    "measured_com_velocity_range": [
+      -0.03465669974684715,
+      0.8724220991134644
+    ]
+  },
+  {
+    "trial": "ten_anchor884_root1000_support1",
+    "start_time": 3.8000000000000003,
+    "end_time": 3.94,
+    "desired_vertical_acc_range": [
+      -3.0,
+      18.72467613220215
+    ],
+    "reference_vertical_acc_range": [
+      -22.209007263183594,
+      22.72467613220215
+    ],
+    "desired_acc_integral": 0.3798588470816614,
+    "reference_acc_integral": -0.0031861037909954697,
+    "measured_com_velocity_change": 0.8728442192077637,
+    "measured_com_velocity_range": [
+      -0.03465669974684715,
+      0.8912872076034546
+    ]
+  },
+  {
+    "trial": "ten_anchor_support1_commax3_816",
+    "start_time": 3.8000000000000003,
+    "end_time": 3.94,
+    "desired_vertical_acc_range": [
+      -3.0,
+      10.737382888793945
+    ],
+    "reference_vertical_acc_range": [
+      -22.209007263183594,
+      22.72467613220215
+    ],
+    "desired_acc_integral": -0.023959626138210507,
+    "reference_acc_integral": -0.0031861037909954697,
+    "measured_com_velocity_change": 0.8298766016960144,
+    "measured_com_velocity_range": [
+      -0.03465669974684715,
+      0.8311430811882019
+    ]
+  },
+  {
+    "trial": "ten_rooty100_commax3_816",
+    "start_time": 3.8000000000000003,
+    "end_time": 3.94,
+    "desired_vertical_acc_range": [
+      -3.0,
+      6.150186061859131
+    ],
+    "reference_vertical_acc_range": [
+      -14.995877265930176,
+      26.634647369384766
+    ],
+    "desired_acc_integral": -0.09326958060264565,
+    "reference_acc_integral": -0.002673529267309068,
+    "measured_com_velocity_change": 0.13775599002838135,
+    "measured_com_velocity_range": [
+      0.27931517362594604,
+      0.5741667151451111
+    ]
+  }
+]

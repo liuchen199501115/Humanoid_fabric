@@ -1,0 +1,51 @@
+{
+  "measured_steps": 1,
+  "expected_steps": 29,
+  "landings": [
+    {
+      "step": 1,
+      "swing": "left",
+      "source_frame": 41.2,
+      "time": 0.20600000000000002,
+      "landing_error_m": 0.008689201681186753,
+      "goal": [
+        1.5785690546035767,
+        0.1777510792016983,
+        0.03798835724592209
+      ],
+      "measured_load_n": 404.53790283203125,
+      "source_contact_onset_goal": [
+        1.5718071460723877,
+        0.19158045947551727,
+        0.04952828213572502
+      ]
+    }
+  ],
+  "initial_partial_step": true,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "stop": {
+    "time_s": 0.214,
+    "source_frame": 42.8,
+    "joint_rmse_rad": 0.20067745447158813,
+    "root_position_m": 0.021758247166872025,
+    "root_orientation_rad": 0.18148449299252856
+  },
+  "full_motion_tracking_passed": false,
+  "control_states": 108,
+  "effort_ticks": 107,
+  "qp_calls_per_update": [
+    1
+  ],
+  "solver_statuses": [
+    "DAQP 1; KKT certified"
+  ],
+  "task_cache_used": false,
+  "priority_used": false,
+  "reference_matches_contact_projection": true,
+  "repeat_identical_fields": {
+    "history_time": true,
+    "history_q": true,
+    "history_qd": true,
+    "servo_torque": true
+  }
+}

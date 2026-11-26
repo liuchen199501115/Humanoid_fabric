@@ -1,0 +1,230 @@
+[
+  {
+    "name": "com_early16",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 38,
+        "physical_violation": 8.306244581035571e-12,
+        "stationarity": 1.3011813848606835e-13,
+        "complementarity": 1.1085218593805228e-14,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 38,
+        "physical_violation": 8.306244581035571e-12,
+        "stationarity": 1.3011813848606835e-13,
+        "complementarity": 1.1085218593805228e-14,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 38,
+        "physical_violation": 8.306244581035571e-12,
+        "stationarity": 1.3011813848606835e-13,
+        "complementarity": 1.1085218593805228e-14,
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "name": "support7_15",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 26,
+        "physical_violation": 5.4001247917767614e-12,
+        "stationarity": 3.064215547965432e-14,
+        "complementarity": 2.625057232714413e-16,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 26,
+        "physical_violation": 5.4001247917767614e-12,
+        "stationarity": 3.064215547965432e-14,
+        "complementarity": 2.625057232714413e-16,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 26,
+        "physical_violation": 5.4001247917767614e-12,
+        "stationarity": 3.064215547965432e-14,
+        "complementarity": 2.625057232714413e-16,
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "name": "support7_30",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 32,
+        "physical_violation": 3.609557097661309e-12,
+        "stationarity": 5.0959236830294685e-14,
+        "complementarity": 2.251051519380213e-15,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 32,
+        "physical_violation": 3.609557097661309e-12,
+        "stationarity": 5.0959236830294685e-14,
+        "complementarity": 2.251051519380213e-15,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 32,
+        "physical_violation": 3.609557097661309e-12,
+        "stationarity": 5.0959236830294685e-14,
+        "complementarity": 2.251051519380213e-15,
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "name": "eight_scaled",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 35,
+        "physical_violation": 6.108946681848693e-11,
+        "stationarity": 1.759703494030873e-14,
+        "complementarity": 5.861181216283511e-13,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 35,
+        "physical_violation": 6.108946681848693e-11,
+        "stationarity": 1.759703494030873e-14,
+        "complementarity": 5.861181216283511e-13,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 35,
+        "physical_violation": 6.108946681848693e-11,
+        "stationarity": 1.759703494030873e-14,
+        "complementarity": 5.861181216283511e-13,
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "name": "support30_scaled",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 34,
+        "physical_violation": 6.5985615242984e-11,
+        "stationarity": 7.038813976123492e-14,
+        "complementarity": 7.093803840372595e-13,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 34,
+        "physical_violation": 6.5985615242984e-11,
+        "stationarity": 7.038813976123492e-14,
+        "complementarity": 7.093803840372595e-13,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 30,
+        "physical_violation": 7.949293029082153e-11,
+        "stationarity": 9.792167077193881e-14,
+        "complementarity": 3.189311077807842e-11,
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "name": "com16_scaled",
+    "cases": [
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-08,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 50,
+        "physical_violation": 4.341131898399908e-10,
+        "stationarity": 7.616129948928574e-14,
+        "complementarity": 1.4008676684253768e-11,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-09,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 50,
+        "physical_violation": 4.341131898399908e-10,
+        "stationarity": 7.616129948928574e-14,
+        "complementarity": 1.4008676684253768e-11,
+        "accepted": true
+      },
+      {
+        "cap": 100.0,
+        "primal_tolerance": 1e-10,
+        "row_normalization": false,
+        "flag": 1,
+        "iterations": 52,
+        "physical_violation": 2.773532514765975e-10,
+        "stationarity": 8.271161533457416e-14,
+        "complementarity": 1.0061295849414041e-11,
+        "accepted": true
+      }
+    ]
+  }
+]

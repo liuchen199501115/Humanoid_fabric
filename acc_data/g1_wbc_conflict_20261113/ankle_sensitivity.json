@@ -1,0 +1,16 @@
+{
+  "scope": "Offline LP sensitivity only; no simulator limit or control code changed.",
+  "rows": [
+    {
+      "upper_budget_increase_nm": 0.0,
+      "max_com_vertical_acceleration": 0.9431891728644821,
+      "status": 0
+    },
+    {
+      "upper_budget_increase_nm": 0.1,
+      "max_com_vertical_acceleration": 0.9732988925292201,
+      "status": 0
+    }
+  ],
+  "finite_difference_per_nm": 0.30109719664737966
+}

@@ -1,0 +1,8 @@
+{
+  "velocity_fd_error": 2.927038167399587e-09,
+  "acceleration_fd_error": 0.0033163358195906767,
+  "min_joint_margin": 0.0036734215711376472,
+  "held_stance_position_span_m": 7.622817452812569e-07,
+  "outside_window_exact": true,
+  "physical_tracking_certified": false
+}

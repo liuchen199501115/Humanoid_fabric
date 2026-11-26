@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_anchor_clock14_latewaist16",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-waist-metric-scale",
+      "16",
+      "--late-waist-metric-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_anchor_clock14_latewaist64",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-waist-metric-scale",
+      "64",
+      "--late-waist-metric-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_sh16_clock14_latewaist16",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--late-waist-metric-scale",
+      "16",
+      "--late-waist-metric-start",
+      "4.08",
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  }
+]

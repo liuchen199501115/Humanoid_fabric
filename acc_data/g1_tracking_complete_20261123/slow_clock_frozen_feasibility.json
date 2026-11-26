@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ten_global_clock7",
+    "budget": "original",
+    "lp_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "lp_feasible": false,
+    "ankle_effort_limits": [
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "daqp_prox0.0_cap1.0": false,
+    "daqp_prox0.0001_cap10.0": false
+  },
+  {
+    "name": "ten_global_clock7",
+    "budget": "physical80",
+    "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "lp_feasible": true,
+    "ankle_effort_limits": [
+      40.0,
+      40.0,
+      40.0,
+      40.0
+    ],
+    "daqp_prox0.0_cap1.0": true,
+    "daqp_prox0.0001_cap10.0": true
+  },
+  {
+    "name": "ten_global_clock9",
+    "budget": "original",
+    "lp_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "lp_feasible": false,
+    "ankle_effort_limits": [
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "daqp_prox0.0_cap1.0": false,
+    "daqp_prox0.0001_cap10.0": false
+  },
+  {
+    "name": "ten_global_clock9",
+    "budget": "physical80",
+    "lp_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "lp_feasible": false,
+    "ankle_effort_limits": [
+      40.0,
+      40.0,
+      40.0,
+      40.0
+    ],
+    "daqp_prox0.0_cap1.0": false,
+    "daqp_prox0.0001_cap10.0": false
+  }
+]

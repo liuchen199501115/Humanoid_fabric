@@ -1,0 +1,9 @@
+{
+  "entry": "examples/run_amp_single_tracking_11step.sh",
+  "matches_trial": "eleven_resume10",
+  "matching_resolved_options": 450,
+  "excluded": [
+    "output_path"
+  ],
+  "full_tracking_passed": false
+}

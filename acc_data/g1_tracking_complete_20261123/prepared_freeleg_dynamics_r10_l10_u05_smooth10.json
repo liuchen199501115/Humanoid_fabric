@@ -1,0 +1,42 @@
+{
+  "method": "Offline independent root/leg/upper spline fit with bounded foot-pose changes and exact RNEA derivatives; equal force sharing assumed in double support",
+  "solver_status": "solved",
+  "foot_acceleration_penalty": 10.0,
+  "peak_linearized_foot_correction_curvature": 24.54656879493427,
+  "root_axis_bound_m": 0.01,
+  "upper_axis_bound_rad": 0.05,
+  "leg_axis_bound_rad": 0.1,
+  "node_joint_correction_bound_rad": 0.25,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "lower_limb_effort_scope": "single support only; double support load allocation not constrained",
+  "offline_solver_primal_residual": 1.4207448508343566e-05,
+  "offline_solver_dual_residual": 2.578153011332887e-05,
+  "offline_solver_iterations": 193025,
+  "offline_solver_tolerance": 5e-05,
+  "warm_start_path": "acc_data/g1_tracking_complete_20261123/prepared_freeleg_dynamics_r10_l10_u05.solver_iterate.npz",
+  "minimum_reference_knee_rad": null,
+  "preflight_passed": true,
+  "full_tracking_passed": false,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "maximum_upper_joint_limit_violation_rad": -8.86917111975194e-09,
+  "maximum_foot_position_residual_m": 0.01445185127998517,
+  "maximum_foot_rotation_residual_rad": 0.1502203434687551,
+  "maximum_root_correction_m": 0.017320508075769618,
+  "linearized_max_violation": {
+    "normal": 0.0050194756253175155,
+    "joint_torque": 2.1747519957946624,
+    "friction": 0.13758351019774512,
+    "joint_velocity": -0.22406320793605528,
+    "cop": 0.19850535759484267
+  },
+  "baseline_max_violation": {
+    "normal": 0.42341435850615455,
+    "joint_torque": 5.9356695697268025,
+    "friction": 0.898096575785642,
+    "joint_velocity": -0.2504512786865234,
+    "cop": 0.6370813590691241
+  },
+  "maximum_actual_joint_correction_rad": 0.10000002384185791,
+  "recomputed_centroidal_and_closed_loop_still_required": true
+}

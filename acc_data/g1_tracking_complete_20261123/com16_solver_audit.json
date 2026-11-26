@@ -1,0 +1,42 @@
+[
+  {
+    "proximal": 0.0001,
+    "status": [
+      "DAQP -4; rejected"
+    ],
+    "accepted": [
+      false
+    ],
+    "iterations": 5000
+  },
+  {
+    "proximal": 0.001,
+    "status": [
+      "DAQP -4; rejected"
+    ],
+    "accepted": [
+      false
+    ],
+    "iterations": 5000
+  },
+  {
+    "proximal": 0.01,
+    "status": [
+      "DAQP -4; rejected"
+    ],
+    "accepted": [
+      false
+    ],
+    "iterations": 5000
+  },
+  {
+    "proximal": 0.1,
+    "status": [
+      "DAQP -4; rejected"
+    ],
+    "accepted": [
+      false
+    ],
+    "iterations": 5000
+  }
+]

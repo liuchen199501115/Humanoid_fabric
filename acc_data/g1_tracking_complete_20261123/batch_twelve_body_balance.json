@@ -1,0 +1,26 @@
+[
+  {
+    "name": "twelve_body_bias_r20p30sminus30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_r20p30sminus30.npz"
+    ]
+  },
+  {
+    "name": "twelve_body_bias_early_r20p30sminus30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_early_r20p30sminus30.npz"
+    ]
+  },
+  {
+    "name": "twelve_body_bias_arms_sminus30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_arms_sminus30.npz"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_whole_body_dense.npz",
+  "candidate_sha256": "5aad1519268827a51c0e63425568d7f94d12ea6df6c206ba23ff3159e2a24ca4",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "reference_quantization": "float32 as loaded by the controller",
+  "normal_floor_frame": "local foot normal",
+  "audit_script_sha256": "8a5752a33aded1ab11d67f68121a98c345946500576750fc0e48a825cedbe9db",
+  "scope": "Independent HiGHS nominal rigid-body full-sole audit at 0.125 source-frame spacing, original motor caps; excludes actual contact/impact and physical tracking.",
+  "frames": [
+    960.0,
+    1035.0
+  ],
+  "sample_count": 601,
+  "worst_sample": {
+    "frame": 960.0,
+    "minimum_normalized_slack": 0.0,
+    "base_equality_error": 7.105427357601002e-15,
+    "effort_fraction": 0.9995065986168489,
+    "joint": "right_hip_pitch_joint",
+    "torque": 87.9565806782827
+  },
+  "peak_base_equality_error": 1.8474111129762605e-13,
+  "peak_raw_joint_rmse": 0.14258060971010253,
+  "minimum_sole_clearance": [
+    -0.0016458606865192918,
+    -0.002004231471686435
+  ],
+  "peak_left_swing_clearance": 0.04939287763377019,
+  "physical_tracking_certified": false,
+  "nominal_dynamics_passed": true
+}

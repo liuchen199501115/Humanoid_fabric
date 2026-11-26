@@ -1,0 +1,53 @@
+{
+  "scope": "Offline counterfactual diagnosis only",
+  "speed_rows": 58,
+  "cases": [
+    {
+      "case": "all",
+      "success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "case": "without_speed",
+      "success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "case": "without_speed_and_root",
+      "success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    }
+  ],
+  "largest_measured_velocity_fractions": [
+    {
+      "joint": "right_knee_joint",
+      "velocity": -14.653964042663574,
+      "limit": 20.0,
+      "fraction": 0.7326982021331787
+    },
+    {
+      "joint": "right_wrist_pitch_joint",
+      "velocity": -11.809804916381836,
+      "limit": 22.0,
+      "fraction": 0.5368093252182007
+    },
+    {
+      "joint": "right_hip_pitch_joint",
+      "velocity": 14.942248344421387,
+      "limit": 32.0,
+      "fraction": 0.46694526076316833
+    },
+    {
+      "joint": "right_wrist_roll_joint",
+      "velocity": -14.206711769104004,
+      "limit": 37.0,
+      "fraction": 0.3839651942253113
+    },
+    {
+      "joint": "left_knee_joint",
+      "velocity": -7.652271270751953,
+      "limit": 20.0,
+      "fraction": 0.38261356949806213
+    }
+  ]
+}

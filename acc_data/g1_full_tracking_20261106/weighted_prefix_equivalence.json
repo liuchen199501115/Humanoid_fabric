@@ -1,0 +1,24 @@
+{
+  "reference_run": "rolling_contact",
+  "new_run": "weighted_after12",
+  "samples": 2101,
+  "through_sim_time_s": 4.2,
+  "checks": {
+    "history_q": {
+      "equal": true,
+      "maximum_error": 0.0
+    },
+    "history_qd": {
+      "equal": true,
+      "maximum_error": 0.0
+    },
+    "history_time": {
+      "equal": true,
+      "maximum_error": 0.0
+    },
+    "history_frame": {
+      "equal": true,
+      "maximum_error": 0.0
+    }
+  }
+}

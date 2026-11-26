@@ -1,0 +1,7 @@
+{
+  "wrong_incoming_contact_does_not_release_previous_support": true,
+  "goal_reached_allows_landing_hold": true,
+  "flight_evidence_required": true,
+  "pre_takeoff_plan_preserved": true,
+  "physical_tracking_certified": false
+}

@@ -33,7 +33,9 @@ class ContactPatchManager:
     feet get their own heel/toe/point observations and a soft flattening task.
     No patch is inferred for an airborne or unloaded foot.
     """
-    def __init__(self):self.patches={}
+    def __init__(self):
+        self.patches={}
+        self.touching_support_tolerance=None
 
     def update(self, active, poses, angular_speeds, contact_data, time, dt,
                primary_foot=None, primary_contact=None):
@@ -60,7 +62,8 @@ class ContactPatchManager:
                     points[sl],forces[sl],distances[sl],flatten=True)
                 if patch is not None:self.patches[foot]=patch
             if patch is not None:
-                patch.update_support(position,rotation,points[sl],forces[sl],distances[sl])
+                patch.update_support(position,rotation,points[sl],forces[sl],distances[sl],
+                                     touching_tolerance=self.touching_support_tolerance)
                 flat=bool(z.max()<=.002 and z.min()>=-.002 and forces[sl].sum()>=20.
                           and angular_speeds[foot]<=.2)
                 patch.flat_seconds=patch.flat_seconds+dt if flat else 0.

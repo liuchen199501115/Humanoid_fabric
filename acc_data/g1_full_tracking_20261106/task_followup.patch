@@ -1,0 +1,182 @@
+--- before this continuation
++++ examples/test_g1.py
+@@ -152,6 +152,52 @@
+             vertical.expand_as(angular_velocity), dim=-1), dim=-1)
+     correction = (patch_frame.transpose(-1, -2) @ correction_world[..., None]).squeeze(-1)
+     return torch.where(matched[:, None], correction, torch.zeros_like(correction)), matched
++
++def priority_error_diagnostics(errors):
++    """Keep history fields stable when a priority stage turns on or off."""
++    return dict(priority_active=np.asarray(errors is not None),
++                priority_stage_constraint_error=(np.full(1, np.nan, dtype=np.float32)
++                    if errors is None else _to_numpy(errors[0]).copy()),
++                priority_lock_error=(np.full(1, np.nan, dtype=np.float32)
++                    if errors is None else _to_numpy(errors[1]).copy()))
++
++
++def blend_secondary_task_metrics(requests, priority_names, priority_rows, blend):
++    """Continuously add secondary row costs to a single physical QP objective."""
++    if not math.isfinite(blend) or not 0 <= blend <= 1:
++        raise ValueError('Secondary task blend must be in [0,1]')
++    for request in requests:
++        factors = torch.full_like(request.desired, math.sqrt(blend))
++        if request.name in priority_names:
++            selected = priority_rows.get(request.name)
++            if selected is None:
++                factors[:] = 1.
++            else:
++                factors[:, list(selected)] = 1.
++        request.metric = request.metric*factors[:, :, None]*factors[:, None, :]
++
++
++def root_position_request(q, velocity, reference_q, reference_v, reference_a,
++                          metric, stiffness=100., damping=20., feedback_limit=30.):
++    """Track the moving root origin in world coordinates through the physical QP.
++
++    This is a soft acceleration objective. It cannot apply forces to the
++    unactuated base; the existing dynamics and measured contacts still govern
++    what joint torque can realize. Feedforward is not feedback-clipped.
++    """
++    from fabrics_sim.fabrics.task_request import TaskRequest
++    if (any(not math.isfinite(x) or x <= 0 for x in
++            (metric, stiffness, damping, feedback_limit))):
++        raise ValueError('Root task weights and gains must be finite and positive')
++    feedback = (stiffness*(reference_q[:, :3]-q[:, :3])
++                + damping*(reference_v[:, :3]-velocity[:, :3]))
++    desired = reference_a[:, :3]+feedback.clamp(-feedback_limit, feedback_limit)
++    A = q.new_zeros(q.shape[0], 3, 35)
++    A[:, :, :3] = torch.eye(3, device=q.device, dtype=q.dtype)
++    return TaskRequest('root_position', A, torch.zeros_like(desired), desired,
++                       metric*torch.eye(3, device=q.device, dtype=q.dtype)[None].expand(q.shape[0], -1, -1),
++                       torch.ones_like(desired, dtype=torch.bool))
++
+ 
+ def scale_stance_posture_metric(metric, active_contacts, scale):
+     """Keep stance posture in the same QP stage, with a smaller soft weight.
+@@ -2021,6 +2067,15 @@
+     parser.add_argument('--minimum-support-acceleration-start',type=float,default=100.)
+     parser.add_argument('--minimum-support-acceleration',type=float,default=-3.)
+     parser.add_argument('--minimum-support-acceleration-metric-scale',type=float,default=2.)
++    parser.add_argument('--weighted-tasks-start', type=float, default=float('inf'),
++                        help='Source seconds to blend secondary costs into one constrained task QP')
++    parser.add_argument('--weighted-tasks-ramp', type=float, default=.1)
++    parser.add_argument('--support-flatten-start', type=float, default=float('inf'),
++                        help='Source seconds to blend loaded planned stance feet toward a level sole')
++    parser.add_argument('--root-position-task-start', type=float, default=float('inf'),
++                        help='Source seconds to enable direct root-position acceleration tracking')
++    parser.add_argument('--root-position-task-weight', type=float, default=1000.)
++    parser.add_argument('--root-position-task-ramp', type=float, default=.1)
+     parser.add_argument('--stance-posture-metric-start', type=float, default=float('inf'),
+                         help='Source time to begin reducing only active stance-leg posture weights')
+     parser.add_argument('--stance-posture-metric-scale', type=float, default=.5)
+@@ -2315,6 +2370,23 @@
+     if args.landing_speed_limit is not None and (not (args.reference_manager or args.motion_start_in_motion)
+             or not math.isfinite(args.landing_speed_limit) or args.landing_speed_limit<=0):
+         raise ValueError('--landing-speed-limit requires a reference manager or dynamic start and positive finite speed')
++    if (math.isnan(args.weighted_tasks_start) or args.weighted_tasks_start < 0
++            or not math.isfinite(args.weighted_tasks_ramp) or args.weighted_tasks_ramp <= 0):
++        raise ValueError('Weighted task transition requires nonnegative start and positive ramp')
++    if math.isfinite(args.weighted_tasks_start) and (
++            args.tracking_profile != 'amp-full' or args.g1_com_priority):
++        raise ValueError('Weighted task experiment requires amp-full without a separate COM priority')
++    if math.isnan(args.support_flatten_start) or args.support_flatten_start < 0:
++        raise ValueError('Support flatten start must be nonnegative or infinity')
++    if math.isfinite(args.support_flatten_start) and args.tracking_profile != 'amp-full':
++        raise ValueError('Support flatten experiment requires the amp-full profile')
++    if (math.isnan(args.root_position_task_start) or args.root_position_task_start < 0
++            or any(not math.isfinite(x) or x <= 0 for x in
++                   (args.root_position_task_weight, args.root_position_task_ramp))):
++        raise ValueError('Root tracking requires nonnegative start and positive finite weight/ramp')
++    if math.isfinite(args.root_position_task_start) and not (
++            args.tracking_profile == 'amp-full' and args.direct_wbc):
++        raise ValueError('Root position task currently requires the amp-full direct-WBC profile')
+     if (math.isnan(args.stance_posture_metric_start) or args.stance_posture_metric_start < 0
+             or not math.isfinite(args.stance_posture_metric_scale)
+             or not 0 < args.stance_posture_metric_scale <= 1
+@@ -4445,6 +4517,7 @@
+             contact_row_mask = None
+             contact_patches = {}
+             contact_patch_tasks = {}
++            support_flatten_weights = q.new_zeros(1, 2)
+             rolling_bias_correction = torch.zeros((1, 2, 3), device=device, dtype=q.dtype)
+             rolling_bias_matched = torch.zeros((1, 2), device=device, dtype=torch.bool)
+             if unified_reference and patch_manager is not None:
+@@ -4552,6 +4625,7 @@
+                     else:
+                         right_j,right_contact_bias = mapped_jac,mapped_bias
+                     pose_error[:,patch_foot] = mapped_error
++                    flatten_task = toe_task
+                     if unified_reference:
+                         from fabrics_sim.reference.whole_body import support_orientation_request
+                         foot_request = next(r for r in fabric.dynamics_tasks.last_requests if r.name == 'feet_pose')
+@@ -4560,6 +4634,18 @@
+                             getattr(patch, 'polygon_support', False))
+                     elif patch_manager is not None:
+                         toe_task.name += f'_{patch_foot}'
++                    if (unified_reference and elapsed_motion_time > args.support_flatten_start
++                            and patch.flatten and not getattr(patch, 'polygon_support', False)
++                            and bool(foot_normal_forces[0, patch_foot] >= 20.)
++                            and int(planned_contact_mode.item()) & (1 << patch_foot)):
++                        # Only a measured loaded, planned stance foot receives
++                        # this soft landing-recovery objective. Its contact
++                        # rows and physical wrench cone remain measured ones.
++                        flat_phase = min(1., (elapsed_motion_time-args.support_flatten_start)/.1)
++                        flat_blend = flat_phase**3*(10-15*flat_phase+6*flat_phase**2)
++                        toe_task.desired = torch.lerp(toe_task.desired, flatten_task.desired, flat_blend)
++                        toe_task.metric = torch.lerp(toe_task.metric, flatten_task.metric, flat_blend)
++                        support_flatten_weights[:, patch_foot] = flat_blend
+                     contact_patch_tasks[patch_foot]=toe_task
+                     fabric.dynamics_tasks.last_requests.append(toe_task)
+             if control_time>=args.late_contact_stabilization_start:
+@@ -5331,6 +5417,26 @@
+                     replace_torso_weight(fabric.dynamics_tasks.last_requests,orientation_blend)
+                     priority_tasks=tuple(dict.fromkeys(priority_tasks+('source_pelvis_orientation',)))
+                     priority_levels=None
++            root_task_weight = 0.
++            if elapsed_motion_time > args.root_position_task_start:
++                root_phase = min(1., (elapsed_motion_time-args.root_position_task_start)
++                                 / args.root_position_task_ramp)
++                root_task_weight = args.root_position_task_weight*root_phase**3*(10-15*root_phase+6*root_phase**2)
++                fabric.dynamics_tasks.last_requests.append(root_position_request(
++                    q, qd, reference_q, reference_v, reference_a, root_task_weight))
++                priority_tasks = tuple(dict.fromkeys(priority_tasks+('root_position',)))
++                if priority_levels is not None:
++                    priority_levels = (priority_levels[0]+('root_position',),)+priority_levels[1:]
++            secondary_task_blend = 0.
++            if elapsed_motion_time > args.weighted_tasks_start:
++                if priority_levels is not None or com_priority_projection is not None:
++                    raise ValueError('Weighted transition requires a single unprojected priority stage')
++                secondary_phase = min(1., (elapsed_motion_time-args.weighted_tasks_start)
++                                      / args.weighted_tasks_ramp)
++                secondary_task_blend = secondary_phase**3*(10-15*secondary_phase+6*secondary_phase**2)
++                blend_secondary_task_metrics(fabric.dynamics_tasks.last_requests,
++                                             priority_tasks, priority_rows, secondary_task_blend)
++                priority_tasks, priority_rows = (), {}
+             current_effort_limits=qp_effort_limits
+             if elapsed_motion_time>=args.model_effort_start:
+                 effort_phase=min(1.,max(0.,(elapsed_motion_time-args.model_effort_start)/args.model_effort_ramp))
+@@ -5478,6 +5584,12 @@
+             # latency. A 2 ms simulation period does not certify 2 ms wall time.
+             qp_validated = bool(qp_output.validated.all())
+             com_diagnostic = {"qp_wall_seconds": time.perf_counter()-qp_wall_start}
++            if math.isfinite(args.weighted_tasks_start):
++                com_diagnostic['secondary_task_blend'] = secondary_task_blend
++            if math.isfinite(args.support_flatten_start):
++                com_diagnostic['support_flatten_weight'] = _to_numpy(support_flatten_weights).copy()
++            if math.isfinite(args.root_position_task_start):
++                com_diagnostic['root_position_task_weight'] = root_task_weight
+             if math.isfinite(args.stance_posture_metric_start):
+                 com_diagnostic['stance_posture_metric_scale'] = stance_posture_scale
+             if math.isfinite(args.rolling_contact_kinematics_start):
+@@ -5534,10 +5646,7 @@
+                     swing_com_priority_active=np.asarray(swing_com_priority),
+                     priority_stage_constraint_error=np.zeros(1, dtype=np.float32),
+                     priority_lock_error=np.zeros(1, dtype=np.float32))
+-            if acceleration_qp.last_priority_errors is not None:
+-                first_error, lock_error = acceleration_qp.last_priority_errors
+-                com_diagnostic.update(priority_stage_constraint_error=_to_numpy(first_error).copy(),
+-                                      priority_lock_error=_to_numpy(lock_error).copy())
++            com_diagnostic.update(priority_error_diagnostics(acceleration_qp.last_priority_errors))
+             if args.diagnose_contacts:
+                 # Retain the instantaneous coordinates actually constrained by
+                 # the QP, including observed point/edge contact frames. A small

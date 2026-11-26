@@ -1,0 +1,20 @@
+[
+  {
+    "reference": "prepared_margin30_turn_com_y15",
+    "peak_right_native_clearance_m": 0.0330879908102036,
+    "at802_m": 0.004371298826645567,
+    "maximum_leg_limit_violation_rad": -8.86917111975194e-09
+  },
+  {
+    "reference": "prepared_com15_right_roll_minus08",
+    "peak_right_native_clearance_m": 0.035199392209381244,
+    "at802_m": 0.0027131523646266448,
+    "maximum_leg_limit_violation_rad": -8.86917111975194e-09
+  },
+  {
+    "reference": "prepared_com15_right_roll_minus12",
+    "peak_right_native_clearance_m": 0.035647805438006316,
+    "at802_m": 0.001968653959899924,
+    "maximum_leg_limit_violation_rad": -8.86917111975194e-09
+  }
+]

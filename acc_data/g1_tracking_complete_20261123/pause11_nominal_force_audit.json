@@ -1,0 +1,46 @@
+[
+  {
+    "pause_start_frame": null,
+    "minimum_com_acceleration": -17.57036618953914,
+    "maximum_com_acceleration": 26.83007334253341,
+    "negative_normal_force_frames": 28,
+    "time_to_frame883": 4.012222222222222,
+    "sampled_frames": [
+      816,
+      883
+    ]
+  },
+  {
+    "pause_start_frame": 802,
+    "minimum_com_acceleration": -12.824877452566323,
+    "maximum_com_acceleration": 24.26733777959644,
+    "negative_normal_force_frames": 6,
+    "time_to_frame883": 4.133440315630999,
+    "sampled_frames": [
+      816,
+      883
+    ]
+  },
+  {
+    "pause_start_frame": 816,
+    "minimum_com_acceleration": -14.050286007462352,
+    "maximum_com_acceleration": 25.85574916219182,
+    "negative_normal_force_frames": 9,
+    "time_to_frame883": 4.108461720593258,
+    "sampled_frames": [
+      816,
+      883
+    ]
+  },
+  {
+    "pause_start_frame": 840,
+    "minimum_com_acceleration": -15.2517236900899,
+    "maximum_com_acceleration": 26.83007334253341,
+    "negative_normal_force_frames": 22,
+    "time_to_frame883": 4.067598310167168,
+    "sampled_frames": [
+      816,
+      883
+    ]
+  }
+]

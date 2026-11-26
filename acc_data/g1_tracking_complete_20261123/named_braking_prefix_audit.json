@@ -1,0 +1,22 @@
+[
+  {
+    "trial": "ten_roll_bounds",
+    "prefix_samples": 1744,
+    "first_enabled_time_s": 3.488,
+    "common_fields": 155,
+    "different_fields": [],
+    "prefix_exact": true,
+    "only_selected_joint_has_bounds": true,
+    "max_bound_violation": 0.0
+  },
+  {
+    "trial": "ten_roll_bounds39",
+    "prefix_samples": 1828,
+    "first_enabled_time_s": 3.656,
+    "common_fields": 155,
+    "different_fields": [],
+    "prefix_exact": true,
+    "only_selected_joint_has_bounds": true,
+    "max_bound_violation": 0.0
+  }
+]

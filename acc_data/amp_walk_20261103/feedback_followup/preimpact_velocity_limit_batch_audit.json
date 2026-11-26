@@ -1,0 +1,96 @@
+[
+  {
+    "path": "fixed_clock120_body10_full_body_preview35_fine24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview35_fine24.full_body_preview.latest_successful_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview35_observed24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview35_observed24.full_body_preview.latest_successful_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_adaptive12.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_contact24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_distributed12.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_feet12.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_fine_process24.full_body_preview.failure_previous_plan.npz",
+    "maximum_excess": 0.00015582329940855288,
+    "detail": {
+      "node": 0,
+      "joint": "left_hip_yaw_joint",
+      "preimpact_velocity": 32.00015582329941
+    }
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_fine_process24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_fine_process24.full_body_preview.latest_successful_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_guarded24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_landing24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_native12.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_refined6.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_rolling12.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  },
+  {
+    "path": "fixed_clock120_body10_full_body_preview42_wrench_warm24.full_body_preview.first_plan.npz",
+    "maximum_excess": 0.0,
+    "detail": null
+  }
+]

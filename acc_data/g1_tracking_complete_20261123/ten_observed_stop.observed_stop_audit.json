@@ -1,0 +1,12 @@
+{
+  "trial": "ten_observed_stop",
+  "first_active_time_s": 3.798,
+  "active_joint_updates": 38,
+  "max_reaction_nm": 40.0,
+  "max_locked_joint_acceleration_rad_s2": 1.0907705402969647e-13,
+  "observed_position_and_velocity_verified": true,
+  "unilateral_reactions_verified": true,
+  "one_native_QP_per_update": true,
+  "only_QP_motor_torque_applied": true,
+  "note": "This audits controller mode selection and QP passivity, not a claim that the entire trajectory passed."
+}

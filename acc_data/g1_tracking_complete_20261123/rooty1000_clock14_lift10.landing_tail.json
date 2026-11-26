@@ -1,0 +1,10 @@
+[
+  {
+    "takeoff_frame": 289,
+    "end_frame": 362,
+    "requested_midpoint_clearance_m": 0.085,
+    "feasible_target_m": 0.0351123046875,
+    "target_reduced": true,
+    "limiting_ik_failure": "Swing lift IK failed at frame 317: residual 2.13129e-05"
+  }
+]

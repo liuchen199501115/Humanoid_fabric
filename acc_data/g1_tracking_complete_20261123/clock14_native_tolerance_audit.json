@@ -1,0 +1,158 @@
+[
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "primal": 1e-08,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03527877200394869,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "primal": 1e-07,
+    "dual": 1e-10,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.034639719990082085,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "primal": 1e-07,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03643049098900519,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "primal": 1e-06,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.034846562004531734,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "primal": 1e-08,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03596365300472826,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "primal": 1e-07,
+    "dual": 1e-10,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03486743300163653,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "primal": 1e-07,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.034322367995628156,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "primal": 1e-06,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.034373308008071035,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "primal": 1e-08,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.035016157999052666,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "primal": 1e-07,
+    "dual": 1e-10,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.0349442670121789,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "primal": 1e-07,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.034818938991520554,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "primal": 1e-06,
+    "dual": 1e-08,
+    "external_certificate_unchanged": true,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03501156700076535,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "run": "formula_weights_sync4",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_verification/formula_weights_sync4.npz",
+  "measured_landing_events": 1,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 1,
+  "first_fidelity_exceeded_time_s": 0.26,
+  "last_source_frame": 52.0,
+  "last_time_s": 0.26,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.23800000000000002,
+      "source_frame": 47.6,
+      "landing_error_m": 0.01059684584438354,
+      "joint_rmse_rad": 0.18583369255065918,
+      "root_position_error_m": 0.028478147462010384,
+      "root_orientation_error_rad": 0.23606644653563355,
+      "prefix_peak_joint_rmse_rad": 0.18583369255065918,
+      "prefix_peak_root_position_error_m": 0.028478147462010384,
+      "prefix_peak_root_orientation_error_rad": 0.23606644653563355,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 2,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": null,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "execution": {
+    "direct_wbc": false,
+    "tracking_servo": false,
+    "profile": "formula-mit",
+    "scope": "weights",
+    "source_reference": false,
+    "sync_frequency": 4.0,
+    "servo_bandwidth": 30.0
+  },
+  "integrator": {
+    "position_step_error": 5.902256816625595e-08,
+    "position_continuity_error": 0.0,
+    "velocity_continuity_error": 0.0
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "weight_range": [
+    1.0000026226043701,
+    3.913616418838501
+  ],
+  "peak_pd_torque_norm": 23.81786346435547,
+  "peak_joint_rmse": 0.20070794224739075,
+  "peak_root_position": 0.032221484929323196,
+  "returncode": 1
+}

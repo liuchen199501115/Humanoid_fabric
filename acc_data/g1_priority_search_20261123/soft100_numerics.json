@@ -1,0 +1,38 @@
+[
+  {
+    "proximal": -1e-08,
+    "validated": false,
+    "iterations": 338,
+    "status": [
+      "DAQP -2; rejected"
+    ],
+    "native_calls": 1
+  },
+  {
+    "proximal": 1e-06,
+    "validated": true,
+    "iterations": 125,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "native_calls": 1
+  },
+  {
+    "proximal": 0.0001,
+    "validated": true,
+    "iterations": 90,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "native_calls": 1
+  },
+  {
+    "proximal": 0.01,
+    "validated": true,
+    "iterations": 603,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "native_calls": 1
+  }
+]

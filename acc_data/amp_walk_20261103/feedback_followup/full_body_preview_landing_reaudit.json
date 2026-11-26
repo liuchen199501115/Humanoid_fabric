@@ -1,0 +1,18 @@
+{
+  "nonlinear_landing_error": 0.03509175110585932,
+  "nonlinear_base_force_residual": 8.921038909942276,
+  "nonlinear_base_moment_residual": 3.1498215562706973,
+  "nonlinear_joint_residual": 3.133546298812643,
+  "nonlinear_minimum_clearance": -0.0004999278656629136,
+  "nonlinear_support_gap": 0.0008444011365749612,
+  "nonlinear_impact_residual": 0.06742537723189383,
+  "nonlinear_impact_energy_increase": 0.0,
+  "nonlinear_support_speed": 0.04572415319508229,
+  "nonlinear_contact_acceleration": 0.9786557634470384,
+  "nonlinear_wrench_cone_violation": 0.08982910236415265,
+  "nonlinear_impulse_cone_violation": 0.013245602668406218,
+  "nonlinear_integration_position": 4.951133646320149e-07,
+  "nonlinear_integration_orientation": 0.00843509817440977,
+  "nonlinear_integration_joint": 1.1920928955078125e-07,
+  "nonlinear_verified": true
+}

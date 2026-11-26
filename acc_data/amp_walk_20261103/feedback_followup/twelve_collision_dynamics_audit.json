@@ -1,0 +1,2242 @@
+[
+  {
+    "time": 3.2,
+    "source_frame": 725.0000000000001,
+    "minimum_distance": 0.015011760406196117,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -2.3819634914398193,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04336414858698845,
+        "speed": -0.3117467761039734,
+        "acceleration": 1.1106793880462646
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -4.607480049133301,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04102721065282822,
+        "speed": -0.5365678071975708,
+        "acceleration": 7.179724216461182
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -8.689313888549805,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.015011760406196117,
+        "speed": -0.16185447573661804,
+        "acceleration": 1.9529266357421875
+      }
+    ]
+  },
+  {
+    "time": 3.22,
+    "source_frame": 729.8000000000001,
+    "minimum_distance": 0.013192976824939251,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -11.760215759277344,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.1013311967253685,
+        "speed": 1.102940559387207,
+        "acceleration": -34.61246109008789
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 1.9602365493774414,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.037904925644397736,
+        "speed": -0.21298660337924957,
+        "acceleration": 4.1921467781066895
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 2.761427879333496,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.03200380876660347,
+        "speed": -0.342456579208374,
+        "acceleration": 12.285149574279785
+      }
+    ]
+  },
+  {
+    "time": 3.24,
+    "source_frame": 734.6000000000001,
+    "minimum_distance": 0.015121132135391235,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 5.741511821746826,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.029474753886461258,
+        "speed": 0.03281845897436142,
+        "acceleration": 4.610032081604004
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 8.085760116577148,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.029474753886461258,
+        "speed": 0.03281845897436142,
+        "acceleration": 4.610032081604004
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 11.218650817871094,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.02992190234363079,
+        "speed": -0.04058772698044777,
+        "acceleration": 7.451845645904541
+      }
+    ]
+  },
+  {
+    "time": 3.2600000000000002,
+    "source_frame": 739.4000000000001,
+    "minimum_distance": 0.01951989345252514,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 4.444348335266113,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.02893039584159851,
+        "speed": 0.11868565529584885,
+        "acceleration": 1.973832130432129
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 8.057954788208008,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.02893039584159851,
+        "speed": 0.11868565529584885,
+        "acceleration": 1.973832130432129
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 12.814651489257812,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.02893039584159851,
+        "speed": 0.11868565529584885,
+        "acceleration": 1.973832130432129
+      }
+    ]
+  },
+  {
+    "time": 3.2800000000000002,
+    "source_frame": 744.2000000000002,
+    "minimum_distance": 0.025462832301855087,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 7.952051639556885,
+        "pair": [
+          "right_wrist_roll_link",
+          "torso_link"
+        ],
+        "distance": 0.15451490879058838,
+        "speed": 0.09919366985559464,
+        "acceleration": -2.244001626968384
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 13.637228012084961,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.03195657208561897,
+        "speed": 0.19123101234436035,
+        "acceleration": 4.456953525543213
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 20.523027420043945,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.03195657208561897,
+        "speed": 0.19123101234436035,
+        "acceleration": 4.456953525543213
+      }
+    ]
+  },
+  {
+    "time": 3.3000000000000003,
+    "source_frame": 749.0000000000001,
+    "minimum_distance": 0.033157795667648315,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 7.419474124908447,
+        "pair": [
+          "left_wrist_roll_link",
+          "torso_link"
+        ],
+        "distance": 0.09500763565301895,
+        "speed": 0.1605069786310196,
+        "acceleration": 0.05087396502494812
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 15.810866355895996,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.03657277673482895,
+        "speed": 0.26577380299568176,
+        "acceleration": 3.063474178314209
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 25.36653709411621,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.03657277673482895,
+        "speed": 0.26577380299568176,
+        "acceleration": 3.063474178314209
+      }
+    ]
+  },
+  {
+    "time": 3.3200000000000003,
+    "source_frame": 753.8000000000001,
+    "minimum_distance": 0.04176465421915054,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 4.271591663360596,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.13027137517929077,
+        "speed": 0.33302780985832214,
+        "acceleration": -8.114221572875977
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 14.896080017089844,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04241955280303955,
+        "speed": 0.3204650580883026,
+        "acceleration": -1.098207712173462
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 27.197776794433594,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04241955280303955,
+        "speed": 0.3204650580883026,
+        "acceleration": -1.098207712173462
+      }
+    ]
+  },
+  {
+    "time": 3.34,
+    "source_frame": 758.5999999999999,
+    "minimum_distance": 0.048729896545410156,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -1.1773147583007812,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.1343521624803543,
+        "speed": 0.23542995750904083,
+        "acceleration": -12.26273250579834
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 14.487378120422363,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.048729896545410156,
+        "speed": 0.312194287776947,
+        "acceleration": -2.8576927185058594
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 28.67605209350586,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.048729896545410156,
+        "speed": 0.312194287776947,
+        "acceleration": -2.8576927185058594
+      }
+    ]
+  },
+  {
+    "time": 3.36,
+    "source_frame": 763.4,
+    "minimum_distance": 0.054340191185474396,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -14.390019416809082,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.15604519844055176,
+        "speed": -0.12527166306972504,
+        "acceleration": -21.092565536499023
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 9.726312637329102,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.15604519844055176,
+        "speed": -0.12527166306972504,
+        "acceleration": -21.092565536499023
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 31.368331909179688,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.054340191185474396,
+        "speed": 0.25245237350463867,
+        "acceleration": -0.5293318033218384
+      }
+    ]
+  },
+  {
+    "time": 3.38,
+    "source_frame": 768.1999999999999,
+    "minimum_distance": 0.05978322774171829,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -48.897369384765625,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.28329670429229736,
+        "speed": -0.3920532464981079,
+        "acceleration": -59.47550582885742
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -17.298152923583984,
+        "pair": [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.15929913520812988,
+        "speed": -0.552433967590332,
+        "acceleration": -35.280845642089844
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 12.566116333007812,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.13221858441829681,
+        "speed": -0.48600515723228455,
+        "acceleration": -28.743545532226562
+      }
+    ]
+  },
+  {
+    "time": 3.4,
+    "source_frame": 773.0,
+    "minimum_distance": 0.06798906624317169,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -63.05201721191406,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.2641465663909912,
+        "speed": -1.501349925994873,
+        "acceleration": -54.65579605102539
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -40.19746780395508,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.2641465663909912,
+        "speed": -1.501349925994873,
+        "acceleration": -54.65579605102539
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -6.579414367675781,
+        "pair": [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.14201579988002777,
+        "speed": -1.136717438697815,
+        "acceleration": -22.298084259033203
+      }
+    ]
+  },
+  {
+    "time": 3.42,
+    "source_frame": 777.8,
+    "minimum_distance": 0.08016026020050049,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -62.97574234008789,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.2241484522819519,
+        "speed": -2.4488563537597656,
+        "acceleration": -36.85953903198242
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -62.960941314697266,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.2241484522819519,
+        "speed": -2.4488563537597656,
+        "acceleration": -36.85953903198242
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -36.81513977050781,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.2241484522819519,
+        "speed": -2.4488563537597656,
+        "acceleration": -36.85953903198242
+      }
+    ]
+  },
+  {
+    "time": 3.44,
+    "source_frame": 782.5999999999999,
+    "minimum_distance": 0.07359530031681061,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -38.53081130981445,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.16937655210494995,
+        "speed": -2.9132251739501953,
+        "acceleration": -1.4793081283569336
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -56.46211624145508,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.16937655210494995,
+        "speed": -2.9132251739501953,
+        "acceleration": -1.4793081283569336
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -55.273223876953125,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.16937655210494995,
+        "speed": -2.9132251739501953,
+        "acceleration": -1.4793081283569336
+      }
+    ]
+  },
+  {
+    "time": 3.46,
+    "source_frame": 787.4,
+    "minimum_distance": 0.05432607978582382,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -6.476478576660156,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.10908590257167816,
+        "speed": -1.8658239841461182,
+        "acceleration": 17.675207138061523
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -28.16878890991211,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.1130203902721405,
+        "speed": -2.5460994243621826,
+        "acceleration": 29.4931697845459
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -39.13985061645508,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.1130203902721405,
+        "speed": -2.5460994243621826,
+        "acceleration": 29.4931697845459
+      }
+    ]
+  },
+  {
+    "time": 3.48,
+    "source_frame": 792.1999999999999,
+    "minimum_distance": 0.04998315870761871,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -3.223388910293579,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.0662974864244461,
+        "speed": -0.6342572569847107,
+        "acceleration": 3.9616880416870117
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -4.482388496398926,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.0662974864244461,
+        "speed": -0.6342572569847107,
+        "acceleration": 3.9616880416870117
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 0.1846942901611328,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.0662974864244461,
+        "speed": -0.6342572569847107,
+        "acceleration": 3.9616880416870117
+      }
+    ]
+  },
+  {
+    "time": 3.5,
+    "source_frame": 797.0,
+    "minimum_distance": 0.051856815814971924,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -33.29911422729492,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.054379574954509735,
+        "speed": -0.9948018193244934,
+        "acceleration": -19.58258056640625
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -42.61506652832031,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.054379574954509735,
+        "speed": -0.9948018193244934,
+        "acceleration": -19.58258056640625
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -47.530433654785156,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.054379574954509735,
+        "speed": -0.9948018193244934,
+        "acceleration": -19.58258056640625
+      }
+    ]
+  },
+  {
+    "time": 3.52,
+    "source_frame": 801.8000000000001,
+    "minimum_distance": 0.035118237137794495,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -17.282312393188477,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.12993298470973969,
+        "speed": -0.1342727541923523,
+        "acceleration": -22.169658660888672
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -3.827399253845215,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.035118237137794495,
+        "speed": -0.8025758862495422,
+        "acceleration": 17.984760284423828
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -11.830778121948242,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.035118237137794495,
+        "speed": -0.8025758862495422,
+        "acceleration": 17.984760284423828
+      }
+    ]
+  },
+  {
+    "time": 3.54,
+    "source_frame": 806.5999999999999,
+    "minimum_distance": 0.02381734736263752,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -13.696002006530762,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.08428988605737686,
+        "speed": 0.11276784539222717,
+        "acceleration": -19.614839553833008
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 0.45194244384765625,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.08428988605737686,
+        "speed": 0.11276784539222717,
+        "acceleration": -19.614839553833008
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 15.588438987731934,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02381734736263752,
+        "speed": -0.31692779064178467,
+        "acceleration": 28.60218048095703
+      }
+    ]
+  },
+  {
+    "time": 3.56,
+    "source_frame": 811.4000000000001,
+    "minimum_distance": 0.021299898624420166,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -2.6927924156188965,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.08428417891263962,
+        "speed": -0.08694972842931747,
+        "acceleration": -5.415783882141113
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 8.258573532104492,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.08428417891263962,
+        "speed": -0.08694972842931747,
+        "acceleration": -5.415783882141113
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 11.377108573913574,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.021299898624420166,
+        "speed": 0.01419946551322937,
+        "acceleration": 9.946792602539062
+      }
+    ]
+  },
+  {
+    "time": 3.58,
+    "source_frame": 816.1999999999999,
+    "minimum_distance": 0.02246806211769581,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -2.6640639305114746,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02246806211769581,
+        "speed": 0.0569816529750824,
+        "acceleration": -3.7337265014648438
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -1.278489589691162,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02246806211769581,
+        "speed": 0.0569816529750824,
+        "acceleration": -3.7337265014648438
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 0.4229968786239624,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02246806211769581,
+        "speed": 0.0569816529750824,
+        "acceleration": -3.7337265014648438
+      }
+    ]
+  },
+  {
+    "time": 3.6,
+    "source_frame": 821.0000000000001,
+    "minimum_distance": 0.02355199307203293,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -0.8139951229095459,
+        "pair": [
+          "right_wrist_roll_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.07902998477220535,
+        "speed": -0.15894436836242676,
+        "acceleration": -2.04880428314209
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 7.152155876159668,
+        "pair": [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06857854872941971,
+        "speed": -0.08615370094776154,
+        "acceleration": -2.527034044265747
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 12.542414665222168,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02355199307203293,
+        "speed": 0.09229627251625061,
+        "acceleration": 6.0662455558776855
+      }
+    ]
+  },
+  {
+    "time": 3.62,
+    "source_frame": 825.8,
+    "minimum_distance": 0.02615959383547306,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -3.942448377609253,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06950212270021439,
+        "speed": -0.1369449645280838,
+        "acceleration": -4.919464588165283
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 3.370840072631836,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06950212270021439,
+        "speed": -0.1369449645280838,
+        "acceleration": -4.919464588165283
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 7.571915626525879,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.02615959383547306,
+        "speed": 0.13078910112380981,
+        "acceleration": -2.25388765335083
+      }
+    ]
+  },
+  {
+    "time": 3.64,
+    "source_frame": 830.6000000000001,
+    "minimum_distance": 0.029264794662594795,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -8.290459632873535,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06557171791791916,
+        "speed": -0.26450878381729126,
+        "acceleration": -6.974908828735352
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -3.772830009460449,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06557171791791916,
+        "speed": -0.26450878381729126,
+        "acceleration": -6.974908828735352
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 6.577980041503906,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.06557171791791916,
+        "speed": -0.26450878381729126,
+        "acceleration": -6.974908828735352
+      }
+    ]
+  },
+  {
+    "time": 3.66,
+    "source_frame": 835.3999999999999,
+    "minimum_distance": 0.03451995179057121,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -6.599597930908203,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.06772132217884064,
+        "speed": -0.29873126745224,
+        "acceleration": -4.874063014984131
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -2.2168054580688477,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.06772132217884064,
+        "speed": -0.29873126745224,
+        "acceleration": -4.874063014984131
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 8.27431869506836,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_pitch_link"
+        ],
+        "distance": 0.06772132217884064,
+        "speed": -0.29873126745224,
+        "acceleration": -4.874063014984131
+      }
+    ]
+  },
+  {
+    "time": 3.68,
+    "source_frame": 840.2,
+    "minimum_distance": 0.04548649489879608,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -4.290645599365234,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.1736222356557846,
+        "speed": 0.39743390679359436,
+        "acceleration": -20.48141098022461
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 6.462340354919434,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.053416140377521515,
+        "speed": -0.23359882831573486,
+        "acceleration": 5.382970809936523
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 13.417924880981445,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.053416140377521515,
+        "speed": -0.23359882831573486,
+        "acceleration": 5.382970809936523
+      }
+    ]
+  },
+  {
+    "time": 3.7,
+    "source_frame": 844.9999999999999,
+    "minimum_distance": 0.051107652485370636,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -4.348588943481445,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.17774836719036102,
+        "speed": 0.03649894893169403,
+        "acceleration": -15.028468132019043
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 15.927534103393555,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.051107652485370636,
+        "speed": 0.037849098443984985,
+        "acceleration": 6.752803802490234
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 26.48756980895996,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.051107652485370636,
+        "speed": 0.037849098443984985,
+        "acceleration": 6.752803802490234
+      }
+    ]
+  },
+  {
+    "time": 3.72,
+    "source_frame": 849.8000000000001,
+    "minimum_distance": 0.055406179279088974,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -4.721073150634766,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.17606359720230103,
+        "speed": -0.23508428037166595,
+        "acceleration": -10.947794914245605
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 21.48179054260254,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.17606359720230103,
+        "speed": -0.23508428037166595,
+        "acceleration": -10.947794914245605
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 46.66887664794922,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.055406179279088974,
+        "speed": 0.3590477406978607,
+        "acceleration": 9.040628433227539
+      }
+    ]
+  },
+  {
+    "time": 3.74,
+    "source_frame": 854.5999999999999,
+    "minimum_distance": 0.06545369327068329,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -0.7791814804077148,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.1701165735721588,
+        "speed": -0.35414260625839233,
+        "acceleration": -4.72036075592041
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 22.37691879272461,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.1701165735721588,
+        "speed": -0.35414260625839233,
+        "acceleration": -4.72036075592041
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 63.68035125732422,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.1597387045621872,
+        "speed": -0.2770122289657593,
+        "acceleration": -3.512557029724121
+      }
+    ]
+  },
+  {
+    "time": 3.7600000000000002,
+    "source_frame": 859.4000000000001,
+    "minimum_distance": 0.07944676280021667,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -1.2956829071044922,
+        "pair": [
+          "left_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.3908586800098419,
+        "speed": 0.04112664982676506,
+        "acceleration": -25.688663482666016
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 25.97935676574707,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.16259782016277313,
+        "speed": -0.3774215281009674,
+        "acceleration": 1.551802158355713
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 65.57191467285156,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.16259782016277313,
+        "speed": -0.3774215281009674,
+        "acceleration": 1.551802158355713
+      }
+    ]
+  },
+  {
+    "time": 3.7800000000000002,
+    "source_frame": 864.1999999999999,
+    "minimum_distance": 0.09488726407289505,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 7.279088497161865,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.14699287712574005,
+        "speed": -0.1554708629846573,
+        "acceleration": 1.63907790184021
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 29.1741886138916,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.14699287712574005,
+        "speed": -0.1554708629846573,
+        "acceleration": 1.63907790184021
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 67.32437896728516,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.14699287712574005,
+        "speed": -0.1554708629846573,
+        "acceleration": 1.63907790184021
+      }
+    ]
+  },
+  {
+    "time": 3.8000000000000003,
+    "source_frame": 869.0000000000001,
+    "minimum_distance": 0.11133909225463867,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 4.808939456939697,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.1440528780221939,
+        "speed": -0.14669263362884521,
+        "acceleration": -0.7833628058433533
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 26.280010223388672,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.1440528780221939,
+        "speed": -0.14669263362884521,
+        "acceleration": -0.7833628058433533
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 63.629852294921875,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.1440528780221939,
+        "speed": -0.14669263362884521,
+        "acceleration": -0.7833628058433533
+      }
+    ]
+  },
+  {
+    "time": 3.8200000000000003,
+    "source_frame": 873.8,
+    "minimum_distance": 0.12699942290782928,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 1.9509286880493164,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14726002514362335,
+        "speed": -0.23157881200313568,
+        "acceleration": -2.4884519577026367
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 22.679594039916992,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14726002514362335,
+        "speed": -0.23157881200313568,
+        "acceleration": -2.4884519577026367
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 59.697540283203125,
+        "pair": [
+          "left_wrist_pitch_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14726002514362335,
+        "speed": -0.23157881200313568,
+        "acceleration": -2.4884519577026367
+      }
+    ]
+  },
+  {
+    "time": 3.84,
+    "source_frame": 878.5999999999999,
+    "minimum_distance": 0.13732315599918365,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -3.7173452377319336,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14411690831184387,
+        "speed": -0.331964910030365,
+        "acceleration": -6.34938907623291
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 14.80166244506836,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14411690831184387,
+        "speed": -0.331964910030365,
+        "acceleration": -6.34938907623291
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 49.20763397216797,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14411690831184387,
+        "speed": -0.331964910030365,
+        "acceleration": -6.34938907623291
+      }
+    ]
+  },
+  {
+    "time": 3.86,
+    "source_frame": 883.4,
+    "minimum_distance": 0.13214565813541412,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -14.97178840637207,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14139442145824432,
+        "speed": -0.5412214994430542,
+        "acceleration": -14.081487655639648
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -0.32360267639160156,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14139442145824432,
+        "speed": -0.5412214994430542,
+        "acceleration": -14.081487655639648
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 29.863067626953125,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.14139442145824432,
+        "speed": -0.5412214994430542,
+        "acceleration": -14.081487655639648
+      }
+    ]
+  },
+  {
+    "time": 3.88,
+    "source_frame": 888.1999999999999,
+    "minimum_distance": 0.12195856869220734,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -26.145450592041016,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.1415325105190277,
+        "speed": -0.5854172706604004,
+        "acceleration": -24.556854248046875
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -12.17788314819336,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.1415325105190277,
+        "speed": -0.5854172706604004,
+        "acceleration": -24.556854248046875
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 11.356513977050781,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.12587450444698334,
+        "speed": -0.6956554651260376,
+        "acceleration": -16.235742568969727
+      }
+    ]
+  },
+  {
+    "time": 3.9,
+    "source_frame": 893.0,
+    "minimum_distance": 0.10770227760076523,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -17.04094696044922,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.12621045112609863,
+        "speed": -0.8732995390892029,
+        "acceleration": -9.865622520446777
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -10.621330261230469,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.12621045112609863,
+        "speed": -0.8732995390892029,
+        "acceleration": -9.865622520446777
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 9.39322280883789,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.12621045112609863,
+        "speed": -0.8732995390892029,
+        "acceleration": -9.865622520446777
+      }
+    ]
+  },
+  {
+    "time": 3.92,
+    "source_frame": 897.8,
+    "minimum_distance": 0.09226609021425247,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -15.33608627319336,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.09318022429943085,
+        "speed": -0.8289011120796204,
+        "acceleration": -6.757202625274658
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -14.547901153564453,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.09318022429943085,
+        "speed": -0.8289011120796204,
+        "acceleration": -6.757202625274658
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -4.392646789550781,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.09318022429943085,
+        "speed": -0.8289011120796204,
+        "acceleration": -6.757202625274658
+      }
+    ]
+  },
+  {
+    "time": 3.94,
+    "source_frame": 902.6,
+    "minimum_distance": 0.07572581619024277,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -12.845175743103027,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.24101132154464722,
+        "speed": -1.0946671962738037,
+        "acceleration": -9.475225448608398
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -7.0985517501831055,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.07572581619024277,
+        "speed": -0.8699965476989746,
+        "acceleration": 6.475528717041016
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -3.1862335205078125,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.07572581619024277,
+        "speed": -0.8699965476989746,
+        "acceleration": 6.475528717041016
+      }
+    ]
+  },
+  {
+    "time": 3.96,
+    "source_frame": 907.4,
+    "minimum_distance": 0.06021801382303238,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -23.191204071044922,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.21679699420928955,
+        "speed": -1.3458153009414673,
+        "acceleration": -14.253168106079102
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -6.939228057861328,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.21679699420928955,
+        "speed": -1.3458153009414673,
+        "acceleration": -14.253168106079102
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 1.3626461029052734,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.06021801382303238,
+        "speed": -0.6707954406738281,
+        "acceleration": 10.39525032043457
+      }
+    ]
+  },
+  {
+    "time": 3.98,
+    "source_frame": 912.2,
+    "minimum_distance": 0.04872744530439377,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -33.86028289794922,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.1867605447769165,
+        "speed": -1.6629042625427246,
+        "acceleration": -17.92649269104004
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -28.448726654052734,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.1867605447769165,
+        "speed": -1.6629042625427246,
+        "acceleration": -17.92649269104004
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -1.6918182373046875,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.1867605447769165,
+        "speed": -1.6629042625427246,
+        "acceleration": -17.92649269104004
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "source_frame": 917.0,
+    "minimum_distance": 0.040376774966716766,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -5.788434028625488,
+        "pair": [
+          "right_wrist_pitch_link",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.18784576654434204,
+        "speed": -1.1552904844284058,
+        "acceleration": 1.9540834426879883
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -5.873264312744141,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.15203428268432617,
+        "speed": -1.7103482484817505,
+        "acceleration": 15.057104110717773
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -0.44467926025390625,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.049144431948661804,
+        "speed": -0.48377856612205505,
+        "acceleration": 5.989497661590576
+      }
+    ]
+  },
+  {
+    "time": 4.0200000000000005,
+    "source_frame": 921.8,
+    "minimum_distance": 0.03489523380994797,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -15.2099609375,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.1090327724814415,
+        "speed": -0.810685396194458,
+        "acceleration": -7.937090873718262
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -11.08663558959961,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.1090327724814415,
+        "speed": -0.810685396194458,
+        "acceleration": -7.937090873718262
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 0.49523448944091797,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.03489523380994797,
+        "speed": -0.21276099979877472,
+        "acceleration": 2.128108024597168
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "source_frame": 926.6,
+    "minimum_distance": 0.03183290734887123,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -3.002659320831299,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.09357661008834839,
+        "speed": -0.7357879281044006,
+        "acceleration": 4.061044216156006
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -0.6485557556152344,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.09357661008834839,
+        "speed": -0.7357879281044006,
+        "acceleration": 4.061044216156006
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 7.491891860961914,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.03593435510993004,
+        "speed": -0.19209444522857666,
+        "acceleration": 7.534236907958984
+      }
+    ]
+  },
+  {
+    "time": 4.0600000000000005,
+    "source_frame": 931.4,
+    "minimum_distance": 0.031803373247385025,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -10.866494178771973,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.07990801334381104,
+        "speed": -0.6776261925697327,
+        "acceleration": -3.8585877418518066
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -10.20617389678955,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.07990801334381104,
+        "speed": -0.6776261925697327,
+        "acceleration": -3.8585877418518066
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": -1.8776321411132812,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.07990801334381104,
+        "speed": -0.6776261925697327,
+        "acceleration": -3.8585877418518066
+      }
+    ]
+  },
+  {
+    "time": 4.08,
+    "source_frame": 936.2,
+    "minimum_distance": 0.034991420805454254,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 1.4493610858917236,
+        "pair": [
+          "right_wrist_yaw_link",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.07018765062093735,
+        "speed": -0.2748003304004669,
+        "acceleration": 2.6341567039489746
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 1.738083839416504,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.0665842592716217,
+        "speed": -0.5996694564819336,
+        "acceleration": 9.001935958862305
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 7.050334930419922,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "distance": 0.0665842592716217,
+        "speed": -0.5996694564819336,
+        "acceleration": 9.001935958862305
+      }
+    ]
+  },
+  {
+    "time": 4.1,
+    "source_frame": 941.0,
+    "minimum_distance": 0.0389988049864769,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -1.1108596324920654,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.057462580502033234,
+        "speed": -0.4642423093318939,
+        "acceleration": 3.919412136077881
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -1.345921516418457,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.057462580502033234,
+        "speed": -0.4642423093318939,
+        "acceleration": 3.919412136077881
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 3.2142295837402344,
+        "pair": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "distance": 0.057462580502033234,
+        "speed": -0.4642423093318939,
+        "acceleration": 3.919412136077881
+      }
+    ]
+  },
+  {
+    "time": 4.12,
+    "source_frame": 945.8000000000001,
+    "minimum_distance": 0.04177265241742134,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -1.973240852355957,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.04177265241742134,
+        "speed": 0.09609166532754898,
+        "acceleration": -4.9041571617126465
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 3.744575262069702,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.04177265241742134,
+        "speed": 0.09609166532754898,
+        "acceleration": -4.9041571617126465
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 12.249290466308594,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.04177265241742134,
+        "speed": 0.09609166532754898,
+        "acceleration": -4.9041571617126465
+      }
+    ]
+  },
+  {
+    "time": 4.14,
+    "source_frame": 950.6,
+    "minimum_distance": 0.04243418946862221,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -4.246528625488281,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.04814836382865906,
+        "speed": 0.03552335500717163,
+        "acceleration": -6.616397380828857
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 0.9476323127746582,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.04243418946862221,
+        "speed": -0.02224959433078766,
+        "acceleration": -4.08353328704834
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 7.7705793380737305,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.04243418946862221,
+        "speed": -0.02224959433078766,
+        "acceleration": -4.08353328704834
+      }
+    ]
+  },
+  {
+    "time": 4.16,
+    "source_frame": 955.4,
+    "minimum_distance": 0.041208237409591675,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -7.201108932495117,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.04753629118204117,
+        "speed": -0.09731017053127289,
+        "acceleration": -7.406468391418457
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": -3.471102714538574,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.04753629118204117,
+        "speed": -0.09731017053127289,
+        "acceleration": -7.406468391418457
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 3.7835474014282227,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "distance": 0.04753629118204117,
+        "speed": -0.09731017053127289,
+        "acceleration": -7.406468391418457
+      }
+    ]
+  },
+  {
+    "time": 4.18,
+    "source_frame": 960.2,
+    "minimum_distance": 0.03902081027626991,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 2.5348117351531982,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04923682287335396,
+        "speed": 0.15544092655181885,
+        "acceleration": -1.8233997821807861
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 10.635336875915527,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04923682287335396,
+        "speed": 0.15544092655181885,
+        "acceleration": -1.8233997821807861
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 22.47817611694336,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.04923682287335396,
+        "speed": 0.15544092655181885,
+        "acceleration": -1.8233997821807861
+      }
+    ]
+  },
+  {
+    "time": 4.2,
+    "source_frame": 965.0,
+    "minimum_distance": 0.04042314365506172,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 6.494686126708984,
+        "pair": [
+          "left_wrist_roll_link",
+          "torso_link"
+        ],
+        "distance": 0.1363094449043274,
+        "speed": 0.10455579310655594,
+        "acceleration": -2.622011184692383
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 19.092082977294922,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.05595596879720688,
+        "speed": 0.3457425832748413,
+        "acceleration": -1.1764079332351685
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 36.12987518310547,
+        "pair": [
+          "left_wrist_yaw_link",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.05595596879720688,
+        "speed": 0.3457425832748413,
+        "acceleration": -1.1764079332351685
+      }
+    ]
+  },
+  {
+    "time": 4.22,
+    "source_frame": 969.8000000000001,
+    "minimum_distance": 0.05362745746970177,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 1.4574878215789795,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.055136844515800476,
+        "speed": 0.2238599956035614,
+        "acceleration": -4.373030185699463
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 11.7855224609375,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.055136844515800476,
+        "speed": 0.2238599956035614,
+        "acceleration": -4.373030185699463
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 26.611072540283203,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.055136844515800476,
+        "speed": 0.2238599956035614,
+        "acceleration": -4.373030185699463
+      }
+    ]
+  },
+  {
+    "time": 4.24,
+    "source_frame": 974.6,
+    "minimum_distance": 0.06177029758691788,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -6.482381820678711,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.07588105648756027,
+        "speed": 0.910499095916748,
+        "acceleration": -24.626754760742188
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 18.81476593017578,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.07588105648756027,
+        "speed": 0.910499095916748,
+        "acceleration": -24.626754760742188
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 39.794857025146484,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06177029758691788,
+        "speed": 0.3781536817550659,
+        "acceleration": -2.4162116050720215
+      }
+    ]
+  },
+  {
+    "time": 4.26,
+    "source_frame": 979.4000000000001,
+    "minimum_distance": 0.06768777221441269,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": -5.244392395019531,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06768777221441269,
+        "speed": 0.17022499442100525,
+        "acceleration": -11.02000904083252
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 6.635260581970215,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06768777221441269,
+        "speed": 0.17022499442100525,
+        "acceleration": -11.02000904083252
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 24.618946075439453,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06768777221441269,
+        "speed": 0.17022499442100525,
+        "acceleration": -11.02000904083252
+      }
+    ]
+  },
+  {
+    "time": 4.28,
+    "source_frame": 984.2,
+    "minimum_distance": 0.06956525146961212,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 1.7104911804199219,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.10226748138666153,
+        "speed": 0.4166299104690552,
+        "acceleration": -10.22070598602295
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 14.365965843200684,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06956525146961212,
+        "speed": 0.05796890705823898,
+        "acceleration": -0.17774343490600586
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 31.15435028076172,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.06956525146961212,
+        "speed": 0.05796890705823898,
+        "acceleration": -0.17774343490600586
+      }
+    ]
+  },
+  {
+    "time": 4.3,
+    "source_frame": 989.0,
+    "minimum_distance": 0.07057703286409378,
+    "cases": [
+      {
+        "rate": 8.0,
+        "minimum_constraint_value": 1.0120735168457031,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "distance": 0.10883703827857971,
+        "speed": 0.24176645278930664,
+        "acceleration": -8.541760444641113
+      },
+      {
+        "rate": 16.0,
+        "minimum_constraint_value": 14.267166137695312,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.07057703286409378,
+        "speed": 0.0439860075712204,
+        "acceleration": -0.08810639381408691
+      },
+      {
+        "rate": 24.0,
+        "minimum_constraint_value": 31.155593872070312,
+        "pair": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "distance": 0.07057703286409378,
+        "speed": 0.0439860075712204,
+        "acceleration": -0.08810639381408691
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "frame": 911,
+  "joint": "left_ankle_roll_joint",
+  "violation_rad": 3.569431304933923e-05,
+  "frame_is_constrained_knot": false,
+  "neighbors": [
+    {
+      "frame": 909,
+      "reference": 0.2617987394332886,
+      "lower": -0.2618,
+      "upper": 0.2618
+    },
+    {
+      "frame": 910,
+      "reference": 0.2618050277233124,
+      "lower": -0.2618,
+      "upper": 0.2618
+    },
+    {
+      "frame": 911,
+      "reference": 0.2618356943130493,
+      "lower": -0.2618,
+      "upper": 0.2618
+    },
+    {
+      "frame": 912,
+      "reference": 0.26179999113082886,
+      "lower": -0.2618,
+      "upper": 0.2618
+    },
+    {
+      "frame": 913,
+      "reference": 0.2541996240615845,
+      "lower": -0.2618,
+      "upper": 0.2618
+    }
+  ]
+}

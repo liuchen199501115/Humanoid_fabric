@@ -1,0 +1,135 @@
+{
+  "scope": "Saved live QP inequalities evaluated at the intended reference acceleration; source and collider checks unchanged",
+  "rows": [
+    {
+      "time": 0.0,
+      "violated_acceleration_only_rows": 282,
+      "max_reference_constraint_violation": 72.58846349265363,
+      "worst_row": 218,
+      "worst_row_largest_coordinates": [
+        24,
+        18,
+        20,
+        23,
+        22,
+        21
+      ],
+      "shoulder_roll_ref_desired_solution": [
+        [
+          -179.1864840520785,
+          -178.66175842285156,
+          -15.186875343322754
+        ],
+        [
+          -168.23381992532748,
+          -167.7707061767578,
+          -183.601318359375
+        ]
+      ]
+    },
+    {
+      "time": 0.02,
+      "violated_acceleration_only_rows": 349,
+      "max_reference_constraint_violation": 36.99103885929281,
+      "worst_row": 239,
+      "worst_row_largest_coordinates": [
+        24,
+        6,
+        22,
+        20,
+        19,
+        21
+      ],
+      "shoulder_roll_ref_desired_solution": [
+        [
+          -22.79534057613941,
+          -46.942665100097656,
+          55.23963165283203
+        ],
+        [
+          125.92484600212673,
+          155.92483520507812,
+          36.01025390625
+        ]
+      ]
+    },
+    {
+      "time": 0.05,
+      "violated_acceleration_only_rows": 70,
+      "max_reference_constraint_violation": 47.6603988810798,
+      "worst_row": 451,
+      "worst_row_largest_coordinates": [
+        34,
+        31,
+        30,
+        20,
+        29,
+        28
+      ],
+      "shoulder_roll_ref_desired_solution": [
+        [
+          155.88670353142652,
+          125.88670349121094,
+          170.38357543945312
+        ],
+        [
+          95.20019686755754,
+          125.2001953125,
+          61.67192840576172
+        ]
+      ]
+    },
+    {
+      "time": 0.1,
+      "violated_acceleration_only_rows": 179,
+      "max_reference_constraint_violation": 162.41409152540845,
+      "worst_row": 437,
+      "worst_row_largest_coordinates": [
+        31,
+        30,
+        20,
+        29,
+        19,
+        28
+      ],
+      "shoulder_roll_ref_desired_solution": [
+        [
+          287.41836040673707,
+          257.4183654785156,
+          365.5975341796875
+        ],
+        [
+          188.1661570003912,
+          218.16615295410156,
+          130.96559143066406
+        ]
+      ]
+    },
+    {
+      "time": 0.2,
+      "violated_acceleration_only_rows": 0,
+      "max_reference_constraint_violation": 0.0,
+      "worst_row": 20,
+      "worst_row_largest_coordinates": [
+        11,
+        12,
+        13,
+        14,
+        8,
+        34
+      ],
+      "shoulder_roll_ref_desired_solution": [
+        [
+          112.80570362512509,
+          82.80570220947266,
+          67.67717742919922
+        ],
+        [
+          -52.922678888048246,
+          -22.922679901123047,
+          -16.087932586669922
+        ]
+      ]
+    }
+  ]
+}

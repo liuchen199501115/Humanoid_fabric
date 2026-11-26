@@ -1,0 +1,30 @@
+[
+  {
+    "case": "original",
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ]
+  },
+  {
+    "case": "soft_position",
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ]
+  },
+  {
+    "case": "soft_orientation",
+    "valid": false,
+    "status": [
+      "DAQP 1; rejected"
+    ]
+  },
+  {
+    "case": "soft_both",
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ]
+  }
+]

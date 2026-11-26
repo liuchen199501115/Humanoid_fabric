@@ -1,0 +1,38 @@
+[
+  {
+    "name": "twelve_stance_1",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--stance-posture-metric-start",
+      "4.5",
+      "--stance-posture-metric-ramp",
+      ".06",
+      "--stance-posture-metric-scale",
+      ".1"
+    ]
+  },
+  {
+    "name": "twelve_stance_01",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--stance-posture-metric-start",
+      "4.5",
+      "--stance-posture-metric-ramp",
+      ".06",
+      "--stance-posture-metric-scale",
+      ".01"
+    ]
+  },
+  {
+    "name": "twelve_unload_stance01",
+    "parent": "twelve_unload2048_foot64",
+    "options": [
+      "--stance-posture-metric-start",
+      "4.8",
+      "--stance-posture-metric-ramp",
+      ".02",
+      "--stance-posture-metric-scale",
+      ".1"
+    ]
+  }
+]

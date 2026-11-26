@@ -1,0 +1,18 @@
+{
+  "method": "Bounded offline right-foot offset after frame906, preserving root and other joints.",
+  "parent_file": "prepared_rooty_clearance10_lift10.npz",
+  "parent_sha256": "c3dcb9fc77f84e39e165b81f8c6435817c8d8c66245ab20d3ba938419c84e467",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "requested_y_mm": -10.0,
+  "requested_z_mm": -10.0,
+  "maximum_foot_shift_m": 0.014142135623730963,
+  "maximum_foot_position_residual_m": 7.079376061369906e-05,
+  "maximum_foot_rotation_residual_rad": 4.082750100893496e-05,
+  "minimum_native_clearance_m": -0.01504005659158622,
+  "parent_minimum_native_clearance_m": -0.015040126293258169,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "prefix_q_v_a_equal_through_frame": 900,
+  "root_left_leg_upper_body_unchanged": true,
+  "preflight_passed": false,
+  "full_tracking_passed": false
+}

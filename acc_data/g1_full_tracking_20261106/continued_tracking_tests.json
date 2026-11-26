@@ -1,0 +1,20 @@
+{
+  "modules": [
+    "test_g1_full_tracking",
+    "test_g1_stance_heading",
+    "test_g1_torque_continuity",
+    "test_task_priority",
+    "test_contact_patches",
+    "test_toe_contact",
+    "test_rigid_body_frames",
+    "test_reference_tracking_audit",
+    "test_source_priority",
+    "test_contact_wrench_cone",
+    "test_inscribed_patch_wrench",
+    "test_joint_control"
+  ],
+  "tests_run": 102,
+  "failures": 0,
+  "errors": 0,
+  "successful": true
+}

@@ -1,0 +1,181 @@
+{
+  "scope": "Offline budget counterfactual; use 80% of min(URDF, simulator) with unchanged physical constraints.",
+  "cases": [
+    {
+      "time_s": 3.48,
+      "scope": "ankles",
+      "exact_com_feasibility_status": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.2168044349891716e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.505105651402718,
+        -2.0725169844865245,
+        -4.391539334432245
+      ],
+      "com_requested": [
+        -6.640399932861328,
+        -5.253825664520264,
+        -14.895694732666016
+      ],
+      "right_ankle_pitch_torque": 1.6715124275801951
+    },
+    {
+      "time_s": 3.48,
+      "scope": "all",
+      "exact_com_feasibility_status": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.2737367544323206e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.505105651094192,
+        -2.0725169842485585,
+        -4.3915393350212515
+      ],
+      "com_requested": [
+        -6.640399932861328,
+        -5.253825664520264,
+        -14.895694732666016
+      ],
+      "right_ankle_pitch_torque": 1.6715124276091096
+    },
+    {
+      "time_s": 3.58,
+      "scope": "ankles",
+      "exact_com_feasibility_status": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.12002418087532929,
+        2.9886506884889865,
+        -0.04046070790321066
+      ],
+      "com_requested": [
+        4.2297210693359375,
+        5.513840198516846,
+        10.079601287841797
+      ],
+      "right_ankle_pitch_torque": 39.99999999999209
+    },
+    {
+      "time_s": 3.58,
+      "scope": "all",
+      "exact_com_feasibility_status": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.12002418078228372,
+        2.988650688716734,
+        -0.04046070791051504
+      ],
+      "com_requested": [
+        4.2297210693359375,
+        5.513840198516846,
+        10.079601287841797
+      ],
+      "right_ankle_pitch_torque": 39.99999999993841
+    },
+    {
+      "time_s": 3.65,
+      "scope": "ankles",
+      "exact_com_feasibility_status": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.833911462919787e-12,
+        "iterations": 23,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -1.3765291608226329,
+        1.693939694561946,
+        8.543169146832781
+      ],
+      "com_requested": [
+        5.4613542556762695,
+        6.554847240447998,
+        4.576434135437012
+      ],
+      "right_ankle_pitch_torque": 39.999999999911914
+    },
+    {
+      "time_s": 3.65,
+      "scope": "all",
+      "exact_com_feasibility_status": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.4143356464919634e-12,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -1.1994381880771263,
+        1.3541906478065562,
+        11.988212269306182
+      ],
+      "com_requested": [
+        5.4613542556762695,
+        6.554847240447998,
+        4.576434135437012
+      ],
+      "right_ankle_pitch_torque": 39.999999999662734
+    },
+    {
+      "time_s": 3.75,
+      "scope": "ankles",
+      "exact_com_feasibility_status": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.2079226507921703e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.5520796629522291,
+        -1.0679565655207832,
+        -5.961595407440892
+      ],
+      "com_requested": [
+        5.5059356689453125,
+        3.684748411178589,
+        -5.4463958740234375
+      ],
+      "right_ankle_pitch_torque": -4.633101577266237
+    },
+    {
+      "time_s": 3.75,
+      "scope": "all",
+      "exact_com_feasibility_status": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.4210854715202004e-14,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.5520796629522124,
+        -1.0679565655208145,
+        -5.961595407440694
+      ],
+      "com_requested": [
+        5.5059356689453125,
+        3.684748411178589,
+        -5.4463958740234375
+      ],
+      "right_ankle_pitch_torque": -4.633101577266583
+    }
+  ]
+}

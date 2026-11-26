@@ -1,0 +1,24 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 0.0026804796093241184,
+  "maximum_foot_rotation_residual_rad": 8.211418177028896e-05,
+  "maximum_com_ik_residual_m": 0.0021518225474931136,
+  "maximum_added_root_rotation_rad": 0.08660254445140583,
+  "worst_frame": 880,
+  "peak_source_joint_rmse_rad": 0.1979149729013443,
+  "peak_source_root_displacement_m": 0.054948367178440094,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": false,
+  "method": "Offline flat left landing eleven, with original-source XY and native sole height.\n\nCOM and right foot are preserved by bounded IK. Original PKL, native collision\ngeometry, and landing/fidelity acceptance remain unchanged.\n",
+  "parent_file": "prepared_rooty_clearance10_lift10.npz",
+  "parent_sha256": "c3dcb9fc77f84e39e165b81f8c6435817c8d8c66245ab20d3ba938419c84e467",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "source_xy_fraction": 0.5,
+  "maximum_foot_shift_m": 0.03255444496140529,
+  "prefix_q_v_a_equal_through_frame": 858,
+  "full_tracking_passed": false
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "trial": "ten_support_y20_pathclock",
+    "source_prefix_end": 660,
+    "samples": 1577,
+    "exact_history_fields": 163
+  },
+  {
+    "trial": "ten_support_y20_pathclock780",
+    "source_prefix_end": 780,
+    "samples": 1828,
+    "exact_history_fields": 163
+  },
+  {
+    "trial": "ten_support_y20_pathclock816",
+    "source_prefix_end": 816,
+    "samples": 1903,
+    "exact_history_fields": 163
+  }
+]

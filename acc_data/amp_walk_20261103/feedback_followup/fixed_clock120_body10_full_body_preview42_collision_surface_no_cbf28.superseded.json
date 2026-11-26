@@ -1,0 +1,11 @@
+{
+  "reason": "User explicitly requested no MPC. Stop this preview experiment and continue with Fabric plus WBC only.",
+  "stopped_pids": [
+    1030707,
+    1031259
+  ],
+  "full_motion_tracking_passed": false,
+  "incomplete": true,
+  "last_replan_time": 3.68,
+  "last_replan_source_frame": 840.2
+}

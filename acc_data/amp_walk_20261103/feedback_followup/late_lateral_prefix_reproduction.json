@@ -1,0 +1,9 @@
+{
+  "reference_window_start_s": 3.93,
+  "sample_count": 1966,
+  "prefix_q_exact": true,
+  "prefix_qd_exact": true,
+  "prefix_q_max_difference": 0.0,
+  "prefix_qd_max_difference": 0.0,
+  "full_tracking_passed": false
+}

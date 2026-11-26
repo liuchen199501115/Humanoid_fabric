@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_floor3_refine1_observed_stop816",
+    "parent": "ten_floor3_fullroot_refine1",
+    "options": [
+      "--observed-joint-stop-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_observed_stop816",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--observed-joint-stop-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_comz16",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--minimum-support-acceleration-metric-scale",
+      "16"
+    ]
+  }
+]

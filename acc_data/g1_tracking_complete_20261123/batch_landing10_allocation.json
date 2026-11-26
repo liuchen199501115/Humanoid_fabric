@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_com15_ang100_stance25",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--stance-posture-metric-start",
+      "4.05",
+      "--stance-posture-metric-scale",
+      ".25"
+    ]
+  },
+  {
+    "name": "ten_com15_ang100_stance10",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--stance-posture-metric-start",
+      "4.05",
+      "--stance-posture-metric-scale",
+      ".1"
+    ]
+  },
+  {
+    "name": "ten_com15_ang100_tube5",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--late-tracking-tube-start",
+      "4.05",
+      "--late-tracking-tube-bandwidth",
+      "5"
+    ]
+  }
+]

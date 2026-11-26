@@ -1,0 +1,10 @@
+{
+  "name": "contact_feedback",
+  "options": [
+    "--fabric-priority-mode",
+    "contact-tracking",
+    "--fabric-tracking-feedback"
+  ],
+  "returncode": 1,
+  "timed_out": false
+}

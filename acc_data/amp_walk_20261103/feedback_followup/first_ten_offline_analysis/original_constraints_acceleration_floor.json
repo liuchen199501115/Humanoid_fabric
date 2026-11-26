@@ -1,0 +1,41 @@
+{
+  "scope": "Minimum peak joint acceleration under saved original first-stage constraints only; includes original tracking tubes. No new contraction or task protection conditions.",
+  "records": [
+    {
+      "time": 3.5,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 86.85748089111367,
+      "violation": 6.821210263296962e-13
+    },
+    {
+      "time": 3.7,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 27.994404837782845,
+      "violation": 5.684341886080802e-14
+    },
+    {
+      "time": 3.8,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 1.6242817784555945,
+      "violation": 2.930988785010413e-14
+    },
+    {
+      "time": 4.0,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 5.310845015973069,
+      "violation": 1.1368683772161603e-13
+    },
+    {
+      "time": 4.15,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 35.33576205416095,
+      "violation": 7.815970093361102e-14
+    },
+    {
+      "time": 4.25,
+      "status": 0,
+      "minimum_peak_joint_acceleration": 207.41623224856005,
+      "violation": 9.467981954003335e-13
+    }
+  ]
+}

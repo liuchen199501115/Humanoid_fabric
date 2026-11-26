@@ -1,0 +1,23 @@
+{
+  "name": "projection1_attitude",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--projection-joint-correction-weight",
+    "1",
+    "--qp-base-acceleration-weight",
+    "100",
+    "--source-pelvis-weight",
+    "10",
+    "--fabric-angular-feedback-limit",
+    "100"
+  ],
+  "measured_steps": 3,
+  "last_time_s": 1.354,
+  "stop_reason": "QP validation failed",
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.17517568171024323
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_lower11_40_comdown20_fast18",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_anchor_pose860_swing11lower40_comdown20.npz"
+    ]
+  },
+  {
+    "name": "ten_lower11_40_comdown20_floor3_fast18",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_anchor_pose860_swing11lower40_comdown20_floor3.npz"
+    ]
+  },
+  {
+    "name": "ten_lower11_50_comdown30_floor3_fast18",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_anchor_pose860_swing11lower50_comdown30_floor3.npz"
+    ]
+  }
+]

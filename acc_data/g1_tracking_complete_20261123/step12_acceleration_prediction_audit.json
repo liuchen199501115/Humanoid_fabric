@@ -1,0 +1,135 @@
+[
+  {
+    "trial": "eleven_pause960_search2",
+    "interval": [
+      4.25,
+      4.35
+    ],
+    "samples": 50,
+    "joint_acceleration_prediction_rmse": 5.584826298525218,
+    "waist_actual_rms": [
+      9.150060913846994,
+      14.792841931984034,
+      5.852606815419475
+    ],
+    "waist_predicted_rms": [
+      9.002087593078613,
+      14.755949974060059,
+      5.784914016723633
+    ]
+  },
+  {
+    "trial": "eleven_pause960_search2",
+    "interval": [
+      4.35,
+      4.45
+    ],
+    "samples": 50,
+    "joint_acceleration_prediction_rmse": 11.977763266362881,
+    "waist_actual_rms": [
+      25.05592570416465,
+      32.76246296578396,
+      70.2645430035491
+    ],
+    "waist_predicted_rms": [
+      24.83262825012207,
+      31.716100692749023,
+      70.33978271484375
+    ]
+  },
+  {
+    "trial": "eleven_pause960_search2",
+    "interval": [
+      4.65,
+      4.8
+    ],
+    "samples": 75,
+    "joint_acceleration_prediction_rmse": 6.432406667132527,
+    "waist_actual_rms": [
+      20.09801079453217,
+      57.739357067502766,
+      76.00484051649397
+    ],
+    "waist_predicted_rms": [
+      20.21007537841797,
+      57.55949020385742,
+      76.24850463867188
+    ]
+  },
+  {
+    "trial": "twelve_touching_50",
+    "interval": [
+      4.25,
+      4.35
+    ],
+    "samples": 50,
+    "joint_acceleration_prediction_rmse": 5.678658872331825,
+    "waist_actual_rms": [
+      9.235001361108985,
+      14.829021410761836,
+      5.739328982079124
+    ],
+    "waist_predicted_rms": [
+      9.058691024780273,
+      14.756390571594238,
+      5.770356178283691
+    ]
+  },
+  {
+    "trial": "twelve_touching_50",
+    "interval": [
+      4.35,
+      4.45
+    ],
+    "samples": 50,
+    "joint_acceleration_prediction_rmse": 8.26473356765502,
+    "waist_actual_rms": [
+      56.79986545771312,
+      104.19590427691159,
+      163.73018323470825
+    ],
+    "waist_predicted_rms": [
+      59.00611877441406,
+      105.1175308227539,
+      164.22080993652344
+    ]
+  },
+  {
+    "trial": "twelve_waist_bias_r20p30",
+    "interval": [
+      4.25,
+      4.35
+    ],
+    "samples": 50,
+    "joint_acceleration_prediction_rmse": 11.296542417358722,
+    "waist_actual_rms": [
+      9.750627690295191,
+      25.604792752662416,
+      21.110733620995493
+    ],
+    "waist_predicted_rms": [
+      9.212738037109375,
+      25.95478057861328,
+      20.77264404296875
+    ]
+  },
+  {
+    "trial": "twelve_waist_bias_r20p30",
+    "interval": [
+      4.35,
+      4.45
+    ],
+    "samples": 49,
+    "joint_acceleration_prediction_rmse": 5.8259711678175305,
+    "waist_actual_rms": [
+      18.45138136914001,
+      58.34138471306856,
+      117.42416983044075
+    ],
+    "waist_predicted_rms": [
+      18.592527389526367,
+      58.53544235229492,
+      117.54877471923828
+    ]
+  }
+]

@@ -1,0 +1,318 @@
+{
+  "scope": "Local bounded IK reach diagnostic at recorded roots; not a global feasibility proof.",
+  "trial": "ten_anchor_support1_commax3_816",
+  "rows": [
+    {
+      "frame": 842.0089683753087,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 8.956017775377333e-09,
+      "orientation_residual_rad": 0.051076932325013,
+      "solved_knee": 0.9693790742804255,
+      "measured_knee": 0.9486538171768188,
+      "reference_knee": 1.1716688871383667
+    },
+    {
+      "frame": 842.0089683753087,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 0.00010386124884479397,
+      "orientation_residual_rad": 0.07072508921388358,
+      "solved_knee": 1.252371396923346,
+      "measured_knee": 0.9486538171768188,
+      "reference_knee": 1.1716688871383667
+    },
+    {
+      "frame": 842.0089683753087,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 1.0757840384512241e-10,
+      "orientation_residual_rad": 1.6763528480973576e-10,
+      "solved_knee": 1.0865177486298943,
+      "measured_knee": 0.9486538171768188,
+      "reference_knee": 1.1716688871383667
+    },
+    {
+      "frame": 842.0089683753087,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 3.9520993679921596e-13,
+      "orientation_residual_rad": 9.254813942750246e-13,
+      "solved_knee": 1.357415905222811,
+      "measured_knee": 0.9486538171768188,
+      "reference_knee": 1.1716688871383667
+    },
+    {
+      "frame": 849.8015673225309,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 1.4483184392263844e-06,
+      "orientation_residual_rad": 0.01087685574559938,
+      "solved_knee": 0.6810604887617498,
+      "measured_knee": 0.6778278946876526,
+      "reference_knee": 1.0789728164672852
+    },
+    {
+      "frame": 849.8015673225309,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 3.0132073957992056e-07,
+      "orientation_residual_rad": 0.028151266520210716,
+      "solved_knee": 1.03444722738003,
+      "measured_knee": 0.6778278946876526,
+      "reference_knee": 1.0789728164672852
+    },
+    {
+      "frame": 849.8015673225309,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 5.881624717372677e-11,
+      "orientation_residual_rad": 3.8546271261046263e-11,
+      "solved_knee": 0.8488214303960367,
+      "measured_knee": 0.6778278946876526,
+      "reference_knee": 1.0789728164672852
+    },
+    {
+      "frame": 849.8015673225309,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 5.166325959123705e-13,
+      "orientation_residual_rad": 6.223578544664962e-13,
+      "solved_knee": 1.1658389774870714,
+      "measured_knee": 0.6778278946876526,
+      "reference_knee": 1.0789728164672852
+    },
+    {
+      "frame": 857.7199999999999,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 0.007476149116670959,
+      "orientation_residual_rad": 0.015505392915992091,
+      "solved_knee": 0.001636538028717159,
+      "measured_knee": 0.2513282895088196,
+      "reference_knee": 0.929636538028717
+    },
+    {
+      "frame": 857.7199999999999,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 6.588028035587811e-06,
+      "orientation_residual_rad": 0.03554964794236446,
+      "solved_knee": 0.7011433120985203,
+      "measured_knee": 0.2513282895088196,
+      "reference_knee": 0.929636538028717
+    },
+    {
+      "frame": 857.7199999999999,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 4.409320098042101e-12,
+      "orientation_residual_rad": 2.4022342885277873e-12,
+      "solved_knee": 0.43232501877411506,
+      "measured_knee": 0.2513282895088196,
+      "reference_knee": 0.929636538028717
+    },
+    {
+      "frame": 857.7199999999999,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 2.7512888007173353e-11,
+      "orientation_residual_rad": 1.896263792715187e-11,
+      "solved_knee": 0.8927396471112521,
+      "measured_knee": 0.2513282895088196,
+      "reference_knee": 0.929636538028717
+    },
+    {
+      "frame": 865.6400000000001,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 0.044076370948958256,
+      "orientation_residual_rad": 0.038395966092625126,
+      "solved_knee": 0.0025162960355643352,
+      "measured_knee": -0.03212858736515045,
+      "reference_knee": 0.7961501479148865
+    },
+    {
+      "frame": 865.6400000000001,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 9.054277080783137e-09,
+      "orientation_residual_rad": 0.055455841461196344,
+      "solved_knee": 0.0772227588049734,
+      "measured_knee": -0.03212858736515045,
+      "reference_knee": 0.7961501479148865
+    },
+    {
+      "frame": 865.6400000000001,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 0.02098042179033845,
+      "orientation_residual_rad": 0.010731656381634449,
+      "solved_knee": 0.012786766805332004,
+      "measured_knee": -0.03212858736515045,
+      "reference_knee": 0.7961501479148865
+    },
+    {
+      "frame": 865.6400000000001,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 5.310457951080723e-11,
+      "orientation_residual_rad": 2.5098347002505196e-11,
+      "solved_knee": 0.582449840497297,
+      "measured_knee": -0.03212858736515045,
+      "reference_knee": 0.7961501479148865
+    },
+    {
+      "frame": 874.2800000000001,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 0.10610481015986939,
+      "orientation_residual_rad": 0.08545402898493978,
+      "solved_knee": 0.013761565685272252,
+      "measured_knee": 0.1025303527712822,
+      "reference_knee": 0.6537615656852722
+    },
+    {
+      "frame": 874.2800000000001,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 0.0564677754736533,
+      "orientation_residual_rad": 0.04683144952548894,
+      "solved_knee": 0.013761565685272176,
+      "measured_knee": 0.1025303527712822,
+      "reference_knee": 0.6537615656852722
+    },
+    {
+      "frame": 874.2800000000001,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 0.0790214628226946,
+      "orientation_residual_rad": 0.05683132629790969,
+      "solved_knee": 0.013761565685272169,
+      "measured_knee": 0.1025303527712822,
+      "reference_knee": 0.6537615656852722
+    },
+    {
+      "frame": 874.2800000000001,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 0.027188533400322137,
+      "orientation_residual_rad": 0.015884581977245793,
+      "solved_knee": 0.015413576507949448,
+      "measured_knee": 0.1025303527712822,
+      "reference_knee": 0.6537615656852722
+    },
+    {
+      "frame": 877.8800000000002,
+      "root_shift": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_residual_m": 0.12585392966576386,
+      "orientation_residual_rad": 0.1500691303688344,
+      "solved_knee": 0.014323816299438429,
+      "measured_knee": 0.3018839359283447,
+      "reference_knee": 0.6543238162994385
+    },
+    {
+      "frame": 877.8800000000002,
+      "root_shift": [
+        0.0,
+        0.0,
+        -0.05
+      ],
+      "position_residual_m": 0.07583460650255337,
+      "orientation_residual_rad": 0.09458375359485309,
+      "solved_knee": 0.014323816299438422,
+      "measured_knee": 0.3018839359283447,
+      "reference_knee": 0.6543238162994385
+    },
+    {
+      "frame": 877.8800000000002,
+      "root_shift": [
+        0.05,
+        0.05,
+        0.0
+      ],
+      "position_residual_m": 0.09993465598464717,
+      "orientation_residual_rad": 0.09598815832211069,
+      "solved_knee": 0.014323816299438422,
+      "measured_knee": 0.3018839359283447,
+      "reference_knee": 0.6543238162994385
+    },
+    {
+      "frame": 877.8800000000002,
+      "root_shift": [
+        0.05,
+        0.05,
+        -0.05
+      ],
+      "position_residual_m": 0.048928093788697724,
+      "orientation_residual_rad": 0.045531756381121447,
+      "solved_knee": 0.014323816299438422,
+      "measured_knee": 0.3018839359283447,
+      "reference_knee": 0.6543238162994385
+    }
+  ]
+}

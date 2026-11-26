@@ -1,0 +1,8 @@
+{
+  "name": "seventh_clearance10",
+  "minimum_reference_normal_force": 221.72879243778024,
+  "maximum_reference_normal_force": 668.155860351246,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 90.11351410651075,
+  "physical_tracking_certified": false
+}

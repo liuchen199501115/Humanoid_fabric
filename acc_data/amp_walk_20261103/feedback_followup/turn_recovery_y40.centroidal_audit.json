@@ -1,0 +1,19 @@
+{
+  "name": "turn_recovery_y40",
+  "peak_required_friction_norm": 0.8685056072781989,
+  "source_frames": [
+    820,
+    1000
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    4.8253967242311315,
+    3.847853329377234,
+    17.774209519036994
+  ],
+  "minimum_reference_normal_force": 103.61123064733746,
+  "maximum_reference_normal_force": 919.6890470836486,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 120.88481158240229,
+  "physical_tracking_certified": false
+}

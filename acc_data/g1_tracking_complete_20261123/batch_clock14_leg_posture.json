@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_anchor_lateleg4",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.08",
+      "--leg-posture-metric-scale",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_anchor_lateleg16",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.08",
+      "--leg-posture-metric-scale",
+      "16"
+    ]
+  },
+  {
+    "name": "ten_anchor_lateleg64",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.08",
+      "--leg-posture-metric-scale",
+      "64"
+    ]
+  }
+]

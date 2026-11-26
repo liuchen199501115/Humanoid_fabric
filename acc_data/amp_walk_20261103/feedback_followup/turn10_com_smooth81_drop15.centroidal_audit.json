@@ -1,0 +1,19 @@
+{
+  "name": "turn10_com_smooth81_drop15",
+  "peak_required_friction_norm": 0.47536920344722744,
+  "source_frames": [
+    740,
+    990
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    3.486455515119336,
+    4.948918866290978,
+    4.975962093179899
+  ],
+  "minimum_reference_normal_force": 114.12659911815553,
+  "maximum_reference_normal_force": 564.9041978661614,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 196.1588226374232,
+  "physical_tracking_certified": false
+}

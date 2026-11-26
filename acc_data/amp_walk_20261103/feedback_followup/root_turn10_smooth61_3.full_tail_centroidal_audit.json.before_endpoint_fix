@@ -1,0 +1,18 @@
+{
+  "name": "root_turn10_smooth61_3",
+  "source_frames": [
+    740,
+    1999
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    8.200373270676911,
+    8.183959017603517,
+    7.525412782405862
+  ],
+  "minimum_reference_normal_force": -143.0380576289562,
+  "maximum_reference_normal_force": 646.1942021305482,
+  "negative_force_samples": 2,
+  "peak_momentum_rate": 156.18376009331408,
+  "physical_tracking_certified": false
+}

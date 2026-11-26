@@ -1,0 +1,36 @@
+[
+  {
+    "name": "twelve_guard_position18",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--position-tube-start",
+      "4.5",
+      "--position-tube-radius",
+      ".18"
+    ]
+  },
+  {
+    "name": "twelve_guard_orientation30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".30"
+    ]
+  },
+  {
+    "name": "twelve_guard_both",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--position-tube-start",
+      "4.5",
+      "--position-tube-radius",
+      ".18",
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".30"
+    ]
+  }
+]

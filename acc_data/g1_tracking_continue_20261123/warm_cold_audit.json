@@ -1,0 +1,24 @@
+{
+  "warm": {
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "valid": [
+      false
+    ],
+    "native_calls": [
+      1
+    ]
+  },
+  "cold": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "native_calls": [
+      1
+    ]
+  }
+}

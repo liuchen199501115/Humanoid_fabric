@@ -1,0 +1,89 @@
+{
+  "run": "rolling_support150",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "source_frame_count": 2000,
+  "fps": 200.0,
+  "ground_shift_m": -0.00011001154780387878,
+  "last_source_frame": 1003.88,
+  "raw_source_pose_fidelity_passed": false,
+  "peak_joint_rmse_rad": 0.1851285696029663,
+  "peak_root_position_m": 0.19683115184307098,
+  "peak_root_angle_rad": 0.35680368474667756,
+  "raw_source_prefix_landings": 12,
+  "recorded_reference_max_joint_difference_rad": 1.5407800674438477e-05,
+  "landing_events": [
+    {
+      "step": 1,
+      "raw_source_foot_error_m": 0.01178776775288934,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 2,
+      "raw_source_foot_error_m": 0.028276172910626375,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 3,
+      "raw_source_foot_error_m": 0.013355951032364045,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 4,
+      "raw_source_foot_error_m": 0.006378963223648887,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 5,
+      "raw_source_foot_error_m": 0.01064476665052955,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 6,
+      "raw_source_foot_error_m": 0.035585314377766276,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 7,
+      "raw_source_foot_error_m": 0.032083823352039166,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 8,
+      "raw_source_foot_error_m": 0.02161359999090239,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 9,
+      "raw_source_foot_error_m": 0.013458322468304064,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 10,
+      "raw_source_foot_error_m": 0.015074349991301136,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 11,
+      "raw_source_foot_error_m": 0.034521749845160966,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    },
+    {
+      "step": 12,
+      "raw_source_foot_error_m": 0.028617721638764505,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    }
+  ],
+  "scope": "Raw unclipped source poses; wxyz/xyzw and joint-order conversion plus the single recorded ground shift. Flight/load-hold evidence comes from the independent recorded step tracker; event positions rechecked by URDF FK."
+}

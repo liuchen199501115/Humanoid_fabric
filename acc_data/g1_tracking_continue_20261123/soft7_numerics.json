@@ -1,0 +1,65 @@
+{
+  "0": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 1.000444171950221e-11
+  },
+  "1e-07": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 4.298783551348606e-13
+  },
+  "1e-06": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 4.298783551348606e-13
+  },
+  "1e-05": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 1.7053025658242404e-13
+  },
+  "0.0001": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 1.4210854715202004e-13
+  },
+  "0.001": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 8.526512829121202e-14
+  },
+  "0.01": {
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "valid": [
+      true
+    ],
+    "violation": 1.2789769243681803e-13
+  }
+}

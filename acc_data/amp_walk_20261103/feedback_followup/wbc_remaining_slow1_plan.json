@@ -1,0 +1,24 @@
+{
+  "source_frames": [
+    600,
+    1999
+  ],
+  "clock_second_start": 2.7,
+  "clock_second_ramp": 0.4,
+  "clock_second_speed": 1.0,
+  "vertical_status": "solved",
+  "physical_tracking_certified": false,
+  "planning": "single offline reduced centroidal fit; no runtime predictive control",
+  "vertical_constraint_residual": 1.4779288903810084e-12,
+  "height_offset_range": [
+    0.0,
+    -0.0032881110119096224,
+    -0.00038745987314348085,
+    -0.0012229904844485162
+  ],
+  "horizontal_status": "primal infeasible",
+  "horizontal_solver_residuals": [
+    0.004682913184344214,
+    5.565183550780818e-05
+  ]
+}

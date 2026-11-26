@@ -1,0 +1,13 @@
+{
+  "success": false,
+  "status": "NumericalError",
+  "refinement_history": [
+    {
+      "iteration": 0,
+      "status": "NumericalError"
+    }
+  ],
+  "actual_start_time": 3.814,
+  "solve_seconds": 56.46469045151025,
+  "prediction_only": true
+}

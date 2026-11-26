@@ -1,0 +1,7 @@
+{
+  "status": "stopped_for_measured_integration_mismatch_fix",
+  "pids": [
+    1010986
+  ],
+  "full_motion_tracking_passed": false
+}

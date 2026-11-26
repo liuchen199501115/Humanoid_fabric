@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_upward_end900",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--com-upward-speed-end",
+      "4.5",
+      "--com-upward-speed-end-ramp",
+      ".06"
+    ]
+  },
+  {
+    "name": "twelve_upward_end930",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--com-upward-speed-end",
+      "4.65",
+      "--com-upward-speed-end-ramp",
+      ".06"
+    ]
+  },
+  {
+    "name": "twelve_upward_end960",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--com-upward-speed-end",
+      "4.8",
+      "--com-upward-speed-end-ramp",
+      ".06"
+    ]
+  }
+]

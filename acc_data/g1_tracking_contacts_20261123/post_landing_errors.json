@@ -1,0 +1,92 @@
+[
+  {
+    "time_s": 3.0500000000000003,
+    "joint_rmse_rad": 0.15559537708759308,
+    "largest_errors": [
+      {
+        "joint": "right_knee_joint",
+        "error_rad": 0.5218912959098816
+      },
+      {
+        "joint": "right_ankle_pitch_joint",
+        "error_rad": -0.30908605456352234
+      },
+      {
+        "joint": "right_shoulder_roll_joint",
+        "error_rad": -0.2881046533584595
+      },
+      {
+        "joint": "right_ankle_roll_joint",
+        "error_rad": -0.26594752073287964
+      },
+      {
+        "joint": "right_hip_pitch_joint",
+        "error_rad": -0.24815818667411804
+      },
+      {
+        "joint": "right_shoulder_pitch_joint",
+        "error_rad": -0.1964327096939087
+      }
+    ]
+  },
+  {
+    "time_s": 3.1,
+    "joint_rmse_rad": 0.16412770748138428,
+    "largest_errors": [
+      {
+        "joint": "right_shoulder_roll_joint",
+        "error_rad": -0.47597014904022217
+      },
+      {
+        "joint": "right_shoulder_pitch_joint",
+        "error_rad": -0.3235160708427429
+      },
+      {
+        "joint": "left_shoulder_pitch_joint",
+        "error_rad": -0.31063157320022583
+      },
+      {
+        "joint": "left_shoulder_roll_joint",
+        "error_rad": -0.29403799772262573
+      },
+      {
+        "joint": "right_knee_joint",
+        "error_rad": 0.2757893204689026
+      },
+      {
+        "joint": "left_hip_roll_joint",
+        "error_rad": 0.18732070922851562
+      }
+    ]
+  },
+  {
+    "time_s": 3.132,
+    "joint_rmse_rad": 0.19867798686027527,
+    "largest_errors": [
+      {
+        "joint": "right_shoulder_roll_joint",
+        "error_rad": -0.5118017792701721
+      },
+      {
+        "joint": "left_shoulder_pitch_joint",
+        "error_rad": -0.3517078161239624
+      },
+      {
+        "joint": "right_shoulder_pitch_joint",
+        "error_rad": -0.3219331204891205
+      },
+      {
+        "joint": "left_ankle_roll_joint",
+        "error_rad": 0.32087111473083496
+      },
+      {
+        "joint": "left_shoulder_roll_joint",
+        "error_rad": -0.3116442561149597
+      },
+      {
+        "joint": "left_hip_roll_joint",
+        "error_rad": 0.3048267960548401
+      }
+    ]
+  }
+]

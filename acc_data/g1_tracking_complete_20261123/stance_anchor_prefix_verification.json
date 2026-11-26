@@ -1,0 +1,18 @@
+[
+  {
+    "reference": "prepared_stance10_anchor_position860",
+    "sha256": "7789ed77bf96573bc9892945eccfb9fc375c90c380934001057041a3b8b34cbb",
+    "prefix_end_frame": 816,
+    "samples": 1634,
+    "q_v_a_exact": true,
+    "full_tracking_passed": false
+  },
+  {
+    "reference": "prepared_stance10_anchor_pose860",
+    "sha256": "2cb16e2225e2b776c49d7852647093f3ed6797fda1383bd174bb1b1bf809195b",
+    "prefix_end_frame": 816,
+    "samples": 1634,
+    "q_v_a_exact": true,
+    "full_tracking_passed": false
+  }
+]

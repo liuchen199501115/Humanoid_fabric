@@ -1,0 +1,80 @@
+[
+  {
+    "success": true,
+    "status": "Solved",
+    "objective": -391060.4525525551,
+    "nonlinear_verified": false,
+    "linear_violation": 1.3091009334669987e-07,
+    "tube_violation": 6.0513608013401665e-12,
+    "collision_cuts": {
+      "total_collision_rows": 16808,
+      "selected_collision_rows": 233,
+      "rounds": [
+        {
+          "rows": 216,
+          "full_collision_violation": 5.664633822046762,
+          "status": "Solved",
+          "iterations": 87
+        },
+        {
+          "rows": 233,
+          "full_collision_violation": 5.963229909866641e-12,
+          "status": "Solved",
+          "iterations": 86
+        }
+      ],
+      "solve_seconds": 7.534252446144819,
+      "full_collision_linear_violation": 5.963229909866641e-12
+    },
+    "initial_per_block": 8,
+    "seconds": 10.621603326871991
+  },
+  {
+    "success": true,
+    "status": "Solved",
+    "objective": -391043.3243656578,
+    "nonlinear_verified": false,
+    "linear_violation": 6.880258016594108e-08,
+    "tube_violation": -3.429512923647238e-11,
+    "collision_cuts": {
+      "total_collision_rows": 16808,
+      "selected_collision_rows": 432,
+      "rounds": [
+        {
+          "rows": 432,
+          "full_collision_violation": 0.0,
+          "status": "Solved",
+          "iterations": 104
+        }
+      ],
+      "solve_seconds": 4.519616573117673,
+      "full_collision_linear_violation": 0.0
+    },
+    "initial_per_block": 16,
+    "seconds": 7.607992026954889
+  },
+  {
+    "success": true,
+    "status": "Solved",
+    "objective": -391042.99438773224,
+    "nonlinear_verified": false,
+    "linear_violation": 6.710064838814055e-08,
+    "tube_violation": 5.1736642747712835e-11,
+    "collision_cuts": {
+      "total_collision_rows": 16808,
+      "selected_collision_rows": 648,
+      "rounds": [
+        {
+          "rows": 648,
+          "full_collision_violation": 0.0,
+          "status": "Solved",
+          "iterations": 106
+        }
+      ],
+      "solve_seconds": 4.647202450782061,
+      "full_collision_linear_violation": 0.0
+    },
+    "initial_per_block": 24,
+    "seconds": 7.717120645567775
+  }
+]

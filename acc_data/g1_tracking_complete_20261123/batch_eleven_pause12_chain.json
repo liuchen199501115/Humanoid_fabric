@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_pause12_920",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12",
+      "--extra-contact-pause-resume",
+      ".1"
+    ]
+  },
+  {
+    "name": "eleven_pause12_930",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--extra-contact-pause",
+      "4.65",
+      "4.76",
+      "12",
+      "--extra-contact-pause-resume",
+      ".1"
+    ]
+  },
+  {
+    "name": "eleven_pause12_940",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--extra-contact-pause",
+      "4.7",
+      "4.76",
+      "12",
+      "--extra-contact-pause-resume",
+      ".1"
+    ]
+  }
+]

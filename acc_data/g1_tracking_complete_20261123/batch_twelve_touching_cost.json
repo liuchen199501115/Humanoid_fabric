@@ -1,0 +1,28 @@
+[
+  {
+    "name": "twelve_touch50_foot256",
+    "parent": "twelve_touching_50",
+    "options": [
+      "--late-foot-metric-end-scale",
+      "256"
+    ]
+  },
+  {
+    "name": "twelve_touch50_foot1024",
+    "parent": "twelve_touching_50",
+    "options": [
+      "--late-foot-metric-end-scale",
+      "1024"
+    ]
+  },
+  {
+    "name": "twelve_touch50_foot256_search8",
+    "parent": "twelve_touching_50",
+    "options": [
+      "--late-foot-metric-end-scale",
+      "256",
+      "--foot-contact-search-acceleration",
+      "8"
+    ]
+  }
+]

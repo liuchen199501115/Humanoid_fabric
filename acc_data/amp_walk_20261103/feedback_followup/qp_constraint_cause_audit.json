@@ -1,0 +1,1807 @@
+[
+  {
+    "time": 3.9,
+    "contact_mode": [
+      2
+    ],
+    "physical_force": [
+      [
+        0.0,
+        422.0042724609375
+      ]
+    ],
+    "cases": [
+      {
+        "case": "baseline",
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "root_angular_acceleration": [
+          -43.35097043741463,
+          58.855223517775485,
+          -4.560814505281175
+        ],
+        "upper_selected_acceleration": [
+          76.50733704204234,
+          -27.350639114991854,
+          -17.73466287370086
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 5577.423946561916,
+            "slack": 0.0
+          },
+          {
+            "row": "tube_1",
+            "dual": 4201.174095989218,
+            "slack": 1.9984014443252818e-15
+          },
+          {
+            "row": "collision_327",
+            "dual": 99.90514620798507,
+            "slack": 1.7763568394002505e-15
+          },
+          {
+            "row": "collision_109",
+            "dual": 33.16553620242135,
+            "slack": 7.105427357601002e-15
+          },
+          {
+            "row": "collision_316",
+            "dual": 4.161201522298731,
+            "slack": 3.552713678800501e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": 234.5308261487309,
+            "value": 20.000000000000053,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 57,
+            "dual": 137.45676317284736,
+            "value": 20.000000000000004,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": 0.02385602509970397
+      },
+      {
+        "case": "without_collision_barriers",
+        "status": "solved",
+        "residual": 5.400124791776761e-13,
+        "root_angular_acceleration": [
+          -43.643480175657686,
+          56.48094004140578,
+          -6.9916530347408345
+        ],
+        "upper_selected_acceleration": [
+          74.4261764636936,
+          -25.69027540307754,
+          -15.697457826850055
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 5614.468789295261,
+            "slack": 0.0
+          },
+          {
+            "row": "tube_1",
+            "dual": 4202.155466735217,
+            "slack": 1.3322676295501878e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": 259.29742197970864,
+            "value": 20.00000000000005,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 57,
+            "dual": 138.22969238572085,
+            "value": 20.000000000000004,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_tracking_tubes",
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "root_angular_acceleration": [
+          72.00853845382757,
+          4.779359169111839,
+          6.056602087627098
+        ],
+        "upper_selected_acceleration": [
+          -89.4130516672721,
+          -7.623642298851004,
+          -3.822519805423268
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "collision_3",
+            "dual": 250.0321949352457,
+            "slack": -1.0658141036401503e-14
+          },
+          {
+            "row": "friction_29",
+            "dual": 81.55382171685076,
+            "slack": -1.7763568394002505e-15
+          },
+          {
+            "row": "friction_28",
+            "dual": 81.55382171685076,
+            "slack": -1.7763568394002505e-15
+          },
+          {
+            "row": "collision_369",
+            "dual": 40.443257448658464,
+            "slack": -4.440892098500626e-16
+          },
+          {
+            "row": "collision_109",
+            "dual": 7.389684224218031,
+            "slack": -3.552713678800501e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 57,
+            "dual": 170.66101156160363,
+            "value": 20.0,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 61,
+            "dual": 65.32239752428418,
+            "value": 20.000000000000036,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "unbounded_effort",
+        "status": "solved",
+        "residual": 5.534215716807012e-07,
+        "root_angular_acceleration": [
+          -38.1354175636831,
+          73.91581406466514,
+          -12.538583236100807
+        ],
+        "upper_selected_acceleration": [
+          68.50794405039574,
+          -27.25892431436833,
+          -20.903709863585906
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 5323.072315818433,
+            "slack": 1.6069637176485685e-08
+          },
+          {
+            "row": "tube_1",
+            "dual": 3266.6542444036654,
+            "slack": 6.843801449996079e-07
+          },
+          {
+            "row": "collision_109",
+            "dual": 73.93972140057015,
+            "slack": -6.7853669349915435e-09
+          },
+          {
+            "row": "friction_30",
+            "dual": 42.63520447104703,
+            "slack": -5.534215716807012e-07
+          },
+          {
+            "row": "friction_31",
+            "dual": 42.63520447104703,
+            "slack": -5.534215716807012e-07
+          },
+          {
+            "row": "friction_25",
+            "dual": 36.6069925850709,
+            "slack": 7.130269139565826e-07
+          },
+          {
+            "row": "friction_24",
+            "dual": 36.6069925850709,
+            "slack": 7.130269139565826e-07
+          },
+          {
+            "row": "collision_316",
+            "dual": 24.728193363491794,
+            "slack": -7.769181920025403e-08
+          }
+        ],
+        "largest_bound_duals": [],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_com_objective",
+        "status": "solved",
+        "residual": 1.2576606422953773e-12,
+        "root_angular_acceleration": [
+          -43.79811802019458,
+          56.511504078846606,
+          -5.857364898163597
+        ],
+        "upper_selected_acceleration": [
+          76.6791892648631,
+          -24.858146383245263,
+          -26.245705216546263
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 5396.219637508905,
+            "slack": 1.7763568394002505e-15
+          },
+          {
+            "row": "tube_1",
+            "dual": 5391.547602667341,
+            "slack": 7.771561172376096e-15
+          },
+          {
+            "row": "collision_327",
+            "dual": 121.9737111873123,
+            "slack": 5.329070518200751e-15
+          },
+          {
+            "row": "collision_109",
+            "dual": 41.8207542402198,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_315",
+            "dual": 0.7470903585876487,
+            "slack": 3.552713678800501e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": 157.90274439531626,
+            "value": 20.000000000000053,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 57,
+            "dual": 95.69411467366032,
+            "value": 19.999999999999996,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_body_objective",
+        "status": "solved",
+        "residual": 1.8474111129762605e-13,
+        "root_angular_acceleration": [
+          -47.635824478034245,
+          38.337746662486474,
+          -13.331826075656947
+        ],
+        "upper_selected_acceleration": [
+          105.91368244473124,
+          27.67014156309624,
+          -2.5175095607871874
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 4954.586703470795,
+            "slack": 0.0
+          },
+          {
+            "row": "tube_0",
+            "dual": 859.676197998842,
+            "slack": -8.881784197001252e-16
+          },
+          {
+            "row": "collision_109",
+            "dual": 104.79650039993338,
+            "slack": 1.0658141036401503e-14
+          },
+          {
+            "row": "collision_179",
+            "dual": 52.54443214716696,
+            "slack": 3.552713678800501e-15
+          },
+          {
+            "row": "collision_327",
+            "dual": 20.72483767622929,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_315",
+            "dual": 4.432217255357541,
+            "slack": -2.1316282072803006e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": 476.7637818045856,
+            "value": 20.000000000000007,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 57,
+            "dual": 156.0603316356468,
+            "value": 20.000000000000004,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 62,
+            "dual": -62.269811506916646,
+            "value": -20.00000000000003,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": 27.085797325520115,
+            "value": 20.0,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "upper_posture4",
+        "status": "solved",
+        "residual": 4.547473508864641e-13,
+        "root_angular_acceleration": [
+          -47.60040279027767,
+          38.54031268368561,
+          -13.197310031452039
+        ],
+        "upper_selected_acceleration": [
+          73.89981570747989,
+          -8.125898317590456,
+          -17.366081509411384
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_2",
+            "dual": 7762.414003669629,
+            "slack": 0.0
+          },
+          {
+            "row": "tube_1",
+            "dual": 7106.291870175623,
+            "slack": 1.3322676295501878e-15
+          },
+          {
+            "row": "collision_109",
+            "dual": 271.3960352051899,
+            "slack": 7.105427357601002e-15
+          },
+          {
+            "row": "collision_179",
+            "dual": 210.7927860796955,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_161",
+            "dual": 23.137644470095662,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_316",
+            "dual": 4.5451344739303225,
+            "slack": -5.329070518200751e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": 303.90520762047856,
+            "value": 19.99999999999997,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 57,
+            "dual": 153.55703559325235,
+            "value": 19.999999999999996,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      }
+    ],
+    "tube_rows_present": [
+      "joint",
+      "position",
+      "orientation"
+    ]
+  },
+  {
+    "time": 4.0,
+    "contact_mode": [
+      1
+    ],
+    "physical_force": [
+      [
+        275.3473815917969,
+        0.0
+      ]
+    ],
+    "cases": [
+      {
+        "case": "baseline",
+        "status": "solved",
+        "residual": 2.5011104298755527e-12,
+        "root_angular_acceleration": [
+          0.8614915357472834,
+          -86.24312249505488,
+          -27.47351919337054
+        ],
+        "upper_selected_acceleration": [
+          3.329380210215912,
+          128.06109431814292,
+          16.53189411502461
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 24498.084665955,
+            "slack": 1.4988010832439613e-14
+          },
+          {
+            "row": "tube_0",
+            "dual": 24451.080182336646,
+            "slack": 1.3322676295501878e-15
+          },
+          {
+            "row": "tube_2",
+            "dual": 12499.555667779694,
+            "slack": 2.220446049250313e-15
+          },
+          {
+            "row": "collision_195",
+            "dual": 2018.7251159914863,
+            "slack": -1.3322676295501878e-15
+          },
+          {
+            "row": "collision_122",
+            "dual": 1054.97397948662,
+            "slack": 3.552713678800501e-15
+          },
+          {
+            "row": "collision_359",
+            "dual": 744.5023640081471,
+            "slack": 4.884981308350689e-15
+          },
+          {
+            "row": "collision_266",
+            "dual": 547.9557322169087,
+            "slack": 8.881784197001252e-15
+          },
+          {
+            "row": "collision_137",
+            "dual": 325.8775775153231,
+            "slack": 2.3092638912203256e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": -1226.2788103715582,
+            "value": -20.000000000000096,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 1070.5953495464694,
+            "value": 70.40000152587882,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": 265.21429860116933,
+            "value": 19.9999999999999,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": 0.03109399163690796
+      },
+      {
+        "case": "without_collision_barriers",
+        "status": "solved",
+        "residual": 5.8832938520936295e-12,
+        "root_angular_acceleration": [
+          -18.128646714582604,
+          31.954148281448695,
+          28.725856457085538
+        ],
+        "upper_selected_acceleration": [
+          50.03310958512559,
+          -48.44873268492678,
+          26.135014204861072
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 2650.178713075264,
+            "slack": -1.509903313490213e-14
+          },
+          {
+            "row": "tube_2",
+            "dual": 749.2914714866911,
+            "slack": -8.881784197001252e-16
+          },
+          {
+            "row": "tube_0",
+            "dual": 149.38405587156055,
+            "slack": 4.440892098500626e-16
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 69,
+            "dual": 806.687451405331,
+            "value": 19.999999999999968,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 439.6198766848203,
+            "value": 70.40000152587865,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_tracking_tubes",
+        "status": "solved",
+        "residual": 4.490630090003833e-12,
+        "root_angular_acceleration": [
+          32.52713507067697,
+          41.70718868821121,
+          -3.1508164852108145
+        ],
+        "upper_selected_acceleration": [
+          -35.4522459754826,
+          -49.87549437662489,
+          -49.05154134164586
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "collision_320",
+            "dual": 398.6788873908933,
+            "slack": -1.7763568394002505e-14
+          },
+          {
+            "row": "collision_194",
+            "dual": 229.21771212000664,
+            "slack": 7.105427357601002e-15
+          },
+          {
+            "row": "collision_359",
+            "dual": 164.09486218003786,
+            "slack": 1.6653345369377348e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": -736.9393081553166,
+            "value": -20.00000000000009,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 173.30109279716478,
+            "value": 70.40000152587855,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "unbounded_effort",
+        "status": "solved",
+        "residual": 3.922195901395753e-12,
+        "root_angular_acceleration": [
+          -10.853395979306198,
+          -67.59599384480875,
+          -40.67415265749887
+        ],
+        "upper_selected_acceleration": [
+          -5.248453549935751,
+          -5.676093773209322,
+          -47.84806980080289
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 6843.891611321702,
+            "slack": -2.6645352591003757e-15
+          },
+          {
+            "row": "tube_0",
+            "dual": 4005.1516754892273,
+            "slack": 8.881784197001252e-16
+          },
+          {
+            "row": "tube_2",
+            "dual": 2155.0157164409325,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_194",
+            "dual": 665.0185215367796,
+            "slack": 8.881784197001252e-16
+          },
+          {
+            "row": "collision_359",
+            "dual": 419.6699448113992,
+            "slack": -5.662137425588298e-15
+          },
+          {
+            "row": "collision_320",
+            "dual": 114.64332527254469,
+            "slack": 1.7763568394002505e-15
+          },
+          {
+            "row": "collision_133",
+            "dual": 43.43375961539728,
+            "slack": 1.4210854715202004e-14
+          }
+        ],
+        "largest_bound_duals": [],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_com_objective",
+        "status": "solved",
+        "residual": 1.1475265182525618e-12,
+        "root_angular_acceleration": [
+          -0.2373995689398563,
+          -86.0487302795873,
+          -30.083231044995976
+        ],
+        "upper_selected_acceleration": [
+          3.896526291892101,
+          127.32747982484209,
+          20.660215763147978
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_0",
+            "dual": 24321.508334046597,
+            "slack": 2.4424906541753444e-15
+          },
+          {
+            "row": "tube_1",
+            "dual": 24144.730083168124,
+            "slack": 9.769962616701378e-15
+          },
+          {
+            "row": "tube_2",
+            "dual": 12419.905158852074,
+            "slack": 8.881784197001252e-16
+          },
+          {
+            "row": "collision_195",
+            "dual": 2015.3602729307322,
+            "slack": 6.217248937900877e-15
+          },
+          {
+            "row": "collision_122",
+            "dual": 1031.1170607630154,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_359",
+            "dual": 746.111881869459,
+            "slack": 2.55351295663786e-15
+          },
+          {
+            "row": "collision_266",
+            "dual": 588.2128566908857,
+            "slack": 7.993605777301127e-15
+          },
+          {
+            "row": "collision_137",
+            "dual": 325.316938266329,
+            "slack": 1.0658141036401503e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": -1184.8064201545023,
+            "value": -19.999999999999922,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 1092.7378777820293,
+            "value": 70.40000152587893,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": 217.36145143957205,
+            "value": 19.999999999999993,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_body_objective",
+        "status": "solved",
+        "residual": 2.8421709430404007e-12,
+        "root_angular_acceleration": [
+          -1.3135199977081855,
+          -62.52321768815226,
+          -12.054985353567542
+        ],
+        "upper_selected_acceleration": [
+          17.13268183500764,
+          137.36584100759913,
+          36.71873791335448
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_0",
+            "dual": 17611.701393363743,
+            "slack": 2.220446049250313e-15
+          },
+          {
+            "row": "tube_1",
+            "dual": 12883.126089197445,
+            "slack": 6.2727600891321345e-15
+          },
+          {
+            "row": "tube_2",
+            "dual": 9312.760618736436,
+            "slack": 2.220446049250313e-15
+          },
+          {
+            "row": "collision_176",
+            "dual": 1153.2242702858628,
+            "slack": 1.9539925233402755e-14
+          },
+          {
+            "row": "collision_121",
+            "dual": 599.6145373791336,
+            "slack": -2.3092638912203256e-14
+          },
+          {
+            "row": "collision_194",
+            "dual": 551.3561838858352,
+            "slack": -9.325873406851315e-15
+          },
+          {
+            "row": "collision_126",
+            "dual": 457.8295863876565,
+            "slack": 1.4210854715202004e-14
+          },
+          {
+            "row": "collision_195",
+            "dual": 419.03796031647494,
+            "slack": -1.7763568394002505e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": -840.7795499797122,
+            "value": -20.000000000000163,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 765.6838037391146,
+            "value": 70.4000015258787,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "upper_posture4",
+        "status": "solved",
+        "residual": 3.623767952376511e-13,
+        "root_angular_acceleration": [
+          1.8600072319528635,
+          -76.83068860277538,
+          -16.64368853429783
+        ],
+        "upper_selected_acceleration": [
+          5.1599058004309315,
+          93.09738190190237,
+          -8.085319279114575
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 46388.57946700047,
+            "slack": 3.0531133177191805e-16
+          },
+          {
+            "row": "tube_0",
+            "dual": 36301.480273272435,
+            "slack": 8.881784197001252e-16
+          },
+          {
+            "row": "tube_2",
+            "dual": 22291.04248815031,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_195",
+            "dual": 4101.269877248207,
+            "slack": 3.552713678800501e-15
+          },
+          {
+            "row": "collision_359",
+            "dual": 1896.5713990014895,
+            "slack": 2.220446049250313e-16
+          },
+          {
+            "row": "collision_128",
+            "dual": 961.2414200632364,
+            "slack": -5.329070518200751e-15
+          },
+          {
+            "row": "collision_133",
+            "dual": 759.1986590065957,
+            "slack": 1.0658141036401503e-14
+          },
+          {
+            "row": "collision_266",
+            "dual": 584.3542139870929,
+            "slack": 7.105427357601002e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 61,
+            "dual": -3216.46602985769,
+            "value": -20.00000000000006,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 683.7451253009517,
+            "value": 70.40000152587888,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": 394.20217339742766,
+            "value": 20.00000000000002,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      }
+    ],
+    "tube_rows_present": [
+      "joint",
+      "position",
+      "orientation"
+    ]
+  },
+  {
+    "time": 4.04,
+    "contact_mode": [
+      1
+    ],
+    "physical_force": [
+      [
+        184.19163513183594,
+        0.0
+      ]
+    ],
+    "cases": [
+      {
+        "case": "baseline",
+        "status": "maximum iterations reached"
+      },
+      {
+        "case": "without_collision_barriers",
+        "status": "solved",
+        "residual": 1.2939757709773403e-08,
+        "root_angular_acceleration": [
+          -68.83233003607161,
+          -147.48235248228946,
+          -343.2809494176589
+        ],
+        "upper_selected_acceleration": [
+          60.458273011289805,
+          135.22914380425297,
+          81.47317915551241
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 231753.7085328472,
+            "slack": 2.959591816065199e-08
+          },
+          {
+            "row": "tube_0",
+            "dual": 120664.76294870781,
+            "slack": 9.413483326170535e-10
+          },
+          {
+            "row": "tube_2",
+            "dual": 56317.79897263382,
+            "slack": 2.668144816198037e-09
+          },
+          {
+            "row": "friction_3",
+            "dual": 2351.52719007929,
+            "slack": 5.526283075596439e-08
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 67,
+            "dual": -40664.946886890946,
+            "value": -3.99999745868652,
+            "bounds": [
+              -4.0,
+              4.0
+            ]
+          },
+          {
+            "variable": 68,
+            "dual": -32814.72396920087,
+            "value": -3.99998790575921,
+            "bounds": [
+              -4.0,
+              4.0
+            ]
+          },
+          {
+            "variable": 63,
+            "dual": -24048.93714576487,
+            "value": -20.000000012939758,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 69,
+            "dual": 18112.84821291196,
+            "value": 19.999999596880567,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": 15942.439916101921,
+            "value": 19.999999617680388,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 62,
+            "dual": 9842.028292391504,
+            "value": 19.999999658406477,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 51,
+            "dual": -8134.446931307541,
+            "value": -19.999999892488738,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 3736.8738797026567,
+            "value": 70.40000150316014,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_tracking_tubes",
+        "status": "solved",
+        "residual": 6.87805368215777e-12,
+        "root_angular_acceleration": [
+          50.300927482861546,
+          26.799938325818584,
+          -18.713899237072873
+        ],
+        "upper_selected_acceleration": [
+          -65.31531806024313,
+          -42.78022675712769,
+          31.420462469843145
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "collision_341",
+            "dual": 203.55655677586796,
+            "slack": 3.552713678800501e-14
+          },
+          {
+            "row": "collision_287",
+            "dual": 87.50794600446153,
+            "slack": -4.263256414560601e-14
+          },
+          {
+            "row": "collision_216",
+            "dual": 34.788922704059665,
+            "slack": 2.1316282072803006e-14
+          },
+          {
+            "row": "friction_3",
+            "dual": 25.081065438640028,
+            "slack": 0.0
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 53,
+            "dual": -327.9584917041138,
+            "value": -70.40000152587879,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 307.0233405209289,
+            "value": 70.40000152587862,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "unbounded_effort",
+        "status": "solved",
+        "residual": 4.792872360326328e-06,
+        "root_angular_acceleration": [
+          -50.88730751650972,
+          -437.30103346267873,
+          -501.62446416686555
+        ],
+        "upper_selected_acceleration": [
+          -5.0307168337204535,
+          2.9815518170242594,
+          93.07952234731336
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 230382.75796117724,
+            "slack": -2.0308426940118807e-08
+          },
+          {
+            "row": "tube_0",
+            "dual": 194652.71073157998,
+            "slack": -1.9802399719992536e-09
+          },
+          {
+            "row": "tube_2",
+            "dual": 98455.04875453144,
+            "slack": -6.026636967249033e-09
+          },
+          {
+            "row": "collision_235",
+            "dual": 13318.043245845918,
+            "slack": 1.0906603620242095e-07
+          },
+          {
+            "row": "collision_412",
+            "dual": 11400.319903983416,
+            "slack": 5.852029971720185e-11
+          },
+          {
+            "row": "collision_229",
+            "dual": 7775.66676177674,
+            "slack": 3.693898520396033e-09
+          },
+          {
+            "row": "collision_86",
+            "dual": 4199.49200241476,
+            "slack": -5.207219544445252e-09
+          },
+          {
+            "row": "collision_141",
+            "dual": 3926.2116250075546,
+            "slack": -2.855578173921458e-08
+          }
+        ],
+        "largest_bound_duals": [],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_com_objective",
+        "status": "maximum iterations reached"
+      },
+      {
+        "case": "without_body_objective",
+        "status": "maximum iterations reached"
+      },
+      {
+        "case": "upper_posture4",
+        "status": "maximum iterations reached"
+      }
+    ],
+    "tube_rows_present": [
+      "joint",
+      "position",
+      "orientation"
+    ]
+  },
+  {
+    "time": 4.06,
+    "contact_mode": [
+      1
+    ],
+    "physical_force": [
+      [
+        229.53004455566406,
+        0.0
+      ]
+    ],
+    "cases": [
+      {
+        "case": "baseline",
+        "status": "solved",
+        "residual": 6.73594513500575e-12,
+        "root_angular_acceleration": [
+          9.479105150680326,
+          -20.441119997228327,
+          46.92474745588198
+        ],
+        "upper_selected_acceleration": [
+          23.908331519864394,
+          -32.355705677145245,
+          5.666791715977028
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 150093.76508520573,
+            "slack": 4.5075054799781356e-14
+          },
+          {
+            "row": "tube_2",
+            "dual": 21833.877012281955,
+            "slack": -6.661338147750939e-16
+          },
+          {
+            "row": "collision_370",
+            "dual": 3649.2555222829396,
+            "slack": 1.687538997430238e-14
+          },
+          {
+            "row": "collision_395",
+            "dual": 3127.0200458359013,
+            "slack": -7.105427357601002e-15
+          },
+          {
+            "row": "collision_215",
+            "dual": 1235.4423731675436,
+            "slack": -1.3322676295501878e-13
+          },
+          {
+            "row": "collision_337",
+            "dual": 1112.5649347546885,
+            "slack": -1.4210854715202004e-14
+          },
+          {
+            "row": "collision_398",
+            "dual": 1082.6754849172964,
+            "slack": 1.7763568394002505e-15
+          },
+          {
+            "row": "collision_394",
+            "dual": 1066.338431024504,
+            "slack": -3.552713678800501e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 60,
+            "dual": 5072.372785256478,
+            "value": 19.999999999999623,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 973.1151777973738,
+            "value": 70.4000015258789,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": 0.030853282643413138
+      },
+      {
+        "case": "without_collision_barriers",
+        "status": "solved",
+        "residual": 1.6768808563938364e-12,
+        "root_angular_acceleration": [
+          -27.38270858835216,
+          76.8746213609388,
+          -39.27551649662468
+        ],
+        "upper_selected_acceleration": [
+          140.84995079266272,
+          -163.71757272139592,
+          92.02160894186659
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 64098.43706070344,
+            "slack": 6.217248937900877e-15
+          },
+          {
+            "row": "tube_2",
+            "dual": 14686.590840531124,
+            "slack": 1.5543122344752192e-15
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 69,
+            "dual": 7227.697952715969,
+            "value": 19.999999999999886,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 70,
+            "dual": 3975.8336296948223,
+            "value": 19.999999999999712,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 63,
+            "dual": -3809.449443154661,
+            "value": -19.99999999999989,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 1381.1649055166354,
+            "value": 70.40000152587861,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 51,
+            "dual": -660.9344658893209,
+            "value": -20.00000000000024,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 62,
+            "dual": 192.2111402205322,
+            "value": 19.99999999999978,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_tracking_tubes",
+        "status": "solved",
+        "residual": 6.480149750132114e-12,
+        "root_angular_acceleration": [
+          338.13025839221467,
+          64.56569711171174,
+          -66.31841145090057
+        ],
+        "upper_selected_acceleration": [
+          -365.3955578985599,
+          -331.2435350042465,
+          93.59867944716542
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "collision_412",
+            "dual": 3828.6725953583377,
+            "slack": 1.4210854715202004e-14
+          },
+          {
+            "row": "collision_2",
+            "dual": 1567.924979067546,
+            "slack": -1.4210854715202004e-14
+          },
+          {
+            "row": "collision_367",
+            "dual": 828.0807158926322,
+            "slack": 1.0658141036401503e-13
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 63,
+            "dual": 883.0210644275609,
+            "value": 20.000000000000686,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 60,
+            "dual": -811.0837716067393,
+            "value": -19.999999999999947,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 53,
+            "dual": -250.80295031268042,
+            "value": -70.40000152588038,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          },
+          {
+            "variable": 61,
+            "dual": -198.29626278348275,
+            "value": -19.999999999998984,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 178.11361577539074,
+            "value": 70.40000152587842,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "unbounded_effort",
+        "status": "solved",
+        "residual": 6.252776074688882e-12,
+        "root_angular_acceleration": [
+          -26.049079660652758,
+          -62.835461179705,
+          -88.68773014790708
+        ],
+        "upper_selected_acceleration": [
+          87.36215653190031,
+          -81.54764457800023,
+          110.1660007296328
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 81747.52064536633,
+            "slack": 4.929390229335695e-14
+          },
+          {
+            "row": "tube_2",
+            "dual": 23169.81225512452,
+            "slack": 4.218847493575595e-15
+          },
+          {
+            "row": "collision_212",
+            "dual": 3495.3124539168534,
+            "slack": -4.618527782440651e-14
+          },
+          {
+            "row": "collision_395",
+            "dual": 3077.236684716968,
+            "slack": 1.5987211554602254e-14
+          },
+          {
+            "row": "collision_287",
+            "dual": 1844.5712757341453,
+            "slack": -1.4210854715202004e-14
+          },
+          {
+            "row": "collision_394",
+            "dual": 1698.474777147379,
+            "slack": -4.796163466380676e-14
+          },
+          {
+            "row": "collision_398",
+            "dual": 262.680096579327,
+            "slack": 0.0
+          },
+          {
+            "row": "friction_0",
+            "dual": 218.62319678289938,
+            "slack": 0.0
+          }
+        ],
+        "largest_bound_duals": [],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_com_objective",
+        "status": "solved",
+        "residual": 2.5579538487363607e-12,
+        "root_angular_acceleration": [
+          9.293162388073094,
+          -21.16514414200192,
+          46.02130903207093
+        ],
+        "upper_selected_acceleration": [
+          23.716754759846438,
+          -31.018415910206553,
+          4.679577701380502
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 150816.53733631736,
+            "slack": 1.687538997430238e-14
+          },
+          {
+            "row": "tube_2",
+            "dual": 21757.00555427857,
+            "slack": 1.4432899320127035e-15
+          },
+          {
+            "row": "collision_370",
+            "dual": 3661.278240427733,
+            "slack": 1.7763568394002505e-15
+          },
+          {
+            "row": "collision_395",
+            "dual": 3055.2834499378355,
+            "slack": 7.105427357601002e-15
+          },
+          {
+            "row": "collision_394",
+            "dual": 1129.097988753341,
+            "slack": -8.881784197001252e-15
+          },
+          {
+            "row": "collision_337",
+            "dual": 1124.2196751023969,
+            "slack": 0.0
+          },
+          {
+            "row": "collision_398",
+            "dual": 1089.2880151726856,
+            "slack": 3.552713678800501e-15
+          },
+          {
+            "row": "collision_215",
+            "dual": 996.7533367593919,
+            "slack": -3.375077994860476e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 60,
+            "dual": 5143.728541072066,
+            "value": 19.999999999999964,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 1047.121989299073,
+            "value": 70.4000015258789,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "without_body_objective",
+        "status": "solved",
+        "residual": 1.4779288903810084e-12,
+        "root_angular_acceleration": [
+          14.115507413806853,
+          2.8019392133605243,
+          71.45341236442107
+        ],
+        "upper_selected_acceleration": [
+          32.60373283132789,
+          -77.99491565524383,
+          6.092885250006095
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 150283.0862041844,
+            "slack": 8.881784197001252e-16
+          },
+          {
+            "row": "tube_2",
+            "dual": 21540.479050594302,
+            "slack": 1.3322676295501878e-15
+          },
+          {
+            "row": "collision_370",
+            "dual": 3715.5925104478847,
+            "slack": 6.217248937900877e-15
+          },
+          {
+            "row": "collision_395",
+            "dual": 2186.7802310633774,
+            "slack": -3.552713678800501e-15
+          },
+          {
+            "row": "collision_394",
+            "dual": 1897.5999598504493,
+            "slack": -8.881784197001252e-15
+          },
+          {
+            "row": "collision_215",
+            "dual": 1311.076478963577,
+            "slack": -5.329070518200751e-15
+          },
+          {
+            "row": "collision_398",
+            "dual": 1150.1457459105022,
+            "slack": 3.552713678800501e-15
+          },
+          {
+            "row": "collision_337",
+            "dual": 1129.362793131712,
+            "slack": 0.0
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 60,
+            "dual": 5616.885223198888,
+            "value": 19.999999999999744,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 1189.4162389813696,
+            "value": 70.40000152587892,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      },
+      {
+        "case": "upper_posture4",
+        "status": "solved",
+        "residual": 2.9842794901924208e-12,
+        "root_angular_acceleration": [
+          7.544074160923215,
+          -34.11426893408447,
+          35.155281636618895
+        ],
+        "upper_selected_acceleration": [
+          16.716255218938233,
+          -10.010644543460453,
+          61.494596967943835
+        ],
+        "largest_inequality_duals": [
+          {
+            "row": "tube_1",
+            "dual": 166688.5862328417,
+            "slack": -1.3322676295501878e-14
+          },
+          {
+            "row": "tube_2",
+            "dual": 24831.862114741434,
+            "slack": 7.771561172376096e-16
+          },
+          {
+            "row": "collision_370",
+            "dual": 6506.629780286873,
+            "slack": -1.3322676295501878e-14
+          },
+          {
+            "row": "collision_338",
+            "dual": 2294.783374287824,
+            "slack": -2.1316282072803006e-14
+          },
+          {
+            "row": "collision_394",
+            "dual": 1576.8401535492558,
+            "slack": -3.552713678800501e-15
+          },
+          {
+            "row": "friction_3",
+            "dual": 641.7778236955158,
+            "slack": -2.842170943040401e-14
+          },
+          {
+            "row": "collision_215",
+            "dual": 634.6852268783512,
+            "slack": 2.842170943040401e-14
+          },
+          {
+            "row": "friction_0",
+            "dual": 44.52166038030662,
+            "slack": 1.4210854715202004e-14
+          }
+        ],
+        "largest_bound_duals": [
+          {
+            "variable": 60,
+            "dual": 6158.414587915086,
+            "value": 20.000000000000398,
+            "bounds": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "variable": 47,
+            "dual": 922.6874771747671,
+            "value": 70.40000152587893,
+            "bounds": [
+              -70.4000015258789,
+              70.4000015258789
+            ]
+          }
+        ],
+        "recorded_acceleration_max_difference": null
+      }
+    ],
+    "tube_rows_present": [
+      "position",
+      "orientation"
+    ],
+    "joint_tube_softened": true
+  }
+]

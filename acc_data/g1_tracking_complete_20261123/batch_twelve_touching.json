@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_touching_10",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--touching-support-start",
+      "4.5",
+      "--touching-support-tolerance",
+      "10e-6"
+    ]
+  },
+  {
+    "name": "twelve_touching_50",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--touching-support-start",
+      "4.5",
+      "--touching-support-tolerance",
+      "50e-6"
+    ]
+  },
+  {
+    "name": "twelve_touching_100",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--touching-support-start",
+      "4.5",
+      "--touching-support-tolerance",
+      "100e-6"
+    ]
+  }
+]

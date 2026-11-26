@@ -1,0 +1,53 @@
+[
+  {
+    "name": "twelve_clock10_leg880",
+    "parent": "twelve_transferclock10",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.4",
+      "--qp-snapshot-times",
+      "4.18",
+      "4.22",
+      "4.26",
+      "4.3",
+      "4.4",
+      "4.6"
+    ]
+  },
+  {
+    "name": "twelve_clock10_unload128",
+    "parent": "twelve_transferclock10",
+    "options": [
+      "--final-unload-start",
+      "4.4",
+      "--final-unload-weight",
+      "128",
+      "--qp-snapshot-times",
+      "4.18",
+      "4.22",
+      "4.26",
+      "4.3",
+      "4.4",
+      "4.6"
+    ]
+  },
+  {
+    "name": "twelve_clock10_leg880_unload128",
+    "parent": "twelve_transferclock10",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.4",
+      "--final-unload-start",
+      "4.4",
+      "--final-unload-weight",
+      "128",
+      "--qp-snapshot-times",
+      "4.18",
+      "4.22",
+      "4.26",
+      "4.3",
+      "4.4",
+      "4.6"
+    ]
+  }
+]

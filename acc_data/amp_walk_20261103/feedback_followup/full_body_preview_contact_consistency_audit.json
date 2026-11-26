@@ -1,0 +1,53 @@
+[
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 400.4823282559478,
+    "tube_violation": -0.15487397463636224,
+    "objective": NaN,
+    "numerical_velocity_trust_recovered": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 3.701005209237337,
+    "time": 3.7
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 709.0691533658496,
+    "tube_violation": -0.1548739746443369,
+    "objective": NaN,
+    "numerical_velocity_trust_recovered": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 502.87260962407106,
+        "nonlinear_base_moment_residual": 90.87801057207403,
+        "nonlinear_joint_residual": 78.63606396307269,
+        "nonlinear_minimum_clearance": 1.7815835959819615e-05,
+        "nonlinear_support_gap": 0.05661450532704281,
+        "nonlinear_impact_residual": 6.389855680055693,
+        "nonlinear_impact_energy_increase": 0.0,
+        "nonlinear_support_speed": 1.5413308106744574,
+        "nonlinear_contact_acceleration": 102.79143590782458,
+        "nonlinear_wrench_cone_violation": 51.88998727322939,
+        "nonlinear_impulse_cone_violation": 0.3121290636827799,
+        "nonlinear_integration_position": 4.951133646320149e-07,
+        "nonlinear_integration_orientation": 0.009449413940775208,
+        "nonlinear_integration_joint": 1.1920928955078125e-07,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 6.8844016045331955,
+    "time": 3.8
+  }
+]

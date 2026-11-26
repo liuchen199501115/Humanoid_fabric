@@ -1,0 +1,1163 @@
+[
+  {
+    "name": "full_speed_attitude",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--qp-base-acceleration-weight",
+      "100",
+      "--source-pelvis-weight",
+      "10",
+      "--fabric-angular-feedback-limit",
+      "100"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.25,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.25,
+      "source_frame": 50.0,
+      "joint_rmse_rad": 0.20018798112869263,
+      "root_position_m": 0.021486381068825722,
+      "root_orientation_rad": 0.13062530059507124
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20018798112869263,
+    "control_states": 126,
+    "applied_effort_ticks": 125,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 43.6,
+        "time": 0.218,
+        "landing_error_m": 0.010869392261479574,
+        "goal": [
+          1.5785417556762695,
+          0.1778601109981537,
+          0.038081806153059006
+        ],
+        "measured_load_n": 381.901611328125,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": null,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "half_speed_attitude",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--motion-speed",
+      ".5",
+      "--clock-final-speed",
+      "1",
+      "--duration",
+      "24",
+      "--qp-base-acceleration-weight",
+      "100",
+      "--source-pelvis-weight",
+      "10",
+      "--fabric-angular-feedback-limit",
+      "100"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.462,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.462,
+      "source_frame": 46.2,
+      "joint_rmse_rad": 0.20019815862178802,
+      "root_position_m": 0.06185641139745712,
+      "root_orientation_rad": 0.04020877842919356
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20019815862178802,
+    "control_states": 232,
+    "applied_effort_ticks": 231,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 0.5,
+    "clock_final_speed": 1.0,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 26.6,
+        "time": 0.266,
+        "landing_error_m": 0.004499440425789032,
+        "goal": [
+          1.5784398317337036,
+          0.1857410967350006,
+          0.0431661494076252
+        ],
+        "measured_load_n": 352.7003173828125,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "loaded_landing",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.05462969652176371,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "half_speed_base100",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--motion-speed",
+      ".5",
+      "--clock-final-speed",
+      "1",
+      "--duration",
+      "24",
+      "--qp-base-acceleration-weight",
+      "100"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.68,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.68,
+      "source_frame": 68.0,
+      "joint_rmse_rad": 0.14442266523838043,
+      "root_position_m": 0.14592930674552917,
+      "root_orientation_rad": 0.3515313923561476
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.19321009516716003,
+    "control_states": 341,
+    "applied_effort_ticks": 340,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 0.5,
+    "clock_final_speed": 1.0,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 26.8,
+        "time": 0.268,
+        "landing_error_m": 0.005186425960559591,
+        "goal": [
+          1.5785044431686401,
+          0.18557287752628326,
+          0.04302006587386131
+        ],
+        "measured_load_n": 397.5926818847656,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "continuous_landing_hold",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.05512424820171655,
+      "best_loaded_landing_error_m": 0.027769416570663452,
+      "longest_verified_landing_hold_s": 0.02200000000000002,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "original_half_speed",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--swing-midpoint-clearance",
+      "0",
+      "--smooth-stride",
+      "0",
+      "--motion-speed",
+      ".5",
+      "--clock-final-speed",
+      "1",
+      "--duration",
+      "24"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.71,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.71,
+      "source_frame": 71.0,
+      "joint_rmse_rad": 0.1697167158126831,
+      "root_position_m": 0.2002229392528534,
+      "root_orientation_rad": 0.2678222044003383
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.1697167158126831,
+    "control_states": 356,
+    "applied_effort_ticks": 355,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 0.5,
+    "clock_final_speed": 1.0,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 26.0,
+        "time": 0.26,
+        "landing_error_m": 0.007178186969661635,
+        "goal": [
+          1.5782595872879028,
+          0.18626122176647186,
+          0.04361092299222946
+        ],
+        "measured_load_n": 395.04193115234375,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 0.014371197412539047,
+      "best_loaded_landing_error_m": 0.25709161162376404,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "original_reference",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--swing-midpoint-clearance",
+      "0",
+      "--smooth-stride",
+      "0"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.272,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.272,
+      "source_frame": 54.400000000000006,
+      "joint_rmse_rad": 0.20029903948307037,
+      "root_position_m": 0.01777380332350731,
+      "root_orientation_rad": 0.19098162512421055
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20029903948307037,
+    "control_states": 137,
+    "applied_effort_ticks": 136,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 33.6,
+        "time": 0.168,
+        "landing_error_m": 0.00549387011621552,
+        "goal": [
+          1.5790032148361206,
+          0.1807432770729065,
+          0.03962937742471695
+        ],
+        "measured_load_n": 226.32901000976562,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": null,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "posture10_capped150",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--no-preserve-reference-acceleration"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.234,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.234,
+      "source_frame": 46.800000000000004,
+      "joint_rmse_rad": 0.20125603675842285,
+      "root_position_m": 0.02476193942129612,
+      "root_orientation_rad": 0.23732295084311017
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20125603675842285,
+    "control_states": 118,
+    "applied_effort_ticks": 117,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 42.0,
+        "time": 0.21,
+        "landing_error_m": 0.017791411504325397,
+        "goal": [
+          1.5785421133041382,
+          0.17772439122200012,
+          0.038008302450180054
+        ],
+        "measured_load_n": 210.12290954589844,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": null,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "posture10_feedback150",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.23,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.23,
+      "source_frame": 46.0,
+      "joint_rmse_rad": 0.20095102488994598,
+      "root_position_m": 0.03460286930203438,
+      "root_orientation_rad": 0.27296035421469284
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20095102488994598,
+    "control_states": 116,
+    "applied_effort_ticks": 115,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 33.6,
+        "time": 0.168,
+        "landing_error_m": 0.006773820734769795,
+        "goal": [
+          1.5790032148361206,
+          0.1807432770729065,
+          0.03962937742471695
+        ],
+        "measured_load_n": 196.1734619140625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 0.0002981621914981414,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "posture10_half_speed",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--motion-speed",
+      ".5",
+      "--clock-final-speed",
+      "1",
+      "--duration",
+      "24"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.638,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.638,
+      "source_frame": 63.800000000000004,
+      "joint_rmse_rad": 0.15568488836288452,
+      "root_position_m": 0.17336058616638184,
+      "root_orientation_rad": 0.35315675573842253
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.18375760316848755,
+    "control_states": 320,
+    "applied_effort_ticks": 319,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 0.5,
+    "clock_final_speed": 1.0,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 26.0,
+        "time": 0.26,
+        "landing_error_m": 0.007150928119982902,
+        "goal": [
+          1.5782595872879028,
+          0.18626122176647186,
+          0.04361092299222946
+        ],
+        "measured_load_n": 408.55560302734375,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "loaded_landing",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.054137505920696216,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection1_attitude",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1",
+      "--qp-base-acceleration-weight",
+      "100",
+      "--source-pelvis-weight",
+      "10",
+      "--fabric-angular-feedback-limit",
+      "100"
+    ],
+    "measured_steps": 3,
+    "last_time_s": 1.354,
+    "stop_reason": "QP validation failed",
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.17517568171024323,
+    "control_states": 678,
+    "applied_effort_ticks": 678,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "failure_time_s": 1.356,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 35.199999999999996,
+        "time": 0.176,
+        "landing_error_m": 0.012318086883794273,
+        "goal": [
+          1.578912377357483,
+          0.1798873394727707,
+          0.039157819002866745
+        ],
+        "measured_load_n": 522.4107666015625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.4,
+        "time": 0.41200000000000003,
+        "landing_error_m": 0.03386797581257624,
+        "goal": [
+          2.0720441341400146,
+          -0.09183526784181595,
+          0.04734122008085251
+        ],
+        "measured_load_n": 315.8450012207031,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 186.80276525169154,
+        "time": 0.934,
+        "landing_error_m": 0.017637795245387517,
+        "goal": [
+          2.458341121673584,
+          0.10213759541511536,
+          0.03958366811275482
+        ],
+        "measured_load_n": 463.0271301269531,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 4,
+      "swing": "right",
+      "missing_evidence": "landing_position",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.05909938852788377,
+      "best_loaded_landing_error_m": 0.3966974914073944,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection1_attitude3",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1",
+      "--qp-base-acceleration-weight",
+      "10",
+      "--source-pelvis-weight",
+      "3",
+      "--fabric-angular-feedback-limit",
+      "100"
+    ],
+    "measured_steps": 3,
+    "last_time_s": 1.216,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 1.216,
+      "source_frame": 248.84276525169153,
+      "joint_rmse_rad": 0.1494804173707962,
+      "root_position_m": 0.20087431371212006,
+      "root_orientation_rad": 0.056185465232304846
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.17755837738513947,
+    "control_states": 609,
+    "applied_effort_ticks": 608,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 38.0,
+        "time": 0.19,
+        "landing_error_m": 0.004903915616887293,
+        "goal": [
+          1.578944444656372,
+          0.17864367365837097,
+          0.03821016848087311
+        ],
+        "measured_load_n": 317.8584899902344,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 114.80000000000001,
+        "time": 0.5740000000000001,
+        "landing_error_m": 0.03835824101678545,
+        "goal": [
+          2.082437038421631,
+          -0.0908040851354599,
+          0.034874290227890015
+        ],
+        "measured_load_n": 263.6054992675781,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 189.20886818356806,
+        "time": 0.9460000000000001,
+        "landing_error_m": 0.02132431224524881,
+        "goal": [
+          2.4583635330200195,
+          0.10232578217983246,
+          0.039676230400800705
+        ],
+        "measured_load_n": 579.8048095703125,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 4,
+      "swing": "right",
+      "missing_evidence": "loaded_landing",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.04281846340271088,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection1_attitude_no_joint_tube",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1",
+      "--qp-base-acceleration-weight",
+      "100",
+      "--source-pelvis-weight",
+      "10",
+      "--fabric-angular-feedback-limit",
+      "100",
+      "--joint-tube-end",
+      "0"
+    ],
+    "measured_steps": 3,
+    "last_time_s": 1.3780000000000001,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 1.3780000000000001,
+      "source_frame": 287.7200000000001,
+      "joint_rmse_rad": 0.20211167633533478,
+      "root_position_m": 0.18896469473838806,
+      "root_orientation_rad": 0.07833425456895657
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20211167633533478,
+    "control_states": 690,
+    "applied_effort_ticks": 689,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 35.199999999999996,
+        "time": 0.176,
+        "landing_error_m": 0.012318086883794273,
+        "goal": [
+          1.578912377357483,
+          0.1798873394727707,
+          0.039157819002866745
+        ],
+        "measured_load_n": 522.4107666015625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.4,
+        "time": 0.41200000000000003,
+        "landing_error_m": 0.03386797581257624,
+        "goal": [
+          2.0720441341400146,
+          -0.09183526784181595,
+          0.04734122008085251
+        ],
+        "measured_load_n": 315.8450012207031,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 186.80276525169154,
+        "time": 0.934,
+        "landing_error_m": 0.017637795245387517,
+        "goal": [
+          2.458341121673584,
+          0.10213759541511536,
+          0.03958366811275482
+        ],
+        "measured_load_n": 463.0271301269531,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 4,
+      "swing": "right",
+      "missing_evidence": "landing_position",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.05909938852788377,
+      "best_loaded_landing_error_m": 0.3966974914073944,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection1_base100",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1",
+      "--qp-base-acceleration-weight",
+      "100"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.608,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.608,
+      "source_frame": 121.6,
+      "joint_rmse_rad": 0.18789134919643402,
+      "root_position_m": 0.12177044153213501,
+      "root_orientation_rad": 0.35080341209601823
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.1913592368364334,
+    "control_states": 305,
+    "applied_effort_ticks": 304,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.016186606758849795,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 759.40380859375,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 5.595340941316751e-05,
+      "best_loaded_landing_error_m": 0.3783239424228668,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection1_steady_clock",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1",
+      "--qp-base-acceleration-weight",
+      "100",
+      "--source-pelvis-weight",
+      "10",
+      "--fabric-angular-feedback-limit",
+      "100",
+      "--joint-tube-end",
+      "0",
+      "--clock-final-speed",
+      "1"
+    ],
+    "measured_steps": 3,
+    "last_time_s": 1.358,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 1.358,
+      "source_frame": 271.6,
+      "joint_rmse_rad": 0.17668640613555908,
+      "root_position_m": 0.2004343718290329,
+      "root_orientation_rad": 0.06862218806757266
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.17668640613555908,
+    "control_states": 680,
+    "applied_effort_ticks": 679,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.0,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 35.199999999999996,
+        "time": 0.176,
+        "landing_error_m": 0.012318086883794273,
+        "goal": [
+          1.578912377357483,
+          0.1798873394727707,
+          0.039157819002866745
+        ],
+        "measured_load_n": 522.4107666015625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.4,
+        "time": 0.41200000000000003,
+        "landing_error_m": 0.03386797581257624,
+        "goal": [
+          2.0720441341400146,
+          -0.09183526784181595,
+          0.04734122008085251
+        ],
+        "measured_load_n": 315.8450012207031,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 186.8,
+        "time": 0.934,
+        "landing_error_m": 0.01763933695348237,
+        "goal": [
+          2.458341360092163,
+          0.10213723033666611,
+          0.03958364203572273
+        ],
+        "measured_load_n": 468.3132019042969,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 4,
+      "swing": "right",
+      "missing_evidence": "landing_position",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.058195506288755805,
+      "best_loaded_landing_error_m": 0.3391830623149872,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection_joint1",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "1"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.68,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.68,
+      "source_frame": 136.0,
+      "joint_rmse_rad": 0.13527092337608337,
+      "root_position_m": 0.17488765716552734,
+      "root_orientation_rad": 0.352533033412358
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.19824481010437012,
+    "control_states": 341,
+    "applied_effort_ticks": 340,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 38.800000000000004,
+        "time": 0.194,
+        "landing_error_m": 0.008325659210813949,
+        "goal": [
+          1.5789058208465576,
+          0.1783255636692047,
+          0.03800634294748306
+        ],
+        "measured_load_n": 265.3779602050781,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 0.00046481426717734364,
+      "best_loaded_landing_error_m": 0.37498047947883606,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  },
+  {
+    "name": "projection_joint10",
+    "returncode": 1,
+    "options": [
+      "--posture-metric-scale",
+      "10",
+      "--joint-feedback-limit",
+      "150",
+      "--projection-joint-correction-weight",
+      "10"
+    ],
+    "measured_steps": 1,
+    "last_time_s": 0.254,
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.254,
+      "source_frame": 50.8,
+      "joint_rmse_rad": 0.20103779435157776,
+      "root_position_m": 0.02946525253355503,
+      "root_orientation_rad": 0.3024124954654616
+    },
+    "full_motion_tracking_passed": false,
+    "peak_joint_rmse": 0.20103779435157776,
+    "control_states": 128,
+    "applied_effort_ticks": 127,
+    "single_qp": true,
+    "task_cache": false,
+    "priority": false,
+    "motion_speed": 1.0,
+    "clock_final_speed": 1.2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.011790021816034375,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 796.984130859375,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "next_step": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 6.413331863414085e-05,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    }
+  }
+]

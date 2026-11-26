@@ -1,0 +1,14 @@
+[
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_r10_l10_u05_a10_clear2_scale60",
+    "peak_native_clearance_m": 0.03470117361541766,
+    "minimum_native_height_change_m": -0.0002543674099812314,
+    "peak_native_clearance_parent_m": 0.033087990810203666
+  },
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_r10_l10_u05_a10_clear2_scale80",
+    "peak_native_clearance_m": 0.035508547570421524,
+    "minimum_native_height_change_m": -0.0003053613770199505,
+    "peak_native_clearance_parent_m": 0.033087990810203666
+  }
+]

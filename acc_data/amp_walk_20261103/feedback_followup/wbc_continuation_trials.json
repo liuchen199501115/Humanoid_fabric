@@ -1,0 +1,100 @@
+[
+  {
+    "run": "wbc_model_twelfth_retime",
+    "landings": 11,
+    "last_source_frame": 937.6400000000002,
+    "stop": {
+      "time_s": 4.054,
+      "source_frame": 937.6400000000002,
+      "joint_rmse_rad": 0.20195570588111877,
+      "root_position_m": 0.18091629445552826,
+      "root_orientation_rad": 0.2730181228418676
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_half_flat_pelvis",
+    "landings": 10,
+    "last_source_frame": 925.16,
+    "stop": {
+      "time_s": 4.034,
+      "source_frame": 925.16,
+      "joint_rmse_rad": 0.20546814799308777,
+      "root_position_m": 0.17883464694023132,
+      "root_orientation_rad": 0.2006410394498236
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_all_axis_momentum",
+    "landings": 11,
+    "last_source_frame": 925.6400000000001,
+    "stop": {
+      "time_s": 4.0360000000000005,
+      "source_frame": 925.6400000000001,
+      "joint_rmse_rad": 0.20013710856437683,
+      "root_position_m": 0.1840718537569046,
+      "root_orientation_rad": 0.1971922291305564
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_friction8_model",
+    "landings": 11,
+    "last_source_frame": 935.72,
+    "stop": {
+      "time_s": 4.078,
+      "source_frame": 935.72,
+      "joint_rmse_rad": 0.17965054512023926,
+      "root_position_m": 0.19116099178791046,
+      "root_orientation_rad": 0.35466610163402246
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_friction8_momentum",
+    "landings": 10,
+    "last_source_frame": 923.7200000000001,
+    "stop": {
+      "time_s": 4.0280000000000005,
+      "source_frame": 923.7200000000001,
+      "joint_rmse_rad": 0.20051515102386475,
+      "root_position_m": 0.1820594072341919,
+      "root_orientation_rad": 0.19513641799553477
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_friction8_before_turn",
+    "landings": 9,
+    "last_source_frame": 899.7199999999999,
+    "stop": {
+      "time_s": 3.928,
+      "source_frame": 899.7199999999999,
+      "joint_rmse_rad": 0.16097603738307953,
+      "root_position_m": 0.16834110021591187,
+      "root_orientation_rad": 0.35186767888210174
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  },
+  {
+    "run": "wbc_eleventh_monotone_delay16_trial",
+    "landings": 11,
+    "last_source_frame": 931.4,
+    "stop": {
+      "time_s": 4.0600000000000005,
+      "source_frame": 931.4,
+      "joint_rmse_rad": 0.20297643542289734,
+      "root_position_m": 0.17760047316551208,
+      "root_orientation_rad": 0.28047803349052575
+    },
+    "full_motion_tracking_passed": false,
+    "mpc_enabled": false
+  }
+]

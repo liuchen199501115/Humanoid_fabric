@@ -1,0 +1,93 @@
+{
+  "scope": "Instantaneous acceleration and saved constraints only; does not certify future steps. Direct WBC snapshots only; no diagnostic solution applied.",
+  "samples": [
+    {
+      "snapshot": "rolling_contact_damping8.qp_2150.npz",
+      "time": 4.3,
+      "frame": 989.0,
+      "constraint_source": "priority_level_0_",
+      "desired": 6.863273620605469,
+      "actual_solution": -0.28283429529040216,
+      "bounds": [
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": -14.389166198634083
+        },
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": 9.8271513549698
+        }
+      ],
+      "desired_acceleration_feasible": true,
+      "constraint_residual": 4.9071218199969735e-09
+    },
+    {
+      "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+      "time": 3.8000000000000003,
+      "frame": 869.0000000000001,
+      "constraint_source": "priority_level_0_",
+      "desired": 1.6951425075531006,
+      "actual_solution": -0.5299784096758601,
+      "bounds": [
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": -10.224564070786585
+        },
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": 12.210473402179076
+        }
+      ],
+      "desired_acceleration_feasible": true,
+      "constraint_residual": 7.787548383930698e-11
+    },
+    {
+      "snapshot": "root_margin150_turn.qp_2000.npz",
+      "time": 4.0,
+      "frame": 917.0,
+      "constraint_source": "priority_level_0_",
+      "desired": 3.220038890838623,
+      "actual_solution": -2.892179167655866,
+      "bounds": [
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": -11.424370925801718
+        },
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": 11.304709485691426
+        }
+      ],
+      "desired_acceleration_feasible": true,
+      "constraint_residual": 9.356426744488999e-11
+    },
+    {
+      "snapshot": "weighted_after12.qp_2150.npz",
+      "time": 4.3,
+      "frame": 989.0,
+      "constraint_source": "problem_",
+      "desired": 6.863273620605469,
+      "actual_solution": -0.750455783644024,
+      "bounds": [
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": -6.568563825438915
+        },
+        {
+          "success": true,
+          "status": 0,
+          "acceleration": 10.890752308657476
+        }
+      ],
+      "desired_acceleration_feasible": true,
+      "constraint_residual": 3.139348336844705e-09
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+"""Record continued physical attempts and rejected offline candidates separately."""
+from pathlib import Path
+import json,hashlib
+p=Path(__file__).parent
+names=['force_fit150_physics','root_margin150_turn','root_pose_margin_turn','late_substeps4_turn','late_substeps4_held_effort','late_substeps4_after12','root_margin_pelvis_after12','thirteenth_crouch45_descent35_physics','roll_damping_after12','crouch_descent_root_margin','crouch_descent_swing_priority','pelvis_replace_before_turn','flatten_after12','stance_heading_turn_v3','heading_settled_root_margin','lateral_com_first_before_turn_v2','com_xyz_first_load100','twelfth_heading_hold_physics','torque_continuity10_turn','torque_continuity100_after12','contact_rays8_turn','balance_pose_after12','upper_braking_before12','waist_braking_before12','all_joint_braking_turn','waist_braking_root_margin13','thirteenth_clock160','thirteenth_waist_metric4','thirteenth_waist16_root_margin','thirteenth_flat_roll_support','thirteenth_clock080','thirteenth_full_effort','thirteenth_force_fit150_physics','thirteenth_com_feet_first','thirteenth_fast_full_effort','thirteenth_upper_posture_first','thirteenth_support_knee20','thirteenth_knee_orientation30','thirteenth_early_waist_braking','thirteenth_waist_braking_physical','thirteenth_soft_upper_braking200','thirteenth_late_upper_braking200','thirteenth_yaw_priority_turn','thirteenth_restore_torso_metric','thirteenth_yaw_torso_feedback','thirteenth_late_yaw_waist','thirteenth_smooth12_turn']
+rows=[]
+for name in names:
+ command_path=p/(name+'.command.json')
+ if not command_path.exists():continue
+ command=json.loads(command_path.read_text());row=dict(run=name,status=command['status'],returncode=command.get('returncode'),full_motion_tracking_passed=False)
+ for suffix,fields in [('tracking.json',('last_source_frame','measured_landings','full_motion_tracking_passed','first_fidelity_exceeded')),('audit.json',('prefix_fidelity_passing_landings',)),('raw_source.json',('raw_source_prefix_landings',))]:
+  path=p/(name+'.'+suffix)
+  if path.exists():
+   data=json.loads(path.read_text());row.update({k:data[k] for k in fields if k in data})
+ rows.append(row)
+report=dict(scope='Every physical attempt starts at source frame 0 and requests all 2000 frames and 29 ordered landings through examples/test_g1.py. Original fidelity and physical validation remain active.',source_sha256=hashlib.sha256(Path('retarget/amp_reference/amp_walk_1ms.pkl').read_bytes()).hexdigest(),full_motion_tracking_passed=any(r['full_motion_tracking_passed'] for r in rows),completed_physical_trials=sum(r['status']=='finished' and 'measured_landings' in r for r in rows),selected_profile_unchanged=True,tests=json.loads((p/'continued_tracking_tests.json').read_text()),default_disabled_options=['orientation-tube-start','late-physics-substeps-start','stance-heading-start','torque-continuity-start'],reference_audits=['current_force_fit150.json','current_force_fit150.extrema.json','current_wrench_audit.json','thirteenth_descent35.json','thirteenth_crouch45_descent35.json','thirteenth_crouch55_descent50.json'],rejected_offline_attempts={'current_late_wrench_fit':'IK position residual 0.003035 m at iteration 2; remaining linearized ground-moment slack 0.237 m normalized by mg; no physical trial.','thirteenth_descent35':'IK position residual 0.02758 m; no physical trial.','thirteenth_crouch55_descent50':'Source joint reference RMSE 0.20494 rad and foot orientation/clearance preflight failed; no physical trial.'},trials=rows)
+(p/'continued_tracking_report.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({k:v for k,v in report.items() if k in ('completed_physical_trials','full_motion_tracking_passed','selected_profile_unchanged')}))
+for r in rows:print(r['run'],r.get('measured_landings'),r.get('last_source_frame'),r['status'])

@@ -1,0 +1,80 @@
+{
+  "scope": "Offline diagnostics only, no QP solution applied",
+  "cases": [
+    {
+      "sample": "thirteenth_waist_metric4.qp_2100",
+      "primary_posture": "all",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.237055564881302e-14,
+        "iterations": 24,
+        "accepted": true
+      },
+      "root_acceleration": [
+        1.966235905314181,
+        2.073657754139216,
+        3.726117558919825,
+        32.27614426984819,
+        2.0210310999188073,
+        14.53970943819277
+      ],
+      "waist_acceleration": [
+        -58.52585664360069,
+        15.788549155986924,
+        -36.06215082281282
+      ],
+      "leg_acceleration_norm": 317.8807845803909,
+      "posture_residual_norm": 383.5947087058342
+    },
+    {
+      "sample": "thirteenth_waist_metric4.qp_2100",
+      "primary_posture": "upper",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.105427357601002e-14,
+        "iterations": 22,
+        "accepted": true
+      },
+      "root_acceleration": [
+        -0.5558883664353534,
+        4.374348383131334,
+        0.5918520921603178,
+        37.449755355021445,
+        -30.996768322614436,
+        24.541216871763286
+      ],
+      "waist_acceleration": [
+        -0.6345629791760712,
+        -21.966817746992454,
+        8.08355109793545
+      ],
+      "leg_acceleration_norm": 1185.1084802528724,
+      "posture_residual_norm": 1276.236950677362
+    },
+    {
+      "sample": "thirteenth_waist_metric4.qp_2100",
+      "primary_posture": "upper_and_swing",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.947598300641403e-14,
+        "iterations": 23,
+        "accepted": true
+      },
+      "root_acceleration": [
+        -0.8561743384975944,
+        4.586501521858424,
+        0.4544118564252182,
+        37.999838049463825,
+        -26.15712712489441,
+        23.707901007974524
+      ],
+      "waist_acceleration": [
+        0.11406289124418774,
+        -19.71963046487337,
+        5.631349466446154
+      ],
+      "leg_acceleration_norm": 1177.2130262154149,
+      "posture_residual_norm": 1265.8339011375413
+    }
+  ]
+}

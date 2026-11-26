@@ -1,0 +1,17 @@
+{
+  "test": "persistent integration + explicit MIT PD at 500 Hz",
+  "source_code_unchanged": true,
+  "verified_landings": 3,
+  "stop_time_s": 1.14,
+  "stop_source_frame": 230.82618589682875,
+  "stop_reason": "root orientation error 0.35133649009615014 rad exceeds 0.35 rad",
+  "position_integrator_max_residual_rad": 5.960464477539063e-08,
+  "position_seed_continuity_max_rad": 0.0,
+  "velocity_seed_continuity_max_rad_s": 0.0,
+  "servo_saturation_fraction": 0.0,
+  "servo_valid": true,
+  "final_qp_validated": [
+    true
+  ],
+  "peak_pd_torque_norm_Nm": 31.451303482055664
+}

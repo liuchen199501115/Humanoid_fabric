@@ -1,0 +1,146 @@
+[
+  {
+    "run": "five_tube10",
+    "time": 3.2920000000000003,
+    "comparisons": [
+      {
+        "stride": 0,
+        "feasible": false,
+        "joint_bound": -65.08589935302734,
+        "orientation_bound": -3.130671501159668
+      },
+      {
+        "stride": 2,
+        "feasible": false,
+        "joint_bound": -65.08793640136719,
+        "orientation_bound": -3.3292741775512695
+      },
+      {
+        "stride": 4,
+        "feasible": false,
+        "joint_bound": -64.8604736328125,
+        "orientation_bound": -3.2508463859558105
+      },
+      {
+        "stride": 6,
+        "feasible": false,
+        "joint_bound": -64.87513732910156,
+        "orientation_bound": -3.2332582473754883
+      },
+      {
+        "stride": 10,
+        "feasible": false,
+        "joint_bound": -65.03114318847656,
+        "orientation_bound": -3.1334757804870605
+      }
+    ]
+  },
+  {
+    "run": "tube10_smooth6_282",
+    "time": 3.236,
+    "comparisons": [
+      {
+        "stride": 0,
+        "feasible": false,
+        "joint_bound": -45.10888671875,
+        "orientation_bound": -7.896086692810059
+      },
+      {
+        "stride": 2,
+        "feasible": false,
+        "joint_bound": -44.85237121582031,
+        "orientation_bound": -8.252214431762695
+      },
+      {
+        "stride": 4,
+        "feasible": false,
+        "joint_bound": -44.91703796386719,
+        "orientation_bound": -8.141668319702148
+      },
+      {
+        "stride": 6,
+        "feasible": false,
+        "joint_bound": -44.327022552490234,
+        "orientation_bound": -8.151897430419922
+      },
+      {
+        "stride": 10,
+        "feasible": false,
+        "joint_bound": -43.526634216308594,
+        "orientation_bound": -8.356590270996094
+      }
+    ]
+  },
+  {
+    "run": "tube10_smooth4_282",
+    "time": 3.222,
+    "comparisons": [
+      {
+        "stride": 0,
+        "feasible": false,
+        "joint_bound": -54.3652458190918,
+        "orientation_bound": -7.528494834899902
+      },
+      {
+        "stride": 2,
+        "feasible": false,
+        "joint_bound": -53.46156311035156,
+        "orientation_bound": -7.519716262817383
+      },
+      {
+        "stride": 4,
+        "feasible": false,
+        "joint_bound": -51.135440826416016,
+        "orientation_bound": -7.160442352294922
+      },
+      {
+        "stride": 6,
+        "feasible": false,
+        "joint_bound": -51.79779815673828,
+        "orientation_bound": -7.712130546569824
+      },
+      {
+        "stride": 10,
+        "feasible": false,
+        "joint_bound": -51.064762115478516,
+        "orientation_bound": -7.985994338989258
+      }
+    ]
+  },
+  {
+    "run": "tube10_smooth10_282",
+    "time": 3.242,
+    "comparisons": [
+      {
+        "stride": 0,
+        "feasible": false,
+        "joint_bound": -33.64825439453125,
+        "orientation_bound": 1.2581642866134644
+      },
+      {
+        "stride": 2,
+        "feasible": false,
+        "joint_bound": -33.40895080566406,
+        "orientation_bound": 1.3381075859069824
+      },
+      {
+        "stride": 4,
+        "feasible": false,
+        "joint_bound": -33.50020980834961,
+        "orientation_bound": 1.2735005617141724
+      },
+      {
+        "stride": 6,
+        "feasible": false,
+        "joint_bound": -33.55390167236328,
+        "orientation_bound": 1.2026830911636353
+      },
+      {
+        "stride": 10,
+        "feasible": false,
+        "joint_bound": -32.61647415161133,
+        "orientation_bound": 1.0530685186386108
+      }
+    ]
+  }
+]

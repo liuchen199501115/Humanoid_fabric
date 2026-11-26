@@ -1,0 +1,53 @@
+[
+  {
+    "name": "ten_clock14_sh16_pelvis1_iter50k",
+    "prefix_fields": 167,
+    "prefix_updates": 2010,
+    "last_prefix_time": 4.018,
+    "native_attempts_per_update": 1,
+    "exact_qp_torque": true,
+    "zero_extra_pd": true,
+    "late_budget": [
+      50000
+    ],
+    "late_qp_wall_quantiles_s": [
+      0.3932840764973662,
+      0.4248146858008113,
+      0.43741619000502396
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis4_iter50k",
+    "prefix_fields": 167,
+    "prefix_updates": 2010,
+    "last_prefix_time": 4.018,
+    "native_attempts_per_update": 1,
+    "exact_qp_torque": true,
+    "zero_extra_pd": true,
+    "late_budget": [
+      50000
+    ],
+    "late_qp_wall_quantiles_s": [
+      0.002291856988449581,
+      0.17226654420082937,
+      0.4268803180020768
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_anchor884_iter50k",
+    "prefix_fields": 167,
+    "prefix_updates": 2010,
+    "last_prefix_time": 4.018,
+    "native_attempts_per_update": 1,
+    "exact_qp_torque": true,
+    "zero_extra_pd": true,
+    "late_budget": [
+      50000
+    ],
+    "late_qp_wall_quantiles_s": [
+      0.0030256395039032213,
+      0.35410107980278555,
+      0.3556011680047959
+    ]
+  }
+]

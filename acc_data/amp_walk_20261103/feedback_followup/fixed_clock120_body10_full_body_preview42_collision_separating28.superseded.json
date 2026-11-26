@@ -1,0 +1,8 @@
+{
+  "reason": "Superseded by corrected rolling surface kinematics after offline preflights at actual 3.680 and 3.708 s. Incomplete trial, no new landing claim.",
+  "stopped_pids": [
+    1027171,
+    1027576
+  ],
+  "full_motion_tracking_passed": false
+}

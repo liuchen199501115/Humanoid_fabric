@@ -1,0 +1,14 @@
+{
+  "closed_loop_runs": 12,
+  "new_parameter_candidates": 10,
+  "baseline_reproductions": 2,
+  "best_verified_landings": 3,
+  "expected_landings": 29,
+  "controller_source_hashes_unchanged": true,
+  "baseline_bitwise_reproduced": true,
+  "single_qp_no_task_cache_projected_reference_applied_qp_torque_verified": true,
+  "original_acceptance_unchanged": true,
+  "offline_acceleration_bound_snapshots": 4,
+  "analysis_scripts_compile": true,
+  "default_configuration_changed": false
+}

@@ -1,0 +1,373 @@
+{
+  "scope": "Every physical attempt starts at source frame 0 and requests all 2000 frames and 29 ordered landings through examples/test_g1.py. Original fidelity and physical validation remain active.",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "full_motion_tracking_passed": false,
+  "completed_physical_trials": 20,
+  "selected_profile_unchanged": true,
+  "tests": {
+    "modules": [
+      "test_g1_full_tracking",
+      "test_g1_stance_heading",
+      "test_g1_torque_continuity",
+      "test_task_priority",
+      "test_contact_patches",
+      "test_toe_contact",
+      "test_rigid_body_frames",
+      "test_reference_tracking_audit",
+      "test_source_priority"
+    ],
+    "tests_run": 70,
+    "failures": 0,
+    "errors": 0,
+    "successful": true
+  },
+  "default_disabled_options": [
+    "orientation-tube-start",
+    "late-physics-substeps-start",
+    "stance-heading-start",
+    "torque-continuity-start",
+    "contact-rays-start"
+  ],
+  "reference_audits": [
+    "current_force_fit150.json",
+    "current_force_fit150.extrema.json",
+    "current_wrench_audit.json",
+    "thirteenth_descent35.json",
+    "thirteenth_crouch45_descent35.json",
+    "thirteenth_crouch55_descent50.json"
+  ],
+  "rejected_offline_attempts": {
+    "current_late_wrench_fit": "IK position residual 0.003035 m at iteration 2; remaining linearized ground-moment slack 0.237 m normalized by mg; no physical trial.",
+    "thirteenth_descent35": "IK position residual 0.02758 m; no physical trial.",
+    "thirteenth_crouch55_descent50": "Source joint reference RMSE 0.20494 rad and foot orientation/clearance preflight failed; no physical trial."
+  },
+  "trials": [
+    {
+      "run": "force_fit150_physics",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 806.1199999999999,
+      "measured_landings": 9,
+      "first_fidelity_exceeded": {
+        "time_s": 3.5380000000000003,
+        "source_frame": 806.1199999999999,
+        "joint_rmse_rad": 0.20224744081497192,
+        "root_position_m": 0.04019927233457565,
+        "root_orientation_rad": 0.1632866157303821
+      },
+      "prefix_fidelity_passing_landings": 9,
+      "raw_source_prefix_landings": 9
+    },
+    {
+      "run": "root_margin150_turn",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 992.36,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.314,
+        "source_frame": 992.36,
+        "joint_rmse_rad": 0.1553008109331131,
+        "root_position_m": 0.15680938959121704,
+        "root_orientation_rad": 0.3509462638961492
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "root_pose_margin_turn",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 981.8000000000002,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.2700000000000005,
+        "source_frame": 981.8000000000002,
+        "joint_rmse_rad": 0.13208416104316711,
+        "root_position_m": 0.16228264570236206,
+        "root_orientation_rad": 0.3590225261294284
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "late_substeps4_turn",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 906.9200000000001,
+      "measured_landings": 10,
+      "first_fidelity_exceeded": {
+        "time_s": 3.958,
+        "source_frame": 906.9200000000001,
+        "joint_rmse_rad": 0.20051398873329163,
+        "root_position_m": 0.17124593257904053,
+        "root_orientation_rad": 0.28759588292328075
+      },
+      "prefix_fidelity_passing_landings": 10,
+      "raw_source_prefix_landings": 10
+    },
+    {
+      "run": "late_substeps4_held_effort",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 906.9200000000001,
+      "measured_landings": 10,
+      "first_fidelity_exceeded": {
+        "time_s": 3.958,
+        "source_frame": 906.9200000000001,
+        "joint_rmse_rad": 0.20051398873329163,
+        "root_position_m": 0.17124593257904053,
+        "root_orientation_rad": 0.28759588292328075
+      },
+      "prefix_fidelity_passing_landings": 10,
+      "raw_source_prefix_landings": 10
+    },
+    {
+      "run": "late_substeps4_after12",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1002.44,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.15876439213752747,
+        "root_position_m": 0.19558697938919067,
+        "root_orientation_rad": 0.35156797501053166
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "root_margin_pelvis_after12",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 996.68,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.332,
+        "source_frame": 996.68,
+        "joint_rmse_rad": 0.15586066246032715,
+        "root_position_m": 0.16721832752227783,
+        "root_orientation_rad": 0.35134610343008116
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "thirteenth_crouch45_descent35_physics",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 999.08,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.3420000000000005,
+        "source_frame": 999.08,
+        "joint_rmse_rad": 0.15226344764232635,
+        "root_position_m": 0.1966545432806015,
+        "root_orientation_rad": 0.3526597117074393
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "roll_damping_after12",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1002.44,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.1558346450328827,
+        "root_position_m": 0.19741222262382507,
+        "root_orientation_rad": 0.3554572805651157
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "crouch_descent_root_margin",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 995.72,
+      "measured_landings": 11,
+      "first_fidelity_exceeded": {
+        "time_s": 4.328,
+        "source_frame": 995.72,
+        "joint_rmse_rad": 0.16544881463050842,
+        "root_position_m": 0.16735205054283142,
+        "root_orientation_rad": 0.35551997542715275
+      },
+      "prefix_fidelity_passing_landings": 11,
+      "raw_source_prefix_landings": 11
+    },
+    {
+      "run": "crouch_descent_swing_priority",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 984.2,
+      "measured_landings": 12,
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "pelvis_replace_before_turn",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1000.5199999999999,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.348,
+        "source_frame": 1000.5199999999999,
+        "joint_rmse_rad": 0.17962566018104553,
+        "root_position_m": 0.19452883303165436,
+        "root_orientation_rad": 0.35164252848716304
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "flatten_after12",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1001.96,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.354,
+        "source_frame": 1001.96,
+        "joint_rmse_rad": 0.16160915791988373,
+        "root_position_m": 0.1950719803571701,
+        "root_orientation_rad": 0.3515681868262767
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "stance_heading_turn_v3",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1002.44,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.15450982749462128,
+        "root_position_m": 0.1984705626964569,
+        "root_orientation_rad": 0.3508853037534012
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "heading_settled_root_margin",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 993.8000000000001,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.32,
+        "source_frame": 993.8000000000001,
+        "joint_rmse_rad": 0.14955416321754456,
+        "root_position_m": 0.16075070202350616,
+        "root_orientation_rad": 0.3509906226234496
+      },
+      "prefix_fidelity_passing_landings": 12,
+      "raw_source_prefix_landings": 12
+    },
+    {
+      "run": "lateral_com_first_before_turn_v2",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 861.32,
+      "measured_landings": 10,
+      "prefix_fidelity_passing_landings": 10
+    },
+    {
+      "run": "com_xyz_first_load100",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 859.4000000000001,
+      "measured_landings": 10,
+      "first_fidelity_exceeded": {
+        "time_s": 3.7600000000000002,
+        "source_frame": 859.4000000000001,
+        "joint_rmse_rad": 0.2002904862165451,
+        "root_position_m": 0.05471638962626457,
+        "root_orientation_rad": 0.29016757276929017
+      },
+      "prefix_fidelity_passing_landings": 10
+    },
+    {
+      "run": "twelfth_heading_hold_physics",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1002.44,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.14921969175338745,
+        "root_position_m": 0.19981667399406433,
+        "root_orientation_rad": 0.3537921044872603
+      },
+      "prefix_fidelity_passing_landings": 12
+    },
+    {
+      "run": "torque_continuity10_turn",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 977.9600000000003,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.2540000000000004,
+        "source_frame": 977.9600000000003,
+        "joint_rmse_rad": 0.2009950876235962,
+        "root_position_m": 0.1800873875617981,
+        "root_orientation_rad": 0.2972354229589312
+      },
+      "prefix_fidelity_passing_landings": 12
+    },
+    {
+      "run": "torque_continuity100_after12",
+      "status": "finished",
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "last_source_frame": 1001.96,
+      "measured_landings": 12,
+      "first_fidelity_exceeded": {
+        "time_s": 4.354,
+        "source_frame": 1001.96,
+        "joint_rmse_rad": 0.16109271347522736,
+        "root_position_m": 0.19511933624744415,
+        "root_orientation_rad": 0.35046298668246156
+      },
+      "prefix_fidelity_passing_landings": 12
+    },
+    {
+      "run": "contact_rays8_turn",
+      "status": "running",
+      "returncode": null,
+      "full_motion_tracking_passed": false
+    }
+  ]
+}

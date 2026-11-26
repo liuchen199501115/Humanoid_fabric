@@ -1,0 +1,22 @@
+baseline_verify 3 1.356 QP validation failed
+best_verify 5 2.308 QP validation failed
+contact_feedback_fixed 0 0.22 Original-source fidelity limit exceeded
+contact_only 1 0.23800000000000002 Original-source fidelity limit exceeded
+landing_pos16 5 2.374 Original-source fidelity limit exceeded
+landing_pos4 5 2.12 QP validation failed
+no_momentum 1 0.444 Original-source fidelity limit exceeded
+posture100 1 0.602 Original-source fidelity limit exceeded
+posture1000 1 0.47800000000000004 Original-source fidelity limit exceeded
+primary_only 1 0.52 Original-source fidelity limit exceeded
+primary_prox 5 2.376 Original-source fidelity limit exceeded
+primary_pure_repeat 5 2.308 QP validation failed
+primary_soft001 1 0.42 Original-source fidelity limit exceeded
+primary_soft10 5 2.344 QP validation failed
+primary_soft100 5 2.34 QP validation failed
+slow050 1 0.746 Original-source fidelity limit exceeded
+slow075 1 0.9500000000000001 Original-source fidelity limit exceeded
+tracking 1 0.598 Original-source fidelity limit exceeded
+tracking100 1 0.628 Original-source fidelity limit exceeded
+tracking_oldweights 0 0.2 Original-source fidelity limit exceeded
+transfer040 5 2.376 Original-source fidelity limit exceeded
+transfer_fast 5 2.436 Original-source fidelity limit exceeded

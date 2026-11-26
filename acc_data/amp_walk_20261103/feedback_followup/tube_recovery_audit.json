@@ -1,0 +1,6 @@
+{
+  "valid_solution_no_retry": true,
+  "only_auxiliary_joint_tube_softened": true,
+  "root_and_preexisting_physical_constraints_preserved": true,
+  "input_tasks_not_mutated": true
+}

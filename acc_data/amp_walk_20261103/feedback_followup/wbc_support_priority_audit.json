@@ -1,0 +1,224 @@
+[
+  {
+    "time": 3.9,
+    "added_support_weight": 0.0,
+    "status": "Solved",
+    "residual": 6.394884621840902e-14,
+    "com_acceleration": [
+      3.8509026354515097,
+      -0.37594151727187386,
+      2.6097592987774068
+    ],
+    "root_angular_acceleration": [
+      -43.350970394568876,
+      58.85522370608687,
+      -4.560814449515242
+    ],
+    "max_acceleration_difference": 0.023856213411086458,
+    "support_tasks": [
+      {
+        "name": "support_orientation_1",
+        "active": [
+          false,
+          true,
+          false
+        ],
+        "desired": [
+          -91.1734390258789,
+          -16.524789810180664,
+          -40.319435119628906
+        ],
+        "achieved": [
+          -1.2340963607471167e-05,
+          66.25675220515907,
+          9.199860855346742e-06
+        ]
+      }
+    ]
+  },
+  {
+    "time": 3.9,
+    "added_support_weight": 4.0,
+    "status": "Solved",
+    "residual": 1.1368683772161603e-13,
+    "com_acceleration": [
+      3.6395805912345964,
+      -0.028518615159470073,
+      2.1483011219810297
+    ],
+    "root_angular_acceleration": [
+      -42.27174429297406,
+      61.103434423285066,
+      -7.8452788203754595
+    ],
+    "max_acceleration_difference": 87.39483437558198,
+    "support_tasks": [
+      {
+        "name": "support_orientation_1",
+        "active": [
+          false,
+          true,
+          false
+        ],
+        "desired": [
+          -91.1734390258789,
+          -16.524789810180664,
+          -40.319435119628906
+        ],
+        "achieved": [
+          -6.602927243193335e-06,
+          -15.491337170937868,
+          -2.312100966150865e-05
+        ]
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "added_support_weight": 0.0,
+    "status": "Solved",
+    "residual": 2.7000623958883807e-13,
+    "com_acceleration": [
+      2.519622831908468,
+      0.5466559776898268,
+      -3.375451244735915
+    ],
+    "root_angular_acceleration": [
+      0.8614910271322402,
+      -86.24312344994708,
+      -27.473521322921098
+    ],
+    "max_acceleration_difference": 0.031094946529108825,
+    "support_tasks": [
+      {
+        "name": "support_orientation_0",
+        "active": [
+          true,
+          true,
+          true
+        ],
+        "desired": [
+          -11.24698257446289,
+          22.406635284423828,
+          22.31901741027832
+        ],
+        "achieved": [
+          -33.32869492325074,
+          153.56318092632412,
+          119.22501364618023
+        ]
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "added_support_weight": 4.0,
+    "status": "Solved",
+    "residual": 8.881784197001252e-13,
+    "com_acceleration": [
+      1.0734378160823548,
+      -1.3089114786889782,
+      0.6083672112110932
+    ],
+    "root_angular_acceleration": [
+      -2.8887155127140685,
+      -96.74225239193872,
+      -46.22618072168687
+    ],
+    "max_acceleration_difference": 157.33853373462952,
+    "support_tasks": [
+      {
+        "name": "support_orientation_0",
+        "active": [
+          true,
+          true,
+          true
+        ],
+        "desired": [
+          -11.24698257446289,
+          22.406635284423828,
+          22.31901741027832
+        ],
+        "achieved": [
+          -11.883611854506313,
+          25.682901827799043,
+          25.06023733405479
+        ]
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "added_support_weight": 0.0,
+    "status": "Solved",
+    "residual": 1.397637561240117e-11,
+    "com_acceleration": [
+      -0.5678453703643225,
+      -0.44676238781306665,
+      -8.606634381023667
+    ],
+    "root_angular_acceleration": [
+      48.934105195117,
+      -243.49908332085494,
+      -6.383245786697359
+    ],
+    "max_acceleration_difference": 0.020081809976545628,
+    "support_tasks": [
+      {
+        "name": "support_orientation_0",
+        "active": [
+          true,
+          true,
+          true
+        ],
+        "desired": [
+          -22.095823287963867,
+          4.827632904052734,
+          -12.206584930419922
+        ],
+        "achieved": [
+          -399.5317090981189,
+          1870.9631749341777,
+          -886.0075315084509
+        ]
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "added_support_weight": 4.0,
+    "status": "Solved",
+    "residual": 4.547473508864641e-12,
+    "com_acceleration": [
+      -0.28306849322306604,
+      -0.22298212603320877,
+      -9.210431874462465
+    ],
+    "root_angular_acceleration": [
+      22.93214212605194,
+      -337.69165650639974,
+      -168.69097719772154
+    ],
+    "max_acceleration_difference": 1840.1446161608212,
+    "support_tasks": [
+      {
+        "name": "support_orientation_0",
+        "active": [
+          true,
+          true,
+          true
+        ],
+        "desired": [
+          -22.095823287963867,
+          4.827632904052734,
+          -12.206584930419922
+        ],
+        "achieved": [
+          -175.22188195865044,
+          417.8445994094807,
+          -142.77249630690386
+        ]
+      }
+    ]
+  }
+]

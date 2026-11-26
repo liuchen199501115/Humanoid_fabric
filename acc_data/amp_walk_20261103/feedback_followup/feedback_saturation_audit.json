@@ -1,0 +1,88 @@
+{
+  "recording": "acc_data/amp_walk_20261102/contact_clock_followup/vertical_feedback_verified.failure.npz",
+  "feedback_gain": {
+    "stiffness": 180,
+    "damping": 24,
+    "cap": 30
+  },
+  "samples": [
+    {
+      "time_s": 0.9,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.33823174238204956,
+      "reference_q": -0.03354085609316826,
+      "velocity": -2.4991140365600586,
+      "reference_velocity": -0.7705382704734802,
+      "reference_acceleration": 16.603736877441406,
+      "unclipped_feedback": 96.3301773071289,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": 46.603736877441406,
+      "predicted_acceleration": 39.02873229980469
+    },
+    {
+      "time_s": 1.0,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.4994775950908661,
+      "reference_q": -0.11006913334131241,
+      "velocity": -0.7927807569503784,
+      "reference_velocity": -0.6204233765602112,
+      "reference_acceleration": -2.9552736282348633,
+      "unclipped_feedback": 74.23009490966797,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": 27.044727325439453,
+      "predicted_acceleration": 14.89899730682373
+    },
+    {
+      "time_s": 1.4000000000000001,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.48476091027259827,
+      "reference_q": -0.23192225396633148,
+      "velocity": -1.0985238552093506,
+      "reference_velocity": 3.5335605144500732,
+      "reference_acceleration": -17.538148880004883,
+      "unclipped_feedback": 156.6809844970703,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": 12.461851119995117,
+      "predicted_acceleration": 10.968818664550781
+    },
+    {
+      "time_s": 1.5,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.6546291708946228,
+      "reference_q": 0.1661406308412552,
+      "velocity": -3.144690752029419,
+      "reference_velocity": 1.4891042709350586,
+      "reference_acceleration": -47.18405532836914,
+      "unclipped_feedback": 258.94964599609375,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": -17.18405532836914,
+      "predicted_acceleration": -17.461801528930664
+    },
+    {
+      "time_s": 1.56,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.8624622225761414,
+      "reference_q": 0.18308717012405396,
+      "velocity": -3.387476682662964,
+      "reference_velocity": -0.4051934480667114,
+      "reference_acceleration": -39.372398376464844,
+      "unclipped_feedback": 259.773681640625,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": -9.372398376464844,
+      "predicted_acceleration": -10.828988075256348
+    },
+    {
+      "time_s": 2.5,
+      "joint": "left_ankle_pitch_joint",
+      "q": -0.6722311973571777,
+      "reference_q": 0.17977429926395416,
+      "velocity": -2.2672030925750732,
+      "reference_velocity": 0.8888093829154968,
+      "reference_acceleration": -10.740035057067871,
+      "unclipped_feedback": 229.10528564453125,
+      "clipped_feedback": 30.0,
+      "requested_acceleration": 19.259963989257812,
+      "predicted_acceleration": 16.586803436279297
+    }
+  ]
+}

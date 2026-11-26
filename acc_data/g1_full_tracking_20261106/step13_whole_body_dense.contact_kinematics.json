@@ -1,0 +1,50 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_whole_body_dense.npz",
+  "candidate_sha256": "5aad1519268827a51c0e63425568d7f94d12ea6df6c206ba23ff3159e2a24ca4",
+  "scope": "Nominal material-point velocity of the lowest authored collision sphere under source contact labels. Nonzero velocity is inconsistent with sticking/ideal rolling at that point. Does not establish actual contact or impact; nonzero material acceleration alone is not a rolling-contact failure.",
+  "frame_range": [
+    720,
+    1035
+  ],
+  "frame_rate": 240.0,
+  "sample_count": 766,
+  "interior_excludes_event_distance_frames": 6,
+  "peak_interior_speed": {
+    "frame": 768.0,
+    "foot": "left",
+    "mode": 3,
+    "distance_to_contact_event_frames": 6.0,
+    "lowest_surface_height_m": -0.0005100414452389596,
+    "lowest_material_point_speed_m_s": 1.1760049681703848,
+    "lowest_material_point_velocity_m_s": [
+      1.1247186244906167,
+      -0.34343732764806917,
+      0.006819300793766941
+    ],
+    "material_point_acceleration_m_s2": [
+      -72.94613752450068,
+      24.085328985558153,
+      -1.2780653336406707
+    ]
+  },
+  "peak_near_ground_interior_speed": {
+    "frame": 768.0,
+    "foot": "left",
+    "mode": 3,
+    "distance_to_contact_event_frames": 6.0,
+    "lowest_surface_height_m": -0.0005100414452389596,
+    "lowest_material_point_speed_m_s": 1.1760049681703848,
+    "lowest_material_point_velocity_m_s": [
+      1.1247186244906167,
+      -0.34343732764806917,
+      0.006819300793766941
+    ],
+    "material_point_acceleration_m_s2": [
+      -72.94613752450068,
+      24.085328985558153,
+      -1.2780653336406707
+    ]
+  },
+  "interior_speed_p95_m_s": 0.3517619228716778,
+  "physical_tracking_certified": false
+}

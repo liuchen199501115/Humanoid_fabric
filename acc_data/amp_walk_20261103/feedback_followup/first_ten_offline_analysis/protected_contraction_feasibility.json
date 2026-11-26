@@ -1,0 +1,1181 @@
+{
+  "scope": "Offline instantaneous minimum horizontal contraction slack; lambda=4,kappa=2. Every saved constraint retained. Joint acceleration caps 100/200/400/800 rad/s^2 are diagnostic scenarios, not certified motor limits. Vertical acceleration may change by at most 0.5 m/s^2 from online value. Active swing linear residual may grow by at most 0.5 m/s^2; swing angular, torso and pelvis angular residual by at most 5 rad/s^2 per component. These preserve existing residual sizes, not necessarily good tracking. No code changes and no closed-loop validation.",
+  "records": [
+    {
+      "time": 3.5,
+      "online_joint_acceleration_peak": 236.8018798828125,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.8929313184009045,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.2737367544323206e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02258561150163918,
+          "minimum_slack": 0.02258561150163918,
+          "zero_slack_feasible": false,
+          "constraint_violation": 6.252776074688882e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.056970146575274,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5579538487363607e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02257645224123328,
+          "minimum_slack": 0.02257645224123328,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.6716406864579767e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022577247851708115,
+          "minimum_slack": 0.022577247851708115,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.9895196601282805e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022579678708845696,
+          "minimum_slack": 0.022579678708845696,
+          "zero_slack_feasible": false,
+          "constraint_violation": 4.277467269275803e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02258267150411153,
+          "minimum_slack": 0.02258267150411153,
+          "zero_slack_feasible": false,
+          "constraint_violation": 5.10880227011512e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.2710794708636204,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.979039320256561e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02256158407122455,
+          "minimum_slack": 0.02256158407122455,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.8421709430404007e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022562521097030608,
+          "minimum_slack": 0.022562521097030608,
+          "zero_slack_feasible": false,
+          "constraint_violation": 8.810729923425242e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02256918903623628,
+          "minimum_slack": 0.02256918903623628,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.1600499167107046e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022579601519847614,
+          "minimum_slack": 0.022579601519847614,
+          "zero_slack_feasible": false,
+          "constraint_violation": 6.116351869422942e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.523882715554027,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.5916157281026244e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022534944612432994,
+          "minimum_slack": 0.022534944612432994,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.0487610779819079e-10
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.02253438606518099,
+          "minimum_slack": 0.02253438606518099,
+          "zero_slack_feasible": false,
+          "constraint_violation": 5.715605766454246e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022561449603150985,
+          "minimum_slack": 0.022561449603150985,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.1766587704187259e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.022575815640367924,
+          "minimum_slack": 0.022575815640367924,
+          "zero_slack_feasible": false,
+          "constraint_violation": 6.764366844436154e-12
+        }
+      ]
+    },
+    {
+      "time": 3.7,
+      "online_joint_acceleration_peak": 157.0274200439453,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.2932508571296797,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 4.831690603168681e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553258670647863,
+          "minimum_slack": 0.8553258670647863,
+          "zero_slack_feasible": false,
+          "constraint_violation": 7.958078640513122e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553332457938119,
+          "minimum_slack": 0.8553332457938119,
+          "zero_slack_feasible": false,
+          "constraint_violation": 4.860112312599085e-12
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.0575609885664963,
+          "minimum_slack": 2.0575609885664963,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.2791745334295967,
+          "minimum_slack": 2.2791745334295967,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.7053025658242404e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.8331143388229085,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.3642420526593924e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.855312806715343,
+          "minimum_slack": 0.855312806715343,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553301518029164,
+          "minimum_slack": 0.8553301518029164,
+          "zero_slack_feasible": false,
+          "constraint_violation": 9.094947017729282e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 1.1457088221286487,
+          "minimum_slack": 1.1457088221286487,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.126388037344441e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 1.1567373770694642,
+          "minimum_slack": 1.1567373770694642,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.979039320256561e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -3.5127925388999524,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 6.821210263296962e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8552913278309129,
+          "minimum_slack": 0.8552913278309129,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.728928277269006e-11
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553165846995716,
+          "minimum_slack": 0.8553165846995716,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.7053025658242404e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553236067772625,
+          "minimum_slack": 0.8553236067772625,
+          "zero_slack_feasible": false,
+          "constraint_violation": 4.035882739117369e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553354422155754,
+          "minimum_slack": 0.8553354422155754,
+          "zero_slack_feasible": false,
+          "constraint_violation": 5.9401372709544376e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.087436653157196,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 6.093614501878619e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8552785434645669,
+          "minimum_slack": 0.8552785434645669,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.0416556506243069e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8552980631188385,
+          "minimum_slack": 0.8552980631188385,
+          "zero_slack_feasible": false,
+          "constraint_violation": 4.689582056016661e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.855305855426395,
+          "minimum_slack": 0.855305855426395,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.183231456205249e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.8553305362468757,
+          "minimum_slack": 0.8553305362468757,
+          "zero_slack_feasible": false,
+          "constraint_violation": 5.6218141253339127e-11
+        }
+      ]
+    },
+    {
+      "time": 3.8,
+      "online_joint_acceleration_peak": 103.00896453857422,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -6.907704761690987,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 7.105427357601002e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.125949745774935,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5011104298755527e-12
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12594333436547345,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.042810365310288e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12593446793959995,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.1013412404281553e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.5752092222097278,
+          "minimum_slack": 0.5752092222097278,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.9184653865522705e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -7.452129803037431,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.3642420526593924e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12596377823693716,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.4726887204451486e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12594842943143103,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 7.389644451905042e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.1259366203061827,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5625215727131945e-08
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.11878615826984751,
+          "minimum_slack": 0.11878615826984751,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.240074875066057e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -7.9060711457853206,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.8990143619012088e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12599179913278258,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.552713678800501e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.1259681567219766,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.1368683772161603e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.125939010965483,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.4991818392550158e-08
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.024625683468466608,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.5187850976872141e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -8.668336510251214,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.3642420526593924e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.1260353761974593,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 9.848193371908565e-10
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.1259935930440954,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.6716406864579767e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12594210771743564,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.937739568802499e-08
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.1259408453197799,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5337953957205173e-11
+        }
+      ]
+    },
+    {
+      "time": 4.0,
+      "online_joint_acceleration_peak": 112.62262725830078,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.278143521260652,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.7711166694643907e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -3.995968555433146,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 5.837819117004983e-11
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.0529781622166352,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.268496584496461e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.12882960385745168,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.1316282072803006e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 0.7656084557336429,
+          "minimum_slack": 0.7656084557336429,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.0605739337042905e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.937819008502713,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.1368683772161603e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.313239353885408,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 6.821210263296962e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.2325319098026775,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 6.5210059574383195e-12
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3435207800772924,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 4.973799150320701e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.21551273006644833,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.8474111129762605e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -5.703652912556777,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5153212845907547e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.749754835427943,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.873434823413845e-11
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -3.7662893008729554,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.3021584638627246e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -2.6145331577542907,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 7.105427357601002e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.838208745993657,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 8.128608897095546e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -6.842375801180667,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.290789780090563e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.749779927844372,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.0468072509393096e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.7497416337720875,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 8.952838470577262e-13
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.446620270664479,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.1411316336307209e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.159718283469616,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 5.9969806898152456e-12
+        }
+      ]
+    },
+    {
+      "time": 4.15,
+      "online_joint_acceleration_peak": 176.11744689941406,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -4.825211237230404,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.2505552149377763e-12
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3765616160341574,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.8829382497642655e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -0.2981644541510664,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.765876499528531e-13
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -5.484194805669196,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3765942762891843,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.496847173460992e-11
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3765688520447106,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.5579538487363607e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.278701307098034,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.6342482922482304e-13
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.1116029263227831,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 2.6290081223123707e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -6.18307368816485,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 4.831690603168681e-13
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3766609358935429,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 9.583267512880411e-11
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3766234450345425,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.154809746774845e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.376550084860471,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 9.038103598868474e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.2843971170315092,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 1.7053025658242404e-13
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -7.111462234087009,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.751665644813329e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.376784922780851,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 6.707523425575346e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.376747514537683,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 3.751665644813329e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3765962736208182,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 9.171685633191373e-11
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": -1.3765845424096361,
+          "minimum_slack": 0.0,
+          "zero_slack_feasible": true,
+          "constraint_violation": 5.115907697472721e-13
+        }
+      ]
+    },
+    {
+      "time": 4.25,
+      "online_joint_acceleration_peak": 504.53125,
+      "cases": [
+        {
+          "cap": 100.0,
+          "protection": "cap_only",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 100.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "cap_only",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 200.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 2,
+          "constraints_feasible": false
+        },
+        {
+          "cap": 400.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.647305328879746,
+          "minimum_slack": 2.647305328879746,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.4442670110147446e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.709819931197142,
+          "minimum_slack": 2.709819931197142,
+          "zero_slack_feasible": false,
+          "constraint_violation": 9.563905223330949e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.9368729216706964,
+          "minimum_slack": 2.9368729216706964,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.8705926524708048e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.9869968323700444,
+          "minimum_slack": 2.9869968323700444,
+          "zero_slack_feasible": false,
+          "constraint_violation": 5.899281063648232e-12
+        },
+        {
+          "cap": 400.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.9925987323577345,
+          "minimum_slack": 2.9925987323577345,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.6484591469634324e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "cap_only",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 1.8491571089885,
+          "minimum_slack": 1.8491571089885,
+          "zero_slack_feasible": false,
+          "constraint_violation": 1.6342482922482304e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.347981450900022,
+          "minimum_slack": 2.347981450900022,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.1600499167107046e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.714659724106305,
+          "minimum_slack": 2.714659724106305,
+          "zero_slack_feasible": false,
+          "constraint_violation": 3.254285729781259e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.9212089144636932,
+          "minimum_slack": 2.9212089144636932,
+          "zero_slack_feasible": false,
+          "constraint_violation": 2.1600499167107046e-12
+        },
+        {
+          "cap": 800.0,
+          "protection": "vertical_swing_torso_pelvis",
+          "status": 0,
+          "constraints_feasible": true,
+          "minimum_contraction_excess": 2.9410609454609213,
+          "minimum_slack": 2.9410609454609213,
+          "zero_slack_feasible": false,
+          "constraint_violation": 9.094947017729282e-13
+        }
+      ]
+    }
+  ]
+}

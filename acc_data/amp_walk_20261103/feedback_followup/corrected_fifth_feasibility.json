@@ -1,0 +1,18 @@
+{
+  "all": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "without_aux_position": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "without_aux_orientation": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  "without_aux_roots": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  }
+}

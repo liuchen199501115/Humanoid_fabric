@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Repeatedly verified eight source landings with one inverse-dynamics QP.
+# No MPC. Original PKL audit, clearance, motor and contact limits are retained.
+# Uses an adapted full-body reference and a soft auxiliary joint tube.
+# Attempts the whole clip and stops on the unchanged original-PKL audit.
+set -euo pipefail
+exec bash "$(dirname "$0")/run_amp_full_motion.sh" \
+  --fabric-priority-mode none --fabric-tracking-feedback \
+  --fabric-secondary-scale 0 --fabric-root-regularization 1e-10 \
+  --qp-task-only-objective --posture-metric-scale 1 \
+  --source-pelvis-weight 1 --joint-feedback-limit 30 \
+  --reference-pose-candidate acc_data/g1_tracking_contacts_20261123/prepared_landing8_y15.npz \
+  --clock-second-start 2.3 --clock-second-ramp .25 --clock-second-speed .8 \
+  --qp-single-proximal .0001 --qp-single-proximal-start 2.5 \
+  --qp-cold-start-time 2.5 \
+  --anticipate-unload-start 2.7 --anticipate-unload-horizon .12 \
+  --late-unload-start 2.7 --late-unload-ramp .04 --late-unload-weight .2 \
+  --tracking-tube-soft-weight 10 --tracking-tube-soft-start 2.54 \
+  --tracking-tube-soft-joint-only \
+  --collision-barrier-bandwidth-start 2.0 --collision-barrier-bandwidth 20 \
+  --output-path acc_data/g1_tracking_contacts_20261123/continued_tracking.npz "$@"

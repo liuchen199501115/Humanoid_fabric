@@ -1,0 +1,34 @@
+[
+  {
+    "name": "ten_floor3_fast16",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--clock-fourth-speed",
+      "1.6"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear30",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--late-foot-linear-feedback-start",
+      "4.08",
+      "--late-foot-linear-feedback-limit",
+      "30",
+      "--late-foot-linear-feedback-side",
+      "left"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--late-foot-linear-feedback-start",
+      "4.08",
+      "--late-foot-linear-feedback-limit",
+      "60",
+      "--late-foot-linear-feedback-side",
+      "left"
+    ]
+  }
+]

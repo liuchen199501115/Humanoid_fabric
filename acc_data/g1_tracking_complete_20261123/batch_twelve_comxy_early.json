@@ -1,0 +1,56 @@
+[
+  {
+    "name": "twelve_comxy816_40",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-com-metric-start",
+      "4.08",
+      "--late-com-metric-scale",
+      "40",
+      "--late-com-metric-axes",
+      "xy",
+      "--qp-snapshot-times",
+      "3.9",
+      "4.1",
+      "4.3",
+      "4.5",
+      "4.7"
+    ]
+  },
+  {
+    "name": "twelve_comxy816_16",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-com-metric-start",
+      "4.08",
+      "--late-com-metric-scale",
+      "16",
+      "--late-com-metric-axes",
+      "xy",
+      "--qp-snapshot-times",
+      "3.9",
+      "4.1",
+      "4.3",
+      "4.5",
+      "4.7"
+    ]
+  },
+  {
+    "name": "twelve_comxy860_40",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-com-metric-start",
+      "4.3",
+      "--late-com-metric-scale",
+      "40",
+      "--late-com-metric-axes",
+      "xy",
+      "--qp-snapshot-times",
+      "3.9",
+      "4.1",
+      "4.3",
+      "4.5",
+      "4.7"
+    ]
+  }
+]

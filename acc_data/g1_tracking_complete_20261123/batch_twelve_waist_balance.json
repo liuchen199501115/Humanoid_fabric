@@ -1,0 +1,26 @@
+[
+  {
+    "name": "twelve_waist_bias_r15p15",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_r15p15.npz"
+    ]
+  },
+  {
+    "name": "twelve_waist_bias_r20p30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_r20p30.npz"
+    ]
+  },
+  {
+    "name": "twelve_waist_bias_r0p30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_waist_balance_r0p30.npz"
+    ]
+  }
+]

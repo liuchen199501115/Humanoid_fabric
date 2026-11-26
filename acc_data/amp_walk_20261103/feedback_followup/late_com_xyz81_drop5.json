@@ -1,0 +1,11 @@
+{
+  "root_drop": 0.005,
+  "peak_com_projection_error": 1.6826920581202414e-06,
+  "peak_position_residual": 7.54631788342612e-08,
+  "peak_orientation_residual": 1.1121748698077306e-08,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "peak_root_position_change": 0.044476162642240524,
+  "minimum_dense_joint_limit_margin": 0.05845208466053009,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "objective": "priority_level_0",
+    "status": 1,
+    "physical_residual": 1.5205614545266144e-12,
+    "root_acc": [
+      1.3076164841715219,
+      3.1283224703450183,
+      -3.4936051225123945,
+      2.5849506641727253,
+      -21.20785130889215,
+      11.274265966148784
+    ],
+    "acc_norm": 144.66563627494804,
+    "center_of_mass_error": 9.032622476119714,
+    "feet_pose_error": 48.56008031887233,
+    "joint_posture_error": 273.09692276782044,
+    "source_pelvis_orientation_error": 54.50983214832621,
+    "support_orientation_1_error": 31.5309752816393,
+    "centroidal_momentum_error": 65.26595701328915
+  },
+  {
+    "objective": "problem",
+    "status": 1,
+    "physical_residual": 1.199040866595169e-12,
+    "root_acc": [
+      -2.2050010455652083,
+      4.870265415626612,
+      -4.6109497978957465,
+      -12.242077341740352,
+      14.196082288405693,
+      6.366173417434778
+    ],
+    "acc_norm": 157.09309681145828,
+    "center_of_mass_error": 9.005294478416362,
+    "feet_pose_error": 55.00288943693126,
+    "joint_posture_error": 291.3033435996961,
+    "source_pelvis_orientation_error": 21.71632146185261,
+    "support_orientation_1_error": 36.334777418954786,
+    "centroidal_momentum_error": 58.450462109464915
+  }
+]

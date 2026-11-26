@@ -1,0 +1,23 @@
+{
+  "trial": "ten_momentum_late",
+  "time_s": 3.8000000000000003,
+  "waist_qdd_predicted": 69.86101168015719,
+  "waist_qdd_observed": -0.15527528524398804,
+  "root_qdd_predicted": [
+    -12.718339451653469,
+    59.17659016449886,
+    -28.116245638586
+  ],
+  "root_qdd_observed": [
+    11.677860260009766,
+    19.24586296081543,
+    -43.68435287475586
+  ],
+  "root_qdd_with_stop_reaction": [
+    11.242082030573846,
+    19.14134646364583,
+    -44.291987935525114
+  ],
+  "stop_reaction_multiplier": 7.621134741825004,
+  "note": "Offline fixed-torque constrained mass response to zero waist-roll acceleration. Same observed foot constraints; no change to runtime controller or physics."
+}

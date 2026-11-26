@@ -1,0 +1,22 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 5.930187487919528e-07,
+  "maximum_foot_rotation_residual_rad": 3.856689837812342e-07,
+  "maximum_com_ik_residual_m": 2.952037050507384e-07,
+  "maximum_added_root_rotation_rad": 0.04252194310530663,
+  "worst_frame": 999,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Native collision clearance restoration with COM-preserving full-body IK",
+  "maximum_native_clearance_residual_m": 5.123824182856618e-07,
+  "maximum_vertical_foot_correction_m": 0.015022953781985732,
+  "parent_sha256": "76bc8a78cc08c13c3c6b3ad3ca42e9b1e8721283fa640613a09fd2c4dc7e9a5e",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "node": 0,
+    "frame": 848.84,
+    "impact": true,
+    "joint": "left_hip_yaw_joint",
+    "velocity": 32.00015582329941,
+    "limit": 32.0,
+    "excess": 0.00015582329940855288
+  }
+]

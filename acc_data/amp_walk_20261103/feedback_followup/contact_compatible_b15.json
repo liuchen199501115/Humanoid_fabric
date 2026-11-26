@@ -1,0 +1,43 @@
+{
+  "root_drop": 0.015,
+  "peak_position_residual": 2.6613344048256946e-06,
+  "peak_orientation_residual": 0.006321168397009309,
+  "peak_source_joint_rmse": 0.15164318680763245,
+  "peak_joint_error_frame": 1950,
+  "minimum_dense_joint_limit_margin": 8.86917111975194e-09,
+  "initial_qva_preserved": true,
+  "physical_tracking_certified": false,
+  "preflight_passed": true,
+  "worst_ik_rows": [
+    [
+      708.0,
+      0.0,
+      5.929252376586104e-07,
+      0.006003589901026689
+    ],
+    [
+      707.0,
+      0.0,
+      6.243952704982399e-07,
+      0.005918469310691458
+    ],
+    [
+      706.0,
+      0.0,
+      6.597787312630135e-07,
+      0.005823142053420554
+    ],
+    [
+      705.0,
+      0.0,
+      7.007271213419172e-07,
+      0.005703600707153967
+    ],
+    [
+      674.0,
+      0.0,
+      2.6613344048256946e-06,
+      0.0008259131611633101
+    ]
+  ]
+}

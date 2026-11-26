@@ -1,0 +1,23 @@
+{
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "success": true,
+  "xy_bound_mm": 50.0,
+  "momentum_model": "filtered reference, sigma=20.0 frames",
+  "note": "Linearized CoP feasibility only, with frozen parent angular momentum and vertical motion",
+  "minimum_maximum_cop_violation_m": 0.0,
+  "worst_frames": [
+    1300,
+    1033,
+    1092,
+    1163,
+    710,
+    1026,
+    1057,
+    1106,
+    1039,
+    1040,
+    1047,
+    1380
+  ],
+  "maximum_xy_correction_m": 0.05
+}

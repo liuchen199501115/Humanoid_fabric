@@ -1,0 +1,22 @@
+[
+  {
+    "side": 1,
+    "point": 9,
+    "height": -3.3019535357337038e-06,
+    "vertical_velocity": 0.001202631816575983,
+    "acceleration_extrema": [
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -7.13204701297046,
+        "predicted_height_after_2ms": -3.817644665873865e-05
+      },
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -6.980689871123275,
+        "predicted_height_after_2ms": -1.2587087974781641e-05
+      }
+    ]
+  }
+]

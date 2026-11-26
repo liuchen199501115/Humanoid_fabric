@@ -1,0 +1,130 @@
+{
+  "run": "brake_waist80",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/brake_waist80.npz",
+  "measured_landing_events": 2,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 2,
+  "first_fidelity_exceeded_time_s": 0.438,
+  "last_source_frame": 87.6,
+  "last_time_s": 0.438,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.188,
+      "source_frame": 37.6,
+      "landing_error_m": 0.011787721130019873,
+      "joint_rmse_rad": 0.11585889756679535,
+      "root_position_error_m": 0.014900225214660168,
+      "root_orientation_error_rad": 0.104503785415284,
+      "prefix_peak_joint_rmse_rad": 0.11585889756679535,
+      "prefix_peak_root_position_error_m": 0.014900225214660168,
+      "prefix_peak_root_orientation_error_rad": 0.104503785415284,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 2,
+      "time_s": 0.41200000000000003,
+      "source_frame": 82.4,
+      "landing_error_m": 0.028633330505273998,
+      "joint_rmse_rad": 0.18419651687145233,
+      "root_position_error_m": 0.025429464876651764,
+      "root_orientation_error_rad": 0.12983445623958148,
+      "prefix_peak_joint_rmse_rad": 0.18419651687145233,
+      "prefix_peak_root_position_error_m": 0.025429464876651764,
+      "prefix_peak_root_orientation_error_rad": 0.12983445623958148,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 3,
+    "swing": "left",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": null,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "returncode": 1,
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "response-wbc",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/brake_waist80.npz",
+    "--response-gain",
+    "0",
+    "--state-limit-priority",
+    "waist",
+    "--state-limit-weight",
+    "80"
+  ],
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "failed_time_s": null,
+  "failed_source_frame": null,
+  "tested_source_sha256": "cb07040469e96745679b0295d54b9386a6069cfca42c5dbc1fbde34b6d1167d2",
+  "execution": {
+    "tracking_profile": "response-wbc",
+    "formula_scope": "phase",
+    "direct_wbc": true,
+    "tracking_servo": true,
+    "formula_source_reference": false,
+    "physical_braking_start": 100.0,
+    "clock_final_speed": 1.2,
+    "response_gain": 0.0,
+    "response_error_onset": 0.0,
+    "state_limit_priority": "waist",
+    "state_braking_budget": null,
+    "state_limit_weight": 80.0,
+    "state_root_metric": null,
+    "state_root_onset": null,
+    "state_root_angular_scale": null,
+    "state_braking_hard": null,
+    "state_soft_orientation": null
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "response_estimate_range": [
+    -2.2481226921081543,
+    1.097164511680603
+  ],
+  "response_activation_range": [
+    1.0,
+    1.0
+  ],
+  "state_braking_active_range": [
+    0.0,
+    1.0
+  ],
+  "raw_source_audit": {
+    "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+    "frame_count": 2000,
+    "peak_joint_rmse_rad": 0.20007136464118958,
+    "peak_root_position_m": 0.03103610873222351,
+    "peak_root_orientation_rad": 0.2058316429215194,
+    "prefix_landings": 2,
+    "reference_max_difference": 3.069639205932617e-06,
+    "landings": [
+      {
+        "step": 1,
+        "source_foot_error_m": 0.01178776775288934,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      },
+      {
+        "step": 2,
+        "source_foot_error_m": 0.028633235084496427,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      }
+    ]
+  }
+}

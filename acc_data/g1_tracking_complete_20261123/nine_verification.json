@@ -1,0 +1,27 @@
+{
+  "exact_history_fields": 154,
+  "landings": 9,
+  "expected": 29,
+  "landing9": {
+    "step": 9,
+    "swing": "left",
+    "source_frame": 773.4950923801842,
+    "time": 3.67,
+    "landing_error_m": 0.018463197861083747,
+    "goal": [
+      5.069423675537109,
+      -0.47336721420288086,
+      0.03523881733417511
+    ],
+    "measured_load_n": 487.0349426269531,
+    "source_contact_onset_goal": [
+      5.011423587799072,
+      -0.446205198764801,
+      0.04452579468488693
+    ]
+  },
+  "landing9_joint_rmse": 0.11277037858963013,
+  "landing9_root_position_error": 0.1612289845943451,
+  "self_contacts": [],
+  "full_tracking_passed": false
+}

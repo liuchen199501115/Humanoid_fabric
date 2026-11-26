@@ -1,0 +1,9 @@
+{
+  "trial": "eleven_pause960_search2",
+  "equal_resolved_options": 476,
+  "ignored": [
+    "output_path",
+    "qp_snapshot_times"
+  ],
+  "differences": {}
+}

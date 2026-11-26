@@ -41,6 +41,28 @@ class COMDiagnosticsTest(unittest.TestCase):
         self.assertEqual(params["toggle"], .5)
         np.testing.assert_allclose(result["com_task_metric"], [1., 1.5, 2.])
 
+        # Acceleration-only control must not read a cached leaf or label a
+        # legacy attractor's request as its actual QP target.
+        class NoTaskCache:
+            cache_task_requests = False
+            @property
+            def last_requests(self):
+                raise AssertionError('Acceleration-only diagnostics read the task cache')
+        fabric.dynamics_tasks = NoTaskCache()
+        result = com_acceleration_snapshot(fabric, q, v, {"fabric": torch.ones_like(q)})
+        np.testing.assert_allclose(result['com_acc_requested'], 2.08, atol=1e-9)
+        self.assertEqual(result['com_request_source'].item(), 'composed_fabric_acceleration')
+        result = com_acceleration_snapshot(fabric, q, v,
+            {'fabric': torch.ones_like(q), 'qp_reference': 3*torch.ones_like(q)})
+        np.testing.assert_allclose(result['com_acc_requested'], 6.08, atol=1e-9)
+        self.assertEqual(result['com_request_source'].item(), 'qp_acceleration_reference')
+        fabric.dynamics_tasks.last_snapshot = dict(
+            com_acc_desired=-3*torch.ones_like(q), com_jac_bias=.08*torch.ones_like(q))
+        result = com_acceleration_snapshot(fabric, q, v,
+            {'fabric': torch.ones_like(q), 'qp_reference': 3*torch.ones_like(q)})
+        np.testing.assert_allclose(result['com_acc_original_desired'], -3.)
+        np.testing.assert_allclose(result['com_acc_requested'], 6.08, atol=1e-9)
+
     def test_diagnostic_records_wbc_request_including_preserved_feedforward_and_overrides(self):
         class Task:
             position_target = torch.zeros(1, 3)
@@ -77,6 +99,33 @@ class COMDiagnosticsTest(unittest.TestCase):
         self.assertTrue(history[0]["com_observed_valid"])
         with self.assertRaises(ValueError):
             complete_observed_interval(history, 1., np.zeros((1, 3)))
+
+    def test_discarded_policy_leaves_retain_final_numeric_com_target(self):
+        class Task:
+            position_target = torch.zeros(1, 3)
+            def _position_and_jacobian(self, q):
+                return q, torch.eye(3)[None]
+        params = dict(metric=[2., 3., 4.], stiffness=[1.]*3,
+                      damping=[2.]*3, max_acceleration=[4.]*3, toggle=1.)
+        desired = torch.tensor([[5., -8., -9.67]])
+        metric = torch.diag_embed(torch.tensor([[1000., 1000., 320.]]))
+        snapshot = dict(com_composed_desired=desired, com_composed_metric=metric)
+        fabric = SimpleNamespace(center_of_mass_taskmap=Task(),
+            integrate_root_position=lambda q, v, dt: q+v*dt,
+            fabric_params={'center_of_mass_attractor': params},
+            fabrics_features={'center_of_mass': {'center_of_mass_attractor': None}},
+            dynamics_tasks=SimpleNamespace(last_requests=None, last_snapshot=snapshot))
+        q = torch.ones(1, 3);v = torch.zeros_like(q)
+        for cached in (True, False):
+            fabric.dynamics_tasks.cache_task_requests = cached
+            result = com_acceleration_snapshot(fabric, q, v, {'fabric': v, 'qp_reference': v})
+            np.testing.assert_array_equal(result['com_acc_requested'], desired.numpy())
+            np.testing.assert_array_equal(result['com_task_metric'], [[1000., 1000., 320.]])
+            self.assertEqual(result['com_request_source'].item(), 'composed_policy_task')
+            self.assertIsNone(fabric.dynamics_tasks.last_requests)
+        # Historical arrays own their data even when the next tick changes it.
+        desired.zero_()
+        self.assertAlmostEqual(float(result['com_acc_requested'][0, 2]), -9.67, places=5)
 
     def test_control_force_uses_same_clipped_request(self):
         params = dict(metric=[2., 3., 4.], stiffness=[1.]*3,

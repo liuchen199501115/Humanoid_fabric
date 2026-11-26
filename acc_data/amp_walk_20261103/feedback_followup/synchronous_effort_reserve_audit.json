@@ -1,0 +1,21 @@
+{
+  "run": "fixed_clock120_body10_overdue",
+  "max_extra_pd_torque_Nm": 0.0,
+  "max_applied_minus_qp_torque_Nm": 0.0,
+  "physics_step_s": 0.002,
+  "control_step_s": 0.002,
+  "max_physical_motor_usage": 0.800000011920929,
+  "saturated_joints": [
+    {
+      "joint": "waist_roll_joint",
+      "physical_limit_Nm": 25.0,
+      "fraction_turn_ticks_at_80_percent_budget": 0.5975609756097561
+    },
+    {
+      "joint": "waist_pitch_joint",
+      "physical_limit_Nm": 25.0,
+      "fraction_turn_ticks_at_80_percent_budget": 0.35365853658536583
+    }
+  ],
+  "physical_tracking_certified": false
+}

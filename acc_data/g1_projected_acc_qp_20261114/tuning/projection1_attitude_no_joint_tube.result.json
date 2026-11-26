@@ -1,0 +1,32 @@
+{
+  "name": "projection1_attitude_no_joint_tube",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--projection-joint-correction-weight",
+    "1",
+    "--qp-base-acceleration-weight",
+    "100",
+    "--source-pelvis-weight",
+    "10",
+    "--fabric-angular-feedback-limit",
+    "100",
+    "--joint-tube-end",
+    "0"
+  ],
+  "measured_steps": 3,
+  "last_time_s": 1.3780000000000001,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 1.3780000000000001,
+    "source_frame": 287.7200000000001,
+    "joint_rmse_rad": 0.20211167633533478,
+    "root_position_m": 0.18896469473838806,
+    "root_orientation_rad": 0.07833425456895657
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.20211167633533478
+}

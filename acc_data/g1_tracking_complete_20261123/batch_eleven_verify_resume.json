@@ -1,0 +1,23 @@
+[
+  {
+    "name": "eleven_verify_rooty1000_pause",
+    "parent": "rooty1000_lift10_pause11_860_900",
+    "options": []
+  },
+  {
+    "name": "eleven_resume10",
+    "parent": "rooty1000_lift10_pause11_860_900",
+    "options": [
+      "--contact-pause-resume",
+      ".1"
+    ]
+  },
+  {
+    "name": "eleven_resume15",
+    "parent": "rooty1000_lift10_pause11_860_900",
+    "options": [
+      "--contact-pause-resume",
+      ".15"
+    ]
+  }
+]

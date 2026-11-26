@@ -1,0 +1,8 @@
+{
+  "algebra_matches_direct_recomputation": true,
+  "physical_constraints_unchanged": true,
+  "successful_first_solve_unchanged": true,
+  "recovery_requires_validated_solution": true,
+  "checks_passed": true,
+  "physical_tracking_certified": false
+}

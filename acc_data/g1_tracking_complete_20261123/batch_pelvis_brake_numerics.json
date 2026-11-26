@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_com15_pelvis405_brake_cap3",
+    "parent": "ten_com15_pelvis405_brake1000",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.85",
+      "--qp-late-equilibration-cap",
+      "3"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_brake_cap1",
+    "parent": "ten_com15_pelvis405_brake1000",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.85",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_brake100",
+    "parent": "ten_com15_pelvis405_brake1000",
+    "options": [
+      "--soft-joint-braking-weight",
+      "100"
+    ]
+  }
+]

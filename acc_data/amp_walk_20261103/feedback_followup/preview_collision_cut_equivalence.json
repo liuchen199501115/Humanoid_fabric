@@ -1,0 +1,11 @@
+{
+  "full_linear_success": true,
+  "generated_linear_success": true,
+  "full_collision_linear_violation": 0.0,
+  "relative_objective_difference": 1.417105751059137e-08,
+  "maximum_state_difference": 6.158494267810566e-05,
+  "maximum_acceleration_difference": 0.0019912621452427004,
+  "maximum_torque_difference": 0.004787735938750259,
+  "selected_rows": 184,
+  "all_rows": 14933
+}

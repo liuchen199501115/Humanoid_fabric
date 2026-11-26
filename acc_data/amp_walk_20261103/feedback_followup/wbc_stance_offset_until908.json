@@ -1,0 +1,18 @@
+{
+  "retained_offset": [
+    0.015,
+    -0.02,
+    0.0
+  ],
+  "release_start_frame": 908,
+  "release_end_frame": 952,
+  "peak_ik_position_error": 8.542486086877622e-08,
+  "peak_ik_rotation_error": 1.393709285550516e-07,
+  "maximum_source_stance_foot_error": 0.02500004388851576,
+  "minimum_dense_joint_margin": 0.034724488854408264,
+  "minimum_dense_native_clearance": -0.0013583393161464147,
+  "maximum_joint_velocity_fraction": 0.4329068660736084,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

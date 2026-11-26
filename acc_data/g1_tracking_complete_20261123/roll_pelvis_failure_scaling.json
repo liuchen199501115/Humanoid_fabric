@@ -1,0 +1,37 @@
+[
+  {
+    "cap": 1,
+    "converged": true,
+    "status": "['DAQP 1; KKT certified']",
+    "residual64": 3.637978807091713e-12,
+    "residual32": 0.00019359588623046875
+  },
+  {
+    "cap": 3,
+    "converged": false,
+    "status": "['DAQP 1; rejected']",
+    "residual64": 6.821210263296962e-12,
+    "residual32": 0.00019359588623046875
+  },
+  {
+    "cap": 10,
+    "converged": false,
+    "status": "['DAQP 1; rejected']",
+    "residual64": 1.77351466845721e-11,
+    "residual32": 0.00019359588623046875
+  },
+  {
+    "cap": 30,
+    "converged": false,
+    "status": "['DAQP 1; rejected']",
+    "residual64": 4.285993782104924e-11,
+    "residual32": 0.00019359588623046875
+  },
+  {
+    "cap": 100,
+    "converged": false,
+    "status": "['DAQP 1; rejected']",
+    "residual64": 1.0572875908110291e-10,
+    "residual32": 0.00019359588623046875
+  }
+]

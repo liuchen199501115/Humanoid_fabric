@@ -1,0 +1,19 @@
+{
+  "parent_file": "prepared_return_source_transfer60.npz",
+  "parent_sha256": "232874880b2a63768bd094ed6ccf581821435bd14a54f43286d49e218e0642a9",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "waist_roll_bias_rad": 0.2,
+  "waist_pitch_bias_rad": 0.3,
+  "start_frame": 906,
+  "end_frame": 954,
+  "fade_out_frames": [
+    1000,
+    1060
+  ],
+  "maximum_joint_limit_violation_rad": 2.9802322387695312e-08,
+  "maximum_source_joint_rmse_rad": 0.14258061349391937,
+  "prefix_q_v_a_exact_through_frame": 900,
+  "root_legs_arms_unchanged": true,
+  "preflight_passed": true,
+  "full_tracking_passed": false
+}

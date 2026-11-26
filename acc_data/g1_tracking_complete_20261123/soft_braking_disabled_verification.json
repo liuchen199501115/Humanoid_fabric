@@ -1,0 +1,8 @@
+{
+  "baseline": "ten_verify",
+  "repeat": "ten_soft_brake_disabled_verify",
+  "compared_histories": 155,
+  "different": [],
+  "exactly_equal": true,
+  "full_tracking_passed": false
+}

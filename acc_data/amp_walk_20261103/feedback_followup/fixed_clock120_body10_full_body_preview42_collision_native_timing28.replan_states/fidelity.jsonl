@@ -1,0 +1,8 @@
+{"time": 3.68, "frame": 840.2, "actual_mode": 2, "joint_rmse": 0.15559180125573965, "root_position": 0.044833524118851394, "root_orientation": 0.10074718534151936}
+{"time": 3.72, "frame": 849.8000000000001, "actual_mode": 2, "joint_rmse": 0.14015362445920013, "root_position": 0.05153382505077515, "root_orientation": 0.10289601853200626}
+{"time": 3.7600000000000002, "frame": 859.4000000000001, "actual_mode": 2, "joint_rmse": 0.1309684326741996, "root_position": 0.055652748107376256, "root_orientation": 0.10044196801569297}
+{"time": 3.7800000000000002, "frame": 864.1999999999999, "actual_mode": 2, "joint_rmse": 0.1365808283495063, "root_position": 0.058112158197817794, "root_orientation": 0.11443930106358358}
+{"time": 3.8200000000000003, "frame": 873.8, "actual_mode": 2, "joint_rmse": 0.1391118455793487, "root_position": 0.06622199818432147, "root_orientation": 0.1307045002327876}
+{"time": 3.86, "frame": 883.4, "actual_mode": 2, "joint_rmse": 0.15655401424453153, "root_position": 0.08008901153961259, "root_orientation": 0.13166991396091654}
+{"time": 3.878, "frame": 887.72, "actual_mode": 2, "joint_rmse": 0.16348489314159, "root_position": 0.08566451285373754, "root_orientation": 0.13441148399800518}
+{"time": 3.918, "frame": 897.32, "actual_mode": 3, "joint_rmse": 0.18921022617278926, "root_position": 0.1039651390766471, "root_orientation": 0.16305582718098874}

@@ -1,0 +1,194 @@
+[
+  {
+    "time": 4.0,
+    "scale": 0,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -5.923263300254116,
+      -32.319801956518006,
+      -5.2406652252675245
+    ],
+    "root_angular_acceleration": [
+      -5.923263300254116,
+      -32.319801956518006,
+      -5.2406652252675245
+    ],
+    "physical_residual": 3.801403636316536e-13
+  },
+  {
+    "time": 4.0,
+    "scale": 0.05,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -11.306149104785769,
+      -31.620570359937542,
+      1.2682142507090008
+    ],
+    "root_angular_acceleration": [
+      -11.306149104785769,
+      -31.620570359937542,
+      1.2682142507090008
+    ],
+    "physical_residual": 2.1741455498158757e-06
+  },
+  {
+    "time": 4.0,
+    "scale": 0.1,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -14.834968789398653,
+      -31.312460726346785,
+      5.039050317115533
+    ],
+    "root_angular_acceleration": [
+      -14.834968789398653,
+      -31.312460726346785,
+      5.039050317115533
+    ],
+    "physical_residual": 5.684341886080801e-13
+  },
+  {
+    "time": 4.0,
+    "scale": 0.25,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -19.967480724284226,
+      -30.79454293205731,
+      10.046741671551922
+    ],
+    "root_angular_acceleration": [
+      -19.967480724284226,
+      -30.79454293205731,
+      10.046741671551922
+    ],
+    "physical_residual": 5.684341886080801e-13
+  },
+  {
+    "time": 4.15,
+    "scale": 0,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -67.09321563455534,
+      10.198836035338276,
+      -13.140521745906968
+    ],
+    "root_angular_acceleration": [
+      -67.09321563455534,
+      10.198836035338276,
+      -13.140521745906968
+    ],
+    "physical_residual": 4.945377440890297e-12
+  },
+  {
+    "time": 4.15,
+    "scale": 0.05,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -54.06141511294078,
+      25.686384045582468,
+      -1.934184748626293
+    ],
+    "root_angular_acceleration": [
+      -54.06141511294078,
+      25.686384045582468,
+      -1.934184748626293
+    ],
+    "physical_residual": 1.4200711717649028e-06
+  },
+  {
+    "time": 4.15,
+    "scale": 0.1,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -51.07268113447921,
+      29.489376089666315,
+      1.1962998952015822
+    ],
+    "root_angular_acceleration": [
+      -51.07268113447921,
+      29.489376089666315,
+      1.1962998952015822
+    ],
+    "physical_residual": 5.684341886080801e-13
+  },
+  {
+    "time": 4.15,
+    "scale": 0.25,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -48.52208852434261,
+      32.84355399660078,
+      4.037337003915115
+    ],
+    "root_angular_acceleration": [
+      -48.52208852434261,
+      32.84355399660078,
+      4.037337003915115
+    ],
+    "physical_residual": 7.389644451905042e-13
+  },
+  {
+    "time": 4.25,
+    "scale": 0,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -69.11029392654011,
+      -173.84240991858766,
+      -212.66395798843533
+    ],
+    "root_angular_acceleration": [
+      -69.11029392654011,
+      -173.84240991858766,
+      -212.66395798843533
+    ],
+    "physical_residual": 9.43600753089413e-12
+  },
+  {
+    "time": 4.25,
+    "scale": 0.05,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -57.880094266187164,
+      -125.86918786709082,
+      -168.8686622583249
+    ],
+    "root_angular_acceleration": [
+      -57.880094266187164,
+      -125.86918786709082,
+      -168.8686622583249
+    ],
+    "physical_residual": 2.5579538487363607e-12
+  },
+  {
+    "time": 4.25,
+    "scale": 0.1,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -50.12749983196758,
+      -94.68639188158546,
+      -139.64978159536346
+    ],
+    "root_angular_acceleration": [
+      -50.12749983196758,
+      -94.68639188158546,
+      -139.64978159536346
+    ],
+    "physical_residual": 1.2505552149377763e-12
+  },
+  {
+    "time": 4.25,
+    "scale": 0.25,
+    "status": "solved",
+    "pelvis_angular_acceleration": [
+      -38.94286601519214,
+      -48.51822398251075,
+      -96.87661906956009
+    ],
+    "root_angular_acceleration": [
+      -38.94286601519214,
+      -48.51822398251075,
+      -96.87661906956009
+    ],
+    "physical_residual": 2.2737367544323206e-13
+  }
+]

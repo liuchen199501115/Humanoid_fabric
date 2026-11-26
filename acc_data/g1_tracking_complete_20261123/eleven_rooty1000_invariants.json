@@ -1,0 +1,13 @@
+{
+  "trial": "rooty1000_lift10_pause11_860_900",
+  "verified_landings": 11,
+  "expected_landings": 29,
+  "one_native_attempt_per_update": true,
+  "no_second_qp": true,
+  "no_added_pd": true,
+  "exact_applied_qp_torque": true,
+  "original_fidelity_limits": true,
+  "independent_reproduction_pending": false,
+  "full_tracking_passed": false,
+  "independent_reproduction": "eleven_rooty1000_exact_reproduction.json"
+}

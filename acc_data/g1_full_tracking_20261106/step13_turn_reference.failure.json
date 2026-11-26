@@ -1,0 +1,5 @@
+{
+  "iteration": 0,
+  "reason": "{'status': 'AlmostSolved', 'linear_residual': 3.923127389594285e-06, 'cone_residual': 0.0, 'iterations': 200}",
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "turn_recovery_y40",
+  "root_drop": 0.035,
+  "source_interval": [
+    760,
+    840
+  ],
+  "peak_position_residual": 9.772475962709955e-08,
+  "peak_orientation_residual": 1.0762179706875062e-07,
+  "minimum_dense_native_clearance": -0.0015911915963758363,
+  "minimum_dense_joint_limit_margin": 0.03168606758117676,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_required_normal_force": 73.18643506726376,
+  "maximum_required_normal_force": 823.2548872888304,
+  "negative_force_samples": 0,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

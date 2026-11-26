@@ -1,0 +1,42 @@
+{
+  "iterations": [
+    {
+      "iteration": 0,
+      "peak_base_force_residual": 130.1976388065172,
+      "peak_base_moment_residual": 71.55067372472722,
+      "rms_base_residual": 12.214849697662743,
+      "peak_torque_budget_ratio": 3.792305606182155,
+      "peak_foot_position_residual": 0.01927574258546993,
+      "peak_reference_joint_rmse": 0.06402399446269652,
+      "peak_joint_speed": 13.496798074109241,
+      "peak_joint_acceleration": 3233.520049731083,
+      "max_update": 0.12000001433201711
+    },
+    {
+      "iteration": 1,
+      "peak_base_force_residual": 123.09624501364027,
+      "peak_base_moment_residual": 90.27827405721284,
+      "rms_base_residual": 11.495380826414832,
+      "peak_torque_budget_ratio": 2.2724875461442062,
+      "peak_foot_position_residual": 0.006214420627117551,
+      "peak_reference_joint_rmse": 0.08709006980568422,
+      "peak_joint_speed": 18.473317520032143,
+      "peak_joint_acceleration": 3472.6516945279554,
+      "max_update": 0.12000000257787108
+    },
+    {
+      "iteration": 2,
+      "peak_base_force_residual": 100.2180022527923,
+      "peak_base_moment_residual": 71.7729288354094,
+      "rms_base_residual": 7.829120488157954,
+      "peak_torque_budget_ratio": 1.9761513548125689,
+      "peak_foot_position_residual": 0.006202008370471796,
+      "peak_reference_joint_rmse": 0.10065088480886958,
+      "peak_joint_speed": 14.134925227183299,
+      "peak_joint_acceleration": 3467.157194785735,
+      "max_update": 0.12000000256393464
+    }
+  ],
+  "optimized_source_frames": 480,
+  "full_tracking_passed": false
+}

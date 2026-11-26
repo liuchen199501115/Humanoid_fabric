@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_comspeed02_clock12",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--clock-fourth-speed",
+      "1.2"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_clock14",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--clock-fourth-speed",
+      "1.4"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_clock16",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--clock-fourth-speed",
+      "1.6"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ten_verify",
+    "left_ankle_roll_first_stop_frame": 804.9200000000001,
+    "left_ankle_pitch_first_stop_frame": 814.5200000000001,
+    "waist_roll_first_stop_frame": 814.5200000000001,
+    "last_frame": 826.52,
+    "last_root_error": 0.1325450837612152
+  },
+  {
+    "name": "ten_freeleg_scale80",
+    "left_ankle_roll_first_stop_frame": null,
+    "left_ankle_pitch_first_stop_frame": null,
+    "waist_roll_first_stop_frame": 816.44,
+    "last_frame": 822.68,
+    "last_root_error": 0.13717880845069885
+  },
+  {
+    "name": "ten_soft_ori25",
+    "left_ankle_roll_first_stop_frame": 803.4799999999999,
+    "left_ankle_pitch_first_stop_frame": 809.2400000000001,
+    "waist_roll_first_stop_frame": 817.8800000000001,
+    "last_frame": 837.5600000000001,
+    "last_root_error": 0.20003096759319305
+  },
+  {
+    "name": "ten_soft_ori25_hard_position",
+    "left_ankle_roll_first_stop_frame": 803.4799999999999,
+    "left_ankle_pitch_first_stop_frame": 809.2400000000001,
+    "waist_roll_first_stop_frame": 816.9200000000002,
+    "last_frame": 830.3599999999999,
+    "last_root_error": 0.15697981417179108
+  },
+  {
+    "name": "ten_root_roll_minus06_z15",
+    "left_ankle_roll_first_stop_frame": 806.3600000000001,
+    "left_ankle_pitch_first_stop_frame": 811.1600000000003,
+    "waist_roll_first_stop_frame": 817.8800000000001,
+    "last_frame": 829.4000000000001,
+    "last_root_error": 0.1689208596944809
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.025
+  ],
+  "maximum_foot_position_residual_m": 5.201718383171946e-07,
+  "maximum_foot_rotation_residual_rad": 4.770671945240044e-07,
+  "maximum_com_ik_residual_m": 2.4671274602028773e-07,
+  "maximum_added_root_rotation_rad": 0.08657946170562227,
+  "worst_frame": 712,
+  "peak_source_joint_rmse_rad": 0.1429908722639084,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Gradual COM lowering before ninth landing; both original foot poses unchanged",
+  "maximum_drop_m": 0.025,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false
+}

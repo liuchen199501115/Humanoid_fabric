@@ -46,6 +46,7 @@ class G1PoseFabric(BaseFabric):
             str, tuple[str, str, str, str]
         ] | None = None,
         task_profile: str = "legacy",
+        joint_posture_enabled: bool = True,
     ):
         """Construct the whole-body G1 Fabric.
 
@@ -65,6 +66,9 @@ class G1PoseFabric(BaseFabric):
             frame_groups:
                 Optional actual G1 frame names for the four end effectors.
                 Every entry is ``(origin, x_point, y_point, z_point)``.
+            joint_posture_enabled:
+                Include joint posture tracking. References can still be updated
+                when disabled without reactivating the task.
         """
         if batch_size <= 0:
             raise ValueError("batch_size must be positive.")
@@ -75,6 +79,7 @@ class G1PoseFabric(BaseFabric):
         if task_profile == "dynamics-aware" and graph_capturable:
             raise ValueError("Dynamics-aware task evaluation does not yet support CUDA graph capture.")
         self.task_profile = task_profile
+        self.joint_posture_enabled = joint_posture_enabled
 
         self.control_timestep = float(timestep)
         self.robot_dir_name = robot_dir_name
@@ -326,7 +331,7 @@ class G1PoseFabric(BaseFabric):
             "velocity": torch.zeros_like(position) if velocity is None else velocity,
             "acceleration": acceleration,
         }
-        self.joint_posture_term.params["toggle"] = 1.0
+        self.joint_posture_term.params["toggle"] = float(self.joint_posture_enabled)
 
     def add_root_regularizer(self) -> None:
         """Keep the 35-D pullback metric invertible.
@@ -760,9 +765,12 @@ class G1PoseFabric(BaseFabric):
         self._validate_state(q, qd)
         if self.dynamics_tasks is not None:
             requests = self.compute_task_requests(q, qd)
+            # Prioritized Jacobians can be nearly rank deficient. Keep their
+            # natural-form accumulation in double precision through the solve.
+            compose_dtype = torch.float64 if self.dynamics_tasks.priority_mode != 'none' else q.dtype
             metric = self.dynamics_tasks.config["regularization"] * torch.eye(
-                35, device=q.device, dtype=q.dtype).expand(q.shape[0], -1, -1).clone()
-            force = torch.zeros_like(qd)
+                35, device=q.device, dtype=compose_dtype).expand(q.shape[0], -1, -1).clone()
+            force = torch.zeros_like(qd, dtype=compose_dtype)
             for request in requests:
                 task_metric, task_force = request.natural_form()
                 metric += task_metric
@@ -770,7 +778,10 @@ class G1PoseFabric(BaseFabric):
             acceleration = torch.linalg.solve(metric, -force.unsqueeze(-1)).squeeze(-1)
             if not torch.isfinite(acceleration).all():
                 raise FloatingPointError("Dynamics-aware acceleration contains NaN or Inf.")
-            return acceleration
+            # A constrained downstream solve needs both the minimizer and
+            # its metric to preserve the original soft-task tradeoffs.
+            self.dynamics_tasks.last_snapshot['fabric_acc_metric'] = metric
+            return acceleration.to(q.dtype)
         dt = self.control_timestep if timestep is None else float(timestep)
 
         metric, force, metric_inverse = self.forward(q, qd, dt)

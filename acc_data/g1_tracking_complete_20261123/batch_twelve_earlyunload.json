@@ -1,0 +1,50 @@
+[
+  {
+    "name": "twelve_earlyunload940_128",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-unload-start",
+      "4.7",
+      "--final-unload-weight",
+      "128",
+      "--qp-snapshot-times",
+      "4.6",
+      "4.65",
+      "4.7",
+      "4.75",
+      "4.8"
+    ]
+  },
+  {
+    "name": "twelve_earlyunload940_2048",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-unload-start",
+      "4.7",
+      "--final-unload-weight",
+      "2048",
+      "--qp-snapshot-times",
+      "4.6",
+      "4.65",
+      "4.7",
+      "4.75",
+      "4.8"
+    ]
+  },
+  {
+    "name": "twelve_earlyunload940_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-unload-start",
+      "4.7",
+      "--final-unload-weight",
+      "10000",
+      "--qp-snapshot-times",
+      "4.6",
+      "4.65",
+      "4.7",
+      "4.75",
+      "4.8"
+    ]
+  }
+]

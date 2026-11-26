@@ -1,0 +1,24 @@
+{
+  "method": "Offline upper-body centroidal spline fit, linearized support inequalities with explicit slack",
+  "solver_status": "solved",
+  "maximum_coefficient_rad": 0.2,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "preflight_passed": true,
+  "full_tracking_passed": false,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "maximum_upper_joint_limit_violation_rad": -0.20748679757118227,
+  "runtime_coefficient_error_rad": 1.6406102578028867e-07,
+  "linearized_max_violation": {
+    "friction": 5.411701925250867e-05,
+    "normal": 8.64951295250771e-05,
+    "cop": 0.0016675275005396117
+  },
+  "baseline_max_violation": {
+    "friction": 0.8980965822476591,
+    "normal": 0.42341444256523836,
+    "cop": 0.3675433103134669
+  },
+  "maximum_actual_joint_correction_rad": 0.20000000000112653,
+  "recomputed_centroidal_and_closed_loop_still_required": true
+}

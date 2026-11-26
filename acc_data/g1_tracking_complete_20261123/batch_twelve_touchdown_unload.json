@@ -1,0 +1,30 @@
+[
+  {
+    "name": "twelve_search4",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--foot-contact-search-acceleration",
+      "4"
+    ]
+  },
+  {
+    "name": "twelve_search8",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--foot-contact-search-acceleration",
+      "8"
+    ]
+  },
+  {
+    "name": "twelve_unload2048",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-unload-start",
+      "4.8",
+      "--final-unload-ramp",
+      ".02",
+      "--final-unload-weight",
+      "2048"
+    ]
+  }
+]

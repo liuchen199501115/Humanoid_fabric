@@ -1,0 +1,8 @@
+{
+  "examples/g1_acceleration_cost.py": true,
+  "src/fabrics_sim/fabrics/dynamics_aware.py": true,
+  "src/fabrics_sim/fabrics/g1_pose_fabric.py": true,
+  "src/fabrics_sim/solver/AccelerationQP.py": true,
+  "src/fabrics_sim/solver/daqp_backend.py": true,
+  "src/fabrics_sim/solver/com_diagnostics.py": true
+}

@@ -1,0 +1,274 @@
+{
+  "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+  "search_parameters": {
+    "effort_fraction": 1.0,
+    "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+    "offset_limit": 0.25,
+    "iterations": 12,
+    "name": "step13_smooth5_upper_wrench_full_effort12"
+  },
+  "worst_effort": {
+    "frame": 960.0,
+    "peak_wrench_normalized_violation": 1.1287812626006866e-05,
+    "peak_effort_fraction": 0.9242552515113748,
+    "joint": "left_hip_pitch_joint",
+    "torque": -81.33446213300098,
+    "effort_cap": 88.0
+  },
+  "worst_wrench": {
+    "frame": 991.5,
+    "peak_wrench_normalized_violation": 0.002843923128670711,
+    "peak_effort_fraction": 0.5195705418646396,
+    "joint": "right_hip_pitch_joint",
+    "torque": -45.72220768408828,
+    "effort_cap": 88.0
+  },
+  "peak_dense_normalized_violation": 0.002843923128670711,
+  "scope": "Upper-body-only optimistic full-sole inverse-dynamics fit over source frames 960..1011. No change to root or legs; no claim about stance velocity or observed point/line geometry.",
+  "iterations": [
+    {
+      "iteration": 0,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 6.832312493543213e-13,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 1.608896581272775,
+      "peak_exact_normalized_violation": 1.5952518390379644,
+      "peak_upper_offset": 0.0399999999997185
+    },
+    {
+      "iteration": 1,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.334224206818654e-16,
+        "iterations": 16,
+        "accepted": true
+      },
+      "peak_linear_slack": 1.0185063485963373,
+      "peak_exact_normalized_violation": 1.0013604488187358,
+      "peak_upper_offset": 0.07999999997336221
+    },
+    {
+      "iteration": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.623792548454649e-17,
+        "iterations": 16,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.5738390131722131,
+      "peak_exact_normalized_violation": 0.5609490407574823,
+      "peak_upper_offset": 0.11999999993444004
+    },
+    {
+      "iteration": 3,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 4.476866764893293e-17,
+        "iterations": 18,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.18544002669464518,
+      "peak_exact_normalized_violation": 0.20410836373384694,
+      "peak_upper_offset": 0.1557166200871046
+    },
+    {
+      "iteration": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 4.938665741325699e-18,
+        "iterations": 18,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.00036669949080488155,
+      "peak_exact_normalized_violation": 0.0971252052935403,
+      "peak_upper_offset": 0.17391025861587134
+    },
+    {
+      "iteration": 5,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.827868835761715e-17,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 8.437712523888779e-05,
+      "peak_exact_normalized_violation": 0.03511656950459037,
+      "peak_upper_offset": 0.20855201038161883
+    },
+    {
+      "iteration": 6,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.8823730729491006e-19,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 7.301305711005169e-05,
+      "peak_exact_normalized_violation": 0.01626593089059964,
+      "peak_upper_offset": 0.2298790203966653
+    },
+    {
+      "iteration": 7,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 6.666945121618855e-17,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 7.145717706747141e-05,
+      "peak_exact_normalized_violation": 0.005525032399397306,
+      "peak_upper_offset": 0.24160144236514378
+    },
+    {
+      "iteration": 8,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 8.910002383754821e-18,
+        "iterations": 16,
+        "accepted": true
+      },
+      "peak_linear_slack": 6.573844337351715e-05,
+      "peak_exact_normalized_violation": 0.0036336988810761993,
+      "peak_upper_offset": 0.26008280525133637
+    },
+    {
+      "iteration": 9,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.170549898223915e-18,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 6.446962041123277e-05,
+      "peak_exact_normalized_violation": 0.00033310362229452273,
+      "peak_upper_offset": 0.2571095890794943
+    },
+    {
+      "iteration": 10,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.3194787672192796e-18,
+        "iterations": 17,
+        "accepted": true
+      },
+      "peak_linear_slack": 6.398856143159221e-05,
+      "peak_exact_normalized_violation": 5.5670320807027496e-05,
+      "peak_upper_offset": 0.2579000610366792
+    },
+    {
+      "iteration": 11,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 6.894619173604305e-18,
+        "iterations": 16,
+        "accepted": true
+      },
+      "peak_linear_slack": 6.411331950829995e-05,
+      "peak_exact_normalized_violation": 7.366270736897107e-05,
+      "peak_upper_offset": 0.25724947081893945
+    }
+  ],
+  "peak_raw_reference_joint_rmse": 0.14299718296930178,
+  "minimum_dense_joint_margin": 0.09175873261192857,
+  "peak_dense_speed_fraction": 0.5827343233316568,
+  "physical_tracking_certified": false,
+  "minimum_continuous_joint_margin": 0.09168859520693212,
+  "maximum_continuous_joint_velocity_fraction": 0.5827349217516022,
+  "joint_minimum": [
+    -0.651450918018621,
+    -0.10708407397278875,
+    0.06599699506029812,
+    0.34257728699965534,
+    -0.4184284262916005,
+    -0.15460000940548688,
+    -0.3105744434418299,
+    -0.2317640341847436,
+    -0.2438391227212601,
+    0.18497063879365083,
+    -0.5982730081226533,
+    0.018525632892783795,
+    0.07063614889103877,
+    -0.1424950428491986,
+    -0.2008903525576096,
+    0.06844944629449884,
+    0.24193946544496606,
+    -0.24854076630879537,
+    1.0992564701495675,
+    -0.11285616525822635,
+    -0.33172878017574003,
+    -0.2039283144908696,
+    -0.3842072078218624,
+    -0.37578020094346865,
+    0.15486918910355615,
+    0.7553891551417156,
+    -0.016492825709120737,
+    -0.39933891423433276,
+    0.0323895911644587
+  ],
+  "joint_maximum": [
+    -0.10715160653176543,
+    0.2205835465815409,
+    0.3293018961269973,
+    0.7754512100469909,
+    -0.1360414008693889,
+    0.10717480891250905,
+    0.5384793973234245,
+    0.09402515385239481,
+    0.14797395809262742,
+    1.4024727159282968,
+    -0.18281335446105557,
+    0.17011136612157435,
+    0.42689347896538093,
+    0.01491512054657646,
+    0.22160724766191073,
+    0.4355154272878411,
+    0.3541327446657879,
+    -0.06502488077410232,
+    1.3389951528695547,
+    -0.024046209951241806,
+    -0.1876154834533878,
+    -0.06041226333757283,
+    -0.014538053268993295,
+    -0.21622185698766802,
+    0.2754939025721889,
+    1.149295326776541,
+    0.05868261792565,
+    -0.28968994507238977,
+    0.16179381749900712
+  ],
+  "joint_maximum_speed": [
+    5.392874014842808,
+    2.5448023202454193,
+    1.603989666781238,
+    5.108370567225311,
+    2.698571173060662,
+    1.842144494951413,
+    5.87696677114062,
+    2.763411541594011,
+    4.047113330725735,
+    11.654698435032046,
+    5.965929151195233,
+    2.4984728580942273,
+    2.6366458186357606,
+    1.3262143113095175,
+    6.73320283623534,
+    2.676804471889305,
+    1.1042751319150352,
+    1.36531472810268,
+    3.158897437414427,
+    0.7950106399331608,
+    1.777225489946783,
+    1.8019939195739965,
+    2.5835952535524807,
+    1.149303775131529,
+    0.9368079900741577,
+    2.8371165091723656,
+    0.911658098560953,
+    0.7920878365278448,
+    1.1632757506559455
+  ],
+  "preflight_passed": false
+}

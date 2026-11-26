@@ -1,0 +1,8 @@
+{
+  "duration": 0.0040000000000000036,
+  "continuous_joint_max_error": 0.009422506379688986,
+  "matched_joint_max_error": 0.00016372044660584173,
+  "continuous_root_orientation_error": 0.001357462547473716,
+  "matched_root_orientation_error": 9.984926759877685e-05,
+  "velocity_error_max": 0.06352657356868618
+}

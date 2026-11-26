@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ten_support_y20_ori27_budget320",
+    "parent": "ten_support_y20_ori27_320",
+    "options": [
+      "--synchronous-effort-budget-start",
+      "3.2",
+      "--synchronous-effort-budget-fraction",
+      "1"
+    ]
+  }
+]

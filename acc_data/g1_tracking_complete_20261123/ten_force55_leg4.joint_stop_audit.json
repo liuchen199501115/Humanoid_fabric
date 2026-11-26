@@ -1,0 +1,80 @@
+{
+  "trial": "ten_force55_leg4",
+  "joint_stops": [
+    {
+      "joint": "left_ankle_roll_joint",
+      "count": 150,
+      "first_time_s": 3.178,
+      "late_first_time_s": 3.254,
+      "peak_outward_predicted_acceleration_rad_s2": 40.653324127197266,
+      "observed_acceleration_rms_rad_s2": 0.10342406480815657
+    },
+    {
+      "joint": "waist_roll_joint",
+      "count": 20,
+      "first_time_s": 3.83,
+      "late_first_time_s": 3.83,
+      "peak_outward_predicted_acceleration_rad_s2": 303.1563415527344,
+      "observed_acceleration_rms_rad_s2": 1.04841169976403
+    }
+  ],
+  "root_angular_intervals": [
+    {
+      "start_s": 3.2,
+      "end_s": 3.6,
+      "mean_predicted_root_angular_acceleration": [
+        -2.7504804134368896,
+        -1.5970149040222168,
+        -2.9998886585235596
+      ],
+      "mean_observed_root_angular_acceleration": [
+        -2.2119554877280776,
+        -1.593998000025742,
+        -2.995149195194277
+      ]
+    },
+    {
+      "start_s": 3.65,
+      "end_s": 3.75,
+      "mean_predicted_root_angular_acceleration": [
+        5.539311408996582,
+        -10.972393989562988,
+        2.107886552810669
+      ],
+      "mean_observed_root_angular_acceleration": [
+        9.105986356734997,
+        -13.161151558161045,
+        -2.8806877136229865
+      ]
+    },
+    {
+      "start_s": 3.79,
+      "end_s": 3.82,
+      "mean_predicted_root_angular_acceleration": [
+        16.425817489624023,
+        -4.316747188568115,
+        -2.111690044403076
+      ],
+      "mean_observed_root_angular_acceleration": [
+        15.946401779850229,
+        -4.059476715823049,
+        -1.6973932584126277
+      ]
+    },
+    {
+      "start_s": 3.82,
+      "end_s": 3.848,
+      "mean_predicted_root_angular_acceleration": [
+        -31.2412166595459,
+        69.61336517333984,
+        -10.796990394592285
+      ],
+      "mean_observed_root_angular_acceleration": [
+        48.39182751519795,
+        -67.26436569755256,
+        -81.09281664448568
+      ]
+    }
+  ],
+  "note": "Outward QP predictions while a joint is stationary at its physical stop identify unmodeled stop reactions. Interval differences can also include foot impacts; this is diagnostic evidence, not a causal proof in isolation."
+}

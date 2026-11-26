@@ -1,0 +1,85 @@
+{
+  "parent": "turn_force_feasible_com_floor",
+  "iterations": [
+    {
+      "iteration": 0,
+      "status": "solved",
+      "peak_linearized_cop_slack_m": 0.04728362616471451,
+      "maximum_coordinate_offset": [
+        0.012655762754494896,
+        0.012289929148249898,
+        0.02181507519157079,
+        0.05538129524990532,
+        0.056278808258782974,
+        0.019197003391163075
+      ],
+      "projection_errors": [
+        9.949787601763768e-08,
+        3.4498647045017995e-08,
+        3.6024583318289924e-08
+      ]
+    },
+    {
+      "iteration": 1,
+      "status": "solved",
+      "peak_linearized_cop_slack_m": 0.029989669920807014,
+      "maximum_coordinate_offset": [
+        0.013218943988353484,
+        0.012101013216190967,
+        0.014594351761980795,
+        0.09149797311893458,
+        0.10866822889014423,
+        0.022859782472577528
+      ],
+      "projection_errors": [
+        9.930267167585677e-08,
+        3.591717144774243e-08,
+        3.871261937764934e-08
+      ]
+    },
+    {
+      "iteration": 2,
+      "status": "solved",
+      "peak_linearized_cop_slack_m": 0.027019469322099927,
+      "maximum_coordinate_offset": [
+        0.013877533253671064,
+        0.012485837452661904,
+        0.016366253656620575,
+        0.09817666436104461,
+        0.11382841327769619,
+        0.025407660029399162
+      ],
+      "projection_errors": [
+        9.977822766049031e-08,
+        3.863331873282023e-08,
+        4.048832680743894e-08
+      ]
+    },
+    {
+      "iteration": 3,
+      "status": "solved",
+      "peak_linearized_cop_slack_m": 0.030647094121249448,
+      "maximum_coordinate_offset": [
+        0.013869036352914192,
+        0.012708386921196609,
+        0.016444469027778373,
+        0.10205485660699541,
+        0.11800010179784576,
+        0.025566725052438746
+      ],
+      "projection_errors": [
+        9.863782028930072e-08,
+        4.064067871420671e-08,
+        4.161916454460934e-08
+      ]
+    }
+  ],
+  "peak_com_projection_error": 9.863782028930072e-08,
+  "peak_position_residual": 4.064067871420671e-08,
+  "peak_orientation_residual": 4.161916454460934e-08,
+  "minimum_dense_joint_limit_margin": 0.019741475582122803,
+  "minimum_dense_native_clearance": -0.0011072551699190525,
+  "peak_source_joint_reference_rmse": 0.14652742445468903,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

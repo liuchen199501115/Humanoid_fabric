@@ -1,0 +1,24 @@
+{
+  "name": "twelve_earlyclock10_leg256",
+  "landings": 11,
+  "source_frame": 960.0,
+  "prefix_end_time_s": 3.85,
+  "history_equal_prefix_fields": 167,
+  "different_prefix_fields": [],
+  "one_native_qp": true,
+  "exact_applied_qp_torque": true,
+  "unchanged_fidelity": true,
+  "next_step": {
+    "step": 12,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 0.018990400349909564,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

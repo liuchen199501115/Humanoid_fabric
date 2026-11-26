@@ -1,0 +1,17 @@
+[
+  {
+    "method": "semiimplicit_physical",
+    "root_orientation_error": 0.0,
+    "support_heel_height": -2.49737952546375e-06
+  },
+  {
+    "method": "old_rotation_surrogate",
+    "root_orientation_error": 0.0008771754065489196,
+    "support_heel_height": -5.7989983513542787e-05
+  },
+  {
+    "method": "exact_rotation_linearization",
+    "root_orientation_error": 5.1602995351915486e-08,
+    "support_heel_height": -2.470681763261373e-06
+  }
+]

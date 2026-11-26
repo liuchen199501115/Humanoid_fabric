@@ -1,0 +1,19 @@
+{
+  "name": "late_com_height81_drop5",
+  "peak_required_friction_norm": 0.9142899544295785,
+  "source_frames": [
+    820,
+    1000
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    10.548061874370791,
+    3.8829325428315284,
+    5.236438785746847
+  ],
+  "minimum_reference_normal_force": 133.1695735284449,
+  "maximum_reference_normal_force": 465.3538400323692,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 236.34240060610483,
+  "physical_tracking_certified": false
+}

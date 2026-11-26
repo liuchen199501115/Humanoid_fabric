@@ -1,0 +1,25 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.015,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 5.589703812472161e-07,
+  "maximum_foot_rotation_residual_rad": 5.249200509142226e-07,
+  "maximum_com_ik_residual_m": 2.500632272223735e-07,
+  "maximum_added_root_rotation_rad": 0.02420817019398897,
+  "worst_frame": 828,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.05521198734641075,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Offline bounded lateral COM offset with both foot poses preserved",
+  "offset_y_m": 0.015,
+  "start_frame": 680,
+  "rise_end_frame": 760,
+  "hold_end_frame": 900,
+  "end_frame": 1000,
+  "parent_sha256": "f8b15c0b327ca3c49a2482904f45cf360905c82a0ca75379af83fa0926aa6c80",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false
+}

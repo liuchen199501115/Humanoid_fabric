@@ -1,0 +1,74 @@
+[
+  {
+    "time": 3.5,
+    "horizon": 2,
+    "status": "PrimalInfeasible",
+    "linear_violation": 499.5748901194209
+  },
+  {
+    "time": 3.5,
+    "horizon": 6,
+    "status": "PrimalInfeasible",
+    "linear_violation": 499.57489008665016
+  },
+  {
+    "time": 3.5,
+    "horizon": 12,
+    "status": "PrimalInfeasible",
+    "linear_violation": 499.57489012718474
+  },
+  {
+    "time": 3.6,
+    "horizon": 2,
+    "status": "Solved",
+    "linear_violation": 1.446753827849534e-11
+  },
+  {
+    "time": 3.6,
+    "horizon": 6,
+    "status": "Solved",
+    "linear_violation": 1.3718026714570897e-11
+  },
+  {
+    "time": 3.6,
+    "horizon": 12,
+    "status": "Solved",
+    "linear_violation": 2.20385376614729e-11
+  },
+  {
+    "time": 3.7,
+    "horizon": 2,
+    "status": "Solved",
+    "linear_violation": 6.80842049405328e-11
+  },
+  {
+    "time": 3.7,
+    "horizon": 6,
+    "status": "Solved",
+    "linear_violation": 6.235723049030639e-11
+  },
+  {
+    "time": 3.7,
+    "horizon": 12,
+    "status": "Solved",
+    "linear_violation": 9.617906471248716e-11
+  },
+  {
+    "time": 3.8,
+    "horizon": 2,
+    "status": "Solved",
+    "linear_violation": 1.4594547792512458e-11
+  },
+  {
+    "time": 3.8,
+    "horizon": 6,
+    "status": "Solved",
+    "linear_violation": 1.1344801764678891e-09
+  },
+  {
+    "time": 3.8,
+    "horizon": 12,
+    "status": "Solved",
+    "linear_violation": 6.359801574262747e-12
+  }
+]

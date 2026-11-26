@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ten_verify",
+    "first_stationary_upper_stop_frame": 814.5200000000001,
+    "peak_waist_roll": 0.5199999809265137,
+    "final_waist_roll": 0.5199999809265137
+  },
+  {
+    "name": "ten_pelvis_roll2",
+    "first_stationary_upper_stop_frame": 821.2400000000002,
+    "peak_waist_roll": 0.5199999213218689,
+    "final_waist_roll": 0.5199999213218689
+  },
+  {
+    "name": "ten_waist_metric4",
+    "first_stationary_upper_stop_frame": 822.68,
+    "peak_waist_roll": 0.5200001001358032,
+    "final_waist_roll": 0.5199999809265137
+  }
+]

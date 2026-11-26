@@ -1,0 +1,180 @@
+{
+  "timing": [
+    {
+      "side": 0,
+      "source_onset": 21,
+      "control_onset": 23,
+      "source_point_speed": 1.0676844070649862
+    },
+    {
+      "side": 1,
+      "source_onset": 67,
+      "control_onset": 68,
+      "source_point_speed": 0.49043859279231394
+    },
+    {
+      "side": 0,
+      "source_onset": 164,
+      "control_onset": 172,
+      "source_point_speed": 3.119540862281232
+    },
+    {
+      "side": 1,
+      "source_onset": 256,
+      "control_onset": 257,
+      "source_point_speed": 0.7964576823002912
+    },
+    {
+      "side": 0,
+      "source_onset": 352,
+      "control_onset": 359,
+      "source_point_speed": 3.3464763140901295
+    },
+    {
+      "side": 1,
+      "source_onset": 450,
+      "control_onset": 451,
+      "source_point_speed": 0.773165268689162
+    },
+    {
+      "side": 0,
+      "source_onset": 549,
+      "control_onset": 555,
+      "source_point_speed": 2.7959200761287457
+    },
+    {
+      "side": 1,
+      "source_onset": 640,
+      "control_onset": 641,
+      "source_point_speed": 0.44512332708711255
+    },
+    {
+      "side": 0,
+      "source_onset": 762,
+      "control_onset": 771,
+      "source_point_speed": 2.7088346140842647
+    },
+    {
+      "side": 1,
+      "source_onset": 802,
+      "control_onset": 809,
+      "source_point_speed": 2.736888070557022
+    },
+    {
+      "side": 0,
+      "source_onset": 884,
+      "control_onset": 884,
+      "source_point_speed": 0.1782402364552953
+    },
+    {
+      "side": 1,
+      "source_onset": 952,
+      "control_onset": 955,
+      "source_point_speed": 0.617924514497655
+    },
+    {
+      "side": 0,
+      "source_onset": 1013,
+      "control_onset": 1014,
+      "source_point_speed": 1.21779540120177
+    },
+    {
+      "side": 1,
+      "source_onset": 1070,
+      "control_onset": 1073,
+      "source_point_speed": 3.3036593745706595
+    },
+    {
+      "side": 0,
+      "source_onset": 1113,
+      "control_onset": 1114,
+      "source_point_speed": 0.7595512525989151
+    },
+    {
+      "side": 1,
+      "source_onset": 1198,
+      "control_onset": 1199,
+      "source_point_speed": 0.5511521055820535
+    },
+    {
+      "side": 0,
+      "source_onset": 1244,
+      "control_onset": 1245,
+      "source_point_speed": 0.6105116649982841
+    },
+    {
+      "side": 1,
+      "source_onset": 1322,
+      "control_onset": 1326,
+      "source_point_speed": 3.1592188727366306
+    },
+    {
+      "side": 0,
+      "source_onset": 1368,
+      "control_onset": 1369,
+      "source_point_speed": 0.7598208900020165
+    },
+    {
+      "side": 1,
+      "source_onset": 1447,
+      "control_onset": 1449,
+      "source_point_speed": 0.5060221641697549
+    },
+    {
+      "side": 0,
+      "source_onset": 1502,
+      "control_onset": 1503,
+      "source_point_speed": 0.9118687613533968
+    },
+    {
+      "side": 1,
+      "source_onset": 1576,
+      "control_onset": 1582,
+      "source_point_speed": 3.250491330735868
+    },
+    {
+      "side": 0,
+      "source_onset": 1623,
+      "control_onset": 1624,
+      "source_point_speed": 0.4978765667238632
+    },
+    {
+      "side": 1,
+      "source_onset": 1682,
+      "control_onset": 1685,
+      "source_point_speed": 3.1504088959437233
+    },
+    {
+      "side": 0,
+      "source_onset": 1754,
+      "control_onset": 1755,
+      "source_point_speed": 0.9149738412566254
+    },
+    {
+      "side": 1,
+      "source_onset": 1799,
+      "control_onset": 1801,
+      "source_point_speed": 2.8344732727203317
+    },
+    {
+      "side": 0,
+      "source_onset": 1848,
+      "control_onset": 1849,
+      "source_point_speed": 0.2755755547068276
+    },
+    {
+      "side": 1,
+      "source_onset": 1910,
+      "control_onset": 1913,
+      "source_point_speed": 3.536552268593412
+    },
+    {
+      "side": 0,
+      "source_onset": 1958,
+      "control_onset": 1959,
+      "source_point_speed": 0.7107204003981176
+    }
+  ],
+  "source_labels_unchanged": true,
+  "full_tracking_passed": false
+}

@@ -1,0 +1,13 @@
+{
+  "root_drop": 0.01,
+  "landing_frame": 880,
+  "peak_position_residual": 0.009705982546095409,
+  "peak_orientation_residual": 0.0026409992214074325,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 0.05776207149028778,
+  "minimum_dense_clearance": -0.0009162358288823669,
+  "maximum_source_landing_foot_error": 0.003057012339139759,
+  "native_clearance_at884": -0.0008416253805915708,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

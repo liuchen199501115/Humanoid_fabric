@@ -1,0 +1,5 @@
+{
+  "full_motion_tracking_passed": false,
+  "complete_physics_trial": false,
+  "reason": "Unpromoted collision prototype reused the contact active variable for its collision mask, incorrectly enabling swing-foot forces. No verified forecast was admitted before stopping. Corrected masks and added an independent inactive-wrench audit."
+}

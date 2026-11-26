@@ -1,0 +1,47 @@
+[
+  {
+    "case": "baseline",
+    "status": "solved",
+    "maximum_physical_residual": 2.0250036243396607e-06,
+    "root_angular_acceleration": [
+      6.213862890717132,
+      -16.71439903513227,
+      38.7839429887591
+    ],
+    "waist_acceleration": [
+      -179.37246145820197,
+      44.24555298058215,
+      103.77053760812167
+    ]
+  },
+  {
+    "case": "pelvis_body10",
+    "status": "solved",
+    "maximum_physical_residual": 4.629513028930887e-06,
+    "root_angular_acceleration": [
+      -8.038672987796039,
+      -16.619872618669035,
+      4.064918804450194
+    ],
+    "waist_acceleration": [
+      -145.30254826889026,
+      59.691076804463485,
+      125.6905348578424
+    ]
+  },
+  {
+    "case": "pelvis_body01",
+    "status": "solved",
+    "maximum_physical_residual": 8.899157730724028e-07,
+    "root_angular_acceleration": [
+      -15.689526119176566,
+      -17.553755788793904,
+      4.876846910053049
+    ],
+    "waist_acceleration": [
+      -221.35049935060434,
+      72.17634516934999,
+      147.78314888407854
+    ]
+  }
+]

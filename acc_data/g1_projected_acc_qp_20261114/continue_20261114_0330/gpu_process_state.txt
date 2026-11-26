@@ -1,0 +1,6 @@
+    PID    PPID     ELAPSED STAT WCHAN                            COMMAND
+  21924   21923       04:07 S    sigsuspend                       timeout
+  21925   21924       04:07 R    -                                python
+  22264    4091       02:47 Ds   uvm_va_space_destroy             nvidia-smi
+  22453    4091       01:39 Ss   hrtimer_nanosleep                python
+  22454   22453       01:39 Dsl  uvm_gpu_retain_by_uuid           python

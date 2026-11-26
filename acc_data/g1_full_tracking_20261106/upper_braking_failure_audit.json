@@ -1,0 +1,108 @@
+{
+  "scope": "Counterfactual diagnostics only; no infeasible solution or removed-constraint variant was applied.",
+  "braking_row_groups": {
+    "waist_yaw": [
+      50,
+      85
+    ],
+    "waist_roll": [
+      51,
+      86
+    ],
+    "waist_pitch": [
+      52,
+      87
+    ],
+    "arms": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ]
+  },
+  "variants": [
+    {
+      "removed_braking_groups": [],
+      "success": false,
+      "status": 2,
+      "remaining_rows": 213
+    },
+    {
+      "removed_braking_groups": [
+        "arms"
+      ],
+      "success": true,
+      "status": 0,
+      "remaining_rows": 185
+    },
+    {
+      "removed_braking_groups": [
+        "waist_yaw"
+      ],
+      "success": false,
+      "status": 2,
+      "remaining_rows": 211
+    },
+    {
+      "removed_braking_groups": [
+        "waist_pitch"
+      ],
+      "success": false,
+      "status": 2,
+      "remaining_rows": 211
+    },
+    {
+      "removed_braking_groups": [
+        "waist_roll"
+      ],
+      "success": false,
+      "status": 2,
+      "remaining_rows": 211
+    },
+    {
+      "removed_braking_groups": [
+        "arms",
+        "waist_yaw",
+        "waist_pitch"
+      ],
+      "success": true,
+      "status": 0,
+      "remaining_rows": 181
+    },
+    {
+      "removed_braking_groups": [
+        "waist_yaw",
+        "waist_roll",
+        "waist_pitch",
+        "arms"
+      ],
+      "success": true,
+      "status": 0,
+      "remaining_rows": 179
+    }
+  ]
+}

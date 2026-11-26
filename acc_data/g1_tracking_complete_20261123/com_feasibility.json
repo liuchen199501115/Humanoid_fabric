@@ -1,0 +1,68 @@
+[
+  {
+    "time_s": 2.9,
+    "desired_com_acceleration": [
+      -0.9595893621444702,
+      3.2456727027893066,
+      0.19902628660202026
+    ],
+    "cases": {
+      "xyz": {
+        "feasible": true,
+        "status": 0
+      },
+      "y": {
+        "feasible": true,
+        "status": 0
+      },
+      "xy": {
+        "feasible": true,
+        "status": 0
+      }
+    }
+  },
+  {
+    "time_s": 3.0500000000000003,
+    "desired_com_acceleration": [
+      -3.7000277042388916,
+      4.028189182281494,
+      5.423728942871094
+    ],
+    "cases": {
+      "xyz": {
+        "feasible": true,
+        "status": 0
+      },
+      "y": {
+        "feasible": true,
+        "status": 0
+      },
+      "xy": {
+        "feasible": true,
+        "status": 0
+      }
+    }
+  },
+  {
+    "time_s": 3.1,
+    "desired_com_acceleration": [
+      0.1911134272813797,
+      3.930757761001587,
+      4.9000396728515625
+    ],
+    "cases": {
+      "xyz": {
+        "feasible": true,
+        "status": 0
+      },
+      "y": {
+        "feasible": true,
+        "status": 0
+      },
+      "xy": {
+        "feasible": true,
+        "status": 0
+      }
+    }
+  }
+]

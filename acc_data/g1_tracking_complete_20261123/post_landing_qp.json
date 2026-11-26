@@ -1,0 +1,404 @@
+[
+  {
+    "time_s": 2.9,
+    "cases": {
+      "all": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.7674353205205549,
+        "left_shoulder_roll_qdd": 1.6777240400113378,
+        "left_hip_roll_qdd": 9.677785740344653,
+        "left_ankle_roll_qdd": 6.76456459226287,
+        "joint_acceleration_distance_from_fabric": 68.91883500758324,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_collision": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 33.840877699969624,
+        "left_shoulder_roll_qdd": 2.084154013754171,
+        "left_hip_roll_qdd": 13.221986372968223,
+        "left_ankle_roll_qdd": 6.840702386741986,
+        "joint_acceleration_distance_from_fabric": 60.99727858047661,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_joint_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.767435320521404,
+        "left_shoulder_roll_qdd": 1.6777240400043203,
+        "left_hip_roll_qdd": 9.677785740347026,
+        "left_ankle_roll_qdd": 6.764564592268963,
+        "joint_acceleration_distance_from_fabric": 68.91883500759911,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_position_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.7674353205205549,
+        "left_shoulder_roll_qdd": 1.6777240400113378,
+        "left_hip_roll_qdd": 9.677785740344653,
+        "left_ankle_roll_qdd": 6.76456459226287,
+        "joint_acceleration_distance_from_fabric": 68.91883500758324,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_orientation_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.7674353205205549,
+        "left_shoulder_roll_qdd": 1.6777240400113378,
+        "left_hip_roll_qdd": 9.677785740344653,
+        "left_ankle_roll_qdd": 6.76456459226287,
+        "joint_acceleration_distance_from_fabric": 68.91883500758324,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_all_tubes": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.767435320521404,
+        "left_shoulder_roll_qdd": 1.6777240400043203,
+        "left_hip_roll_qdd": 9.677785740347026,
+        "left_ankle_roll_qdd": 6.764564592268963,
+        "joint_acceleration_distance_from_fabric": 68.91883500759911,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_contact_kinematics": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 5.172472264819611,
+        "left_shoulder_roll_qdd": 0.24588997038416224,
+        "left_hip_roll_qdd": 51.32212783238105,
+        "left_ankle_roll_qdd": 15.150127998958084,
+        "joint_acceleration_distance_from_fabric": 102.41661346988047,
+        "tracking_tube_slack": [
+          0.1840075073141348,
+          0.0,
+          0.0
+        ]
+      },
+      "without_torque_bounds": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -1.9590274340497444,
+        "left_shoulder_roll_qdd": 3.1036363875852038,
+        "left_hip_roll_qdd": 10.177077250401299,
+        "left_ankle_roll_qdd": 5.821047332127047,
+        "joint_acceleration_distance_from_fabric": 69.66988826748899,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "reconstructed_solution_max_difference": 0.0
+  },
+  {
+    "time_s": 3.0500000000000003,
+    "cases": {
+      "all": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -98.33257153189504,
+        "left_shoulder_roll_qdd": -80.03153529647548,
+        "left_hip_roll_qdd": -29.196440637851417,
+        "left_ankle_roll_qdd": 60.0614549344554,
+        "joint_acceleration_distance_from_fabric": 472.0634080536518,
+        "tracking_tube_slack": [
+          16.06163626089034,
+          0.0,
+          0.0
+        ]
+      },
+      "without_collision": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -105.04617909790991,
+        "left_shoulder_roll_qdd": -128.06553356934728,
+        "left_hip_roll_qdd": -11.807825741473671,
+        "left_ankle_roll_qdd": 47.67862576012362,
+        "joint_acceleration_distance_from_fabric": 424.5049509613486,
+        "tracking_tube_slack": [
+          14.143550938360388,
+          0.0,
+          0.0
+        ]
+      },
+      "without_joint_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -124.23495100709033,
+        "left_shoulder_roll_qdd": -84.63066623995158,
+        "left_hip_roll_qdd": -47.73744220587309,
+        "left_ankle_roll_qdd": -25.24122140208669,
+        "joint_acceleration_distance_from_fabric": 511.43445976669085,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_position_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 173.3367154724245,
+        "left_shoulder_roll_qdd": 106.94981497810639,
+        "left_hip_roll_qdd": 51.97762827813211,
+        "left_ankle_roll_qdd": 47.940315201444676,
+        "joint_acceleration_distance_from_fabric": 180.76258192793668,
+        "tracking_tube_slack": [
+          2.9034916069456758,
+          0.0,
+          0.0
+        ]
+      },
+      "without_orientation_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -98.33257153189504,
+        "left_shoulder_roll_qdd": -80.03153529647548,
+        "left_hip_roll_qdd": -29.196440637851417,
+        "left_ankle_roll_qdd": 60.0614549344554,
+        "joint_acceleration_distance_from_fabric": 472.0634080536518,
+        "tracking_tube_slack": [
+          16.06163626089034,
+          0.0,
+          0.0
+        ]
+      },
+      "without_all_tubes": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 171.34077418680147,
+        "left_shoulder_roll_qdd": 93.76711602204442,
+        "left_hip_roll_qdd": 46.185521332290286,
+        "left_ankle_roll_qdd": 31.16140057203613,
+        "joint_acceleration_distance_from_fabric": 196.25570406001913,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_contact_kinematics": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -47.02336155268131,
+        "left_shoulder_roll_qdd": -78.74002830359493,
+        "left_hip_roll_qdd": -113.36844629593165,
+        "left_ankle_roll_qdd": 45.5750761047945,
+        "joint_acceleration_distance_from_fabric": 425.8442082889065,
+        "tracking_tube_slack": [
+          13.204595686288226,
+          0.0,
+          0.0
+        ]
+      },
+      "without_torque_bounds": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -81.85368705184734,
+        "left_shoulder_roll_qdd": -97.42227413741571,
+        "left_hip_roll_qdd": -24.25231920772437,
+        "left_ankle_roll_qdd": 72.42725864803612,
+        "joint_acceleration_distance_from_fabric": 495.19549543543343,
+        "tracking_tube_slack": [
+          16.255044395071437,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "reconstructed_solution_max_difference": 0.0
+  },
+  {
+    "time_s": 3.1,
+    "cases": {
+      "all": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 6.351307997105984,
+        "left_shoulder_roll_qdd": 232.29166006604027,
+        "left_hip_roll_qdd": 473.0963163504457,
+        "left_ankle_roll_qdd": -99.24802248044207,
+        "joint_acceleration_distance_from_fabric": 1514.1632599736588,
+        "tracking_tube_slack": [
+          372.148629584838,
+          0.0,
+          0.0
+        ]
+      },
+      "without_collision": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 121.43313526806047,
+        "left_shoulder_roll_qdd": 118.25993742517421,
+        "left_hip_roll_qdd": 561.5154435685527,
+        "left_ankle_roll_qdd": -220.8069887365628,
+        "joint_acceleration_distance_from_fabric": 1477.24257580054,
+        "tracking_tube_slack": [
+          278.1101720818858,
+          0.0,
+          0.0
+        ]
+      },
+      "without_joint_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -109.49014823544333,
+        "left_shoulder_roll_qdd": -120.69659357334342,
+        "left_hip_roll_qdd": 195.33985450873013,
+        "left_ankle_roll_qdd": -137.606525861388,
+        "joint_acceleration_distance_from_fabric": 835.8254253109393,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_position_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 71.48231558194973,
+        "left_shoulder_roll_qdd": 298.9471524905441,
+        "left_hip_roll_qdd": 602.5059261591412,
+        "left_ankle_roll_qdd": -439.3229442146011,
+        "joint_acceleration_distance_from_fabric": 1564.2392293940982,
+        "tracking_tube_slack": [
+          293.79309788533067,
+          0.0,
+          0.0
+        ]
+      },
+      "without_orientation_tube": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 65.15648700131429,
+        "left_shoulder_roll_qdd": 164.54276922340716,
+        "left_hip_roll_qdd": 51.61819298031025,
+        "left_ankle_roll_qdd": -39.71355788194975,
+        "joint_acceleration_distance_from_fabric": 1197.4407717610354,
+        "tracking_tube_slack": [
+          360.2513392284856,
+          0.0,
+          0.0
+        ]
+      },
+      "without_all_tubes": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 69.24461371062299,
+        "left_shoulder_roll_qdd": 3.5898296681970194,
+        "left_hip_roll_qdd": 36.284323439683305,
+        "left_ankle_roll_qdd": -71.12074002333824,
+        "joint_acceleration_distance_from_fabric": 374.55697899118394,
+        "tracking_tube_slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "without_contact_kinematics": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": 30.076975291496765,
+        "left_shoulder_roll_qdd": 25.961870039766417,
+        "left_hip_roll_qdd": 63.32994544732179,
+        "left_ankle_roll_qdd": -298.9168697632192,
+        "joint_acceleration_distance_from_fabric": 815.6776281767781,
+        "tracking_tube_slack": [
+          31.049004405064863,
+          0.0,
+          0.0
+        ]
+      },
+      "without_torque_bounds": {
+        "valid": true,
+        "status": [
+          "DAQP 1; KKT certified"
+        ],
+        "right_shoulder_roll_qdd": -317.24753329749853,
+        "left_shoulder_roll_qdd": 395.63966619309576,
+        "left_hip_roll_qdd": 331.8094502467612,
+        "left_ankle_roll_qdd": 51.564092689682006,
+        "joint_acceleration_distance_from_fabric": 1338.5235783920054,
+        "tracking_tube_slack": [
+          206.36077515708905,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "reconstructed_solution_max_difference": 0.0
+  }
+]

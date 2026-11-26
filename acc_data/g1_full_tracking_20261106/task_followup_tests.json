@@ -1,0 +1,15 @@
+{
+  "patterns": [
+    "test_g1_full_tracking.py",
+    "test_task_priority.py",
+    "test_contact_patches.py",
+    "test_toe_contact.py",
+    "test_rigid_body_frames.py",
+    "test_reference_tracking_audit.py",
+    "test_source_priority.py"
+  ],
+  "tests_run": 60,
+  "failures": 0,
+  "errors": 0,
+  "successful": true
+}

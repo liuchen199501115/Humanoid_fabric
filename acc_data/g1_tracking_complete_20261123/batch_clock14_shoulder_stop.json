@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ten_clock14_shoulder4",
+    "parent": "ten_comspeed02_clock14",
+    "options": [
+      "--shoulder-roll-weight-scale",
+      "4",
+      "--shoulder-roll-weight-start",
+      "3.806",
+      "--shoulder-roll-weight-ramp",
+      ".03",
+      "--shoulder-roll-weight-side",
+      "right"
+    ]
+  },
+  {
+    "name": "ten_clock14_shoulder16",
+    "parent": "ten_comspeed02_clock14",
+    "options": [
+      "--shoulder-roll-weight-scale",
+      "16",
+      "--shoulder-roll-weight-start",
+      "3.806",
+      "--shoulder-roll-weight-ramp",
+      ".03",
+      "--shoulder-roll-weight-side",
+      "right"
+    ]
+  },
+  {
+    "name": "ten_clock14_shoulder16_pitch_stop",
+    "parent": "ten_comspeed02_clock14",
+    "options": [
+      "--shoulder-roll-weight-scale",
+      "16",
+      "--shoulder-roll-weight-start",
+      "3.806",
+      "--shoulder-roll-weight-ramp",
+      ".03",
+      "--shoulder-roll-weight-side",
+      "right",
+      "--observed-joint-stop-joints",
+      "waist_roll_joint",
+      "waist_pitch_joint"
+    ]
+  }
+]

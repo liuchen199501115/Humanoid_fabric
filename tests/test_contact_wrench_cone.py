@@ -1,7 +1,9 @@
 import unittest
 import math
 import torch
-from fabrics_sim.solver.AccelerationQP import build_single_support_wrench_constraints
+from fabrics_sim.solver.AccelerationQP import (
+    build_single_support_wrench_constraints, split_foot_wrench_constraints,
+)
 
 
 class ContactWrenchConeTests(unittest.TestCase):
@@ -40,4 +42,68 @@ class ContactWrenchConeTests(unittest.TestCase):
         self.assertLessEqual(float((cone@wrench[...,None]).squeeze(-1).sub(b).max()),3e-5)
 
 
-if __name__=='__main__':unittest.main()
+
+
+class FootWrenchBlockTests(unittest.TestCase):
+    def test_both_cone_sizes_preserve_each_foot_block(self):
+        rotations=torch.eye(3,dtype=torch.float64).expand(4,2,3,3)
+        for coupled,rows in [(False,12),(True,20)]:
+            with self.subTest(coupled_yaw=coupled):
+                G,b=build_single_support_wrench_constraints(
+                    contact_mode=torch.tensor([0,1,2,3]),foot_rotation_world=rotations,
+                    coupled_yaw=coupled)
+                blocks=split_foot_wrench_constraints(G,b)
+                self.assertEqual([block[0].shape[1] for block in blocks],[rows,rows])
+                self.assertEqual(int(blocks[0][0][:,:,6:].count_nonzero()),0)
+                self.assertEqual(int(blocks[1][0][:,:,:6].count_nonzero()),0)
+                torch.testing.assert_close(torch.cat([block[0] for block in blocks],1),G)
+                torch.testing.assert_close(torch.cat([block[1] for block in blocks],1),b)
+
+    def test_right_point_patch_replaces_the_entire_tilted_sole_cone(self):
+        rotations=torch.eye(3,dtype=torch.float64).repeat(1,2,1,1)
+        angle=.7;c,s=math.cos(angle),math.sin(angle)
+        rotations[0,1]=torch.tensor([[1.,0.,0.],[0.,c,-s],[0.,s,c]],dtype=torch.float64)
+        mode=torch.tensor([2])
+        G,b=build_single_support_wrench_constraints(contact_mode=mode,foot_rotation_world=rotations)
+        point_G,point_b=build_single_support_wrench_constraints(
+            contact_mode=mode,foot_rotation_world=torch.eye(3,dtype=torch.float64).expand(1,2,3,3),
+            toe_length=0.,heel_length=0.,half_width=0.,coupled_yaw=True)
+        blocks=split_foot_wrench_constraints(G,b)
+        blocks[1]=split_foot_wrench_constraints(point_G,point_b)[1]
+        combined_G=torch.cat([block[0] for block in blocks],1)
+        combined_b=torch.cat([block[1] for block in blocks],1)
+        # A vertical force at the horizontal observed point is valid. Keeping
+        # any tilted ankle-frame friction rows would reject this same force.
+        wrench=torch.zeros(1,12,1,dtype=torch.float64);wrench[0,8]=300.
+        self.assertLessEqual(float((combined_G@wrench).squeeze(-1).sub(combined_b).max()),1e-10)
+        self.assertGreater(float((G@wrench).squeeze(-1).sub(b).max()),1.)
+        self.assertEqual(combined_G.shape[1],12+20)
+
+    def test_left_patch_keeps_all_right_friction_and_load_limits(self):
+        rotations=torch.eye(3,dtype=torch.float64).expand(1,2,3,3)
+        for coupled in [False,True]:
+            with self.subTest(coupled_yaw=coupled):
+                G,b=build_single_support_wrench_constraints(
+                    contact_mode=torch.tensor([3]),foot_rotation_world=rotations,coupled_yaw=coupled)
+                point_G,point_b=build_single_support_wrench_constraints(
+                    contact_mode=torch.tensor([3]),foot_rotation_world=rotations,
+                    toe_length=0.,heel_length=0.,half_width=0.,coupled_yaw=True)
+                blocks=split_foot_wrench_constraints(G,b)
+                blocks[0]=split_foot_wrench_constraints(point_G,point_b)[0]
+                combined_G=torch.cat([block[0] for block in blocks],1)
+                combined_b=torch.cat([block[1] for block in blocks],1)
+                valid=torch.zeros(1,12,1,dtype=torch.float64);valid[0,2]=200.;valid[0,8]=100.
+                self.assertLessEqual(float((combined_G@valid).squeeze(-1).sub(combined_b).max()),1e-10)
+                for axis,value in [(6,300.),(8,900.)]:
+                    invalid=valid.clone();invalid[0,axis]=value
+                    self.assertGreater(float((combined_G@invalid).squeeze(-1).sub(combined_b).max()),1.)
+
+    def test_rejects_incomplete_or_mismatched_blocks(self):
+        for G,b in [(torch.zeros(1,23,12),torch.zeros(1,23)),
+                    (torch.zeros(1,24,6),torch.zeros(1,24)),
+                    (torch.zeros(1,24,12),torch.zeros(1,23))]:
+            with self.assertRaises(ValueError):split_foot_wrench_constraints(G,b)
+
+
+if __name__ == '__main__':
+    unittest.main()

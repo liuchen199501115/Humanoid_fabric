@@ -1,0 +1,22 @@
+[
+  {
+    "run": "fixed_clock120_body10_full_body_preview42_contact24",
+    "minimum_predicted_native_clearance": {
+      "clearance": -0.0005943165093892019,
+      "stage": 15,
+      "fraction": 0.5,
+      "foot": 0,
+      "frame": 933.2
+    }
+  },
+  {
+    "run": "fixed_clock120_body10_full_body_preview42_wrench_warm24",
+    "minimum_predicted_native_clearance": {
+      "clearance": -0.0005943165093892019,
+      "stage": 15,
+      "fraction": 0.5,
+      "foot": 0,
+      "frame": 933.2
+    }
+  }
+]

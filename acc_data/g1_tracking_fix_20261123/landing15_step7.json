@@ -1,0 +1,21 @@
+{
+  "start_frame": 485,
+  "landing_frame": 549,
+  "release_frame": 677,
+  "end_frame": 762,
+  "side": 0,
+  "offset_m": [
+    0.0,
+    -0.015,
+    0.0
+  ],
+  "peak_position_residual_m": 1.9498552361816095e-07,
+  "peak_orientation_residual_rad": 3.6465685697558673e-07,
+  "parent": "acc_data/g1_tracking_fix_20261123/landing15.npz",
+  "parent_sha256": "425678f8a99b7c693ee29749580a515f0bcabf74d4cbcbdedfec0fc9cdf699e7",
+  "original_source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "root_unchanged": true,
+  "original_pkl_retained_for_audit": true,
+  "physical_tracking_certified": false
+}

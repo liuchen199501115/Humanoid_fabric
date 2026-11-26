@@ -1,0 +1,14 @@
+[
+  {
+    "reference": "prepared_return_source_transfer60",
+    "minimum_spline_native_clearance_m": -0.00043339097287453665
+  },
+  {
+    "reference": "prepared_step12_ground_930_946",
+    "minimum_spline_native_clearance_m": -0.00043339097287453665
+  },
+  {
+    "reference": "prepared_step12_ground_924_940",
+    "minimum_spline_native_clearance_m": -0.000928530153420315
+  }
+]

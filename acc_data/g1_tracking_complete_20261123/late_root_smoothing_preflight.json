@@ -1,0 +1,40 @@
+[
+  {
+    "reference": "prepared_root_smooth_floor3_late11_sigma8",
+    "sha256": "3836de793672e1e7aeecf5777b1691132013cfc77dc4d5ec0fdeedbad4e6225b",
+    "prefix_q_v_a_equal_through_frame": 816.0,
+    "native_left_min_m": 0.0017267194885685275,
+    "native_left_peak_m": 0.05304325820657242,
+    "source_frame": 878.6,
+    "angular_velocity": [
+      -0.49355217814445496,
+      0.5767939686775208,
+      0.13873036205768585
+    ],
+    "angular_acceleration": [
+      13.949897766113281,
+      -8.060945510864258,
+      27.293418884277344
+    ],
+    "full_tracking_passed": false
+  },
+  {
+    "reference": "prepared_root_smooth_floor3_late11_sigma16",
+    "sha256": "a34d1760ff7b08c4e612aaac3a3ce35c92175a875c75b88a356a7d39dec57cf5",
+    "prefix_q_v_a_equal_through_frame": 816.0,
+    "native_left_min_m": 0.0017287367414331525,
+    "native_left_peak_m": 0.05304141682686376,
+    "source_frame": 878.6,
+    "angular_velocity": [
+      -0.2994188666343689,
+      0.6488043665885925,
+      -0.004564428236335516
+    ],
+    "angular_acceleration": [
+      1.7500076293945312,
+      0.1640605479478836,
+      5.547743320465088
+    ],
+    "full_tracking_passed": false
+  }
+]

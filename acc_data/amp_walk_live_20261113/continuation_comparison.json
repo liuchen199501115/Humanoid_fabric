@@ -1,0 +1,16 @@
+{
+  "diagnostic_override": "--no-joint-position-limits",
+  "default_code_changed": false,
+  "original_fidelity_limits_changed": false,
+  "measured_landings": 12,
+  "stop_time_s": 4.3,
+  "stop_reason": "root position error 0.2010059654712677 m exceeds 0.2 m",
+  "matches_previous_baseline": {
+    "history_time": true,
+    "history_q": true,
+    "history_qd": true,
+    "history_frame": true
+  },
+  "maximum_measured_physical_joint_limit_violation_rad": 2.2046267986297607e-05,
+  "note": "This is the earlier-bound diagnostic configuration; it does not validate tracking with the newly enabled hard position/braking bounds."
+}

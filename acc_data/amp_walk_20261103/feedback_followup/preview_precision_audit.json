@@ -1,0 +1,6 @@
+{
+  "float32_max_tangent_step_error": 0.0013580322265625,
+  "float64_max_tangent_step_error": 3.78578279836006e-11,
+  "inverse_dynamics_gradient_max_error": 1.1888824660743467,
+  "inverse_dynamics_gradient_relative_norm": 0.0009195243473425125
+}

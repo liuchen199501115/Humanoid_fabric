@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_cont1000_speed10_foot64",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--late-foot-metric-end",
+      "4.5",
+      "--late-foot-metric-end-ramp",
+      ".06",
+      "--late-foot-metric-end-scale",
+      "64"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_speed10_foot128",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--late-foot-metric-end",
+      "4.5",
+      "--late-foot-metric-end-ramp",
+      ".06",
+      "--late-foot-metric-end-scale",
+      "128"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_speed10_pelvis1",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "1",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  }
+]

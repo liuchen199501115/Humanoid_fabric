@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_support_y20_fast18",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--clock-fourth-start",
+      "3.81",
+      "--clock-fourth-ramp",
+      ".12",
+      "--clock-fourth-speed",
+      "1.8"
+    ]
+  },
+  {
+    "name": "ten_support_y20_fast16_cap1",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--clock-fourth-start",
+      "3.81",
+      "--clock-fourth-ramp",
+      ".12",
+      "--clock-fourth-speed",
+      "1.6",
+      "--qp-late-equilibration-start",
+      "3.82",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  }
+]

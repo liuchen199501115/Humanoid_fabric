@@ -1,0 +1,51 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.04
+  ],
+  "maximum_foot_position_residual_m": 0.004847261363606971,
+  "maximum_foot_rotation_residual_rad": 0.0008679180569851838,
+  "maximum_com_ik_residual_m": 0.005742947307619049,
+  "maximum_added_root_rotation_rad": 0.08660254562947808,
+  "worst_frame": 885,
+  "peak_source_joint_rmse_rad": 0.20891879498958588,
+  "peak_source_root_displacement_m": 0.08584427088499069,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": false,
+  "method": "Offline bounded stance-foot anchoring after verified landing ten.\n\nUses the recorded loaded pose at source816. No simulator reset or runtime\nstate overwrite; original-source fidelity and landing checks stay unchanged.\n",
+  "rotation_fraction": 1.0,
+  "anchor_position": [
+    4.895722522343457,
+    -0.9440591152914376,
+    0.03578637734046801
+  ],
+  "anchor_rotation": [
+    [
+      0.9903801287705244,
+      0.13834326867502392,
+      -0.00288800082915207
+    ],
+    [
+      -0.13837254215502637,
+      0.9900842816007989,
+      -0.024210636187136675
+    ],
+    [
+      -0.0004900143206369445,
+      0.02437735300110845,
+      0.9997027080820697
+    ]
+  ],
+  "observed_anchor_source_frame": 815.9600000000002,
+  "maximum_foot_position_correction_m": 0.03999208509766385,
+  "start_frame": 822,
+  "rise_end_frame": 850,
+  "fade_start_frame": 884,
+  "fade_end_frame": 908,
+  "additional_com_drop_m": 0.04,
+  "fixed_root_rotation": false,
+  "parent_file": "prepared_root_smooth_floor3_late11_sigma16.npz",
+  "parent_sha256": "a34d1760ff7b08c4e612aaac3a3ce35c92175a875c75b88a356a7d39dec57cf5",
+  "full_tracking_passed": false
+}

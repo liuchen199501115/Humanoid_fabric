@@ -1,0 +1,38 @@
+{
+  "history_fields": 155,
+  "different_fields": [],
+  "exact_repeat": true,
+  "measured_landings": 10,
+  "step10": {
+    "step": 10,
+    "swing": "right",
+    "source_frame": 814.5200000000001,
+    "time": 3.798,
+    "landing_error_m": 0.02471908329375066,
+    "goal": [
+      4.8934478759765625,
+      -0.9510010480880737,
+      0.034876417368650436
+    ],
+    "measured_load_n": 548.1068115234375,
+    "source_contact_onset_goal": [
+      4.887213706970215,
+      -0.9224165678024292,
+      0.04013892263174057
+    ]
+  },
+  "at_step10": {
+    "joint_rmse_rad": 0.1618460863828659,
+    "root_position_m": 0.10865911841392517,
+    "root_orientation_rad": 0.23447366383711446
+  },
+  "self_contact_events": 0,
+  "full_tracking_passed": false,
+  "stop": {
+    "time_s": 3.848,
+    "source_frame": 826.52,
+    "joint_rmse_rad": 0.1457160860300064,
+    "root_position_m": 0.1325450837612152,
+    "root_orientation_rad": 0.3513640348427125
+  }
+}

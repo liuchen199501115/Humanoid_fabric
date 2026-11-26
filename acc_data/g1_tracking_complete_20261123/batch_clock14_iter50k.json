@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_clock14_sh16_pelvis1_iter50k",
+    "parent": "ten_clock14_sh16_pelvis1",
+    "options": [
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis4_iter50k",
+    "parent": "ten_clock14_sh16_pelvis4",
+    "options": [
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_anchor884_iter50k",
+    "parent": "ten_clock14_sh16_anchor884",
+    "options": [
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  }
+]

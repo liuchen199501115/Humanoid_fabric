@@ -1,0 +1,25 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 4.6940437175575676e-07,
+  "maximum_foot_rotation_residual_rad": 4.2632486678758663e-07,
+  "maximum_com_ik_residual_m": 2.686115908656946e-07,
+  "maximum_added_root_rotation_rad": 0.0,
+  "worst_frame": 892,
+  "peak_source_joint_rmse_rad": 0.17390088737010956,
+  "peak_source_root_displacement_m": 0.07041114568710327,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Offline stance10 clearance correction with fixed root attitude and COM.\n\nUses the native collision spheres. Correcting reference penetration does not\nchange the simulated ground, contact bounds, source clip or acceptance.\n",
+  "parent_file": "prepared_stance10_anchor_smooth16_hold884_drop20.npz",
+  "parent_sha256": "66161c9520d7ecd9a3e7f3fe6e78efaaea5943bd3d2b604e26c9d8c59e7ccd7e",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "maximum_foot_lift_m": 0.00829813040486884,
+  "prefix_q_v_a_equal_through_frame": 804,
+  "minimum_stance10_clearance_before_m": -0.007266696314187207,
+  "minimum_stance10_clearance_after_m": -0.0028555987928605107,
+  "full_tracking_passed": false
+}

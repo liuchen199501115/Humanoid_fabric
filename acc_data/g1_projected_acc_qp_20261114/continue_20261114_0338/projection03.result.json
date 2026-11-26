@@ -1,0 +1,163 @@
+{
+  "name": "projection03",
+  "options": [
+    "--projection-joint-correction-weight",
+    ".3"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "tracking_evaluated": true,
+  "steps": {
+    "scope": "continuous source steps, same-frame original foot-link targets",
+    "landing_goal_policy": "source_pose",
+    "expected_steps": 29,
+    "measured_steps": 1,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 36.8,
+        "time": 0.184,
+        "landing_error_m": 0.0038059154556411203,
+        "goal": [
+          1.578898310661316,
+          0.17915332317352295,
+          0.038653045892715454
+        ],
+        "measured_load_n": 709.3499755859375,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      }
+    ],
+    "continuous": true,
+    "initial_partial_step": true,
+    "measured_steps_complete": false,
+    "full_pkl_tracking": false,
+    "next_step_diagnostics": {
+      "step": 2,
+      "swing": "right",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": 0.00270667415643433,
+      "best_loaded_landing_error_m": 0.3610452711582184,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    },
+    "fixed_contact_onset_audit": {
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 36.8,
+          "time": 0.184,
+          "landing_error_m": 0.019668146421730655,
+          "goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ],
+          "measured_load_n": 709.3499755859375,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step_diagnostics": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.00270667415643433,
+        "best_loaded_landing_error_m": 0.36172404124261126,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      }
+    },
+    "pkl_fidelity": {
+      "source_frame_count": 2000,
+      "first_source_frame": 0.0,
+      "last_source_frame": 121.6,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.20013651251792908,
+      "peak_root_position_error": 0.1564384251832962,
+      "peak_root_orientation_error": 0.10597200039461944,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_clip_tracking_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+    },
+    "last_time_s": 0.608,
+    "last_source_frame": 121.6,
+    "controller_valid": false,
+    "controller_validation_available": true,
+    "stable_final_support": false,
+    "stopped_at_tracking_steps": false,
+    "ground_support_evidence_available": true,
+    "native_clearance_geometry_available": true,
+    "measured_mode_available": true,
+    "bounded_source_covered": false,
+    "pkl_fidelity_available": true,
+    "pkl_fidelity_passed": false,
+    "steps_tracking_passed": false
+  },
+  "tracking": {
+    "source_frame_count": 2000,
+    "first_source_frame": 0.0,
+    "last_source_frame": 121.6,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.20013651251792908,
+    "peak_root_position_error": 0.1564384251832962,
+    "peak_root_orientation_error": 0.10597200039461944,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_clip_tracking_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+    "expected_landings": 29,
+    "measured_landings": 1,
+    "all_source_landings_verified": false,
+    "full_motion_tracking_passed": false,
+    "first_fidelity_exceeded": {
+      "time_s": 0.608,
+      "source_frame": 121.6,
+      "joint_rmse_rad": 0.20013651251792908,
+      "root_position_m": 0.1564384251832962,
+      "root_orientation_rad": 0.10597200039461944
+    },
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.608,
+      "source_frame": 121.6,
+      "joint_rmse_rad": 0.20013651251792908,
+      "root_position_m": 0.1564384251832962,
+      "root_orientation_rad": 0.10597200039461944
+    }
+  }
+}

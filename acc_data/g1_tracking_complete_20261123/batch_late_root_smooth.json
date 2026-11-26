@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_floor3_stop816_root_smooth8",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_root_smooth_floor3_late11_sigma8.npz"
+    ]
+  },
+  {
+    "name": "ten_floor3_stop816_root_smooth16",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_root_smooth_floor3_late11_sigma16.npz"
+    ]
+  },
+  {
+    "name": "ten_floor3_stop816_root_smooth8_pelvis3",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_root_smooth_floor3_late11_sigma8.npz",
+      "--late-pelvis-priority-start",
+      "4.18",
+      "--late-pelvis-metric-scale",
+      "3"
+    ]
+  }
+]

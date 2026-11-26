@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_continuity0",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--torque-continuity-start",
+      "4.348",
+      "--torque-continuity-ramp",
+      ".06",
+      "--torque-continuity-weight",
+      "0"
+    ]
+  },
+  {
+    "name": "eleven_continuity100",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--torque-continuity-start",
+      "4.348",
+      "--torque-continuity-ramp",
+      ".06",
+      "--torque-continuity-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_continuity1000",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--torque-continuity-start",
+      "4.348",
+      "--torque-continuity-ramp",
+      ".06",
+      "--torque-continuity-weight",
+      "1000"
+    ]
+  }
+]

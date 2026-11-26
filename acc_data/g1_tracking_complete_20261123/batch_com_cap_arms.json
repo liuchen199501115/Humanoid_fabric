@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ten_commax3_arms100_metric2",
+    "parent": "ten_anchor_support1_commax3_816",
+    "options": [
+      "--global-posture-feedback-start",
+      "4.08",
+      "--global-posture-feedback-joints",
+      "arms",
+      "--global-posture-feedback-limit",
+      "100",
+      "--global-posture-feedback-metric-scale",
+      "2"
+    ]
+  },
+  {
+    "name": "ten_commax3_arms30_metric2",
+    "parent": "ten_anchor_support1_commax3_816",
+    "options": [
+      "--global-posture-feedback-start",
+      "4.08",
+      "--global-posture-feedback-joints",
+      "arms",
+      "--global-posture-feedback-limit",
+      "30",
+      "--global-posture-feedback-metric-scale",
+      "2"
+    ]
+  },
+  {
+    "name": "ten_commax3_pelvis03_arms100_metric2",
+    "parent": "ten_commax3_pelvis03_816",
+    "options": [
+      "--global-posture-feedback-start",
+      "4.08",
+      "--global-posture-feedback-joints",
+      "arms",
+      "--global-posture-feedback-limit",
+      "100",
+      "--global-posture-feedback-metric-scale",
+      "2"
+    ]
+  }
+]

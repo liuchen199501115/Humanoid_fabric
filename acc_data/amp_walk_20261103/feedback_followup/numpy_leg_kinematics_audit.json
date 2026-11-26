@@ -1,0 +1,4 @@
+{
+  "max_position_difference_vs_runtime_fk": 9.041865343161554e-07,
+  "max_jacobian_fd_error": 7.864385254130468e-10
+}

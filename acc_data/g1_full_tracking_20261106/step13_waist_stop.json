@@ -1,0 +1,66 @@
+{
+  "scope": "Read-only saved-state diagnostics. No counterfactual command is applied; raw-source fidelity remains independent.",
+  "infeasibility_replays": [
+    {
+      "run": "waist_braking_before12",
+      "failed_time_s": 4.282,
+      "cases": [
+        {
+          "auxiliary_orientation_row_removed": false,
+          "status": 2,
+          "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+        },
+        {
+          "auxiliary_orientation_row_removed": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "retained_constraint_residual": 1.4794068192713894e-09
+        }
+      ]
+    },
+    {
+      "run": "thirteenth_early_waist_braking",
+      "failed_time_s": 4.232,
+      "cases": [
+        {
+          "auxiliary_orientation_row_removed": false,
+          "status": 2,
+          "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+        },
+        {
+          "auxiliary_orientation_row_removed": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "retained_constraint_residual": 2.2509993868879974e-11
+        }
+      ]
+    }
+  ],
+  "waist_stop_observation": {
+    "run": "thirteenth_support_knee20",
+    "interval_s": [
+      4.328,
+      4.33
+    ],
+    "waist_roll_limit_rad": 0.5199999213218689,
+    "waist_roll_position_rad": [
+      0.517307698726654,
+      0.5199999213218689
+    ],
+    "waist_roll_speed_rad_s": [
+      4.813266754150391,
+      -5.884367055841722e-06
+    ],
+    "root_angular_acceleration_prediction": [
+      36.724979400634766,
+      36.78813934326172,
+      70.83387756347656
+    ],
+    "root_angular_acceleration_observed": [
+      702.4757080078125,
+      -1272.6773681640625,
+      256.29180908203125
+    ],
+    "self_contact_events": []
+  }
+}

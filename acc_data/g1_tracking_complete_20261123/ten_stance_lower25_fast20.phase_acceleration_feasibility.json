@@ -1,0 +1,37 @@
+{
+  "scope": "Offline frozen-state necessary feasibility with one additional phase acceleration scalar; not a runtime controller or rollout",
+  "phase": 4.351,
+  "normalized_tube_phase_coefficients": [
+    [
+      0.19606918990015257,
+      -3.6659254201122478,
+      -1.8646232957393194
+    ]
+  ],
+  "cases": [
+    {
+      "phase_acceleration_limit": 6.0,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "phase_acceleration": 24.999109416330104
+    },
+    {
+      "phase_acceleration_limit": 20.0,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "phase_acceleration": 74.99732824899031
+    },
+    {
+      "phase_acceleration_limit": 100.0,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "phase_acceleration": -99.99643766532041
+    }
+  ]
+}

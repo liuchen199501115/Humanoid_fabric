@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ten_floor3_linear100_xy18_late",
+    "parent": "ten_floor3_linear60_xy18_late",
+    "options": [
+      "--late-foot-linear-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_xy18_late_upper32",
+    "parent": "ten_floor3_linear60_xy18_late",
+    "options": [
+      "--upper-posture-metric-scale",
+      "32"
+    ]
+  }
+]

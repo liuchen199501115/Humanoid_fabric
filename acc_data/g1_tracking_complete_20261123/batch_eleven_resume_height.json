@@ -1,0 +1,26 @@
+[
+  {
+    "name": "eleven_cont1000_resume20",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--contact-pause-resume",
+      ".2"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_resume30",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--contact-pause-resume",
+      ".3"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_rootz_late",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rootz_full_late.npz"
+    ]
+  }
+]

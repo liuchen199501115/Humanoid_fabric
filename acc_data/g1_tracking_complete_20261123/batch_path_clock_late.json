@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ten_support_y20_pathclock780",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--prepared-source-clock",
+      "acc_data/g1_tracking_complete_20261123/prepared_path_clock_support_y20_780_refined.npz"
+    ]
+  },
+  {
+    "name": "ten_support_y20_pathclock816",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--prepared-source-clock",
+      "acc_data/g1_tracking_complete_20261123/prepared_path_clock_support_y20_816_refined.npz"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "twelve_transferclock10",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-fourth-speed",
+      "1.0"
+    ]
+  },
+  {
+    "name": "twelve_transferclock12",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-fourth-speed",
+      "1.2"
+    ]
+  },
+  {
+    "name": "twelve_transferclock12_comxy16",
+    "parent": "twelve_comxy816_16",
+    "options": [
+      "--clock-fourth-speed",
+      "1.2"
+    ]
+  }
+]

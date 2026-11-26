@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_transfer11_full_speed08",
+    "parent": "eleven_transfer11_full_foot10_20",
+    "options": [
+      "--clock-fifth-start",
+      "4.24",
+      "--clock-fifth-speed",
+      ".8"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_full_speed10",
+    "parent": "eleven_transfer11_full_foot10_20",
+    "options": [
+      "--clock-fifth-start",
+      "4.24",
+      "--clock-fifth-speed",
+      "1"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_half_speed08",
+    "parent": "eleven_transfer11_rooty_half_roundfix",
+    "options": [
+      "--clock-fifth-start",
+      "4.24",
+      "--clock-fifth-speed",
+      ".8"
+    ]
+  }
+]

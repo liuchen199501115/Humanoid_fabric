@@ -1,0 +1,218 @@
+{
+  "scope": "Continuation through examples/test_g1.py; all attempts request the complete original 2000-frame clip and all 29 landings.",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "completed_physical_trials": 10,
+  "full_motion_tracking_passed": false,
+  "selected_profile_unchanged": true,
+  "tests": {
+    "patterns": [
+      "test_g1_full_tracking.py",
+      "test_task_priority.py",
+      "test_contact_patches.py",
+      "test_toe_contact.py",
+      "test_rigid_body_frames.py",
+      "test_reference_tracking_audit.py",
+      "test_source_priority.py"
+    ],
+    "tests_run": 60,
+    "failures": 0,
+    "errors": 0,
+    "successful": true
+  },
+  "default_disabled_options": [
+    "root-position-task-start",
+    "support-flatten-start",
+    "weighted-tasks-start"
+  ],
+  "reference_force_audit": "reference_force_audit.json",
+  "retimed_force_audit": "retimed090_force_audit.json",
+  "response_audit": "applied_response_audit.json",
+  "trials": [
+    {
+      "run": "root_task415",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 11,
+      "raw_source_prefix_landings": 11,
+      "last_frame": 970.76,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.224,
+        "source_frame": 970.76,
+        "joint_rmse_rad": 0.20045796036720276,
+        "root_position_m": 0.12806059420108795,
+        "root_orientation_rad": 0.24231793190292117
+      }
+    },
+    {
+      "run": "root_task415_weight300",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 10,
+      "raw_source_prefix_landings": 10,
+      "last_frame": 949.1600000000002,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.134,
+        "source_frame": 949.1600000000002,
+        "joint_rmse_rad": 0.20050042867660522,
+        "root_position_m": 0.10572821646928787,
+        "root_orientation_rad": 0.253629437943417
+      }
+    },
+    {
+      "run": "root_task415_support",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 11,
+      "raw_source_prefix_landings": 11,
+      "last_frame": 953.48,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.152,
+        "source_frame": 953.48,
+        "joint_rmse_rad": 0.20245982706546783,
+        "root_position_m": 0.08600987493991852,
+        "root_orientation_rad": 0.2711144987493408
+      }
+    },
+    {
+      "run": "flatten_support415",
+      "status": "finished",
+      "returncode": 2,
+      "completed_physical_record": false,
+      "full_motion_tracking_passed": false,
+      "reason": "Argument parsing rejected duplicate positional diagnostic time; corrected in flatten_support415_run"
+    },
+    {
+      "run": "flatten_support415_run",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 12,
+      "raw_source_prefix_landings": 12,
+      "last_frame": 988.5200000000001,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.298,
+        "source_frame": 988.5200000000001,
+        "joint_rmse_rad": 0.20004834234714508,
+        "root_position_m": 0.17385636270046234,
+        "root_orientation_rad": 0.3514204609052373
+      }
+    },
+    {
+      "run": "physics2000_servo",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 0,
+      "raw_source_prefix_landings": 0,
+      "last_frame": 47.6,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 0.23800000000000002,
+        "source_frame": 47.6,
+        "joint_rmse_rad": 0.2000313699245453,
+        "root_position_m": 0.032496023923158646,
+        "root_orientation_rad": 0.24458659064519478
+      }
+    },
+    {
+      "run": "weighted_tasks415",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": false,
+      "full_motion_tracking_passed": false,
+      "reason": "History serialization KeyError; fixed and rerun in weighted_tasks415_history_fixed"
+    },
+    {
+      "run": "weighted_tasks415_history_fixed",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 11,
+      "raw_source_prefix_landings": 11,
+      "last_frame": 944.8399999999999,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.116,
+        "source_frame": 944.8399999999999,
+        "joint_rmse_rad": 0.20030438899993896,
+        "root_position_m": 0.1413981020450592,
+        "root_orientation_rad": 0.24017552503486791
+      }
+    },
+    {
+      "run": "retimed090_before_turn",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 10,
+      "raw_source_prefix_landings": 10,
+      "last_frame": 886.0400000000001,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.078,
+        "source_frame": 886.0400000000001,
+        "joint_rmse_rad": 0.1784599870443344,
+        "root_position_m": 0.19701313972473145,
+        "root_orientation_rad": 0.35568680982430695
+      }
+    },
+    {
+      "run": "weighted_after12",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 12,
+      "raw_source_prefix_landings": 12,
+      "last_frame": 1004.36,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.364,
+        "source_frame": 1004.36,
+        "joint_rmse_rad": 0.14179250597953796,
+        "root_position_m": 0.20093053579330444,
+        "root_orientation_rad": 0.32869356580087494
+      }
+    },
+    {
+      "run": "weighted_root_after12",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 12,
+      "raw_source_prefix_landings": 12,
+      "last_frame": 1003.4000000000001,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.36,
+        "source_frame": 1003.4000000000001,
+        "joint_rmse_rad": 0.1421964317560196,
+        "root_position_m": 0.2008819282054901,
+        "root_orientation_rad": 0.2984192048816145
+      }
+    },
+    {
+      "run": "weighted_root_prepare12",
+      "status": "finished",
+      "returncode": 1,
+      "completed_physical_record": true,
+      "verified_prefix_landings": 11,
+      "raw_source_prefix_landings": 11,
+      "last_frame": 972.2000000000002,
+      "full_motion_tracking_passed": false,
+      "first_fidelity_failure": {
+        "time_s": 4.23,
+        "source_frame": 972.2000000000002,
+        "joint_rmse_rad": 0.20083503425121307,
+        "root_position_m": 0.14306598901748657,
+        "root_orientation_rad": 0.21055467678126738
+      }
+    }
+  ]
+}

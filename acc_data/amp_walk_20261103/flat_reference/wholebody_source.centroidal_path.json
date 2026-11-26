@@ -1,0 +1,20 @@
+{
+  "planner": "offline linearized centroidal path plus source-foot pose IK",
+  "source_frames": 2000,
+  "start_frame": 0,
+  "blend_frames": 0,
+  "nominal_com_height_offset_m": -0.04,
+  "contact_model": "optimistic flat sole planning patches; measured WBC contacts unchanged",
+  "qp_status": "solved",
+  "qp_residual": 3.616302089445063e-12,
+  "peak_com_plan_offset_m": [
+    0.022822592690321386,
+    0.023526664132412556,
+    0.0265180372990671
+  ],
+  "peak_ik_position_residual_m": 0.0022201910614967346,
+  "peak_ik_rotation_residual_rad": 0.017481954768300056,
+  "peak_ik_com_residual_m": 0.0012001991271972656,
+  "peak_ik_momentum_residual": 0.40802812576293945,
+  "full_tracking_passed": false
+}

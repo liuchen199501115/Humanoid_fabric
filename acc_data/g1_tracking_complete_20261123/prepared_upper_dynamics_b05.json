@@ -1,0 +1,28 @@
+{
+  "method": "Offline upper-body spline fit with exact RNEA derivatives, contact, torque and velocity inequalities with explicit slack",
+  "solver_status": "solved",
+  "maximum_coefficient_rad": 0.05,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "preflight_passed": true,
+  "full_tracking_passed": false,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "maximum_upper_joint_limit_violation_rad": -0.19445611953735353,
+  "runtime_coefficient_error_rad": 1.5022541547532464e-07,
+  "linearized_max_violation": {
+    "upper_velocity": -0.7993479023680511,
+    "upper_torque": 0.02491173746642039,
+    "cop": 0.20805869702159915,
+    "friction": 0.16304275581309957,
+    "normal": 0.08251018222346895
+  },
+  "baseline_max_violation": {
+    "upper_velocity": -0.8658219684254039,
+    "upper_torque": 0.10208348234534936,
+    "cop": 0.3675433083710604,
+    "friction": 0.898096575785642,
+    "normal": 0.42341435850615455
+  },
+  "maximum_actual_joint_correction_rad": 0.05000003979279358,
+  "recomputed_centroidal_and_closed_loop_still_required": true
+}

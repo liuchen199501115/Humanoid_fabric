@@ -1,0 +1,78 @@
+{
+  "static_acceleration": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "static_constraint_residual": 0.0,
+  "static_persistent_nodes": [
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ]
+  ],
+  "transition_persistent_nodes": [
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      false
+    ]
+  ],
+  "checks_passed": true,
+  "physical_tracking_certified": false
+}

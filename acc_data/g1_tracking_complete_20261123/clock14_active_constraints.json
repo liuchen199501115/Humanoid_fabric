@@ -1,0 +1,31 @@
+{
+  "trial": "ten_clock14_sh16_anchor884_iter50k",
+  "control_time_s": 4.0,
+  "active_nonzero_inequality_rows": [
+    12,
+    14,
+    18,
+    19,
+    20,
+    21,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    153,
+    154,
+    155
+  ],
+  "active_auxiliary_rows": {
+    "joint": true,
+    "root_position": true,
+    "root_orientation": true
+  },
+  "active_effort_bounds": [],
+  "active_acceleration_bounds": [],
+  "scope": "Saved-state original QP active rows; sensitivity runs change auxiliary CBFs offline only. No physical constraints or source acceptance changed."
+}

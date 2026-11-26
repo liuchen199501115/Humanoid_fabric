@@ -1,0 +1,84 @@
+{
+  "run": "fixed_clock120_body10_overdue",
+  "first_stage_acceleration_rank": 35,
+  "acceleration_dimension": 35,
+  "qp_acceleration_and_braking_limits": false,
+  "native_joint_limits_unchanged": true,
+  "soft_avoidance_weight": 20.0,
+  "samples": [
+    {
+      "frame": 820.04,
+      "joints": [
+        {
+          "name": "waist_roll_joint",
+          "position": 0.23604071140289307,
+          "velocity": 1.9949190616607666,
+          "braking_request": -16.945316314697266,
+          "qp_acceleration": -49.613189697265625
+        }
+      ]
+    },
+    {
+      "frame": 840.2,
+      "joints": []
+    },
+    {
+      "frame": 859.8800000000001,
+      "joints": []
+    },
+    {
+      "frame": 880.04,
+      "joints": []
+    },
+    {
+      "frame": 900.2,
+      "joints": []
+    },
+    {
+      "frame": 919.8800000000002,
+      "joints": [
+        {
+          "name": "waist_roll_joint",
+          "position": 0.3421681821346283,
+          "velocity": 2.126904249191284,
+          "braking_request": -25.8492374420166,
+          "qp_acceleration": 21.02605438232422
+        },
+        {
+          "name": "waist_pitch_joint",
+          "position": 0.10178101807832718,
+          "velocity": 4.854579448699951,
+          "braking_request": -50.0,
+          "qp_acceleration": 129.91969299316406
+        }
+      ]
+    },
+    {
+      "frame": 929.9600000000002,
+      "joints": [
+        {
+          "name": "waist_roll_joint",
+          "position": 0.4753340482711792,
+          "velocity": 3.648097038269043,
+          "braking_request": -50.0,
+          "qp_acceleration": 13.026570320129395
+        },
+        {
+          "name": "waist_pitch_joint",
+          "position": 0.1815996617078781,
+          "velocity": 1.3040670156478882,
+          "braking_request": -2.4074573516845703,
+          "qp_acceleration": 95.217529296875
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "position": -0.646763265132904,
+          "velocity": -6.920167446136475,
+          "braking_request": 11.219551086425781,
+          "qp_acceleration": -397.19854736328125
+        }
+      ]
+    }
+  ],
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "ten_com15_ang100_brake1000",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.05",
+      "--soft-joint-braking-weight",
+      "1000"
+    ]
+  },
+  {
+    "name": "ten_com15_ang100_brake100",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.05",
+      "--soft-joint-braking-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_com15_ang100_stance410",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.1",
+      "--support-orientation-metric-scale",
+      "4",
+      "--support-orientation-roll-pitch-only"
+    ]
+  }
+]

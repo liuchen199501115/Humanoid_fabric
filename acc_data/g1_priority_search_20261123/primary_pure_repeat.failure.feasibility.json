@@ -1,0 +1,26 @@
+{
+  "all": {
+    "success": false,
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "no_tubes": {
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "max_eq_error": 2.7753799258789513e-11,
+    "max_ineq_error": 4.199307568342192e-11
+  },
+  "no_joint_tube": {
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "max_eq_error": 1.3318413039087318e-10,
+    "max_ineq_error": 6.086509074521018e-11
+  },
+  "no_root_tube": {
+    "success": false,
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "no_orientation_tube": {
+    "success": false,
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  }
+}

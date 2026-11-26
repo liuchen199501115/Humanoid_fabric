@@ -1,0 +1,24 @@
+[
+  {
+    "name": "ten_stance_lower25_fast20",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--clock-fourth-speed",
+      "2.0"
+    ]
+  },
+  {
+    "name": "ten_stance_lower25_fast18_pelvis4",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.08",
+      "--pelvis-orientation-replace-ramp",
+      ".1",
+      "--pelvis-orientation-replace-metric-scale",
+      "4",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  }
+]

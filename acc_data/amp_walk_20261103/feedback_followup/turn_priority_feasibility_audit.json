@@ -1,0 +1,32 @@
+{
+  "priority_level_0_all": {
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "success": false,
+    "removed_rows": 0
+  },
+  "priority_level_0_without_auxiliary_tubes": {
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "success": false,
+    "removed_rows": 3
+  },
+  "priority_level_1_all": {
+    "status": "(HiGHS Status 0: Not Set)",
+    "success": false,
+    "removed_rows": 0
+  },
+  "priority_level_1_without_auxiliary_tubes": {
+    "status": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+    "success": false,
+    "removed_rows": 3
+  },
+  "problem_all": {
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "success": false,
+    "removed_rows": 0
+  },
+  "problem_without_auxiliary_tubes": {
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "success": false,
+    "removed_rows": 3
+  }
+}

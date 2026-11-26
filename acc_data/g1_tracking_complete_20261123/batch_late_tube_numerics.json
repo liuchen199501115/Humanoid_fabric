@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_floor3_stop816_tube1000_cap1",
+    "parent": "ten_floor3_stop816_tube1000",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_floor3_stop816_pitch_shoulder_brake_cap1",
+    "parent": "ten_floor3_stop816_pitch_shoulder_brake",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_floor3_sourcejoint1m_stop_tube100",
+    "parent": "ten_floor3_sourcejoint1m_refine1_stop816",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "100"
+    ]
+  }
+]

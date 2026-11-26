@@ -1,0 +1,22 @@
+[
+  {
+    "speed": 0.6,
+    "velocity_fd_error": 3.2029578989067886e-10,
+    "acceleration_fd_error": 8.730373223832244e-09
+  },
+  {
+    "speed": 1.0,
+    "velocity_fd_error": 6.551204023708124e-12,
+    "acceleration_fd_error": 0.0
+  },
+  {
+    "speed": 1.2,
+    "velocity_fd_error": 1.5211676362980597e-10,
+    "acceleration_fd_error": 4.359635497226677e-09
+  },
+  {
+    "speed": 1.4,
+    "velocity_fd_error": 3.0731528433136646e-10,
+    "acceleration_fd_error": 8.719270994453354e-09
+  }
+]

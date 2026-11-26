@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_smooth16_comxyz",
+    "parent": "ten_floor3_smooth16_source_root1000_cap1",
+    "options": [
+      "--com-feedback-axes",
+      "xyz"
+    ]
+  },
+  {
+    "name": "ten_rooty100_comxyz",
+    "parent": "six_source_rooty100_500",
+    "options": [
+      "--com-feedback-axes",
+      "xyz"
+    ]
+  },
+  {
+    "name": "ten_rooty100_comxyz_max3",
+    "parent": "ten_rooty100_commax3_816",
+    "options": [
+      "--com-feedback-axes",
+      "xyz"
+    ]
+  }
+]

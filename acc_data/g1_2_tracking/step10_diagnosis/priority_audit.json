@@ -1,0 +1,704 @@
+{
+  "scope": "Offline counterfactuals; physical constraints unchanged; no tracking claim.",
+  "cases": [
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "baseline",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.505105650835429,
+        -2.0725169840279154,
+        -4.391539335608824
+      ],
+      "com_residual": [
+        4.135294282025897,
+        3.1813086804923474,
+        10.504155397057191
+      ],
+      "baseline_predicted_difference": 0.03394679020176028,
+      "waist_acceleration": [
+        8.332548002184405,
+        -9.181702728497745,
+        10.099745539728836
+      ],
+      "joint_posture_residual_rms": 70.26886133109839
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "com_x4",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.41751575376061,
+        -2.0000624360155,
+        -4.580994809905688
+      ],
+      "com_residual": [
+        4.22288417910072,
+        3.2537632285047655,
+        10.314699922760328
+      ],
+      "baseline_predicted_difference": 2.087846427274229,
+      "waist_acceleration": [
+        7.612366353693465,
+        -9.90689257832926,
+        10.9407060807767
+      ],
+      "joint_posture_residual_rms": 70.15633898551526
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "com_x16",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.5276668818842154e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.3688099828899074,
+        -1.9597729193200444,
+        -4.686344573942151
+      ],
+      "com_residual": [
+        4.27158994997142,
+        3.2940527452002195,
+        10.209350158723865
+      ],
+      "baseline_predicted_difference": 3.2602840388622383,
+      "waist_acceleration": [
+        7.212532147854703,
+        -10.309947812974631,
+        11.407618277091979
+      ],
+      "joint_posture_residual_rms": 70.0963607309788
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "stance_posture_x025",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.0658141036401503e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.728864181291683,
+        -2.257608489313029,
+        -3.907557887158223
+      ],
+      "com_residual": [
+        3.9115357515696445,
+        2.996217175207234,
+        10.988136845507793
+      ],
+      "baseline_predicted_difference": 114.78162677522562,
+      "waist_acceleration": [
+        31.677092756398583,
+        -27.495854517340764,
+        -5.308760960870569
+      ],
+      "joint_posture_residual_rms": 90.54446062330439
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "stance_posture_x0",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.4283687000424834e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -0.7385299375328849,
+        -0.6111964020512954,
+        -8.212643874905577
+      ],
+      "com_residual": [
+        5.901869995328446,
+        4.642629262468967,
+        6.683050857760438
+      ],
+      "baseline_predicted_difference": 1785.0491401336226,
+      "waist_acceleration": [
+        43.38385562196717,
+        10.231332935573304,
+        -31.584855667342186
+      ],
+      "joint_posture_residual_rms": 473.13743923070206
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "com_only",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.920952948050399e-12,
+        "iterations": 28,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -2.3467889990004713,
+        -1.9415496456608081,
+        -4.734025822035919
+      ],
+      "com_residual": [
+        4.293610933860857,
+        3.312276018859455,
+        10.161668910630096
+      ],
+      "baseline_predicted_difference": 579.2434967777053,
+      "waist_acceleration": [
+        63.95144093219281,
+        -16.809020433498812,
+        -59.588461344350506
+      ],
+      "joint_posture_residual_rms": 129.02996520279513
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "case": "exact_requested_com",
+      "solver": {
+        "status": "PrimalInfeasible",
+        "constraint_residual": 451.4361267078758,
+        "iterations": 7,
+        "accepted": false
+      }
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "baseline",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.684341886080802e-14,
+        "iterations": 23,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.48090270581629,
+        1.9965595836217882,
+        -5.180207249123093
+      ],
+      "com_residual": [
+        -3.748818363519647,
+        -3.517280614895058,
+        -15.25980853696489
+      ],
+      "baseline_predicted_difference": 0.02219196922855815,
+      "waist_acceleration": [
+        -15.043083612487793,
+        -33.22877590605945,
+        30.14521795788699
+      ],
+      "joint_posture_residual_rms": 62.987033113050046
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "com_x4",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.7192681092153079,
+        2.1170273871327057,
+        -5.330150377283552
+      ],
+      "com_residual": [
+        -3.5104529601206305,
+        -3.39681281138414,
+        -15.40975166512535
+      ],
+      "baseline_predicted_difference": 6.618220009551713,
+      "waist_acceleration": [
+        -18.091883528388937,
+        -37.584771223150916,
+        33.16686629067871
+      ],
+      "joint_posture_residual_rms": 63.93900553859457
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "com_x16",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 4.973799150320701e-14,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        1.0096643203531825,
+        2.116712414511751,
+        -5.48492613969647
+      ],
+      "com_residual": [
+        -3.2200567489827554,
+        -3.3971277840050953,
+        -15.564527427538266
+      ],
+      "baseline_predicted_difference": 12.781137444984836,
+      "waist_acceleration": [
+        -23.007977297793175,
+        -41.8748661951854,
+        39.482827459788595
+      ],
+      "joint_posture_residual_rms": 65.33965685545084
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "stance_posture_x025",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.638334409421077e-14,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.43176189731903347,
+        2.1182066351405906,
+        -5.174924989128562
+      ],
+      "com_residual": [
+        -3.7979591720169035,
+        -3.395633563376255,
+        -15.25452627697036
+      ],
+      "baseline_predicted_difference": 139.66829831129115,
+      "waist_acceleration": [
+        -20.58192324365111,
+        -37.65536664971174,
+        22.326125886323958
+      ],
+      "joint_posture_residual_rms": 82.18694513135236
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "stance_posture_x0",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.0961010704922955e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -1.8383548322756145,
+        2.164005523343803,
+        -3.8654887096334756
+      ],
+      "com_residual": [
+        -6.068075901611552,
+        -3.3498346751730437,
+        -13.945089997475272
+      ],
+      "baseline_predicted_difference": 386.4538470502506,
+      "waist_acceleration": [
+        -16.549958043083254,
+        -14.893815848736613,
+        34.531466432679075
+      ],
+      "joint_posture_residual_rms": 135.0538538009024
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "com_only",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.299369831845979e-10,
+        "iterations": 34,
+        "accepted": true
+      },
+      "com_acceleration": [
+        1.3844548588596552,
+        3.0749160332149117,
+        -3.4830508504572233
+      ],
+      "com_residual": [
+        -2.845266210476275,
+        -2.43892416530192,
+        -13.56265213829902
+      ],
+      "baseline_predicted_difference": 5536.9225430804845,
+      "waist_acceleration": [
+        1142.4439832642706,
+        -1106.7794711489885,
+        -509.0968395543243
+      ],
+      "joint_posture_residual_rms": 1623.159058528068
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "case": "exact_requested_com",
+      "solver": {
+        "status": "PrimalInfeasible",
+        "constraint_residual": 363.0146789541851,
+        "iterations": 8,
+        "accepted": false
+      }
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "baseline",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.623767952376511e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -0.6193155846549598,
+        1.710321942710899,
+        8.348492297175438
+      ],
+      "com_residual": [
+        -6.08066984033123,
+        -4.844525297737098,
+        3.7720581617384266
+      ],
+      "baseline_predicted_difference": 0.026941995589041312,
+      "waist_acceleration": [
+        49.86037578299949,
+        140.89183942827574,
+        -44.44934165521425
+      ],
+      "joint_posture_residual_rms": 76.21478568571402
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "com_x4",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        1.1447849579273233,
+        2.014157607633823,
+        7.321157832630762
+      ],
+      "com_residual": [
+        -4.316569297748946,
+        -4.540689632814174,
+        2.7447236971937503
+      ],
+      "baseline_predicted_difference": 22.775849858901097,
+      "waist_acceleration": [
+        56.10910869322945,
+        134.78272611660844,
+        -33.86465983858755
+      ],
+      "joint_posture_residual_rms": 77.03335969992443
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "com_x16",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.2737367544323206e-13,
+        "iterations": 23,
+        "accepted": true
+      },
+      "com_acceleration": [
+        2.7772366211882704,
+        3.412679887451278,
+        7.201461261658173
+      ],
+      "com_residual": [
+        -2.6841176344879996,
+        -3.1421673529967182,
+        2.625027126221161
+      ],
+      "baseline_predicted_difference": 37.9004758480408,
+      "waist_acceleration": [
+        70.06938659495837,
+        121.7808351969275,
+        -20.885002119403644
+      ],
+      "joint_posture_residual_rms": 78.8002463008391
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "stance_posture_x025",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.979039320256561e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -0.6986905846881972,
+        1.6841309370499518,
+        7.771684169963425
+      ],
+      "com_residual": [
+        -6.160044840364467,
+        -4.870716303398047,
+        3.1952500345264134
+      ],
+      "baseline_predicted_difference": 5.424343854022894,
+      "waist_acceleration": [
+        51.615261947044175,
+        138.50644334208346,
+        -44.91289374649358
+      ],
+      "joint_posture_residual_rms": 76.72370100769389
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "stance_posture_x0",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.968558980384842e-13,
+        "iterations": 22,
+        "accepted": true
+      },
+      "com_acceleration": [
+        -0.7480905497724057,
+        1.654566720863096,
+        7.333991159060356
+      ],
+      "com_residual": [
+        -6.209444805448676,
+        -4.9002805195849,
+        2.7575570236233444
+      ],
+      "baseline_predicted_difference": 10.609967953762016,
+      "waist_acceleration": [
+        52.58710926232534,
+        137.37563844883618,
+        -45.52698088830003
+      ],
+      "joint_posture_residual_rms": 76.82630270624773
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "com_only",
+      "solver": {
+        "status": "NumericalError",
+        "constraint_residual": 2.773958840407431e-11,
+        "iterations": 15,
+        "accepted": false
+      }
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "case": "exact_requested_com",
+      "solver": {
+        "status": "PrimalInfeasible",
+        "constraint_residual": 366.3634643449322,
+        "iterations": 8,
+        "accepted": false
+      }
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "baseline",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.2079226507921703e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.5520796629522302,
+        -1.0679565655207832,
+        -5.961595407440892
+      ],
+      "com_residual": [
+        -4.953856005993083,
+        -4.752704976699372,
+        -0.5151995334174542
+      ],
+      "baseline_predicted_difference": 0.022928035712711292,
+      "waist_acceleration": [
+        1.2333183133173504,
+        10.672884335282498,
+        11.586801381756763
+      ],
+      "joint_posture_residual_rms": 36.62540628618019
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "com_x4",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.684341886080802e-14,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        2.015642420666679,
+        0.6253756293813648,
+        -4.846930158633734
+      ],
+      "com_residual": [
+        -3.490293248278634,
+        -3.0593727817972245,
+        0.5994657153897034
+      ],
+      "baseline_predicted_difference": 43.43550019184828,
+      "waist_acceleration": [
+        -6.464826644855888,
+        1.7351660743846595,
+        14.934376946640509
+      ],
+      "joint_posture_residual_rms": 38.68938798512018
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "com_x16",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.684341886080802e-14,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        2.899189431338521,
+        2.3822499846612644,
+        -3.210807230378559
+      ],
+      "com_residual": [
+        -2.6067462376067914,
+        -1.3024984265173254,
+        2.2355886436448786
+      ],
+      "baseline_predicted_difference": 88.3513808278035,
+      "waist_acceleration": [
+        -11.635013980267475,
+        2.0448325044860676,
+        10.403308658096059
+      ],
+      "joint_posture_residual_rms": 44.835190530458924
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "stance_posture_x025",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.1368683772161603e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "com_acceleration": [
+        0.44075335995320897,
+        -0.5515097169238264,
+        -7.673867695330372
+      ],
+      "com_residual": [
+        -5.065182308992105,
+        -4.236258128102414,
+        -2.227471821306935
+      ],
+      "baseline_predicted_difference": 77.79991898561747,
+      "waist_acceleration": [
+        8.078249537912177,
+        9.722781385485751,
+        7.553059634495289
+      ],
+      "joint_posture_residual_rms": 44.690101216460995
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "stance_posture_x0",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 4.931166586175095e-12,
+        "iterations": 23,
+        "accepted": true
+      },
+      "com_acceleration": [
+        2.075849519729238,
+        1.913422910729067,
+        -5.104833389247321
+      ],
+      "com_residual": [
+        -3.4300861492160744,
+        -1.7713255004495227,
+        0.3415624847761167
+      ],
+      "baseline_predicted_difference": 649.078070007142,
+      "waist_acceleration": [
+        32.069615209493506,
+        29.325655056292238,
+        -3.0044241667618796
+      ],
+      "joint_posture_residual_rms": 160.73878974463847
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "com_only",
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.0532908706627495e-11,
+        "iterations": 28,
+        "accepted": true
+      },
+      "com_acceleration": [
+        3.4540633848616213,
+        3.1837113619043773,
+        -1.98094662383836
+      ],
+      "com_residual": [
+        -2.05187228408369,
+        -0.5010370492742102,
+        3.4654492501850775
+      ],
+      "baseline_predicted_difference": 78.90627274917107,
+      "waist_acceleration": [
+        -33.75590725774418,
+        11.57552220983744,
+        -25.18484250416511
+      ],
+      "joint_posture_residual_rms": 39.02990859548555
+    },
+    {
+      "snapshot": "baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "case": "exact_requested_com",
+      "solver": {
+        "status": "PrimalInfeasible",
+        "constraint_residual": 359.4557492382295,
+        "iterations": 7,
+        "accepted": false
+      }
+    }
+  ]
+}

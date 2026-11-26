@@ -1,0 +1,279 @@
+[
+  {
+    "time": 3.68,
+    "frame": 840.2,
+    "mode": 2,
+    "success": true,
+    "status": "Solved",
+    "linear_violation": 2.1316282072803006e-13,
+    "tube_violation": -0.1340795144099487,
+    "solve_seconds": 1.855938601307571,
+    "objective": -3424.9461947906357,
+    "plan_saved": true,
+    "nonlinear_base_force_residual": 2.0745183342286118,
+    "nonlinear_base_moment_residual": 1.0077208132806388,
+    "nonlinear_joint_residual": 0.43802151998908306,
+    "nonlinear_minimum_clearance": 0.0001663386696597255,
+    "nonlinear_support_gap": 0.0008750232484479731,
+    "nonlinear_verified": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 43.9517064960855,
+        "nonlinear_base_moment_residual": 14.142138152685416,
+        "nonlinear_joint_residual": 5.33957612665598,
+        "nonlinear_minimum_clearance": 0.00015550110395175926,
+        "nonlinear_support_gap": 0.0016535778258143369,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 2.0745183342286118,
+        "nonlinear_base_moment_residual": 1.0077208132806388,
+        "nonlinear_joint_residual": 0.43802151998908306,
+        "nonlinear_minimum_clearance": 0.0001663386696597255,
+        "nonlinear_support_gap": 0.0008750232484479731,
+        "nonlinear_verified": true
+      }
+    ],
+    "applied": true,
+    "latest_acceleration_projection_max_error": 9.728479385375977
+  },
+  {
+    "time": 3.7,
+    "frame": 844.9999999999999,
+    "mode": 2,
+    "success": true,
+    "status": "Solved",
+    "linear_violation": 1.7053025658242404e-13,
+    "tube_violation": -0.08350778937272862,
+    "solve_seconds": 1.753250228241086,
+    "objective": -4942.320241799408,
+    "nonlinear_base_force_residual": 7.368232786697977,
+    "nonlinear_base_moment_residual": 1.616286497503415,
+    "nonlinear_joint_residual": 1.254416220924511,
+    "nonlinear_minimum_clearance": 5.647078176745923e-05,
+    "nonlinear_support_gap": 0.0010434695100334027,
+    "nonlinear_verified": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 31.62533206789223,
+        "nonlinear_base_moment_residual": 18.156336820569607,
+        "nonlinear_joint_residual": 6.175259205488546,
+        "nonlinear_minimum_clearance": -4.7472293074279914e-05,
+        "nonlinear_support_gap": 0.002310330749458335,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 7.368232786697977,
+        "nonlinear_base_moment_residual": 1.616286497503415,
+        "nonlinear_joint_residual": 1.254416220924511,
+        "nonlinear_minimum_clearance": 5.647078176745923e-05,
+        "nonlinear_support_gap": 0.0010434695100334027,
+        "nonlinear_verified": true
+      }
+    ],
+    "applied": true,
+    "latest_acceleration_projection_max_error": 3.249025821685791
+  },
+  {
+    "time": 3.72,
+    "frame": 849.8000000000001,
+    "mode": 2,
+    "success": true,
+    "status": "Solved",
+    "linear_violation": 5.685729664861583e-13,
+    "tube_violation": -0.05858985314541543,
+    "solve_seconds": 1.839540651999414,
+    "objective": -9864.715996203493,
+    "nonlinear_base_force_residual": 15.01308008975925,
+    "nonlinear_base_moment_residual": 2.8959263458271893,
+    "nonlinear_joint_residual": 2.48741211078719,
+    "nonlinear_minimum_clearance": -4.014430374101041e-05,
+    "nonlinear_support_gap": 0.001967390153311613,
+    "nonlinear_verified": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 29.782357333533387,
+        "nonlinear_base_moment_residual": 20.935321044948413,
+        "nonlinear_joint_residual": 17.11367114421779,
+        "nonlinear_minimum_clearance": -0.00019295339608032397,
+        "nonlinear_support_gap": 0.0025709236267246957,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 15.01308008975925,
+        "nonlinear_base_moment_residual": 2.8959263458271893,
+        "nonlinear_joint_residual": 2.48741211078719,
+        "nonlinear_minimum_clearance": -4.014430374101041e-05,
+        "nonlinear_support_gap": 0.001967390153311613,
+        "nonlinear_verified": true
+      }
+    ],
+    "applied": true,
+    "latest_acceleration_projection_max_error": 3.587240219116211
+  },
+  {
+    "time": 3.74,
+    "frame": 854.5999999999999,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 410.7000732350116,
+    "tube_violation": -0.15478430986874567,
+    "solve_seconds": 0.4177833553403616,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.7600000000000002,
+    "frame": 859.4000000000001,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 378.1321996710079,
+    "tube_violation": -0.154842719252282,
+    "solve_seconds": 0.4145051958039403,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.7800000000000002,
+    "frame": 864.1999999999999,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 373.90731991768524,
+    "tube_violation": -0.15487072539401475,
+    "solve_seconds": 0.4509748499840498,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.8000000000000003,
+    "frame": 869.0000000000001,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 374.4787595053243,
+    "tube_violation": -0.15487397466722302,
+    "solve_seconds": 0.4169457769021392,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.8200000000000003,
+    "frame": 873.8,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 429.5075378369456,
+    "tube_violation": -0.15482841764468808,
+    "solve_seconds": 0.3759396970272064,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.84,
+    "frame": 878.5999999999999,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 622.6846923823199,
+    "tube_violation": -0.15478430986743363,
+    "solve_seconds": 0.36476301215589046,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.86,
+    "frame": 883.4,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 399.0979003880601,
+    "tube_violation": -0.15482369290963474,
+    "solve_seconds": 0.3989894846454263,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.88,
+    "frame": 888.1999999999999,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 399.02729185531325,
+    "tube_violation": -0.15486719040505326,
+    "solve_seconds": 0.3857734762132168,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  },
+  {
+    "time": 3.9,
+    "frame": 893.0,
+    "mode": 2,
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 387.58889605927675,
+    "tube_violation": -0.15490911000262164,
+    "solve_seconds": 0.3722186107188463,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ]
+  }
+]

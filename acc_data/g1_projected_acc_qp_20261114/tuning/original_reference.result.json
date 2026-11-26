@@ -1,0 +1,26 @@
+{
+  "name": "original_reference",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--swing-midpoint-clearance",
+    "0",
+    "--smooth-stride",
+    "0"
+  ],
+  "measured_steps": 1,
+  "last_time_s": 0.272,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 0.272,
+    "source_frame": 54.400000000000006,
+    "joint_rmse_rad": 0.20029903948307037,
+    "root_position_m": 0.01777380332350731,
+    "root_orientation_rad": 0.19098162512421055
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.20029903948307037
+}

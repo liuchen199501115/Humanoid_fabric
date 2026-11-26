@@ -1,0 +1,7 @@
+{
+  "history_q": true,
+  "history_qd": true,
+  "history_frame": true,
+  "history_time": true,
+  "interpretation": "Explicitly reissuing the held torque every native substep produced identical states; the earlier result was not caused by a cleared actuation buffer."
+}

@@ -1,0 +1,24 @@
+{
+  "name": "twelve_com816_16",
+  "landings": 11,
+  "source_frame": 952.5136890961516,
+  "prefix_end_time_s": 3.8,
+  "history_equal_prefix_fields": 167,
+  "different_prefix_fields": [],
+  "one_native_qp": true,
+  "exact_applied_qp_torque": true,
+  "unchanged_fidelity": true,
+  "next_step": {
+    "step": 12,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 0.017827478397007823,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

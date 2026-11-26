@@ -1,0 +1,101 @@
+[
+  {
+    "time": 2.3000000000000003,
+    "cases": {
+      "8.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "12.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "16.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "20.0": {
+        "feasible": true,
+        "status": 0
+      },
+      "24.0": {
+        "feasible": true,
+        "status": 0
+      },
+      "32.0": {
+        "feasible": true,
+        "status": 0
+      }
+    },
+    "reconstruction_error": {
+      "C": 0.0,
+      "d": 0.0
+    }
+  },
+  {
+    "time": 2.5,
+    "cases": {
+      "8.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "12.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "16.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "20.0": {
+        "feasible": true,
+        "status": 0
+      },
+      "24.0": {
+        "feasible": true,
+        "status": 0
+      },
+      "32.0": {
+        "feasible": true,
+        "status": 0
+      }
+    },
+    "reconstruction_error": {
+      "C": 0.0,
+      "d": 0.0
+    }
+  },
+  {
+    "time": 2.7,
+    "cases": {
+      "8.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "12.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "16.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "20.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "24.0": {
+        "feasible": false,
+        "status": 2
+      },
+      "32.0": {
+        "feasible": false,
+        "status": 2
+      }
+    },
+    "reconstruction_error": {
+      "C": 0.0,
+      "d": 0.0
+    }
+  }
+]

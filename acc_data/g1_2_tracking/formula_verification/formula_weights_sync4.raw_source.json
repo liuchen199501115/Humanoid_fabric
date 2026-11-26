@@ -1,0 +1,23 @@
+{
+  "run": "formula_weights_sync4",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "source_frame_count": 2000,
+  "fps": 200.0,
+  "ground_shift_m": -0.00011001154780387878,
+  "last_source_frame": 52.0,
+  "raw_source_pose_fidelity_passed": false,
+  "peak_joint_rmse_rad": 0.20070794224739075,
+  "peak_root_position_m": 0.032221484929323196,
+  "peak_root_angle_rad": 0.24488788796432406,
+  "raw_source_prefix_landings": 1,
+  "recorded_reference_max_joint_difference_rad": 0.0,
+  "landing_events": [
+    {
+      "step": 1,
+      "raw_source_foot_error_m": 0.010596850622010299,
+      "prefix_pose_passed": true,
+      "same_frame_position_passed": true
+    }
+  ],
+  "scope": "Raw unclipped source poses; wxyz/xyzw and joint-order conversion plus the single recorded ground shift. Flight/load-hold evidence comes from the independent recorded step tracker; event positions rechecked by URDF FK."
+}

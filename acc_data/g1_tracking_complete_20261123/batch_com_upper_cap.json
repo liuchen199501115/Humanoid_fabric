@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_anchor_support1_commax0_816",
+    "parent": "ten_anchor884_root1000_support1",
+    "options": [
+      "--maximum-support-acceleration",
+      "0",
+      "--maximum-support-acceleration-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_anchor_support1_commax3_816",
+    "parent": "ten_anchor884_root1000_support1",
+    "options": [
+      "--maximum-support-acceleration",
+      "3",
+      "--maximum-support-acceleration-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_anchor_support1_commax3_802",
+    "parent": "ten_anchor884_root1000_support1",
+    "options": [
+      "--maximum-support-acceleration",
+      "3",
+      "--maximum-support-acceleration-start",
+      "4.01"
+    ]
+  }
+]

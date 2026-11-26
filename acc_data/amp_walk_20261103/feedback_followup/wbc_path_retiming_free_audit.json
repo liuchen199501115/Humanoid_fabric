@@ -1,0 +1,50 @@
+[
+  {
+    "reference": "turn_recovery_y40",
+    "source_frame_interval": [
+      800,
+      1000
+    ],
+    "speed_range": [
+      0.6,
+      1.8
+    ],
+    "boundary_speed": null,
+    "force_only_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "force_only_feasible": true,
+    "force_and_moment_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "physical_tracking_certified": false,
+    "support_model": "Optimistic full projected sole hull; box friction; no joint torque constraints",
+    "minimum_maximum_normalized_moment_slack_m": 0.17676821548177493,
+    "worst_source_frame": 802.0,
+    "optimized_speed_range": [
+      0.6,
+      0.7051450015425005
+    ],
+    "maximum_linear_constraint_residual": 2.7755575615628914e-16
+  },
+  {
+    "reference": "wbc_turn_support_half_flat_drop20",
+    "source_frame_interval": [
+      800,
+      1000
+    ],
+    "speed_range": [
+      0.6,
+      1.8
+    ],
+    "boundary_speed": null,
+    "force_only_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "force_only_feasible": true,
+    "force_and_moment_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "physical_tracking_certified": false,
+    "support_model": "Optimistic full projected sole hull; box friction; no joint torque constraints",
+    "minimum_maximum_normalized_moment_slack_m": 0.176768215481775,
+    "worst_source_frame": 820.0,
+    "optimized_speed_range": [
+      0.6,
+      0.9881216654914334
+    ],
+    "maximum_linear_constraint_residual": 6.938893903907228e-17
+  }
+]

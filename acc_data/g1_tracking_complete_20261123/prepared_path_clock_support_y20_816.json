@@ -1,0 +1,11 @@
+{
+  "method": "Offline whole-turn path retiming, never a runtime predictive controller.\n\nFor phase speed squared x and phase acceleration u, exact RNEA along a fixed\npose path is G + X*x + U*u. Explicit slacks report physical path conflicts;\na solved optimization does not certify closed-loop tracking or impact behavior.\n",
+  "parent_file": "prepared_support10_early_com15_y20.npz",
+  "parent_sha256": "c7b4d7a286722e63fea2f7616e48acd802d78c46f5c086ac1316ea0a270216cd",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "solver_status": "maximum iterations reached",
+  "linearization_error": 2.2737367544323206e-13,
+  "full_tracking_passed": false,
+  "preflight_passed": false,
+  "physical_scope": "Optimistic full nominal sole support; leg effort only in single support; upper-body effort in all modes; no impact model"
+}

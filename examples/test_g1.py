@@ -1,4 +1,15 @@
-"""Test the pelvis, feet and hand Fabric tasks with contact projection.
+"""Track motion PKLs using Fabric tasks and a constrained dynamics QP.
+
+Full AMP attempt from the repository root:
+    PYTHONPATH=src:examples:.runtime/qp_solvers python examples/test_g1.py \
+        --tracking-profile amp-full
+The historical two-stage baseline verified 12/29 landings. The current
+amp-full profile projects the returned Fabric acceleration onto contact
+constraints, then tracks that projected acceleration in one QP,
+without caching task requests, with one native solve attempt per tick;
+its tracking performance must be measured separately. This entry retains the
+complete source, native contacts and original error limits.
+Historical experiment helpers under acc_data are required by this profile.
 
 With --g1-md, use natural-form task summation as the dynamics objective,
 persistent joint integration and MIT effort output at 1 kHz / 2 kHz PhysX.
@@ -33,6 +44,7 @@ separate tracking validation.
 from __future__ import annotations
 
 import argparse
+from functools import partial
 import json
 import math
 from pathlib import Path
@@ -40,6 +52,11 @@ import sys
 import time
 import traceback
 import warnings
+
+# Keep the tested reference/contact helpers shared with the recorded baseline.
+_EXPERIMENT_HELPERS = (Path(__file__).resolve().parents[1]
+    / "acc_data/amp_walk_20261103/feedback_followup")
+sys.path.append(str(_EXPERIMENT_HELPERS))
 
 import numpy as np
 import torch
@@ -60,7 +77,9 @@ warnings.filterwarnings(
 )
 
 from fabrics_sim.fabrics.g1_pose_fabric import G1PoseFabric
+from g1_acceleration_cost import linear_acceleration_weight, preserve_com_acceleration, track_com_feedback, com_feedback_scale
 from fabrics_sim.solver.contact_observation import ground_support_forces
+from fabrics_sim.solver.AccelerationQP import split_foot_wrench_constraints
 from fabrics_sim.solver.com_diagnostics import com_acceleration_snapshot, complete_observed_interval
 from fabrics_sim.solver.swing_clearance import clearance_active, sole_clearance_constraints
 from fabrics_sim.solver.rigid_body_frames import (
@@ -110,6 +129,281 @@ OUTPUT_PATH = (
     Path(__file__).resolve().parents[1]
     / "acc_data/g1_two_task_dynamics_feasible.npz"
 )
+
+
+def rolling_sphere_bias_correction(foot_rotation, angular_velocity, patch_frame,
+                                   local_points, collider_centers, collider_radii,
+                                   tolerance=.002):
+    """Account for migration of spherical floor contacts, not impact impulses.
+
+    A sphere contact offset from its center is -radius * world_z, so its
+    world derivative is zero. A rigid material-point Jdot*v instead includes
+    omega x (omega x offset). Subtract that term; the instantaneous contact
+    Jacobian and wrench map remain unchanged. Apply only when every support
+    vertex matches a native spherical collider's current lowest point.
+    """
+    if not math.isfinite(tolerance) or tolerance <= 0:
+        raise ValueError('Contact matching tolerance must be finite and positive')
+    points = (foot_rotation[:, None] @ local_points[..., None]).squeeze(-1)
+    centers = (foot_rotation[:, None] @ collider_centers[None, ..., None]).squeeze(-1)
+    vertical = angular_velocity.new_tensor([0., 0., 1.])
+    bottoms = centers - collider_radii[None, :, None] * vertical
+    distance = torch.linalg.vector_norm(points[:, :, None] - bottoms[:, None], dim=-1)
+    distance = distance.masked_fill(collider_radii[None, None] <= 0, float('inf'))
+    nearest_distance, nearest = distance.min(dim=-1)
+    matched = (nearest_distance <= tolerance).all(dim=-1)
+    radius = collider_radii[nearest].mean(dim=-1)
+    correction_world = radius[:, None] * torch.linalg.cross(
+        angular_velocity, torch.linalg.cross(angular_velocity,
+            vertical.expand_as(angular_velocity), dim=-1), dim=-1)
+    correction = (patch_frame.transpose(-1, -2) @ correction_world[..., None]).squeeze(-1)
+    return torch.where(matched[:, None], correction, torch.zeros_like(correction)), matched
+
+def step_physics_interval(world, torque_dt, substeps, apply_effort=None):
+    """Hold the existing effort command over one interval of native physics steps."""
+    if (not isinstance(substeps, int) or isinstance(substeps, bool) or substeps < 1
+            or not math.isfinite(torque_dt) or torque_dt <= 0):
+        raise ValueError('Expected a positive torque interval and integer physics substeps')
+    native_dt = torque_dt / substeps
+    if not math.isclose(world.get_physics_dt(), native_dt, rel_tol=1e-7, abs_tol=1e-10):
+        world.set_simulation_dt(physics_dt=native_dt, rendering_dt=world.get_rendering_dt())
+    before = world.current_time
+    for _ in range(substeps):
+        if apply_effort is not None:
+            apply_effort()
+        world.step(render=False)
+    elapsed = world.current_time - before
+    if not math.isclose(elapsed, torque_dt, rel_tol=1e-5, abs_tol=1e-8):
+        raise RuntimeError(f'Physics/control clock mismatch: expected {torque_dt:.6f}s '
+                           f'per torque update, observed {elapsed:.6f}s')
+    return native_dt
+
+
+def priority_error_diagnostics(errors):
+    """Keep history fields stable when a priority stage turns on or off."""
+    return dict(priority_active=np.asarray(errors is not None),
+                priority_stage_constraint_error=(np.full(1, np.nan, dtype=np.float32)
+                    if errors is None else _to_numpy(errors[0]).copy()),
+                priority_lock_error=(np.full(1, np.nan, dtype=np.float32)
+                    if errors is None else _to_numpy(errors[1]).copy()))
+
+
+def blend_secondary_task_metrics(requests, priority_names, priority_rows, blend):
+    """Continuously add secondary row costs to a single physical QP objective."""
+    if not math.isfinite(blend) or not 0 <= blend <= 1:
+        raise ValueError('Secondary task blend must be in [0,1]')
+    for request in requests:
+        factors = torch.full_like(request.desired, math.sqrt(blend))
+        if request.name in priority_names:
+            selected = priority_rows.get(request.name)
+            if selected is None:
+                factors[:] = 1.
+            else:
+                factors[:, list(selected)] = 1.
+        request.metric = request.metric*factors[:, :, None]*factors[:, None, :]
+
+
+def root_position_request(q, velocity, reference_q, reference_v, reference_a,
+                          metric, stiffness=100., damping=20., feedback_limit=30.,axes='xyz'):
+    """Track the moving root origin in world coordinates through the physical QP.
+
+    This is a soft acceleration objective. It cannot apply forces to the
+    unactuated base; the existing dynamics and measured contacts still govern
+    what joint torque can realize. Feedforward is not feedback-clipped.
+    """
+    from fabrics_sim.fabrics.task_request import TaskRequest
+    if (any(not math.isfinite(x) or x <= 0 for x in
+            (metric, stiffness, damping, feedback_limit)) or axes not in ('y','xy','xyz')):
+        raise ValueError('Root task weights and gains must be finite and positive')
+    feedback = (stiffness*(reference_q[:, :3]-q[:, :3])
+                + damping*(reference_v[:, :3]-velocity[:, :3]))
+    desired = reference_a[:, :3]+feedback.clamp(-feedback_limit, feedback_limit)
+    A = q.new_zeros(q.shape[0], 3, 35)
+    A[:, :, :3] = torch.eye(3, device=q.device, dtype=q.dtype)
+    active=torch.ones_like(desired,dtype=torch.bool)
+    if axes!='xyz':active[:,2]=False
+    if axes=='y':active[:,0]=False
+    return TaskRequest('root_position', A, torch.zeros_like(desired), desired,
+                       metric*torch.eye(3, device=q.device, dtype=q.dtype)[None].expand(q.shape[0], -1, -1),
+                       active)
+
+
+def blend_root_position_weight(request, weight, axes, blend):
+    """Convexly blend the existing root task's axis costs; targets stay fixed."""
+    if (not math.isfinite(weight) or weight <= 0 or axes not in ('y','xy','xyz')
+            or not math.isfinite(blend) or not 0 <= blend <= 1):
+        raise ValueError('Invalid late root-task weights')
+    if blend == 0:
+        return
+    mask=request.active.to(request.metric.dtype)
+    old=request.metric*mask[..., :, None]*mask[..., None, :]
+    target=request.metric.new_zeros(request.metric.shape)
+    for axis in axes:
+        index='xyz'.index(axis);target[:,index,index]=weight
+    request.metric=(1-blend)*old+blend*target
+    request.active=request.metric.diagonal(dim1=-2,dim2=-1)>0
+
+
+def scale_stance_posture_metric(metric, active_contacts, scale):
+    """Keep stance posture in the same QP stage, with a smaller soft weight.
+
+    A congruence scales cross terms consistently for non-diagonal metrics.
+    Swing legs and upper-body weights are retained; no task target is changed.
+    """
+    if not math.isfinite(scale) or not 0. < scale <= 1.:
+        raise ValueError('Stance posture scale must be finite and in (0, 1]')
+    if (metric.ndim != 3 or metric.shape[1:] != (29, 29)
+            or active_contacts.shape != (len(metric), 2)
+            or active_contacts.dtype != torch.bool
+            or active_contacts.device != metric.device):
+        raise ValueError('Expected joint metric [B,29,29] and boolean contacts [B,2]')
+    factors = metric.new_ones((len(metric), 29))
+    stance_rows = active_contacts.repeat_interleave(6, dim=1).to(metric.dtype)
+    factors[:, :12] = 1. + (math.sqrt(scale)-1.)*stance_rows
+    return factors[:, :, None] * metric * factors[:, None, :]
+
+
+def control_timesteps(control_frequency, physics_frequency=None, *, g1_md=False):
+    """Choose commensurate simulation periods before constructing Isaac."""
+    rate = physics_frequency if physics_frequency is not None else (2000 if g1_md else 500)
+    if (control_frequency <= 0 or rate < control_frequency
+            or rate % control_frequency != 0):
+        raise ValueError('Physics frequency must be an integer multiple of control frequency')
+    return 1. / control_frequency, 1. / rate
+
+
+def solve_single_tracking_qp(solver, **kwargs):
+    """Track the supplied projected acceleration with no task-level objective."""
+    if solver.solver_backend != 'daqp':
+        raise ValueError('Single-solve tracking requires the DAQP backend')
+    kwargs.update(task_requests=None, priority_tasks=(), priority_requests=None,
+                  priority_levels=None, priority_rows=None, priority_projections=None,
+                  command_acc_correction=None)
+    return solver.solve(**kwargs)
+
+
+def configure_full_tracking_profile(parser):
+    """Run the AMP reference with a single acceleration-tracking QP per tick.
+
+    Full source coverage, original-source fidelity and measured landing checks
+    remain separate acceptance conditions. The preset is not a success claim.
+    """
+    parser.add_argument('--tracking-profile', choices=('amp-full',), default=None,
+                        help='Attempt all 2000 AMP source frames and all 29 landings')
+    probe = argparse.ArgumentParser(add_help=False)
+    probe.add_argument('--tracking-profile')
+    if probe.parse_known_args()[0].tracking_profile is None:
+        parser.set_defaults(
+            anticipate_unload_start=float('inf'),
+            body_feedback_start=float('inf'),
+            centroidal_preview_start=float('inf'),
+            clock_final_speed=1.0,
+            clock_second_start=float('inf'),
+            clock_third_start=float('inf'),
+            clock_transition_start=float('inf'),
+            collision_barrier_bandwidth_start=float('inf'),
+            com_feedback_metric_start=float('inf'),
+            com_feedback_start=float('inf'),
+            configuration_tracking_start=float('inf'),
+            contact_friction_refine_start=float('inf'),
+            contact_pause_start=float('inf'),
+            convex_wrist_collision_start=float('inf'),
+            flight_feedback_start=float('inf'),
+            foot_feedback_starts=[float('inf'), float('inf')],
+            full_body_preview_start=float('inf'),
+            full_body_preview_warm_start=float('inf'),
+            full_swing_pose_start=float('inf'),
+            global_posture_feedback_start=float('inf'),
+            horizontal_feedback_start=float('inf'),
+            joint_limit_priority_start=float('inf'),
+            landing_gated_unload_start=float('inf'),
+            late_balance_hierarchy_start=float('inf'),
+            late_body_angular_metric_start=float('inf'),
+            late_contact_stabilization_start=float('inf'),
+            late_foot_angular_metric_start=float('inf'),
+            late_foot_metric_start=float('inf'),
+            late_joint_tube_start=float('inf'),
+            late_leg_feedback_start=float('inf'),
+            late_momentum_priority_start=float('inf'),
+            late_pelvis_priority_start=float('inf'),
+            late_reference_smooth_start=float('inf'),
+            late_tracking_tube_start=float('inf'),
+            late_tube_smooth_start=float('inf'),
+            late_unload_start=float('inf'),
+            leg_posture_secondary_start=float('inf'),
+            measured_stance_reference_start=float('inf'),
+            minimum_support_acceleration_start=float('inf'),
+            model_effort_start=float('inf'),
+            native_contact_plan_start=float('inf'),
+            pelvis_orientation_replace_start=float('inf'),
+            physical_braking_start=float('inf'),
+            position_tube_start=float('inf'),
+            posture_total_accel_start=float('inf'),
+            retain_planned_support_start=float('inf'),
+            smooth_start=float('inf'),
+            stance_posture_secondary_start=float('inf'),
+            support_load_floor_start=float('inf'),
+            support_orientation_priority_start=float('inf'),
+            swing_balance_priority_start=float('inf'),
+            synchronous_effort_budget_start=float('inf'),
+            tracking_margin_start=float('inf'),
+            tracking_tube_start=float('inf'),
+            transition_swing_priority_start=float('inf'),
+            upper_posture_metric_start=float('inf'),
+            vertical_feedback_start=float('inf'),
+            waist_feedback_start=float('inf'),
+        )
+        return parser.parse_args()
+    preset = ['--control-frequency', '500', '--motion-start-in-motion', '--tracking-steps', '0',
+     '--track-full-motion', '--motion-pkl',
+     'acc_data/amp_walk_20261102/amp_walk_native_contacts.pkl', '--motion-interpolation',
+     'pchip-analytic', '--reference-mode', 'unified', '--motion-feedback-scale', '9',
+     '--preserve-reference-acceleration', '--balance-priority', '--swing-position-priority',
+     '--whole-body-posture-priority', '--dynamic-unload-weight', '.05',
+     '--swing-midpoint-clearance', '.056', '--observed-contact-patches', '--source-pelvis-weight',
+     '1', '--device', 'cpu', '--duration', '18', '--joint-velocity-limits',
+     '--joint-limit-avoidance-weight', '20', '--joint-limit-barrier-bandwidth', '8', '--qp-solver',
+     'daqp', '--wrist-hip-avoidance', '--wrist-hip-barrier', '--wrist-body-avoidance',
+     '--report-self-contacts', '--diagnose-com', '--diagnose-contacts', '--motor-armature',
+     '--foot-feedback-starts', '1.3', '.88', '--foot-feedback-limits', '150', '150',
+     '--foot-feedback-joints', 'leg', 'leg', '--flight-feedback-ramp', '.04',
+     '--waist-feedback-start', '100', '--late-leg-feedback-start', '100',
+     '--global-posture-feedback-start', '.70', '--global-posture-feedback-limit', '150',
+     '--smooth-start', '.65', '--smooth-ramp', '.1', '--smooth-stride', '6',
+     '--tube-smooth-stride', '2', '--reference-correction-rmse-limit', '.08',
+     '--reference-pose-candidate',
+     'acc_data/amp_walk_20261103/feedback_followup/wbc_convex_catch15_25_clear35.npz',
+     '--landing-gated-unload-start', '1.48', '--gate-contact-transitions',
+     '--horizontal-feedback-start', '1.4', '--horizontal-feedback-limit', '80',
+     '--horizontal-feedback-metric-scale', '4', '--vertical-feedback-start', '1.4',
+     '--full-swing-pose-start', '1.4',
+     '--clock-transition-start', '.90', '--clock-transition-ramp', '.35', '--clock-final-speed',
+     '1.2', '--stop-at-fidelity-loss', '--anticipate-unload-hysteresis',
+     '--anticipate-unload-start', '3.7', '--anticipate-unload-horizon', '.1',
+     '--late-unload-start', '3.7', '--late-unload-ramp', '.02', '--late-unload-weight', '.2',
+     '--late-body-angular-metric-start', '4.2', '--late-body-angular-metric-scale', '.1',
+     '--anticipate-unload-overdue', '--convex-wrist-collision', '--convex-wrist-collision-start',
+     '3.5', '--model-effort-start', '4.15', '--tracking-margin-start', '4.4',
+     '--late-foot-metric-start', '4.5', '--late-foot-metric-scale', '4',
+     '--full-body-preview-start', 'inf', '--centroidal-preview-start', 'inf', '--direct-wbc',
+     '--tracking-servo', '--contact-aware-servo', '--nominal-implicit-servo']
+    # Verified single-QP continuation: three measured source landings.
+    # Preserve the physical constraints and all auxiliary tracking barriers.
+    preset += ['--posture-metric-scale', '10', '--joint-feedback-limit', '150',
+               '--projection-joint-correction-weight', '1',
+               '--qp-base-acceleration-weight', '100', '--source-pelvis-weight', '10',
+               '--fabric-angular-feedback-limit', '100',
+               '--output-path', 'acc_data/g1_projected_acc_qp_20261114/continued_tracking.npz']
+    args = parser.parse_args(preset + sys.argv[1:])
+    if (args.tracking_steps or not args.track_full_motion
+            or not args.stop_at_fidelity_loss or not args.direct_wbc or args.g1_md):
+        parser.error('amp-full requires direct WBC, the whole source and original fidelity checks')
+    if args.full_body_preview_start != float('inf') or args.centroidal_preview_start != float('inf'):
+        parser.error('amp-full uses a single nonpredictive WBC QP')
+    if (args.relax_joint_tube or args.recover_orientation_tube or args.shoulder_roll_guard
+            or args.qp_solver != 'daqp'):
+        parser.error('amp-full requires one DAQP attempt: tube retries and shoulder guard are disabled')
+    return args
 
 
 def offset_left_shoulder_reference(trajectory: torch.Tensor, offset: float) -> torch.Tensor:
@@ -1151,11 +1445,14 @@ def initialize_isaac_dynamics(
                     )
         sky_light = UsdLux.DomeLight.Define(stage, "/World/skyLight")
         sky_light.CreateIntensityAttr(750.0)
-        assets_root = get_assets_root_path(skip_check=True)
-        sky_light.CreateTextureFileAttr(
-            f"{assets_root}/Isaac/Materials/Textures/Skies/PolyHaven/"
-            "kloofendal_43d_clear_puresky_4k.hdr"
-        )
+        if not headless:
+            # The remote HDRI is visual only. Avoid asset-download waits in
+            # repeated headless physics trials; retain the interactive scene.
+            assets_root = get_assets_root_path(skip_check=True)
+            sky_light.CreateTextureFileAttr(
+                f"{assets_root}/Isaac/Materials/Textures/Skies/PolyHaven/"
+                "kloofendal_43d_clear_puresky_4k.hdr"
+            )
 
         robot = world.scene.add(
             Articulation(prim_paths_expr="/World/G1", name="g1")
@@ -1353,11 +1650,38 @@ def save_reference_failure(args, error, control_time, q, qd, forces, history, se
         controller_options=np.asarray(json.dumps(vars(args),default=str,sort_keys=True)),
         q=q.detach().cpu().numpy(),qd=qd.detach().cpu().numpy(),
         foot_forces=forces.detach().cpu().numpy(),
+        motion_tracking_valid=np.asarray(False),
+        simulation_completed=np.asarray(False),
+        stopped_at_motion_end=np.asarray(False),
         **{'servo_'+key:np.asarray([row[key] for row in servo_history])
            for key in (servo_history[0] if servo_history else {})},
         **{'history_'+key:np.asarray([row[key] for row in history])
            for key in (history[0] if history else {})})
     print(f'[fail] reference planning; saved: {path}',flush=True)
+    # A bound-construction failure occurs before the QP failure handler. Retain
+    # the same measured landing audit for its valid prefix, without certifying
+    # the failed state or changing the controller's stop decision.
+    plan_path = args.output_path.with_suffix('.steps_plan.json')
+    if len(history) >= 2 and plan_path.exists():
+        try:
+            from analyze_bounded_steps import summarize as summarize_steps
+            plan = json.loads(plan_path.read_text())
+            failure = dict(stop_reason=str(error), failed_time_s=float(control_time))
+            with np.load(path) as recording:
+                steps = summarize_steps(recording, plan)
+                steps.update(failure)
+                args.output_path.with_suffix('.steps.json').write_text(
+                    json.dumps(steps, indent=2)+'\n')
+                if getattr(args, 'track_full_motion', False):
+                    from analyze_motion_tracking import summarize_full_motion
+                    tracking = summarize_full_motion(recording, plan)
+                    tracking.update(failure)
+                    args.output_path.with_suffix('.tracking.json').write_text(
+                        json.dumps(tracking, indent=2)+'\n')
+            print(f"[fail] verified source landings={steps['measured_steps']}/"
+                  f"{steps['expected_steps']}; controller stopped: {error}", flush=True)
+        except (KeyError, ValueError, OSError) as audit_error:
+            print(f'[fail] prefix audit unavailable: {audit_error}', flush=True)
 
 
 def parse_args() -> argparse.Namespace:
@@ -1374,7 +1698,7 @@ def parse_args() -> argparse.Namespace:
                         help="Initialize from source q/v and touching soles, then track the source clock without rest warmup or a managed transfer.")
     parser.add_argument("--dynamic-unload-weight", type=float, default=0.,
                         help="Optional outgoing-wrench penalty during measured double support before a planned dynamic foot release.")
-    parser.add_argument("--preserve-reference-acceleration", action="store_true",
+    parser.add_argument("--preserve-reference-acceleration", action=argparse.BooleanOptionalAction, default=False,
                         help="Opt in to raw source acceleration beyond task caps in dynamic tracking; physical QP constraints still apply.")
     parser.add_argument("--swing-midpoint-clearance", type=float, default=0.,
                         help="Mid-swing clearance using native foot colliders and leg IK; one smooth bump fills each source midpoint deficit.")
@@ -1499,11 +1823,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--posture-last-priority", action="store_true",
                         help="Place all 29 joint posture rows after selected COM, foot and orientation tasks in the QP hierarchy.")
     parser.add_argument("--joint-limit-avoidance-weight", type=float, default=0.,
-                        help="Optional soft anticipatory joint braking metric; hard physical limits remain enabled.")
+                        help="Optional soft anticipatory joint braking metric. Simulator joint stops stay enabled; predictive braking requires --acceleration-and-braking-limits or --physical-braking-start.")
     parser.add_argument("--joint-limit-time-constant", type=float, default=None,
                         help="Optional measured-joint velocity damper time in seconds; ramps in over 0.5 s after warmup.")
     parser.add_argument("--joint-limit-barrier-bandwidth", type=float, default=None,
-                        help="Optional joint-distance acceleration barrier bandwidth in rad/s; starts braking before a joint stop.")
+                        help="Joint-distance acceleration barrier bandwidth in 1/s when predictive braking is active; setting this alone does not enable braking bounds.")
     parser.add_argument("--joint-limit-impact-recovery", action="store_true",
                         help="Require measured stopping-distance braking after contact impulses; retain QP effort/acceleration limits.")
     parser.add_argument("--flat-foot-spawn", action="store_true",
@@ -1520,6 +1844,10 @@ def parse_args() -> argparse.Namespace:
                         help="Seconds for the measured-to-source swing transition; default uses the full swing.")
     parser.add_argument("--landing-speed-limit", type=float,
                         help="Optional approach speed envelope in m/s for the actual foot collision shapes, e.g. .05.")
+    parser.add_argument("--rolling-contact-kinematics-start", type=float, default=float('inf'),
+                        help="Simulation seconds to enable native-sphere contact migration bias; disabled by default.")
+    parser.add_argument("--landing-speed-limit-start", type=float, default=0.,
+                        help="Simulation seconds before enabling the landing speed envelope; source auditing stays active.")
     parser.add_argument("--horizontal-balance-priority", action="store_true",
                         help="Prioritize COM XY; leave height in the full posture objective. Requires separate balance priority.")
     parser.add_argument("--tracking-servo", action="store_true",
@@ -1530,6 +1858,11 @@ def parse_args() -> argparse.Namespace:
                         help="Use nominal motor gains with coupled implicit feedback instead of reducing gains on edge contact.")
     parser.add_argument("--control-frequency", type=int, choices=(50,100,250,500,1000),default=500,
                         help="Fabric/QP updates per second; physics/feedback are 500 Hz normally, 2000 Hz with --g1-md.")
+    parser.add_argument('--late-physics-substeps-start', type=float, default=float('inf'),
+                        help='Simulation seconds to subdivide each torque interval without extra control updates')
+    parser.add_argument('--late-physics-substeps', type=int, choices=(1,2,4,8), default=1)
+    parser.add_argument("--physics-frequency", type=int, choices=(500,1000,2000,4000), default=None,
+                        help="Physics/feedback rate; must be an integer multiple of the control rate. Defaults to 500, or 2000 with --g1-md.")
     parser.add_argument("--qp-solver", choices=("admm", "osqp", "daqp"), default="admm",
                         help="QP backend: batched Torch ADMM, CPU OSQP, or optional native DAQP with KKT checks.")
     parser.add_argument("--qp-reuse-workspace", action=argparse.BooleanOptionalAction, default=False,
@@ -1753,6 +2086,12 @@ def parse_args() -> argparse.Namespace:
             "Disabled by default: static-reference regression worsened."
         ),
     )
+    parser.add_argument('--qp-base-linear-acceleration-weight', type=float, default=None,
+                        help='Override only the three base translation weights; rotation keeps --qp-base-acceleration-weight.')
+    parser.add_argument('--qp-base-linear-weight-start', type=float, default=0.,
+                        help='Simulation seconds to start changing the base translation cost.')
+    parser.add_argument('--qp-base-linear-weight-ramp', type=float, default=0.,
+                        help='Quintic transition duration in seconds; zero applies the weight immediately.')
     parser.add_argument(
         "--maximum-com-tracking-error",
         type=float,
@@ -1780,12 +2119,672 @@ def parse_args() -> argparse.Namespace:
             "motion tracking validation (default: 0.35)."
         ),
     )
-    return parser.parse_args()
+    parser.add_argument('--vertical-feedback-start', type=float, default=2.44)
+    parser.add_argument('--joint-feedback-limit', type=float, default=30.)
+    parser.add_argument('--com-acceleration-preservation-weight', type=float, default=0.,
+                        help='Preserve composed COM acceleration in projection and QP using the live COM Jacobian; no task requests.')
+    parser.add_argument('--qp-com-feedback-scale', type=float, default=0.,
+                        help='Add the original COM feedforward+PD objective to amp-full QP, scaled by its task metric; 0 restores projected-only tracking.')
+    parser.add_argument('--qp-com-feedback-start', type=float, default=0.,
+                        help='Simulation time at which the original COM objective starts blending in.')
+    parser.add_argument('--qp-com-feedback-ramp', type=float, default=0.,
+                        help='Quintic blend duration for the original COM objective, in seconds.')
+    parser.add_argument('--qp-com-feedback-axes', choices=('xy', 'xyz'), default='xyz',
+                        help='Axes of the optional original COM objective; xy preserves the existing vertical task.')
+    parser.add_argument('--qp-fabric-metric', action='store_true',
+                        help='Use the complete Fabric metric and unprojected acceleration as the single-QP objective, preserving the original task tradeoffs.')
+    parser.add_argument('--projection-joint-correction-weight', type=float, default=0.,
+                        help='Extra joint correction cost in contact projection; zero uses the physical mass metric.')
+    parser.add_argument('--fabric-angular-feedback-limit',
+                        type=lambda value: None if value == 'default' else float(value), default=None,
+                        help='Body/pelvis feedback cap before projection (rad/s^2); default restores the configured per-axis caps.')
+    parser.add_argument('--clock-transition-start', type=float, default=1.34)
+    parser.add_argument('--clock-transition-ramp', type=float, default=.2)
+    parser.add_argument('--clock-final-speed', type=float, default=.7)
+    parser.add_argument('--clock-second-start',type=float,default=100.)
+    parser.add_argument('--clock-second-ramp',type=float,default=.3)
+    parser.add_argument('--clock-second-speed',type=float,default=None)
+    parser.add_argument('--clock-third-start',type=float,default=100.)
+    parser.add_argument('--clock-third-ramp',type=float,default=.2)
+    parser.add_argument('--clock-third-speed',type=float,default=None)
+    parser.add_argument('--late-foot-linear-feedback-start',type=float,default=float('inf'))
+    parser.add_argument('--late-foot-linear-feedback-limit',type=float,default=None,
+                        help='Optional norm cap for swing-foot position feedback; analytic feedforward and physical limits are retained.')
+    parser.add_argument('--late-foot-linear-feedback-side',choices=('left','right','both'),default='both')
+    parser.add_argument('--foot-contact-search-start',type=float,default=float('inf'),
+                        help='Source seconds to enable bounded near-target touchdown search in the foot task.')
+    parser.add_argument('--foot-contact-search-acceleration',type=float,default=1.)
+    parser.add_argument('--foot-contact-search-ramp',type=float,default=.05)
+    parser.add_argument('--prepared-source-clock',type=Path,default=None,
+                        help='Optional offline, hash-bound C2 source clock; original source fidelity remains enforced.')
+    parser.add_argument('--clock-fourth-start',type=float,default=100.)
+    parser.add_argument('--clock-fourth-ramp',type=float,default=.2)
+    parser.add_argument('--clock-fifth-start',type=float,default=100.)
+    parser.add_argument('--clock-sixth-start',type=float,default=100.)
+    parser.add_argument('--clock-sixth-ramp',type=float,default=.12)
+    parser.add_argument('--clock-sixth-speed',type=float,default=None,
+                        help='Optional sixth smooth source-clock speed, in control seconds.')
+    parser.add_argument('--clock-fifth-ramp',type=float,default=.12)
+    parser.add_argument('--clock-fifth-speed',type=float,default=None,
+                        help='Optional subsequent smooth speed transition, in control seconds before the landing clock.')
+    parser.add_argument('--clock-fourth-speed',type=float,default=None,
+                        help='Optional positive fourth source speed after the third transition; preserves original source-frame fidelity.')
+    parser.add_argument('--flight-feedback-limit', type=float, default=300.)
+    parser.add_argument('--foot-feedback-starts', type=float, nargs=2, default=[1.3,.88])
+    parser.add_argument('--foot-feedback-limits', type=float, nargs=2, default=[100.,60.])
+    parser.add_argument('--foot-feedback-joints', choices=['ankles','leg'], nargs=2, default=['ankles','ankles'])
+    parser.add_argument('--stop-at-fidelity-loss', action='store_true')
+    parser.add_argument('--shoulder-roll-weight-scale', type=float, default=1.,
+                        help='Experimental posture metric multiplier; disabled at the default 1.')
+    parser.add_argument('--shoulder-roll-weight-start', type=float, default=float('inf'),
+                        help='Simulation/control time in seconds, independent of the retimed source clock.')
+    parser.add_argument('--shoulder-roll-weight-ramp', type=float, default=.1)
+    parser.add_argument('--shoulder-roll-weight-side', choices=('left','right','both'), default='both')
+    parser.add_argument('--shoulder-roll-guard', action='store_true',
+                        help='Compare shoulder-weight candidates against a same-state baseline before execution.')
+    parser.add_argument('--shoulder-roll-guard-relative', type=float, default=.02)
+    parser.add_argument('--shoulder-roll-guard-slack', type=float, default=1.)
+    parser.add_argument('--diagnostic-continue-after-fidelity-loss',dest='stop_at_fidelity_loss',action='store_false',default=argparse.SUPPRESS,help='Continue physics after the first source-fidelity violation; the original-source audit still fails.')
+    parser.add_argument('--full-body-preview-start', type=float, default=100.)
+    parser.add_argument('--full-body-preview-horizon', type=int, default=12)
+    parser.add_argument('--full-body-preview-period', type=float, default=.02)
+    parser.add_argument('--full-body-preview-track-wrench', action='store_true')
+    parser.add_argument('--full-body-preview-warm-start', action='store_true')
+    parser.add_argument('--full-body-preview-reuse-verified', action='store_true')
+    parser.add_argument('--full-body-preview-guarded', action='store_true')
+    parser.add_argument('--full-body-preview-collision-barrier', action='store_true')
+    parser.add_argument('--full-body-preview-fine-control', action='store_true')
+    parser.add_argument('--full-body-preview-state-feedback', action='store_true')
+    parser.add_argument('--full-body-preview-release-points', action='store_true')
+    parser.add_argument('--full-body-preview-native-contact-timing', action='store_true')
+    parser.add_argument('--full-body-preview-exact-rotation', action='store_true')
+    parser.add_argument('--full-body-preview-recover-joint-reserve', action='store_true')
+    parser.add_argument('--full-body-preview-damp-first-control', action='store_true')
+    parser.add_argument('--full-body-preview-separating-points', action='store_true')
+    parser.add_argument('--full-body-preview-surface-kinematics', action='store_true')
+    parser.add_argument('--com-feedback-start', type=float, default=100.)
+    parser.add_argument('--com-feedback-limit', type=float, default=12.)
+    parser.add_argument('--com-feedback-gain-scale', type=float, default=1.)
+    parser.add_argument('--com-feedback-axes', choices=['xy','xyz'], default='xy')
+    parser.add_argument('--com-feedback-metric-scale', type=float, default=1.)
+    parser.add_argument('--com-feedback-metric-start', type=float, default=1.34)
+    parser.add_argument('--late-com-metric-start', type=float, default=float('inf'),
+                        help='Source seconds for an optional subsequent COM tracking cost transition.')
+    parser.add_argument('--late-com-metric-scale', type=float, default=None)
+    parser.add_argument('--late-com-metric-ramp', type=float, default=.06)
+    parser.add_argument('--late-com-metric-axes', choices=('xy','xyz'), default='xyz')
+    parser.add_argument('--global-posture-feedback-start', type=float, default=100.)
+    parser.add_argument('--global-posture-feedback-joints', choices=['all','arms'], default='all')
+    parser.add_argument('--global-posture-feedback-metric-scale', type=float, default=1.)
+    parser.add_argument('--model-effort-start',type=float,default=float('inf'))
+    parser.add_argument('--model-effort-ramp',type=float,default=.1)
+    parser.add_argument('--support-load-floor-start',type=float,default=float('inf'))
+    parser.add_argument('--support-load-floor',type=float,default=100.)
+    parser.add_argument('--support-load-floor-transfer',action='store_true')
+    parser.add_argument('--late-support-load-floor-start',type=float,default=float('inf'))
+    parser.add_argument('--late-support-load-floor',type=float,default=None,
+                        help='Optional late minimum force on an existing loaded support contact, in N.')
+    parser.add_argument('--late-support-load-floor-ramp',type=float,default=.06)
+    parser.add_argument('--minimum-support-acceleration-start',type=float,default=100.)
+    parser.add_argument('--minimum-support-acceleration',type=float,default=-3.)
+    parser.add_argument('--minimum-support-acceleration-metric-scale',type=float,default=2.)
+    parser.add_argument('--maximum-support-acceleration',type=float,default=None,
+                        help='Optional upper cap on the soft COM vertical acceleration target during loaded support.')
+    parser.add_argument('--maximum-support-acceleration-start',type=float,default=float('inf'))
+    parser.add_argument('--maximum-support-acceleration-ramp',type=float,default=.06)
+    parser.add_argument('--com-upward-speed-limit',type=float,default=None,
+                        help='Optional soft COM upward-speed feedback ceiling, not a hard physical constraint.')
+    parser.add_argument('--com-upward-speed-start',type=float,default=float('inf'),help='Source seconds.')
+    parser.add_argument('--com-upward-speed-ramp',type=float,default=.06)
+    parser.add_argument('--com-upward-speed-end',type=float,default=float('inf'),
+                        help='Source seconds to begin fading out the soft upward-speed ceiling.')
+    parser.add_argument('--com-upward-speed-end-ramp',type=float,default=.06)
+    parser.add_argument('--hip-yaw-barrier-start', type=float, default=float('inf'),
+                        help='Source seconds to add the observed cross-hip mesh collision constraint.')
+    parser.add_argument('--hip-yaw-barrier-bandwidth', type=float, default=8.)
+    parser.add_argument('--hip-yaw-barrier-margin', type=float, default=.02)
+    parser.add_argument('--com-upward-speed-bandwidth',type=float,default=10.)
+    parser.add_argument('--com-upward-speed-minimum-acceleration',type=float,default=-6.)
+    parser.add_argument('--weighted-tasks-start', type=float, default=float('inf'),
+                        help='Source seconds to blend secondary costs into one constrained task QP')
+    parser.add_argument('--weighted-tasks-ramp', type=float, default=.1)
+    parser.add_argument('--support-flatten-start', type=float, default=float('inf'),
+                        help='Source seconds to blend loaded planned stance feet toward a level sole')
+    parser.add_argument('--touching-support-start', type=float, default=float('inf'),
+                        help='Source seconds to include near-touching observed points of an already loaded foot.')
+    parser.add_argument('--touching-support-tolerance', type=float, default=.00005,
+                        help='Measured manifold separation tolerance, at most 100 micrometres.')
+    parser.add_argument('--root-position-task-start', type=float, default=float('inf'),
+                        help='Source seconds to enable direct root-position acceleration tracking')
+    parser.add_argument('--root-position-task-weight', type=float, default=1000.)
+    parser.add_argument('--root-position-task-axes',choices=('y','xy','xyz'),default='xyz',
+                        help='World axes for the optional soft root position task.')
+    parser.add_argument('--root-position-task-ramp', type=float, default=.1)
+    parser.add_argument('--root-position-task-late-weight',type=float,default=None)
+    parser.add_argument('--root-position-task-late-start',type=float,default=float('inf'),help='Source seconds for a late cost transition in the same root task.')
+    parser.add_argument('--root-position-task-late-ramp',type=float,default=.1)
+    parser.add_argument('--root-position-task-late-axes',choices=('y','xy','xyz'),default='xyz')
+    parser.add_argument('--root-position-task-reference', choices=('source', 'control'), default='source',
+                        help='Use the original audit source or the unified control q/v/a for the soft root task.')
+    parser.add_argument('--stance-posture-metric-start', type=float, default=float('inf'),
+                        help='Source time to begin reducing only active stance-leg posture weights')
+    parser.add_argument('--stance-posture-metric-scale', type=float, default=.5)
+    parser.add_argument('--stance-posture-metric-ramp', type=float, default=.1)
+    parser.add_argument('--stance-posture-secondary-start',type=float,default=100.)
+    parser.add_argument('--leg-posture-secondary-start',type=float,default=float('inf'))
+    parser.add_argument('--late-reference-smooth-stride',type=int,default=0)
+    parser.add_argument('--late-reference-smooth-start',type=float,default=float('inf'))
+    parser.add_argument('--late-reference-smooth-ramp',type=float,default=.15)
+    parser.add_argument('--configuration-tracking-start',type=float,default=float('inf'))
+    parser.add_argument('--configuration-keep-feet',action='store_true')
+    parser.add_argument('--configuration-angular-weight',type=float,default=1.)
+    parser.add_argument('--configuration-tracking-ramp',type=float,default=.1)
+    parser.add_argument('--native-contact-plan-start',type=float,default=100.)
+    parser.add_argument('--torque-continuity-start', type=float, default=float('inf'),
+                        help='Source seconds to enable a soft previous-torque cost in every QP stage.')
+    parser.add_argument('--torque-continuity-weight', type=float, default=10.)
+    parser.add_argument('--torque-continuity-ramp', type=float, default=.1)
+    parser.add_argument('--torque-continuity-end', type=float, default=float('inf'),
+                        help='Source seconds to begin reducing the optional continuity cost.')
+    parser.add_argument('--torque-continuity-end-ramp', type=float, default=.06)
+    parser.add_argument('--torque-continuity-end-weight', type=float, default=0.)
+    parser.add_argument('--torque-continuity-stance-only', action='store_true',
+                        help='Apply optional effort continuity only to the six motors of each QP support leg.')
+    parser.add_argument('--support-flatten-gain-scale',type=float,default=1.)
+    parser.add_argument('--support-flatten-feedback-limit',type=float,default=25.)
+    parser.add_argument('--stance-heading-start', type=float, default=float('inf'),
+                        help='Source seconds to enable measured stance heading reference adaptation.')
+    parser.add_argument('--stance-heading-limit', type=float, default=.4)
+    parser.add_argument('--stance-heading-ramp', type=float, default=.15)
+    parser.add_argument('--measured-stance-reference-start',type=float,default=100.)
+    parser.add_argument('--measured-stance-reference-limit',type=float,default=.03)
+    parser.add_argument('--measured-stance-reference-ramp',type=float,default=.10)
+    parser.add_argument('--synchronous-effort-budget-start',type=float,default=100.)
+    parser.add_argument('--synchronous-effort-budget-fraction',type=float,default=1.)
+    parser.add_argument('--joint-limit-priority-start',type=float,default=100.)
+    parser.add_argument('--joint-limit-priority-upper-only',action='store_true')
+    parser.add_argument('--joint-limit-priority-scale', type=float, default=1.,
+                        help='Scale the selected soft braking rows only after joint-limit-priority-start; earlier tracking keeps its original weight.')
+    parser.add_argument('--late-momentum-priority-start',type=float,default=100.)
+    parser.add_argument('--late-momentum-roll-only', action='store_true')
+    parser.add_argument('--late-momentum-zero-target',action='store_true',help='Regulate angular momentum instead of following source momentum; pose references and audit stay unchanged.')
+    parser.add_argument('--late-momentum-feedback-damping', type=float, default=None)
+    parser.add_argument('--late-momentum-total-rate-limit', type=float, default=None)
+    parser.add_argument('--late-momentum-metric-scale',type=float,default=1.)
+    parser.add_argument('--retain-planned-support-start',type=float,default=100.)
+    parser.add_argument('--retain-planned-support-force',type=float,default=70.)
+    parser.add_argument('--retain-planned-support-weight',type=float,default=.2)
+    parser.add_argument('--qp-snapshot-times',type=float,nargs='*',default=[])
+    parser.add_argument('--late-balance-hierarchy-start', type=float, default=100.)
+    parser.add_argument('--late-balance-hierarchy', choices=['y','xy','xyz','xy-body','xyz-body','body'], default='xy-body')
+    parser.add_argument('--late-pelvis-priority-start', type=float, default=100.)
+    parser.add_argument('--pelvis-orientation-replace-start',type=float,default=float('inf'))
+    parser.add_argument('--pelvis-orientation-replace-ramp',type=float,default=.1)
+    parser.add_argument('--pelvis-orientation-replace-metric-scale',type=float,default=1.)
+    parser.add_argument('--pelvis-orientation-replace-feedback-limit',type=float,default=None,
+                        help='Optional angular feedback norm cap during torso-to-pelvis allocation; preserves source feedforward.')
+    parser.add_argument('--late-pelvis-metric-scale',type=float,default=1.,help='Scale only the promoted pelvis task after its start, preserving the earlier controller.')
+    parser.add_argument('--late-pelvis-axes',nargs='+',choices=['x','y','z'],default=None,
+                        help='World angular axes for the optional promoted pelvis task; default keeps all axes.')
+    parser.add_argument('--late-pelvis-yaw-only',action='store_true')
+    parser.add_argument('--contact-friction-rays',type=int,choices=[8,16],default=8)
+    parser.add_argument('--contact-friction-refine-start',type=float,default=float('inf'))
+    parser.add_argument('--support-orientation-priority-start', type=float, default=100.)
+    parser.add_argument('--support-orientation-metric-scale', type=float, default=1.)
+    parser.add_argument('--support-orientation-roll-pitch-only',action=argparse.BooleanOptionalAction,default=False,help='Promote only the free support-foot tilt axes, with a 60 ms smooth onset; contact constraints and source q/v/a are unchanged.')
+    parser.add_argument('--upper-posture-metric-start', type=float, default=100.)
+    parser.add_argument('--upper-posture-metric-scale', type=float, default=1.)
+    parser.add_argument('--late-upper-metric-start', type=float, default=float('inf'))
+    parser.add_argument('--late-upper-metric-scale', type=float, default=None,
+                        help='Optional replacement of the existing upper-posture multiplier, in source seconds.')
+    parser.add_argument('--late-upper-metric-ramp', type=float, default=.06)
+    parser.add_argument('--leg-posture-metric-start', type=float, default=float('inf'),
+                        help='Source seconds to smoothly change leg posture cost in the same QP.')
+    parser.add_argument('--leg-posture-metric-scale', type=float, default=1.)
+    parser.add_argument('--transition-swing-priority-start', type=float, default=100.)
+    parser.add_argument('--posture-total-accel-start', type=float, default=100.)
+    parser.add_argument('--posture-total-accel-limit', type=float, default=150.)
+    parser.add_argument('--body-feedback-start', type=float, default=100.)
+    parser.add_argument('--body-feedback-limit', type=float, default=75.)
+    parser.add_argument('--late-body-angular-metric-start', type=float, default=100.)
+    parser.add_argument('--late-body-angular-metric-scale', type=float, default=1.)
+    parser.add_argument('--late-foot-angular-metric-start', type=float, default=100.)
+    parser.add_argument('--late-foot-angular-metric-scale', type=float, default=1.)
+    parser.add_argument('--late-foot-angular-metric-end',type=float,default=float('inf'))
+    parser.add_argument('--late-foot-angular-metric-side',choices=['both','left','right'],default='both')
+    parser.add_argument('--late-foot-angular-feedback-limit', type=float, default=None,
+                        help='Optional angular feedback norm cap during the existing foot angular weight window; reference acceleration is preserved.')
+    parser.add_argument('--late-foot-metric-start', type=float, default=100.)
+    parser.add_argument('--late-foot-metric-scale', type=float, default=1.)
+    parser.add_argument('--late-foot-metric-end', type=float, default=float('inf'),
+                        help='Optional source time to smoothly finish the elevated foot task weight.')
+    parser.add_argument('--late-foot-metric-end-ramp', type=float, default=.04)
+    parser.add_argument('--late-foot-metric-end-scale', type=float, default=1.)
+    parser.add_argument('--foot-metric-final-start', type=float, default=float('inf'),
+                        help='Source seconds for an optional subsequent foot-task weight transition.')
+    parser.add_argument('--foot-metric-final-scale', type=float, default=None)
+    parser.add_argument('--foot-metric-final-ramp', type=float, default=.06)
+    parser.add_argument('--foot-metric-final-side', choices=('both','left','right'), default='both',
+                        help='Apply the optional final foot cost transition to both feet or one foot only.')
+    parser.add_argument('--centroidal-preview-start', type=float, default=100.)
+    parser.add_argument('--centroidal-preview-walking', action='store_true')
+    parser.add_argument('--centroidal-preview-persist-stance', action='store_true')
+    parser.add_argument('--centroidal-preview-momentum', action='store_true')
+    parser.add_argument('--global-posture-feedback-limit', type=float, default=150.)
+    parser.add_argument('--recover-orientation-tube', action='store_true')
+    parser.add_argument('--orientation-tube-end',type=float,default=float('inf'),help='Source time to end only the auxiliary hard orientation tube; original-source orientation audit stays active.')
+    parser.add_argument('--position-tube-end',type=float,default=float('inf'),help='Source time to end only the auxiliary hard root-position tube; the original-source position audit stays active.')
+    parser.add_argument('--relax-joint-tube', action='store_true')
+    parser.add_argument('--tube-recovery-metric', type=float, default=1000.)
+    parser.add_argument('--horizontal-feedback-start', type=float, default=100.)
+    parser.add_argument('--horizontal-feedback-limit', type=float, default=40.)
+    parser.add_argument('--horizontal-feedback-metric-scale', type=float, default=2.)
+    parser.add_argument('--later-clearance-target', type=float, default=.085)
+    parser.add_argument('--later-clearance-fall-fraction', type=float, default=.15)
+    parser.add_argument('--later-clearance-first-step', type=int, default=8)
+    parser.add_argument('--smooth-stride', type=int, default=0)
+    parser.add_argument('--smooth-start', type=float, default=2.82)
+    parser.add_argument('--smooth-ramp', type=float, default=.08)
+    parser.add_argument('--tube-smooth-stride', type=int, default=0)
+    parser.add_argument('--late-tube-smooth-stride',type=int,default=0)
+    parser.add_argument('--late-tube-smooth-start',type=float,default=float('inf'))
+    parser.add_argument('--late-tube-smooth-ramp',type=float,default=.1)
+    parser.add_argument('--reference-correction-rmse-limit', type=float, default=0.)
+    parser.add_argument('--orientation-tube-radius', type=float, default=.34,
+                        help='Auxiliary root-angle error radius in radians; raw PKL acceptance is unchanged')
+    parser.add_argument('--orientation-tube-start', type=float, default=float('inf'),
+                        help='Source seconds to use the auxiliary root-angle radius')
+    parser.add_argument('--position-tube-radius', type=float, default=.195)
+    parser.add_argument('--position-tube-start', type=float, default=3.28)
+    parser.add_argument('--first-correction-rmse-limit', type=float, default=None)
+    parser.add_argument('--late-unload-start', type=float, default=100.)
+    parser.add_argument('--late-unload-ramp', type=float, default=.01)
+    parser.add_argument('--late-unload-weight', type=float, default=.05)
+    parser.add_argument('--final-unload-start', type=float, default=float('inf'),
+                        help='Source seconds for a final change of the existing unloading cost.')
+    parser.add_argument('--final-unload-ramp', type=float, default=.04)
+    parser.add_argument('--final-unload-weight', type=float, default=None)
+    parser.add_argument('--unload-deadline-start', type=float, default=float('inf'),
+                        help='Source seconds to fit measured unloading inside the next swing boundary; contact and audit gates stay unchanged')
+    parser.add_argument('--unload-deadline-weight', type=float, default=None,
+                        help='Optional soft outgoing-wrench weight after unload-deadline-start')
+    parser.add_argument('--full-swing-pose-start', type=float, default=100.)
+    parser.add_argument('--reference-pose-candidate', type=Path, default=None)
+    parser.add_argument('--prepared-contact-plan', type=Path, default=None)
+    parser.add_argument('--joint-correction-overlay', type=Path, default=None)
+    parser.add_argument('--secondary-joint-correction-overlay', type=Path, default=None)
+    parser.add_argument('--swing-balance-priority-start', type=float, default=100.)
+    parser.add_argument('--swing-only-priority', action='store_true')
+    parser.add_argument('--landing-gated-unload-start', type=float, default=100.)
+    parser.add_argument('--anticipate-unload-hysteresis', action='store_true')
+    parser.add_argument('--anticipate-unload-overdue', action='store_true')
+    parser.add_argument('--anticipate-unload-start', type=float, default=100.)
+    parser.add_argument('--anticipate-unload-horizon', type=float, default=.08)
+    parser.add_argument('--gate-contact-transitions', action='store_true')
+    parser.add_argument('--anticipate-unload-error-limit', type=float, default=.03,
+                        help='Measured landing error used for early load transfer; source landing audit is unchanged.')
+    parser.add_argument('--late-contact-stabilization-start', type=float, default=100.)
+    parser.add_argument('--late-contact-stabilization-kp', type=float, default=20.)
+    parser.add_argument('--late-contact-stabilization-kd', type=float, default=8.)
+    parser.add_argument('--tube-reference-method', choices=['pchip','bspline'], default='pchip')
+    parser.add_argument('--fabric-priority-mode', choices=['none', 'paper', 'paper-tracking', 'contact-tracking'], default='none',
+                        help='Paper Eq.8 stability nullspace in Fabric; retains one inverse-dynamics QP.')
+    parser.add_argument('--fabric-tracking-feedback', action='store_true',
+                        help='Compose existing physical tracking feedback inside Fabric before the single QP.')
+    parser.add_argument('--fabric-secondary-scale', type=float, default=1.,
+                        help='Optional soft weighting of historical secondary tasks during local feedback composition.')
+    parser.add_argument('--fabric-root-regularization', type=float, default=None)
+    parser.add_argument('--late-fabric-priority-start', type=float, default=float('inf'),
+                        help='Source seconds to switch the algebraic Fabric task composition, without another QP.')
+    parser.add_argument('--late-fabric-priority-mode', choices=['none','paper-tracking','contact-tracking'], default=None)
+    parser.add_argument('--qp-task-only-objective', action='store_true',
+                        help='Use task objective plus numerical regularization; retain scheduled unloading force target.')
+    parser.add_argument('--qp-single-proximal', type=float, default=0.,
+                        help='Preselect a proximal factor for the sole native QP attempt; keep original KKT checks.')
+    parser.add_argument('--qp-single-proximal-start', type=float, default=0.)
+    parser.add_argument('--qp-cold-start-time', type=float, default=float('inf'),
+                        help='Control time to clear QP warm starts before each sole solve; no retries.')
+    parser.add_argument('--qp-equilibration-start', type=float, default=float('inf'),
+                        help='Control time to enable equivalent QP variable scaling before the sole solve.')
+    parser.add_argument('--qp-equilibration-cap', type=float, default=1.,
+                        help='Maximum variable scaling; original physical and KKT checks are retained.')
+    parser.add_argument('--qp-late-equilibration-start', type=float, default=float('inf'),
+                        help='Optional second numerical scaling transition in control seconds; chosen before the sole QP attempt.')
+    parser.add_argument('--qp-late-equilibration-cap', type=float, default=1.)
+    parser.add_argument('--qp-final-equilibration-start', type=float, default=float('inf'),
+                        help='Control seconds to select a subsequent variable scaling before the sole QP solve.')
+    parser.add_argument('--qp-final-equilibration-cap', type=float, default=1.)
+    parser.add_argument('--qp-late-iteration-start', type=float, default=float('inf'),
+                        help='Control seconds at which to change the single native QP iteration budget; no retry.')
+    parser.add_argument('--qp-late-iterations', type=int, default=5000,
+                        help='Single-attempt iteration budget after qp-late-iteration-start; physical/KKT checks stay unchanged.')
+    parser.add_argument('--tracking-tube-reference', choices=['source', 'control'], default='source',
+                        help='Optional tube reference alignment; original PKL auditing is unchanged.')
+    parser.add_argument('--tracking-tube-soft-weight', type=float, default=0.,
+                        help='Positive: penalize normalized tube slack in the sole QP; zero retains hard tubes.')
+    parser.add_argument('--tracking-tube-soft-start', type=float, default=0.,
+                        help='Simulation time to enable auxiliary tube slack; preserve hard tubes before this time.')
+    parser.add_argument('--tracking-tube-soft-joint-only', action='store_true')
+    parser.add_argument('--late-tube-soft-weight-start',type=float,default=float('inf'),
+                        help='Source seconds to start a 60 ms blend of the existing tube slack cost.')
+    parser.add_argument('--late-tube-soft-weight',type=float,default=None,
+                        help='Optional late slack cost; physical constraints and source acceptance stay unchanged.')
+    parser.add_argument('--final-tube-soft-weight-start',type=float,default=float('inf'),
+                        help='Source seconds for an optional subsequent tube slack cost transition.')
+    parser.add_argument('--final-tube-soft-weight',type=float,default=None)
+    parser.add_argument('--final-tube-soft-weight-ramp',type=float,default=.06)
+    parser.add_argument('--tracking-tube-soft-joint-orientation', action='store_true',
+                        help='Soften joint and orientation auxiliary tube rows while retaining the hard root-position row; source auditing is unchanged.')
+    parser.add_argument('--soft-joint-braking-start', type=float, default=float('inf'),
+                        help='Source-clock seconds to enable one-sided soft joint-stop braking in the same QP.')
+    parser.add_argument('--soft-joint-braking-weight', type=float, default=100.)
+    parser.add_argument('--soft-joint-braking-joints', nargs='+', choices=G1_JOINT_NAMES,
+                        default=['waist_roll_joint'])
+    parser.add_argument('--tracking-tube-orientation-bandwidth', type=float, default=None)
+    parser.add_argument('--tracking-tube-joint-bandwidth', type=float, default=None)
+    parser.add_argument('--late-joint-tube-start', type=float, default=100.)
+    parser.add_argument('--late-joint-tube-bandwidth', type=float, default=4.)
+    parser.add_argument('--tracking-margin-start', type=float, default=float('inf'))
+    parser.add_argument('--tracking-margin-reaction-time', type=float, default=.08)
+    parser.add_argument('--tracking-margin-maximum', type=float, default=16.)
+    parser.add_argument('--tracking-tube-start', type=float, default=1.34)
+    parser.add_argument('--tracking-tube-end', type=float, default=100.)
+    parser.add_argument('--joint-tube-end', type=float, default=float('inf'),
+                        help='Source time to disable only the auxiliary joint tracking barrier; original-source acceptance stays active.')
+    parser.add_argument('--contact-pause-start', type=float, default=4.2)
+    parser.add_argument('--contact-pause-end', type=float, default=None)
+    parser.add_argument('--contact-pause-landings', type=int, default=11)
+    parser.add_argument('--contact-pause-resume', type=float, default=.3)
+    parser.add_argument('--contact-pause-early-resume', action='store_true')
+    parser.add_argument('--extra-contact-pause', type=float, nargs=3, action='append', default=[],
+                        metavar=('START', 'END', 'LANDINGS'),
+                        help='Additional causal source-time landing pause; repeat for subsequent landings.')
+    parser.add_argument('--extra-contact-pause-resume', type=float, default=.1)
+    parser.add_argument('--late-tracking-tube-start', type=float, default=100.)
+    parser.add_argument('--late-tracking-tube-bandwidth', type=float, default=10.)
+    parser.add_argument('--late-position-tube-start',type=float,default=float('inf'),
+                        help='Source time to change only the auxiliary root-position barrier bandwidth.')
+    parser.add_argument('--late-position-tube-bandwidth',type=float,default=10.)
+    parser.add_argument('--root-xy-tube-start',type=float,default=float('inf'),
+                        help='Optional source-clock start of an additional horizontal root tracking barrier.')
+    parser.add_argument('--root-xy-tube-radius',type=float,default=.18)
+    parser.add_argument('--root-xy-tube-bandwidth',type=float,default=10.)
+    parser.add_argument('--support-knee-min-angle', type=float, default=None,
+                        help='Optional support-knee flexion barrier; does not change physical limits or source fidelity checks.')
+    parser.add_argument('--support-knee-guard-start', type=float, default=float('inf'),
+                        help='Source time to activate the additional support-knee acceleration constraint.')
+    parser.add_argument('--support-knee-guard-bandwidth', type=float, default=20.)
+    parser.add_argument('--physical-braking-start', type=float, default=100.)
+    parser.add_argument('--convex-wrist-collision-start', type=float, default=0.)
+    parser.add_argument('--collision-barrier-bandwidth-start', type=float, default=float('inf'))
+    parser.add_argument('--collision-barrier-bandwidth', type=float, default=8.)
+    parser.add_argument('--physical-braking-upper-only', action='store_true')
+    parser.add_argument('--physical-braking-waist-only', action='store_true',
+                        help='Apply optional measured braking bounds only to the three waist joints.')
+    parser.add_argument('--physical-braking-joints', nargs='+', choices=G1_JOINT_NAMES,
+                        help='Apply optional measured braking bounds to these named joints only; mutually exclusive with other braking selectors.')
+    parser.add_argument('--observed-joint-stop-start', type=float, default=float('inf'),
+                        help='Source seconds to model measured stationary mechanical joint stops inside the same inverse-dynamics QP; applies no extra effort.')
+    parser.add_argument('--observed-joint-stop-joints', nargs='+', choices=G1_JOINT_NAMES,
+                        default=['waist_roll_joint'])
+    parser.add_argument('--observed-joint-stop-weight', type=float, default=1e-4,
+                        help='Soft passive-reaction cost to encourage unloading an observed joint stop.')
+    parser.add_argument('--tracking-tube-bandwidth', type=float, default=10.)
+    parser.add_argument('--late-leg-feedback-start', type=float, default=1.88)
+    parser.add_argument('--late-leg-feedback-limit', type=float, default=150.)
+    parser.add_argument('--late-leg-feedback-stance', action='store_true')
+    parser.add_argument('--late-leg-feedback-side', choices=['right','both'], default='right')
+    parser.add_argument('--waist-feedback-start', type=float, default=1.7)
+    parser.add_argument('--waist-feedback-limit', type=float, default=100.)
+    parser.add_argument('--waist-metric-scale', type=float, default=4.)
+    parser.add_argument('--late-waist-metric-scale', type=float, default=None,
+                        help='Optional replacement waist metric multiplier after a source-time transition.')
+    parser.add_argument('--late-waist-metric-start', type=float, default=float('inf'))
+    parser.add_argument('--late-waist-metric-ramp', type=float, default=.06)
+    parser.add_argument('--flight-feedback-joints', choices=['ankles','leg'], default='ankles')
+    parser.add_argument('--flight-feedback-start', type=float, default=0.)
+    parser.add_argument('--flight-feedback-ramp', type=float, default=.1)
+    return configure_full_tracking_profile(parser)
 
 
 def main() -> None:
     global FABRIC_TIMESTEP, PD_TIMESTEP
     args = parse_args()
+    acceleration_only = args.tracking_profile == 'amp-full'
+    recompose_tasks = args.fabric_tracking_feedback or args.fabric_priority_mode == 'contact-tracking'
+    task_feedback_enabled = not acceleration_only or args.fabric_tracking_feedback
+    if math.isnan(args.unload_deadline_start) or args.unload_deadline_start < 0:
+        raise ValueError('Unload deadline start must be nonnegative source seconds')
+    if args.unload_deadline_weight is not None and (
+            not math.isfinite(args.unload_deadline_weight) or args.unload_deadline_weight <= 0):
+        raise ValueError('Unload deadline force weight must be finite and positive')
+    if not math.isfinite(args.anticipate_unload_error_limit) or not 0 < args.anticipate_unload_error_limit <= .04:
+        raise ValueError('Anticipatory transfer error must be positive and at most the 4 cm landing tolerance')
+    if not math.isfinite(args.fabric_secondary_scale) or not 0 <= args.fabric_secondary_scale <= 1:
+        raise ValueError('Fabric secondary scale must lie in [0,1]')
+    if args.fabric_secondary_scale != 1 and not args.fabric_tracking_feedback:
+        raise ValueError('Fabric secondary scaling requires local tracking feedback')
+    if args.late_fabric_priority_mode is not None and (
+            not args.fabric_tracking_feedback or not math.isfinite(args.late_fabric_priority_start)
+            or args.late_fabric_priority_start < 0):
+        raise ValueError('Late Fabric composition requires tracking feedback and a finite nonnegative source start')
+    if args.qp_task_only_objective and not args.fabric_tracking_feedback:
+        raise ValueError('Task-only objective requires local Fabric tracking feedback')
+    if any(not math.isfinite(x) or x < 0 for x in (args.qp_single_proximal, args.qp_single_proximal_start)):
+        raise ValueError('Single-QP proximal factor and start must be finite and nonnegative')
+    if args.qp_single_proximal and not acceleration_only:
+        raise ValueError('Single-QP proximal selection requires amp-full')
+    if math.isnan(args.qp_cold_start_time) or args.qp_cold_start_time < 0:
+        raise ValueError('QP cold-start time must be nonnegative')
+    if math.isfinite(args.qp_cold_start_time) and not acceleration_only:
+        raise ValueError('Scheduled QP cold starts require amp-full')
+    if (math.isnan(args.qp_equilibration_start) or args.qp_equilibration_start < 0
+            or not math.isfinite(args.qp_equilibration_cap) or args.qp_equilibration_cap < 1):
+        raise ValueError('QP equilibration requires a nonnegative start and finite cap >= 1')
+    if math.isfinite(args.qp_equilibration_start) and not acceleration_only:
+        raise ValueError('Scheduled QP equilibration requires amp-full')
+    if (math.isnan(args.qp_late_equilibration_start) or args.qp_late_equilibration_start < 0
+            or not math.isfinite(args.qp_late_equilibration_cap) or args.qp_late_equilibration_cap < 1):
+        raise ValueError('Late QP equilibration requires a nonnegative start and finite cap >= 1')
+    if math.isfinite(args.qp_late_equilibration_start) and not acceleration_only:
+        raise ValueError('Late QP equilibration requires amp-full')
+    if (math.isnan(args.qp_final_equilibration_start) or args.qp_final_equilibration_start < 0
+            or not math.isfinite(args.qp_final_equilibration_cap) or args.qp_final_equilibration_cap < 1
+            or (math.isfinite(args.qp_final_equilibration_start) and not acceleration_only)):
+        raise ValueError('Final QP scaling requires amp-full, a nonnegative start and finite cap >= 1')
+    if (math.isnan(args.qp_late_iteration_start) or args.qp_late_iteration_start < 0
+            or args.qp_late_iterations <= 0):
+        raise ValueError('Late QP iteration budget requires a nonnegative start and positive count')
+    if math.isfinite(args.qp_late_iteration_start) and not acceleration_only:
+        raise ValueError('Late single-QP iteration budget requires amp-full')
+    if args.extra_contact_pause:
+        if not acceleration_only:
+            raise ValueError('Additional landing clocks require amp-full')
+        from g1_landing_clock_chain import LandingClockChain
+        LandingClockChain(args.extra_contact_pause, args.extra_contact_pause_resume)
+        if args.contact_pause_end is not None and args.extra_contact_pause[0][0] < args.contact_pause_end:
+            raise ValueError('Additional landing clocks must follow the initial pause in source time')
+    if args.fabric_root_regularization is not None and (
+            not math.isfinite(args.fabric_root_regularization) or args.fabric_root_regularization <= 0):
+        raise ValueError('Fabric root regularization must be finite and positive')
+    if (math.isnan(args.late_waist_metric_start) or args.late_waist_metric_start < 0
+            or not math.isfinite(args.late_waist_metric_ramp) or args.late_waist_metric_ramp <= 0
+            or (args.late_waist_metric_scale is not None and
+                (not math.isfinite(args.late_waist_metric_scale) or args.late_waist_metric_scale <= 0))):
+        raise ValueError('Late waist metric needs a positive scale/ramp and nonnegative source start')
+    if args.fabric_tracking_feedback and args.fabric_priority_mode == 'paper':
+        raise ValueError('Physical tracking feedback requires none, paper-tracking or contact-tracking')
+    if args.fabric_priority_mode != 'none' or recompose_tasks:
+        if not acceleration_only:
+            raise ValueError('Paper Fabric priority currently requires amp-full single-QP control')
+        # Preserve the prioritized root objective in the physical QP instead
+        # of replacing its metric by fixed generalized-acceleration weights.
+        args.qp_fabric_metric = True
+    if not math.isfinite(args.tracking_tube_soft_weight) or args.tracking_tube_soft_weight < 0:
+        raise ValueError('tracking_tube_soft_weight must be finite and nonnegative')
+    if args.late_tube_soft_weight is not None and (
+            not args.tracking_tube_soft_weight or not math.isfinite(args.late_tube_soft_weight)
+            or args.late_tube_soft_weight<=0 or math.isnan(args.late_tube_soft_weight_start)
+            or args.late_tube_soft_weight_start<0):
+        raise ValueError('Late tube cost needs an enabled soft tube, positive finite weight and nonnegative start')
+    if not math.isfinite(args.tracking_tube_soft_start) or args.tracking_tube_soft_start < 0:
+        raise ValueError('Tube soft start must be finite and nonnegative')
+    if args.tracking_tube_soft_joint_only and not args.tracking_tube_soft_weight:
+        raise ValueError('Joint-only tube slack requires positive soft weight')
+    if args.tracking_tube_soft_joint_orientation and (
+            not args.tracking_tube_soft_weight or args.tracking_tube_soft_joint_only):
+        raise ValueError('Joint/orientation tube slack requires positive weight and cannot combine with joint-only slack')
+    if (math.isnan(args.root_xy_tube_start) or args.root_xy_tube_start<0
+            or not math.isfinite(args.root_xy_tube_radius) or not 0<args.root_xy_tube_radius<=.2
+            or not math.isfinite(args.root_xy_tube_bandwidth) or args.root_xy_tube_bandwidth<=0):
+        raise ValueError('Invalid root XY tracking barrier configuration')
+    if args.late_foot_linear_feedback_limit is not None and (
+            not math.isfinite(args.late_foot_linear_feedback_limit) or args.late_foot_linear_feedback_limit<=0
+            or math.isnan(args.late_foot_linear_feedback_start) or args.late_foot_linear_feedback_start<0):
+        raise ValueError('Foot linear feedback requires a positive finite limit and nonnegative start')
+    if args.late_foot_angular_feedback_limit is not None and (
+            not math.isfinite(args.late_foot_angular_feedback_limit) or args.late_foot_angular_feedback_limit <= 0):
+        raise ValueError('Foot angular feedback limit must be finite and positive')
+    if (math.isnan(args.foot_contact_search_start) or args.foot_contact_search_start < 0
+            or not math.isfinite(args.foot_contact_search_acceleration) or not 0 < args.foot_contact_search_acceleration <= 10
+            or not math.isfinite(args.foot_contact_search_ramp) or args.foot_contact_search_ramp <= 0):
+        raise ValueError('Invalid bounded foot contact-search configuration')
+    if math.isfinite(args.foot_contact_search_start) and (args.tracking_profile != 'amp-full' or not args.fabric_tracking_feedback):
+        raise ValueError('Contact search requires amp-full task-feedback tracking')
+    if (not math.isfinite(args.pelvis_orientation_replace_metric_scale)
+            or args.pelvis_orientation_replace_metric_scale <= 0):
+        raise ValueError('Pelvis replacement metric scale must be finite and positive')
+    if args.pelvis_orientation_replace_feedback_limit is not None and (
+            not math.isfinite(args.pelvis_orientation_replace_feedback_limit)
+            or args.pelvis_orientation_replace_feedback_limit <= 0):
+        raise ValueError('Pelvis replacement feedback limit must be finite and positive')
+    if (math.isnan(args.soft_joint_braking_start) or args.soft_joint_braking_start < 0
+            or not math.isfinite(args.soft_joint_braking_weight) or args.soft_joint_braking_weight <= 0
+            or len(set(args.soft_joint_braking_joints)) != len(args.soft_joint_braking_joints)):
+        raise ValueError('Invalid soft joint braking parameters')
+    if math.isfinite(args.soft_joint_braking_start) and (
+            not acceleration_only or not args.tracking_tube_soft_weight
+            or not args.tracking_tube_start <= args.soft_joint_braking_start < args.tracking_tube_end):
+        raise ValueError('Soft joint braking requires amp-full and an active soft tracking tube')
+    if (args.tracking_tube_soft_weight or args.tracking_tube_reference != 'source') and not acceleration_only:
+        raise ValueError('Tube experiments require the amp-full direct single-QP profile')
+    for name in ('projection_joint_correction_weight', 'com_acceleration_preservation_weight', 'qp_com_feedback_scale'):
+        value = getattr(args, name)
+        if not math.isfinite(value) or value < 0:
+            raise ValueError(f'{name} must be finite and nonnegative')
+    if args.maximum_support_acceleration is not None:
+        if (not math.isfinite(args.maximum_support_acceleration) or args.maximum_support_acceleration < 0
+                or not math.isfinite(args.maximum_support_acceleration_start) or args.maximum_support_acceleration_start < 0
+                or not math.isfinite(args.maximum_support_acceleration_ramp) or args.maximum_support_acceleration_ramp <= 0
+                or not acceleration_only):
+            raise ValueError('COM upward cap requires amp-full, a nonnegative finite cap/start, and a positive finite ramp')
+    if args.com_upward_speed_limit is not None:
+        if (not acceleration_only or not math.isfinite(args.com_upward_speed_limit) or args.com_upward_speed_limit < 0
+                or not math.isfinite(args.com_upward_speed_start) or args.com_upward_speed_start < 0
+                or not math.isfinite(args.com_upward_speed_ramp) or args.com_upward_speed_ramp <= 0
+                or math.isnan(args.com_upward_speed_end) or args.com_upward_speed_end < args.com_upward_speed_start
+                or not math.isfinite(args.com_upward_speed_end_ramp) or args.com_upward_speed_end_ramp <= 0
+                or not math.isfinite(args.com_upward_speed_bandwidth) or args.com_upward_speed_bandwidth <= 0
+                or not math.isfinite(args.com_upward_speed_minimum_acceleration)
+                or not -9.81 < args.com_upward_speed_minimum_acceleration <= 0):
+            raise ValueError('Invalid COM upward-speed policy; requires amp-full and finite valid parameters')
+    if (math.isnan(args.touching_support_start) or args.touching_support_start < 0
+            or not math.isfinite(args.touching_support_tolerance)
+            or not 0 <= args.touching_support_tolerance <= .0001
+            or (math.isfinite(args.touching_support_start) and not args.observed_contact_patches)):
+        raise ValueError('Touching support requires observed patches and a 0..100 micrometre tolerance')
+    if (math.isnan(args.hip_yaw_barrier_start) or args.hip_yaw_barrier_start < 0
+            or not math.isfinite(args.hip_yaw_barrier_bandwidth) or args.hip_yaw_barrier_bandwidth <= 0
+            or not math.isfinite(args.hip_yaw_barrier_margin) or args.hip_yaw_barrier_margin < 0
+            or (math.isfinite(args.hip_yaw_barrier_start) and not acceleration_only)):
+        raise ValueError('Hip barrier requires amp-full, a nonnegative start/margin and positive bandwidth')
+    if (math.isnan(args.late_support_load_floor_start) or args.late_support_load_floor_start < 0
+            or not math.isfinite(args.late_support_load_floor_ramp) or args.late_support_load_floor_ramp <= 0
+            or (args.late_support_load_floor is not None and
+                (not math.isfinite(args.late_support_load_floor) or args.late_support_load_floor < 0))):
+        raise ValueError('Late support floor requires nonnegative start/load and a positive finite ramp')
+    if (args.qp_com_feedback_scale or args.qp_fabric_metric) and not acceleration_only:
+        raise ValueError('Fabric/COM feedback objectives require the amp-full single-QP profile')
+    com_feedback_scale(args.qp_com_feedback_scale, 0., start=args.qp_com_feedback_start,
+                       ramp=args.qp_com_feedback_ramp)
+    if args.qp_fabric_metric and (args.com_acceleration_preservation_weight or args.qp_base_linear_acceleration_weight is not None):
+        raise ValueError('The complete Fabric metric replaces projected/base acceleration weights')
+    if math.isnan(args.joint_tube_end) or args.joint_tube_end < 0:
+        raise ValueError('joint_tube_end must be nonnegative')
+    from g1_shoulder_roll import shoulder_roll_multiplier, apply_shoulder_roll_weights
+    shoulder_roll_multiplier(0., args.shoulder_roll_weight_start,
+                             args.shoulder_roll_weight_ramp, args.shoulder_roll_weight_scale)
+    if args.shoulder_roll_weight_scale > 1 and (
+            not math.isfinite(args.shoulder_roll_weight_start)
+            or args.tracking_profile != 'amp-full' or not args.direct_wbc):
+        raise ValueError('Shoulder weight experiment requires amp-full direct WBC and a finite start')
+    shoulder_guard = None
+    if args.shoulder_roll_guard:
+        from g1_guarded_shoulder import GuardedShoulderWeights
+        if args.shoulder_roll_weight_scale <= 1 or math.isfinite(args.weighted_tasks_start):
+            raise ValueError('Guard requires a shoulder scale > 1 and the original priority stages')
+        shoulder_guard = GuardedShoulderWeights(args.shoulder_roll_guard_relative, args.shoulder_roll_guard_slack)
+    if not math.isfinite(args.joint_limit_priority_scale) or args.joint_limit_priority_scale <= 0:
+        raise ValueError('Joint-limit priority scale must be finite and positive')
+    if (math.isnan(args.leg_posture_metric_start) or args.leg_posture_metric_start < 0
+            or not math.isfinite(args.leg_posture_metric_scale) or args.leg_posture_metric_scale <= 0):
+        raise ValueError('Leg posture cost needs a nonnegative start and positive finite scale')
+    if (math.isnan(args.late_upper_metric_start) or args.late_upper_metric_start < 0
+            or not math.isfinite(args.late_upper_metric_ramp) or args.late_upper_metric_ramp <= 0
+            or (args.late_upper_metric_scale is not None and
+                (not math.isfinite(args.late_upper_metric_scale) or args.late_upper_metric_scale <= 0))):
+        raise ValueError('Late upper-posture weight needs a nonnegative start and positive finite scale/ramp')
+    if args.support_knee_min_angle is not None:
+        if (not math.isfinite(args.support_knee_min_angle) or not 0 < args.support_knee_min_angle < 1
+                or not math.isfinite(args.support_knee_guard_bandwidth) or args.support_knee_guard_bandwidth <= 0
+                or math.isnan(args.support_knee_guard_start) or args.support_knee_guard_start < 0):
+            raise ValueError('Invalid optional support-knee guard parameters')
+    if args.physical_braking_waist_only and args.physical_braking_upper_only:
+        raise ValueError('Choose waist-only or upper-body optional braking bounds')
+    if args.physical_braking_joints is not None:
+        if args.physical_braking_waist_only or args.physical_braking_upper_only or args.acceleration_and_braking_limits:
+            raise ValueError('Named braking joints cannot be combined with another braking selector')
+        from g1_joint_braking import named_braking_coordinates
+        named_braking_coordinates(G1_JOINT_NAMES, args.physical_braking_joints)
+    if math.isnan(args.observed_joint_stop_start) or args.observed_joint_stop_start < 0:
+        raise ValueError('Observed joint-stop start must be nonnegative')
+    if not math.isfinite(args.observed_joint_stop_weight) or args.observed_joint_stop_weight <= 0:
+        raise ValueError('Observed joint-stop weight must be finite and positive')
+    if math.isfinite(args.observed_joint_stop_start):
+        if args.tracking_profile != 'amp-full' or not args.direct_wbc or not args.tracking_servo:
+            raise ValueError('Observed joint stops require amp-full direct-effort tracking')
+        if len(set(args.observed_joint_stop_joints)) != len(args.observed_joint_stop_joints):
+            raise ValueError('Observed joint-stop names must be distinct')
+    if (math.isnan(args.torque_continuity_start) or args.torque_continuity_start < 0
+            or not math.isfinite(args.torque_continuity_weight) or args.torque_continuity_weight < 0
+            or not math.isfinite(args.torque_continuity_ramp) or args.torque_continuity_ramp <= 0):
+        raise ValueError('Torque continuity needs a nonnegative start/weight and a positive ramp')
+    if (math.isnan(args.torque_continuity_end) or args.torque_continuity_end < args.torque_continuity_start
+            or not math.isfinite(args.torque_continuity_end_ramp) or args.torque_continuity_end_ramp <= 0
+            or not math.isfinite(args.torque_continuity_end_weight) or args.torque_continuity_end_weight < 0):
+        raise ValueError('Torque continuity end needs an ordered start, positive ramp and nonnegative weight')
+    if math.isfinite(args.torque_continuity_start) and (args.tracking_profile != 'amp-full'
+            or not args.direct_wbc or not args.tracking_servo):
+        raise ValueError('Torque continuity requires amp-full direct effort tracking')
+    if args.torque_continuity_stance_only and not math.isfinite(args.torque_continuity_start):
+        raise ValueError('Stance-only effort continuity requires a finite activation time')
+    if (math.isnan(args.stance_heading_start) or args.stance_heading_start < 0
+            or not math.isfinite(args.stance_heading_limit) or not 0 < args.stance_heading_limit <= .5
+            or not math.isfinite(args.stance_heading_ramp) or args.stance_heading_ramp <= 0):
+        raise ValueError('Stance heading requires a nonnegative start, limit in (0,.5], and positive ramp')
+    if math.isfinite(args.stance_heading_start) and (
+            args.tracking_profile != 'amp-full' or args.measured_stance_reference_start < float('inf')):
+        raise ValueError('Stance heading requires amp-full and excludes simultaneous stance position adaptation')
+    if math.isnan(args.late_physics_substeps_start) or args.late_physics_substeps_start < 0:
+        raise ValueError('Late physics substeps require a nonnegative simulation start')
+    if (args.late_physics_substeps > 1 and math.isfinite(args.late_physics_substeps_start)
+            and (args.tracking_profile != 'amp-full' or not args.direct_wbc
+                 or args.control_frequency != (args.physics_frequency or 500))):
+        raise ValueError('Late substeps require synchronous amp-full direct WBC')
+    if (not math.isfinite(args.orientation_tube_radius)
+            or not 0 < args.orientation_tube_radius <= .34
+            or math.isnan(args.orientation_tube_start) or args.orientation_tube_start < 0):
+        raise ValueError('Orientation tube requires a positive radius at most .34 rad and nonnegative source start')
     if args.motion_start_in_motion:
         if (args.motion_pkl is None or args.reference_manager or args.mocap_pipeline
                 or args.flat_foot_spawn or args.fixed_joint_test or args.weight_transfer_test
@@ -1850,8 +2849,6 @@ def main() -> None:
         from fabrics_sim.solver.fabric_mit import configure_fabric_mit
         configure_fabric_mit(args)
         PD_TIMESTEP = 0.0005  # Isaac PhysX: two substeps per 1 kHz control tick.
-        print("[g1.md] Isaac Sim: Fabric composition -> constrained dynamics -> integrated MIT torque; "
-              "1000 Hz control / 2000 Hz physics (simulation time, not a real-time guarantee)")
     if args.unified_source_step_test:
         args.unified_transfer_test = True
     from fabrics_sim.reference.whole_body import WholeBodyReference, validate_reference_options
@@ -1911,7 +2908,16 @@ def main() -> None:
                 or args.reference_footsteps != "source"):
             raise ValueError('--coordinated-source-start requires unified source references, manager, '
                              '500 Hz direct WBC, armature and observed/early contacts; excludes transfer diagnostics')
-    FABRIC_TIMESTEP=1./args.control_frequency
+    FABRIC_TIMESTEP, PD_TIMESTEP = control_timesteps(
+        args.control_frequency, args.physics_frequency, g1_md=args.g1_md)
+    if args.g1_md:
+        print(f"[g1.md] Fabric composition -> constrained dynamics -> integrated MIT torque; "
+              f"{1/FABRIC_TIMESTEP:g} Hz control / {1/PD_TIMESTEP:g} Hz physics "
+              "(simulation time, not a real-time guarantee)")
+    if args.tracking_profile == 'amp-full':
+        # Preserve confirmation time when refining the synchronous baseline.
+        args.contact_switch_confirm_updates = max(1, round(
+            args.contact_switch_confirm_updates * .002 / FABRIC_TIMESTEP))
     if args.until_motion_end and not args.reference_manager:
         raise ValueError('--until-motion-end requires --reference-manager')
     if args.reference_footsteps != "compact" and not args.reference_manager:
@@ -1930,6 +2936,50 @@ def main() -> None:
     if args.landing_speed_limit is not None and (not (args.reference_manager or args.motion_start_in_motion)
             or not math.isfinite(args.landing_speed_limit) or args.landing_speed_limit<=0):
         raise ValueError('--landing-speed-limit requires a reference manager or dynamic start and positive finite speed')
+    if (math.isnan(args.weighted_tasks_start) or args.weighted_tasks_start < 0
+            or not math.isfinite(args.weighted_tasks_ramp) or args.weighted_tasks_ramp <= 0):
+        raise ValueError('Weighted task transition requires nonnegative start and positive ramp')
+    if math.isfinite(args.weighted_tasks_start) and (
+            args.tracking_profile != 'amp-full' or args.g1_com_priority):
+        raise ValueError('Weighted task experiment requires amp-full without a separate COM priority')
+    if math.isnan(args.support_flatten_start) or args.support_flatten_start < 0:
+        raise ValueError('Support flatten start must be nonnegative or infinity')
+    if (not math.isfinite(args.support_flatten_gain_scale) or args.support_flatten_gain_scale<=0
+            or not math.isfinite(args.support_flatten_feedback_limit) or args.support_flatten_feedback_limit<=0):
+        raise ValueError('Support flatten gain and feedback limit must be finite and positive')
+    if math.isfinite(args.support_flatten_start) and args.tracking_profile != 'amp-full':
+        raise ValueError('Support flatten experiment requires the amp-full profile')
+    if (math.isnan(args.root_position_task_start) or args.root_position_task_start < 0
+            or any(not math.isfinite(x) or x <= 0 for x in
+                   (args.root_position_task_weight, args.root_position_task_ramp))):
+        raise ValueError('Root tracking requires nonnegative start and positive finite weight/ramp')
+    if math.isfinite(args.root_position_task_start) and not (
+            args.tracking_profile == 'amp-full' and args.direct_wbc):
+        raise ValueError('Root position task currently requires the amp-full direct-WBC profile')
+    if args.root_position_task_late_weight is not None and (
+            not math.isfinite(args.root_position_task_late_weight) or args.root_position_task_late_weight <= 0
+            or not math.isfinite(args.root_position_task_late_start)
+            or args.root_position_task_late_start < args.root_position_task_start
+            or not math.isfinite(args.root_position_task_late_ramp) or args.root_position_task_late_ramp <= 0):
+        raise ValueError('Late root cost requires an enabled root task, finite positive weight/ramp and a later source start')
+    if (math.isnan(args.stance_posture_metric_start) or args.stance_posture_metric_start < 0
+            or not math.isfinite(args.stance_posture_metric_scale)
+            or not 0 < args.stance_posture_metric_scale <= 1
+            or not math.isfinite(args.stance_posture_metric_ramp) or args.stance_posture_metric_ramp <= 0):
+        raise ValueError('Stance posture weighting requires nonnegative start, scale in (0,1], and positive ramp')
+    if math.isfinite(args.stance_posture_metric_start) and not (
+            args.motion_start_in_motion and args.task_profile == 'dynamics-aware'):
+        raise ValueError('Stance posture weighting requires dynamic source tracking and physical tasks')
+    if math.isfinite(args.rolling_contact_kinematics_start) and (
+            args.rolling_contact_kinematics_start < 0 or not args.observed_contact_patches
+            or not args.motion_start_in_motion or not args.track_full_motion):
+        raise ValueError('Rolling contact correction requires full dynamic tracking with native contact patches')
+    if math.isnan(args.rolling_contact_kinematics_start) or args.rolling_contact_kinematics_start == -float('inf'):
+        raise ValueError('Rolling contact correction start must be nonnegative or inf')
+    if not math.isfinite(args.landing_speed_limit_start) or args.landing_speed_limit_start < 0:
+        raise ValueError('--landing-speed-limit-start must be finite and nonnegative')
+    if args.late_momentum_zero_target and args.late_momentum_feedback_damping is None:
+        raise ValueError('Zero momentum regulation requires a positive feedback damping')
     if args.balance_body_priority and (not args.separate_balance_priority
             or args.source_pelvis_weight<=0 or args.task_profile!='dynamics-aware'):
         raise ValueError('--balance-body-priority requires separate balance, physical tasks and a positive source pelvis weight')
@@ -2098,8 +3148,9 @@ def main() -> None:
         raise ValueError("--qp-validation-tolerance must be positive.")
     if args.qp_acceleration_limit_scale <= 0.0:
         raise ValueError("--qp-acceleration-limit-scale must be positive.")
-    if args.qp_base_acceleration_weight <= 0.0:
-        raise ValueError("--qp-base-acceleration-weight must be positive.")
+    initial_linear_weight = linear_acceleration_weight(
+        args.qp_base_acceleration_weight, args.qp_base_linear_acceleration_weight, 0.,
+        start=args.qp_base_linear_weight_start, ramp=args.qp_base_linear_weight_ramp)
     if args.maximum_com_tracking_error <= 0.0:
         raise ValueError("--maximum-com-tracking-error must be positive.")
     if not 0.0 < args.minimum_com_height_ratio <= 1.0:
@@ -2132,6 +3183,15 @@ def main() -> None:
         robot_name=G1_USD_PATH.stem,
         task_profile=args.task_profile,
     )
+    if acceleration_only:
+        fabric.dynamics_tasks.cache_task_requests = recompose_tasks
+        fabric.dynamics_tasks.priority_mode = 'none' if recompose_tasks else args.fabric_priority_mode
+    if args.fabric_root_regularization is not None:
+        if fabric.dynamics_tasks is None:
+            raise ValueError('Root regularization requires physical Fabric tasks')
+        fabric.dynamics_tasks.config['regularization'] = args.fabric_root_regularization
+    if args.com_acceleration_preservation_weight and fabric.dynamics_tasks is None:
+        raise ValueError('COM acceleration preservation requires dynamics-aware kinematics')
     if args.motion_start_in_motion:
         if args.swing_metric_scale is not None:
             fabric.fabric_params['feet_pose_attractor']['metric'] = [
@@ -2148,6 +3208,12 @@ def main() -> None:
                                ('damping', math.sqrt(args.motion_feedback_scale))):
                 value = np.asarray(params[key]) * scale
                 params[key] = value.tolist() if value.ndim else float(value)
+    fabric.fabric_params['joint_posture_attractor']['max_acceleration'] = args.joint_feedback_limit
+    if args.fabric_angular_feedback_limit is not None:
+        if (fabric.dynamics_tasks is None or not math.isfinite(args.fabric_angular_feedback_limit)
+                or args.fabric_angular_feedback_limit <= 0):
+            raise ValueError('Fabric angular feedback limit requires dynamics-aware tasks and a positive finite value')
+        fabric.dynamics_tasks.config['body']['max_acceleration'] = [args.fabric_angular_feedback_limit]*3
     if not args.acceleration_and_braking_limits:
         fabric.fabric_params['joint_limits']['active'] = False
         args.limit_predicted_acceleration = False
@@ -2159,6 +3225,9 @@ def main() -> None:
         fabric.dynamics_tasks.stable_constraint_rows = args.qp_reuse_workspace
         if args.wrist_hip_avoidance:
             fabric.dynamics_tasks.enable_wrist_hip_avoidance(include_upper_body=args.wrist_body_avoidance, convex=args.convex_wrist_collision)
+            delayed_convex_geometry=fabric.dynamics_tasks.convex_wrist_geometry
+            if args.convex_wrist_collision_start>0:
+                fabric.dynamics_tasks.convex_wrist_geometry=None
             fabric.dynamics_tasks.wrist_hip_barrier = args.wrist_hip_barrier
         fabric.dynamics_tasks.momentum_enabled = not args.disable_momentum_task
         if args.collision_obstacles is not None:
@@ -2400,6 +3469,17 @@ def main() -> None:
             "sanitized contact modes "
             f"flight/left/right/double={mode_counts}"
         )
+    if args.native_contact_plan_start<100.:
+        if motion_contact_sequence is None or motion_planned_modes is None or not math.isfinite(args.native_contact_plan_start) or args.native_contact_plan_start<0:
+            raise ValueError('Native contact plan requires finite source time and an explicit contact sequence')
+        first_native_frame=min(len(motion_planned_modes),int(round(args.native_contact_plan_start*motion_fps)))
+        supplied_modes=motion_contact_sequence[:,0].long()+2*motion_contact_sequence[:,1].long()
+        previous_modes=motion_planned_modes.clone()
+        motion_planned_modes[first_native_frame:]=supplied_modes[first_native_frame:]
+        args.output_path.with_suffix('.native_contact_plan.json').write_text(json.dumps(dict(
+            first_source_frame=first_native_frame,
+            changed_source_frames=torch.nonzero(previous_modes!=motion_planned_modes).flatten().cpu().tolist(),
+            measured_support_gates_unchanged=True),indent=2)+'\n')
     if args.reference_manager:
         from fabrics_sim.reference.manager import ReferenceManager, infer_contact_plan, infer_corner_contact_plan, contact_sequence_modes
         fabric.dynamics_tasks.managed_walking = True
@@ -2524,6 +3604,9 @@ def main() -> None:
         armature_order = [isaac_joint_names.index(name) for name in G1_JOINT_NAMES]
         fabric.dynamics_tasks.model.validate_mass_matrix(
             q, mass, joint_armature=_to_numpy(robot.get_armatures())[:, armature_order])
+        if args.fabric_priority_mode != 'none':
+            fabric.dynamics_tasks.priority_joint_armature = torch.as_tensor(
+                _to_numpy(robot.get_armatures())[:, armature_order], device=device, dtype=q.dtype)
     self_contact_events = []
     foot_contact_report = []
     contact_report_subscription = None
@@ -2589,8 +3672,89 @@ def main() -> None:
             control_motion_trajectory = swing_clearance_reference(
                 fabric, control_motion_trajectory, G1_JOINT_NAMES, bounded_events,
                 args.swing_midpoint_clearance, collision_geometry=geometry)
+        if args.tracking_profile is not None:
+            from landing_clearance import feasible_swing_clearance_reference as landing_clearance_reference
+            fifth = dict(bounded_events[4], end_frame=362)
+            control_motion_trajectory, landing_tail_report = landing_clearance_reference(
+                fabric, control_motion_trajectory, G1_JOINT_NAMES, [fifth], .085, collision_geometry=geometry)
+            args.output_path.with_suffix('.landing_tail.json').write_text(json.dumps(landing_tail_report, indent=2)+'\n')
+            # Later landing transients: retain the source order and all source
+            # targets. Extend clearance only inside the existing double-support
+            # interval, ending once the original foot slows below 0.2 m/s.
+            later_tail_reports = []
+            for event_index in range(6, len(bounded_events)):
+                event = bounded_events[event_index]
+                next_takeoff = (bounded_events[event_index+1]['takeoff_frame']
+                                if event_index+1 < len(bounded_events) else len(motion_trajectory)-1)
+                end = event['end_frame']
+                last = min(end+20, next_takeoff-1, len(motion_trajectory)-2)
+                selected = end
+                side = 1-event['support']
+                link = fabric.dynamics_tasks.model.kinematics.get_link_index(('left','right')[side]+'_ankle_roll_link')
+                for sample in range(end+1, last):
+                    speeds=[]
+                    for probe in (sample, sample+1):
+                        source_q, source_v, _ = motion_sampler.kinematics(float(probe), motion_fps, 0.)
+                        source_state = fabric.dynamics_tasks.model.snapshot(source_q)
+                        speeds.append(float((source_state['origin_jac'][0,link]@source_v[0]).norm()))
+                    if max(speeds) <= .2:
+                        selected=sample
+                        break
+                if selected == end:
+                    later_tail_reports.append(dict(step=event_index+1, extended=False))
+                    continue
+                extended = dict(event, end_frame=selected)
+                if event_index+1>=args.later_clearance_first_step:
+                    from landing_clearance_smooth import feasible_swing_clearance_reference as smooth_landing_clearance
+                    control_motion_trajectory, feasibility = smooth_landing_clearance(
+                        fabric, control_motion_trajectory, G1_JOINT_NAMES, [extended], args.later_clearance_target,
+                        collision_geometry=geometry,fall_fraction=args.later_clearance_fall_fraction)
+                else:
+                    control_motion_trajectory, feasibility = landing_clearance_reference(
+                        fabric, control_motion_trajectory, G1_JOINT_NAMES, [extended], .085, collision_geometry=geometry)
+                later_tail_reports.append(dict(step=event_index+1, extended=True,
+                    original_end_frame=end, end_frame=selected, feasibility=feasibility))
+            args.output_path.with_suffix('.later_tails.json').write_text(json.dumps(later_tail_reports, indent=2)+'\n')
+
+            if args.reference_correction_rmse_limit:
+                from bounded_reference_correction import bound_reference_correction
+                control_motion_trajectory,correction_report=bound_reference_correction(control_motion_trajectory,motion_trajectory,
+                    bounded_events,later_tail_reports,first_step=args.later_clearance_first_step,joint_rmse_limit=args.reference_correction_rmse_limit,first_step_limit=args.first_correction_rmse_limit)
+                args.output_path.with_suffix('.reference_correction.json').write_text(json.dumps(correction_report,indent=2)+'\n')
+            if args.reference_pose_candidate is not None:
+                import hashlib
+                with np.load(args.reference_pose_candidate) as candidate:
+                    for key,array in [('baseline_sha256',control_motion_trajectory),('source_sha256',motion_trajectory)]:
+                        if candidate[key].item()!=hashlib.sha256(_to_numpy(array).tobytes()).hexdigest():
+                            raise ValueError('Reference candidate input mismatch: '+key)
+                    prepared=candidate['control_q']
+                    if prepared.shape!=tuple(control_motion_trajectory.shape) or not np.isfinite(prepared).all() or abs(float(candidate['fps'])-motion_fps)>1e-8:
+                        raise ValueError('Invalid reference pose candidate')
+                    control_motion_trajectory=control_motion_trajectory.new_tensor(prepared)
         motion_sampler = MotionInterpolator(control_motion_trajectory,
             method='bspline' if args.motion_interpolation == 'bspline-analytic' else 'pchip')
+        if args.smooth_stride:
+            from blended_spline import BlendedSplineReference
+            motion_sampler=BlendedSplineReference(motion_sampler,control_motion_trajectory,stride=args.smooth_stride,
+                start_frame=args.smooth_start*motion_fps,ramp_frames=args.smooth_ramp*motion_fps)
+        if args.late_reference_smooth_stride:
+            from late_tube_smoothing import transition_tube_spline
+            motion_sampler=transition_tube_spline(motion_sampler,control_motion_trajectory,
+                stride=args.late_reference_smooth_stride,start_frame=args.late_reference_smooth_start*motion_fps,
+                ramp_frames=args.late_reference_smooth_ramp*motion_fps)
+        if args.joint_correction_overlay is not None:
+            from joint_correction_overlay import JointCorrectionOverlay
+            motion_sampler=JointCorrectionOverlay(motion_sampler,control_motion_trajectory,motion_trajectory,args.joint_correction_overlay)
+        if args.secondary_joint_correction_overlay is not None:
+            import hashlib
+            if args.joint_correction_overlay is None:raise ValueError('Secondary overlay requires its recorded parent')
+            with np.load(args.secondary_joint_correction_overlay) as correction:
+                if correction['parent_overlay_sha256'].item()!=hashlib.sha256(args.joint_correction_overlay.read_bytes()).hexdigest():
+                    raise ValueError('Secondary correction parent mismatch')
+            motion_sampler=JointCorrectionOverlay(motion_sampler,control_motion_trajectory,motion_trajectory,args.secondary_joint_correction_overlay)
+        np.savez_compressed(args.output_path.with_suffix('.control_reference.npz'),
+            control_q=_to_numpy(control_motion_trajectory),source_q=_to_numpy(motion_trajectory),
+            fps=motion_fps,smooth_stride=args.smooth_stride,smooth_start=args.smooth_start,smooth_ramp=args.smooth_ramp)
         adapted_start = motion_sampler.kinematics(float(motion_start_frame), motion_fps*args.motion_speed, 0.)
         if any(not torch.allclose(a,b,atol=2e-5,rtol=0.) for a,b in
                zip(adapted_start,original_start)):
@@ -2604,8 +3768,37 @@ def main() -> None:
             geometry='enabled USD sphere/cube foot colliders',
             adaptation_policy='Fill each source midpoint clearance deficit with one smooth bump',
             changed_source_frames=int((delta.abs().amax(-1)>1e-7).sum()))
+        from reference_pose_metadata import reference_pose_metadata
+        report.update(reference_pose_metadata(_to_numpy(control_motion_trajectory),_to_numpy(motion_trajectory),G1_JOINT_NAMES,bounded_events))
+        if args.reference_pose_candidate is not None:
+            report['adaptation_policy']='Explicit prepared full-body reference candidate; original PKL retained for all fidelity checks'
+            report['reference_pose_candidate']=str(args.reference_pose_candidate)
         args.output_path.with_suffix('.swing_clearance.json').write_text(json.dumps(report,indent=2)+'\n')
         print('Control reference midpoint swing clearance: '+json.dumps(report),flush=True)
+    if args.prepared_contact_plan is not None:
+        if not args.direct_wbc or not args.motion_start_in_motion or args.reference_pose_candidate is None or reference_manager is not None:
+            raise ValueError('Prepared contact intentions require direct source WBC with an explicit prepared pose reference')
+        from prepared_contact_plan import load_prepared_contact_plan
+        prepared_modes,contact_report=load_prepared_contact_plan(args.prepared_contact_plan,args.reference_pose_candidate,_to_numpy(motion_planned_modes))
+        motion_planned_modes=motion_planned_modes.new_tensor(prepared_modes)
+        args.output_path.with_suffix('.prepared_contacts.json').write_text(json.dumps(contact_report,indent=2)+'\n')
+        print('Prepared contact intentions: '+json.dumps(contact_report),flush=True)
+    prepared_source_clock = None
+    if args.prepared_source_clock is not None:
+        if (args.tracking_profile is None or args.reference_pose_candidate is None
+                or args.clock_fourth_speed is not None or args.clock_fifth_speed is not None or args.clock_sixth_speed is not None or args.contact_pause_end is not None or args.extra_contact_pause
+                or args.motion_speed != 1. or motion_start_frame != 0):
+            raise ValueError('Prepared source clock requires an unpaused full-source profile at unit motion speed')
+        import hashlib
+        from smooth_clock import smooth_clock as original_source_clock
+        from g1_prepared_clock import PreparedSourceClock
+        clock_parameters = (args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,
+                            args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,
+                            args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)
+        prepared_source_clock = PreparedSourceClock(args.prepared_source_clock,args.reference_pose_candidate,
+            hashlib.sha256(_to_numpy(motion_trajectory).tobytes()).hexdigest(),motion_fps,
+            lambda time: original_source_clock(time,*clock_parameters))
+        args.output_path.with_suffix('.prepared_clock.json').write_text(json.dumps(prepared_source_clock.report,indent=2)+'\n')
     bias_force = torch.as_tensor(bias_np, device=device, dtype=q.dtype)
     left_j = torch.as_tensor(left_j_np, device=device, dtype=q.dtype)
     right_j = torch.as_tensor(right_j_np, device=device, dtype=q.dtype)
@@ -2621,6 +3814,7 @@ def main() -> None:
         ),
         projection_config=ProjectionConfig(
             regularization=args.regularization,
+            joint_correction_weight=args.projection_joint_correction_weight,
             contact_kp=args.contact_stabilization_kp,
             contact_kd=args.contact_stabilization_kd,
             contact_stabilization_mask=(1.0, 1.0, float(args.reference_manager),
@@ -2673,9 +3867,16 @@ def main() -> None:
     # The first finite-difference Jdot*v sample is intentionally zero because
     # there is no previous live Jacobian yet.
     zero_bias = torch.zeros((1, 6), device=device, dtype=q.dtype)
+    if acceleration_only:
+        initial_mode = commanded_contact_mode if commanded_contact_mode is not None else initial_planned_mode
+        fabric.set_contact_state(torch.stack(((initial_mode & 1) != 0,
+                                             (initial_mode & 2) != 0), dim=1))
+        qdd_fabric = fabric.compute_acceleration(q, qd)
     output = projector.step(
         acc_fabric=qdd_fabric,
-        mass_matrix=mass,
+        mass_matrix=preserve_com_acceleration(mass,
+            fabric.dynamics_tasks.last_snapshot['com_jac'], args.com_acceleration_preservation_weight)
+            if args.com_acceleration_preservation_weight else mass,
         generalized_velocity=qd,
         left_foot_jacobian=left_j,
         right_foot_jacobian=right_j,
@@ -2695,7 +3896,8 @@ def main() -> None:
     )
     if fabric.dynamics_tasks is not None:
         fabric.set_contact_state(previous_contact_active)
-        qdd_fabric = fabric.compute_acceleration(q, qd)
+        if not acceleration_only:
+            qdd_fabric = fabric.compute_acceleration(q, qd)
     qdd_dc = qdd_fabric if args.g1_md else output.acc_dc
     contact_jacobian = torch.cat((left_j, right_j), dim=1)
     jdot_qdot = torch.cat((zero_bias, zero_bias), dim=1)
@@ -2703,7 +3905,11 @@ def main() -> None:
         35, device=device, dtype=q.dtype
     )
     qp_acceleration_weight[:6] = args.qp_base_acceleration_weight
-    acceleration_qp = G1DynamicsAccelerationQP(
+    qp_acceleration_weight[:3] = initial_linear_weight
+    qp_type = G1DynamicsAccelerationQP
+    if args.tracking_profile is not None:
+        from unload_qp import G1DynamicsAccelerationQP as qp_type
+    acceleration_qp = qp_type(
         solver_backend=args.qp_solver,
         heel_length=.05 if args.use_sole_wrench_geometry else .06,
         half_width=.025 if args.use_sole_wrench_geometry else .04,
@@ -2715,7 +3921,9 @@ def main() -> None:
         # transitions.  This remains small relative to the acceleration
         # tracking term, while providing enough curvature for a stable solve.
         wrench_weight=1.0e-4,
-        acc_weight=qp_acceleration_weight,
+        acc_weight=preserve_com_acceleration(qp_acceleration_weight,
+            fabric.dynamics_tasks.last_snapshot['com_jac'], args.com_acceleration_preservation_weight)
+            if args.com_acceleration_preservation_weight else qp_acceleration_weight,
         validation_tolerance=args.qp_validation_tolerance,
         friction_validation_tolerance=1.0,
         effort_validation_tolerance=1.0,
@@ -2725,6 +3933,16 @@ def main() -> None:
         acceleration_qp.solver.reuse_workspace = True
     if args.qp_active_set_predictor:
         acceleration_qp.solver.active_set_predictor = True
+    base_qp_solve = acceleration_qp.solve
+    if args.tracking_profile == 'amp-full':
+        acceleration_qp.solver.single_solve = True
+        base_qp_solve = partial(solve_single_tracking_qp, acceleration_qp)
+    if args.tracking_tube_soft_weight:
+        from g1_soft_tracking_tube import SoftTrackingTubeBackend
+        acceleration_qp.solver = SoftTrackingTubeBackend(args.tracking_tube_soft_weight,
+            soft_rows=((True, False, False) if args.tracking_tube_soft_joint_only else
+                       (True, False, True) if args.tracking_tube_soft_joint_orientation else
+                       (True, True, True)))
     acceleration_limits = (
         args.qp_acceleration_limit_scale
         * fabric.accel_limits.to(device=device, dtype=q.dtype)
@@ -2749,7 +3967,23 @@ def main() -> None:
         dtype=q.dtype,
     )
     # Reserve part of each motor's capacity for the 500 Hz feedback term.
-    qp_effort_limits = 0.8 * effort_limits
+    legacy_effort_limits=effort_limits.clone()
+    qp_effort_limits = 0.8 * legacy_effort_limits
+    if math.isfinite(args.model_effort_start):
+        if args.model_effort_start<0 or not math.isfinite(args.model_effort_ramp) or args.model_effort_ramp<=0:
+            raise ValueError('Invalid model effort transition')
+        from g1_model_effort import model_effort_limits
+        simulator_effort_limits=_to_numpy(robot.get_max_efforts(joint_names=list(G1_JOINT_NAMES)))
+        effort_limits=q.new_tensor(model_effort_limits(fabric.urdf_path,G1_JOINT_NAMES,simulator_effort_limits))
+        if bool((legacy_effort_limits>effort_limits+1e-5).any()):
+            raise ValueError('Legacy cap exceeds the active model; refuse transition')
+        print('Active model effort limits in Fabric joint order:',effort_limits.tolist(),flush=True)
+        args.output_path.with_suffix('.effort_model.json').write_text(json.dumps(dict(
+            joint_names=list(G1_JOINT_NAMES),urdf=str(fabric.urdf_path),
+            simulator_limits=np.asarray(simulator_effort_limits).tolist(),
+            model_limits=effort_limits.tolist(),legacy_software_caps=legacy_effort_limits.tolist(),
+            transition_source_time=args.model_effort_start,ramp_source_time=args.model_effort_ramp,
+            qp_fraction=.8,simulator_limits_modified=False),indent=2)+'\n')
     initial_feet = reference_feet_transforms(fabric, q)
     initial_friction_G, initial_friction_b = (
         build_single_support_wrench_constraints(
@@ -2777,8 +4011,17 @@ def main() -> None:
         qdd_dc, composed_policy = compose_task_policy(
             fabric.dynamics_tasks.last_requests, qd,
             fabric.dynamics_tasks.config["regularization"])
-    qp_output = acceleration_qp.solve(
-        acc_reference=qdd_dc,
+    initial_qp_reference = qdd_dc
+    if args.qp_fabric_metric:
+        acceleration_qp.acc_weight = fabric.dynamics_tasks.last_snapshot['fabric_acc_metric']
+        initial_qp_reference = qdd_fabric
+    if args.qp_com_feedback_scale:
+        acceleration_qp.acc_weight, initial_qp_reference = track_com_feedback(
+            acceleration_qp.acc_weight, initial_qp_reference, fabric.dynamics_tasks.last_snapshot,
+            com_feedback_scale(args.qp_com_feedback_scale, 0., start=args.qp_com_feedback_start,
+                               ramp=args.qp_com_feedback_ramp), axes=args.qp_com_feedback_axes)
+    qp_output = base_qp_solve(
+        acc_reference=initial_qp_reference,
         mass_matrix=mass,
         bias_force=bias_force,
         contact_jacobian=contact_jacobian,
@@ -2792,12 +4035,12 @@ def main() -> None:
             if args.joint_velocity_limits else None,
         friction_G=initial_friction_G,
         friction_b=initial_friction_b,
-        task_requests=([composed_policy] if args.g1_md else
+        task_requests=(None if acceleration_only else [composed_policy] if args.g1_md else
                     None if fabric.dynamics_tasks is None else fabric.dynamics_tasks.last_requests),
         task_tracks_predicted=not args.task_track_nominal,
         priority_tasks=('center_of_mass',) if args.g1_com_priority else (),
         priority_requests=[r for r in fabric.dynamics_tasks.last_requests
-                           if r.name == 'center_of_mass'] if args.g1_com_priority else None,
+                           if r.name == 'center_of_mass'] if args.g1_com_priority and not acceleration_only else None,
         predicted_acc_limit=acceleration_limits if args.limit_predicted_acceleration else None,
     )
     initial_speed_ok = (not args.joint_velocity_limits or bool(
@@ -2895,6 +4138,7 @@ def main() -> None:
     if fabric_steps_per_update < 1:
         raise RuntimeError("FABRIC_TIMESTEP must be at least PD_TIMESTEP.")
     executed_steps = 0
+    contact_sample_dt = PD_TIMESTEP
     stopped_at_motion_end = False
     stopped_at_tracking_steps = False
     stopped_at_unload_end = False
@@ -2910,6 +4154,7 @@ def main() -> None:
     support_switch = None
     source_step_number = 0
     direct_unload_event = None
+    direct_unload_deadline_ramp = .05
     direct_unload_started = 0.
     source_steps_finished = False
     pending_source_event = None
@@ -2919,8 +4164,15 @@ def main() -> None:
     previous_wall_motion_time = 0.0
     phase_hold_updates = 0
     reported_nonconvergence = False
+    torque_continuity_solver = None
+    tracking_tube_solver = acceleration_qp.solver
+    if math.isfinite(args.torque_continuity_start):
+        from g1_torque_continuity import TorqueContinuitySolver
+        torque_continuity_solver = TorqueContinuitySolver(acceleration_qp.solver)
+        acceleration_qp.solver = torque_continuity_solver
     tracking_history = []
     servo_history = []
+    fidelity_stop=None
     for step in range(physics_steps):
         if not simulation_app.is_running():
             break
@@ -2941,7 +4193,7 @@ def main() -> None:
             )
 
             net_foot_forces = torch.as_tensor(
-                _to_numpy(foot_contact_view.get_net_contact_forces(dt=PD_TIMESTEP)),
+                _to_numpy(foot_contact_view.get_net_contact_forces(dt=contact_sample_dt)),
                 device=device,
                 dtype=q.dtype,
             )
@@ -2951,24 +4203,85 @@ def main() -> None:
                     f"{tuple(net_foot_forces.shape)}."
                 )
             # Support must come from the ground, not foot-foot/body collisions.
-            ground_contact_forces = foot_contact_view.get_contact_force_matrix(dt=PD_TIMESTEP)
+            ground_contact_forces = foot_contact_view.get_contact_force_matrix(dt=contact_sample_dt)
             ground_foot_forces = torch.as_tensor(
                 ground_support_forces(_to_numpy(ground_contact_forces)), device=device, dtype=q.dtype)
             foot_normal_forces = ground_foot_forces[:, 2].clamp_min(0.).reshape(1, 2)
-            contact_data = (foot_contact_view.get_contact_force_data(dt=PD_TIMESTEP)
+            contact_data = (foot_contact_view.get_contact_force_data(dt=contact_sample_dt)
                             if args.diagnose_contacts else None)
 
             com_replan_diagnostic = (dict(centroidal_replan_attempted=False,
                 centroidal_replan_accepted=False,centroidal_replan_reason='')
                 if None is not None else {})
 
+            control_time = control_updates * FABRIC_TIMESTEP
+            effective_fabric_priority_mode = args.fabric_priority_mode
+            elapsed_motion_time = control_time
             if motion_trajectory is not None:
-                control_time = control_updates * FABRIC_TIMESTEP
                 warming_up = args.fixed_joint_test or args.weight_transfer_test or bool(args.single_support_test) or control_time < args.motion_warmup_duration
                 wall_motion_time = max(0.0, control_time - args.motion_warmup_duration)
                 elapsed_motion_time = ramped_motion_time(wall_motion_time, args.motion_ramp_duration)
                 previous_motion_time = ramped_motion_time(wall_motion_time-FABRIC_TIMESTEP, args.motion_ramp_duration)
                 next_motion_time = ramped_motion_time(wall_motion_time+FABRIC_TIMESTEP, args.motion_ramp_duration)
+                clock_rate, clock_acceleration = 1., 0.
+                if args.tracking_profile is not None:
+                    from smooth_clock import smooth_clock
+                    if prepared_source_clock is not None:
+                        original_speed_clock = smooth_clock
+                        def smooth_clock(time,*parameters,base=original_speed_clock):
+                            return prepared_source_clock.sample(time,base(time,*parameters))
+                    if args.clock_fourth_speed is not None:
+                        from g1_late_clock import late_speed_transition
+                        if args.clock_third_speed is None or args.clock_fourth_start<args.clock_third_start+args.clock_third_ramp:
+                            raise ValueError('Fourth source-clock transition must follow a completed third transition')
+                        original_speed_clock=smooth_clock
+                        def smooth_clock(time,*parameters,base=original_speed_clock):
+                            return late_speed_transition(base(time,*parameters),time,
+                                start=args.clock_fourth_start,ramp=args.clock_fourth_ramp,
+                                previous_speed=args.clock_third_speed,speed=args.clock_fourth_speed)
+                    if args.clock_fifth_speed is not None:
+                        from g1_late_clock import late_speed_transition
+                        if args.clock_fourth_speed is None or args.clock_fifth_start<args.clock_fourth_start+args.clock_fourth_ramp:
+                            raise ValueError('Fifth source-clock transition must follow a completed fourth transition')
+                        fourth_speed_clock=smooth_clock
+                        def smooth_clock(time,*parameters,base=fourth_speed_clock):
+                            return late_speed_transition(base(time,*parameters),time,
+                                start=args.clock_fifth_start,ramp=args.clock_fifth_ramp,
+                                previous_speed=args.clock_fourth_speed,speed=args.clock_fifth_speed)
+                    if args.clock_sixth_speed is not None:
+                        from g1_late_clock import late_speed_transition
+                        if args.clock_fifth_speed is None or args.clock_sixth_start < args.clock_fifth_start+args.clock_fifth_ramp:
+                            raise ValueError('Sixth source-clock transition must follow a completed fifth transition')
+                        fifth_speed_clock=smooth_clock
+                        def smooth_clock(time,*parameters,base=fifth_speed_clock):
+                            return late_speed_transition(base(time,*parameters),time,
+                                start=args.clock_sixth_start,ramp=args.clock_sixth_ramp,
+                                previous_speed=args.clock_fifth_speed,speed=args.clock_sixth_speed)
+                    if args.contact_pause_end is not None:
+                        from landing_pause_clock import LandingPauseClock
+                        if args.contact_pause_early_resume:
+                            from early_resume_clock import EarlyResumeLandingClock as LandingPauseClock
+                        if 'source_contact_pause' not in locals():
+                            source_contact_pause=LandingPauseClock(args.contact_pause_start,args.contact_pause_end,args.contact_pause_resume,args.contact_pause_landings)
+                        speed_clock=smooth_clock
+                        input_phase=speed_clock(wall_motion_time,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[0]
+                        source_contact_pause.update(input_phase,len(measured_steps.landings) if measured_steps is not None else 0)
+                        def smooth_clock(time,*parameters):
+                            phase,rate,acceleration=speed_clock(time,*parameters)
+                            out,phase_rate,phase_acceleration=source_contact_pause.sample(phase)
+                            return out,phase_rate*rate,phase_acceleration*rate**2+phase_rate*acceleration
+                    if args.extra_contact_pause:
+                        from g1_landing_clock_chain import LandingClockChain
+                        if 'extra_contact_clocks' not in locals():
+                            extra_contact_clocks = LandingClockChain(args.extra_contact_pause, args.extra_contact_pause_resume)
+                        before_extra_clock = smooth_clock
+                        extra_input = before_extra_clock(wall_motion_time,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)
+                        extra_contact_clocks.update(extra_input,len(measured_steps.landings) if measured_steps is not None else 0)
+                        def smooth_clock(time,*parameters,base=before_extra_clock):
+                            return extra_contact_clocks.sample(base(time,*parameters))
+                    elapsed_motion_time,clock_rate,clock_acceleration=smooth_clock(wall_motion_time,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)
+                    previous_motion_time=smooth_clock(wall_motion_time-FABRIC_TIMESTEP,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[0]
+                    next_motion_time=smooth_clock(wall_motion_time+FABRIC_TIMESTEP,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[0]
                 if args.fixed_joint_test or args.weight_transfer_test or args.single_support_test:
                     elapsed_motion_time = 0.0
                 phase_held = False
@@ -3140,6 +4453,18 @@ def main() -> None:
                 motion_frame = int(round(frame_position))
                 reference_q = sample_motion(frame_position)
                 audit_reference_q = interpolate_motion_trajectory(motion_trajectory, frame_position)
+                if 'tube_source_sampler' not in locals():
+                    from fabrics_sim.reference.interpolation import MotionInterpolator
+                    tube_source_sampler=MotionInterpolator(motion_trajectory,method=args.tube_reference_method)
+                    if args.tube_smooth_stride:
+                        from blended_spline import BlendedSplineReference
+                        tube_source_sampler=BlendedSplineReference(tube_source_sampler,motion_trajectory,stride=args.tube_smooth_stride,
+                            start_frame=args.smooth_start*motion_fps,ramp_frames=args.smooth_ramp*motion_fps)
+                    if args.late_tube_smooth_stride:
+                        from late_tube_smoothing import transition_tube_spline
+                        tube_source_sampler=transition_tube_spline(tube_source_sampler,motion_trajectory,
+                            stride=args.late_tube_smooth_stride,start_frame=args.late_tube_smooth_start*motion_fps,
+                            ramp_frames=args.late_tube_smooth_ramp*motion_fps)
                 previous_frame_stride = (elapsed_motion_time-previous_motion_time)*motion_fps*args.motion_speed
                 next_frame_stride = (next_motion_time-elapsed_motion_time)*motion_fps*args.motion_speed
                 previous_reference_q = (
@@ -3176,9 +4501,9 @@ def main() -> None:
                         # and inject a spurious acceleration on the first tick.
                         # A full clip may end in mid-swing: retain its terminal
                         # derivative while auditing the final sample.
-                        frame_rate = motion_fps * args.motion_speed if (
+                        frame_rate = motion_fps * args.motion_speed * clock_rate if (
                             args.track_full_motion or frame_position < motion_trajectory.shape[0]-1) else 0.
-                        frame_acceleration = 0.
+                        frame_acceleration = motion_fps * args.motion_speed * clock_acceleration
                     elif managed_clock is not None:
                         frame_rate = (managed_clock.next_frame-managed_clock.previous_frame)/(2*FABRIC_TIMESTEP)
                         frame_acceleration = (managed_clock.next_frame-2*frame_position+managed_clock.previous_frame)/FABRIC_TIMESTEP**2
@@ -3315,6 +4640,38 @@ def main() -> None:
                                 WholeBodyReference(q, qd, qp_output.predicted_acc),
                                 observed_feet, control_time, managed_clock, reference_manager,
                                 motion_fps, stopped_for_transfer, actual_com_velocity, foot_normal_forces, FABRIC_TIMESTEP)
+                            reference_q, reference_v, reference_a = (whole_body_reference.q,
+                                whole_body_reference.v, whole_body_reference.a)
+                            reference_kinematics = (reference_v, reference_a)
+                        except (ValueError, RuntimeError) as exc:
+                            save_reference_failure(args, exc, control_time, q, qd, foot_normal_forces,
+                                                   tracking_history, servo_history)
+                            raise
+                    if elapsed_motion_time>=args.measured_stance_reference_start:
+                        from measured_stance_reference import MeasuredStanceReference
+                        if 'measured_stance_reference' not in locals():
+                            measured_stance_reference=MeasuredStanceReference(
+                                'src/fabrics_sim/models/robots/urdf/g1/g1_29dof_rev_1_0.urdf',
+                                G1_JOINT_NAMES,_to_numpy(motion_planned_modes),motion_fps,
+                                ramp=args.measured_stance_reference_ramp,limit=args.measured_stance_reference_limit)
+                        measured_stance_reference.observe(frame_position,_to_numpy(q[0]),
+                            _to_numpy(foot_normal_forces[0]),tuple(map(_to_numpy,contact_data)))
+                        whole_body_reference=measured_stance_reference.project(frame_position,frame_rate,
+                            frame_acceleration,motion_sampler,whole_body_reference)
+                        reference_q,reference_v,reference_a=whole_body_reference.q,whole_body_reference.v,whole_body_reference.a
+                        reference_kinematics=(reference_v,reference_a)
+                    if elapsed_motion_time >= args.stance_heading_start:
+                        from g1_stance_heading import StanceHeadingReference
+                        try:
+                            if 'stance_heading_reference' not in locals():
+                                stance_heading_reference = StanceHeadingReference(
+                                    'src/fabrics_sim/models/robots/urdf/g1/g1_29dof_rev_1_0.urdf',
+                                    G1_JOINT_NAMES, _to_numpy(motion_planned_modes), motion_fps,
+                                    ramp=args.stance_heading_ramp, limit=args.stance_heading_limit)
+                            stance_heading_reference.observe(frame_position, _to_numpy(q[0]),
+                                _to_numpy(foot_normal_forces[0]), tuple(map(_to_numpy, contact_data)))
+                            whole_body_reference = stance_heading_reference.project(
+                                frame_position, frame_rate, frame_acceleration, motion_sampler, whole_body_reference)
                             reference_q, reference_v, reference_a = (whole_body_reference.q,
                                 whole_body_reference.v, whole_body_reference.a)
                             reference_kinematics = (reference_v, reference_a)
@@ -3574,11 +4931,23 @@ def main() -> None:
                                 target.copy_(torch.as_tensor(value,device=device,dtype=q.dtype))
                         fabric.set_feet_targets(foot_positions,foot_quaternions,
                             fv[:,:,:3],fv[:,:,3:],fa[:,:,:3],fa[:,:,3:])
+                controller_contact_plan=planned_contact_mode
+                if args.gate_contact_transitions and measured_steps is not None and elapsed_motion_time>=args.landing_gated_unload_start:
+                    from landing_gated_unload import intended_unload_mode,anticipatory_unload_mode
+                    current_feet=reference_feet_transforms(fabric,q)
+                    original_feet=reference_feet_transforms(fabric,audit_reference_q)
+                    contact_plan_value,contact_plan_reason=intended_unload_mode(measured_steps,frame_position,
+                        _to_numpy(current_feet[0,:,:3]),_to_numpy(original_feet[0,:,:3]),int(planned_contact_mode.item()))
+                    if elapsed_motion_time>=args.anticipate_unload_start:
+                        contact_plan_value,contact_plan_anticipated=anticipatory_unload_mode(measured_steps,frame_position,
+                            _to_numpy(current_feet[0,:,:3]),_to_numpy(original_feet[0,:,:3]),
+                            _to_numpy(foot_normal_forces[0]),motion_fps,contact_plan_value,horizon=args.anticipate_unload_horizon,hysteresis=args.anticipate_unload_hysteresis,allow_overdue=args.anticipate_unload_overdue,error_limit=args.anticipate_unload_error_limit)
+                    controller_contact_plan=torch.full_like(planned_contact_mode,contact_plan_value)
                 if reference_manager is None:
                     commanded_contact_mode, contact_ready_counter = (
                         update_contact_mode_state_machine(
                             commanded_contact_mode,
-                            planned_contact_mode,
+                            controller_contact_plan,
                             measured_contacts,
                             contact_ready_counter,
                             args.contact_switch_confirm_updates,
@@ -3806,6 +5175,17 @@ def main() -> None:
                 )
                 if fabric.dynamics_tasks is not None:
                     fabric.set_contact_state(requested_contact_active)
+            if elapsed_motion_time>=args.collision_barrier_bandwidth_start:
+                if not math.isfinite(args.collision_barrier_bandwidth) or args.collision_barrier_bandwidth<=0:
+                    raise ValueError('Collision barrier bandwidth must be finite and positive')
+                cb_phase=min(1.,max(0.,(elapsed_motion_time-args.collision_barrier_bandwidth_start)/.1))
+                fabric.dynamics_tasks.collision_barrier_bandwidth=8.+(args.collision_barrier_bandwidth-8.)*cb_phase**3*(10-15*cb_phase+6*cb_phase**2)
+            if args.convex_wrist_collision and elapsed_motion_time>=args.convex_wrist_collision_start:
+                fabric.dynamics_tasks.convex_wrist_geometry=delayed_convex_geometry
+            if (elapsed_motion_time > args.hip_yaw_barrier_start
+                    and fabric.dynamics_tasks.hip_yaw_barrier_geometry is None):
+                fabric.dynamics_tasks.enable_hip_yaw_barrier(
+                    args.hip_yaw_barrier_bandwidth, args.hip_yaw_barrier_margin)
             qdd_fabric = fabric.compute_acceleration(q, qd)
             left_contact_bias = right_contact_bias = None
             task_acceleration_constraints = None
@@ -3830,7 +5210,8 @@ def main() -> None:
                     landing_surface_speed=np.full((1,count),np.nan),landing_speed_active=np.zeros((1,count),dtype=bool))
                 landing_mode = int(commanded_contact_mode.item()) if args.motion_start_in_motion else managed_clock.mode
                 landing_enabled = args.motion_start_in_motion or reference_manager.swing_clear
-                if landing_mode in (1,2) and landing_enabled:
+                if (landing_mode in (1,2) and landing_enabled
+                        and control_time >= args.landing_speed_limit_start):
                     from fabrics_sim.solver.landing_approach import landing_approach_constraints
                     swing=1 if landing_mode==1 else 0
                     C,d,height,speed,active=landing_approach_constraints(
@@ -3848,6 +5229,9 @@ def main() -> None:
             contact_row_mask = None
             contact_patches = {}
             contact_patch_tasks = {}
+            support_flatten_weights = q.new_zeros(1, 2)
+            rolling_bias_correction = torch.zeros((1, 2, 3), device=device, dtype=q.dtype)
+            rolling_bias_matched = torch.zeros((1, 2), device=device, dtype=torch.bool)
             if unified_reference and patch_manager is not None:
                 # The outgoing foot can roll only after the incoming foot
                 # actually carries the load and physical toe points still touch.
@@ -3917,6 +5301,8 @@ def main() -> None:
                     pass
                 if patch_manager is not None:
                     angular_speeds=[float((jac[:,3:]@qd[...,None]).norm()) for jac in (left_j,right_j)]
+                    patch_manager.touching_support_tolerance = (
+                        args.touching_support_tolerance if elapsed_motion_time > args.touching_support_start else None)
                     contact_patches,restored=patch_manager.update(requested_contact_active,live_feet,
                         angular_speeds,tuple(map(_to_numpy,contact_data)),control_time,FABRIC_TIMESTEP,
                         toe_foot,toe_contact)
@@ -3937,24 +5323,66 @@ def main() -> None:
                     mapped_jac,mapped_bias,mapped_error,toe_task = patch.evaluate(
                         live_feet[:,patch_foot,:3],_quat_xyzw_to_matrix(live_feet[:,patch_foot,3:]),
                         jac,foot_bias,qd,control_time,orientation_reference=toe_reference)
+                    if control_time >= args.rolling_contact_kinematics_start:
+                        patch_points = (patch.vertices if getattr(patch, 'vertices', None) is not None
+                                        else patch.local_point[:, None])
+                        omega = (jac[:, 3:] @ qd[..., None]).squeeze(-1)
+                        correction, matched = rolling_sphere_bias_correction(
+                            _quat_xyzw_to_matrix(live_feet[:, patch_foot, 3:]), omega,
+                            patch.frame, patch_points, *foot_landing_geometry[patch_foot])
+                        mapped_bias = mapped_bias.clone()
+                        mapped_bias[:, :3] += correction
+                        rolling_bias_correction[:, patch_foot] = correction
+                        rolling_bias_matched[:, patch_foot] = matched
                     if patch_foot == 0:
                         left_j,left_contact_bias = mapped_jac,mapped_bias
                     else:
                         right_j,right_contact_bias = mapped_jac,mapped_bias
                     pose_error[:,patch_foot] = mapped_error
-                    if unified_reference:
-                        from fabrics_sim.reference.whole_body import support_orientation_request
-                        foot_request = next(r for r in fabric.dynamics_tasks.last_requests if r.name == 'feet_pose')
-                        toe_task = support_orientation_request(
-                            foot_request, patch_foot, patch.frame, patch.point_support,
-                            getattr(patch, 'polygon_support', False))
-                    elif patch_manager is not None:
-                        toe_task.name += f'_{patch_foot}'
-                    contact_patch_tasks[patch_foot]=toe_task
-                    fabric.dynamics_tasks.last_requests.append(toe_task)
+                    if task_feedback_enabled:
+                        flatten_task = toe_task
+                        if unified_reference:
+                            from fabrics_sim.reference.whole_body import support_orientation_request
+                            foot_request = next(r for r in fabric.dynamics_tasks.last_requests if r.name == 'feet_pose')
+                            toe_task = support_orientation_request(
+                                foot_request, patch_foot, patch.frame, patch.point_support,
+                                getattr(patch, 'polygon_support', False))
+                        elif patch_manager is not None:
+                            toe_task.name += f'_{patch_foot}'
+                        if (unified_reference and elapsed_motion_time > args.support_flatten_start
+                                and patch.flatten and not getattr(patch, 'polygon_support', False)
+                                and bool(foot_normal_forces[0, patch_foot] >= 20.)
+                                and int(controller_contact_plan.item()) & (1 << patch_foot)):
+                            # Only a measured loaded, planned stance foot receives
+                            # this soft landing-recovery objective. Its contact
+                            # rows and physical wrench cone remain measured ones.
+                            flat_phase = min(1., (elapsed_motion_time-args.support_flatten_start)/.1)
+                            flat_blend = flat_phase**3*(10-15*flat_phase+6*flat_phase**2)
+                            if args.support_flatten_gain_scale!=1. or args.support_flatten_feedback_limit!=25.:
+                                from g1_support_flatten import flat_support_target
+                                flatten_task.desired=flat_support_target(
+                                    _quat_xyzw_to_matrix(live_feet[:,patch_foot,3:]),
+                                    getattr(patch,'sole_frame',patch.frame),patch.frame,
+                                    mapped_jac[:,3:],qd,gain_scale=args.support_flatten_gain_scale,
+                                    feedback_limit=args.support_flatten_feedback_limit)
+                            toe_task.desired = torch.lerp(toe_task.desired, flatten_task.desired, flat_blend)
+                            toe_task.metric = torch.lerp(toe_task.metric, flatten_task.metric, flat_blend)
+                            support_flatten_weights[:, patch_foot] = flat_blend
+                        contact_patch_tasks[patch_foot]=toe_task
+                        fabric.dynamics_tasks.last_requests.append(toe_task)
+            if control_time>=args.late_contact_stabilization_start:
+                from dataclasses import replace as replace_projection
+                contact_phase=min(1.,max(0.,(control_time-args.late_contact_stabilization_start)/.04))
+                contact_blend=contact_phase**3*(10-15*contact_phase+6*contact_phase**2)
+                projector.projection_config=replace_projection(projector.projection_config,
+                    contact_kp=args.contact_stabilization_kp+contact_blend*(args.late_contact_stabilization_kp-args.contact_stabilization_kp),
+                    contact_kd=args.contact_stabilization_kd+contact_blend*(args.late_contact_stabilization_kd-args.contact_stabilization_kd),
+                    contact_stabilization_mask=(1.,1.,1.,1.,1.,1.))
             output = projector.step(
                 acc_fabric=qdd_fabric,
-                mass_matrix=mass,
+                mass_matrix=preserve_com_acceleration(mass,
+                    fabric.dynamics_tasks.last_snapshot['com_jac'], args.com_acceleration_preservation_weight)
+                    if args.com_acceleration_preservation_weight else mass,
                 generalized_velocity=qd,
                 left_foot_jacobian=left_j,
                 right_foot_jacobian=right_j,
@@ -3986,8 +5414,8 @@ def main() -> None:
             )
             previous_contact_active = current_contact_active
             qdd_dc = qdd_fabric if args.g1_md else output.acc_dc
-            # With task_requests the QP ignores this projected reference;
-            # it remains useful for diagnostics and extracting command sync.
+            # Acceleration-only tracking uses this projected acceleration as
+            # the QP target, with the same contact rows and stabilized bias.
             contact_jacobian = torch.cat((left_j, right_j), dim=1)
             # The projector's finite-difference estimator and the QP must use
             # the same Jdot*v value. Recover it from the reported residual:
@@ -4024,10 +5452,22 @@ def main() -> None:
                 )
             )
             command_acc_lower = -acceleration_limits.unsqueeze(0).clone()
-            friction_blocks=[(friction_G[:,20*i:20*(i+1)],friction_b[:,20*i:20*(i+1)]) for i in range(2)]
+            friction_blocks=split_foot_wrench_constraints(friction_G,friction_b)
             for patch_foot,patch in contact_patches.items():
                 # Toe wrench coordinates are local to its fixed horizontal
                 # frame at its material anchor. Each foot has its own patch.
+                if elapsed_motion_time>=args.contact_friction_refine_start:
+                    from inscribed_patch_wrench import observed_patch_constraints
+                    patch_G,patch_b=observed_patch_constraints(patch,
+                        _quat_xyzw_to_matrix(live_feet[:,patch_foot,3:]),
+                        acceleration_qp.friction_coefficient,acceleration_qp.maximum_normal_force,
+                        args.contact_friction_rays,
+                        minimum_normal_force=20. if not patch.polygon_support and int(output.contact_mode.item()) in (1,2) else 0.,
+                        yaw_limit=None if patch.polygon_support else acceleration_qp.yaw_friction_coefficient)
+                    block=patch_G.new_zeros(1,patch_G.shape[1],12)
+                    block[:,:,6*patch_foot:6*(patch_foot+1)]=patch_G
+                    friction_blocks[patch_foot]=(block,patch_b)
+                    continue
                 if getattr(patch,'polygon_support',False):
                     polygon_G,polygon_b=patch.wrench_constraints(
                         _quat_xyzw_to_matrix(live_feet[:,patch_foot,3:]),
@@ -4048,6 +5488,21 @@ def main() -> None:
                 friction_blocks[patch_foot]=(line_G[:,rows],line_b[:,rows])
             friction_G=torch.cat([block[0] for block in friction_blocks],dim=1)
             friction_b=torch.cat([block[1] for block in friction_blocks],dim=1)
+            if elapsed_motion_time>=args.support_load_floor_start:
+                from support_load_floor import support_load_floor
+                load_phase=min(1.,max(0.,(elapsed_motion_time-args.support_load_floor_start)/.06))
+                load_blend=load_phase**3*(10-15*load_phase+6*load_phase**2)
+                support_minimum = args.support_load_floor
+                if args.late_support_load_floor is not None and elapsed_motion_time > args.late_support_load_floor_start:
+                    late_load_phase = min(1., (elapsed_motion_time-args.late_support_load_floor_start)/args.late_support_load_floor_ramp)
+                    late_load_blend = late_load_phase**3*(10-15*late_load_phase+6*late_load_phase**2)
+                    support_minimum += late_load_blend*(args.late_support_load_floor-support_minimum)
+                load_G,load_b=support_load_floor(output.contact_mode,foot_normal_forces,
+                    support_minimum*load_blend,acceleration_qp.maximum_normal_force,
+                    preferred_mode=controller_contact_plan if args.support_load_floor_transfer else None)
+                friction_G=torch.cat((friction_G,load_G),dim=1)
+                friction_b=torch.cat((friction_b,load_b),dim=1)
+
             command_acc_upper = acceleration_limits.unsqueeze(0).clone()
             if args.direct_wbc:
                 # Only a one-step prediction for physical limit checks/logging;
@@ -4085,17 +5540,30 @@ def main() -> None:
                 blend = min(1., max(0., (control_time-args.motion_warmup_duration)/.5))
                 if blend > 0:
                     damper_time = args.joint_limit_time_constant * (3*blend**2-2*blend**3)
+            physical_braking_active=args.acceleration_and_braking_limits or elapsed_motion_time>=args.physical_braking_start
             try:
-                if args.acceleration_and_braking_limits:
-                    physical_lower[:, 6:], physical_upper[:, 6:] = measured_joint_acceleration_bounds(
-                        joint_position, joint_velocity, joint_position_limits[:, :, 0],
-                        joint_position_limits[:, :, 1], FABRIC_TIMESTEP, velocity_damper_time=damper_time,
+                if physical_braking_active:
+                    braking_joint_start = (12 if (args.physical_braking_upper_only or args.physical_braking_waist_only)
+                                           and not args.acceleration_and_braking_limits else 0)
+                    braking_joint_end = (15 if args.physical_braking_waist_only
+                                         and not args.acceleration_and_braking_limits else joint_position.shape[1])
+                    braking_slice = slice(braking_joint_start, braking_joint_end)
+                    acceleration_slice = slice(6+braking_joint_start, 6+braking_joint_end)
+                    if args.physical_braking_joints is not None:
+                        braking_slice, acceleration_slice = named_braking_coordinates(
+                            G1_JOINT_NAMES, args.physical_braking_joints)
+                    physical_lower[:, acceleration_slice], physical_upper[:, acceleration_slice] = measured_joint_acceleration_bounds(
+                        joint_position[:,braking_slice], joint_velocity[:,braking_slice], joint_position_limits[:, braking_slice, 0],
+                        joint_position_limits[:, braking_slice, 1], FABRIC_TIMESTEP, velocity_damper_time=damper_time,
                         barrier_bandwidth=args.joint_limit_barrier_bandwidth,
                         impact_recovery=args.joint_limit_impact_recovery)
             except ValueError as exc:
                 save_reference_failure(args,exc,control_time,q,qd,foot_normal_forces,
                                        tracking_history,servo_history)
                 raise
+            if physical_braking_active and not args.acceleration_and_braking_limits and args.physical_braking_upper_only:
+                physical_lower[:,:18]=-float('inf')
+                physical_upper[:,:18]=float('inf')
             integration_seed_velocity = joint_velocity_desired.clone()
             servo_bias, servo_acc_gain = integrated_servo_model(
                 joint_position_desired, joint_velocity_desired,
@@ -4134,13 +5602,53 @@ def main() -> None:
                         wrench_weights[:,6*outgoing+2] = weight
                     else:
                         wrench_weights[:,6*outgoing:6*outgoing+6] = weight
+            retain_source_support = False
+            if (control_time>=args.retain_planned_support_start and int(output.contact_mode.item())==3
+                    and int(controller_contact_plan.item())==3 and measured_steps is not None):
+                # A measured landing gate can extend double support beyond
+                # the raw source plan. Retain support according to that same
+                # effective plan used by the contact state machine.
+                pending_events=[event for event in measured_steps.events
+                    if event['takeoff_frame']>frame_position and (event['takeoff_frame']-frame_position)/motion_fps<=.15]
+                if pending_events:
+                    event=pending_events[0];outgoing=1-event['support']
+                    # Existing ground contact is required; this force objective never creates contact rows.
+                    if float(foot_normal_forces[0,outgoing])>=10.:
+                        retain_source_support=True
+                        wrench_reference=torch.zeros((1,12),device=device,dtype=q.dtype)
+                        wrench_weights=torch.zeros_like(wrench_reference)
+                        wrench_reference[:,6*outgoing+2]=args.retain_planned_support_force
+                        wrench_weights[:,6*outgoing+2]=1.
+            unload_intended_mode=int(planned_contact_mode.item())
+            unload_intended_reason='source_plan'
+            if elapsed_motion_time>=args.landing_gated_unload_start and measured_steps is not None:
+                from landing_gated_unload import intended_unload_mode
+                unload_original_feet=reference_feet_transforms(fabric,audit_reference_q)
+                unload_intended_mode,unload_intended_reason=intended_unload_mode(measured_steps,frame_position,
+                    _to_numpy(live_feet[0,:,:3]),_to_numpy(unload_original_feet[0,:,:3]),unload_intended_mode)
+            if elapsed_motion_time>=args.anticipate_unload_start and measured_steps is not None and int(output.contact_mode.item())==3:
+                from landing_gated_unload import anticipatory_unload_mode
+                unload_original_feet=reference_feet_transforms(fabric,audit_reference_q)
+                unload_intended_mode,anticipated=anticipatory_unload_mode(measured_steps,frame_position,
+                    _to_numpy(live_feet[0,:,:3]),_to_numpy(unload_original_feet[0,:,:3]),
+                    _to_numpy(foot_normal_forces[0]),motion_fps,unload_intended_mode,horizon=args.anticipate_unload_horizon,hysteresis=args.anticipate_unload_hysteresis,allow_overdue=args.anticipate_unload_overdue,error_limit=args.anticipate_unload_error_limit)
+                if anticipated:unload_intended_reason='anticipate_next_takeoff_after_load_hold'
             dynamic_unloading = (args.motion_start_in_motion and args.dynamic_unload_weight > 0
-                and int(output.contact_mode.item()) == 3 and int(planned_contact_mode.item()) in (1,2))
+                and int(output.contact_mode.item()) == 3 and unload_intended_mode in (1,2))
             if dynamic_unloading:
-                outgoing = 2-int(planned_contact_mode.item())
+                outgoing = 2-unload_intended_mode
+                unload_ramp=args.late_unload_ramp if elapsed_motion_time>=args.late_unload_start else .05
                 if direct_unload_event != outgoing:
                     direct_unload_event, direct_unload_started = outgoing, control_time
-                phase = min(1.,max(0.,(control_time-direct_unload_started)/.05))
+                    direct_unload_deadline_ramp = unload_ramp
+                    if elapsed_motion_time >= args.unload_deadline_start and measured_steps is not None:
+                        from g1_unload_timing import unload_ramp_for_source
+                        direct_unload_deadline_ramp = unload_ramp_for_source(
+                            measured_steps.events, frame_position, frame_rate,
+                            outgoing, unload_ramp, FABRIC_TIMESTEP)
+                if elapsed_motion_time >= args.unload_deadline_start and measured_steps is not None:
+                    unload_ramp = direct_unload_deadline_ramp
+                phase = min(1.,max(0.,(control_time-direct_unload_started)/unload_ramp))
                 blend = phase**3*(10.-15.*phase+6.*phase**2)
                 wrench_reference = torch.zeros((1,12),device=device,dtype=q.dtype)
                 wrench_weights = torch.zeros_like(wrench_reference)
@@ -4152,7 +5660,17 @@ def main() -> None:
             acceleration_qp.wrench_weight = (args.mocap_unload_weight if wrench_weights is not None else
                 .01 if support_switch is not None or source_step_number > 1 else 1e-4)
             if dynamic_unloading:
-                acceleration_qp.wrench_weight = args.dynamic_unload_weight
+                acceleration_qp.wrench_weight = args.late_unload_weight if elapsed_motion_time>=args.late_unload_start else args.dynamic_unload_weight
+                if elapsed_motion_time >= args.unload_deadline_start and args.unload_deadline_weight is not None:
+                    acceleration_qp.wrench_weight = args.unload_deadline_weight
+                if args.final_unload_weight is not None and elapsed_motion_time > args.final_unload_start:
+                    if (not math.isfinite(args.final_unload_weight) or args.final_unload_weight<=0
+                            or not math.isfinite(args.final_unload_ramp) or args.final_unload_ramp<=0):
+                        raise ValueError('Final unloading cost requires positive finite weight and ramp')
+                    unload_weight_phase=min(1.,(elapsed_motion_time-args.final_unload_start)/args.final_unload_ramp)
+                    unload_weight_blend=unload_weight_phase**3*(10-15*unload_weight_phase+6*unload_weight_phase**2)
+                    acceleration_qp.wrench_weight+=unload_weight_blend*(args.final_unload_weight-acceleration_qp.wrench_weight)
+            if retain_source_support:acceleration_qp.wrench_weight=args.retain_planned_support_weight
             height_priority = (False)
             swing_com_priority = (False)
             com_priority_projection = None
@@ -4171,6 +5689,15 @@ def main() -> None:
                 priority_tasks += ("feet_pose",)
                 if not args.swing_pose_priority:
                     priority_rows["feet_pose"] = (0, 1, 2, 6, 7, 8) if args.swing_position_priority else (2, 8)
+            if 'feet_pose' in priority_tasks and elapsed_motion_time>=args.full_swing_pose_start:
+                priority_rows['feet_pose']=tuple(range(12))
+            if task_feedback_enabled and (elapsed_motion_time>=args.transition_swing_priority_start):
+                from transition_swing_task import activate_transition_swing
+                transition_rows=activate_transition_swing(fabric.dynamics_tasks.last_requests,
+                    int(output.contact_mode.item()),unload_intended_mode,foot_normal_forces[0])
+                if transition_rows is not None:
+                    priority_tasks+=("feet_pose",)
+                    priority_rows["feet_pose"]=transition_rows
             if priority_tasks and (args.upper_body_priority or args.whole_body_posture_priority):
                 priority_tasks += ("body_orientation", "joint_posture")
                 priority_rows["joint_posture"] = tuple(range(0 if args.whole_body_posture_priority else 12,29))
@@ -4183,6 +5710,18 @@ def main() -> None:
                         # Completing that rotation creates a bearing sole;
                         # hard contact rows and available moments stay unchanged.
                         priority_tasks += (contact_patch_tasks[patch_foot].name,)
+            if elapsed_motion_time>=args.support_orientation_priority_start:
+                for support_request in contact_patch_tasks.values():
+                    priority_tasks += (support_request.name,)
+                    support_scale=args.support_orientation_metric_scale
+                    if args.support_orientation_roll_pitch_only:
+                        # A point/edge contact may freely tilt. Keep those
+                        # source-foot orientation rows in the first solve;
+                        # yaw remains secondary during loaded support.
+                        priority_rows[support_request.name]=(0,1)
+                        tilt_phase=min(1.,max(0.,(elapsed_motion_time-args.support_orientation_priority_start)/.06))
+                        support_scale*=tilt_phase**3*(10-15*tilt_phase+6*tilt_phase**2)
+                    support_request.metric *= support_scale
             priority_levels = None
             # Body selection can overlap the whole-body/upper-body selection.
             # Each task must occur once in the hierarchy's partition.
@@ -4211,6 +5750,20 @@ def main() -> None:
                 priority_tasks = ("center_of_mass", "joint_posture")
                 priority_rows = {"joint_posture": tuple(range(12))}
                 priority_levels = (("center_of_mass",), ("joint_posture",))
+            if elapsed_motion_time>=args.stance_posture_secondary_start and 'joint_posture' in priority_tasks:
+                # Keep the complete posture task in the final solve. The first
+                # stage must let loaded legs realize balance/contact tracking.
+                loaded_mode=int(output.contact_mode.item())
+                primary_joint_rows=list(range(12,29))
+                if not loaded_mode&1:primary_joint_rows+=list(range(6))
+                if not loaded_mode&2:primary_joint_rows+=list(range(6,12))
+                priority_rows['joint_posture']=tuple(sorted(primary_joint_rows))
+            if elapsed_motion_time>=args.leg_posture_secondary_start and 'joint_posture' in priority_tasks:
+                # Foot-space tracking and fixed contact anchors determine the
+                # legs at the current floating-base pose. Keep source leg
+                # posture as a secondary objective rather than locking its
+                # incompatible source-base solution in the same first stage.
+                priority_rows['joint_posture']=tuple(range(12,29))
             from fabrics_sim.reference.source_priority import source_swing_priority
             source_priority = source_swing_priority(args.source_swing_position_priority or args.source_swing_pose_priority,
                 source_step_rollout is not None, support_switch is not None,
@@ -4219,16 +5772,99 @@ def main() -> None:
             if source_priority is not None:
                 priority_tasks, priority_rows, priority_levels = source_priority
                 com_priority_projection = None
-            if args.joint_limit_avoidance_weight > 0:
-                fabric.dynamics_tasks.last_requests.append(joint_limit_avoidance_request(
+            if control_time>=args.swing_balance_priority_start:
+                priority_tasks=('feet_pose',) if args.swing_only_priority else ('center_of_mass','feet_pose')
+                priority_rows={'feet_pose':tuple(range(12)) if elapsed_motion_time>=args.full_swing_pose_start else (0,1,2,6,7,8)}
+                priority_levels=None
+                com_priority_projection=None
+            if task_feedback_enabled and (elapsed_motion_time>=args.late_momentum_priority_start):
+                priority_tasks=tuple(dict.fromkeys(priority_tasks+('centroidal_momentum',)))
+                priority_levels=None
+                if args.late_momentum_roll_only:
+                    priority_rows['centroidal_momentum']=(0,)
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='centroidal_momentum':
+                        scale=args.late_momentum_metric_scale
+                        if args.late_momentum_feedback_damping is not None:
+                            if not math.isfinite(args.late_momentum_feedback_damping) or args.late_momentum_feedback_damping<=0:
+                                raise ValueError('Momentum feedback damping must be finite and positive')
+                            dynamics=fabric.dynamics_tasks
+                            if args.late_momentum_zero_target:
+                                request.desired=-args.late_momentum_feedback_damping*dynamics.last_snapshot['momentum']
+                            else:
+                                request.desired=dynamics.momentum_rate_reference-args.late_momentum_feedback_damping*(dynamics.last_snapshot['momentum']-dynamics.momentum_reference)
+                            mp_phase=min(1.,max(0.,(elapsed_motion_time-args.late_momentum_priority_start)/.06))
+                            scale*=mp_phase**3*(10-15*mp_phase+6*mp_phase**2)
+                        if args.late_momentum_total_rate_limit is not None:
+                            if not math.isfinite(args.late_momentum_total_rate_limit) or args.late_momentum_total_rate_limit<=0:
+                                raise ValueError('Momentum rate limit must be finite and positive')
+                            request.desired=request.desired.clamp(-args.late_momentum_total_rate_limit,args.late_momentum_total_rate_limit)
+                        request.metric*=scale
+            if task_feedback_enabled and (elapsed_motion_time>=args.late_pelvis_priority_start):
+                priority_tasks=tuple(dict.fromkeys(priority_tasks+('source_pelvis_orientation',)))
+                priority_levels=None
+                if args.late_pelvis_axes is not None:
+                    if args.late_pelvis_yaw_only or len(set(args.late_pelvis_axes))!=len(args.late_pelvis_axes):
+                        raise ValueError('Pelvis axes must be distinct and cannot combine with yaw-only')
+                    priority_rows['source_pelvis_orientation']=tuple('xyz'.index(axis) for axis in args.late_pelvis_axes)
+                if args.late_pelvis_yaw_only:
+                    priority_rows['source_pelvis_orientation']=(2,)
+                if args.late_pelvis_metric_scale!=1.:
+                    if not math.isfinite(args.late_pelvis_metric_scale) or args.late_pelvis_metric_scale<=0:
+                        raise ValueError('Late pelvis metric scale must be finite and positive')
+                    for request in fabric.dynamics_tasks.last_requests:
+                        if request.name=='source_pelvis_orientation':
+                            request.metric*=args.late_pelvis_metric_scale
+            if elapsed_motion_time>=args.late_balance_hierarchy_start:
+                balance_names=(('source_pelvis_orientation',) if args.late_balance_hierarchy=='body'
+                    else ('center_of_mass',) if args.late_balance_hierarchy in ('y','xy','xyz')
+                    else ('center_of_mass','body_orientation','source_pelvis_orientation'))
+                priority_tasks=tuple(dict.fromkeys(priority_tasks+balance_names))
+                if 'center_of_mass' in balance_names:
+                    priority_rows['center_of_mass'] = ((0,1,2) if args.late_balance_hierarchy in ('xyz','xyz-body')
+                        else (1,) if args.late_balance_hierarchy == 'y' else (0,1))
+                remaining=tuple(n for n in priority_tasks if n not in balance_names)
+                priority_levels=(balance_names,remaining) if remaining else (balance_names,)
+            if task_feedback_enabled and (args.joint_limit_avoidance_weight > 0):
+                avoidance_request=joint_limit_avoidance_request(
                     joint_position, joint_velocity, joint_position_limits[:, :, 0],
-                    joint_position_limits[:, :, 1], args.joint_limit_avoidance_weight))
+                    joint_position_limits[:, :, 1], args.joint_limit_avoidance_weight)
+                if elapsed_motion_time>=args.joint_limit_priority_start:
+                    # A full-rank first stage otherwise leaves this braking task
+                    # no acceleration freedom in the lower-priority solve.
+                    brake_phase=min(1.,max(0.,(elapsed_motion_time-args.joint_limit_priority_start)/.06))
+                    avoidance_request.metric*=brake_phase**3*(10-15*brake_phase+6*brake_phase**2)
+                    if args.joint_limit_priority_upper_only:
+                        avoidance_request.metric[:, 12:, 12:] *= args.joint_limit_priority_scale
+                    else:
+                        avoidance_request.metric *= args.joint_limit_priority_scale
+                    priority_tasks=tuple(dict.fromkeys(priority_tasks+(avoidance_request.name,)))
+                    if args.joint_limit_priority_upper_only:
+                        priority_rows[avoidance_request.name]=tuple(range(12,29))
+                    if priority_levels is not None:
+                        priority_levels=(priority_levels[0]+(avoidance_request.name,),)+priority_levels[1:]
+                fabric.dynamics_tasks.last_requests.append(avoidance_request)
             if args.joint_velocity_limits:
                 speed_C,speed_d = joint_velocity_constraints(joint_velocity,joint_velocity_limits,FABRIC_TIMESTEP)
                 task_acceleration_constraints = ((speed_C,speed_d) if task_acceleration_constraints is None else
                     (torch.cat((task_acceleration_constraints[0],speed_C),dim=1),
                      torch.cat((task_acceleration_constraints[1],speed_d),dim=1)))
-            if args.g1_md:
+            knee_guard_diagnostic = {}
+            if args.support_knee_min_angle is not None:
+                from g1_support_knee import support_knee_constraints
+                knee_guard_active = elapsed_motion_time >= args.support_knee_guard_start
+                knee_C, knee_d, knee_fields = support_knee_constraints(
+                    joint_position, joint_velocity,
+                    current_contact_active if knee_guard_active else torch.zeros_like(current_contact_active),
+                    minimum_angle=args.support_knee_min_angle,
+                    bandwidth=args.support_knee_guard_bandwidth,
+                    knee_indices=tuple(G1_JOINT_NAMES.index(f'{side}_knee_joint') for side in ('left', 'right')))
+                knee_guard_diagnostic = {key: _to_numpy(value).copy() for key, value in knee_fields.items()}
+                if knee_guard_active:
+                    task_acceleration_constraints = ((knee_C, knee_d) if task_acceleration_constraints is None else
+                        (torch.cat((task_acceleration_constraints[0], knee_C), dim=1),
+                         torch.cat((task_acceleration_constraints[1], knee_d), dim=1)))
+            if task_feedback_enabled and (args.g1_md):
                 from fabrics_sim.solver.fabric_mit import compose_task_policy
                 try:
                     qdd_fabric, composed_policy = compose_task_policy(
@@ -4245,8 +5881,771 @@ def main() -> None:
                 qp_reference = synchronize_command_acceleration(
                     qdd_fabric, joint_position_desired, joint_velocity_desired,
                     joint_position, joint_velocity, stiffness=20., damping=8., limit=30.)
+            # Diagnostic: independently bound vertical swing feedback so that
+            # horizontal lag cannot consume the entire XYZ feedback allowance.
+            feedback_phase = min(1., max(0., (elapsed_motion_time-args.vertical_feedback_start)/.02))
+            feedback_blend = feedback_phase**3*(10.-15.*feedback_phase+6.*feedback_phase**2)
+            if task_feedback_enabled and (feedback_blend > 0):
+                dynamics = fabric.dynamics_tasks
+                foot_map = fabric.feet_pose_taskmap
+                foot_indices = [dynamics.model.kinematics.get_link_index(foot_map.frame_groups[n][0])
+                    for n in foot_map.end_effector_order]
+                foot_position = dynamics.last_snapshot['transforms'][:,foot_indices,:3]
+                foot_params = fabric.fabric_params['feet_pose_attractor']
+                for request in dynamics.last_requests:
+                    if request.name != 'feet_pose':
+                        continue
+                    ref_velocity, ref_acceleration = dynamics.references(
+                        fabric.fabrics_features['feet_pose']['feet_pose_attractor'], request.desired)
+                    actual_velocity = (request.A @ qd[...,None]).squeeze(-1)
+                    for foot, row in enumerate((2,8)):
+                        feedback = (-foot_params['stiffness'][row]*(foot_position[:,foot,2]-foot_map.position_target[:,foot,2])
+                            -foot_params['damping'][row]*(actual_velocity[:,row]-ref_velocity[:,row]))
+                        desired = ref_acceleration[:,row]+feedback.clamp(-40.,40.)
+                        request.desired[:,row] += feedback_blend*(desired-request.desired[:,row])
+                        request.metric[:,row,row] *= 1.+3.*feedback_blend
+            horizontal_phase=min(1.,max(0.,(elapsed_motion_time-args.horizontal_feedback_start)/.04))
+            horizontal_blend=horizontal_phase**3*(10-15*horizontal_phase+6*horizontal_phase**2)
+            if task_feedback_enabled and (horizontal_blend>0):
+                dynamics=fabric.dynamics_tasks;foot_map=fabric.feet_pose_taskmap
+                foot_indices=[dynamics.model.kinematics.get_link_index(foot_map.frame_groups[n][0]) for n in foot_map.end_effector_order]
+                positions=dynamics.last_snapshot['transforms'][:,foot_indices,:3]
+                foot_params=fabric.fabric_params['feet_pose_attractor']
+                for request in dynamics.last_requests:
+                    if request.name!='feet_pose':continue
+                    rv,ra=dynamics.references(fabric.fabrics_features['feet_pose']['feet_pose_attractor'],request.desired)
+                    actual=(request.A@qd[...,None]).squeeze(-1)
+                    for foot in range(2):
+                        for axis in range(2):
+                            row=foot*6+axis
+                            feedback=-foot_params['stiffness'][row]*(positions[:,foot,axis]-foot_map.position_target[:,foot,axis])-foot_params['damping'][row]*(actual[:,row]-rv[:,row])
+                            new=ra[:,row]+feedback.clamp(-args.horizontal_feedback_limit,args.horizontal_feedback_limit)
+                            request.desired[:,row]+=horizontal_blend*(new-request.desired[:,row])
+                            request.metric[:,row,row]*=1+(args.horizontal_feedback_metric_scale-1)*horizontal_blend
+            # An unloaded ankle can recover its pose without trying to impose
+            # the source's stance geometry on the measured support contact.
+            flight_mode = int(output.contact_mode.item())
+            flight_feet = ([0] if flight_mode == 2 else [1] if flight_mode == 1 else [0,1] if flight_mode == 0 else [])
+            feedback_phase = min(1.,max(0.,(elapsed_motion_time-args.flight_feedback_start)/args.flight_feedback_ramp))
+            flight_blend = feedback_phase**3*(10.-15.*feedback_phase+6.*feedback_phase**2)
+            if task_feedback_enabled and (flight_feet and flight_blend > 0):
+                joint_params = fabric.fabric_params['joint_posture_attractor']
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name != 'joint_posture':
+                        continue
+                    ref_v, ref_a = fabric.dynamics_tasks.references(
+                        fabric.fabrics_features['joint_posture']['joint_posture_attractor'], request.desired)
+                    feedback = (-joint_params['stiffness']*(q[:,7:]-fabric.joint_posture_taskmap.position_target)
+                        -joint_params['damping']*(qd[:,6:]-ref_v))
+                    for foot in flight_feet:
+                        phase=min(1.,max(0.,(elapsed_motion_time-args.foot_feedback_starts[foot])/args.flight_feedback_ramp))
+                        flight_blend=phase**3*(10-15*phase+6*phase**2)
+                        rows = [index for index,name in enumerate(G1_JOINT_NAMES)
+                            if name.startswith(('left_' if foot==0 else 'right_'))
+                            and (('ankle_' in name) if args.foot_feedback_joints[foot]=='ankles' else index<12)]
+                        new_desired = ref_a[:,rows]+feedback[:,rows].clamp(
+                            -args.foot_feedback_limits[foot],args.foot_feedback_limits[foot])
+                        request.desired[:,rows] += flight_blend*(new_desired-request.desired[:,rows])
+            late_phase=min(1.,max(0.,(elapsed_motion_time-args.late_leg_feedback_start)/.04))
+            late_blend=late_phase**3*(10-15*late_phase+6*late_phase**2)
+            if task_feedback_enabled and (late_blend>0):
+                selected=([0,1] if args.late_leg_feedback_side=='both' else [1])
+                selected=[f for f in selected if args.late_leg_feedback_stance or f in flight_feet]
+                rows=[j for f in selected for j in range(6*f,6*f+6)]
+                if rows:
+                    joint_params=fabric.fabric_params['joint_posture_attractor']
+                    for request in fabric.dynamics_tasks.last_requests:
+                        if request.name!='joint_posture':continue
+                        rv,ra=fabric.dynamics_tasks.references(fabric.fabrics_features['joint_posture']['joint_posture_attractor'],request.desired)
+                        feedback=-joint_params['stiffness']*(q[:,7:]-fabric.joint_posture_taskmap.position_target)-joint_params['damping']*(qd[:,6:]-rv)
+                        new=ra[:,rows]+feedback[:,rows].clamp(-args.late_leg_feedback_limit,args.late_leg_feedback_limit)
+                        request.desired[:,rows]+=late_blend*(new-request.desired[:,rows])
+            phase=min(1.,max(0.,(elapsed_motion_time-args.waist_feedback_start)/.06));waist_blend=phase**3*(10-15*phase+6*phase**2)
+            if task_feedback_enabled and (waist_blend>0):
+                joint_params=fabric.fabric_params['joint_posture_attractor']
+                waist_metric_scale = args.waist_metric_scale
+                if args.late_waist_metric_scale is not None and elapsed_motion_time >= args.late_waist_metric_start:
+                    late_waist_phase = min(1., (elapsed_motion_time-args.late_waist_metric_start)/args.late_waist_metric_ramp)
+                    late_waist_blend = late_waist_phase**3*(10-15*late_waist_phase+6*late_waist_phase**2)
+                    waist_metric_scale += late_waist_blend*(args.late_waist_metric_scale-waist_metric_scale)
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name!='joint_posture':continue
+                    rv,ra=fabric.dynamics_tasks.references(fabric.fabrics_features['joint_posture']['joint_posture_attractor'],request.desired)
+                    feedback=-joint_params['stiffness']*(q[:,7:]-fabric.joint_posture_taskmap.position_target)-joint_params['damping']*(qd[:,6:]-rv)
+                    rows=list(range(12,15));new=ra[:,rows]+feedback[:,rows].clamp(-args.waist_feedback_limit,args.waist_feedback_limit)
+                    request.desired[:,rows]+=waist_blend*(new-request.desired[:,rows])
+                    for row in rows:request.metric[:,row,row]*=1+(waist_metric_scale-1)*waist_blend
+            com_feedback_phase=min(1.,max(0.,(elapsed_motion_time-args.com_feedback_start)/.06))
+            com_feedback_blend=com_feedback_phase**3*(10-15*com_feedback_phase+6*com_feedback_phase**2)
+            if task_feedback_enabled and (com_feedback_blend>0):
+                if not math.isfinite(args.com_feedback_limit) or args.com_feedback_limit<=0 or not math.isfinite(args.com_feedback_gain_scale) or args.com_feedback_gain_scale<=0:
+                    raise ValueError('COM feedback parameters must be finite and positive')
+                dynamics=fabric.dynamics_tasks;state=dynamics.last_snapshot;params=fabric.fabric_params['center_of_mass_attractor']
+                for request in dynamics.last_requests:
+                    if request.name!='center_of_mass':continue
+                    rv,ra=dynamics.references(fabric.fabrics_features['center_of_mass']['center_of_mass_attractor'],request.desired)
+                    K=q.new_tensor(params['stiffness'])*args.com_feedback_gain_scale
+                    D=q.new_tensor(params['damping'])*math.sqrt(args.com_feedback_gain_scale)
+                    error=state['com']-fabric.center_of_mass_taskmap.position_target
+                    velocity=(state['com_jac']@qd[...,None]).squeeze(-1)-rv
+                    desired=ra+(-K*error-D*velocity).clamp(-args.com_feedback_limit,args.com_feedback_limit)
+                    axes=slice(0,2) if args.com_feedback_axes=='xy' else slice(None)
+                    request.desired[:,axes]+=com_feedback_blend*(desired[:,axes]-request.desired[:,axes])
+            com_phase=min(1.,max(0.,(elapsed_motion_time-args.com_feedback_metric_start)/.06))
+            com_blend=com_phase**3*(10-15*com_phase+6*com_phase**2)
+            if task_feedback_enabled and (com_blend>0 and args.com_feedback_metric_scale!=1):
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        request.metric*=1+(args.com_feedback_metric_scale-1)*com_blend
+            if (task_feedback_enabled and args.late_com_metric_scale is not None
+                    and elapsed_motion_time>=args.late_com_metric_start):
+                if (not math.isfinite(args.late_com_metric_scale) or args.late_com_metric_scale<=0
+                        or not math.isfinite(args.late_com_metric_ramp) or args.late_com_metric_ramp<=0):
+                    raise ValueError('Late COM metric scale and ramp must be finite and positive')
+                phase=min(1.,max(0.,(elapsed_motion_time-args.late_com_metric_start)/args.late_com_metric_ramp))
+                blend=min(1.,max(0.,phase**3*(10.-15.*phase+6.*phase**2)))
+                base_scale=1+(args.com_feedback_metric_scale-1)*com_blend
+                if not math.isfinite(base_scale) or base_scale<=0:
+                    raise ValueError('The base COM metric scale must be finite and positive')
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        factor=1+blend*(args.late_com_metric_scale/base_scale-1)
+                        if args.late_com_metric_axes=='xyz':
+                            request.metric*=factor
+                        else:
+                            # Congruence scaling preserves positive semidefiniteness
+                            # even if a COM metric has coupled horizontal/vertical rows.
+                            axes_scale=request.metric.new_tensor([math.sqrt(factor),math.sqrt(factor),1.])
+                            request.metric*=axes_scale[None,:,None]*axes_scale[None,None,:]
+            global_phase=min(1.,max(0.,(elapsed_motion_time-args.global_posture_feedback_start)/.06))
+            global_blend=global_phase**3*(10-15*global_phase+6*global_phase**2)
+            if task_feedback_enabled and (global_blend>0):
+                joint_params=fabric.fabric_params['joint_posture_attractor']
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name!='joint_posture':continue
+                    rv,ra=fabric.dynamics_tasks.references(fabric.fabrics_features['joint_posture']['joint_posture_attractor'],request.desired)
+                    feedback=-joint_params['stiffness']*(q[:,7:]-fabric.joint_posture_taskmap.position_target)-joint_params['damping']*(qd[:,6:]-rv)
+                    rows=slice(15,29) if args.global_posture_feedback_joints=='arms' else slice(None)
+                    new=ra[:,rows]+feedback[:,rows].clamp(-args.global_posture_feedback_limit,args.global_posture_feedback_limit)
+                    request.desired[:,rows]+=global_blend*(new-request.desired[:,rows])
+                    indices=range(15,29) if args.global_posture_feedback_joints=='arms' else range(29)
+                    for index in indices:request.metric[:,index,index]*=1+(args.global_posture_feedback_metric_scale-1)*global_blend
+            stance_posture_scale = 1.
+            if task_feedback_enabled and (elapsed_motion_time >= args.stance_posture_metric_start):
+                stance_phase = min(1., (elapsed_motion_time-args.stance_posture_metric_start)
+                                   / args.stance_posture_metric_ramp)
+                stance_blend = stance_phase**3*(10.-15.*stance_phase+6.*stance_phase**2)
+                stance_posture_scale += (args.stance_posture_metric_scale-1.)*stance_blend
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name == 'joint_posture':
+                        request.metric = scale_stance_posture_metric(
+                            request.metric, current_contact_active, stance_posture_scale)
+            upper_phase=min(1.,max(0.,(elapsed_motion_time-args.upper_posture_metric_start)/.06))
+            leg_phase=min(1.,max(0.,(elapsed_motion_time-args.leg_posture_metric_start)/.06))
+            leg_blend=leg_phase**3*(10-15*leg_phase+6*leg_phase**2)
+            if task_feedback_enabled and leg_blend>0 and args.leg_posture_metric_scale!=1:
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='joint_posture':
+                        request.metric[:,:12,:12]*=1+(args.leg_posture_metric_scale-1)*leg_blend
+            upper_blend=upper_phase**3*(10-15*upper_phase+6*upper_phase**2)
+            upper_metric_scale = args.upper_posture_metric_scale
+            if args.late_upper_metric_scale is not None and elapsed_motion_time >= args.late_upper_metric_start:
+                upper_late_phase = min(1., (elapsed_motion_time-args.late_upper_metric_start)/args.late_upper_metric_ramp)
+                upper_late_blend = upper_late_phase**3*(10-15*upper_late_phase+6*upper_late_phase**2)
+                upper_metric_scale += upper_late_blend*(args.late_upper_metric_scale-upper_metric_scale)
+            if task_feedback_enabled and (upper_blend>0 and upper_metric_scale!=1):
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='joint_posture':
+                        for joint_index in range(12,29):
+                            request.metric[:,joint_index,joint_index]*=1+(upper_metric_scale-1)*upper_blend
+            late_foot_phase=min(1.,max(0.,(elapsed_motion_time-args.late_foot_metric_start)/.04))
+            late_foot_blend=late_foot_phase**3*(10-15*late_foot_phase+6*late_foot_phase**2)
+            late_foot_multiplier=1+(args.late_foot_metric_scale-1)*late_foot_blend
+            if elapsed_motion_time>args.late_foot_metric_end:
+                if (args.late_foot_metric_end<args.late_foot_metric_start
+                        or not math.isfinite(args.late_foot_metric_end_ramp) or args.late_foot_metric_end_ramp<=0
+                        or not math.isfinite(args.late_foot_metric_end_scale) or args.late_foot_metric_end_scale<=0):
+                    raise ValueError('Invalid foot task weight end transition')
+                end_phase=min(1.,(elapsed_motion_time-args.late_foot_metric_end)/args.late_foot_metric_end_ramp)
+                end_blend=end_phase**3*(10-15*end_phase+6*end_phase**2)
+                late_foot_multiplier+=(args.late_foot_metric_end_scale-late_foot_multiplier)*end_blend
+            foot_metric_side_factor=1.
+            if args.foot_metric_final_scale is not None and elapsed_motion_time > args.foot_metric_final_start:
+                if (not math.isfinite(args.foot_metric_final_scale) or args.foot_metric_final_scale<=0
+                        or not math.isfinite(args.foot_metric_final_ramp) or args.foot_metric_final_ramp<=0):
+                    raise ValueError('Final foot metric transition needs positive finite scale and ramp')
+                final_phase=min(1.,(elapsed_motion_time-args.foot_metric_final_start)/args.foot_metric_final_ramp)
+                final_blend=final_phase**3*(10-15*final_phase+6*final_phase**2)
+                final_multiplier=late_foot_multiplier+(args.foot_metric_final_scale-late_foot_multiplier)*final_blend
+                if args.foot_metric_final_side=='both':
+                    late_foot_multiplier=final_multiplier
+                else:
+                    if late_foot_multiplier<=0 or final_multiplier<=0:
+                        raise ValueError('Per-foot metric transition requires positive multipliers')
+                    foot_metric_side_factor=final_multiplier/late_foot_multiplier
+            if task_feedback_enabled and late_foot_multiplier!=1:
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='feet_pose':request.metric*=late_foot_multiplier
+            if task_feedback_enabled and foot_metric_side_factor!=1:
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='feet_pose':
+                        first=0 if args.foot_metric_final_side=='left' else 6
+                        axes_scale=torch.ones(12,device=request.metric.device,dtype=request.metric.dtype)
+                        axes_scale[first:first+6]=math.sqrt(foot_metric_side_factor)
+                        request.metric*=axes_scale[None,:,None]*axes_scale[None,None,:]
+            body_feedback_phase=min(1.,max(0.,(elapsed_motion_time-args.body_feedback_start)/.06))
+            body_feedback_blend=body_feedback_phase**3*(10-15*body_feedback_phase+6*body_feedback_phase**2)
+            if task_feedback_enabled and (body_feedback_blend>0):
+                if not math.isfinite(args.body_feedback_limit) or args.body_feedback_limit<=0:
+                    raise ValueError('Body feedback limit must be finite and positive')
+                from fabrics_sim.fabrics.dynamics_aware import rotation_error as body_rotation_error
+                from fabrics_sim.taskmaps.g1_end_effector_pose_taskmap import _quat_xyzw_to_matrix as body_reference_rotation
+                dynamics=fabric.dynamics_tasks
+                if dynamics.body_reference is None:
+                    raise ValueError('Body feedback override requires the unified torso reference')
+                body_q,body_v,body_a,body_link=dynamics.body_reference
+                body_index=dynamics.model.kinematics.get_link_index(body_link)
+                body_error=body_rotation_error(dynamics.last_snapshot['rotations'][:,body_index],body_reference_rotation(body_q))
+                body_params=dynamics.config['body']
+                for request in dynamics.last_requests:
+                    if request.name=='body_orientation':
+                        actual_omega=(request.A@qd[...,None]).squeeze(-1)
+                        feedback=-q.new_tensor(body_params['stiffness'])*body_error-q.new_tensor(body_params['damping'])*(actual_omega-body_v)
+                        desired=body_a+feedback.clamp(-args.body_feedback_limit,args.body_feedback_limit)
+                        request.desired+=body_feedback_blend*(desired-request.desired)
+            body_phase=min(1.,max(0.,(elapsed_motion_time-args.late_body_angular_metric_start)/.06))
+            body_blend=body_phase**3*(10-15*body_phase+6*body_phase**2)
+            if task_feedback_enabled and (body_blend>0 and args.late_body_angular_metric_scale!=1):
+                if not math.isfinite(args.late_body_angular_metric_scale) or args.late_body_angular_metric_scale<=0:
+                    raise ValueError('Late body angular metric must be finite and positive')
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='body_orientation':
+                        request.metric*=1+(args.late_body_angular_metric_scale-1)*body_blend
+            linear_foot_phase=min(1.,max(0.,(elapsed_motion_time-args.late_foot_linear_feedback_start)/.06))
+            linear_foot_blend=linear_foot_phase**3*(10-15*linear_foot_phase+6*linear_foot_phase**2)
+            if task_feedback_enabled and linear_foot_blend>0 and args.late_foot_linear_feedback_limit is not None:
+                from g1_foot_linear_feedback import linear_tracking_target
+                dynamics=fabric.dynamics_tasks;taskmap=fabric.feet_pose_taskmap
+                indices=[dynamics.model.kinematics.get_link_index(taskmap.frame_groups[n][0]) for n in taskmap.end_effector_order]
+                params=fabric.fabric_params['feet_pose_attractor']
+                for request in dynamics.last_requests:
+                    if request.name!='feet_pose':continue
+                    rv,ra=dynamics.references(fabric.fabrics_features['feet_pose']['feet_pose_attractor'],request.desired)
+                    desired=linear_tracking_target(dynamics.last_snapshot['transforms'][:,indices,:3],
+                        taskmap.position_target,(request.A@qd[...,None]).squeeze(-1).reshape(len(q),2,6)[:,:,:3],
+                        rv.reshape(len(q),2,6)[:,:,:3],ra.reshape(len(q),2,6)[:,:,:3],
+                        q.new_tensor(params['stiffness']).reshape(2,6)[:,:3],
+                        q.new_tensor(params['damping']).reshape(2,6)[:,:3],args.late_foot_linear_feedback_limit)
+                    rows=request.desired.reshape(len(q),2,6)
+                    for side in (range(2) if args.late_foot_linear_feedback_side=='both' else
+                                 [0 if args.late_foot_linear_feedback_side=='left' else 1]):
+                        rows[:,side,:3]+=linear_foot_blend*(desired[:,side]-rows[:,side,:3])
+            angular_phase=min(1.,max(0.,(elapsed_motion_time-args.late_foot_angular_metric_start)/.06))
+            angular_blend=angular_phase**3*(10-15*angular_phase+6*angular_phase**2)
+            if args.late_foot_angular_metric_end < args.late_foot_angular_metric_start:
+                raise ValueError('Foot orientation weight window must end after its start')
+            angular_end_phase=min(1.,max(0.,(elapsed_motion_time-args.late_foot_angular_metric_end)/.06))
+            angular_blend*=1-angular_end_phase**3*(10-15*angular_end_phase+6*angular_end_phase**2)
+            if task_feedback_enabled and (angular_blend>0 and (
+                    args.late_foot_angular_metric_scale!=1 or args.late_foot_angular_feedback_limit is not None)):
+                if not math.isfinite(args.late_foot_angular_metric_scale) or args.late_foot_angular_metric_scale<=0:
+                    raise ValueError('Late foot angular metric must be finite and positive')
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='feet_pose':
+                        angular_rows=(3,4,5,9,10,11) if args.late_foot_angular_metric_side=='both' else ((3,4,5) if args.late_foot_angular_metric_side=='left' else (9,10,11))
+                        if args.late_foot_angular_feedback_limit is not None:
+                            from g1_foot_angular_feedback import angular_tracking_target
+                            dynamics=fabric.dynamics_tasks;foot_map=fabric.feet_pose_taskmap
+                            indices=[dynamics.model.kinematics.get_link_index(foot_map.frame_groups[n][0])
+                                     for n in foot_map.end_effector_order]
+                            rv,ra=dynamics.references(fabric.fabrics_features['feet_pose']['feet_pose_attractor'],request.desired)
+                            angular_jac=request.A.reshape(len(q),2,6,35)[:,:,3:]
+                            omega=(angular_jac@qd[:,None,:,None]).squeeze(-1)
+                            params=fabric.fabric_params['feet_pose_attractor']
+                            desired=angular_tracking_target(dynamics.last_snapshot['rotations'][:,indices],
+                                _quat_xyzw_to_matrix(foot_map.quaternion_target),omega,
+                                rv.reshape(len(q),2,6)[:,:,3:],ra.reshape(len(q),2,6)[:,:,3:],
+                                q.new_tensor(params['stiffness']).reshape(2,6)[:,3:],
+                                q.new_tensor(params['damping']).reshape(2,6)[:,3:],args.late_foot_angular_feedback_limit)
+                            for side in sorted(set(row//6 for row in angular_rows)):
+                                rows=slice(6*side+3,6*side+6)
+                                request.desired[:,rows]+=angular_blend*(desired[:,side]-request.desired[:,rows])
+                        for row in angular_rows:
+                            request.metric[:,row,row]*=1+(args.late_foot_angular_metric_scale-1)*angular_blend
+            contact_search_active = torch.zeros(len(q), 2, device=q.device, dtype=torch.bool)
+            contact_search_blend = 0.
+            if task_feedback_enabled and elapsed_motion_time > args.foot_contact_search_start:
+                from g1_contact_search import contact_search_target
+                search_phase = min(1., (elapsed_motion_time-args.foot_contact_search_start)/args.foot_contact_search_ramp)
+                contact_search_blend = min(1., max(0., search_phase**3*(10-15*search_phase+6*search_phase**2)))
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name == 'feet_pose':
+                        request.desired, contact_search_active = contact_search_target(
+                            request.desired, live_feet[:, :, :3], fabric.feet_pose_taskmap.position_target,
+                            foot_normal_forces, planned_contact_mode, request.active,
+                            args.foot_contact_search_acceleration, contact_search_blend)
+            # Bound the soft total task request, including feedforward spikes.
+            # Unified reference q/v/a and physical acceleration constraints stay intact.
+            total_phase=min(1.,max(0.,(elapsed_motion_time-args.posture_total_accel_start)/.06))
+            total_blend=total_phase**3*(10-15*total_phase+6*total_phase**2)
+            if task_feedback_enabled and (total_blend>0):
+                if not math.isfinite(args.posture_total_accel_limit) or args.posture_total_accel_limit<=0:
+                    raise ValueError('Posture total acceleration limit must be finite and positive')
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='joint_posture':
+                        bounded=request.desired.clamp(-args.posture_total_accel_limit,args.posture_total_accel_limit)
+                        request.desired+=total_blend*(bounded-request.desired)
+            if args.tracking_tube_soft_weight:
+                acceleration_qp.solver.tube = None
+                acceleration_qp.solver.braking = None
+            soft_joint_braking_weight = 0.
+            if (elapsed_motion_time>=args.tracking_tube_start and elapsed_motion_time<args.tracking_tube_end):
+                from tracking_tube import tracking_tube_constraints
+                tube_sampler = motion_sampler if args.tracking_tube_reference == 'control' else tube_source_sampler
+                tube_q,tube_v,tube_a=tube_sampler.kinematics(frame_position,frame_rate,frame_acceleration)
+                joint_tube_rate=args.tracking_tube_joint_bandwidth
+                if elapsed_motion_time>=args.late_joint_tube_start:
+                    if not math.isfinite(args.late_joint_tube_bandwidth) or args.late_joint_tube_bandwidth<=0:
+                        raise ValueError('Late joint tube bandwidth must be finite and positive')
+                    tube_phase=min(1.,max(0.,(elapsed_motion_time-args.late_joint_tube_start)/.06))
+                    tube_blend=tube_phase**3*(10-15*tube_phase+6*tube_phase**2)
+                    original_rate=args.tracking_tube_joint_bandwidth or args.tracking_tube_bandwidth
+                    joint_tube_rate=original_rate+tube_blend*(args.late_joint_tube_bandwidth-original_rate)
+                tube_rate=args.tracking_tube_bandwidth
+                orientation_tube_rate=args.tracking_tube_orientation_bandwidth
+                if elapsed_motion_time>=args.late_tracking_tube_start:
+                    if not math.isfinite(args.late_tracking_tube_bandwidth) or args.late_tracking_tube_bandwidth<=0:
+                        raise ValueError('Late tracking tube bandwidth must be positive')
+                    phase=min(1.,max(0.,(elapsed_motion_time-args.late_tracking_tube_start)/.1))
+                    blend=phase**3*(10.-15.*phase+6.*phase**2)
+                    tube_rate+=(args.late_tracking_tube_bandwidth-tube_rate)*blend
+                    joint_tube_rate=(joint_tube_rate or args.tracking_tube_bandwidth)*(1-blend)+args.late_tracking_tube_bandwidth*blend
+                    orientation_tube_rate=(orientation_tube_rate or args.tracking_tube_bandwidth)*(1-blend)+args.late_tracking_tube_bandwidth*blend
+                if elapsed_motion_time>=args.late_position_tube_start:
+                    if not math.isfinite(args.late_position_tube_bandwidth) or args.late_position_tube_bandwidth<=0:
+                        raise ValueError('Late position tube bandwidth must be positive')
+                    # Freeze the other row bandwidths before changing position.
+                    joint_tube_rate=joint_tube_rate or tube_rate
+                    orientation_tube_rate=orientation_tube_rate or tube_rate
+                    phase=min(1.,max(0.,(elapsed_motion_time-args.late_position_tube_start)/.1))
+                    blend=phase**3*(10.-15.*phase+6.*phase**2)
+                    tube_rate+=(args.late_position_tube_bandwidth-tube_rate)*blend
+                tube_C,tube_d,tube_diagnostics=tracking_tube_constraints(q,qd,tube_q,tube_v,tube_a,bandwidth=tube_rate,joint_bandwidth=joint_tube_rate,orientation_bandwidth=orientation_tube_rate,
+                    position_radius=(args.position_tube_radius if elapsed_motion_time>=args.position_tube_start else .195),
+                    orientation_radius=(args.orientation_tube_radius
+                        if elapsed_motion_time>=args.orientation_tube_start else .34))
+                if elapsed_motion_time>=args.root_xy_tube_start:
+                    from g1_root_xy_tube import root_xy_tube
+                    xy_C,xy_d,xy_tube_diagnostics=root_xy_tube(q,qd,tube_q,tube_v,tube_a,
+                        radius=args.root_xy_tube_radius,bandwidth=args.root_xy_tube_bandwidth)
+                    task_acceleration_constraints=((xy_C,xy_d) if task_acceleration_constraints is None else
+                        (torch.cat((task_acceleration_constraints[0],xy_C),dim=1),
+                         torch.cat((task_acceleration_constraints[1],xy_d),dim=1)))
+                if elapsed_motion_time >= args.joint_tube_end:
+                    # No retry: choose this auxiliary constraint before the
+                    # sole solve. Joint limits and source fidelity are separate.
+                    tube_C=tube_C.clone();tube_d=tube_d.clone()
+                    tube_C[:,0]=0.;tube_d[:,0]=0.
+                if elapsed_motion_time>=args.position_tube_end:
+                    # Keep physical constraints and original-source validation;
+                    # only this auxiliary acceleration barrier is neutralized.
+                    tube_C=tube_C.clone();tube_d=tube_d.clone()
+                    tube_C[:,1]=0.;tube_d[:,1]=0.
+                if elapsed_motion_time>=args.orientation_tube_end:
+                    # Preserve the three-row recovery interface. This neutralizes
+                    # only the auxiliary orientation CBF, not any physical row
+                    # or the independent original-source fidelity auditor.
+                    tube_C=tube_C.clone();tube_d=tube_d.clone()
+                    tube_C[:,2]=0.;tube_d[:,2]=0.
+                if args.tracking_tube_soft_weight and control_time >= args.tracking_tube_soft_start:
+                    if args.late_tube_soft_weight is not None:
+                        phase=min(1.,max(0.,(elapsed_motion_time-args.late_tube_soft_weight_start)/.06))
+                        blend=phase**3*(10.-15.*phase+6.*phase**2)
+                        tracking_tube_solver.weight=args.tracking_tube_soft_weight+blend*(args.late_tube_soft_weight-args.tracking_tube_soft_weight)
+                    if (args.final_tube_soft_weight is not None
+                            and elapsed_motion_time>=args.final_tube_soft_weight_start):
+                        if (not math.isfinite(args.final_tube_soft_weight)
+                                or args.final_tube_soft_weight<=0
+                                or not math.isfinite(args.final_tube_soft_weight_ramp)
+                                or args.final_tube_soft_weight_ramp<=0):
+                            raise ValueError('Final tube slack weight and ramp must be finite and positive')
+                        phase=min(1.,max(0.,(elapsed_motion_time-args.final_tube_soft_weight_start)/args.final_tube_soft_weight_ramp))
+                        blend=min(1.,max(0.,phase**3*(10.-15.*phase+6.*phase**2)))
+                        base_weight=(tracking_tube_solver.weight if args.late_tube_soft_weight is not None
+                                     else args.tracking_tube_soft_weight)
+                        tracking_tube_solver.weight=base_weight+blend*(args.final_tube_soft_weight-base_weight)
+                    tube_scale = tube_d.new_tensor([.195**2,
+                        (args.position_tube_radius if elapsed_motion_time>=args.position_tube_start else .195)**2,
+                        math.sin((args.orientation_tube_radius if elapsed_motion_time>=args.orientation_tube_start else .34)/2)**2])
+                    acceleration_qp.solver.tube = (tube_C, tube_d, tube_scale)
+                else:
+                    task_acceleration_constraints=((tube_C,tube_d) if task_acceleration_constraints is None else
+                        (torch.cat((task_acceleration_constraints[0],tube_C),dim=1),torch.cat((task_acceleration_constraints[1],tube_d),dim=1)))
+            if (elapsed_motion_time > args.soft_joint_braking_start
+                    and acceleration_qp.solver.tube is not None):
+                from g1_soft_joint_braking import soft_joint_braking_rows
+                brake_phase=min(1.,(elapsed_motion_time-args.soft_joint_braking_start)/.06)
+                soft_joint_braking_weight=args.soft_joint_braking_weight*brake_phase**3*(10-15*brake_phase+6*brake_phase**2)
+                brake_C,brake_d=soft_joint_braking_rows(joint_position,joint_velocity,
+                    joint_position_limits[:,:,0],joint_position_limits[:,:,1],
+                    [G1_JOINT_NAMES.index(name) for name in args.soft_joint_braking_joints],
+                    bandwidth=args.joint_limit_barrier_bandwidth)
+                acceleration_qp.solver.braking=(brake_C,brake_d,soft_joint_braking_weight)
+            acceleration_qp.priority_wrench_reference = (args.tracking_profile is not None
+                and (retain_source_support or (dynamic_unloading and control_time >= .92)))
+            if task_feedback_enabled and (elapsed_motion_time>=args.centroidal_preview_start):
+                if 'late_centroidal_preview' not in locals():
+                    if args.centroidal_preview_walking:
+                        from walking_centroidal_preview import CentroidalPreview
+                    elif args.centroidal_preview_persist_stance:
+                        from persistent_centroidal_preview import CentroidalPreview
+                    else:
+                        from late_centroidal_preview import CentroidalPreview
+                    late_centroidal_preview=CentroidalPreview(fabric,motion_sampler,_to_numpy(motion_planned_modes),motion_fps)
+                if args.centroidal_preview_walking:
+                    late_centroidal_preview.reference_clock=lambda offset: (
+                        motion_start_frame+motion_fps*args.motion_speed*smooth_clock(wall_motion_time+offset,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[0],
+                        motion_fps*args.motion_speed*smooth_clock(wall_motion_time+offset,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[1],
+                        motion_fps*args.motion_speed*smooth_clock(wall_motion_time+offset,args.clock_transition_start,args.clock_transition_ramp,args.clock_final_speed,args.clock_second_start,args.clock_second_ramp,args.clock_second_speed,args.clock_third_start,args.clock_third_ramp,args.clock_third_speed)[2])
+                try:
+                    preview_acc,preview_rate=late_centroidal_preview.update(control_time,frame_position,q,qd,
+                        live_feet,int(output.contact_mode.item()),contact_patches,friction_G,friction_b)
+                except RuntimeError as exc:
+                    args.output_path.with_suffix('.preview.json').write_text(json.dumps(late_centroidal_preview.records,indent=2)+'\n')
+                    save_reference_failure(args,exc,control_time,q,qd,foot_normal_forces,tracking_history,servo_history)
+                    raise
+                preview_phase=min(1.,max(0.,(elapsed_motion_time-args.centroidal_preview_start)/.1))
+                preview_blend=preview_phase**3*(10-15*preview_phase+6*preview_phase**2)
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        axes=slice(0,2) if args.centroidal_preview_walking else slice(None)
+                        request.desired[:,axes]=(1-preview_blend)*request.desired[:,axes]+preview_blend*q.new_tensor(preview_acc)[None,axes]
+                    if request.name=='centroidal_momentum' and args.centroidal_preview_momentum:
+                        request.desired[:]=(1-preview_blend)*request.desired+preview_blend*q.new_tensor(preview_rate)[None]
+                if args.centroidal_preview_momentum:
+                    priority_tasks=tuple(dict.fromkeys(priority_tasks+('centroidal_momentum',)))
+                    priority_levels=None
+                if control_updates%10==0:
+                    args.output_path.with_suffix('.preview.json').write_text(json.dumps(late_centroidal_preview.records,indent=2)+'\n')
+            if task_feedback_enabled and (elapsed_motion_time>=args.minimum_support_acceleration_start and int(output.contact_mode.item())!=0 and float(foot_normal_forces.sum())>=20.):
+                support_phase=min(1.,max(0.,(elapsed_motion_time-args.minimum_support_acceleration_start)/.06))
+                support_blend=support_phase**3*(10-15*support_phase+6*support_phase**2)
+                if not math.isfinite(args.minimum_support_acceleration) or not -9.81<args.minimum_support_acceleration<=0:
+                    raise ValueError('Minimum support acceleration must be in (-9.81,0]')
+                if not math.isfinite(args.minimum_support_acceleration_metric_scale) or args.minimum_support_acceleration_metric_scale<=0:
+                    raise ValueError('Support acceleration metric scale must be positive')
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        supported=request.desired[:,2].clamp_min(args.minimum_support_acceleration)
+                        request.desired[:,2]+=support_blend*(supported-request.desired[:,2])
+                        request.metric[:,2,2]*=1+(args.minimum_support_acceleration_metric_scale-1)*support_blend
+            if (task_feedback_enabled and args.maximum_support_acceleration is not None
+                    and elapsed_motion_time >= args.maximum_support_acceleration_start
+                    and int(output.contact_mode.item()) != 0 and float(foot_normal_forces.sum()) >= 20.):
+                from g1_com_vertical_limit import limit_upward_target
+                cap_phase=min(1.,max(0.,(elapsed_motion_time-args.maximum_support_acceleration_start)/args.maximum_support_acceleration_ramp))
+                cap_blend=cap_phase**3*(10-15*cap_phase+6*cap_phase**2)
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        request.desired=limit_upward_target(request.desired,args.maximum_support_acceleration,cap_blend)
+            if (task_feedback_enabled and args.com_upward_speed_limit is not None
+                    and elapsed_motion_time >= args.com_upward_speed_start
+                    and int(output.contact_mode.item()) != 0 and float(foot_normal_forces.sum()) >= 20.):
+                from g1_com_vertical_limit import limit_upward_speed_target
+                speed_phase=min(1.,max(0.,(elapsed_motion_time-args.com_upward_speed_start)/args.com_upward_speed_ramp))
+                speed_blend=speed_phase**3*(10-15*speed_phase+6*speed_phase**2)
+                if elapsed_motion_time > args.com_upward_speed_end:
+                    speed_end_phase = min(1., (elapsed_motion_time-args.com_upward_speed_end)/args.com_upward_speed_end_ramp)
+                    speed_blend *= 1.-speed_end_phase**3*(10-15*speed_end_phase+6*speed_end_phase**2)
+                for request in fabric.dynamics_tasks.last_requests:
+                    if request.name=='center_of_mass':
+                        velocity_z=(request.A@qd[...,None]).squeeze(-1)[:,2]
+                        request.desired=limit_upward_speed_target(request.desired,velocity_z,
+                            args.com_upward_speed_limit,args.com_upward_speed_bandwidth,
+                            args.com_upward_speed_minimum_acceleration,speed_blend)
+            if task_feedback_enabled and (elapsed_motion_time>=args.configuration_tracking_start):
+                if not unified_reference or args.configuration_tracking_ramp<=0 or not math.isfinite(args.configuration_tracking_ramp):
+                    raise ValueError('Configuration tracking requires a unified reference and a positive finite ramp')
+                from configuration_tracking import configuration_tracking_request
+                configuration_request=configuration_tracking_request(q,qd,whole_body_reference,fabric.dynamics_tasks.last_requests,args.configuration_angular_weight)
+                configuration_phase=min(1.,max(0.,(elapsed_motion_time-args.configuration_tracking_start)/args.configuration_tracking_ramp))
+                configuration_blend=configuration_phase**3*(10-15*configuration_phase+6*configuration_phase**2)
+                if configuration_blend>0:
+                    for request in fabric.dynamics_tasks.last_requests:
+                        if request.name in priority_tasks and not (args.configuration_keep_feet and request.name=='feet_pose'):
+                            request.metric*=1-configuration_blend
+                    configuration_request.metric*=configuration_blend
+                    fabric.dynamics_tasks.last_requests.append(configuration_request)
+                    priority_tasks=tuple(dict.fromkeys(priority_tasks+(configuration_request.name,)))
+                    priority_levels=None
+            if task_feedback_enabled and (elapsed_motion_time>=args.tracking_margin_start):
+                from tracking_margin import margin_weights,allocate_margin_weights
+                margin_q,margin_v,_=tube_source_sampler.kinematics(frame_position,frame_rate,frame_acceleration)
+                margin_scale,margin_risk=margin_weights(q,qd,margin_q,margin_v,
+                    reaction_time=args.tracking_margin_reaction_time,maximum=args.tracking_margin_maximum)
+                if 'filtered_margin_scale' not in locals():filtered_margin_scale=torch.ones_like(margin_scale)
+                filtered_margin_scale+=(1-math.exp(-FABRIC_TIMESTEP/.025))*(margin_scale-filtered_margin_scale)
+                margin_phase=min(1.,max(0.,(elapsed_motion_time-args.tracking_margin_start)/.1))
+                # Near the endpoint, polynomial roundoff can produce 1 + eps.
+                margin_blend=min(1.,max(0.,margin_phase**3*(10-15*margin_phase+6*margin_phase**2)))
+                allocate_margin_weights(fabric.dynamics_tasks.last_requests,filtered_margin_scale,
+                    margin_blend)
+            if task_feedback_enabled and (elapsed_motion_time>=args.pelvis_orientation_replace_start):
+                if not unified_reference or not math.isfinite(args.pelvis_orientation_replace_ramp) or args.pelvis_orientation_replace_ramp<=0:
+                    raise ValueError('Pelvis orientation replacement requires unified references and a positive ramp')
+                from pelvis_orientation_allocation import replace_torso_weight
+                orientation_phase=min(1.,max(0.,(elapsed_motion_time-args.pelvis_orientation_replace_start)/args.pelvis_orientation_replace_ramp))
+                orientation_blend=orientation_phase**3*(10-15*orientation_phase+6*orientation_phase**2)
+                if orientation_blend>0:
+                    replace_torso_weight(fabric.dynamics_tasks.last_requests,orientation_blend,
+                        pelvis_scale=args.pelvis_orientation_replace_metric_scale)
+                    if args.pelvis_orientation_replace_feedback_limit is not None:
+                        from g1_foot_angular_feedback import angular_tracking_target
+                        dynamics=fabric.dynamics_tasks
+                        pelvis_index=dynamics.model.kinematics.get_link_index('pelvis')
+                        for request in dynamics.last_requests:
+                            if request.name!='source_pelvis_orientation':continue
+                            rv,ra=dynamics.references(fabric.fabrics_features['pelvis_pose']['pelvis_pose_attractor'],q.new_zeros(len(q),6))
+                            params=dynamics.config['body']
+                            desired=angular_tracking_target(dynamics.last_snapshot['rotations'][:,pelvis_index],
+                                _quat_xyzw_to_matrix(fabric.pelvis_pose_taskmap.orientation_target),
+                                (request.A@qd[...,None]).squeeze(-1),rv[:,3:],ra[:,3:],
+                                q.new_tensor(params['stiffness']),q.new_tensor(params['damping']),
+                                args.pelvis_orientation_replace_feedback_limit)
+                            request.desired+=orientation_blend*(desired-request.desired)
+                    priority_tasks=tuple(dict.fromkeys(priority_tasks+('source_pelvis_orientation',)))
+                    priority_levels=None
+            root_task_weight = 0.
+            root_task_axis_weights = q.new_zeros(len(q),3)
+            if task_feedback_enabled and (elapsed_motion_time > args.root_position_task_start):
+                root_phase = min(1., (elapsed_motion_time-args.root_position_task_start)
+                                 / args.root_position_task_ramp)
+                root_task_weight = args.root_position_task_weight*root_phase**3*(10-15*root_phase+6*root_phase**2)
+                if args.root_position_task_reference == 'control':
+                    if not unified_reference or whole_body_reference is None:
+                        raise ValueError('Control root task requires a unified whole-body reference')
+                if 'root_position_reference_sampler' not in locals():
+                    from g1_root_position_reference import RootPositionReference
+                    root_position_reference_sampler=RootPositionReference(motion_trajectory)
+                root_task_reference=root_position_reference_sampler.sample(
+                    frame_position,frame_rate,frame_acceleration,mode=args.root_position_task_reference,
+                    control=whole_body_reference if unified_reference else None)
+                root_request=root_position_request(q, qd, *root_task_reference,
+                    root_task_weight,axes=args.root_position_task_axes)
+                if args.root_position_task_late_weight is not None:
+                    root_late_phase=min(1.,max(0.,(elapsed_motion_time-args.root_position_task_late_start)/args.root_position_task_late_ramp))
+                    blend_root_position_weight(root_request,args.root_position_task_late_weight,
+                        args.root_position_task_late_axes,root_late_phase**3*(10-15*root_late_phase+6*root_late_phase**2))
+                root_task_axis_weights=root_request.metric.diagonal(dim1=-2,dim2=-1)*root_request.active
+                fabric.dynamics_tasks.last_requests.append(root_request)
+                priority_tasks = tuple(dict.fromkeys(priority_tasks+('root_position',)))
+                if priority_levels is not None:
+                    priority_levels = (priority_levels[0]+('root_position',),)+priority_levels[1:]
+            shoulder_weight = shoulder_roll_multiplier(
+                control_time, args.shoulder_roll_weight_start,
+                args.shoulder_roll_weight_ramp, args.shoulder_roll_weight_scale)
+            if task_feedback_enabled and (shoulder_weight > 1 and shoulder_guard is None):
+                apply_shoulder_roll_weights(fabric.dynamics_tasks.last_requests,
+                                            G1_JOINT_NAMES, shoulder_weight, args.shoulder_roll_weight_side)
+            secondary_task_blend = 0.
+            if task_feedback_enabled and (elapsed_motion_time > args.weighted_tasks_start):
+                if priority_levels is not None or com_priority_projection is not None:
+                    raise ValueError('Weighted transition requires a single unprojected priority stage')
+                secondary_phase = min(1., (elapsed_motion_time-args.weighted_tasks_start)
+                                      / args.weighted_tasks_ramp)
+                secondary_task_blend = secondary_phase**3*(10-15*secondary_phase+6*secondary_phase**2)
+                blend_secondary_task_metrics(fabric.dynamics_tasks.last_requests,
+                                             priority_tasks, priority_rows, secondary_task_blend)
+                priority_tasks, priority_rows = (), {}
+            composition_snapshot = {}
+            if recompose_tasks:
+                from g1_priority_tracking import compose_tracking_policy, scale_secondary_tasks
+                local_requests = scale_secondary_tasks(fabric.dynamics_tasks.last_requests,
+                    priority_tasks, priority_rows, args.fabric_secondary_scale)
+                # Keep numeric diagnostic values after the local leaves are
+                # discarded. Re-evaluating the legacy attractor would lose
+                # feedforward and all per-axis feedback/weight overrides.
+                for request in local_requests:
+                    if request.name == 'center_of_mass':
+                        fabric.dynamics_tasks.last_snapshot['com_composed_desired'] = request.desired.detach().clone()
+                        fabric.dynamics_tasks.last_snapshot['com_composed_metric'] = request.metric.detach().clone()
+                if any(abs(control_time-stamp)<FABRIC_TIMESTEP/4 for stamp in args.qp_snapshot_times):
+                    # Diagnostic arrays only: do not pass task objects to the QP.
+                    # Capture the weighted leaves before composition clears them.
+                    for request in local_requests:
+                        for key in ('A', 'bias', 'desired', 'metric', 'active'):
+                            composition_snapshot['composed_task_'+request.name+'_'+key] = (
+                                _to_numpy(getattr(request, key)).copy())
+                if args.late_fabric_priority_mode is not None and elapsed_motion_time > args.late_fabric_priority_start:
+                    effective_fabric_priority_mode = args.late_fabric_priority_mode
+                qdd_fabric, root_metric, qdd_dc, priority_diagnostics = compose_tracking_policy(
+                    local_requests, mass, contact_jacobian, jdot_qdot,
+                    output.active_row_mask, effective_fabric_priority_mode,
+                    fabric.dynamics_tasks.config['regularization'])
+                fabric.dynamics_tasks.last_snapshot.update(priority_diagnostics)
+                fabric.dynamics_tasks.last_snapshot['fabric_acc_metric'] = root_metric
+                # Leaves are local policy inputs. Only (acceleration, metric)
+                # crosses into inverse dynamics; no task-level QP stage.
+                fabric.dynamics_tasks.last_requests = None
+                qp_reference = qdd_fabric
+                from dataclasses import replace as replace_projection_output
+                active_contact_jac = contact_jacobian*output.active_row_mask[..., None]
+                output = replace_projection_output(output, acc_dc=qdd_dc,
+                    contact_residual_before=(active_contact_jac@qdd_fabric[..., None]).squeeze(-1)+jdot_qdot,
+                    contact_residual_after=(active_contact_jac@qdd_dc[..., None]).squeeze(-1)+jdot_qdot)
+            current_effort_limits=qp_effort_limits
+            if elapsed_motion_time>=args.model_effort_start:
+                effort_phase=min(1.,max(0.,(elapsed_motion_time-args.model_effort_start)/args.model_effort_ramp))
+                effort_blend=effort_phase**3*(10-15*effort_phase+6*effort_phase**2)
+                current_effort_limits=.8*(legacy_effort_limits+effort_blend*(effort_limits-legacy_effort_limits))
+            if elapsed_motion_time>=args.synchronous_effort_budget_start:
+                from synchronous_effort_budget import effort_fraction
+                current_effort_limits=effort_limits*effort_fraction(elapsed_motion_time,args.synchronous_effort_budget_start,
+                    args.synchronous_effort_budget_fraction,FABRIC_TIMESTEP,PD_TIMESTEP,
+                    direct_wbc=args.direct_wbc,tracking_servo=args.tracking_servo)
+            previous_validated_torque = qp_output.joint_torque.detach().clone()
+            torque_continuity_weight = 0.
+            torque_continuity_mask = None
+            if torque_continuity_solver is not None:
+                torque_phase = min(1., max(0., (elapsed_motion_time-args.torque_continuity_start)
+                                           / args.torque_continuity_ramp))
+                torque_continuity_weight = args.torque_continuity_weight*torque_phase**3*(10-15*torque_phase+6*torque_phase**2)
+                if elapsed_motion_time > args.torque_continuity_end:
+                    end_phase = min(1., (elapsed_motion_time-args.torque_continuity_end)/args.torque_continuity_end_ramp)
+                    end_blend = end_phase**3*(10-15*end_phase+6*end_phase**2)
+                    torque_continuity_weight += end_blend*(args.torque_continuity_end_weight-torque_continuity_weight)
+                if args.torque_continuity_stance_only:
+                    from g1_torque_continuity import stance_torque_weights
+                    torque_continuity_mask=stance_torque_weights(output.contact_mode,previous_validated_torque)
+                torque_continuity_solver.update(previous_validated_torque, torque_continuity_weight,
+                                                torque_continuity_mask)
+            if acceleration_only:
+                acceleration_qp.solver.single_proximal = (args.qp_single_proximal
+                    if control_time >= args.qp_single_proximal_start else 0.)
+                acceleration_qp.solver.equilibration_cap = (args.qp_equilibration_cap
+                    if control_time >= args.qp_equilibration_start else 1.)
+                if control_time >= args.qp_late_equilibration_start:
+                    acceleration_qp.solver.equilibration_cap = args.qp_late_equilibration_cap
+                if control_time >= args.qp_final_equilibration_start:
+                    acceleration_qp.solver.equilibration_cap = args.qp_final_equilibration_cap
+                if control_time >= args.qp_late_iteration_start:
+                    acceleration_qp.solver.max_iter = args.qp_late_iterations
+                if control_time >= args.qp_cold_start_time:
+                    acceleration_qp.solver.reset()
             qp_wall_start = time.perf_counter()
-            qp_output = acceleration_qp.solve(
+            if args.qp_base_linear_acceleration_weight is not None:
+                qp_acceleration_weight[:3] = linear_acceleration_weight(
+                    args.qp_base_acceleration_weight, args.qp_base_linear_acceleration_weight,
+                    control_time, start=args.qp_base_linear_weight_start,
+                    ramp=args.qp_base_linear_weight_ramp)
+                acceleration_qp.acc_weight = qp_acceleration_weight
+            if args.com_acceleration_preservation_weight:
+                acceleration_qp.acc_weight = preserve_com_acceleration(qp_acceleration_weight,
+                    fabric.dynamics_tasks.last_snapshot['com_jac'], args.com_acceleration_preservation_weight)
+            else:
+                acceleration_qp.acc_weight = qp_acceleration_weight
+            if args.qp_fabric_metric:
+                acceleration_qp.acc_weight = fabric.dynamics_tasks.last_snapshot['fabric_acc_metric']
+                qp_reference = qdd_fabric
+            live_com_feedback_scale = com_feedback_scale(args.qp_com_feedback_scale, control_time,
+                start=args.qp_com_feedback_start, ramp=args.qp_com_feedback_ramp)
+            if live_com_feedback_scale:
+                acceleration_qp.acc_weight, qp_reference = track_com_feedback(
+                    acceleration_qp.acc_weight, qp_reference, fabric.dynamics_tasks.last_snapshot,
+                    live_com_feedback_scale, axes=args.qp_com_feedback_axes)
+            command_acc_correction = (torch.zeros_like(qdd_fabric) if acceleration_only
+                                      else qp_reference - qdd_dc)
+            qp_solve=base_qp_solve
+            acceleration_qp.tube_recovery_used=False
+            acceleration_qp.orientation_tube_recovery_bandwidth=float('nan')
+            if args.relax_joint_tube and (elapsed_motion_time>=args.tracking_tube_start and elapsed_motion_time<args.tracking_tube_end):
+                from tube_recovery import solve_with_joint_tube_recovery
+                qp_solve=partial(solve_with_joint_tube_recovery,acceleration_qp,tube_C=tube_C,tube_d=tube_d,recovery_metric=args.tube_recovery_metric)
+                if args.recover_orientation_tube:
+                    from tube_recovery import solve_with_orientation_tube_recovery
+                    qp_solve=partial(solve_with_orientation_tube_recovery,acceleration_qp,tube_C=tube_C,tube_d=tube_d,
+                        tube_diagnostics=tube_diagnostics,orientation_bandwidth=(orientation_tube_rate or tube_rate),
+                        recovery_metric=args.tube_recovery_metric)
+            if elapsed_motion_time>=args.full_body_preview_start:
+                if not args.direct_wbc or not args.tracking_servo or str(args.device)!='cpu' or args.contact_pause_end is not None or args.extra_contact_pause or abs(FABRIC_TIMESTEP-.002)>1e-12:
+                    raise ValueError('Full-body preview requires synchronous 500 Hz direct CPU tracking without a pause clock')
+                if 'full_body_preview' not in locals():
+                    from preview_process import ProcessPreview
+                    from online_full_body_preview import OnlineFullBodyPreview
+                    from fabrics_sim.reference.manager import contact_sequence_modes
+                    preview_modes=contact_sequence_modes(_to_numpy(motion_contact_sequence),len(motion_trajectory))
+                    preview_geometry=[tuple(_to_numpy(x) for x in row) for row in foot_landing_geometry]
+                    if (args.full_body_preview_state_feedback or args.full_body_preview_release_points) and not args.full_body_preview_fine_control:
+                        raise ValueError('State feedback and contact release require fine preview control')
+                    if args.full_body_preview_fine_control and not args.full_body_preview_collision_barrier:
+                        raise ValueError('Fine preview control requires future collision barriers')
+                    if args.full_body_preview_exact_rotation and not (args.full_body_preview_fine_control and args.full_body_preview_release_points):
+                        raise ValueError('Exact preview rotation requires fine control and contact release')
+                    if args.full_body_preview_recover_joint_reserve and not args.full_body_preview_exact_rotation:
+                        raise ValueError('Joint reserve recovery requires exact preview rotation')
+                    if args.full_body_preview_damp_first_control and not args.full_body_preview_recover_joint_reserve:
+                        raise ValueError('First-control damping requires the joint-reserve recovery predictor')
+                    if args.full_body_preview_surface_kinematics and not args.full_body_preview_separating_points:
+                        raise ValueError('Surface kinematics requires separation-aware fine preview')
+                    if args.full_body_preview_separating_points and not args.full_body_preview_damp_first_control:
+                        raise ValueError('Separating-point prediction requires first-control damping')
+                    preview_configuration=dict(urdf=fabric.urdf_path,names=G1_JOINT_NAMES,
+                        reference_path=str(args.output_path.with_suffix('.control_reference.npz')),
+                        modes=preview_modes,geometry=preview_geometry,
+                        limits=_to_numpy(joint_position_limits)[0],effort=_to_numpy(current_effort_limits).ravel(),
+                        velocity=_to_numpy(joint_velocity_limits).ravel(),horizon=args.full_body_preview_horizon,
+                        guarded=args.full_body_preview_guarded,warm_start=args.full_body_preview_warm_start,fine_control=args.full_body_preview_fine_control,release_points=args.full_body_preview_release_points,
+                        native_contact_timing=args.full_body_preview_native_contact_timing,
+                        exact_rotation=args.full_body_preview_exact_rotation,
+                        recover_joint_reserve=args.full_body_preview_recover_joint_reserve,
+                        damp_first_control=args.full_body_preview_damp_first_control,
+                        separating_points=args.full_body_preview_separating_points,
+                        surface_kinematics=args.full_body_preview_surface_kinematics,
+                        contact_timing_start_frame=int(math.ceil(args.full_body_preview_start*motion_fps)),
+                        contact_schedule_path=str(args.output_path.with_suffix('.preview_contact_schedule.npz')))
+                    if args.full_body_preview_collision_barrier:
+                        tasks=fabric.dynamics_tasks
+                        if not tasks.wrist_hip_barrier or tasks.convex_wrist_geometry is not None:
+                            raise ValueError('Preview collision barrier requires the enabled runtime sphere covers')
+                        sphere_names=tasks.sphere_names
+                        centers=_to_numpy(tasks.sphere_centers);radii=_to_numpy(tasks.sphere_radii)
+                        spheres={name:dict(link=tasks.model.kinematics.link_names[tasks.sphere_indices[i]],center=centers[i].tolist(),radius=float(radii[i])) for i,name in enumerate(sphere_names)}
+                        pairs=[[sphere_names[int(a)],sphere_names[int(b)]] for a,b in _to_numpy(tasks.pairs)[tasks.original_collision_pairs:tasks.barrier_pair_count]]
+                        preview_configuration['collision_geometry']=dict(spheres=spheres,pairs=pairs,safe_distance=tasks.config['collision']['safe_distance'])
+                    preview_planner=ProcessPreview(preview_configuration,args.output_path.with_suffix('.planner_worker.log'))
+                    full_body_preview=OnlineFullBodyPreview(preview_planner,args.output_path.with_suffix('.full_body_preview.json'),period=args.full_body_preview_period,track_wrench=args.full_body_preview_track_wrench,reuse_verified=args.full_body_preview_reuse_verified,follow_plan=args.full_body_preview_fine_control,allow_projection_correction=args.full_body_preview_state_feedback)
+                from observed_preview_patch import observed_native_patch_indices
+                try:
+                    initial_preview_patch=observed_native_patch_indices(_to_numpy(live_feet),preview_geometry,tuple(map(_to_numpy,contact_data)),int(output.contact_mode.item()))
+                except ValueError as error:
+                    full_body_preview.observation_failure(control_time,frame_position,error)
+                    mismatch_path=args.output_path.with_suffix('.initial_patch_mismatch.npz')
+                    if not mismatch_path.exists():
+                        np.savez_compressed(mismatch_path,time=control_time,frame=frame_position,q=_to_numpy(q),v=_to_numpy(qd),feet=_to_numpy(live_feet),mode=int(output.contact_mode.item()),
+                            **{key:_to_numpy(value) for key,value in zip(('forces','points','normals','distances','counts','starts'),contact_data)})
+                else:
+                    qp_solve=partial(full_body_preview.solve,qp_solve,acceleration_qp,q,qd,control_time,frame_position,frame_rate,initial_patch_indices=initial_preview_patch)
+            if shoulder_guard is not None:
+                qp_solve = partial(shoulder_guard.solve, qp_solve, acceleration_qp,
+                    joint_names=G1_JOINT_NAMES, multiplier=shoulder_weight, side=args.shoulder_roll_weight_side)
+            saved_objective_weights = acceleration_qp.wrench_weight, acceleration_qp.torque_weight
+            joint_stop_directions = None
+            if elapsed_motion_time >= args.observed_joint_stop_start:
+                from fabrics_sim.solver.joint_stop import observed_stop_directions
+                from g1_joint_stop_mode import loaded_stop_directions
+                joint_stop_directions = observed_stop_directions(
+                    joint_position, joint_velocity, joint_position_limits[:, :, 0], joint_position_limits[:, :, 1])
+                joint_stop_directions = loaded_stop_directions(joint_stop_directions,
+                    qp_output.predicted_acc[:, 6:], qp_output.joint_stop_reaction)
+                selected_stops = [G1_JOINT_NAMES.index(name) for name in args.observed_joint_stop_joints]
+                stop_mask = torch.zeros_like(joint_stop_directions)
+                stop_mask[:, selected_stops] = 1
+                joint_stop_directions *= stop_mask
+            if args.qp_task_only_objective:
+                acceleration_qp.torque_weight = 0.
+                if not acceleration_qp.priority_wrench_reference:
+                    acceleration_qp.wrench_weight = 0.
+            qp_output = qp_solve(
                 acc_reference=qp_reference,
                 mass_matrix=mass,
                 bias_force=bias_force,
@@ -4255,22 +6654,22 @@ def main() -> None:
                 contact_mode=output.contact_mode,
                 acc_lower=command_acc_lower,
                 acc_upper=command_acc_upper,
-                effort_limits=qp_effort_limits,
+                effort_limits=current_effort_limits,
                 known_joint_torque=-kd*joint_velocity if args.direct_wbc and not args.tracking_servo else None,
                 servo_bias=None if args.fixed_joint_test or args.direct_wbc else servo_bias,
                 servo_acc_gain=None if args.fixed_joint_test or args.direct_wbc else servo_acc_gain,
-                command_acc_correction=qp_reference - qdd_dc,
+                command_acc_correction=command_acc_correction,
                 contact_wrench_reference=wrench_reference,
                 contact_wrench_weights=wrench_weights,
                 track_predicted_base=args.qp_track_predicted_base and not args.fixed_joint_test,
                 friction_G=friction_G,
                 friction_b=friction_b,
-                task_requests=([composed_policy] if args.g1_md else
+                task_requests=(None if acceleration_only else [composed_policy] if args.g1_md else
                     None if fabric.dynamics_tasks is None else fabric.dynamics_tasks.last_requests),
                 task_tracks_predicted=not args.task_track_nominal,
                 priority_tasks=('center_of_mass',) if args.g1_com_priority else priority_tasks,
                 priority_requests=[r for r in fabric.dynamics_tasks.last_requests
-                    if r.name == 'center_of_mass'] if args.g1_com_priority else None,
+                    if r.name == 'center_of_mass'] if args.g1_com_priority and not acceleration_only else None,
                 priority_levels=priority_levels,
                 priority_rows=priority_rows,
                 priority_projections={"center_of_mass": com_priority_projection}
@@ -4280,9 +6679,39 @@ def main() -> None:
                 # Command bounds alone do not bound acceleration after the
                 # contact-consistent response to explicit PD feedback.
                 predicted_acc_limit=acceleration_limits if args.limit_predicted_acceleration else None,
-                predicted_acc_lower=physical_lower if args.acceleration_and_braking_limits else None,
-                predicted_acc_upper=physical_upper if args.acceleration_and_braking_limits else None,
+                predicted_acc_lower=physical_lower if physical_braking_active else None,
+                predicted_acc_upper=physical_upper if physical_braking_active else None,
+                joint_stop_directions=joint_stop_directions,
+                joint_stop_reaction_weight=args.observed_joint_stop_weight,
             )
+            acceleration_qp.wrench_weight, acceleration_qp.torque_weight = saved_objective_weights
+            for snapshot_time in args.qp_snapshot_times:
+                if abs(control_time-snapshot_time)<FABRIC_TIMESTEP/4:
+                    snapshot_arrays={'q':_to_numpy(q),'v':_to_numpy(qd),'time':control_time,
+                        'reference_q':_to_numpy(reference_q),'reference_v':_to_numpy(reference_v),
+                        'predicted_acc':_to_numpy(qp_output.predicted_acc),'feet':_to_numpy(live_feet),
+                        'contact_mode':_to_numpy(output.contact_mode),'forces':_to_numpy(foot_normal_forces)}
+                    snapshot_problem = (acceleration_qp.last_priority_problems[0]
+                        if acceleration_qp.last_priority_problems else acceleration_qp.last_problem)
+                    for key,value in vars(snapshot_problem).items():
+                        if isinstance(value,torch.Tensor):snapshot_arrays['problem_'+key]=_to_numpy(value)
+                    snapshot_arrays['problem_solution'] = _to_numpy(acceleration_qp.last_full_solution)
+                    snapshot_arrays['joint_stop_reaction'] = _to_numpy(qp_output.joint_stop_reaction)
+                    snapshot_arrays['joint_stop_directions'] = _to_numpy(
+                        torch.zeros_like(joint_position) if joint_stop_directions is None else joint_stop_directions)
+                    if getattr(acceleration_qp.solver, 'last_augmented_problem', None) is not None:
+                        for key, value in vars(acceleration_qp.solver.last_augmented_problem).items():
+                            if isinstance(value, torch.Tensor):snapshot_arrays['soft_problem_'+key]=_to_numpy(value)
+                        snapshot_arrays['soft_problem_solution'] = _to_numpy(acceleration_qp.solver.last_augmented_solution)
+                    for request in (() if acceleration_only else fabric.dynamics_tasks.last_requests):
+                        for key in ('A','bias','desired','metric','active'):
+                            snapshot_arrays['task_'+request.name+'_'+key]=_to_numpy(getattr(request,key))
+                    snapshot_arrays.update(composition_snapshot)
+                    np.savez_compressed(args.output_path.with_suffix(f'.snapshot_{snapshot_time:.3f}.npz'),**snapshot_arrays)
+            if acceleration_qp.tube_recovery_used:
+                saved_C,saved_d=task_acceleration_constraints
+                task_acceleration_constraints=(torch.cat((saved_C[:,:-3],saved_C[:,-2:]),1),torch.cat((saved_d[:,:-3],saved_d[:,-2:]),1))
+                print(f'Joint tracking tube softened at {control_time:.3f}s; physical QP validated={bool(qp_output.validated.all())}',flush=True)
             if args.g1_md and fabric.dynamics_tasks is not None:
                 # Diagnostics remain task-space quantities even though the QP
                 # now tracks one metric-preserving root policy, not leaf tasks.
@@ -4293,7 +6722,57 @@ def main() -> None:
             # Reading validation synchronizes GPU work before measuring solve
             # latency. A 2 ms simulation period does not certify 2 ms wall time.
             qp_validated = bool(qp_output.validated.all())
-            com_diagnostic = {"qp_wall_seconds": time.perf_counter()-qp_wall_start}
+            qp_task_residuals = qp_output.task_residuals or {}
+            com_diagnostic = {"qp_wall_seconds": time.perf_counter()-qp_wall_start,
+                              "contact_sample_dt": contact_sample_dt}
+            if math.isfinite(args.root_xy_tube_start):
+                xy_active=(task_feedback_enabled and elapsed_motion_time>=max(args.root_xy_tube_start,args.tracking_tube_start)
+                           and elapsed_motion_time<args.tracking_tube_end)
+                com_diagnostic['root_xy_tube_diagnostics']=(_to_numpy(xy_tube_diagnostics).copy()
+                    if xy_active else np.full((len(q),3),np.nan))
+            if math.isfinite(args.soft_joint_braking_start):
+                brake_slack=acceleration_qp.solver.last_braking_slack
+                com_diagnostic['soft_joint_braking_weight']=soft_joint_braking_weight
+                com_diagnostic['soft_joint_braking_slack']=(_to_numpy(brake_slack).copy()
+                    if brake_slack is not None else np.zeros((1,2*len(args.soft_joint_braking_joints))))
+            if args.late_tube_soft_weight is not None:
+                com_diagnostic['tracking_tube_soft_weight']=float(tracking_tube_solver.weight)
+            if args.late_foot_linear_feedback_limit is not None:
+                com_diagnostic['foot_linear_feedback_blend']=linear_foot_blend
+                com_diagnostic['foot_linear_feedback_limit']=args.late_foot_linear_feedback_limit
+            if args.late_foot_angular_feedback_limit is not None:
+                com_diagnostic['foot_angular_feedback_blend']=angular_blend
+                com_diagnostic['foot_angular_feedback_limit']=args.late_foot_angular_feedback_limit
+            if math.isfinite(args.foot_contact_search_start):
+                com_diagnostic['foot_contact_search_active'] = _to_numpy(contact_search_active).copy()
+                com_diagnostic['foot_contact_search_acceleration'] = args.foot_contact_search_acceleration*contact_search_blend
+            if args.tracking_profile == 'amp-full':
+                com_diagnostic['qp_native_solve_count'] = np.asarray(
+                    acceleration_qp.solver.last_solve_counts, dtype=np.int64)
+                com_diagnostic['fabric_task_requests_cached'] = (
+                    fabric.dynamics_tasks.last_requests is not None)
+            if args.shoulder_roll_weight_scale > 1:
+                com_diagnostic['shoulder_roll_weight_multiplier'] = (
+                    shoulder_weight if shoulder_guard is None else shoulder_guard.diagnostic['shoulder_guard_multiplier'])
+            if shoulder_guard is not None:
+                com_diagnostic.update(shoulder_guard.diagnostic)
+            if math.isfinite(args.weighted_tasks_start):
+                com_diagnostic['secondary_task_blend'] = secondary_task_blend
+            if math.isfinite(args.support_flatten_start):
+                com_diagnostic['support_flatten_weight'] = _to_numpy(support_flatten_weights).copy()
+            if math.isfinite(args.root_position_task_start):
+                com_diagnostic['root_position_task_weight'] = root_task_weight
+                if args.root_position_task_late_weight is not None:
+                    com_diagnostic['root_position_task_axis_weights'] = _to_numpy(root_task_axis_weights).copy()
+            if math.isfinite(args.stance_posture_metric_start):
+                com_diagnostic['stance_posture_metric_scale'] = stance_posture_scale
+            if math.isfinite(args.rolling_contact_kinematics_start):
+                com_diagnostic.update(rolling_bias_correction=_to_numpy(rolling_bias_correction).copy(),
+                                      rolling_bias_matched=_to_numpy(rolling_bias_matched).copy())
+            com_diagnostic.update(torque_continuity_weight=torque_continuity_weight,
+                torque_step_change=_to_numpy(qp_output.joint_torque-previous_validated_torque).copy())
+            if torque_continuity_mask is not None:
+                com_diagnostic['torque_continuity_mask']=_to_numpy(torque_continuity_mask).copy()
             if mocap_transition is not None:
                 com_diagnostic.update(mocap_transition_phase=mocap_transition.phase,
                     mocap_transition_unload_weight=mocap_transition.unload_weight(control_time))
@@ -4303,10 +6782,26 @@ def main() -> None:
                 qp_validated = qp_validated and bool((velocity_violation <= 1e-4).all())
             com_diagnostic['predicted_joint_velocity'] = _to_numpy(predicted_joint_velocity).copy()
             com_diagnostic['joint_velocity_limits'] = _to_numpy(joint_velocity_limits).copy()
+            com_diagnostic['qp_base_linear_acceleration_weight'] = float(qp_acceleration_weight[0])
+            com_diagnostic['qp_com_feedback_scale'] = live_com_feedback_scale
+            if args.qp_com_feedback_scale:
+                com_diagnostic['qp_com_feedback_axes'] = np.asarray(args.qp_com_feedback_axes)
+            com_diagnostic['qp_fabric_metric'] = args.qp_fabric_metric
             com_diagnostic['joint_velocity_violation'] = _to_numpy(velocity_violation).copy()
             com_diagnostic['measured_joint_velocity_violation'] = _to_numpy((joint_velocity.abs()-joint_velocity_limits).clamp_min(0.)).copy()
             com_diagnostic['joint_velocity_limits_enabled'] = args.joint_velocity_limits
+            # Simulator joint stops are always physical, but the predictive
+            # braking bounds are optional. Record which constraints the QP
+            # actually saw; a configured bandwidth alone does not enable them.
+            com_diagnostic['physical_braking_active'] = physical_braking_active
+            com_diagnostic['physical_joint_acceleration_lower'] = _to_numpy(physical_lower[:, 6:]).copy()
+            com_diagnostic['physical_joint_acceleration_upper'] = _to_numpy(physical_upper[:, 6:]).copy()
+            com_diagnostic['observed_joint_stop_directions'] = _to_numpy(
+                torch.zeros_like(joint_position) if joint_stop_directions is None else joint_stop_directions).copy()
+            com_diagnostic['joint_stop_reaction'] = _to_numpy(qp_output.joint_stop_reaction).copy()
+            com_diagnostic['joint_stop_constraint_error'] = _to_numpy(acceleration_qp.last_joint_stop_constraint_error).copy()
             com_diagnostic.update(sole_barrier_diagnostic)
+            com_diagnostic.update(knee_guard_diagnostic)
             com_diagnostic.update(landing_diagnostic)
             com_diagnostic.update(momentum_bound_diagnostic)
             com_diagnostic.update(com_replan_diagnostic)
@@ -4321,7 +6816,9 @@ def main() -> None:
                 for foot,task in contact_patch_tasks.items():
                     width=task.desired.shape[-1]
                     patch_desired[foot,:width]=_to_numpy(task.desired[0])
-                    patch_residual[foot,:width]=_to_numpy(qp_output.task_residuals[task.name][0])
+                    patch_value = (task.residual(qp_output.predicted_acc) if recompose_tasks
+                                   else qp_task_residuals[task.name])
+                    patch_residual[foot,:width]=_to_numpy(patch_value[0])
                     patch_flatten[foot]=contact_patches[foot].flatten
                 com_diagnostic.update(contact_orientation_desired=patch_desired,
                                       contact_orientation_residual=patch_residual,
@@ -4345,11 +6842,15 @@ def main() -> None:
                     swing_com_priority_active=np.asarray(swing_com_priority),
                     priority_stage_constraint_error=np.zeros(1, dtype=np.float32),
                     priority_lock_error=np.zeros(1, dtype=np.float32))
-            if acceleration_qp.last_priority_errors is not None:
-                first_error, lock_error = acceleration_qp.last_priority_errors
-                com_diagnostic.update(priority_stage_constraint_error=_to_numpy(first_error).copy(),
-                                      priority_lock_error=_to_numpy(lock_error).copy())
+            com_diagnostic.update(priority_error_diagnostics(acceleration_qp.last_priority_errors))
             if args.diagnose_contacts:
+                # Retain the instantaneous coordinates actually constrained by
+                # the QP, including observed point/edge contact frames. A small
+                # acceleration residual does not imply zero contact velocity.
+                com_diagnostic['contact_velocity'] = _to_numpy(
+                    (contact_jacobian @ qd[..., None]).squeeze(-1)).copy()
+                com_diagnostic['contact_active_rows'] = _to_numpy(output.active_row_mask).copy()
+                com_diagnostic['contact_constraint_bias'] = _to_numpy(jdot_qdot).copy()
                 com_diagnostic['ground_contact_forces'] = _to_numpy(ground_contact_forces).copy()
                 # Native reports are needed to diagnose a failure, not to
                 # retain large JSON strings for every 2 ms of a whole clip.
@@ -4361,6 +6862,7 @@ def main() -> None:
             if args.diagnose_com:
                 com_diagnostic.update(com_acceleration_snapshot(fabric, q, qd, {
                     "fabric": qdd_fabric, "projected": qdd_dc,
+                    "qp_reference": qp_reference,
                     "qp_nominal": qp_output.nominal_acc, "qp_predicted": qp_output.predicted_acc,
                 }))
                 complete_observed_interval(tracking_history, control_updates * FABRIC_TIMESTEP,
@@ -4375,11 +6877,22 @@ def main() -> None:
                 for foot in range(2):
                     name = f'support_orientation_{foot}'
                     com_diagnostic['task_residual_' + name] = np.full((1,3), np.nan, dtype=np.float32)
-                    com_diagnostic['task_active_' + name] = name in qp_output.task_residuals
+                    com_diagnostic['task_active_' + name] = name in qp_task_residuals
                 com_diagnostic.update({"task_residual_" + name: residual.detach().cpu().numpy().copy()
-                                       for name, residual in qp_output.task_residuals.items()})
+                                       for name, residual in qp_task_residuals.items()})
+                if args.convex_wrist_collision:
+                    com_diagnostic['collision_geometry_convex']=fabric.dynamics_tasks.convex_wrist_geometry is not None
+                    for collision_key in ('task_residual_collision','collision_distance'):
+                        if collision_key=='collision_distance' and 'collision_distance' in snapshot:
+                            com_diagnostic[collision_key]=snapshot['collision_distance'].cpu().numpy().copy()
+                        if collision_key not in com_diagnostic:continue
+                        array=com_diagnostic[collision_key]
+                        com_diagnostic[collision_key+'_count']=array.shape[-1]
+                        width=len(fabric.dynamics_tasks.pairs)
+                        if array.shape[-1]>width:raise ValueError('Unexpected collision diagnostic width')
+                        com_diagnostic[collision_key]=np.pad(array,[(0,0),(0,width-array.shape[-1])],constant_values=np.nan)
                 com_diagnostic["centroidal_momentum"] = snapshot["momentum"].cpu().numpy().copy()
-                if "collision_distance" in snapshot:
+                if "collision_distance" in snapshot and not args.convex_wrist_collision:
                     com_diagnostic["collision_distance"] = snapshot["collision_distance"].cpu().numpy().copy()
             if any(control_updates == round(t / FABRIC_TIMESTEP) for t in args.diagnose_qp_time):
                 # Only serialize: no solver/controller input is changed.
@@ -4389,7 +6902,7 @@ def main() -> None:
                 tensors = dict(mass=mass, contact_jacobian=contact_jacobian,
                                contact_mode=output.contact_mode, bias_force=bias_force,
                                com_jacobian=diagnostic_com_jac, servo_bias=servo_bias,
-                               servo_acc_gain=servo_acc_gain, correction=qp_reference-qdd_dc,
+                               servo_acc_gain=servo_acc_gain, correction=command_acc_correction,
                                q=q, qd=qd, nominal_acc=qp_output.nominal_acc,
                                reference_q=audit_reference_q,
                                predicted_acc=qp_output.predicted_acc, nominal_torque=qp_output.joint_torque,
@@ -4419,10 +6932,9 @@ def main() -> None:
                        for k, v in vars(problem).items() if isinstance(v, torch.Tensor)},
                     **{"task_" + request.name + "_" + field: getattr(request,field).detach().cpu().numpy()
                        for request in (fabric.dynamics_tasks.last_requests
-                                       if fabric.dynamics_tasks is not None else ())
+                                       if fabric.dynamics_tasks is not None and not acceleration_only else ())
                        for field in ("A", "bias", "desired", "metric", "active")},
-                    problem_solution=torch.cat((qp_output.acc, qp_output.nominal_contact_wrench,
-                                                qp_output.joint_torque), dim=1).detach().cpu().numpy())
+                    problem_solution=_to_numpy(acceleration_qp.last_full_solution))
                 print(f"QP diagnostic snapshot: {snapshot_path}")
             if not qp_validated:
                 failure_path = args.output_path.with_suffix(".failure.npz")
@@ -4449,6 +6961,12 @@ def main() -> None:
                     **{"problem_" + key: value.detach().cpu().numpy()
                        for key, value in vars(acceleration_qp.last_problem).items()
                        if isinstance(value, torch.Tensor)},
+                    **({"soft_problem_" + key: _to_numpy(value)
+                        for key, value in vars(acceleration_qp.solver.last_augmented_problem).items()
+                        if isinstance(value, torch.Tensor)}
+                       if getattr(acceleration_qp.solver, 'last_augmented_problem', None) is not None else {}),
+                    **({"soft_problem_solution": _to_numpy(acceleration_qp.solver.last_augmented_solution)}
+                       if getattr(acceleration_qp.solver, 'last_augmented_solution', None) is not None else {}),
                     **{"priority_problem_" + key: value.detach().cpu().numpy()
                        for key, value in (vars(acceleration_qp.last_priority_problem).items()
                                           if acceleration_qp.last_priority_problem is not None else ())
@@ -4459,13 +6977,12 @@ def main() -> None:
                     **({"task_acceleration_C": _to_numpy(task_acceleration_constraints[0]),
                         "task_acceleration_d": _to_numpy(task_acceleration_constraints[1])}
                        if task_acceleration_constraints is not None else {}),
-                    problem_solution=torch.cat((qp_output.acc, qp_output.nominal_contact_wrench,
-                                                qp_output.joint_torque), dim=1).cpu().numpy(),
+                    problem_solution=_to_numpy(acceleration_qp.last_full_solution),
                     self_contact_events=np.asarray(self_contact_events, dtype=str).reshape(-1, 4),
                     require_support_load=np.asarray(args.require_support_load),
                     phase_hold_duration=np.asarray(phase_hold_updates * FABRIC_TIMESTEP),
                     motion_frame_position=np.asarray(frame_position if motion_trajectory is not None else np.nan),
-                    command_acc_correction=(qp_reference - qdd_dc).detach().cpu().numpy(),
+                    command_acc_correction=command_acc_correction.detach().cpu().numpy(),
                     qp_tracks_predicted_base=np.asarray(args.qp_track_predicted_base and not args.fixed_joint_test),
                     qp_total_torque=qp_output.total_joint_torque.cpu().numpy(),
                     servo_joint_order=np.asarray(isaac_joint_names),
@@ -4499,6 +7016,9 @@ def main() -> None:
                             args.output_path.with_suffix('.steps_plan.json').read_text()))
                     failed_tracking.update(stop_reason='QP validation failed',
                         failed_time_s=float(control_time), failed_source_frame=float(frame_position))
+                    if fidelity_stop is not None:
+                        failed_tracking['first_fidelity_exceeded']=fidelity_stop
+                        failed_tracking['diagnostic_continuation_after_fidelity_loss']=not args.stop_at_fidelity_loss
                     args.output_path.with_suffix('.tracking.json').write_text(
                         json.dumps(failed_tracking, indent=2)+'\n')
                 joint_bound_error = torch.maximum(
@@ -4639,7 +7159,7 @@ def main() -> None:
                        if unified_reference else {}),
                     "reference_phase": ("SOURCE_CLOCK" if args.motion_start_in_motion else "legacy") if managed_clock is None else managed_clock.phase,
                     "com_reference_policy": "unified_qva",
-                    "reference_rate": args.motion_speed if managed_clock is None else managed_clock.rate,
+                    "reference_rate": args.motion_speed*clock_rate if managed_clock is None else managed_clock.rate,
                     "managed_feet_position": fabric.feet_pose_taskmap.position_target.detach().cpu().numpy().copy(),
                     "managed_joint_posture": fabric.joint_posture_taskmap.position_target.detach().cpu().numpy().copy(),
                     "reference_wait": 0. if managed_clock is None else managed_clock.waiting_seconds,
@@ -4666,6 +7186,7 @@ def main() -> None:
                     "com_target_acceleration": com_target_acceleration.detach().cpu().numpy().copy(),
                     "planned_mode": planned_contact_mode.detach().cpu().numpy().copy(),
                     "commanded_mode": commanded_contact_mode.detach().cpu().numpy().copy(),
+                    "controller_contact_plan": controller_contact_plan.detach().cpu().numpy().copy(),
                     "measured_mode": measured_mode.detach().cpu().numpy().copy(),
                     "foot_forces": ground_foot_forces.detach().cpu().numpy().copy(),
                     "ground_foot_forces": ground_foot_forces.detach().cpu().numpy().copy(),
@@ -4673,6 +7194,8 @@ def main() -> None:
                     "support_force_source": "ground_filtered",
                     "feet": live_feet.detach().cpu().numpy().copy(),
                     "qdd_qp": qp_output.acc.detach().cpu().numpy().copy(),
+                    "qdd_fabric": qdd_fabric.detach().cpu().numpy().copy(),
+                    "qdd_projected": qdd_dc.detach().cpu().numpy().copy(),
                     "qdd_qp_reference": qp_reference.detach().cpu().numpy().copy(),
                     "qdd_predicted": qp_output.predicted_acc.detach().cpu().numpy().copy(),
                     "contact_wrench": qp_output.contact_wrench.detach().cpu().numpy().copy(),
@@ -4682,7 +7205,7 @@ def main() -> None:
                     "wrench_target_active": wrench_reference is not None,
                     "pelvis_target": fabric.pelvis_pose_taskmap.position_target.detach().cpu().numpy().copy(),
                     "qdd_nominal": qp_output.nominal_acc.detach().cpu().numpy().copy(),
-                    "command_acc_correction": (qp_reference - qdd_dc).detach().cpu().numpy().copy(),
+                    "command_acc_correction": command_acc_correction.detach().cpu().numpy().copy(),
                     "joint_position_desired": joint_position_desired.detach().cpu().numpy().copy(),
                     "joint_velocity_desired": joint_velocity_desired.detach().cpu().numpy().copy(),
                     "integration_seed_position": integration_seed_position.detach().cpu().numpy().copy(),
@@ -4690,7 +7213,42 @@ def main() -> None:
                     "torque_feedforward": joint_torque_feedforward.detach().cpu().numpy().copy(),
                     "torque_qp_total": qp_output.total_joint_torque.detach().cpu().numpy().copy(),
                     "torque_pd_estimate": joint_torque_pd.detach().cpu().numpy().copy(),
+                    "unload_intended_mode": unload_intended_mode,
+                    "unload_ramp": unload_ramp if dynamic_unloading else 0.,
+                    "unload_intended_reason": unload_intended_reason,
+                    "effective_qp_effort_limits": _to_numpy(current_effort_limits).copy(),
+                    "joint_tube_recovery_used": acceleration_qp.tube_recovery_used,
+                    "fabric_priority_mode": effective_fabric_priority_mode,
+                    "fabric_policy_recomposed": recompose_tasks,
+                    "fabric_tracking_feedback": args.fabric_tracking_feedback,
+                    "fabric_secondary_scale": args.fabric_secondary_scale,
+                    "fabric_root_regularization": fabric.dynamics_tasks.config['regularization'] if fabric.dynamics_tasks is not None else float('nan'),
+                    "qp_task_only_objective": args.qp_task_only_objective,
+                    "qp_single_proximal": getattr(acceleration_qp.solver, 'single_proximal', 0.),
+                    "qp_cold_start": bool(acceleration_only and control_time >= args.qp_cold_start_time),
+                    "qp_equilibration_cap": getattr(acceleration_qp.solver, 'equilibration_cap', 1.),
+                    "qp_iteration_budget": getattr(acceleration_qp.solver, 'max_iter', 0),
+                    "fabric_priority_contact_error": _to_numpy((getattr(fabric.dynamics_tasks, 'last_snapshot', None) or {}).get(
+                        'fabric_priority_contact_error', q.new_zeros(q.shape[0]))).copy(),
+                    "fabric_priority_nullspace_error": _to_numpy((getattr(fabric.dynamics_tasks, 'last_snapshot', None) or {}).get(
+                        'fabric_priority_nullspace_error', q.new_zeros(q.shape[0]))).copy(),
+                    "fabric_priority_idempotence_error": _to_numpy((getattr(fabric.dynamics_tasks, 'last_snapshot', None) or {}).get(
+                        'fabric_priority_idempotence_error', q.new_zeros(q.shape[0]))).copy(),
+                    "tracking_tube_soft_slack": (_to_numpy(acceleration_qp.solver.last_slack).copy()
+                        if getattr(acceleration_qp.solver, 'last_slack', None) is not None else np.zeros((1,3))),
+                    "orientation_tube_recovery_bandwidth": acceleration_qp.orientation_tube_recovery_bandwidth,
+                    "tracking_tube_diagnostics": (_to_numpy(tube_diagnostics).copy() if (elapsed_motion_time>=args.tracking_tube_start and elapsed_motion_time<args.tracking_tube_end) else np.full((1,3,3),np.nan)),
+                    "tracking_tube_bound": (_to_numpy(tube_d).copy() if (elapsed_motion_time>=args.tracking_tube_start and elapsed_motion_time<args.tracking_tube_end) else np.full((1,3),np.nan)),
+                    "tracking_tube_residual": (_to_numpy((tube_C@qp_output.predicted_acc[...,None]).squeeze(-1)-tube_d).copy() if (elapsed_motion_time>=args.tracking_tube_start and elapsed_motion_time<args.tracking_tube_end) else np.full((1,3),np.nan)),
                 })
+            if fidelity_stop is None and motion_trajectory is not None:
+                from analyze_motion_tracking import summarize_tracking
+                sample_audit=summarize_tracking(dict(history_frame=np.asarray([frame_position]),history_q=_to_numpy(q),history_reference_q=_to_numpy(audit_reference_q),source_frame_count=len(motion_trajectory),source_start_frame=0))
+                if not sample_audit['pkl_fidelity_passed']:
+                    fidelity_stop=dict(time_s=float(control_time),source_frame=float(frame_position),joint_rmse_rad=sample_audit['peak_joint_rmse'],root_position_m=sample_audit['peak_root_position_error'],root_orientation_rad=sample_audit['peak_root_orientation_error'])
+                    print('Original-source fidelity limit exceeded: '+json.dumps(fidelity_stop),flush=True)
+                    if args.stop_at_fidelity_loss:
+                        break
             if (args.mocap_first_step_report is not None and transfer_reference is not None
                     and source_step_rollout is None and control_time >= transfer_reference.start_time+3.5-FABRIC_TIMESTEP):
                 try:
@@ -4713,7 +7271,7 @@ def main() -> None:
                     source_step_rollout = OptimizedSourceRollout(fabric,
                         WholeBodyReference(q.clone(),qd.clone(),qp_output.predicted_acc.clone()),
                         G1_JOINT_NAMES,control_motion_trajectory,FABRIC_TIMESTEP,
-                        q.new_tensor(unitree_armatures(G1_JOINT_NAMES)),qp_effort_limits,
+                        q.new_tensor(unitree_armatures(G1_JOINT_NAMES)),current_effort_limits,
                         args.mocap_first_step_report,args.output_path.with_suffix('.probe_plan.json'),
                         project_nominal_torque=args.mocap_first_step_project_torque)
                     source_step_start = control_time
@@ -4771,7 +7329,7 @@ def main() -> None:
         if args.tracking_servo:
             if args.contact_aware_servo:
                 fast_forces = ground_support_forces(_to_numpy(
-                    foot_contact_view.get_contact_force_matrix(dt=PD_TIMESTEP)))[:,2]
+                    foot_contact_view.get_contact_force_matrix(dt=contact_sample_dt)))[:,2]
                 loaded_mode = int(fast_forces[0] >= 20.) + 2*int(fast_forces[1] >= 20.)
                 servo_contact_mode = loaded_mode & int(output.contact_mode.item())
                 kp_isaac, kd_isaac = servo_kp_bank[servo_contact_mode], servo_kd_bank[servo_contact_mode]
@@ -4804,30 +7362,28 @@ def main() -> None:
         robot.set_joint_efforts(
             joint_torque_isaac_tensor.detach().cpu().numpy()
         )
+        physics_substeps = (args.late_physics_substeps
+                            if step*PD_TIMESTEP >= args.late_physics_substeps_start else 1)
         servo_history.append({
             "time": step * PD_TIMESTEP,
             "physics_time": world.current_time - initial_physics_time,
             "qp_update_index": control_updates - 1,
+            "physics_substeps": physics_substeps,
+            "native_physics_dt": PD_TIMESTEP / physics_substeps,
             "kp": kp_isaac.detach().cpu().numpy().copy(),
             "kd": kd_isaac.detach().cpu().numpy().copy(),
             "velocity": actual_velocity_isaac.detach().cpu().numpy().copy(),
             "torque": joint_torque_isaac_tensor.detach().cpu().numpy().copy(),
             "unclipped": (torque_feedforward_isaac + joint_torque_pd_isaac).detach().cpu().numpy().copy(),
         })
-        # In Isaac Sim, step(render=True) advances one rendering interval,
-        # potentially executing several physics steps with a held torque.
-        # Always update feedback once per 2 ms physics step. render() refreshes
-        # the viewport with simulation stepping temporarily disabled.
-        previous_physics_time = world.current_time
-        world.step(render=False)
+        # Torque/control clocks remain unchanged when the native integrator is
+        # subdivided. Contact impulses on the next tick use the last native dt.
+        held_effort = joint_torque_isaac_tensor.detach().cpu().numpy()
+        contact_sample_dt = step_physics_interval(
+            world, PD_TIMESTEP, physics_substeps,
+            apply_effort=(lambda: robot.set_joint_efforts(held_effort)) if physics_substeps > 1 else None)
         if args.show_isaac_window and (step + 1) % render_steps_per_update == 0:
             world.render()
-        actual_physics_dt = world.current_time - previous_physics_time
-        if not math.isclose(actual_physics_dt, PD_TIMESTEP, rel_tol=1e-5, abs_tol=1e-8):
-            raise RuntimeError(
-                f"Physics/control clock mismatch: expected {PD_TIMESTEP:.6f}s per torque update, "
-                f"observed {actual_physics_dt:.6f}s."
-            )
         if step % fabric_steps_per_update == 0 and any(
                 step // fabric_steps_per_update == round(t / FABRIC_TIMESTEP) for t in args.diagnose_qp_time):
             after_q, after_v, _, _, after_left_j, after_right_j = read_live_isaac_snapshot(
@@ -5153,6 +7709,19 @@ def main() -> None:
         "static_reference" if motion_trajectory is None or motion_frame == motion_start_frame else
         "motion_segment"
     )
+    if 'stance_heading_reference' in locals():
+        args.output_path.with_suffix('.stance_heading.json').write_text(json.dumps(dict(
+            events=stance_heading_reference.events,
+            peak_position_residual=stance_heading_reference.peak_position_residual,
+            peak_orientation_residual=stance_heading_reference.peak_orientation_residual,
+            peak_heading_correction=stance_heading_reference.peak_heading_correction,
+            peak_joint_correction=stance_heading_reference.peak_joint_correction), indent=2)+'\n')
+    if 'measured_stance_reference' in locals():
+        args.output_path.with_suffix('.stance_reference.json').write_text(json.dumps(dict(
+            events=measured_stance_reference.events,
+            peak_position_residual=measured_stance_reference.peak_position_residual,
+            peak_orientation_residual=measured_stance_reference.peak_orientation_residual,
+            peak_joint_correction=measured_stance_reference.peak_joint_correction),indent=2)+'\n')
     np.savez_compressed(
         args.output_path,
         controller_options=np.asarray(json.dumps(vars(args), default=str, sort_keys=True)),
@@ -5269,6 +7838,8 @@ def main() -> None:
         simulation_completed=np.asarray(executed_steps == physics_steps or stopped_at_motion_end or stopped_at_tracking_steps or stopped_at_source_step_end or stopped_at_unload_end),
         physics_elapsed_seconds=np.asarray(world.current_time - initial_physics_time),
         physics_step_seconds=np.asarray(PD_TIMESTEP),
+        torque_update_seconds=np.asarray(PD_TIMESTEP),
+        final_native_physics_step_seconds=np.asarray(contact_sample_dt),
         rendering_step_seconds=np.asarray(world.get_rendering_dt()),
         source_frame_count=np.asarray(0 if motion_trajectory is None else len(motion_trajectory)),
         original_source_frame_count=np.asarray(getattr(args,"original_source_frame_count",0 if motion_trajectory is None else len(motion_trajectory))),
@@ -5328,6 +7899,12 @@ def main() -> None:
             full_tracking = (summarize_full_motion(recording, json.loads(
                 args.output_path.with_suffix('.steps_plan.json').read_text()))
                 if args.track_full_motion else summarize_tracking(recording))
+        if fidelity_stop is not None:
+            full_tracking['first_fidelity_exceeded']=fidelity_stop
+            if args.stop_at_fidelity_loss:
+                full_tracking.update(stop_reason='Original-source fidelity limit exceeded',fidelity_stop=fidelity_stop)
+            else:
+                full_tracking['diagnostic_continuation_after_fidelity_loss']=True
         full_report_path = args.output_path.with_suffix('.tracking.json')
         full_report_path.write_text(json.dumps(full_tracking,indent=2)+'\n')
         passed = full_tracking['full_motion_tracking_passed' if args.track_full_motion else 'full_tracking_passed']

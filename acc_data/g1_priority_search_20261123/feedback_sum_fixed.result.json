@@ -1,0 +1,16 @@
+{
+  "name": "feedback_sum_fixed",
+  "options": [
+    "--fabric-priority-mode",
+    "none",
+    "--fabric-tracking-feedback",
+    "--posture-metric-scale",
+    "1",
+    "--source-pelvis-weight",
+    "1",
+    "--joint-feedback-limit",
+    "30"
+  ],
+  "returncode": -15,
+  "timed_out": false
+}

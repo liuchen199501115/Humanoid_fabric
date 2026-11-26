@@ -1,0 +1,34 @@
+[
+  {
+    "name": "ten_floor3_linear60_xy19_rate5",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--root-xy-tube-start",
+      "4.08",
+      "--root-xy-tube-radius",
+      ".19",
+      "--root-xy-tube-bandwidth",
+      "5"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_xy18_late",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--root-xy-tube-start",
+      "4.20",
+      "--root-xy-tube-radius",
+      ".18",
+      "--root-xy-tube-bandwidth",
+      "5"
+    ]
+  },
+  {
+    "name": "ten_floor3_fast14",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--clock-fourth-speed",
+      "1.4"
+    ]
+  }
+]

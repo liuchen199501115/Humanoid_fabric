@@ -1,0 +1,16 @@
+{
+  "method": "Offline right-foot negative world-roll target, root and other joints fixed; right foot origin preserved",
+  "amplitude_rad": 0.12,
+  "start_frame": 770,
+  "rise_end_frame": 786,
+  "hold_end_frame": 802,
+  "end_frame": 826,
+  "maximum_foot_position_residual_m": 5.081482673420529e-07,
+  "maximum_foot_rotation_residual_rad": 4.5059216276302826e-07,
+  "maximum_com_change_m": 0.0006057835204896037,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "4b8323ed92c61f4ea65a2611298381a407673417532be62c350ed1f8d79f4dae",
+  "preflight_passed": true,
+  "full_tracking_passed": false
+}

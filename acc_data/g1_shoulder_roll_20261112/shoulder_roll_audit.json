@@ -1,0 +1,2844 @@
+{
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.npz",
+  "shoulders": [
+    "left_shoulder_roll_joint",
+    "right_shoulder_roll_joint"
+  ],
+  "scope": "Frozen measured-state, two-stage QP replay; no new closed-loop simulation",
+  "closed_loop_trials_run": 0,
+  "alignment": "Velocity difference over [t_i,t_i+1] compared with predicted acceleration at t_i",
+  "limitations": [
+    "Finite differences include contact impacts and discretization.",
+    "Unchanged contact labels do not exclude impacts or contact geometry changes.",
+    "Weight changes are frozen-state counterfactuals, not future tracking predictions.",
+    "Requests reconstructed from predicted acceleration minus saved task residual; validated at all snapshots."
+  ],
+  "environment": {
+    "returncode": 9,
+    "output": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+  },
+  "intervals": [
+    {
+      "start_s": 3.3,
+      "end_s": 3.41,
+      "scope": "all",
+      "samples": 55,
+      "position_rmse": [
+        0.076364432628457,
+        0.040864514182127096
+      ],
+      "reference_adjustment_rmse": [
+        0.001649115829939976,
+        0.0011615881317699518
+      ],
+      "qp_minus_requested_rmse": [
+        55.95299406731993,
+        111.32509331522637
+      ],
+      "observed_minus_qp_rmse": [
+        34.84876782974019,
+        55.151080120498875
+      ],
+      "peak_torque_fraction": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "start_s": 3.3,
+      "end_s": 3.41,
+      "scope": "unchanged_contact_labels",
+      "samples": 53,
+      "position_rmse": [
+        0.07687819807040595,
+        0.04121202574836113
+      ],
+      "reference_adjustment_rmse": [
+        0.0016274590724658484,
+        0.0011422963801580492
+      ],
+      "qp_minus_requested_rmse": [
+        52.114897417166176,
+        113.23455874903547
+      ],
+      "observed_minus_qp_rmse": [
+        35.47794715977925,
+        56.10215266640862
+      ],
+      "peak_torque_fraction": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "start_s": 3.41,
+      "end_s": 3.48,
+      "scope": "all",
+      "samples": 35,
+      "position_rmse": [
+        0.07083417538093811,
+        0.11768345230021994
+      ],
+      "reference_adjustment_rmse": [
+        0.0019080311002240412,
+        0.0036687452899594243
+      ],
+      "qp_minus_requested_rmse": [
+        77.76994248703261,
+        188.08458298071548
+      ],
+      "observed_minus_qp_rmse": [
+        2.703677747518487,
+        3.805316776023483
+      ],
+      "peak_torque_fraction": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "start_s": 3.41,
+      "end_s": 3.48,
+      "scope": "unchanged_contact_labels",
+      "samples": 34,
+      "position_rmse": [
+        0.07116654346075076,
+        0.11929423486213997
+      ],
+      "reference_adjustment_rmse": [
+        0.001909292754159796,
+        0.003713479650637251
+      ],
+      "qp_minus_requested_rmse": [
+        78.70307334624212,
+        158.1264180488286
+      ],
+      "observed_minus_qp_rmse": [
+        2.7358427875446565,
+        3.827929115906067
+      ],
+      "peak_torque_fraction": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "start_s": 3.48,
+      "end_s": 3.58,
+      "scope": "all",
+      "samples": 50,
+      "position_rmse": [
+        0.19941726805666304,
+        0.30567397776650274
+      ],
+      "reference_adjustment_rmse": [
+        0.0025980041268701265,
+        0.0017976567611265072
+      ],
+      "qp_minus_requested_rmse": [
+        86.99857581294987,
+        108.19476361156019
+      ],
+      "observed_minus_qp_rmse": [
+        4.784217645058561,
+        8.210768688563384
+      ],
+      "peak_torque_fraction": [
+        0.6698250293731689,
+        0.8726665496826171
+      ]
+    },
+    {
+      "start_s": 3.48,
+      "end_s": 3.58,
+      "scope": "unchanged_contact_labels",
+      "samples": 48,
+      "position_rmse": [
+        0.200532341354956,
+        0.3059508041391255
+      ],
+      "reference_adjustment_rmse": [
+        0.0025687230300143597,
+        0.0017441963956821578
+      ],
+      "qp_minus_requested_rmse": [
+        85.32860546120962,
+        108.79831119358401
+      ],
+      "observed_minus_qp_rmse": [
+        3.660944157729456,
+        8.211657999684068
+      ],
+      "peak_torque_fraction": [
+        0.6698250293731689,
+        0.8726665496826171
+      ]
+    },
+    {
+      "start_s": 3.58,
+      "end_s": 3.65,
+      "scope": "all",
+      "samples": 35,
+      "position_rmse": [
+        0.2778494831853331,
+        0.30859020740539883
+      ],
+      "reference_adjustment_rmse": [
+        0.000847799971954697,
+        0.0021772770814804244
+      ],
+      "qp_minus_requested_rmse": [
+        32.903893080964124,
+        45.73623004678069
+      ],
+      "observed_minus_qp_rmse": [
+        45.73163346744483,
+        27.476007073817055
+      ],
+      "peak_torque_fraction": [
+        0.9997259140014648,
+        0.36819896697998045
+      ]
+    },
+    {
+      "start_s": 3.58,
+      "end_s": 3.65,
+      "scope": "unchanged_contact_labels",
+      "samples": 35,
+      "position_rmse": [
+        0.2778494831853331,
+        0.30859020740539883
+      ],
+      "reference_adjustment_rmse": [
+        0.000847799971954697,
+        0.0021772770814804244
+      ],
+      "qp_minus_requested_rmse": [
+        32.903893080964124,
+        45.73623004678069
+      ],
+      "observed_minus_qp_rmse": [
+        45.73163346744483,
+        27.476007073817055
+      ],
+      "peak_torque_fraction": [
+        0.9997259140014648,
+        0.36819896697998045
+      ]
+    },
+    {
+      "start_s": 3.65,
+      "end_s": 3.8,
+      "scope": "all",
+      "samples": 75,
+      "position_rmse": [
+        0.28218212786929914,
+        0.2702215701603094
+      ],
+      "reference_adjustment_rmse": [
+        0.0010358671932330827,
+        0.0019862985027336044
+      ],
+      "qp_minus_requested_rmse": [
+        66.10389294452395,
+        56.906079067856304
+      ],
+      "observed_minus_qp_rmse": [
+        4.787957208371038,
+        6.346198799726828
+      ],
+      "peak_torque_fraction": [
+        0.9997490882873535,
+        0.5029219150543213
+      ]
+    },
+    {
+      "start_s": 3.65,
+      "end_s": 3.8,
+      "scope": "unchanged_contact_labels",
+      "samples": 75,
+      "position_rmse": [
+        0.28218212786929914,
+        0.2702215701603094
+      ],
+      "reference_adjustment_rmse": [
+        0.0010358671932330827,
+        0.0019862985027336044
+      ],
+      "qp_minus_requested_rmse": [
+        66.10389294452395,
+        56.906079067856304
+      ],
+      "observed_minus_qp_rmse": [
+        4.787957208371038,
+        6.346198799726828
+      ],
+      "peak_torque_fraction": [
+        0.9997490882873535,
+        0.5029219150543213
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1740.npz",
+      "time_s": 3.48,
+      "requested": [
+        -26.98534393310547,
+        68.25180053710938
+      ],
+      "predicted": [
+        45.17589569091797,
+        19.872045516967773
+      ],
+      "observed": [
+        45.47083377838135,
+        20.464301109313965
+      ],
+      "applied_torque_max_error": 0.0,
+      "saved_final_replay": {
+        "status": "Solved",
+        "constraint_residual": 1.745092959026806e-11,
+        "accepted": true
+      },
+      "saved_final_replay_shoulder_difference": [
+        1.3462930326113565e-08,
+        -1.9500266290606305e-08
+      ],
+      "cases": [
+        {
+          "side": "baseline",
+          "multiplier": 1.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.2789769243681803e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.3528733688872308e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02001951868624019,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            45.175896165550405,
+            19.87204550189987
+          ],
+          "shoulder_torque": [
+            6.2490590716579595,
+            10.753113949035859
+          ],
+          "root_acceleration": [
+            6.52741348370399,
+            -1.2554559356423702,
+            1.229202847128148,
+            2.398555976132703,
+            -40.34543980952421,
+            46.28492300462111
+          ],
+          "joint_posture_residual_rms": 70.2599329783876,
+          "shoulder_residual": [
+            72.16124009865587,
+            -48.379755035209506
+          ],
+          "shoulder_residual_rms": 61.43226053891692,
+          "center_of_mass_residual_rms": 6.770281698404836,
+          "com_acceleration": [
+            -2.503584476682804,
+            -2.071258663652786,
+            -4.394829625743716
+          ],
+          "com_residual": [
+            4.136815456178525,
+            3.182567000867478,
+            10.5008651069223
+          ],
+          "feet_pose_residual_rms": 6.88641459992794,
+          "feet_position_residual_rms": 8.443722049991617,
+          "feet_orientation_residual_rms": 4.852728101458679,
+          "body_orientation_residual_rms": 7.015456144957993,
+          "source_pelvis_orientation_residual_rms": 38.68706273705882,
+          "hand_pose_residual_rms": 9.512442264206811,
+          "shoulder_residual_ratio_vs_replayed_baseline": 1.0,
+          "com_residual_rms_change": 0.0
+        },
+        {
+          "side": "left",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.4069635173873394e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.7621459846850485e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02001949040402451,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            13.345358941352597,
+            21.744313876493177
+          ],
+          "shoulder_torque": [
+            1.6998816228474758,
+            11.101725976550677
+          ],
+          "root_acceleration": [
+            6.482036986024556,
+            -0.8514979483686357,
+            1.7929085443487434,
+            2.9434827426198953,
+            -40.0183030702888,
+            45.818666290917115
+          ],
+          "joint_posture_residual_rms": 69.93513579027304,
+          "shoulder_residual": [
+            40.33070287445807,
+            -46.507486660616195
+          ],
+          "shoulder_residual_rms": 43.528794549328,
+          "center_of_mass_residual_rms": 6.835030515630533,
+          "com_acceleration": [
+            -2.585135294843985,
+            -2.1387172173632987,
+            -4.218435977400263
+          ],
+          "com_residual": [
+            4.055264638017343,
+            3.115108447156965,
+            10.677258755265752
+          ],
+          "feet_pose_residual_rms": 6.989822539845319,
+          "feet_position_residual_rms": 8.585392000538238,
+          "feet_orientation_residual_rms": 4.899620645943252,
+          "body_orientation_residual_rms": 7.149131395959499,
+          "source_pelvis_orientation_residual_rms": 38.371449406534175,
+          "hand_pose_residual_rms": 8.73369951440994,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7085657302444992,
+          "com_residual_rms_change": 0.0647488172256967
+        },
+        {
+          "side": "left",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.3145040611561853e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.5916157281026244e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019528538341547,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            -5.564573392688491,
+            22.856593628680773
+          ],
+          "shoulder_torque": [
+            -1.0027003602733584,
+            11.30882989443311
+          ],
+          "root_acceleration": [
+            6.455079663268861,
+            -0.611513996906433,
+            2.127795652838414,
+            3.2672135934319244,
+            -39.82395716650387,
+            45.54167182568092
+          ],
+          "joint_posture_residual_rms": 70.02549880414104,
+          "shoulder_residual": [
+            21.420770540416978,
+            -45.395206908428605
+          ],
+          "shoulder_residual_rms": 35.49347982942952,
+          "center_of_mass_residual_rms": 6.87417944122486,
+          "com_acceleration": [
+            -2.6335831241976453,
+            -2.1787930936559885,
+            -4.1136437811814295
+          ],
+          "com_residual": [
+            4.006816808663682,
+            3.075032570864275,
+            10.782050951484585
+          ],
+          "feet_pose_residual_rms": 7.05308002904287,
+          "feet_position_residual_rms": 8.671931946983479,
+          "feet_orientation_residual_rms": 4.9284350557813035,
+          "body_orientation_residual_rms": 7.229216231144475,
+          "source_pelvis_orientation_residual_rms": 38.18528251716977,
+          "hand_pose_residual_rms": 8.684712433230445,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5777661365227581,
+          "com_residual_rms_change": 0.10389774282002406
+        },
+        {
+          "side": "left",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.4499513529008254e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019523433802533,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            -13.221970168243029,
+            22.58911625556325
+          ],
+          "shoulder_torque": [
+            -1.9239751975822597,
+            11.292117112087832
+          ],
+          "root_acceleration": [
+            6.50517014451045,
+            -0.5354357499494312,
+            2.2586342762097686,
+            3.330601863418057,
+            -39.69594888920608,
+            45.43705650699331
+          ],
+          "joint_posture_residual_rms": 70.13191906638487,
+          "shoulder_residual": [
+            13.76337376486244,
+            -45.66268428154612
+          ],
+          "shoulder_residual_rms": 33.72322043627701,
+          "center_of_mass_residual_rms": 6.887350163475939,
+          "com_acceleration": [
+            -2.6497444833651476,
+            -2.1921616869088205,
+            -4.078686847183124
+          ],
+          "com_residual": [
+            3.9906554494961806,
+            3.061663977611443,
+            10.81700788548289
+          ],
+          "feet_pose_residual_rms": 7.082013489658928,
+          "feet_position_residual_rms": 8.709155363982807,
+          "feet_orientation_residual_rms": 4.945749991804233,
+          "body_orientation_residual_rms": 7.255165494388039,
+          "source_pelvis_orientation_residual_rms": 38.09648822056334,
+          "hand_pose_residual_rms": 8.715579014451917,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5489496909350028,
+          "com_residual_rms_change": 0.11706846507110313
+        },
+        {
+          "side": "right",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.2737367544323206e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 7.389644451905042e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019530659851625,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            43.5947543795841,
+            34.195393683582985
+          ],
+          "shoulder_torque": [
+            5.7968774561033625,
+            12.142954106217145
+          ],
+          "root_acceleration": [
+            6.238270217043547,
+            -1.3806856852018643,
+            1.2509891721010735,
+            2.8944053298120216,
+            -40.24350915530418,
+            45.97157630296644
+          ],
+          "joint_posture_residual_rms": 70.41334441286314,
+          "shoulder_residual": [
+            70.58009831268957,
+            -34.05640685352639
+          ],
+          "shoulder_residual_rms": 55.41384811399514,
+          "center_of_mass_residual_rms": 6.783147871586031,
+          "com_acceleration": [
+            -2.519936969315649,
+            -2.084785548588453,
+            -4.359459406275969
+          ],
+          "com_residual": [
+            4.120462963545679,
+            3.1690401159318107,
+            10.536235326390047
+          ],
+          "feet_pose_residual_rms": 6.931621078488747,
+          "feet_position_residual_rms": 8.45759925736241,
+          "feet_orientation_residual_rms": 4.956183648066503,
+          "body_orientation_residual_rms": 6.88474245361552,
+          "source_pelvis_orientation_residual_rms": 38.5146658553129,
+          "hand_pose_residual_rms": 9.544326389125006,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9020317277579398,
+          "com_residual_rms_change": 0.012866173181195428
+        },
+        {
+          "side": "right",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 8.348877145181177e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.2846612662542611e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019512265889716,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            42.19612745829411,
+            46.865366989268225
+          ],
+          "shoulder_torque": [
+            5.3968921748095084,
+            13.37236202217272
+          ],
+          "root_acceleration": [
+            5.982503378824747,
+            -1.4914598992806962,
+            1.2702606492056334,
+            3.3330177232472566,
+            -40.15334459028983,
+            45.694399893957375
+          ],
+          "joint_posture_residual_rms": 70.73279518895575,
+          "shoulder_residual": [
+            69.18147139139958,
+            -21.38643354784115
+          ],
+          "shoulder_residual_rms": 51.202810097568204,
+          "center_of_mass_residual_rms": 6.79457814076499,
+          "com_acceleration": [
+            -2.5344018576850504,
+            -2.0967509953851846,
+            -4.328172048846566
+          ],
+          "com_residual": [
+            4.105998075176277,
+            3.157074669135079,
+            10.56752268381945
+          ],
+          "feet_pose_residual_rms": 6.9732197335991755,
+          "feet_position_residual_rms": 8.471832641589145,
+          "feet_orientation_residual_rms": 5.047735987452059,
+          "body_orientation_residual_rms": 6.7841632862174395,
+          "source_pelvis_orientation_residual_rms": 38.36409037150143,
+          "hand_pose_residual_rms": 9.690643634938654,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.8334840627447133,
+          "com_residual_rms_change": 0.02429644236015438
+        },
+        {
+          "side": "right",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.0746958878371515e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 4.092726157978177e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02001952818841346,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            41.18833689478298,
+            55.99480459029231
+          ],
+          "shoulder_torque": [
+            5.108679966250812,
+            14.258220470362051
+          ],
+          "root_acceleration": [
+            5.798208800695739,
+            -1.5712790286297666,
+            1.2841468498839923,
+            3.6490629424203886,
+            -40.0883758731875,
+            45.49467849270479
+          ],
+          "joint_posture_residual_rms": 71.06860821693468,
+          "shoulder_residual": [
+            68.17368082788845,
+            -12.256995946817064
+          ],
+          "shoulder_residual_rms": 48.97899910810293,
+          "center_of_mass_residual_rms": 6.802842832616678,
+          "com_acceleration": [
+            -2.5448246343272882,
+            -2.1053727819212504,
+            -4.305627724570925
+          ],
+          "com_residual": [
+            4.09557529853404,
+            3.1484528825990132,
+            10.59006700809509
+          ],
+          "feet_pose_residual_rms": 7.004115271184193,
+          "feet_position_residual_rms": 8.483222640079454,
+          "feet_orientation_residual_rms": 5.113726146648314,
+          "body_orientation_residual_rms": 6.720824638430068,
+          "source_pelvis_orientation_residual_rms": 38.256722705678065,
+          "hand_pose_residual_rms": 9.862124027827894,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7972846624628939,
+          "com_residual_rms_change": 0.032561134211841924
+        },
+        {
+          "side": "both",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 8.881784197001252e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.4442670110147446e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019528764237293,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            12.49494146371567,
+            35.48580410195714
+          ],
+          "shoulder_torque": [
+            1.3607001794623228,
+            12.431588231927487
+          ],
+          "root_acceleration": [
+            6.20479937851451,
+            -0.9804991580265756,
+            1.801989395952024,
+            3.4090705028912276,
+            -39.92712695407701,
+            45.527012116259364
+          ],
+          "joint_posture_residual_rms": 70.11929092899223,
+          "shoulder_residual": [
+            39.48028539682114,
+            -32.76599643515223
+          ],
+          "shoulder_residual_rms": 36.27880550268198,
+          "center_of_mass_residual_rms": 6.846303344613611,
+          "com_acceleration": [
+            -2.599149812357871,
+            -2.1503101313667887,
+            -4.188122773607862
+          ],
+          "com_residual": [
+            4.041250120503458,
+            3.103515533153475,
+            10.707571959058154
+          ],
+          "feet_pose_residual_rms": 7.028973127731776,
+          "feet_position_residual_rms": 8.592387941032941,
+          "feet_orientation_residual_rms": 4.998379330497292,
+          "body_orientation_residual_rms": 7.022636832211969,
+          "source_pelvis_orientation_residual_rms": 38.21451456457566,
+          "hand_pose_residual_rms": 8.934096321161942,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5905497402248385,
+          "com_residual_rms_change": 0.07602164620877527
+        },
+        {
+          "side": "both",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.184918912462308e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.6484591469634324e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019505308823682,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            -6.397221171774544,
+            48.134121312382184
+          ],
+          "shoulder_torque": [
+            -1.522736631603599,
+            13.75125436732649
+          ],
+          "root_acceleration": [
+            5.94527539969673,
+            -0.858537620381144,
+            2.1315230291730316,
+            4.112555529748426,
+            -39.66349917410074,
+            45.015013127967876
+          ],
+          "joint_posture_residual_rms": 70.54337843622233,
+          "shoulder_residual": [
+            20.588122761330926,
+            -20.11767922472719
+          ],
+          "shoulder_residual_rms": 20.35426019565256,
+          "center_of_mass_residual_rms": 6.893710797523272,
+          "com_acceleration": [
+            -2.657525453019238,
+            -2.198598388294864,
+            -4.06185686937409
+          ],
+          "com_residual": [
+            3.9828744798420903,
+            3.0552272762254,
+            10.833837863291926
+          ],
+          "feet_pose_residual_rms": 7.121901792373233,
+          "feet_position_residual_rms": 8.679650635701046,
+          "feet_orientation_residual_rms": 5.109465248202847,
+          "body_orientation_residual_rms": 7.008103018324188,
+          "source_pelvis_orientation_residual_rms": 37.90744739998548,
+          "hand_pose_residual_rms": 9.299443417242001,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.33132852376087113,
+          "com_residual_rms_change": 0.12342909911843591
+        },
+        {
+          "side": "both",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.7852386235972517e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.2737367544323206e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020019529281171344,
+            "lock_tolerance_max": 0.02001953125
+          },
+          "shoulder_acceleration": [
+            -11.73698676201222,
+            56.46490029657375
+          ],
+          "shoulder_torque": [
+            -2.1277479965114305,
+            14.527551960158506
+          ],
+          "root_acceleration": [
+            5.858371807889435,
+            -0.9227560442613142,
+            2.2134266149169033,
+            4.390460556403343,
+            -39.46618182816173,
+            44.760550262524646
+          ],
+          "joint_posture_residual_rms": 70.93964279179953,
+          "shoulder_residual": [
+            15.248357171093248,
+            -11.786900240535623
+          ],
+          "shoulder_residual_rms": 13.627975155861739,
+          "center_of_mass_residual_rms": 6.9064327340701865,
+          "com_acceleration": [
+            -2.673041319456587,
+            -2.2114331153535396,
+            -4.028296123057247
+          ],
+          "com_residual": [
+            3.967358613404741,
+            3.042392549166724,
+            10.867398609608768
+          ],
+          "feet_pose_residual_rms": 7.171728637665797,
+          "feet_position_residual_rms": 8.711832461920165,
+          "feet_orientation_residual_rms": 5.193395657954962,
+          "body_orientation_residual_rms": 6.957194710696274,
+          "source_pelvis_orientation_residual_rms": 37.73309469190087,
+          "hand_pose_residual_rms": 9.541928141340389,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.22183743584087237,
+          "com_residual_rms_change": 0.13615103566535058
+        }
+      ],
+      "hierarchy_replay_shoulder_difference": [
+        4.7463243646461706e-07,
+        -1.506790425764848e-08
+      ],
+      "exact_shoulders_feasibility": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "constraint_residual": 5.042011252953671e-11
+      }
+    },
+    {
+      "snapshot": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1790.npz",
+      "time_s": 3.58,
+      "requested": [
+        -66.47836303710938,
+        67.61410522460938
+      ],
+      "predicted": [
+        -55.352317810058594,
+        48.05895233154297
+      ],
+      "observed": [
+        -53.64722013473511,
+        52.004680037498474
+      ],
+      "applied_torque_max_error": 0.0,
+      "saved_final_replay": {
+        "status": "Solved",
+        "constraint_residual": 3.410605131648481e-11,
+        "accepted": true
+      },
+      "saved_final_replay_shoulder_difference": [
+        -1.7716516751420386e-06,
+        -5.621387799692457e-10
+      ],
+      "cases": [
+        {
+          "side": "baseline",
+          "multiplier": 1.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 3.552713678800501e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 3.467448550509289e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272445504512,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -55.35231895928855,
+            48.05895297148408
+          ],
+          "shoulder_torque": [
+            -5.898813760902856,
+            5.267052129236108
+          ],
+          "root_acceleration": [
+            0.1324638579667712,
+            0.005305066765654838,
+            -4.828799157547258,
+            10.019038184413404,
+            -53.79238447456682,
+            -5.1799637507784135
+          ],
+          "joint_posture_residual_rms": 62.979277258465025,
+          "shoulder_residual": [
+            11.126044077820822,
+            -19.555152253125293
+          ],
+          "shoulder_residual_rms": 15.909004313037993,
+          "center_of_mass_residual_rms": 9.2963860045326,
+          "com_acceleration": [
+            0.4779494755615985,
+            1.9942130095311978,
+            -5.178341319027248
+          ],
+          "com_residual": [
+            -3.7517715937743388,
+            -3.519627188985648,
+            -15.257942606869044
+          ],
+          "feet_pose_residual_rms": 9.34655532656813,
+          "feet_position_residual_rms": 10.531081577332536,
+          "feet_orientation_residual_rms": 7.988273515395264,
+          "body_orientation_residual_rms": 9.129326619166914,
+          "source_pelvis_orientation_residual_rms": 18.530997620211913,
+          "hand_pose_residual_rms": 11.946131844027637,
+          "shoulder_residual_ratio_vs_replayed_baseline": 1.0,
+          "com_residual_rms_change": 0.0
+        },
+        {
+          "side": "left",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 6.927791673660977e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.029132417646906e-10,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272245671473,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -56.56606238213101,
+            47.493338870294544
+          ],
+          "shoulder_torque": [
+            -5.967324312239504,
+            5.2042301330528495
+          ],
+          "root_acceleration": [
+            0.14293327504283626,
+            0.014683805710678247,
+            -4.806400232560192,
+            9.124983404898751,
+            -53.37457378144297,
+            -5.405305447003812
+          ],
+          "joint_posture_residual_rms": 62.91129744935385,
+          "shoulder_residual": [
+            9.912300654978367,
+            -20.12076635431483
+          ],
+          "shoulder_residual_rms": 15.860311203750266,
+          "center_of_mass_residual_rms": 9.29623989649082,
+          "com_acceleration": [
+            0.46839610654191366,
+            1.970655934108601,
+            -5.170267840515836
+          ],
+          "com_residual": [
+            -3.7613249627940237,
+            -3.5431842644082447,
+            -15.249869128357634
+          ],
+          "feet_pose_residual_rms": 9.346362558161287,
+          "feet_position_residual_rms": 10.542209317501245,
+          "feet_orientation_residual_rms": 7.973130429335042,
+          "body_orientation_residual_rms": 9.127482668286623,
+          "source_pelvis_orientation_residual_rms": 17.975465521599247,
+          "hand_pose_residual_rms": 11.96310398175244,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9969392736132567,
+          "com_residual_rms_change": -0.0001461080417808347
+        },
+        {
+          "side": "left",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 7.638334409421077e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 4.768097028318152e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272442349702,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -58.38255131147394,
+            46.723440285460995
+          ],
+          "shoulder_torque": [
+            -6.062247760312593,
+            5.121466344619116
+          ],
+          "root_acceleration": [
+            0.14242646775502812,
+            0.03341903967173754,
+            -4.7753433310529925,
+            7.779479042802886,
+            -52.70363889556496,
+            -5.396830474355062
+          ],
+          "joint_posture_residual_rms": 62.82085916179451,
+          "shoulder_residual": [
+            8.095811725635436,
+            -20.89066493914838
+          ],
+          "shoulder_residual_rms": 15.842380646492174,
+          "center_of_mass_residual_rms": 9.295376561649318,
+          "com_acceleration": [
+            0.45111522031523243,
+            1.9396737266280701,
+            -5.157181447944364
+          ],
+          "com_residual": [
+            -3.778605849020705,
+            -3.5741664718887756,
+            -15.23678273578616
+          ],
+          "feet_pose_residual_rms": 9.347138271354737,
+          "feet_position_residual_rms": 10.55913550240909,
+          "feet_orientation_residual_rms": 7.95252445261332,
+          "body_orientation_residual_rms": 9.125723665297475,
+          "source_pelvis_orientation_residual_rms": 17.208382984664464,
+          "hand_pose_residual_rms": 11.969877850552843,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9958122038793328,
+          "com_residual_rms_change": -0.0010094428832818636
+        },
+        {
+          "side": "left",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 5.511857636975037e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272448716165,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -60.56017381621388,
+            45.81735534870146
+          ],
+          "shoulder_torque": [
+            -6.17436688672492,
+            5.024729863442134
+          ],
+          "root_acceleration": [
+            0.1382554942347459,
+            0.05691470550911265,
+            -4.7386552885546696,
+            6.164823166252724,
+            -51.889236899470674,
+            -5.310416606064064
+          ],
+          "joint_posture_residual_rms": 62.73001918679728,
+          "shoulder_residual": [
+            5.918189220895492,
+            -21.796749875907913
+          ],
+          "shoulder_residual_rms": 15.970649154107909,
+          "center_of_mass_residual_rms": 9.29425759490637,
+          "com_acceleration": [
+            0.4297408001957961,
+            1.9034683165297048,
+            -5.141273770752123
+          ],
+          "com_residual": [
+            -3.7999802691401414,
+            -3.610371881987141,
+            -15.22087505859392
+          ],
+          "feet_pose_residual_rms": 9.348417788731396,
+          "feet_position_residual_rms": 10.579483704129604,
+          "feet_orientation_residual_rms": 7.928452236054358,
+          "body_orientation_residual_rms": 9.124023902918537,
+          "source_pelvis_orientation_residual_rms": 16.316825298464362,
+          "hand_pose_residual_rms": 11.974283694625674,
+          "shoulder_residual_ratio_vs_replayed_baseline": 1.003874839672989,
+          "com_residual_rms_change": -0.0021284096262306207
+        },
+        {
+          "side": "right",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.7849544065029477e-10,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272350661267,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -54.41468937008394,
+            51.002614803116415
+          ],
+          "shoulder_torque": [
+            -5.846320657519997,
+            5.568278080703755
+          ],
+          "root_acceleration": [
+            0.1822563011457317,
+            -0.09206825298487073,
+            -4.845426585785358,
+            10.803071660754203,
+            -54.31818682043353,
+            -3.6672785151841887
+          ],
+          "joint_posture_residual_rms": 63.09277482704273,
+          "shoulder_residual": [
+            12.063673667025434,
+            -16.61149042149296
+          ],
+          "shoulder_residual_rms": 14.516780572286597,
+          "center_of_mass_residual_rms": 9.297735928146647,
+          "com_acceleration": [
+            0.49411732291410015,
+            2.0284822227983366,
+            -5.1926357650415
+          ],
+          "com_residual": [
+            -3.7356037464218375,
+            -3.485357975718509,
+            -15.272237052883296
+          ],
+          "feet_pose_residual_rms": 9.348169225413498,
+          "feet_position_residual_rms": 10.522682702625819,
+          "feet_orientation_residual_rms": 8.003104677173443,
+          "body_orientation_residual_rms": 9.087705011801575,
+          "source_pelvis_orientation_residual_rms": 19.37471610911351,
+          "hand_pose_residual_rms": 11.925786022174469,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9124883170966005,
+          "com_residual_rms_change": 0.001349923614046844
+        },
+        {
+          "side": "right",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 5.838884931108623e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000427244828984,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -53.27151596633856,
+            54.89117401382016
+          ],
+          "shoulder_torque": [
+            -5.772353890465187,
+            5.970387531651471
+          ],
+          "root_acceleration": [
+            0.22629625974634696,
+            -0.21176178226911277,
+            -4.868885722450335,
+            11.756532600786064,
+            -54.9153256098513,
+            -1.262202578482241
+          ],
+          "joint_posture_residual_rms": 63.27298790115659,
+          "shoulder_residual": [
+            13.206847070770813,
+            -12.722931210789213
+          ],
+          "shoulder_residual_rms": 12.967146720562736,
+          "center_of_mass_residual_rms": 9.298668950304517,
+          "com_acceleration": [
+            0.510604224467041,
+            2.0771528740919174,
+            -5.20938438389004
+          ],
+          "com_residual": [
+            -3.7191168448688963,
+            -3.4366873244249283,
+            -15.288985671731837
+          ],
+          "feet_pose_residual_rms": 9.351877611357542,
+          "feet_position_residual_rms": 10.51288987139498,
+          "feet_orientation_residual_rms": 8.024610661430355,
+          "body_orientation_residual_rms": 9.036157384077818,
+          "source_pelvis_orientation_residual_rms": 20.556174165923952,
+          "hand_pose_residual_rms": 11.887158521279014,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.8150822305036212,
+          "com_residual_rms_change": 0.0022829457719169
+        },
+        {
+          "side": "right",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 8.029132914089132e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.8384405936776602e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272453206795,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -52.20262267147675,
+            58.878744832286706
+          ],
+          "shoulder_torque": [
+            -5.71433164220393,
+            6.3711767001737245
+          ],
+          "root_acceleration": [
+            0.27506053094779226,
+            -0.34216586981711816,
+            -4.891318943606076,
+            12.512792074261775,
+            -55.58996514080684,
+            1.1527184102988557
+          ],
+          "joint_posture_residual_rms": 63.47916609853658,
+          "shoulder_residual": [
+            14.275740365632622,
+            -8.735360392322669
+          ],
+          "shoulder_residual_rms": 11.834341641399243,
+          "center_of_mass_residual_rms": 9.300680753085,
+          "com_acceleration": [
+            0.5293448948822359,
+            2.115915861591781,
+            -5.226257517873258
+          ],
+          "com_residual": [
+            -3.7003761744537016,
+            -3.397924336925065,
+            -15.305858805715054
+          ],
+          "feet_pose_residual_rms": 9.355953811228067,
+          "feet_position_residual_rms": 10.503650495997306,
+          "feet_orientation_residual_rms": 8.046183548341512,
+          "body_orientation_residual_rms": 8.98524325226192,
+          "source_pelvis_orientation_residual_rms": 21.733716856772208,
+          "hand_pose_residual_rms": 11.874360675410239,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7438769522301645,
+          "com_residual_rms_change": 0.004294748552400307
+        },
+        {
+          "side": "both",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 6.217248937900877e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 6.112799155744142e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272455338423,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -55.75294516232193,
+            50.52176673267775
+          ],
+          "shoulder_torque": [
+            -5.914886994923373,
+            5.516650778369895
+          ],
+          "root_acceleration": [
+            0.18062482373510716,
+            -0.08001929346509543,
+            -4.82297347438371,
+            9.813142578349817,
+            -53.821473086723856,
+            -3.5596161192095463
+          ],
+          "joint_posture_residual_rms": 63.01583239921019,
+          "shoulder_residual": [
+            10.725417874787446,
+            -17.092338491931628
+          ],
+          "shoulder_residual_rms": 14.268542737637535,
+          "center_of_mass_residual_rms": 9.2969398570903,
+          "com_acceleration": [
+            0.48109894317933843,
+            2.0068926616486977,
+            -5.1830466884435165
+          ],
+          "com_residual": [
+            -3.748622126156599,
+            -3.506947536868148,
+            -15.262647976285313
+          ],
+          "feet_pose_residual_rms": 9.348953417830865,
+          "feet_position_residual_rms": 10.535183324238496,
+          "feet_orientation_residual_rms": 7.9884774733505965,
+          "body_orientation_residual_rms": 9.084921627613287,
+          "source_pelvis_orientation_residual_rms": 18.837818189494705,
+          "hand_pose_residual_rms": 11.92624303728565,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.8968847111282733,
+          "com_residual_rms_change": 0.0005538525576991304
+        },
+        {
+          "side": "both",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 5.3290705182007514e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 7.247145106248354e-10,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272204118934,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -56.80342788636593,
+            53.89421499012029
+          ],
+          "shoulder_torque": [
+            -5.952108996105107,
+            5.862142473345324
+          ],
+          "root_acceleration": [
+            0.22532692087535242,
+            -0.18852138882324368,
+            -4.809962472525218,
+            9.152357978667442,
+            -53.61792511981516,
+            -0.7827007558061223
+          ],
+          "joint_posture_residual_rms": 63.08372484181237,
+          "shoulder_residual": [
+            9.674935150743444,
+            -13.719890234489085
+          ],
+          "shoulder_residual_rms": 11.870967909516057,
+          "center_of_mass_residual_rms": 9.296503275431213,
+          "com_acceleration": [
+            0.4766660689667537,
+            2.0225388727678943,
+            -5.184746476387676
+          ],
+          "com_residual": [
+            -3.7530550003691836,
+            -3.4913013257489514,
+            -15.264347764229473
+          ],
+          "feet_pose_residual_rms": 9.354691424872382,
+          "feet_position_residual_rms": 10.545923604006255,
+          "feet_orientation_residual_rms": 7.987740522051618,
+          "body_orientation_residual_rms": 9.023790978126137,
+          "source_pelvis_orientation_residual_rms": 19.259397421615358,
+          "hand_pose_residual_rms": 11.884389986895473,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7461791873289881,
+          "com_residual_rms_change": 0.00011727089861324203
+        },
+        {
+          "side": "both",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 9.290488378610462e-10,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004272089607866,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -58.6082208596645,
+            57.66173581192271
+          ],
+          "shoulder_torque": [
+            -6.024980016540403,
+            6.246981233829923
+          ],
+          "root_acceleration": [
+            0.2774326958433193,
+            -0.31130845452137307,
+            -4.785103713252226,
+            7.956706598188598,
+            -53.16935912193983,
+            2.528058314082832
+          ],
+          "joint_posture_residual_rms": 63.20820784179204,
+          "shoulder_residual": [
+            7.870142177444876,
+            -9.952369412686664
+          ],
+          "shoulder_residual_rms": 8.971866996890276,
+          "center_of_mass_residual_rms": 9.29563751358049,
+          "com_acceleration": [
+            0.4660419709075674,
+            2.0317483318782292,
+            -5.1826523540027525
+          ],
+          "com_residual": [
+            -3.76367909842837,
+            -3.4820918666386165,
+            -15.262253641844548
+          ],
+          "feet_pose_residual_rms": 9.363281056985231,
+          "feet_position_residual_rms": 10.56353181744981,
+          "feet_orientation_residual_rms": 7.98460142060469,
+          "body_orientation_residual_rms": 8.951538881090812,
+          "source_pelvis_orientation_residual_rms": 19.72365358708887,
+          "hand_pose_residual_rms": 11.852882958585012,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5639489951949734,
+          "com_residual_rms_change": -0.0007484909521107141
+        }
+      ],
+      "hierarchy_replay_shoulder_difference": [
+        -1.1492299591964183e-06,
+        6.399411134339061e-07
+      ],
+      "exact_shoulders_feasibility": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "constraint_residual": 2.7750957087846473e-10
+      }
+    },
+    {
+      "snapshot": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1825.npz",
+      "time_s": 3.65,
+      "requested": [
+        -29.90595054626465,
+        58.321205139160156
+      ],
+      "predicted": [
+        1.699426293373108,
+        -94.68184661865234
+      ],
+      "observed": [
+        1.3114959001541138,
+        -95.25030851364136
+      ],
+      "applied_torque_max_error": 0.0,
+      "saved_final_replay": {
+        "status": "Solved",
+        "constraint_residual": 3.7623237858497305e-12,
+        "accepted": true
+      },
+      "saved_final_replay_shoulder_difference": [
+        6.334346602798746e-09,
+        -1.8316950445296243e-06
+      ],
+      "cases": [
+        {
+          "side": "baseline",
+          "multiplier": 1.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 3.055333763768431e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.1013412404281553e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000045757469593,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            1.6994258853712594,
+            -94.68185015504432
+          ],
+          "shoulder_torque": [
+            19.99383308535167,
+            -4.473106215438083
+          ],
+          "root_acceleration": [
+            1.908356225681001,
+            7.951029715350138,
+            11.697505832452224,
+            -62.02003803669207,
+            101.35753998175126,
+            -32.36528050973256
+          ],
+          "joint_posture_residual_rms": 76.21844847325497,
+          "shoulder_residual": [
+            31.605376431635907,
+            -153.00305529420447
+          ],
+          "shoulder_residual_rms": 110.47360487633867,
+          "center_of_mass_residual_rms": 4.987838731073906,
+          "com_acceleration": [
+            -0.6171605594734639,
+            1.709959651893158,
+            8.34662345666152
+          ],
+          "com_residual": [
+            -6.078514815149734,
+            -4.84488758855484,
+            3.7701893212245086
+          ],
+          "feet_pose_residual_rms": 19.87904002698019,
+          "feet_position_residual_rms": 19.48586184523197,
+          "feet_orientation_residual_rms": 20.26459111201344,
+          "body_orientation_residual_rms": 54.12181924048571,
+          "source_pelvis_orientation_residual_rms": 56.0599711427179,
+          "hand_pose_residual_rms": 14.457772138770748,
+          "shoulder_residual_ratio_vs_replayed_baseline": 1.0,
+          "com_residual_rms_change": 0.0
+        },
+        {
+          "side": "left",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.8421709430404007e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.4850343177386094e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457697651797,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -3.831964246099485,
+            -94.50502404475894
+          ],
+          "shoulder_torque": [
+            19.340895404953052,
+            -4.41132537297684
+          ],
+          "root_acceleration": [
+            1.8651606467179938,
+            8.006976606248294,
+            11.579900957004714,
+            -61.639640855772626,
+            101.09799209906603,
+            -32.70429897825771
+          ],
+          "joint_posture_residual_rms": 75.95209225228832,
+          "shoulder_residual": [
+            26.073986300165163,
+            -152.8262291839191
+          ],
+          "shoulder_residual_rms": 109.62597568130687,
+          "center_of_mass_residual_rms": 4.953354763415615,
+          "com_acceleration": [
+            -0.6208293027261464,
+            1.6997977249774214,
+            8.187903033404256
+          ],
+          "com_residual": [
+            -6.082183558402416,
+            -4.855049515470577,
+            3.611468897967244
+          ],
+          "feet_pose_residual_rms": 19.808579345521984,
+          "feet_position_residual_rms": 19.42575228376367,
+          "feet_orientation_residual_rms": 20.184146739100242,
+          "body_orientation_residual_rms": 54.280007687257566,
+          "source_pelvis_orientation_residual_rms": 55.93637673854612,
+          "hand_pose_residual_rms": 14.295847805309446,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9923273147827427,
+          "com_residual_rms_change": -0.03448396765829109
+        },
+        {
+          "side": "left",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 3.623767952376511e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457733207355,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -14.302618106921392,
+            -94.11499436887492
+          ],
+          "shoulder_torque": [
+            17.55055120533925,
+            -4.286282576591125
+          ],
+          "root_acceleration": [
+            1.7602664671773791,
+            8.037186584717587,
+            11.09846626577882,
+            -60.9359159105753,
+            100.04112806214857,
+            -33.64953497761021
+          ],
+          "joint_posture_residual_rms": 75.67640360855029,
+          "shoulder_residual": [
+            15.603332439343257,
+            -152.4361995080351
+          ],
+          "shoulder_residual_rms": 108.35187793403985,
+          "center_of_mass_residual_rms": 4.854825035241104,
+          "com_acceleration": [
+            -0.6360803648781603,
+            1.6390089556044387,
+            7.63646736626016
+          ],
+          "com_residual": [
+            -6.09743462055443,
+            -4.915838284843559,
+            3.060033230823148
+          ],
+          "feet_pose_residual_rms": 19.73753199106146,
+          "feet_position_residual_rms": 19.379094681885924,
+          "feet_orientation_residual_rms": 20.089575095229115,
+          "body_orientation_residual_rms": 54.44621260522105,
+          "source_pelvis_orientation_residual_rms": 55.583277546774475,
+          "hand_pose_residual_rms": 13.739680765066616,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9807942635286154,
+          "com_residual_rms_change": -0.1330136958328021
+        },
+        {
+          "side": "left",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 3.979039320256561e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 4.739320047519868e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457388562154,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -21.258522749384014,
+            -93.85588835504247
+          ],
+          "shoulder_torque": [
+            16.361182901544613,
+            -4.20321366983816
+          ],
+          "root_acceleration": [
+            1.690582765662097,
+            8.057255790991144,
+            10.7786377307474,
+            -60.46841467371805,
+            99.33902811544792,
+            -34.27747775987805
+          ],
+          "joint_posture_residual_rms": 75.53181674697151,
+          "shoulder_residual": [
+            8.647427796880635,
+            -152.1770934942026
+          ],
+          "shoulder_residual_rms": 107.77904664600987,
+          "center_of_mass_residual_rms": 4.800087723323536,
+          "com_acceleration": [
+            -0.6462120087276406,
+            1.5986255289261666,
+            7.270135515872273
+          ],
+          "com_residual": [
+            -6.107566264403911,
+            -4.956221711521831,
+            2.693701380435261
+          ],
+          "feet_pose_residual_rms": 19.69035985679707,
+          "feet_position_residual_rms": 19.34811259350966,
+          "feet_orientation_residual_rms": 20.02675913994084,
+          "body_orientation_residual_rms": 54.55670199663332,
+          "source_pelvis_orientation_residual_rms": 55.35580180582096,
+          "hand_pose_residual_rms": 13.404400349605247,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9756090313759109,
+          "com_residual_rms_change": -0.18775100775037057
+        },
+        {
+          "side": "right",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 4.547473508864641e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.4698465495021082e-11,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000456886599238,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            1.423225956317749,
+            -87.56888637771691
+          ],
+          "shoulder_torque": [
+            19.993931542777194,
+            -4.076366814698016
+          ],
+          "root_acceleration": [
+            2.13421981861017,
+            7.863869902010527,
+            12.14484188727114,
+            -54.352166951998804,
+            101.9277733436703,
+            -35.99914508012648
+          ],
+          "joint_posture_residual_rms": 76.62638790480001,
+          "shoulder_residual": [
+            31.3291765025824,
+            -145.89009151687708
+          ],
+          "shoulder_residual_rms": 105.51169627849968,
+          "center_of_mass_residual_rms": 5.0113789081413325,
+          "com_acceleration": [
+            -0.6369014732488438,
+            1.8746535491172702,
+            8.607416616067699
+          ],
+          "com_residual": [
+            -6.098255728925113,
+            -4.680193691330728,
+            4.030982480630687
+          ],
+          "feet_pose_residual_rms": 20.09964794869035,
+          "feet_position_residual_rms": 19.647744868820055,
+          "feet_orientation_residual_rms": 20.54161183773901,
+          "body_orientation_residual_rms": 53.744275394005534,
+          "source_pelvis_orientation_residual_rms": 55.102657529606375,
+          "hand_pose_residual_rms": 14.84587895280076,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9550851209807698,
+          "com_residual_rms_change": 0.02354017706742617
+        },
+        {
+          "side": "right",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.5508484213787597e-12,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 9.521272659185342e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457746377265,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            0.9412921286132087,
+            -75.15771305893595
+          ],
+          "shoulder_torque": [
+            19.993677667717932,
+            -3.384248679972169
+          ],
+          "root_acceleration": [
+            2.5285240704915886,
+            7.711432453856517,
+            12.92538522382587,
+            -40.97294158547072,
+            102.92303930332989,
+            -42.3395007418815
+          ],
+          "joint_posture_residual_rms": 78.31798662728156,
+          "shoulder_residual": [
+            30.847242674877858,
+            -133.4789181980961
+          ],
+          "shoulder_residual_rms": 96.87149731468187,
+          "center_of_mass_residual_rms": 5.066848892871317,
+          "com_acceleration": [
+            -0.6705159598281754,
+            2.1634997972367325,
+            9.063650243759101
+          ],
+          "com_residual": [
+            -6.131870215504445,
+            -4.391347443211266,
+            4.487216108322089
+          ],
+          "feet_pose_residual_rms": 20.486960846705667,
+          "feet_position_residual_rms": 19.933654877070385,
+          "feet_orientation_residual_rms": 21.02571122960529,
+          "body_orientation_residual_rms": 53.092982371118445,
+          "source_pelvis_orientation_residual_rms": 54.461846735010404,
+          "hand_pose_residual_rms": 15.616722421320228,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.8768745930135742,
+          "com_residual_rms_change": 0.07901016179741038
+        },
+        {
+          "side": "right",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.8421709430404007e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 6.039613253960852e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000045768271974,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -5.242769807573751,
+            -55.83984967612455
+          ],
+          "shoulder_torque": [
+            18.699500067260335,
+            -2.2989829130819746
+          ],
+          "root_acceleration": [
+            3.00020831926043,
+            7.393701664331348,
+            13.554405105401617,
+            -21.02783292211991,
+            103.63549261773893,
+            -52.21674795568449
+          ],
+          "joint_posture_residual_rms": 83.12119140366177,
+          "shoulder_residual": [
+            24.663180738690897,
+            -114.1610548152847
+          ],
+          "shoulder_residual_rms": 82.58637575498689,
+          "center_of_mass_residual_rms": 5.044235616914689,
+          "com_acceleration": [
+            -0.7521360396269126,
+            2.51653549344764,
+            9.204340299250646
+          ],
+          "com_residual": [
+            -6.213490295303182,
+            -4.038311747000359,
+            4.627906163813634
+          ],
+          "feet_pose_residual_rms": 21.156551006619797,
+          "feet_position_residual_rms": 20.476557548376356,
+          "feet_orientation_residual_rms": 21.815359083898706,
+          "body_orientation_residual_rms": 51.98403007998406,
+          "source_pelvis_orientation_residual_rms": 55.84021257801517,
+          "hand_pose_residual_rms": 16.60607669841891,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7475665870361701,
+          "com_residual_rms_change": 0.056396885840782396
+        },
+        {
+          "side": "both",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 9.614531393253856e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 7.062794793455396e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457473646094,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -5.650109118573334,
+            -87.33619070698087
+          ],
+          "shoulder_torque": [
+            18.982698001535056,
+            -3.9954649646324154
+          ],
+          "root_acceleration": [
+            2.0713568544993186,
+            7.9113449072322055,
+            11.911504900369575,
+            -53.88292452603674,
+            101.41535862308716,
+            -36.523370865917926
+          ],
+          "joint_posture_residual_rms": 76.36083097470616,
+          "shoulder_residual": [
+            24.255841427691315,
+            -145.65739584614101
+          ],
+          "shoulder_residual_rms": 104.41365525649584,
+          "center_of_mass_residual_rms": 4.948766839778166,
+          "com_acceleration": [
+            -0.6438794843957476,
+            1.8487689965980783,
+            8.324744187355428
+          ],
+          "com_residual": [
+            -6.105233740072017,
+            -4.70607824384992,
+            3.7483100519184163
+          ],
+          "feet_pose_residual_rms": 20.02923570215518,
+          "feet_position_residual_rms": 19.592853836042117,
+          "feet_orientation_residual_rms": 20.45631062006209,
+          "body_orientation_residual_rms": 53.904869088529686,
+          "source_pelvis_orientation_residual_rms": 54.93474895874515,
+          "hand_pose_residual_rms": 14.565752078058903,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9451457239344532,
+          "com_residual_rms_change": -0.03907189129574018
+        },
+        {
+          "side": "both",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 4.476419235288631e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.8616219676914625e-12,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020004271616414826,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -17.282100403031638,
+            -74.56886523895353
+          ],
+          "shoulder_torque": [
+            16.91133612318193,
+            -3.1720179401879216
+          ],
+          "root_acceleration": [
+            2.344547041147756,
+            7.769726398584489,
+            12.09788691885703,
+            -39.83989101863627,
+            101.11119505593639,
+            -43.92218613340039
+          ],
+          "joint_posture_residual_rms": 77.9107165301582,
+          "shoulder_residual": [
+            12.62385014323301,
+            -132.8900703781137
+          ],
+          "shoulder_residual_rms": 94.39049845598555,
+          "center_of_mass_residual_rms": 4.853335936699257,
+          "com_acceleration": [
+            -0.6962786877368232,
+            2.05832355259089,
+            8.116129094342806
+          ],
+          "com_residual": [
+            -6.157632943413093,
+            -4.496523687857108,
+            3.5396949589057947
+          ],
+          "feet_pose_residual_rms": 20.356523761732454,
+          "feet_position_residual_rms": 19.846789209629435,
+          "feet_orientation_residual_rms": 20.853802468434694,
+          "body_orientation_residual_rms": 53.396607534274565,
+          "source_pelvis_orientation_residual_rms": 54.07816097470759,
+          "hand_pose_residual_rms": 14.794373717611458,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.8544167501517115,
+          "com_residual_rms_change": -0.13450279437464907
+        },
+        {
+          "side": "both",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.2737367544323206e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 2.5579538487363607e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000045774063608,
+            "lock_tolerance_max": 0.0200042724609375
+          },
+          "shoulder_acceleration": [
+            -24.442426669152297,
+            -55.3568986172519
+          ],
+          "shoulder_torque": [
+            15.391452830367998,
+            -2.0914469657566475
+          ],
+          "root_acceleration": [
+            2.787249320194832,
+            7.439638195114077,
+            12.617068192588828,
+            -20.17788689732428,
+            101.67542864961254,
+            -53.735401488737395
+          ],
+          "joint_posture_residual_rms": 82.83237190233305,
+          "shoulder_residual": [
+            5.463523877112351,
+            -113.67810375641206
+          ],
+          "shoulder_residual_rms": 80.475342083179,
+          "center_of_mass_residual_rms": 4.7998021328176925,
+          "com_acceleration": [
+            -0.7830619866458732,
+            2.391722864108126,
+            8.152739877729186
+          ],
+          "com_residual": [
+            -6.244416242322143,
+            -4.163124376339872,
+            3.576305742292174
+          ],
+          "feet_pose_residual_rms": 21.03327699045068,
+          "feet_position_residual_rms": 20.403774339564123,
+          "feet_orientation_residual_rms": 21.644479079298456,
+          "body_orientation_residual_rms": 52.274389613607084,
+          "source_pelvis_orientation_residual_rms": 55.621499839902484,
+          "hand_pose_residual_rms": 15.910483780030662,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.7284576453648004,
+          "com_residual_rms_change": -0.18803659825621377
+        }
+      ],
+      "hierarchy_replay_shoulder_difference": [
+        -4.080018485286274e-07,
+        -3.5363919721476123e-06
+      ],
+      "exact_shoulders_feasibility": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "constraint_residual": 1.9127810446661897e-11
+      }
+    },
+    {
+      "snapshot": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1875.npz",
+      "time_s": 3.75,
+      "requested": [
+        -63.246883392333984,
+        17.007217407226562
+      ],
+      "predicted": [
+        -18.938554763793945,
+        3.8569445610046387
+      ],
+      "observed": [
+        -17.49269664287567,
+        5.127310752868652
+      ],
+      "applied_torque_max_error": 0.0,
+      "saved_final_replay": {
+        "status": "Solved",
+        "constraint_residual": 1.4921397450962104e-13,
+        "accepted": true
+      },
+      "saved_final_replay_shoulder_difference": [
+        -5.156053362043167e-11,
+        -4.023475241865526e-08
+      ],
+      "cases": [
+        {
+          "side": "baseline",
+          "multiplier": 1.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457760069423,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -18.938554220932545,
+            3.8569443035467903
+          ],
+          "shoulder_torque": [
+            -3.6254620076588915,
+            -1.4379304020815824
+          ],
+          "root_acceleration": [
+            0.603763085440882,
+            -4.185603534190987,
+            -5.603451593608945,
+            -32.12339709394653,
+            2.9539252733232835,
+            -7.9658660979978455
+          ],
+          "joint_posture_residual_rms": 36.621135621747285,
+          "shoulder_residual": [
+            44.30832917140144,
+            -13.150273103679773
+          ],
+          "shoulder_residual_rms": 32.681475767341254,
+          "center_of_mass_residual_rms": 3.9739416176108704,
+          "com_acceleration": [
+            0.5524691621300177,
+            -1.0671203842910923,
+            -5.955854858672568
+          ],
+          "com_residual": [
+            -4.953466506815294,
+            -4.751868795469681,
+            -0.5094589846491306
+          ],
+          "feet_pose_residual_rms": 3.78879184739288,
+          "feet_position_residual_rms": 4.655304669063095,
+          "feet_orientation_residual_rms": 2.6529277720927222,
+          "body_orientation_residual_rms": 16.44949029839244,
+          "source_pelvis_orientation_residual_rms": 17.822602199049015,
+          "hand_pose_residual_rms": 3.2638147606576324,
+          "shoulder_residual_ratio_vs_replayed_baseline": 1.0,
+          "com_residual_rms_change": 0.0
+        },
+        {
+          "side": "left",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 7.815970093361102e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457759074663,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -40.53874345524233,
+            3.9819225324120913
+          ],
+          "shoulder_torque": [
+            -6.8662997318671986,
+            -1.3693388938172588
+          ],
+          "root_acceleration": [
+            0.46196500671040325,
+            -4.1195025736847315,
+            -5.339480727494425,
+            -31.91867741655357,
+            3.241998317271453,
+            -7.2596776790076785
+          ],
+          "joint_posture_residual_rms": 36.12870619559046,
+          "shoulder_residual": [
+            22.70813993709165,
+            -13.02529487481447
+          ],
+          "shoulder_residual_rms": 18.51104975384169,
+          "center_of_mass_residual_rms": 4.036372575015622,
+          "com_acceleration": [
+            0.46267887310594746,
+            -1.1148952985466398,
+            -6.083492290533387
+          ],
+          "com_residual": [
+            -5.0432567958393655,
+            -4.7996437097252285,
+            -0.6370964165099497
+          ],
+          "feet_pose_residual_rms": 3.847183108776667,
+          "feet_position_residual_rms": 4.73067222905898,
+          "feet_orientation_residual_rms": 2.687447861098546,
+          "body_orientation_residual_rms": 16.758111985746083,
+          "source_pelvis_orientation_residual_rms": 17.893644865132597,
+          "hand_pose_residual_rms": 4.330350044996498,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5664080130781568,
+          "com_residual_rms_change": 0.062430957404751464
+        },
+        {
+          "side": "left",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.2967404927621828e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 7.105427357601002e-14,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457758733603,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -50.46385979062553,
+            3.629935607593278
+          ],
+          "shoulder_torque": [
+            -8.18686562327331,
+            -1.329671392892091
+          ],
+          "root_acceleration": [
+            0.3713282691081521,
+            -4.021650741778359,
+            -5.205970567657679,
+            -32.33315226172084,
+            3.70349393376214,
+            -6.684026410913424
+          ],
+          "joint_posture_residual_rms": 36.05945738457504,
+          "shoulder_residual": [
+            12.783023601708457,
+            -13.377281799633284
+          ],
+          "shoulder_residual_rms": 13.083527061703114,
+          "center_of_mass_residual_rms": 4.060801749032451,
+          "com_acceleration": [
+            0.41715797860816806,
+            -1.1233601550813348,
+            -6.122240655182503
+          ],
+          "com_residual": [
+            -5.088777690337144,
+            -4.808108566259923,
+            -0.6758447811590651
+          ],
+          "feet_pose_residual_rms": 3.871888081324794,
+          "feet_position_residual_rms": 4.757162224419997,
+          "feet_orientation_residual_rms": 2.711538714302521,
+          "body_orientation_residual_rms": 17.063276262086447,
+          "source_pelvis_orientation_residual_rms": 17.808314511792332,
+          "hand_pose_residual_rms": 4.819427507822632,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.40033464690653725,
+          "com_residual_rms_change": 0.08686013142158044
+        },
+        {
+          "side": "left",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 3.312905505481467e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457678015948,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -55.12219022311789,
+            2.581846196413494
+          ],
+          "shoulder_torque": [
+            -8.44339458875525,
+            -1.2929868501560897
+          ],
+          "root_acceleration": [
+            0.27382175672170656,
+            -3.8300748778805453,
+            -5.116146125411152,
+            -33.612536398215056,
+            4.622649644265964,
+            -5.890042876062136
+          ],
+          "joint_posture_residual_rms": 36.11092694599783,
+          "shoulder_residual": [
+            8.124693169216094,
+            -14.425371210813069
+          ],
+          "shoulder_residual_rms": 11.706877757618834,
+          "center_of_mass_residual_rms": 4.061966132705316,
+          "com_acceleration": [
+            0.3874294790511692,
+            -1.0982412887645425,
+            -6.0964808715339185
+          ],
+          "com_residual": [
+            -5.118506189894143,
+            -4.782989699943132,
+            -0.650084997510481
+          ],
+          "feet_pose_residual_rms": 3.8780546560363116,
+          "feet_position_residual_rms": 4.752352037199203,
+          "feet_orientation_residual_rms": 2.7374743733847833,
+          "body_orientation_residual_rms": 17.563212371944548,
+          "source_pelvis_orientation_residual_rms": 17.542565629568344,
+          "hand_pose_residual_rms": 4.681173777745433,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.35821141740843815,
+          "com_residual_rms_change": 0.08802451509444564
+        },
+        {
+          "side": "right",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 2.8421709430404007e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 9.947598300641403e-14,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457760630752,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -19.000952197759645,
+            5.664625182719389
+          ],
+          "shoulder_torque": [
+            -3.785682549711963,
+            -1.405751469344772
+          ],
+          "root_acceleration": [
+            0.6006501396895154,
+            -4.312280604712524,
+            -5.651745315027008,
+            -31.3104006333542,
+            2.619590104712418,
+            -7.298077506575469
+          ],
+          "joint_posture_residual_rms": 36.648335219669065,
+          "shoulder_residual": [
+            44.24593119457434,
+            -11.342592224507174
+          ],
+          "shoulder_residual_rms": 32.29827259813175,
+          "center_of_mass_residual_rms": 3.970117017266936,
+          "com_acceleration": [
+            0.5629145297705989,
+            -1.067223984318739,
+            -5.966768588989208
+          ],
+          "com_residual": [
+            -4.943021139174713,
+            -4.751972395497328,
+            -0.5203727149657702
+          ],
+          "feet_pose_residual_rms": 3.802418740442514,
+          "feet_position_residual_rms": 4.674230944995277,
+          "feet_orientation_residual_rms": 2.658635294316508,
+          "body_orientation_residual_rms": 16.15433859601293,
+          "source_pelvis_orientation_residual_rms": 18.238214973527803,
+          "hand_pose_residual_rms": 3.27628486696785,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9882746063263019,
+          "com_residual_rms_change": -0.0038246003439343923
+        },
+        {
+          "side": "right",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 8.526512829121202e-14,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457759387302,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -19.08534521725859,
+            8.106869153637103
+          ],
+          "shoulder_torque": [
+            -4.002280853257947,
+            -1.362479876419909
+          ],
+          "root_acceleration": [
+            0.5957291224506157,
+            -4.484070025984114,
+            -5.7168463595023455,
+            -30.212006992913075,
+            2.1658529839712215,
+            -6.4020772143795845
+          ],
+          "joint_posture_residual_rms": 36.70567668710761,
+          "shoulder_residual": [
+            44.16153817507539,
+            -8.90034825358946
+          ],
+          "shoulder_residual_rms": 31.85480853045435,
+          "center_of_mass_residual_rms": 3.9651177615164928,
+          "com_acceleration": [
+            0.5772070833411473,
+            -1.0679739910895618,
+            -5.980943238162026
+          ],
+          "com_residual": [
+            -4.928728585604166,
+            -4.752722402268151,
+            -0.5345473641385885
+          ],
+          "feet_pose_residual_rms": 3.819953106356953,
+          "feet_position_residual_rms": 4.6996552972538,
+          "feet_orientation_residual_rms": 2.66408024588723,
+          "body_orientation_residual_rms": 15.783451658523783,
+          "source_pelvis_orientation_residual_rms": 18.818633916419788,
+          "hand_pose_residual_rms": 3.3080722100403377,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9747053271776362,
+          "com_residual_rms_change": -0.008823856094377636
+        },
+        {
+          "side": "right",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 6.217248937900877e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000045763217173,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -19.177794166255136,
+            10.785125844792603
+          ],
+          "shoulder_torque": [
+            -4.23966335960424,
+            -1.3148036297663042
+          ],
+          "root_acceleration": [
+            0.5911169857552676,
+            -4.671754543274577,
+            -5.788398252944275,
+            -29.007472915097253,
+            1.6705025869324057,
+            -5.412682852511413
+          ],
+          "joint_posture_residual_rms": 36.796815136138314,
+          "shoulder_residual": [
+            44.069089226078844,
+            -6.22209156243396
+          ],
+          "shoulder_residual_rms": 31.470613662807803,
+          "center_of_mass_residual_rms": 3.959510543764211,
+          "com_acceleration": [
+            0.5926829191446892,
+            -1.0681274858163063,
+            -5.99711300911317
+          ],
+          "com_residual": [
+            -4.913252749800623,
+            -4.752875896994896,
+            -0.5507171350897329
+          ],
+          "feet_pose_residual_rms": 3.84016567716224,
+          "feet_position_residual_rms": 4.727711756200234,
+          "feet_orientation_residual_rms": 2.672543059783311,
+          "body_orientation_residual_rms": 15.406780982605923,
+          "source_pelvis_orientation_residual_rms": 19.479801281847948,
+          "hand_pose_residual_rms": 3.356266048984109,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.9629495891448246,
+          "com_residual_rms_change": -0.014431073846659537
+        },
+        {
+          "side": "both",
+          "multiplier": 2.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 9.947598300641403e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457759401513,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -40.57040348304063,
+            5.772253169077871
+          ],
+          "shoulder_torque": [
+            -7.020474916775164,
+            -1.337561425743708
+          ],
+          "root_acceleration": [
+            0.45907952085464016,
+            -4.245068233844004,
+            -5.387683961887305,
+            -31.11369157325159,
+            2.910438009858821,
+            -6.5992194962341415
+          ],
+          "joint_posture_residual_rms": 36.159735460786194,
+          "shoulder_residual": [
+            22.676479909293356,
+            -11.234964238148692
+          ],
+          "shoulder_residual_rms": 17.894792014844224,
+          "center_of_mass_residual_rms": 4.032592429835016,
+          "com_acceleration": [
+            0.4731503052299977,
+            -1.1149312296885487,
+            -6.09412416837721
+          ],
+          "com_residual": [
+            -5.032785363715314,
+            -4.799679640867137,
+            -0.6477282943537723
+          ],
+          "feet_pose_residual_rms": 3.860597537803059,
+          "feet_position_residual_rms": 4.749298960088419,
+          "feet_orientation_residual_rms": 2.6930625847694563,
+          "body_orientation_residual_rms": 16.45798416850296,
+          "source_pelvis_orientation_residual_rms": 18.313301500144913,
+          "hand_pose_residual_rms": 4.382577174268186,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.5475515286468969,
+          "com_residual_rms_change": 0.058650812224145366
+        },
+        {
+          "side": "both",
+          "multiplier": 4.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 1.1368683772161603e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.02000045776116366,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -49.57014334190404,
+            7.7470476597077464
+          ],
+          "shoulder_torque": [
+            -8.29883792830954,
+            -1.2485248940873974
+          ],
+          "root_acceleration": [
+            0.3512548102689298,
+            -4.286106753239324,
+            -5.327834590315751,
+            -30.72565434627257,
+            3.1099914867815124,
+            -4.907322402133157
+          ],
+          "joint_posture_residual_rms": 36.16576058964263,
+          "shoulder_residual": [
+            13.676740050429942,
+            -9.260169747518816
+          ],
+          "shoulder_residual_rms": 11.679125869685134,
+          "center_of_mass_residual_rms": 4.045383118908808,
+          "com_acceleration": [
+            0.4441269491641706,
+            -1.1120582712188507,
+            -6.127653440815857
+          ],
+          "com_residual": [
+            -5.061808719781142,
+            -4.79680668239744,
+            -0.6812575667924197
+          ],
+          "feet_pose_residual_rms": 3.899895846662465,
+          "feet_position_residual_rms": 4.793634435646608,
+          "feet_orientation_residual_rms": 2.7275344410315543,
+          "body_orientation_residual_rms": 16.435664311963187,
+          "source_pelvis_orientation_residual_rms": 18.769506407165913,
+          "hand_pose_residual_rms": 4.7837941426970785,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.35736225477786215,
+          "com_residual_rms_change": 0.07144150129793791
+        },
+        {
+          "side": "both",
+          "multiplier": 8.0,
+          "solver": {
+            "priority": {
+              "status": "Solved",
+              "constraint_residual": 5.684341886080802e-14,
+              "accepted": true
+            },
+            "final": {
+              "status": "Solved",
+              "constraint_residual": 5.409006575973763e-13,
+              "accepted": true
+            },
+            "accepted": true,
+            "lock_error": 0.020000457650780845,
+            "lock_tolerance_max": 0.020000457763671875
+          },
+          "shoulder_acceleration": [
+            -54.101138545850546,
+            9.862892698194543
+          ],
+          "shoulder_torque": [
+            -8.678468262090243,
+            -1.1427929806545585
+          ],
+          "root_acceleration": [
+            0.2262291464545384,
+            -4.282115307093959,
+            -5.325283515257187,
+            -30.88947618472867,
+            3.6771010903586343,
+            -2.569747303556666
+          ],
+          "joint_posture_residual_rms": 36.36216332789439,
+          "shoulder_residual": [
+            9.145744846483439,
+            -7.14432470903202
+          ],
+          "shoulder_residual_rms": 8.206278826150859,
+          "center_of_mass_residual_rms": 4.034681774123763,
+          "com_acceleration": [
+            0.4311760407063372,
+            -1.074381010083569,
+            -6.104782479759134
+          ],
+          "com_residual": [
+            -5.074759628238976,
+            -4.759129421262157,
+            -0.6583866057356964
+          ],
+          "feet_pose_residual_rms": 3.9310811586352465,
+          "feet_position_residual_rms": 4.817209559330688,
+          "feet_orientation_residual_rms": 2.775119855618332,
+          "body_orientation_residual_rms": 16.501256406676735,
+          "source_pelvis_orientation_residual_rms": 19.273100165372973,
+          "hand_pose_residual_rms": 4.682233293389977,
+          "shoulder_residual_ratio_vs_replayed_baseline": 0.251098784050365,
+          "com_residual_rms_change": 0.060740156512892884
+        }
+      ],
+      "hierarchy_replay_shoulder_difference": [
+        5.428614002767063e-07,
+        -2.574578483738321e-07
+      ],
+      "exact_shoulders_feasibility": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "constraint_residual": 5.32054400537163e-11
+      }
+    }
+  ],
+  "source_sha256": {
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.npz": "cfe0dc3b29fe61023454e02725089a96c661970a029b596e5d2581f114f08342",
+    "/home/sky/Humanoid_fabric/examples/analyze_g1_shoulder_roll.py": "8ad010f927893ea168df2ecfc90821491bfed78597772a42916564c37f35d440",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1740.npz": "c88d90d28b2bcf50fbf6ad354bf5c11415948be0df736cdd4d55e3aeffbd6391",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1790.npz": "f472a5c2e763d8717e4a2ec1647c495962c412702c0023cef29da25ae1db3d4b",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1825.npz": "915bb628706e6d00de3baeb3f0a5beb352415c21759f9e239bf7719ccd5d35f7",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.qp_1875.npz": "b946d39a952c1c3f48e78e641b643c74b791dfc845e482cf83fd1ff48965ad42",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.response_1740.npz": "2642cb2617b08c8afc80865fb4325ad7d75ae2ba953d501073a4ec7b753e04c6",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.response_1790.npz": "17e5e39860d9d7d8c1b5c4f47125f1ef8411e0e16f2872e20dc4c3d9bf62a29d",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.response_1825.npz": "76cff3894140817a5873fc08b536b4ead92b055d56532a59c5eb616551386890",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/step10_diagnosis/baseline_probe_v2.response_1875.npz": "827b4d83ed27bcfd3744ef23b69426ebd4d73cb1b5cd232d5e63737472de8794"
+  }
+}

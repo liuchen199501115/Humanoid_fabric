@@ -1,0 +1,4 @@
+{
+  "valid_for_performance_comparison": false,
+  "reason": "Contact active variable shadowed by collision mask; do not infer feasibility or solver convergence from this prototype."
+}

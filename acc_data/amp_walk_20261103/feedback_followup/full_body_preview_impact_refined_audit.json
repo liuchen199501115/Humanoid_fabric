@@ -1,0 +1,60 @@
+[
+  {
+    "success": true,
+    "status": "Solved",
+    "linear_violation": 7.913669719528116e-13,
+    "tube_violation": -0.054928250024225966,
+    "objective": -13480.554207881449,
+    "nonlinear_base_force_residual": 14.379778621914546,
+    "nonlinear_base_moment_residual": 4.85726964645016,
+    "nonlinear_joint_residual": 4.250434508149438,
+    "nonlinear_minimum_clearance": -0.0005360533577207921,
+    "nonlinear_support_gap": 0.0016462774824840126,
+    "nonlinear_impact_residual": 0.17291479368287635,
+    "nonlinear_impact_energy_increase": 0.0,
+    "nonlinear_verified": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 63.03693689412611,
+        "nonlinear_base_moment_residual": 31.10260805491215,
+        "nonlinear_joint_residual": 18.407820142257705,
+        "nonlinear_minimum_clearance": 4.3472188111418064e-05,
+        "nonlinear_support_gap": 0.011945689928110514,
+        "nonlinear_impact_residual": 0.4582475228182797,
+        "nonlinear_impact_energy_increase": 0.0,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 35.435065740168696,
+        "nonlinear_base_moment_residual": 5.090934493794923,
+        "nonlinear_joint_residual": 4.27353254027028,
+        "nonlinear_minimum_clearance": -0.0006781865698624254,
+        "nonlinear_support_gap": 0.0036913375906985207,
+        "nonlinear_impact_residual": 0.13603211733331508,
+        "nonlinear_impact_energy_increase": 0.0,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 2,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 14.379778621914546,
+        "nonlinear_base_moment_residual": 4.85726964645016,
+        "nonlinear_joint_residual": 4.250434508149438,
+        "nonlinear_minimum_clearance": -0.0005360533577207921,
+        "nonlinear_support_gap": 0.0016462774824840126,
+        "nonlinear_impact_residual": 0.17291479368287635,
+        "nonlinear_impact_energy_increase": 0.0,
+        "nonlinear_verified": true
+      }
+    ],
+    "solve_seconds": 5.770182563923299,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_trust"
+    ]
+  }
+]

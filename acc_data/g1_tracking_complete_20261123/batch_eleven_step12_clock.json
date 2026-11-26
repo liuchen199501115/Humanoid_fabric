@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_hip_leg64_speed08",
+    "parent": "eleven_hip20_leg64",
+    "options": [
+      "--clock-fifth-start",
+      "4.42",
+      "--clock-fifth-ramp",
+      ".12",
+      "--clock-fifth-speed",
+      "0.8"
+    ]
+  },
+  {
+    "name": "eleven_hip_leg64_speed10",
+    "parent": "eleven_hip20_leg64",
+    "options": [
+      "--clock-fifth-start",
+      "4.42",
+      "--clock-fifth-ramp",
+      ".12",
+      "--clock-fifth-speed",
+      "1.0"
+    ]
+  },
+  {
+    "name": "eleven_hip_leg64_speed18",
+    "parent": "eleven_hip20_leg64",
+    "options": [
+      "--clock-fifth-start",
+      "4.42",
+      "--clock-fifth-ramp",
+      ".12",
+      "--clock-fifth-speed",
+      "1.8"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "primary_pure",
+  "options": [
+    "--fabric-priority-mode",
+    "none",
+    "--fabric-tracking-feedback",
+    "--fabric-secondary-scale",
+    "0",
+    "--fabric-root-regularization",
+    "1e-10",
+    "--qp-task-only-objective",
+    "--posture-metric-scale",
+    "1",
+    "--source-pelvis-weight",
+    "1",
+    "--joint-feedback-limit",
+    "30"
+  ],
+  "returncode": -11,
+  "timed_out": false
+}

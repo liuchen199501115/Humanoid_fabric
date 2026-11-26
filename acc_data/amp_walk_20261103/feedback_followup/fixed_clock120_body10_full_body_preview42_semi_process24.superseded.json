@@ -1,0 +1,8 @@
+{
+  "full_motion_tracking_passed": false,
+  "complete_physics_trial": false,
+  "reason": "Replace this task-owned experiment with the corrected future wrist/body collision barrier after detecting a next-stage violation of 78.2042.",
+  "last_prediction_time": 3.75,
+  "last_successful_prediction_time": 3.71,
+  "evidence": "preview_collision_equivalence.json"
+}

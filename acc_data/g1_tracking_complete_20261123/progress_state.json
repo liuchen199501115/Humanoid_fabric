@@ -1,0 +1,97 @@
+{
+  "goal_status": "active",
+  "full_tracking_passed": false,
+  "verified_landings": 12,
+  "expected_landings": 29,
+  "source_sha256": "919eaff9b2521cce1e8b40e263fceb3f3f1873a7bc42500d9932be62f007eca9",
+  "verified_pairs": [
+    [
+      "pause9_early",
+      "nine_verify"
+    ],
+    [
+      "landing9_load",
+      "landing9_transfer_snapshot"
+    ],
+    [
+      "foot16_upper16_model80",
+      "ten_verify"
+    ],
+    [
+      "eleven_pause960_search2",
+      "twelve_search2_verify"
+    ]
+  ],
+  "current_experiments": [
+    "twelve_clock10_leg880",
+    "twelve_clock10_unload128",
+    "twelve_clock10_leg880_unload128"
+  ],
+  "constraints": {
+    "single_inverse_dynamics_QP": true,
+    "MPC": false,
+    "source_joint_rmse_max": 0.2,
+    "root_position_max_m": 0.2,
+    "root_orientation_max_rad": 0.35,
+    "landing_error_max_m": 0.04,
+    "flight_clearance_min_m": 0.02,
+    "loaded_hold_min_s": 0.05,
+    "user_confirmed_strict_one_native_QP_per_control_update": true
+  },
+  "next_focus": "Early-unload12 branch: faster clock recovery or left-only Cartesian cost reduction. Slower pre11 clock branch: rooterror .042m and COMvx1.136 but right knee/ankle fail; queued earlier leg/unload costs.",
+  "observed_landings": 12,
+  "current_entry": "examples/run_amp_single_tracking.sh",
+  "latest_diagnostic": "Early-unload resume.04/.06 retains12 but failsjoint969.29/970.49; native13flight7.03/7.02mm. Left-only Cartesian16 retains12 but stops970.89 without verified flight. All strict single-QP audits passed. Now testing slowerclock1.0 pre11 transfer with earlier leg64/unload128 at880.",
+  "additional_tests": {
+    "named_joint_braking": 2,
+    "existing_physical_joint_bound_tests": 2,
+    "passed": true
+  },
+  "zero_weight_continuity_verification": "acc_data/g1_tracking_complete_20261123/torque_continuity_zero_verification.json",
+  "latest_tests": {
+    "torque_continuity": 9,
+    "soft_tasks_total": 12,
+    "full_tracking": 18,
+    "all_passed": true,
+    "com_diagnostics": 6,
+    "com_acceleration_objective": 7,
+    "foot_angular_feedback": 2,
+    "root_rotation_variation": 2,
+    "pelvis_allocation": 3,
+    "support_flatten": 2,
+    "batched_reference_dynamics": 1,
+    "prepared_clock": 2,
+    "tracking_tube_rate_isolation": 1,
+    "foot_linear_feedback": 2,
+    "root_xy_tube": 2,
+    "offline_bound_qp": 2,
+    "exported_rotation_maps": 1,
+    "root_position_reference": 2,
+    "com_vertical_limit": 3,
+    "single_qp": 6,
+    "inscribed_point_friction": 2,
+    "landing_clock_chain": 3,
+    "foot_contact_search": 4,
+    "observed_sole_contact": 7,
+    "contact_patches": 6,
+    "contact_wrench_cone": 6,
+    "priority_tracking": 4
+  },
+  "furthest_source_frame_observed": 1019.0898697328897,
+  "furthest_source_frame_trial": "eleven_cont1000_speed10_pelvis1",
+  "zero_soft_braking_verification": "acc_data/g1_tracking_complete_20261123/soft_braking_disabled_verification.json",
+  "com_policy_diagnostic_verification": "acc_data/g1_tracking_complete_20261123/com_policy_diagnostic_verification.json",
+  "independently_reproduced_landings": 12,
+  "optional_eleven_entry": "examples/run_amp_single_tracking_11step.sh",
+  "recent_tests": {
+    "dynamics_aware_tasks": 28,
+    "full_tracking": 18,
+    "late_clock": 4,
+    "daqp_equilibration": 3,
+    "diff_check_passed": true
+  },
+  "twelfth_landing_audit": "acc_data/g1_tracking_complete_20261123/eleven_pause960_search2.twelfth_audit.json",
+  "optional_twelve_entry": "examples/run_amp_single_tracking_12step.sh",
+  "followup_index": "acc_data/g1_tracking_complete_20261123/twelve_followup_summary.json",
+  "unrun_specs_note": "Do not rerun whole queued JSON: batch_twelve_root_stronger first trial already ran; other two unrun. batch_twelve_pause_geometry2 nopause8/pause952search8 already ran; nopause2 unrun."
+}

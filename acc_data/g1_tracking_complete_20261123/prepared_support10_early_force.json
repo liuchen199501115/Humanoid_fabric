@@ -1,0 +1,27 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 4.7313571096606666e-07,
+  "maximum_foot_rotation_residual_rad": 5.962864341992885e-07,
+  "maximum_com_ik_residual_m": 5.121695629719883e-07,
+  "maximum_added_root_rotation_rad": 0.005080220157201411,
+  "worst_frame": 926,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Offline tenth landing offset, earlier smooth onset, full-body foot/COM IK",
+  "start_frame": 762,
+  "landing_frame": 802,
+  "offset_m": [
+    0,
+    -0.025,
+    0
+  ],
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "1cd0e5694e802fd442b5f8eacd4fb32ea2adcdb09dc4a9c61521af92feaea581",
+  "full_tracking_passed": false
+}

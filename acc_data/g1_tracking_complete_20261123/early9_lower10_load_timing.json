@@ -1,0 +1,44 @@
+[
+  {
+    "trial": "ten_verify",
+    "left100": 770.36,
+    "right_unload": 777.0800000000002,
+    "right100": 803.0000000000001
+  },
+  {
+    "trial": "ten_true_early9_f8_z15",
+    "left100": 769.8800000000001,
+    "right_unload": 777.0800000000002,
+    "right100": 801.5600000000003
+  },
+  {
+    "trial": "ten_early9_foot355_soft_orientation",
+    "left100": null,
+    "right_unload": null,
+    "right100": 790.0400000000001
+  },
+  {
+    "trial": "ten_early9_foot370_soft_orientation",
+    "left100": 775.1599999999999,
+    "right_unload": 776.12,
+    "right100": 797.72
+  },
+  {
+    "trial": "ten_foot16_start370",
+    "left100": 770.84,
+    "right_unload": 777.0800000000002,
+    "right100": 802.0400000000002
+  },
+  {
+    "trial": "ten_lower_swing10_25",
+    "left100": 770.36,
+    "right_unload": 777.0800000000002,
+    "right100": 803.0000000000001
+  },
+  {
+    "trial": "ten_margin30_com125_lower25",
+    "left100": 769.4,
+    "right_unload": 775.64,
+    "right100": 803.0000000000001
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "raw_peak_joint_a": 12745.07421875,
+  "smooth_peak_joint_a": 887.5310668945312,
+  "smooth_vs_control_joint_rmse": 0.04932722449302673,
+  "smooth_vs_original_joint_rmse": 0.21821613609790802,
+  "smooth_vs_original_root_position": 0.004153772722929716
+}

@@ -1,0 +1,12 @@
+{
+  "first_active_time_s": 1.296,
+  "first_active_source_frame": 268.0400000000001,
+  "first_active_source_time_s": 1.3402000000000003,
+  "root_error_m_at_activation": 0.1695406138896942,
+  "prior_prefix_identical": {
+    "soft1": true,
+    "soft10": true,
+    "aligned_hard": true,
+    "aligned_soft10": true
+  }
+}

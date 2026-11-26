@@ -1,0 +1,9 @@
+{
+  "original_sha256": "0968fe197a771461df88a80303dd67e1654ac4d3c2aee8cad55560f5e13c7264",
+  "baseline_runtime": "acc_data/amp_walk_20261103/feedback_followup/trial_tracking_tube_clock.py",
+  "current_sha256": "490f698308ce5397edb6fc32badc8286691db65ce50d91139507f082b95f01a0",
+  "source": "retarget/amp_reference/amp_walk_1ms.pkl",
+  "full_tracking_achieved": false,
+  "launcher": "examples/run_amp_full_motion.sh",
+  "tests": "tests/test_g1_full_tracking.py"
+}

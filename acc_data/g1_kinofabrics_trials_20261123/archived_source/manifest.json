@@ -1,0 +1,9 @@
+{
+  "examples/test_g1.py": "e83aef93d578bd6b93eeb4b7fb75ad820efad027288aee8b11dfff747b4bcfea",
+  "examples/g1_contact_reference.py": "924aac651d02fcbaf4d83243c6af2b6c3d182d000f1424c322e40bc4462da34c",
+  "src/fabrics_sim/solver/daqp_backend.py": "652955c7e76d50c34e4e4dd8ea2ced5dba7db36fe05e59d994dd26a30fcf8817",
+  "src/fabrics_sim/fabrics/dynamics_aware.py": "6441b09c1285b9a34594a76e7db71bc9c900976e9daeb96de4b4c8795f4d169c",
+  "tests/test_g1_single_qp.py": "6be9670627a013d820038dd90a8713fb122cf172e2e4218c5492742bc4154e62",
+  "tests/test_g1_contact_reference.py": "6bfece0881225064f028f6d5825f42970faf36765d8828428cd34f47f3c439b0",
+  "tests/test_dynamics_aware_tasks.py": "aa41edfb5cf7c998a922b6fb681d2ad0cfd896b1557d1a0add13abbf56e173a2"
+}

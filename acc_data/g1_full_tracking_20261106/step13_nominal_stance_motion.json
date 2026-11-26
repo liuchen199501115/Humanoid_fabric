@@ -1,0 +1,16 @@
+{
+  "scope": "Diagnostic only: rigid-body nominal support-point motion. Full-sole force feasibility does not imply stationary physical contact.",
+  "worst_speed": {
+    "frame": 960.0,
+    "lowest_point_speed": 0.5503230404412247,
+    "lowest_point_vertical_speed": -0.4244214382688189,
+    "foot_origin_speed": 0.4436828027409051
+  },
+  "worst_vertical": {
+    "frame": 960.0,
+    "lowest_point_speed": 0.5503230404412247,
+    "lowest_point_vertical_speed": -0.4244214382688189,
+    "foot_origin_speed": 0.4436828027409051
+  },
+  "physical_tracking_certified": false
+}

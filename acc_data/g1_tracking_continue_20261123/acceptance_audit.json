@@ -1,0 +1,26 @@
+{
+  "audited_runs": [
+    "baseline_verify",
+    "earlier_landing25",
+    "earlier_slow",
+    "fast_resume",
+    "joint_barrier_end",
+    "landing25_feet16",
+    "landing25_feet4",
+    "seven_release",
+    "slow_com8",
+    "slow_landing25",
+    "slow_stance",
+    "slow_transfer",
+    "slow_upper100",
+    "slow_upper25",
+    "slow_upper2_com2",
+    "slow_upper4",
+    "soft_cold",
+    "transfer_hard",
+    "transfer_soft"
+  ],
+  "landing_thresholds_unchanged": true,
+  "cold_start_schedule_matches_log": true,
+  "seven_step_entry_unchanged": true
+}

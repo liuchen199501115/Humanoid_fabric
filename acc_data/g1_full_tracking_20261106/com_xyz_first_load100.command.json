@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1.py",
+    "--tracking-profile",
+    "amp-full",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_full_tracking_20261106/com_xyz_first_load100.npz",
+    "--rolling-contact-kinematics-start",
+    "3.5",
+    "--late-balance-hierarchy-start",
+    "4.15",
+    "--late-balance-hierarchy",
+    "xyz",
+    "--support-load-floor-start",
+    "4.15",
+    "--support-load-floor",
+    "100",
+    "--diagnose-qp-time",
+    "3.8",
+    "--diagnose-qp-time",
+    "4.0"
+  ],
+  "sha256": {
+    "examples/g1_stance_heading.py": "e5c2af4d6c7b8a6be08c26f9e0b3580801eea6a7ba2642d94167dd5d94cf598a",
+    "examples/test_g1.py": "cbec89eda9e3ecac82e66338cf188f12d375e9b6775e4d135b94cdaa5399f4e2",
+    "examples/run_amp_full_motion.sh": "7ffe2ff43d953f8bf7c0da7c4d02707817e925a47ef1d2e6ecd8bfe24a691a52",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "status": "finished",
+  "returncode": 1,
+  "wall_seconds": 80.794837474823
+}

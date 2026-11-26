@@ -1,0 +1,10 @@
+{
+  "parent": "sixth_plant_roll_y30",
+  "peak_position_residual": 2.466057999748666e-06,
+  "peak_orientation_residual": 0.001497366923572217,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 1.0013580322265625e-05,
+  "peak_height_correction": 0.028284584695046626,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

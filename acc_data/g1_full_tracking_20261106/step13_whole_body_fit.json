@@ -1,0 +1,316 @@
+{
+  "parent": "/home/sky/Humanoid_fabric/acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+  "search_parameters": {
+    "name": "step13_whole_body_fit",
+    "initial_fit": "acc_data/g1_full_tracking_20261106/step13_smooth5_upper_wrench_full_effort12.diagnostic.npz",
+    "iterations": 12,
+    "effort_fraction": 1.0,
+    "trust": 0.02
+  },
+  "scope": "Offline nominal full-sole dynamics only, source contact labels, fixed root orientation, preserved foot paths; no physical tracking certification.",
+  "iterations": [
+    {
+      "iteration": 0,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 4.180257634374667e-07,
+        "cone_residual": 0.0,
+        "iterations": 118
+      },
+      "peak_linear_slack": 0.6290453599925209,
+      "peak_exact_violation": 0.6222816538507914,
+      "foot_error": [
+        0.0008777434409376881,
+        0.008568040343715805
+      ],
+      "peak_raw_joint_rmse": 0.14265674081106372
+    },
+    {
+      "iteration": 1,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 2.343093906799574e-08,
+        "cone_residual": 0.0,
+        "iterations": 81
+      },
+      "peak_linear_slack": 0.6007261405470005,
+      "peak_exact_violation": 0.6200658609178142,
+      "foot_error": [
+        0.0008805627791307329,
+        0.008649454313895962
+      ],
+      "peak_raw_joint_rmse": 0.14401563124559819
+    },
+    {
+      "iteration": 2,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.3866182973425005e-08,
+        "cone_residual": 0.0,
+        "iterations": 65
+      },
+      "peak_linear_slack": 0.4567628114102029,
+      "peak_exact_violation": 0.468066146283141,
+      "foot_error": [
+        0.0008565442011850425,
+        0.008654785105404529
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 3,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 8.106616322233612e-11,
+        "cone_residual": 0.0,
+        "iterations": 64
+      },
+      "peak_linear_slack": 0.36583410784331394,
+      "peak_exact_violation": 0.37012487828466595,
+      "foot_error": [
+        0.0008778039674338398,
+        0.008640997486754965
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 4,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 6.014679195453718e-09,
+        "cone_residual": 0.0,
+        "iterations": 64
+      },
+      "peak_linear_slack": 0.2665322915342134,
+      "peak_exact_violation": 0.2646078553893305,
+      "foot_error": [
+        0.0008693834750406538,
+        0.00861672151549136
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 5,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.4076638032024368e-09,
+        "cone_residual": 0.0,
+        "iterations": 57
+      },
+      "peak_linear_slack": 0.20885502581897458,
+      "peak_exact_violation": 0.21304122531153677,
+      "foot_error": [
+        0.0008643995470478572,
+        0.008630557898408763
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 6,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.2743972543916016e-12,
+        "cone_residual": 0.0,
+        "iterations": 56
+      },
+      "peak_linear_slack": 0.18281714928570836,
+      "peak_exact_violation": 0.1867449682613131,
+      "foot_error": [
+        0.0008686308677617048,
+        0.008632880552403596
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 7,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.534048181452835e-11,
+        "cone_residual": 0.0,
+        "iterations": 51
+      },
+      "peak_linear_slack": 0.1545144070075102,
+      "peak_exact_violation": 0.15479136345184671,
+      "foot_error": [
+        0.0008777073513573264,
+        0.008654308737875769
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 8,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 2.906866696135435e-12,
+        "cone_residual": 0.0,
+        "iterations": 53
+      },
+      "peak_linear_slack": 0.12310798313262435,
+      "peak_exact_violation": 0.12316163778982558,
+      "foot_error": [
+        0.0008565347671106238,
+        0.008611131111049072
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 9,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.319014342193725e-12,
+        "cone_residual": 0.0,
+        "iterations": 48
+      },
+      "peak_linear_slack": 0.09940289917540811,
+      "peak_exact_violation": 0.10061186511799937,
+      "foot_error": [
+        0.0008659594562264734,
+        0.008624670947483927
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 10,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 1.8060242971268403e-12,
+        "cone_residual": 0.0,
+        "iterations": 46
+      },
+      "peak_linear_slack": 0.07527133774119109,
+      "peak_exact_violation": 0.0781570110550408,
+      "foot_error": [
+        0.0008692755875628387,
+        0.008622835501917489
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "iteration": 11,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 2.823963285436548e-12,
+        "cone_residual": 0.0,
+        "iterations": 41
+      },
+      "peak_linear_slack": 0.05721106304848666,
+      "peak_exact_violation": 0.05965750517186269,
+      "foot_error": [
+        0.0008665627216426305,
+        0.00863778748477931
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    }
+  ],
+  "worst_wrench": {
+    "frame": 1020.0,
+    "wrench_violation": 0.05965750517186269,
+    "effort_fraction": 0.8326800551935593,
+    "joint": "waist_pitch_joint",
+    "torque": 41.63400275967796
+  },
+  "worst_effort": {
+    "frame": 1008.0,
+    "wrench_violation": 0.042929822878210004,
+    "effort_fraction": 1.0326791706039793,
+    "joint": "left_shoulder_pitch_joint",
+    "torque": -25.816979265099484
+  },
+  "physical_tracking_certified": false,
+  "minimum_continuous_joint_margin": 0.06696212325701023,
+  "maximum_continuous_joint_velocity_fraction": 0.5141607171700351,
+  "joint_minimum": [
+    -0.651450918018621,
+    -0.1057610948818277,
+    0.06362300017451067,
+    0.3453677388204748,
+    -0.41841920871739585,
+    -0.19483783807149624,
+    -0.28245987341896134,
+    -0.23106823502575874,
+    -0.2446360380645948,
+    0.33354858281430194,
+    -0.6155439042212929,
+    0.008339180976017189,
+    -0.04253979658391077,
+    -0.28383264419494486,
+    -0.08953816352408589,
+    -0.010903314302274888,
+    0.15875988098059776,
+    -0.25639342219418054,
+    1.071247350103809,
+    -0.1891475832083064,
+    -0.35114550685211837,
+    -0.3066613633549737,
+    -0.47279332978460087,
+    -0.48600996894304216,
+    0.042770729464545076,
+    0.6245073157387685,
+    -0.1270745135307305,
+    -0.4809125448165338,
+    -0.07237147862356956
+  ],
+  "joint_maximum": [
+    -0.047322049998762196,
+    0.2618487519504011,
+    0.31949517135603445,
+    0.7744210970510628,
+    -0.061551330781685856,
+    0.10717480891250905,
+    0.4873393859511421,
+    0.14172427370216353,
+    0.14797395809262742,
+    1.401143517207565,
+    -0.10664231035098655,
+    0.1554828793720579,
+    0.31692816776287247,
+    0.17989593636721934,
+    0.30765950691065663,
+    0.5234607330934191,
+    0.44185318275098046,
+    0.03255574971315591,
+    1.416375275950447,
+    0.023058799656264024,
+    -0.18759607291080146,
+    -0.01221080492164478,
+    0.029251052248707526,
+    -0.20261125264443575,
+    0.2997449713314512,
+    1.1711005237287397,
+    0.11396432285846955,
+    -0.2586859972878947,
+    0.17216200429182804
+  ],
+  "joint_maximum_speed": [
+    5.31817519192773,
+    2.6622423747023944,
+    1.672513825982187,
+    5.24962857009035,
+    3.665422898842169,
+    2.225451015821831,
+    5.868917422206504,
+    2.834619460063206,
+    4.246289698722059,
+    10.2832143434007,
+    7.63534616737329,
+    2.2610126363445757,
+    3.7865279882586917,
+    3.403803507391058,
+    3.6745962228715485,
+    4.788022133430604,
+    5.036711995042788,
+    4.949951172405249,
+    4.524720950516949,
+    3.585895162748068,
+    1.9783646458622748,
+    4.862187194919809,
+    4.75173981041798,
+    5.014441514154563,
+    4.097150284373677,
+    4.744224544411055,
+    4.081228731456753,
+    2.3304523953505596,
+    3.927629941108264
+  ],
+  "preflight_passed": false
+}

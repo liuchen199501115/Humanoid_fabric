@@ -1,0 +1,221 @@
+{
+  "scope": "Constant rate, optimistic full sole; does not include clock-transition acceleration or certify contact kinematics/physical tracking.",
+  "cases": [
+    {
+      "reference": "baseline",
+      "phase_rate": 0.6,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 3.091435741119807,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 123.65742964479227,
+        "wrench_violation": 1.9219689763577856
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 3.091435741119807,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 123.65742964479227,
+        "wrench_violation": 1.9219689763577856
+      }
+    },
+    {
+      "reference": "baseline",
+      "phase_rate": 0.8,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 3.6994429241131437,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 147.97771696452574,
+        "wrench_violation": 2.3589017361289972
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 3.6994429241131437,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 147.97771696452574,
+        "wrench_violation": 2.3589017361289972
+      }
+    },
+    {
+      "reference": "baseline",
+      "phase_rate": 0.9,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.068590142359099,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 162.74360569436396,
+        "wrench_violation": 2.624182340275804
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.068590142359099,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 162.74360569436396,
+        "wrench_violation": 2.624182340275804
+      }
+    },
+    {
+      "reference": "baseline",
+      "phase_rate": 1.0,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.481166445104575,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 179.24665780418303,
+        "wrench_violation": 2.9206724272634124
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.481166445104575,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 179.24665780418303,
+        "wrench_violation": 2.9206724272634124
+      }
+    },
+    {
+      "reference": "baseline",
+      "phase_rate": 1.1,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.93717183234958,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 197.4868732939832,
+        "wrench_violation": 3.248371997091821
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.93717183234958,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 197.4868732939832,
+        "wrench_violation": 3.248371997091821
+      }
+    },
+    {
+      "reference": "baseline",
+      "phase_rate": 1.2,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 5.436606304094107,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 217.46425216376426,
+        "wrench_violation": 3.6072810497610313
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 5.436606304094107,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 217.46425216376426,
+        "wrench_violation": 3.6072810497610313
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 0.6,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 2.9286638263018405,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 117.14655305207363,
+        "wrench_violation": 1.8082189232926693
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 2.9286638263018405,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 117.14655305207363,
+        "wrench_violation": 1.8082189232926693
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 0.8,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 3.417917526707297,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 136.71670106829188,
+        "wrench_violation": 2.163136834600084
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 3.417917526707297,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 136.71670106829188,
+        "wrench_violation": 2.163136834600084
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 0.9,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 3.714964416239183,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 148.59857664956732,
+        "wrench_violation": 2.378622709322444
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 3.714964416239183,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 148.59857664956732,
+        "wrench_violation": 2.378622709322444
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 1.0,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.046957998657172,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 161.87831994628687,
+        "wrench_violation": 2.619459863423905
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.046957998657172,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 161.87831994628687,
+        "wrench_violation": 2.619459863423905
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 1.1,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.413898273961265,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 176.5559309584506,
+        "wrench_violation": 2.8856482969044657
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.413898273961265,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 176.5559309584506,
+        "wrench_violation": 2.8856482969044657
+      }
+    },
+    {
+      "reference": "force_fit",
+      "phase_rate": 1.2,
+      "worst_effort": {
+        "frame": 1011.0,
+        "effort_fraction": 4.8157852421514615,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 192.63140968605845,
+        "wrench_violation": 3.177188009764128
+      },
+      "worst_wrench": {
+        "frame": 1011.0,
+        "effort_fraction": 4.8157852421514615,
+        "joint": "right_ankle_pitch_joint",
+        "torque": 192.63140968605845,
+        "wrench_violation": 3.177188009764128
+      }
+    }
+  ]
+}

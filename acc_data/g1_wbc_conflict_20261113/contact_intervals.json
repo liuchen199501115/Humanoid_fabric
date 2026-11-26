@@ -1,0 +1,236 @@
+[
+  {
+    "time": 3.58,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.8771766917780042e-05,
+        0.0,
+        157.46900939941406
+      ]
+    ],
+    "contact_count": [
+      1,
+      7
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 3.5820000000000003,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.854633228504099e-05,
+        0.0,
+        155.5779266357422
+      ]
+    ],
+    "contact_count": [
+      1,
+      8
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.216,
+    "measured_mode": [
+      3
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        5.006166361454234e-07,
+        0.0,
+        4.199477195739746
+      ],
+      [
+        9.525805216981098e-05,
+        0.0,
+        799.0825805664062
+      ]
+    ],
+    "contact_count": [
+      7,
+      7
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.218,
+    "measured_mode": [
+      3
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        9.576933371135965e-05,
+        0.0,
+        803.3715209960938
+      ]
+    ],
+    "contact_count": [
+      7,
+      7
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.276,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        3.708165604621172e-05,
+        0.0,
+        311.0635070800781
+      ]
+    ],
+    "contact_count": [
+      3,
+      5
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.2780000000000005,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.8222042601555586e-05,
+        0.0,
+        236.74368286132812
+      ]
+    ],
+    "contact_count": [
+      3,
+      5
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.28,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.9466678824974224e-05,
+        0.0,
+        247.18443298339844
+      ]
+    ],
+    "contact_count": [
+      3,
+      5
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.282,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.332693293283228e-05,
+        0.0,
+        195.68052673339844
+      ]
+    ],
+    "contact_count": [
+      3,
+      5
+    ],
+    "contact_report": ""
+  },
+  {
+    "time": 4.284,
+    "measured_mode": [
+      2
+    ],
+    "commanded_mode": [
+      2
+    ],
+    "ground_forces": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        3.122843918390572e-05,
+        0.0,
+        261.9631652832031
+      ]
+    ],
+    "contact_count": [
+      3,
+      5
+    ],
+    "contact_report": ""
+  }
+]

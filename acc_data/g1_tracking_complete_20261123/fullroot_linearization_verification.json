@@ -1,0 +1,22 @@
+{
+  "scope": "Independent directional check of cached world-left root RNEA variations.",
+  "passed": true,
+  "cases": [
+    {
+      "source_frame": 730,
+      "max_directional_generalized_force_error": 5.66242288613239e-08
+    },
+    {
+      "source_frame": 790,
+      "max_directional_generalized_force_error": 6.375002703506993e-08
+    },
+    {
+      "source_frame": 830,
+      "max_directional_generalized_force_error": 1.1272675504159224e-07
+    },
+    {
+      "source_frame": 900,
+      "max_directional_generalized_force_error": 2.593948211782049e-07
+    }
+  ]
+}

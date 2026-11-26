@@ -1,0 +1,46 @@
+{
+  "align15_prox": {
+    "all": {
+      "success": false,
+      "status": 2
+    },
+    "no_joint_tube": {
+      "success": true,
+      "status": 0
+    },
+    "no_tubes": {
+      "success": true,
+      "status": 0
+    },
+    "last_joint_errors": {
+      "left_shoulder_roll_joint": 0.3341023921966553,
+      "right_ankle_pitch_joint": -0.25530117750167847,
+      "left_ankle_pitch_joint": 0.203666090965271,
+      "left_shoulder_pitch_joint": 0.19304172694683075,
+      "right_shoulder_pitch_joint": -0.18824373185634613
+    },
+    "rmse": 0.11947403103113174
+  },
+  "align15_pause480": {
+    "all": {
+      "success": true,
+      "status": 0
+    },
+    "no_joint_tube": {
+      "success": true,
+      "status": 0
+    },
+    "no_tubes": {
+      "success": true,
+      "status": 0
+    },
+    "last_joint_errors": {
+      "right_hip_yaw_joint": 0.4101381003856659,
+      "left_shoulder_roll_joint": 0.31881943345069885,
+      "left_ankle_roll_joint": 0.2773240804672241,
+      "right_hip_roll_joint": 0.20543523132801056,
+      "left_ankle_pitch_joint": 0.17199912667274475
+    },
+    "rmse": 0.1372487097978592
+  }
+}

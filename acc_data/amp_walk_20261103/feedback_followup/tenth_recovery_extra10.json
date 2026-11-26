@@ -1,0 +1,39 @@
+{
+  "additional_landing_offset_xy": [
+    0.0,
+    -0.01
+  ],
+  "peak_position_residual": 8.860920872856146e-08,
+  "peak_orientation_residual": 1.0793109063442588e-07,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 0.059436529874801636,
+  "physical_tracking_certified": false,
+  "preflight_passed": true,
+  "worst_rows": [
+    [
+      850.0,
+      8.603410835754503e-08,
+      2.277149236259381e-08
+    ],
+    [
+      846.0,
+      8.715692908842296e-08,
+      2.0352831399821838e-08
+    ],
+    [
+      849.0,
+      8.779821129658475e-08,
+      2.248833501346782e-08
+    ],
+    [
+      848.0,
+      8.860853594594713e-08,
+      2.199715629322213e-08
+    ],
+    [
+      847.0,
+      8.860920872856146e-08,
+      2.138658263677881e-08
+    ]
+  ]
+}

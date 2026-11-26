@@ -1,0 +1,36 @@
+[
+  {
+    "reference": "turn_recovery_y40",
+    "source_frame_interval": [
+      800,
+      1000
+    ],
+    "speed_range": [
+      0.6,
+      1.8
+    ],
+    "boundary_speed": 1.2,
+    "force_only_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "force_only_feasible": false,
+    "force_and_moment_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "physical_tracking_certified": false,
+    "support_model": "Optimistic full projected sole hull; box friction; no joint torque constraints"
+  },
+  {
+    "reference": "wbc_turn_support_half_flat_drop20",
+    "source_frame_interval": [
+      800,
+      1000
+    ],
+    "speed_range": [
+      0.6,
+      1.8
+    ],
+    "boundary_speed": 1.2,
+    "force_only_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "force_only_feasible": false,
+    "force_and_moment_status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "physical_tracking_certified": false,
+    "support_model": "Optimistic full projected sole hull; box friction; no joint torque constraints"
+  }
+]

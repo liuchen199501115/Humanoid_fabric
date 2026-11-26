@@ -1,0 +1,26 @@
+[
+  {
+    "name": "eleven_upper64_pause894",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--contact-pause-end",
+      "4.47"
+    ]
+  },
+  {
+    "name": "eleven_upper64_pause898",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--contact-pause-end",
+      "4.49"
+    ]
+  },
+  {
+    "name": "eleven_upper64_pause902",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--contact-pause-end",
+      "4.51"
+    ]
+  }
+]

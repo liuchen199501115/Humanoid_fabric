@@ -1,0 +1,13 @@
+{
+  "window": 31,
+  "peak_source_foot_error": 0.05146532686501447,
+  "peak_source_joint_rmse": 0.14258061349391937,
+  "joint_margin": 0.05862392485141754,
+  "preflight_passed": false,
+  "physical_tracking_certified": false,
+  "minimum_dense_native_clearance": -0.002645541520392314,
+  "minimum_dense_joint_limit_margin": 0.0628105103969574,
+  "minimum_reference_normal_force": 69.9696152765625,
+  "peak_momentum_rate": 62.25032109899314,
+  "peak_required_friction_norm": 1.0870961420571372
+}

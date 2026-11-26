@@ -1,0 +1,40 @@
+[
+  {
+    "name": "eleven_resume10_rooty3000",
+    "parent": "eleven_resume10",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-weight",
+      "3000",
+      "--root-position-task-late-axes",
+      "y"
+    ]
+  },
+  {
+    "name": "eleven_resume10_rootxy1000",
+    "parent": "eleven_resume10",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-weight",
+      "1000",
+      "--root-position-task-late-axes",
+      "xy"
+    ]
+  },
+  {
+    "name": "eleven_resume10_leg16",
+    "parent": "eleven_resume10",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.5",
+      "--leg-posture-metric-scale",
+      "16"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ten_floor3_fast14",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--clock-fourth-speed",
+      "1.4"
+    ]
+  },
+  {
+    "name": "ten_floor3_fast16",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--clock-fourth-speed",
+      "1.6"
+    ]
+  },
+  {
+    "name": "ten_floor3_position18",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "options": [
+      "--position-tube-start",
+      "4.08",
+      "--position-tube-radius",
+      ".18"
+    ]
+  }
+]

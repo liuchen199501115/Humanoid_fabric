@@ -1,0 +1,5 @@
+{"time": 3.68, "frame": 840.2, "actual_mode": 2, "joint_rmse": 0.15559180125573965, "root_position": 0.044833524118851394, "root_orientation": 0.10074718534151936}
+{"time": 3.684, "frame": 841.16, "actual_mode": 2, "joint_rmse": 0.15526044768570396, "root_position": 0.04602890637614451, "root_orientation": 0.10013100609107735}
+{"time": 3.702, "frame": 845.4799999999999, "actual_mode": 2, "joint_rmse": 0.14403247350977727, "root_position": 0.04859638522752537, "root_orientation": 0.09513965562755396}
+{"time": 3.722, "frame": 850.2800000000001, "actual_mode": 2, "joint_rmse": 0.13482277146858937, "root_position": 0.049820835511985725, "root_orientation": 0.09500116867484316}
+{"time": 3.762, "frame": 859.8800000000001, "actual_mode": 2, "joint_rmse": 0.178828577929648, "root_position": 0.04195707897691289, "root_orientation": 0.06377651255586922}

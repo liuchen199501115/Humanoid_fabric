@@ -1,0 +1,146 @@
+[
+  {
+    "cap": 1.0,
+    "proximal": 0.0,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 77,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 1.0,
+    "proximal": 0.0001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 47,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 1.0,
+    "proximal": 0.001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 44,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.0,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 83,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.0001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 57,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 51,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.0,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 77,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.0001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 63,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 44,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.0,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 83,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.0001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 67,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.001,
+    "valid": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "iterations": 48,
+    "native_attempts": [
+      1
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "0.0": {
+    "converged": "tensor([False])",
+    "iters": "187",
+    "obj": "tensor([385624.3071], dtype=torch.float64)",
+    "status_ok": "tensor([False])",
+    "status": [
+      "DAQP -2; rejected"
+    ],
+    "count": [
+      1
+    ]
+  },
+  "1e-06": {
+    "converged": "tensor([True])",
+    "iters": "70",
+    "obj": "tensor([385624.3044], dtype=torch.float64)",
+    "status_ok": "tensor([True])",
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "count": [
+      1
+    ]
+  },
+  "0.0001": {
+    "converged": "tensor([True])",
+    "iters": "63",
+    "obj": "tensor([385624.3044], dtype=torch.float64)",
+    "status_ok": "tensor([True])",
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "count": [
+      1
+    ]
+  },
+  "0.01": {
+    "converged": "tensor([True])",
+    "iters": "433",
+    "obj": "tensor([385624.3044], dtype=torch.float64)",
+    "status_ok": "tensor([True])",
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "count": [
+      1
+    ]
+  }
+}

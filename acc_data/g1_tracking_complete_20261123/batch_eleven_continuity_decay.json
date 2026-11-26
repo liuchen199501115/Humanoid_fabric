@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_cont1000_decay100",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--torque-continuity-end",
+      "4.5",
+      "--torque-continuity-end-ramp",
+      ".1",
+      "--torque-continuity-end-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_decay0",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--torque-continuity-end",
+      "4.5",
+      "--torque-continuity-end-ramp",
+      ".1",
+      "--torque-continuity-end-weight",
+      "0"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_rightsource_decay0",
+    "parent": "eleven_cont1000_speed10_rightsource",
+    "options": [
+      "--torque-continuity-end",
+      "4.5",
+      "--torque-continuity-end-ramp",
+      ".1",
+      "--torque-continuity-end-weight",
+      "0"
+    ]
+  }
+]

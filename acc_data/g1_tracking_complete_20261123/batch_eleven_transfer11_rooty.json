@@ -1,0 +1,26 @@
+[
+  {
+    "name": "eleven_transfer11_rooty_quarter",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rooty_quarter_compact.npz"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_rooty_half",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rooty_half_compact.npz"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_rooty_full",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rooty_full_compact.npz"
+    ]
+  }
+]

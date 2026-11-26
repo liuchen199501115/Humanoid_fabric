@@ -1,0 +1,23 @@
+{
+  "method": "Reduce prepared root-Z offset during step-11 transfer; bounded IK retains foot poses plus optional left XY correction.",
+  "fraction": 1.0,
+  "left_foot_xy_offset_m": [
+    0.0,
+    0.0
+  ],
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "c3dcb9fc77f84e39e165b81f8c6435817c8d8c66245ab20d3ba938419c84e467",
+  "maximum_root_z_shift_m": 0.01883798561808636,
+  "peak_position_residual_m": 5.072112414816236e-07,
+  "peak_rotation_residual_rad": 1.7265305766952473e-07,
+  "worst_frame_and_side": [
+    911,
+    0
+  ],
+  "maximum_joint_limit_violation_rad": 2.9802322387695312e-08,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "prefix_q_v_a_equal_through_frame": 882,
+  "upper_root_xy_rotation_unchanged": true,
+  "preflight_passed": true,
+  "full_tracking_passed": false
+}

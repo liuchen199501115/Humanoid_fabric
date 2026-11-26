@@ -1,0 +1,9 @@
+{
+  "tests_run": 39,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "ordinary_entry_smoke_passed": true,
+  "ordinary_entry_duration_s": 0.006,
+  "public_launcher_matches_historical_baseline": true
+}

@@ -1,0 +1,5 @@
+{
+  "status": "interrupted",
+  "reason": "Add a proximal coefficient penalty to reduce unnecessary steps during exact feasibility refinement.",
+  "physical_trial_run": false
+}

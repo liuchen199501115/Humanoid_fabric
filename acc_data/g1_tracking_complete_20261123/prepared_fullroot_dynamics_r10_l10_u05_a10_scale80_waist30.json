@@ -1,0 +1,10 @@
+{
+  "method": "Compose verified independent waist roll offset with free-leg scale80; feet unchanged from free-leg candidate",
+  "waist_margin_multiplier": 3.0,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "preflight_passed": true,
+  "full_tracking_passed": false,
+  "parent_sha256": "d7cdaca542bf61908d6cc07c3b815759f790bc3e05fd31210e59ea54fad48ffa",
+  "margin_sha256": "ee76da5d658a0b7314a1f503cf4db048ff494a1cb4c6284ce73247ad4968cb8a",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f"
+}

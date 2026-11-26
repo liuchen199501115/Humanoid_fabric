@@ -1,0 +1,26 @@
+[
+  {
+    "name": "eleven_roll_after11",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--rolling-contact-kinematics-start",
+      "4.348"
+    ]
+  },
+  {
+    "name": "eleven_roll_touch11",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--rolling-contact-kinematics-start",
+      "4.296"
+    ]
+  },
+  {
+    "name": "eleven_pause12_roll",
+    "parent": "eleven_pause12_940",
+    "options": [
+      "--rolling-contact-kinematics-start",
+      "4.348"
+    ]
+  }
+]

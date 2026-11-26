@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "response-wbc",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/brake_waist20.npz",
+    "--response-gain",
+    "0",
+    "--state-limit-priority",
+    "waist",
+    "--state-limit-weight",
+    "20"
+  ],
+  "status": "finished",
+  "sha256": {
+    "examples/test_g1_2.py": "cb07040469e96745679b0295d54b9386a6069cfca42c5dbc1fbde34b6d1167d2",
+    "examples/g1_response_feedback.py": "6a89f5692f3fec07daf4ee202ad6a6bf9f4600261c8fdc4541cb7105569a70d2",
+    "examples/test_g1.py": "02d2838abb7c25e147fa2cf47b8938c26ae3a465e84a1c52169d177614f954ae",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "returncode": 1,
+  "wall_seconds": 52.792324910871685
+}

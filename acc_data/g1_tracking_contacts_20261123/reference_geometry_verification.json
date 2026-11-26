@@ -1,0 +1,15 @@
+{
+  "prefix_through_frame_572_unchanged": true,
+  "suffix_from_802_unchanged": true,
+  "other_foot_peak_shift_m": 0.00011858466996636707,
+  "stance_right_offset_min_m": [
+    -2.203810711165488e-05,
+    0.01489184177237629,
+    -5.052639797745173e-05
+  ],
+  "stance_right_offset_max_m": [
+    7.253329192025149e-05,
+    0.015091855312245106,
+    0.0001562520855082003
+  ]
+}

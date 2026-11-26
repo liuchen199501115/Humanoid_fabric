@@ -1,0 +1,321 @@
+{
+  "runtime_contacts_unmodified": true,
+  "source_labels_unmodified": true,
+  "geometry_transfer": [
+    {
+      "frame": 800,
+      "original": [
+        true,
+        false
+      ],
+      "prepared": [
+        true,
+        false
+      ],
+      "native_clearance": [
+        -0.00035098139822611896,
+        0.017621834227370764
+      ]
+    },
+    {
+      "frame": 801,
+      "original": [
+        true,
+        false
+      ],
+      "prepared": [
+        true,
+        false
+      ],
+      "native_clearance": [
+        -0.0003307234964048597,
+        0.013227168137364478
+      ]
+    },
+    {
+      "frame": 802,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        false
+      ],
+      "native_clearance": [
+        -0.00031111316003249595,
+        0.009258352194622906
+      ]
+    },
+    {
+      "frame": 803,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        false
+      ],
+      "native_clearance": [
+        -0.000290467080319462,
+        0.0059013425561670885
+      ]
+    },
+    {
+      "frame": 804,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        false
+      ],
+      "native_clearance": [
+        -0.00026721710472739357,
+        0.003318701544071101
+      ]
+    },
+    {
+      "frame": 805,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        -0.00023141383207148786,
+        0.0015937827695404472
+      ]
+    },
+    {
+      "frame": 806,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        -0.00013925679405613067,
+        0.0005421603262684566
+      ]
+    },
+    {
+      "frame": 807,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        6.195685011917834e-05,
+        -3.357635802471448e-05
+      ]
+    },
+    {
+      "frame": 808,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        0.00042662284037921216,
+        -0.000285197934296863
+      ]
+    },
+    {
+      "frame": 809,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        0.00101354171147746,
+        -0.00033741074389610076
+      ]
+    },
+    {
+      "frame": 810,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        true,
+        true
+      ],
+      "native_clearance": [
+        0.0018902648039433936,
+        -0.00030205673604043193
+      ]
+    },
+    {
+      "frame": 811,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.003126499056876786,
+        -0.00026890121714208404
+      ]
+    },
+    {
+      "frame": 812,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.004759025053268681,
+        -0.00025306611154480435
+      ]
+    },
+    {
+      "frame": 813,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.0068269991959268375,
+        -0.00025101845628646563
+      ]
+    },
+    {
+      "frame": 814,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.00938623506941818,
+        -0.0002591290967090959
+      ]
+    },
+    {
+      "frame": 815,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.012512459613889068,
+        -0.0002735937442824854
+      ]
+    },
+    {
+      "frame": 816,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.01630547642252736,
+        -0.0002903696182313814
+      ]
+    },
+    {
+      "frame": 817,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.020863605349532924,
+        -0.0003060593676158102
+      ]
+    },
+    {
+      "frame": 818,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.026163318369252044,
+        -0.0003207016071735125
+      ]
+    },
+    {
+      "frame": 819,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.0320842513067771,
+        -0.0003350427714006801
+      ]
+    },
+    {
+      "frame": 820,
+      "original": [
+        false,
+        true
+      ],
+      "prepared": [
+        false,
+        true
+      ],
+      "native_clearance": [
+        0.038414474173787905,
+        -0.00034966888501962445
+      ]
+    }
+  ]
+}

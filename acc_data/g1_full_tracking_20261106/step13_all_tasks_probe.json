@@ -1,0 +1,22 @@
+{
+  "scope": "Saved-state all-task cost counterfactual only",
+  "solver": {
+    "status": "Solved",
+    "constraint_residual": 5.684341886080802e-14,
+    "iterations": 24,
+    "accepted": true
+  },
+  "waist_acceleration": [
+    5.4823014962026715,
+    69.1874760210038,
+    -26.956704783937223
+  ],
+  "root_acceleration": [
+    2.056694001436474,
+    2.708149975266945,
+    -3.361089490202012,
+    -16.725236727354332,
+    17.027625312757422,
+    7.657781069772305
+  ]
+}

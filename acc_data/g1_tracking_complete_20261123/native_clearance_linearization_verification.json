@@ -1,0 +1,18 @@
+{
+  "scope": "Finite-difference check of native foot-bottom height constraint rows.",
+  "passed": true,
+  "cases": [
+    {
+      "source_frame": 782,
+      "maximum_native_height_derivative_error": 9.6868901788838e-11
+    },
+    {
+      "source_frame": 790,
+      "maximum_native_height_derivative_error": 2.9065971851593986e-11
+    },
+    {
+      "source_frame": 800,
+      "maximum_native_height_derivative_error": 1.2780398961353967e-10
+    }
+  ]
+}

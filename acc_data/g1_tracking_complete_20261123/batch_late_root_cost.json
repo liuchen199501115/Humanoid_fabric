@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ten_comspeed02_lateroot_y300",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "y",
+      "--root-position-task-late-weight",
+      "300"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_lateroot_xy300",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "300"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_lateroot_xy1000",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "1000"
+    ]
+  }
+]

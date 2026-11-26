@@ -1,0 +1,24 @@
+{
+  "name": "twelve_earlyposture",
+  "landings": 10,
+  "source_frame": 900.0,
+  "prefix_end_time_s": 3.8,
+  "history_equal_prefix_fields": 167,
+  "different_prefix_fields": [],
+  "one_native_qp": true,
+  "exact_applied_qp_torque": true,
+  "unchanged_fidelity": true,
+  "next_step": {
+    "step": 11,
+    "swing": "left",
+    "missing_evidence": "landing_position",
+    "landing_window_expired": false,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.07351207807402181,
+    "best_loaded_landing_error_m": 0.05445986986160278,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

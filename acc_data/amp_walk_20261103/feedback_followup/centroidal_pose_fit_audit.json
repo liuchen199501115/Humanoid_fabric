@@ -1,0 +1,22 @@
+[
+  {
+    "reference": "turn_centroidal_pose_fit_margin",
+    "source_frames": [
+      740,
+      1000
+    ],
+    "dense_samples": 1041,
+    "minimum_normal_force": 113.22341182408879,
+    "maximum_normal_force": 874.8641799336472,
+    "negative_force_samples": 0,
+    "maximum_world_friction_l1": 0.4553890080756535,
+    "maximum_planned_sole_friction_l1": 0.5133446722685773,
+    "maximum_cop_outside_planned_sole_hull": 0.2822768804795488,
+    "peak_momentum_rate": [
+      68.36119959594934,
+      160.62654425765078,
+      27.6243742826334
+    ],
+    "physical_tracking_certified": false
+  }
+]

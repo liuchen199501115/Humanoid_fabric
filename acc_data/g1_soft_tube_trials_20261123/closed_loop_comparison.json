@@ -1,0 +1,167 @@
+[
+  {
+    "name": "baseline_gpu",
+    "samples": [
+      {
+        "time_s": 1.296,
+        "root_position_error_m": 0.1695406138896942,
+        "pitch_acceleration_rad_s2": -0.38319462537765503,
+        "slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.34,
+        "root_position_error_m": 0.1827770322561264,
+        "pitch_acceleration_rad_s2": 89.18523406982422,
+        "slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.354,
+        "root_position_error_m": 0.18511952459812164,
+        "pitch_acceleration_rad_s2": 762.1823120117188,
+        "slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "soft1",
+    "samples": [
+      {
+        "time_s": 1.296,
+        "root_position_error_m": 0.1695406138896942,
+        "pitch_acceleration_rad_s2": -3.880729913711548,
+        "slack": [
+          84.53089004105404,
+          49.047916367592435,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.34,
+        "root_position_error_m": 0.18881289660930634,
+        "pitch_acceleration_rad_s2": -0.5746210813522339,
+        "slack": [
+          118.9560374815039,
+          110.40582302064168,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.354,
+        "root_position_error_m": 0.1955650895833969,
+        "pitch_acceleration_rad_s2": 0.8461382985115051,
+        "slack": [
+          176.11099040115693,
+          122.72144645831459,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "soft10",
+    "samples": [
+      {
+        "time_s": 1.296,
+        "root_position_error_m": 0.1695406138896942,
+        "pitch_acceleration_rad_s2": -1.500179648399353,
+        "slack": [
+          27.229903834198428,
+          17.04091216549977,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.34,
+        "root_position_error_m": 0.1848171204328537,
+        "pitch_acceleration_rad_s2": 7.399421215057373,
+        "slack": [
+          144.6137513648166,
+          30.899321103672705,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.354,
+        "root_position_error_m": 0.1886875033378601,
+        "pitch_acceleration_rad_s2": 11.075004577636719,
+        "slack": [
+          223.2252759618882,
+          53.99133876780427,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "aligned_hard",
+    "samples": [
+      {
+        "time_s": 1.296,
+        "root_position_error_m": 0.1695406138896942,
+        "pitch_acceleration_rad_s2": -4.724799633026123,
+        "slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.34,
+        "root_position_error_m": 0.1826690435409546,
+        "pitch_acceleration_rad_s2": -168.17938232421875,
+        "slack": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "aligned_soft10",
+    "samples": [
+      {
+        "time_s": 1.296,
+        "root_position_error_m": 0.1695406138896942,
+        "pitch_acceleration_rad_s2": -4.870717525482178,
+        "slack": [
+          0.0,
+          17.13723495299354,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.34,
+        "root_position_error_m": 0.18472564220428467,
+        "pitch_acceleration_rad_s2": 5.832045078277588,
+        "slack": [
+          177.56137884951377,
+          41.27761987897813,
+          0.0
+        ]
+      },
+      {
+        "time_s": 1.354,
+        "root_position_error_m": 0.1886528581380844,
+        "pitch_acceleration_rad_s2": -2.7350029945373535,
+        "slack": [
+          134.67244182401575,
+          46.67949442714814,
+          0.0
+        ]
+      }
+    ]
+  }
+]

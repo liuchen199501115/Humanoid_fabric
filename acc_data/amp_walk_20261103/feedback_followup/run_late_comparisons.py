@@ -1,0 +1,13 @@
+import subprocess,os,json,importlib.util
+from pathlib import Path
+p=Path(__file__).parent;env=os.environ.copy();env['G1_PYTHON']='/home/sky/anaconda3/envs/humanoid_fabric/bin/python'
+spec=importlib.util.spec_from_file_location('summarizer',p.parent.parent/'amp_walk_20261102/contact_clock_followup/summarize_trials.py');summary=importlib.util.module_from_spec(spec);spec.loader.exec_module(summary);summary.ROOT=p.resolve()
+cases=[('left_feedback_late120',['--flight-feedback-start','1.2','--flight-feedback-side','left']),('both_feedback_late134',['--flight-feedback-start','1.34']),('left_feedback_late134',['--flight-feedback-start','1.34','--flight-feedback-side','left'])]
+for name,args in cases:
+ print(json.dumps(dict(starting=name)),flush=True)
+ with (p/(name+'.log')).open('w') as log:
+  result=subprocess.run(['bash',str(p/'run_selective_feedback.sh'),'--flight-feedback-limit','100','--duration','5','--output-path',str(p/(name+'.npz'))]+args,env=env,stdout=log,stderr=subprocess.STDOUT)
+ report=p/(name+'.tracking.json');data=json.loads(report.read_text()) if report.exists() else {}
+ row=summary.summarize(name) if report.exists() else {}
+ print(json.dumps(dict(finished=name,return_code=result.returncode,measured_landings=data.get('measured_landings'),strict_prefix=row.get('prefix_fidelity_passing_landings'),first_fidelity_failure=row.get('first_fidelity_exceeded_time_s'),full_tracking_passed=data.get('full_tracking_passed'),failed_time_s=data.get('failed_time_s'))),flush=True)
+ if row.get('prefix_fidelity_passing_landings',0)>4:break

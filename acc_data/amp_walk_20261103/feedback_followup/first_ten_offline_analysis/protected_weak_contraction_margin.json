@@ -1,0 +1,473 @@
+{
+  "scope": "Offline first-stage feasible-set margin for lambda=1,kappa=0.5; original constraints and swing/torso/pelvis protections preserved. Margin=-minimum_excess/||s|| is largest hypothetical isotropic horizontal acceleration disturbance radius compatible with some feasible instantaneous command. It is not measured model uncertainty, not the chosen QP solution margin, and not a closed-loop guarantee.",
+  "records": [
+    {
+      "time": 3.5,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 2
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 2
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 2
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -0.12494373248404209,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.4981440590629615,
+          "violation": 1.1937117960769683e-11
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.1580352882638297,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.6300783433133316,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.22421833085577342,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.8939466368437693,
+          "violation": 1.0018652574217413e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -0.12494466332989057,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.4981477702961711,
+          "violation": 1.5258905250448151e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.15803629838486447,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.6300823706125198,
+          "violation": 1.3642420526593924e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.2242195590046127,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.893951533408293,
+          "violation": 1.6134649172272475e-11
+        }
+      ]
+    },
+    {
+      "time": 3.7,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": 0.2909037675922963,
+          "zero_slack_feasible": false,
+          "max_nominal_isotropic_acceleration_margin": -0.6378309847365727,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": 0.26937025454086494,
+          "zero_slack_feasible": false,
+          "max_nominal_isotropic_acceleration_margin": -0.5906169457156631,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": 0.22630322843800021,
+          "zero_slack_feasible": false,
+          "max_nominal_isotropic_acceleration_margin": -0.49618886767383946,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": 0.005610080519093952,
+          "zero_slack_feasible": false,
+          "max_nominal_isotropic_acceleration_margin": -0.01230057352491958,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.029530887009484363,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.06474895425831083,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.09805746975366914,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.21499925219743277,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -0.1721537908352615,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.37746167003406206,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.22370842030060523,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.49049953252642847,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.3086604366297685,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 0.676763975503765,
+          "violation": 2.2737367544323206e-13
+        }
+      ]
+    },
+    {
+      "time": 3.8,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.5911884392449258,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.649657428055318,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.6125373017613793,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.6852076939773704,
+          "violation": 4.334310688136611e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.6543164096683542,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.7547785385567667,
+          "violation": 8.313350008393172e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.6737209680589187,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.7870911364927413,
+          "violation": 1.858069254012662e-12
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.7065972288180231,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.8418369015941907,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.7658947781416865,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.9405795697507537,
+          "violation": 1.7763568394002505e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.7017042707170025,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.833689115664018,
+          "violation": 2.4851232183209504e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.7345805314761567,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.8884348807655504,
+          "violation": 3.700151296470722e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.8003330529944512,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.997926410968592,
+          "violation": 4.273914555597003e-12
+        }
+      ]
+    },
+    {
+      "time": 4.0,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -0.6526518229138901,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 1.6282698582434099,
+          "violation": 2.469136006766348e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.6782351058847867,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 1.6920963689094486,
+          "violation": 3.055333763768431e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.7294016718265807,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 1.8197493902415272,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -0.8212529761141104,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.048904821914107,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -0.8470720647670748,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.1133196329127775,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -0.8987102420730045,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.2421492549101223,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.0301169634326808,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.5699896072211916,
+          "violation": 7.815970093361102e-14
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.0559360520856444,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.6344044182198605,
+          "violation": 4.618527782440651e-14
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.1075742293915738,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 2.763234040217204,
+          "violation": 8.526512829121202e-14
+        }
+      ]
+    },
+    {
+      "time": 4.15,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.4209641243898505,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.426105152260354,
+          "violation": 6.039613253960852e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.4704794160141668,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.5454921183616888,
+          "violation": 3.197442310920451e-13
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.5695125298998942,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.7842721522164973,
+          "violation": 2.3447910280083306e-13
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.4209650428927283,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.4261073668746342,
+          "violation": 2.489741746103391e-11
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.4704815650052727,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.545497299822201,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.5695146061186875,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.7842771582147368,
+          "violation": 8.490985692333197e-12
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 0,
+          "minimum_contraction_excess": -1.4209652472237182,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.426107859539752,
+          "violation": 1.2789769243681803e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 0,
+          "minimum_contraction_excess": -1.4704818118247807,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.5454978949319393,
+          "violation": 2.2737367544323206e-13
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 0,
+          "minimum_contraction_excess": -1.5695149528845145,
+          "zero_slack_feasible": true,
+          "max_nominal_isotropic_acceleration_margin": 3.7842779943063496,
+          "violation": 3.126388037344441e-13
+        }
+      ]
+    },
+    {
+      "time": 4.25,
+      "cases": [
+        {
+          "cap": 160.0,
+          "vertical_change": 0.25,
+          "status": 2
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 0.5,
+          "status": 2
+        },
+        {
+          "cap": 160.0,
+          "vertical_change": 1.0,
+          "status": 2
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.25,
+          "status": 2
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 0.5,
+          "status": 2
+        },
+        {
+          "cap": 200.0,
+          "vertical_change": 1.0,
+          "status": 2
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.25,
+          "status": 2
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 0.5,
+          "status": 2
+        },
+        {
+          "cap": 250.0,
+          "vertical_change": 1.0,
+          "status": 2
+        }
+      ]
+    }
+  ]
+}

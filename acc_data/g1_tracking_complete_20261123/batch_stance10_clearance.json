@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_clearance822_root1000",
+    "parent": "ten_smooth16_anchor884_drop20_root1000",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_clearance_anchor884_start822.npz"
+    ]
+  },
+  {
+    "name": "ten_clearance822_support1",
+    "parent": "ten_anchor884_root1000_support1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_clearance_anchor884_start822.npz"
+    ]
+  },
+  {
+    "name": "ten_clearance810_support1",
+    "parent": "ten_anchor884_root1000_support1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_clearance_anchor884_start810.npz"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.03
+  ],
+  "maximum_foot_position_residual_m": 5.165474378964244e-07,
+  "maximum_foot_rotation_residual_rad": 2.5898529416403015e-07,
+  "maximum_com_ik_residual_m": 2.5468342576178923e-07,
+  "maximum_added_root_rotation_rad": 0.08206049093319731,
+  "worst_frame": 882,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.05635030195116997,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Bounded late swing11 lowering with optional COM drop; both foot angles retained.",
+  "reduction_m": 0.05,
+  "com_drop_m": 0.03,
+  "maximum_native_swing11_clearance_m": 0.051547431230875886,
+  "minimum_native_swing11_clearance_m": 0.0036472735594970523,
+  "parent_sha256": "2cb16e2225e2b776c49d7852647093f3ed6797fda1383bd174bb1b1bf809195b",
+  "full_tracking_passed": false,
+  "metadata_correction": "Method description corrected to reflect explicit nonzero com_drop_m; numerical preparation and candidate arrays unchanged."
+}

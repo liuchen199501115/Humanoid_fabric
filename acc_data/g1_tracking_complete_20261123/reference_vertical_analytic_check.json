@@ -1,0 +1,52 @@
+[
+  {
+    "frame": 792,
+    "analytic_com_acceleration": [
+      -7.461716640953586,
+      -2.3053358814425526,
+      -12.464046990169429
+    ],
+    "finite_difference_vertical": -12.072156025693403,
+    "required_total_vertical_ground_force_N": -88.48895762699247
+  },
+  {
+    "frame": 793,
+    "analytic_com_acceleration": [
+      -6.415894190854818,
+      -1.7120147310917186,
+      -11.927179971049664
+    ],
+    "finite_difference_vertical": -11.928502032787947,
+    "required_total_vertical_ground_force_N": -70.58919809666635
+  },
+  {
+    "frame": 794,
+    "analytic_com_acceleration": [
+      -5.357886366567726,
+      -0.9966507782643418,
+      -11.374913794547282
+    ],
+    "finite_difference_vertical": -11.380885979611776,
+    "required_total_vertical_ground_force_N": -52.17601307305804
+  },
+  {
+    "frame": 795,
+    "analytic_com_acceleration": [
+      -4.272391301476307,
+      -0.143024238537518,
+      -10.896647180689072
+    ],
+    "finite_difference_vertical": -10.909006434783805,
+    "required_total_vertical_ground_force_N": -36.230057976986956
+  },
+  {
+    "frame": 791,
+    "analytic_com_acceleration": [
+      -6.8221548080890635,
+      -2.766760126963459,
+      -10.650347972690552
+    ],
+    "finite_difference_vertical": -10.654588415221951,
+    "required_total_vertical_ground_force_N": -28.01816110369477
+  }
+]

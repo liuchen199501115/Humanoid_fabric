@@ -1,0 +1,449 @@
+[
+  {
+    "name": "eight_scaled",
+    "cases": [
+      {
+        "cap": 1.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 11,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 32,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 36,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 1078,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0,
+        "valid": false,
+        "iterations": 68,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 21,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 35,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 42,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 13,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 17,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0001,
+        "valid": false,
+        "iterations": 79,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 40,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 19,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 65,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 33,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 113,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "support30_scaled",
+    "cases": [
+      {
+        "cap": 1.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 11,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 30,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 38,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 826,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 86,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 33,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 33,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 52,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0,
+        "valid": false,
+        "iterations": 69,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 1e-06,
+        "valid": false,
+        "iterations": 71,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0001,
+        "valid": false,
+        "iterations": 173,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 42,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 80,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 90,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 122,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.01,
+        "valid": false,
+        "iterations": 222,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com16_scaled",
+    "cases": [
+      {
+        "cap": 1.0,
+        "proximal": 0.0,
+        "valid": true,
+        "iterations": 40,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 41,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 69,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 4694,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0,
+        "valid": false,
+        "iterations": 131,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 40,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.0001,
+        "valid": true,
+        "iterations": 44,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 10.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 82,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0,
+        "valid": false,
+        "iterations": 132,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 1e-06,
+        "valid": false,
+        "iterations": 119,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.0001,
+        "valid": false,
+        "iterations": 111,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 100.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 52,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0,
+        "valid": false,
+        "iterations": 135,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 1e-06,
+        "valid": true,
+        "iterations": 50,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.0001,
+        "valid": false,
+        "iterations": 119,
+        "status": [
+          "DAQP -2; rejected"
+        ]
+      },
+      {
+        "cap": 1000.0,
+        "proximal": 0.01,
+        "valid": true,
+        "iterations": 66,
+        "status": [
+          "DAQP 1; KKT certified"
+        ]
+      }
+    ]
+  }
+]

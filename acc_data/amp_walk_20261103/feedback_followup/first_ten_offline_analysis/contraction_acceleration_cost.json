@@ -1,0 +1,105 @@
+{
+  "scope": "Offline minimum peak absolute joint acceleration needed for lambda=4,kappa=2 horizontal contraction. Adds constraints; removes none. Peak values are in rad/s^2. Vertical-preserving case holds the saved online vertical COM acceleration, not zero.",
+  "records": [
+    {
+      "time": 3.5,
+      "online_max_joint_acceleration": 236.8018798828125,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 86.85748089111367,
+          "constraint_violation": 6.821210263296962e-13
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 4,
+          "feasible": null
+        }
+      }
+    },
+    {
+      "time": 3.7,
+      "online_max_joint_acceleration": 157.0274200439453,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 33.68446290393442,
+          "constraint_violation": 1.9895196601282805e-13
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 4,
+          "feasible": null
+        }
+      }
+    },
+    {
+      "time": 3.8,
+      "online_max_joint_acceleration": 103.00896453857422,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 4.556538770943651,
+          "constraint_violation": 1.0125233984581428e-13
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 4,
+          "feasible": null
+        }
+      }
+    },
+    {
+      "time": 4.0,
+      "online_max_joint_acceleration": 112.62262725830078,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 13.680257756332434,
+          "constraint_violation": 3.836930773104541e-13
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 28.268063847232256,
+          "constraint_violation": 8.171241461241152e-14
+        }
+      }
+    },
+    {
+      "time": 4.15,
+      "online_max_joint_acceleration": 176.11744689941406,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 35.33576205416095,
+          "constraint_violation": 7.815970093361102e-14
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 35.46503191298681,
+          "constraint_violation": 1.1368683772161603e-13
+        }
+      }
+    },
+    {
+      "time": 4.25,
+      "online_max_joint_acceleration": 504.53125,
+      "cases": {
+        "horizontal_only": {
+          "status": 0,
+          "feasible": true,
+          "minimum_peak_joint_acceleration": 3659.8883260088833,
+          "constraint_violation": 2.6830093702301383e-11
+        },
+        "keep_online_vertical_acceleration": {
+          "status": 4,
+          "feasible": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "run": "wbc_model_effort415",
+    "landings": 11,
+    "last_frame": 937.64,
+    "failure": {
+      "time_s": 4.086,
+      "source_frame": 937.64,
+      "joint_rmse_rad": 0.1910201609134674,
+      "root_position_m": 0.19226385653018951,
+      "root_orientation_rad": 0.3546169945226542
+    },
+    "full_motion_tracking_passed": false
+  },
+  {
+    "run": "wbc_model_effort415_body1",
+    "landings": 10,
+    "last_frame": 909.3199999999999,
+    "failure": {
+      "time_s": 3.968,
+      "source_frame": 909.3199999999999,
+      "joint_rmse_rad": 0.2018681913614273,
+      "root_position_m": 0.16832280158996582,
+      "root_orientation_rad": 0.041006626938372114
+    },
+    "full_motion_tracking_passed": false
+  },
+  {
+    "run": "wbc_model_effort370_body1",
+    "landings": 9,
+    "last_frame": 842.1200000000001,
+    "failure": {
+      "time_s": 3.688,
+      "source_frame": 842.1200000000001,
+      "joint_rmse_rad": 0.20212316513061523,
+      "root_position_m": 0.09133882075548172,
+      "root_orientation_rad": 0.25552033928791246
+    },
+    "full_motion_tracking_passed": false
+  },
+  {
+    "run": "wbc_model_effort415_body03_full",
+    "landings": 10,
+    "last_frame": 928.9999999999999,
+    "failure": {
+      "time_s": 4.05,
+      "source_frame": 928.9999999999999,
+      "joint_rmse_rad": 0.201315775513649,
+      "root_position_m": 0.18859097361564636,
+      "root_orientation_rad": 0.2562699598640015
+    },
+    "full_motion_tracking_passed": false
+  },
+  {
+    "run": "wbc_stance_offset_trial",
+    "landings": 11,
+    "last_frame": 936.2,
+    "failure": {
+      "time_s": 4.08,
+      "source_frame": 936.2,
+      "joint_rmse_rad": 0.2019127607345581,
+      "root_position_m": 0.1833236813545227,
+      "root_orientation_rad": 0.3320334062687736
+    },
+    "full_motion_tracking_passed": false
+  }
+]

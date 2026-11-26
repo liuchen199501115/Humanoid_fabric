@@ -1,0 +1,35 @@
+{
+  "original_total_seconds": 4.16178260743618,
+  "cases": [
+    {
+      "method": "auto",
+      "threads": 1,
+      "status": "Solved",
+      "seconds": 1.9060463793575764,
+      "objective": -92529.10468899008,
+      "first_control_max_difference": 0.0,
+      "solver_info": "LinearSolverInfo {\n    name: \"faer\",\n    threads: 1,\n    direct: true,\n    nnzA: 113625,\n    nnzL: 864850,\n}",
+      "iterations": 50
+    },
+    {
+      "method": "qdldl",
+      "threads": 1,
+      "status": "Solved",
+      "seconds": 1.9684631517156959,
+      "objective": -92529.10468898622,
+      "first_control_max_difference": 2.9908946430623473e-09,
+      "solver_info": "LinearSolverInfo {\n    name: \"qdldl\",\n    threads: 1,\n    direct: true,\n    nnzA: 113625,\n    nnzL: 601042,\n}",
+      "iterations": 50
+    },
+    {
+      "method": "faer",
+      "threads": 1,
+      "status": "Solved",
+      "seconds": 1.7304749824106693,
+      "objective": -92529.10468899008,
+      "first_control_max_difference": 0.0,
+      "solver_info": "LinearSolverInfo {\n    name: \"faer\",\n    threads: 1,\n    direct: true,\n    nnzA: 113625,\n    nnzL: 864850,\n}",
+      "iterations": 50
+    }
+  ]
+}

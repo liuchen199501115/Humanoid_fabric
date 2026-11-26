@@ -1,0 +1,18 @@
+{
+  "parent": "turn_force_feasible_com_floor",
+  "additional_landing_offset": [
+    -0.04,
+    -0.05,
+    0.0
+  ],
+  "peak_foot_xy_error": 2.581901294887537e-05,
+  "peak_foot_orientation_adjustment": 0.05803958716289813,
+  "peak_com_projection_error": 5.754129870807412e-09,
+  "peak_position_residual": 2.6360438995545683e-05,
+  "peak_orientation_residual": 0.05803958716289812,
+  "minimum_dense_joint_limit_margin": 0.009999960660934448,
+  "minimum_dense_native_clearance": -0.0006697584119947572,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

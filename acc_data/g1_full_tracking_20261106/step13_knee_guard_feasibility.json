@@ -1,0 +1,47 @@
+{
+  "scope": "Added constraint, offline solves only",
+  "cases": [
+    {
+      "sample": "thirteenth_waist_metric4.qp_2100",
+      "knee_position": 0.7783958911895752,
+      "knee_velocity": -5.925333499908447,
+      "minimum_acceleration": 5.654983520507784,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.105427357601002e-14,
+        "iterations": 23,
+        "accepted": true
+      },
+      "predicted_knee_acceleration": 5.65498352051629,
+      "root_acceleration": [
+        2.354879376698526,
+        2.3668466851357084,
+        1.7372341670437852,
+        45.5924114958734,
+        -4.554533748088491,
+        22.472289663488105
+      ]
+    },
+    {
+      "sample": "thirteenth_waist_metric4.qp_2150",
+      "knee_position": 0.2015376091003418,
+      "knee_velocity": -3.879643201828003,
+      "minimum_acceleration": 154.5706844329834,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.197442310920451e-14,
+        "iterations": 21,
+        "accepted": true
+      },
+      "predicted_knee_acceleration": 154.57068443326537,
+      "root_acceleration": [
+        -2.270234252804622,
+        5.1544780797324865,
+        -6.790525467709148,
+        11.9377497920153,
+        -13.216430054747413,
+        31.809025036215896
+      ]
+    }
+  ]
+}

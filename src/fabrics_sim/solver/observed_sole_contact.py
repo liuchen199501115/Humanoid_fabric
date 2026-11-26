@@ -53,7 +53,8 @@ class ObservedSoleContact(ToeContact):
         self._geometry=None
         self._cone_cache=None
 
-    def update_support(self,position,rotation,world_points,normal_forces,separations):
+    def update_support(self,position,rotation,world_points,normal_forces,separations,
+                       *,touching_tolerance=None):
         points=np.asarray(world_points,dtype=float)
         forces=np.asarray(normal_forces).reshape(-1)
         distances=np.asarray(separations).reshape(-1)
@@ -62,6 +63,14 @@ class ObservedSoleContact(ToeContact):
             raise ValueError('Expected one robot and finite observed sole contacts')
         loaded=(forces>.5)&(distances<=.001)
         if not loaded.any():return False
+        if touching_tolerance is not None:
+            if not np.isfinite(touching_tolerance) or not 0 <= touching_tolerance <= .0001:
+                raise ValueError('Touching support tolerance must be within 0..100 micrometres')
+            # An already bearing foot may redistribute load onto other real
+            # near-touching manifold points. Never infer points from its mesh
+            # or use this option to create an unloaded/airborne support foot.
+            if forces[loaded].sum() >= 20.:
+                loaded |= (forces >= 0.) & (distances <= touching_tolerance)
         points=points[loaded]
         origin=position[0].detach().cpu().numpy();R=rotation[0].detach().cpu().numpy()
         local=(points-origin)@R

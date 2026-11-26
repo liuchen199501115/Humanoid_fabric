@@ -1,0 +1,20 @@
+[
+  {
+    "stride": 10,
+    "minimum_native_clearance": -0.002254808700348915,
+    "minimum_joint_margin": 0.06759946048259735,
+    "max_velocity_fraction": 0.3771611154079437,
+    "max_root_angular_acceleration": 20.61809539794922,
+    "physical_tracking_certified": false,
+    "preflight_passed": false
+  },
+  {
+    "stride": 12,
+    "minimum_native_clearance": -0.002593564991011002,
+    "minimum_joint_margin": 0.07074779272079468,
+    "max_velocity_fraction": 0.34362009167671204,
+    "max_root_angular_acceleration": 21.158355712890625,
+    "physical_tracking_certified": false,
+    "preflight_passed": false
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "time_s": 3.68,
+    "costs": [
+      {
+        "name": "feet_pose",
+        "cost": 362381.18831508793
+      },
+      {
+        "name": "body_orientation",
+        "cost": 94901.38312303463
+      },
+      {
+        "name": "joint_posture",
+        "cost": 58406.60782959197
+      },
+      {
+        "name": "center_of_mass",
+        "cost": 2276.0093048197173
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0
+      },
+      {
+        "name": "support_orientation_0",
+        "cost": 0.0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0
+      }
+    ],
+    "cases": [
+      {
+        "name": "original",
+        "valid": true,
+        "right_foot_acc": [
+          21.384020526867484,
+          -43.554379307460664,
+          -59.68666515067255
+        ],
+        "right_foot_desired": [
+          34.25790786743164,
+          -142.48281860351562,
+          -29.981985092163086
+        ],
+        "right_shoulder_roll_qdd": -160.98309799161387,
+        "right_hip_roll_qdd": -149.55538412888296
+      },
+      {
+        "name": "foot4",
+        "valid": true,
+        "right_foot_acc": [
+          19.44317555426162,
+          -56.99050335327492,
+          -46.91972276806828
+        ],
+        "right_foot_desired": [
+          34.25790786743164,
+          -142.48281860351562,
+          -29.981985092163086
+        ],
+        "right_shoulder_roll_qdd": -165.48939923515275,
+        "right_hip_roll_qdd": -172.6077537800616
+      },
+      {
+        "name": "body01",
+        "valid": true,
+        "right_foot_acc": [
+          28.302696298173057,
+          -51.90076118607445,
+          -56.58351427129642
+        ],
+        "right_foot_desired": [
+          34.25790786743164,
+          -142.48281860351562,
+          -29.981985092163086
+        ],
+        "right_shoulder_roll_qdd": -147.711045791225,
+        "right_hip_roll_qdd": -163.5405068500358
+      },
+      {
+        "name": "com4",
+        "valid": true,
+        "right_foot_acc": [
+          22.577623268646935,
+          -43.825199425047046,
+          -61.877585381253596
+        ],
+        "right_foot_desired": [
+          34.25790786743164,
+          -142.48281860351562,
+          -29.981985092163086
+        ],
+        "right_shoulder_roll_qdd": -147.23827395910564,
+        "right_hip_roll_qdd": -146.86253893920917
+      },
+      {
+        "name": "posture4",
+        "valid": true,
+        "right_foot_acc": [
+          27.207010949892855,
+          -41.87530348514055,
+          -69.567742654972
+        ],
+        "right_foot_desired": [
+          34.25790786743164,
+          -142.48281860351562,
+          -29.981985092163086
+        ],
+        "right_shoulder_roll_qdd": -105.4722961641099,
+        "right_hip_roll_qdd": -117.03900485707418
+      }
+    ]
+  },
+  {
+    "time_s": 3.7,
+    "costs": [
+      {
+        "name": "body_orientation",
+        "cost": 188332.95240063223
+      },
+      {
+        "name": "feet_pose",
+        "cost": 182724.72522768378
+      },
+      {
+        "name": "joint_posture",
+        "cost": 80174.47052918692
+      },
+      {
+        "name": "center_of_mass",
+        "cost": 1519.22030944284
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0
+      },
+      {
+        "name": "support_orientation_0",
+        "cost": 0.0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0
+      }
+    ],
+    "cases": [
+      {
+        "name": "original",
+        "valid": true,
+        "right_foot_acc": [
+          6.884658829021724,
+          -54.17737069616559,
+          -82.77846881756463
+        ],
+        "right_foot_desired": [
+          9.320291519165039,
+          -119.75000762939453,
+          -50.47203826904297
+        ],
+        "right_shoulder_roll_qdd": 64.00009287139656,
+        "right_hip_roll_qdd": -135.83674402542195
+      },
+      {
+        "name": "foot4",
+        "valid": true,
+        "right_foot_acc": [
+          1.5010121188811567,
+          -73.70962770492199,
+          -68.51408030684763
+        ],
+        "right_foot_desired": [
+          9.320291519165039,
+          -119.75000762939453,
+          -50.47203826904297
+        ],
+        "right_shoulder_roll_qdd": 76.4275659367755,
+        "right_hip_roll_qdd": -118.02911550392731
+      },
+      {
+        "name": "body01",
+        "valid": true,
+        "right_foot_acc": [
+          6.056186735962477,
+          -64.4440023775639,
+          -80.66042417432922
+        ],
+        "right_foot_desired": [
+          9.320291519165039,
+          -119.75000762939453,
+          -50.47203826904297
+        ],
+        "right_shoulder_roll_qdd": 57.10800901243829,
+        "right_hip_roll_qdd": -159.92569072609902
+      },
+      {
+        "name": "com4",
+        "valid": true,
+        "right_foot_acc": [
+          7.529085253733996,
+          -54.37713853351253,
+          -83.00613757671863
+        ],
+        "right_foot_desired": [
+          9.320291519165039,
+          -119.75000762939453,
+          -50.47203826904297
+        ],
+        "right_shoulder_roll_qdd": 66.36456553472541,
+        "right_hip_roll_qdd": -135.12968750385875
+      },
+      {
+        "name": "posture4",
+        "valid": true,
+        "right_foot_acc": [
+          13.338506286246982,
+          -41.80787692953284,
+          -88.15987691241871
+        ],
+        "right_foot_desired": [
+          9.320291519165039,
+          -119.75000762939453,
+          -50.47203826904297
+        ],
+        "right_shoulder_roll_qdd": 71.82585065530694,
+        "right_hip_roll_qdd": -110.82190236115693
+      }
+    ]
+  }
+]

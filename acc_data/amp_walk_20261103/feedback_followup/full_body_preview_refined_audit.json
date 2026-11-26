@@ -1,0 +1,84 @@
+[
+  {
+    "success": false,
+    "status": "NonlinearPredictionRejected",
+    "linear_violation": 1.2427392448444152e-11,
+    "tube_violation": -0.16891347243758503,
+    "objective": 11136.420539702562,
+    "nonlinear_base_force_residual": 177.39570080082643,
+    "nonlinear_base_moment_residual": 63.12070000053667,
+    "nonlinear_joint_residual": 57.21396130987423,
+    "nonlinear_minimum_clearance": -0.0005637673882797969,
+    "nonlinear_verified": false,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 783.5102273532636,
+        "nonlinear_base_moment_residual": 172.06004956004165,
+        "nonlinear_joint_residual": 146.4027636831106,
+        "nonlinear_minimum_clearance": -0.0008070928810107042,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 1,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 473.26601750493353,
+        "nonlinear_base_moment_residual": 91.61513022585241,
+        "nonlinear_joint_residual": 91.4231998501938,
+        "nonlinear_minimum_clearance": -0.0006863442591281896,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 2,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 151.45481881559067,
+        "nonlinear_base_moment_residual": 44.01762538559299,
+        "nonlinear_joint_residual": 51.02920371639655,
+        "nonlinear_minimum_clearance": -0.0013114937852648709,
+        "nonlinear_verified": false
+      },
+      {
+        "iteration": 3,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 177.39570080082643,
+        "nonlinear_base_moment_residual": 63.12070000053667,
+        "nonlinear_joint_residual": 57.21396130987423,
+        "nonlinear_minimum_clearance": -0.0005637673882797969,
+        "nonlinear_verified": false
+      }
+    ],
+    "solve_seconds": 4.586011823266745,
+    "time": 3.6
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881143575326,
+    "tube_violation": -0.15487397461433328,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.6916568381711841,
+    "time": 3.7
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 365.73117911627065,
+    "tube_violation": -0.15487397461357946,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.7823611628264189,
+    "time": 3.8
+  }
+]

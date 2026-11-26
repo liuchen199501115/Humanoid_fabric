@@ -1,0 +1,20 @@
+[
+  {
+    "trial": "ten_com15_right_ang4",
+    "prefix_end_source_frame": 760,
+    "checked_histories": 161,
+    "differences": []
+  },
+  {
+    "trial": "ten_com15_right_ang4_cap100",
+    "prefix_end_source_frame": 760,
+    "checked_histories": 161,
+    "differences": []
+  },
+  {
+    "trial": "ten_com15_right_ang1_cap100",
+    "prefix_end_source_frame": 760,
+    "checked_histories": 161,
+    "differences": []
+  }
+]

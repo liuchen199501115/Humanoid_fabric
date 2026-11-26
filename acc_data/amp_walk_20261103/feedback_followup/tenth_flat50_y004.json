@@ -1,0 +1,9 @@
+{
+  "peak_foot_position_residual": 8.918253581206848e-08,
+  "peak_foot_rotation_residual": 7.691871100348552e-07,
+  "peak_source_joint_reference_rmse": 0.147816731496084,
+  "flatten_fraction": 0.5,
+  "extra_height_m": 0.04,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

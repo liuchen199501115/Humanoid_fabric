@@ -1,0 +1,149 @@
+{
+  "trial": "eleven_source60_foot4096_late_upper256",
+  "measured": [
+    {
+      "time_s": 4.5,
+      "source_frame": 949.9924168085533,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.0005741679158347557,
+      "source_native_clearance_m": 0.009359564998802486,
+      "control_native_clearance_m": 0.007637930172922455
+    },
+    {
+      "time_s": 4.55,
+      "source_frame": 951.7132210125226,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.001088109143198096,
+      "source_native_clearance_m": 0.0014303718591088602,
+      "control_native_clearance_m": 0.005089672623218147
+    },
+    {
+      "time_s": 4.6000000000000005,
+      "source_frame": 951.9974381037773,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.0029632338036909844,
+      "source_native_clearance_m": 0.00023494315772105978,
+      "control_native_clearance_m": 0.004690835845038259
+    },
+    {
+      "time_s": 4.65,
+      "source_frame": 952.0,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.004101296055634425,
+      "source_native_clearance_m": 0.00022419273985571642,
+      "control_native_clearance_m": 0.004687312162580386
+    },
+    {
+      "time_s": 4.7,
+      "source_frame": 952.0,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.004632849233403291,
+      "source_native_clearance_m": 0.00022419273985571642,
+      "control_native_clearance_m": 0.004687312162580386
+    },
+    {
+      "time_s": 4.75,
+      "source_frame": 952.0,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.004927988503484075,
+      "source_native_clearance_m": 0.00022419273985571642,
+      "control_native_clearance_m": 0.004687312162580386
+    },
+    {
+      "time_s": 4.8,
+      "source_frame": 952.0,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.005313683166512977,
+      "source_native_clearance_m": 0.00022419273985571642,
+      "control_native_clearance_m": 0.004687312162580386
+    },
+    {
+      "time_s": 4.9,
+      "source_frame": 952.0,
+      "normal_load_n": 0.0,
+      "actual_native_clearance_m": 0.006671475584618232,
+      "source_native_clearance_m": 0.00022419273985571642,
+      "control_native_clearance_m": 0.004687312162580386
+    }
+  ],
+  "control_phase_geometry": [
+    {
+      "source_frame": 948,
+      "control_native_clearance_m": 0.010541561575143292
+    },
+    {
+      "source_frame": 949,
+      "control_native_clearance_m": 0.009121234134928213
+    },
+    {
+      "source_frame": 950,
+      "control_native_clearance_m": 0.007626482270873772
+    },
+    {
+      "source_frame": 951,
+      "control_native_clearance_m": 0.0061260689121145
+    },
+    {
+      "source_frame": 952,
+      "control_native_clearance_m": 0.004687312162580386
+    },
+    {
+      "source_frame": 953,
+      "control_native_clearance_m": 0.003378318317001798
+    },
+    {
+      "source_frame": 954,
+      "control_native_clearance_m": 0.002271448782353476
+    },
+    {
+      "source_frame": 955,
+      "control_native_clearance_m": 0.0014231624066604678
+    },
+    {
+      "source_frame": 956,
+      "control_native_clearance_m": 0.0008045980564346036
+    },
+    {
+      "source_frame": 957,
+      "control_native_clearance_m": 0.00029745773493680683
+    },
+    {
+      "source_frame": 958,
+      "control_native_clearance_m": -4.007105396197641e-05
+    },
+    {
+      "source_frame": 959,
+      "control_native_clearance_m": -0.00019787729519160635
+    },
+    {
+      "source_frame": 960,
+      "control_native_clearance_m": -0.00025745097533760863
+    },
+    {
+      "source_frame": 961,
+      "control_native_clearance_m": -0.0002916857869277728
+    },
+    {
+      "source_frame": 962,
+      "control_native_clearance_m": -0.00031939221063104206
+    },
+    {
+      "source_frame": 963,
+      "control_native_clearance_m": -0.0003441146908295667
+    },
+    {
+      "source_frame": 964,
+      "control_native_clearance_m": -0.0003682319935392614
+    },
+    {
+      "source_frame": 965,
+      "control_native_clearance_m": -0.000393250459404651
+    },
+    {
+      "source_frame": 966,
+      "control_native_clearance_m": -0.0004196480790668658
+    }
+  ],
+  "first_sampled_control_ground_frame": 958,
+  "full_tracking_passed": false
+}

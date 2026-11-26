@@ -1,0 +1,38 @@
+[
+  {
+    "name": "eleven_retain11_w1",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--retain-planned-support-start",
+      "4.15",
+      "--retain-planned-support-force",
+      "100",
+      "--retain-planned-support-weight",
+      "1"
+    ]
+  },
+  {
+    "name": "eleven_retain11_w10",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--retain-planned-support-start",
+      "4.15",
+      "--retain-planned-support-force",
+      "100",
+      "--retain-planned-support-weight",
+      "10"
+    ]
+  },
+  {
+    "name": "eleven_retain11_w100",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--retain-planned-support-start",
+      "4.15",
+      "--retain-planned-support-force",
+      "100",
+      "--retain-planned-support-weight",
+      "100"
+    ]
+  }
+]

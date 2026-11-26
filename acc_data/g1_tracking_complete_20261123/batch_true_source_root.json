@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ten_floor3_smooth16_source_root300",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--root-position-task-start",
+      "4.08",
+      "--root-position-task-ramp",
+      ".1",
+      "--root-position-task-weight",
+      "300",
+      "--root-position-task-reference",
+      "source"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth16_source_root1000",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--root-position-task-start",
+      "4.08",
+      "--root-position-task-ramp",
+      ".1",
+      "--root-position-task-weight",
+      "1000",
+      "--root-position-task-reference",
+      "source"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth16_source_root3000",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--root-position-task-start",
+      "4.08",
+      "--root-position-task-ramp",
+      ".1",
+      "--root-position-task-weight",
+      "3000",
+      "--root-position-task-reference",
+      "source"
+    ]
+  }
+]

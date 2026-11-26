@@ -1,0 +1,333 @@
+{
+  "scope": "Independent closed-loop starts; same original PKL, source clock and acceptance limits. No ALIP or foot-placement planner. Certificate polish is an explicit extra linear KKT refinement, not a second native QP attempt.",
+  "trials": [
+    {
+      "name": "baseline",
+      "tracking_evaluated": true,
+      "stop_time_s": 1.356,
+      "stop_reason": "QP validation failed",
+      "measured_landings": 3,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.17517568171024323,
+      "peak_root_position_m": 0.18511952459812164,
+      "final_com_error_m": [
+        -0.045217037200927734,
+        0.16556663811206818,
+        -0.03053867816925049
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 678
+      },
+      "bridge_active_samples": 0,
+      "next_step": {
+        "step": 4,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.05909938852788377,
+        "best_loaded_landing_error_m": 0.3966974914073944,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "fabric_metric",
+      "tracking_evaluated": true,
+      "stop_time_s": 0.334,
+      "stop_reason": "QP validation failed",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.17085261642932892,
+      "peak_root_position_m": 0.020987775176763535,
+      "final_com_error_m": [
+        1.430511474609375e-05,
+        0.012757919728755951,
+        0.008679509162902832
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 167
+      },
+      "bridge_active_samples": 0,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.0024626910582129513,
+        "best_loaded_landing_error_m": 0.09103885293006897,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "baseline_bridge80",
+      "tracking_evaluated": true,
+      "stop_time_s": 1.34,
+      "stop_reason": "QP validation failed",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.1754675805568695,
+      "peak_root_position_m": 0.037420593202114105,
+      "final_com_error_m": [
+        -0.016161441802978516,
+        -0.01849469169974327,
+        -0.020379245281219482
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 670
+      },
+      "bridge_active_samples": 163,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": true,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.04002414811197812,
+        "best_loaded_landing_error_m": 0.04834483191370964,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "baseline_bridge80_polish",
+      "tracking_evaluated": true,
+      "stop_time_s": 1.752,
+      "stop_reason": "QP validation failed",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.1754675805568695,
+      "peak_root_position_m": 0.10606805235147476,
+      "final_com_error_m": [
+        0.052950382232666016,
+        -0.007088609039783478,
+        -0.03246217966079712
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 874,
+        "DAQP 1; KKT polished": 2
+      },
+      "bridge_active_samples": 245,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": true,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.04002414811197812,
+        "best_loaded_landing_error_m": 0.04834483191370964,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "baseline_stance50",
+      "tracking_evaluated": true,
+      "stop_time_s": 1.526,
+      "stop_reason": "QP validation failed",
+      "measured_landings": 2,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.18974483013153076,
+      "peak_root_position_m": 0.17853420972824097,
+      "final_com_error_m": [
+        0.030359745025634766,
+        0.14655540883541107,
+        -0.10726726055145264
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 763
+      },
+      "bridge_active_samples": 0,
+      "next_step": {
+        "step": 3,
+        "swing": "left",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": true,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.016750629595675193,
+        "best_loaded_landing_error_m": 0.019959228113293648,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "metric_bridge80",
+      "tracking_evaluated": true,
+      "stop_time_s": 0.906,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.1963212639093399,
+      "peak_root_position_m": 0.20058853924274445,
+      "final_com_error_m": [
+        -0.03751778602600098,
+        0.17008408904075623,
+        -0.03793817758560181
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 453,
+        "DAQP 1; KKT polished": 1
+      },
+      "bridge_active_samples": 82,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.029431098249857388,
+        "best_loaded_landing_error_m": 0.09455344825983047,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "metric_polish",
+      "tracking_evaluated": false,
+      "returncode": 130
+    },
+    {
+      "name": "metric_polish_gpu",
+      "tracking_evaluated": true,
+      "stop_time_s": 1.228,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.18055298924446106,
+      "peak_root_position_m": 0.2000800222158432,
+      "final_com_error_m": [
+        -0.022019624710083008,
+        0.17660626769065857,
+        -0.018931984901428223
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 614,
+        "DAQP 1; KKT polished": 1
+      },
+      "bridge_active_samples": 0,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": true,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.003808228888290577,
+        "best_loaded_landing_error_m": 0.08918743580579758,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "metric_stance50",
+      "tracking_evaluated": true,
+      "stop_time_s": 0.648,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "measured_landings": 1,
+      "expected_landings": 29,
+      "full_tracking_passed": false,
+      "peak_joint_rmse_rad": 0.20033109188079834,
+      "peak_root_position_m": 0.13457298278808594,
+      "final_com_error_m": [
+        0.014531135559082031,
+        0.01940956711769104,
+        -0.10851049423217773
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 325
+      },
+      "bridge_active_samples": 0,
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.0008831070371960736,
+        "best_loaded_landing_error_m": 0.3215283453464508,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "invariants": {
+        "one_native_attempt": true,
+        "no_task_cache": true,
+        "no_priority_stage": true,
+        "applied_torque_equals_qp": true,
+        "original_fidelity_limits": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "original": "flight_ankles_100_after_two.failure.npz",
+  "repeated": "four_strict_diagnostic.failure.npz",
+  "source_frames": 2000,
+  "full_tracking_passed": false,
+  "samples": 1264,
+  "q_bit_identical": true,
+  "v_bit_identical": true,
+  "landing_reports_identical": true
+}

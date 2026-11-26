@@ -1,0 +1,16 @@
+{
+  "method": "Exact bounded IK refinement of a saved offline dynamics fit",
+  "fit": "prepared_root_upper_dynamics_xy20_up05_ss_knee15",
+  "fit_report_sha256": "2c4b5bca8ca44c94c45fc02100bf83265eb51702b3f261b5f14302c10ad9b908",
+  "additional_root_dip_m": 0.0,
+  "maximum_foot_position_residual_m": 0.0008476001650172418,
+  "maximum_foot_rotation_residual_rad": 0.00011978598064423443,
+  "worst_frame": 887,
+  "worst_foot": 1,
+  "peak_source_joint_rmse_rad": 0.14281705021858215,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "full_tracking_passed": false,
+  "preflight_passed": false
+}

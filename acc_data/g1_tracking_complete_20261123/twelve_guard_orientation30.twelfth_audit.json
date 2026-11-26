@@ -1,0 +1,20 @@
+{
+  "trial": "twelve_guard_orientation30",
+  "source_sha256": "919eaff9b2521cce1e8b40e263fceb3f3f1873a7bc42500d9932be62f007eca9",
+  "step": 12,
+  "online_landing_time_s": 4.694,
+  "strict_100N_50ms_time_s": 4.704,
+  "source_frame": 960.0035352981099,
+  "hold_start_s": 4.654,
+  "hold_end_s": 4.704,
+  "loaded_hold_elapsed_s": 0.04999999999999982,
+  "minimum_measured_load_n": 109.28887176513672,
+  "maximum_same_frame_source_foot_error_m": 0.007465439005987622,
+  "peak_unloaded_native_clearance_m": 0.03463108231156599,
+  "peak_joint_rmse_until_certificate_rad": 0.19488298892974854,
+  "peak_root_position_until_certificate_m": 0.18966399133205414,
+  "peak_root_orientation_until_certificate_rad": 0.31115448474884033,
+  "one_native_qp_per_control_update": true,
+  "extra_pd_torque": false,
+  "full_tracking_passed": false
+}

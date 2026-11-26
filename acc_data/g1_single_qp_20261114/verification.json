@@ -1,0 +1,38 @@
+{
+  "command": "G1_PYTHON=/home/sky/anaconda3/envs/humanoid_fabric/bin/python bash examples/run_amp_full_motion.sh --output-path acc_data/g1_single_qp_20261114/full_motion.npz --qp-snapshot-times 0 .2",
+  "source_sha256": {
+    "examples/test_g1.py": "0bf096e899c23f6583b8afc24e4ce62a441d11de91c80b9b4bd8e891487f44ed",
+    "src/fabrics_sim/solver/daqp_backend.py": "0753b10611fc5d9d428cf7bdfd6ccb9e0ad437fea43e574f86f3d10df6fe9482",
+    "examples/run_amp_full_motion.sh": "e37c773c5583987e86ca5156a35c6339be0a0df251ec72c583cdf7f504ed5700",
+    "tests/test_g1_single_qp.py": "bff3894e03ae29119826f284968c1a063d0c6770f206a97900a6f229947429fe"
+  },
+  "unit_tests": {
+    "passed": 39,
+    "modules": [
+      "test_g1_single_qp",
+      "test_g1_full_tracking",
+      "test_task_priority",
+      "test_contact_wrench_cone"
+    ]
+  },
+  "control_states": 115,
+  "applied_effort_ticks": 114,
+  "native_solve_count_per_state": [
+    1
+  ],
+  "priority_active": false,
+  "tube_recovery_used": false,
+  "stop": {
+    "time_s": 0.228,
+    "source_frame": 45.6,
+    "joint_rmse_rad": 0.20002692937850952,
+    "root_position_m": 0.03255002945661545,
+    "root_orientation_rad": 0.025553964422627983
+  },
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "measured_landings": 0,
+  "expected_landings": 29,
+  "full_motion_tracking_passed": false,
+  "historical_baseline": "acc_data/g1_restore_12step_20261113/restored.npz",
+  "scope": "One weighted task QP and one DAQP native attempt per control update. This verifies solve count, not retention of historical 12-landings performance."
+}

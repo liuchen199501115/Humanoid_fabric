@@ -1,0 +1,22 @@
+[
+  {
+    "case": "full_body_preview42_semi_process24",
+    "maximum_inactive_wrench": 4.567737571442871e-15,
+    "passed": true
+  },
+  {
+    "case": "full_body_preview42_tight_process24",
+    "maximum_inactive_wrench": 2.8723665975473604e-15,
+    "passed": true
+  },
+  {
+    "case": "full_body_preview42_fine_process24",
+    "maximum_inactive_wrench": 1.92584537258702e-15,
+    "passed": true
+  },
+  {
+    "case": "full_body_preview42_landing24",
+    "maximum_inactive_wrench": 5.146773193710531e-15,
+    "passed": true
+  }
+]

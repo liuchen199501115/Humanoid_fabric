@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "formula-wbc",
+    "--formula-scope",
+    "weights",
+    "--formula-maximum-weight",
+    "1.2",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_wbc_verification/formula_weights12.npz"
+  ],
+  "status": "finished",
+  "sha256": {
+    "examples/test_g1_2.py": "344284d3e28daf8d66fcb3af0a0f07c2ea2ef955765a3cc0d63d0b0c5e4eadfb",
+    "examples/test_g1.py": "02d2838abb7c25e147fa2cf47b8938c26ae3a465e84a1c52169d177614f954ae",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348"
+  },
+  "returncode": 1,
+  "wall_seconds": 57.37325359415263
+}

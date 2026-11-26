@@ -1,0 +1,213 @@
+{
+  "scope": "Saved-state counterfactual only; no solution applied",
+  "cases": [
+    {
+      "axes": "roll",
+      "scale": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.684341886080802e-14,
+        "iterations": 24,
+        "accepted": true
+      },
+      "waist_acc": [
+        -26.523358427396833,
+        -22.409456855821574,
+        37.63741924018639
+      ],
+      "root_acc": [
+        1.6025031415303737,
+        2.539145941079738,
+        -1.3817030152970304,
+        24.27408161078265,
+        -49.86749447140962,
+        39.00611250159474
+      ],
+      "center_of_mass_residual_norm": 8.236560163549004,
+      "feet_pose_residual_norm": 62.63441986311486,
+      "joint_posture_residual_norm": 324.1436507387964
+    },
+    {
+      "axes": "roll",
+      "scale": 16,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.4210854715202004e-13,
+        "iterations": 23,
+        "accepted": true
+      },
+      "waist_acc": [
+        -59.4344884945154,
+        -87.80320962173398,
+        45.92461983499567
+      ],
+      "root_acc": [
+        1.6731014726855733,
+        1.8208750433384508,
+        2.558192826250195,
+        59.26867884778741,
+        -92.65270977257654,
+        74.91804896841086
+      ],
+      "center_of_mass_residual_norm": 7.284151820259774,
+      "feet_pose_residual_norm": 68.63968497907833,
+      "joint_posture_residual_norm": 413.6845302998758
+    },
+    {
+      "axes": "roll",
+      "scale": 64,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.8421709430404007e-13,
+        "iterations": 24,
+        "accepted": true
+      },
+      "waist_acc": [
+        -81.3090866568623,
+        -128.4950320430121,
+        50.2660320550628
+      ],
+      "root_acc": [
+        1.8418199523715855,
+        1.3145022825781199,
+        5.0271536280174445,
+        81.11653379985329,
+        -119.18259634835105,
+        97.29810064531061
+      ],
+      "center_of_mass_residual_norm": 8.1188918735941,
+      "feet_pose_residual_norm": 80.2499424388048,
+      "joint_posture_residual_norm": 487.5385711324047
+    },
+    {
+      "axes": "roll",
+      "scale": 256,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.7711166694643907e-13,
+        "iterations": 23,
+        "accepted": true
+      },
+      "waist_acc": [
+        -88.51400973659332,
+        -142.22781372280076,
+        50.270500744036354
+      ],
+      "root_acc": [
+        1.993977285489391,
+        1.0968508824407641,
+        5.881744902013624,
+        89.11015395783232,
+        -128.36429170694677,
+        105.36944897626161
+      ],
+      "center_of_mass_residual_norm": 8.58011391744509,
+      "feet_pose_residual_norm": 84.89325407026804,
+      "joint_posture_residual_norm": 517.6603354240957
+    },
+    {
+      "axes": "waist",
+      "scale": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.105427357601002e-14,
+        "iterations": 24,
+        "accepted": true
+      },
+      "waist_acc": [
+        26.763009151827912,
+        -8.623878581905068,
+        21.576124116537095
+      ],
+      "root_acc": [
+        0.4823313349760907,
+        3.1348585433658203,
+        -1.8948613667612177,
+        17.273765246968892,
+        -28.451145424875126,
+        28.956965455061404
+      ],
+      "center_of_mass_residual_norm": 9.111526555516326,
+      "feet_pose_residual_norm": 70.8247851939295,
+      "joint_posture_residual_norm": 304.26094410369467
+    },
+    {
+      "axes": "waist",
+      "scale": 16,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.968558980384842e-13,
+        "iterations": 23,
+        "accepted": true
+      },
+      "waist_acc": [
+        66.6141682023652,
+        -74.22946011736761,
+        20.428869303488217
+      ],
+      "root_acc": [
+        -1.0941258993205505,
+        3.1403166869686956,
+        2.164077715432582,
+        49.997700206632885,
+        -57.16345144563963,
+        60.02122841086547
+      ],
+      "center_of_mass_residual_norm": 9.168709054237134,
+      "feet_pose_residual_norm": 73.89856194827061,
+      "joint_posture_residual_norm": 392.19457912275976
+    },
+    {
+      "axes": "waist",
+      "scale": 64,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 8.171241461241152e-14,
+        "iterations": 21,
+        "accepted": true
+      },
+      "waist_acc": [
+        96.95454371952383,
+        -121.77200528351825,
+        23.02390673940697
+      ],
+      "root_acc": [
+        -2.601380816322448,
+        3.3298414947407613,
+        4.986872071726048,
+        70.20952219069369,
+        -80.98760702525728,
+        80.56514407028544
+      ],
+      "center_of_mass_residual_norm": 11.029981736339222,
+      "feet_pose_residual_norm": 83.1674965773618,
+      "joint_posture_residual_norm": 485.33373281575984
+    },
+    {
+      "axes": "waist",
+      "scale": 256,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.7053025658242404e-13,
+        "iterations": 21,
+        "accepted": true
+      },
+      "waist_acc": [
+        108.55721308693009,
+        -140.1005753402678,
+        24.50476049355584
+      ],
+      "root_acc": [
+        -3.4403796855235504,
+        3.5028484308522523,
+        6.170628746475638,
+        77.42094933900486,
+        -91.70177247092315,
+        88.38842576779571
+      ],
+      "center_of_mass_residual_norm": 12.010799257598755,
+      "feet_pose_residual_norm": 86.76557337913611,
+      "joint_posture_residual_norm": 528.2254479050462
+    }
+  ]
+}

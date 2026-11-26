@@ -1,0 +1,38 @@
+[
+  {
+    "softened_auxiliary_rows": "original",
+    "lp_success": false,
+    "lp_status": 2,
+    "daqp_valid": false,
+    "daqp_status": [
+      "DAQP -1; rejected"
+    ]
+  },
+  {
+    "softened_auxiliary_rows": "orientation",
+    "lp_success": true,
+    "lp_status": 0,
+    "daqp_valid": true,
+    "daqp_status": [
+      "DAQP 1; KKT certified"
+    ]
+  },
+  {
+    "softened_auxiliary_rows": "position",
+    "lp_success": false,
+    "lp_status": 4,
+    "daqp_valid": false,
+    "daqp_status": [
+      "DAQP -1; rejected"
+    ]
+  },
+  {
+    "softened_auxiliary_rows": "both",
+    "lp_success": true,
+    "lp_status": 0,
+    "daqp_valid": true,
+    "daqp_status": [
+      "DAQP 1; KKT certified"
+    ]
+  }
+]

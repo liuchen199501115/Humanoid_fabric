@@ -1,0 +1,26 @@
+[
+  {
+    "name": "fullroot_after816_90",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_com15_after816_cop1_scale90.npz"
+    ]
+  },
+  {
+    "name": "fullroot_after816_60",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_com15_after816_cop1_scale60.npz"
+    ]
+  },
+  {
+    "name": "fullroot_after816_90_brake",
+    "parent": "ten_com15_pelvis405_brake_cap1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_com15_after816_cop1_scale90.npz"
+    ]
+  }
+]

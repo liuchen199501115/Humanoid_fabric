@@ -1,0 +1,34 @@
+[
+  {
+    "name": "turn_refine1_base",
+    "parent": "ten_floor3_smooth16_stop_cap1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m_refine1.npz"
+    ]
+  },
+  {
+    "name": "turn_refine1_pelvis1",
+    "parent": "ten_floor3_smooth16_stop_cap1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m_refine1.npz",
+      "--late-pelvis-priority-start",
+      "3.3",
+      "--late-pelvis-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "turn_refine1_pelvis3",
+    "parent": "ten_floor3_smooth16_stop_cap1",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m_refine1.npz",
+      "--late-pelvis-priority-start",
+      "3.3",
+      "--late-pelvis-metric-scale",
+      "3"
+    ]
+  }
+]

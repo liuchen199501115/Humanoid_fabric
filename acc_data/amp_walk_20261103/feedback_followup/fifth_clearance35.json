@@ -1,0 +1,10 @@
+{
+  "height": 0.035,
+  "peak_position_residual": 8.99909962245361e-08,
+  "peak_orientation_residual": 0.0020995263067965014,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 8.86917111975194e-09,
+  "clearance_frame327_350_min": 0.03834281108228306,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

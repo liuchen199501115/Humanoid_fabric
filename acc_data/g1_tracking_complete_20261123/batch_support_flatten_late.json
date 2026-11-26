@@ -1,0 +1,53 @@
+[
+  {
+    "name": "ten_support_y20_flat410_g3_w025",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--support-flatten-start",
+      "3.9",
+      "--support-orientation-priority-start",
+      "4.1",
+      "--support-orientation-metric-scale",
+      ".25",
+      "--support-orientation-roll-pitch-only",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_support_y20_flat410_g3_w1",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--support-flatten-start",
+      "3.9",
+      "--support-orientation-priority-start",
+      "4.1",
+      "--support-orientation-metric-scale",
+      "1",
+      "--support-orientation-roll-pitch-only",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_support_y20_flat415_g3_w1",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--support-flatten-start",
+      "3.9",
+      "--support-orientation-priority-start",
+      "4.15",
+      "--support-orientation-metric-scale",
+      "1",
+      "--support-orientation-roll-pitch-only",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100"
+    ]
+  }
+]

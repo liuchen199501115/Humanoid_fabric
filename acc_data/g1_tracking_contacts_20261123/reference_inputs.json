@@ -1,0 +1,12 @@
+{
+  "landing8_y15": {
+    "original_reference_argument": "acc_data/g1_tracking_contacts_20261123/landing8_y15.npz",
+    "preserved_reference": "acc_data/g1_tracking_contacts_20261123/prepared_landing8_y15.npz",
+    "reference_sha256": "20801af0b615253cfce4268eae2f805036d80fd841d5a08f286eef618ef179a1"
+  },
+  "landing8_y20": {
+    "original_reference_argument": "acc_data/g1_tracking_contacts_20261123/landing8_y20.npz",
+    "preserved_reference": "acc_data/g1_tracking_contacts_20261123/prepared_landing8_y20.npz",
+    "reference_sha256": "31f6aee04ef2c6adb63daef5fe1f820d87826f75583b73b048e2718cfeb53241"
+  }
+}

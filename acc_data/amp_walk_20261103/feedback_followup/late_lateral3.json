@@ -1,0 +1,11 @@
+{
+  "peak_foot_position_residual": 7.722098200004481e-08,
+  "peak_foot_rotation_residual": 5.1311062712497144e-08,
+  "peak_source_joint_reference_rmse": 0.1287178515343878,
+  "start_frame": 786,
+  "end_frame": 870,
+  "lateral_reference_lead_m": -0.03,
+  "world_roll_correction_rad": -0.05,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

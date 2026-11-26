@@ -1,0 +1,28 @@
+[
+  {
+    "name": "twelve_ground_930_946",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_step12_ground_930_946.npz"
+    ]
+  },
+  {
+    "name": "twelve_ground_924_940",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_step12_ground_924_940.npz"
+    ]
+  },
+  {
+    "name": "twelve_ground930_946_search4",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_step12_ground_930_946.npz",
+      "--foot-contact-search-acceleration",
+      "4"
+    ]
+  }
+]

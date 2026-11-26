@@ -1,0 +1,47 @@
+[
+  {
+    "name": "eleven_pre11_rooty3000",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--root-position-task-late-start",
+      "4.1",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "y",
+      "--root-position-task-late-weight",
+      "3000"
+    ]
+  },
+  {
+    "name": "eleven_pre11_rooty10000",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--root-position-task-late-start",
+      "4.1",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "y",
+      "--root-position-task-late-weight",
+      "10000"
+    ]
+  },
+  {
+    "name": "eleven_pre11_flat16",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--support-flatten-start",
+      "4.3",
+      "--support-flatten-gain",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.3",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "16"
+    ]
+  }
+]

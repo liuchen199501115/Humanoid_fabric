@@ -1,0 +1,125 @@
+{
+  "scope": "Offline causal probes only; diagnostic removals are not controller changes.",
+  "cases": [
+    {
+      "time_s": 3.48,
+      "case": "all",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.48,
+      "case": "without_auxiliary_tubes",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.48,
+      "case": "without_collision_rows",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.48,
+      "case": "without_torque_bounds",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.48,
+      "case": "without_contact_kinematics",
+      "status": 4,
+      "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+    },
+    {
+      "time_s": 3.58,
+      "case": "all",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.58,
+      "case": "without_auxiliary_tubes",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.58,
+      "case": "without_collision_rows",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.58,
+      "case": "without_torque_bounds",
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "time_s": 3.58,
+      "case": "without_contact_kinematics",
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "time_s": 3.65,
+      "case": "all",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.65,
+      "case": "without_auxiliary_tubes",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.65,
+      "case": "without_collision_rows",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.65,
+      "case": "without_torque_bounds",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.65,
+      "case": "without_contact_kinematics",
+      "status": 4,
+      "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+    },
+    {
+      "time_s": 3.75,
+      "case": "all",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.75,
+      "case": "without_auxiliary_tubes",
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "time_s": 3.75,
+      "case": "without_collision_rows",
+      "status": 4,
+      "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+    },
+    {
+      "time_s": 3.75,
+      "case": "without_torque_bounds",
+      "status": 4,
+      "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+    },
+    {
+      "time_s": 3.75,
+      "case": "without_contact_kinematics",
+      "status": 4,
+      "message": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+    }
+  ]
+}

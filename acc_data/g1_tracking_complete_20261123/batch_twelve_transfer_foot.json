@@ -1,0 +1,40 @@
+[
+  {
+    "name": "twelve_unload2048_foot16",
+    "parent": "twelve_unload2048",
+    "options": [
+      "--foot-metric-final-start",
+      "4.8",
+      "--foot-metric-final-ramp",
+      ".02",
+      "--foot-metric-final-scale",
+      "16"
+    ]
+  },
+  {
+    "name": "twelve_unload2048_foot64",
+    "parent": "twelve_unload2048",
+    "options": [
+      "--foot-metric-final-start",
+      "4.8",
+      "--foot-metric-final-ramp",
+      ".02",
+      "--foot-metric-final-scale",
+      "64"
+    ]
+  },
+  {
+    "name": "twelve_unload10000_foot64",
+    "parent": "twelve_unload2048",
+    "options": [
+      "--final-unload-weight",
+      "10000",
+      "--foot-metric-final-start",
+      "4.8",
+      "--foot-metric-final-ramp",
+      ".02",
+      "--foot-metric-final-scale",
+      "64"
+    ]
+  }
+]

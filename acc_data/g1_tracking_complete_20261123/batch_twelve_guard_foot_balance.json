@@ -1,0 +1,38 @@
+[
+  {
+    "name": "twelve_guardboth_foot512_search8",
+    "parent": "twelve_guard18_foot256_search8",
+    "options": [
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".30",
+      "--late-foot-metric-end-scale",
+      "512"
+    ]
+  },
+  {
+    "name": "twelve_guardboth_foot1024_search8",
+    "parent": "twelve_guard18_foot256_search8",
+    "options": [
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".30",
+      "--late-foot-metric-end-scale",
+      "1024"
+    ]
+  },
+  {
+    "name": "twelve_guardboth_foot2048_search8",
+    "parent": "twelve_guard18_foot256_search8",
+    "options": [
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".30",
+      "--late-foot-metric-end-scale",
+      "2048"
+    ]
+  }
+]

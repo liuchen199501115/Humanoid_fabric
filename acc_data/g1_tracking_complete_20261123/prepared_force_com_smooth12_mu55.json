@@ -1,0 +1,26 @@
+{
+  "method": "Offline bounded COM force fit with unchanged foot poses",
+  "fixed_root_orientation": false,
+  "rotation_regularization": 0.5,
+  "offline_solver_status": "solved",
+  "friction_coefficient": 0.55,
+  "xy_correction_bound_mm": 30.0,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "7d826bd5a41dd42e3b99f74b3e61a0fb6f2dd54839bffc4381ff132132ce3818",
+  "full_tracking_passed": false,
+  "preflight_passed": true,
+  "maximum_com_correction_by_axis_m": [
+    0.004344049333123541,
+    0.005796629379528999,
+    0.011505186059312502
+  ],
+  "maximum_foot_position_residual_m": 8.230936765326183e-07,
+  "maximum_foot_rotation_residual_rad": 4.233436622909627e-07,
+  "maximum_com_ik_residual_m": 6.295594963983567e-07,
+  "maximum_added_root_rotation_rad": 0.04267820247892645,
+  "worst_frame": 1848,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "maximum_friction_acceleration_excess_m_s2": -0.2358874329245939
+}

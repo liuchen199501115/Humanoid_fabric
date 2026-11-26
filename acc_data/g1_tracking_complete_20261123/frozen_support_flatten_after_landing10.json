@@ -1,0 +1,77 @@
+{
+  "target": [
+    -3.1575949654989017,
+    -25.0,
+    -25.0
+  ],
+  "active": [
+    false,
+    true,
+    false
+  ],
+  "local_error_rad": [
+    0.05033164593778565,
+    0.04887302785307744,
+    1.5994920834329156
+  ],
+  "results": [
+    {
+      "scale": 0,
+      "valid": true,
+      "root_angular_acc": [
+        [
+          3.760675510745082,
+          -27.976204345645165,
+          13.141472797161763
+        ]
+      ],
+      "support_angular_acc": [
+        [
+          -2.597682928406897e-05,
+          126.05452085685182,
+          2.9362054045023456e-05
+        ]
+      ],
+      "waist_roll_acc": 19.018131103421382
+    },
+    {
+      "scale": 4,
+      "valid": true,
+      "root_angular_acc": [
+        [
+          3.43444222436466,
+          -28.115153490750803,
+          11.089677408186896
+        ]
+      ],
+      "support_angular_acc": [
+        [
+          5.466348435678725e-06,
+          -24.42611214400909,
+          -1.3827378453790118e-05
+        ]
+      ],
+      "waist_roll_acc": 19.975035944428065
+    },
+    {
+      "scale": 16,
+      "valid": true,
+      "root_angular_acc": [
+        [
+          3.4335099964777407,
+          -28.115550544864426,
+          11.083814300532692
+        ]
+      ],
+      "support_angular_acc": [
+        [
+          5.556199496048464e-06,
+          -24.856118057709843,
+          -1.3950794272687972e-05
+        ]
+      ],
+      "waist_roll_acc": 19.977770347734936
+    }
+  ],
+  "scope": "Local counterfactual uses the saved contact frame as an approximate level target; the runtime ObservedSoleContact uses its separately retained sole_frame. The snapshot lacks that field. The free-axis target is saturated at -25; do not use this file as exact replay of runtime flattening."
+}

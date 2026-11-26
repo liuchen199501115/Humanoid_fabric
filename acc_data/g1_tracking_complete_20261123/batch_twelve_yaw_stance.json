@@ -1,0 +1,24 @@
+[
+  {
+    "name": "twelve_earlyclock10_fullyaw",
+    "parent": "twelve_earlyclock10",
+    "options": [
+      "--no-support-orientation-roll-pitch-only"
+    ]
+  },
+  {
+    "name": "twelve_earlyclock8_fullyaw",
+    "parent": "twelve_earlyclock8",
+    "options": [
+      "--no-support-orientation-roll-pitch-only"
+    ]
+  },
+  {
+    "name": "twelve_earlyclock10_leg256",
+    "parent": "twelve_earlyclock10",
+    "options": [
+      "--leg-posture-metric-scale",
+      "256"
+    ]
+  }
+]

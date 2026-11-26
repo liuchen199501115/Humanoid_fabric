@@ -1,0 +1,38 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step12_landing_bridge.npz",
+  "candidate_sha256": "d1117469114e9721b8c43d75ed620675bfe9c8f4ca8087fcd2a14d82fb905fb8",
+  "scope": "Offline original sphere pairs and added convex wrist/body pairs; not a simulation or all-link collision certificate.",
+  "sample_count": 801,
+  "frame_range": [
+    900.0,
+    1100.0
+  ],
+  "frame_spacing": 0.25,
+  "worst_convex": {
+    "frame": 1033.25,
+    "minimum_wrist_body_convex_distance_m": 0.020184393972158432,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.06345623731613159,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "worst_original_sphere": {
+    "frame": 1032.5,
+    "minimum_wrist_body_convex_distance_m": 0.020400574430823326,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.06328344345092773,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "physical_tracking_certified": false
+}

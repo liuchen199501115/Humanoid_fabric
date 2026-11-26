@@ -1,0 +1,28 @@
+[
+  {
+    "name": "twelve_position_end960",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--position-tube-end",
+      "4.8"
+    ]
+  },
+  {
+    "name": "twelve_position_end930",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--position-tube-end",
+      "4.65"
+    ]
+  },
+  {
+    "name": "twelve_position_bw4_930",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-position-tube-start",
+      "4.65",
+      "--late-position-tube-bandwidth",
+      "4"
+    ]
+  }
+]

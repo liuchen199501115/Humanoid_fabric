@@ -1,0 +1,13 @@
+{
+  "formula_tests": {
+    "passed": 8,
+    "failed": 0,
+    "command": "PYTHONPATH=src:examples:.runtime/qp_solvers /home/sky/anaconda3/envs/humanoid_fabric/bin/python -m unittest discover -s tests -p test_g1_formula_tracking.py -v"
+  },
+  "existing_full_tracking_regressions": {
+    "passed": 15,
+    "failed": 0,
+    "command": "PYTHONPATH=src:examples:.runtime/qp_solvers /home/sky/anaconda3/envs/humanoid_fabric/bin/python -m unittest discover -s tests -p test_g1_full_tracking.py -q"
+  },
+  "scope": "Unit and regression tests; physical success is reported separately in results.json."
+}

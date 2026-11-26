@@ -1,0 +1,90 @@
+{
+  "run": "leg150_vertical155",
+  "recording": "acc_data/amp_walk_20261103/feedback_followup/leg150_vertical155.npz",
+  "measured_landing_events": 5,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 5,
+  "first_fidelity_exceeded_time_s": 1.934,
+  "last_source_frame": 386.8,
+  "last_time_s": 1.934,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.188,
+      "source_frame": 37.6,
+      "landing_error_m": 0.011972491394771561,
+      "joint_rmse_rad": 0.11588385701179504,
+      "root_position_error_m": 0.014802136458456516,
+      "root_orientation_error_rad": 0.10533144460936135,
+      "prefix_peak_joint_rmse_rad": 0.11588385701179504,
+      "prefix_peak_root_position_error_m": 0.014802136458456516,
+      "prefix_peak_root_orientation_error_rad": 0.10533144460936135,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 2,
+      "time_s": 0.41000000000000003,
+      "source_frame": 82.0,
+      "landing_error_m": 0.028535341591269282,
+      "joint_rmse_rad": 0.1706492006778717,
+      "root_position_error_m": 0.023684414103627205,
+      "root_orientation_error_rad": 0.12005398877085309,
+      "prefix_peak_joint_rmse_rad": 0.18393085896968842,
+      "prefix_peak_root_position_error_m": 0.023684414103627205,
+      "prefix_peak_root_orientation_error_rad": 0.12454405017149094,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 3,
+      "time_s": 0.868,
+      "source_frame": 173.6,
+      "landing_error_m": 0.034382262147400124,
+      "joint_rmse_rad": 0.10285051167011261,
+      "root_position_error_m": 0.019920846447348595,
+      "root_orientation_error_rad": 0.12260233298381726,
+      "prefix_peak_joint_rmse_rad": 0.19070616364479065,
+      "prefix_peak_root_position_error_m": 0.030276954174041748,
+      "prefix_peak_root_orientation_error_rad": 0.27830019090931873,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 4,
+      "time_s": 1.334,
+      "source_frame": 266.8,
+      "landing_error_m": 0.014859005359720224,
+      "joint_rmse_rad": 0.13961106538772583,
+      "root_position_error_m": 0.028226414695382118,
+      "root_orientation_error_rad": 0.18291488336613362,
+      "prefix_peak_joint_rmse_rad": 0.1929275393486023,
+      "prefix_peak_root_position_error_m": 0.06655910611152649,
+      "prefix_peak_root_orientation_error_rad": 0.27830019090931873,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 5,
+      "time_s": 1.8980000000000001,
+      "source_frame": 379.6,
+      "landing_error_m": 0.026118376857213185,
+      "joint_rmse_rad": 0.15469017624855042,
+      "root_position_error_m": 0.14877060055732727,
+      "root_orientation_error_rad": 0.2527676958579351,
+      "prefix_peak_joint_rmse_rad": 0.19930322468280792,
+      "prefix_peak_root_position_error_m": 0.14877060055732727,
+      "prefix_peak_root_orientation_error_rad": 0.3277936382514864,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 6,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 2.8690259406952134e-05,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

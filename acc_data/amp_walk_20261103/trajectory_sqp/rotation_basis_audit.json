@@ -1,0 +1,17 @@
+{
+  "rotation": {
+    "exact_max_error": 1.1575951308628873e-10,
+    "old_scalar_max_error": 0.01349234580883793,
+    "relative_error": 2.940158047001449e-11
+  },
+  "angular_velocity": {
+    "exact_max_error": 8.6374711827375e-09,
+    "old_scalar_max_error": 2.3377882953273073,
+    "relative_error": 7.680360022690334e-12
+  },
+  "angular_acceleration": {
+    "exact_max_error": 7.582595571875572e-06,
+    "old_scalar_max_error": 447.9177880170755,
+    "relative_error": 7.059818257611777e-12
+  }
+}

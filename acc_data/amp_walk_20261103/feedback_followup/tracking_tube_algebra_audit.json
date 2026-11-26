@@ -1,0 +1,9 @@
+{
+  "samples": 100,
+  "batch": 2,
+  "max_residual_error": 4.547473508864641e-13,
+  "physical_acceleration_inequality": "C @ a <= d",
+  "source_audit_thresholds_unchanged": true,
+  "orientation_samples": 100,
+  "orientation_fd_max_residual_error": 7.452100589944166e-07
+}

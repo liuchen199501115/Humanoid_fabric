@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_hip20_load200",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--late-support-load-floor-start",
+      "4.5",
+      "--late-support-load-floor",
+      "200"
+    ]
+  },
+  {
+    "name": "eleven_hip20_load300",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--late-support-load-floor-start",
+      "4.5",
+      "--late-support-load-floor",
+      "300"
+    ]
+  },
+  {
+    "name": "eleven_hip20_load400",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--late-support-load-floor-start",
+      "4.5",
+      "--late-support-load-floor",
+      "400"
+    ]
+  }
+]

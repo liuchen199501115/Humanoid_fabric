@@ -1,0 +1,16 @@
+[
+  {
+    "trial": "ten_clock08",
+    "prefix_samples": 1751,
+    "common_history_fields": 155,
+    "all_exactly_equal": true,
+    "transition_start_s": 3.5
+  },
+  {
+    "trial": "ten_clock10",
+    "prefix_samples": 1751,
+    "common_history_fields": 155,
+    "all_exactly_equal": true,
+    "transition_start_s": 3.5
+  }
+]

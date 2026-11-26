@@ -1,0 +1,18 @@
+[
+  {
+    "name": "twelve_resume20",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--extra-contact-pause-resume",
+      ".2"
+    ]
+  },
+  {
+    "name": "twelve_resume30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--extra-contact-pause-resume",
+      ".3"
+    ]
+  }
+]

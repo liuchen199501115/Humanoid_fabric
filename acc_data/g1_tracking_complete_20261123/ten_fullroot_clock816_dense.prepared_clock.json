@@ -1,0 +1,16 @@
+{
+  "path": "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_support_y20_clock816_dense_clock.npz",
+  "sha256": "9d5e9f968bda8ce4a733e66a245313779f9d98daf9b674e77fac37ebb8353e00",
+  "start_time_s": 3.8041666666666663,
+  "end_time_s": 5.2259889870760246,
+  "minimum_speed": 0.4302513482989386,
+  "maximum_speed": 1.2002586504637538,
+  "prefix_equality_residual": [
+    0.0,
+    2.0240811249294666e-09,
+    -3.4278200189419294e-07
+  ],
+  "original_source_retained": true,
+  "runtime_optimizer": false,
+  "full_tracking_passed": false
+}

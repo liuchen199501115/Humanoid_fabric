@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "maximum_differences": {
+    "states": 0.0,
+    "controls": 0.0,
+    "impulses": 0.0
+  },
+  "elapsed_seconds": 28.93595016747713
+}

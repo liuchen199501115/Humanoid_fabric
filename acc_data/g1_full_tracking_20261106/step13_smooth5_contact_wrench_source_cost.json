@@ -1,0 +1,280 @@
+{
+  "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+  "pose_cost_target": "raw source upper joints at each fitted frame",
+  "maximum_inverse_dynamics_equality_error": 9.947598300641403e-14,
+  "planned_double_support_nodes": 45,
+  "search_parameters": {
+    "grid_spacing": 0.5,
+    "check_end": 1035.0,
+    "initial_fit": "acc_data/g1_full_tracking_20261106/step13_smooth5_contact_wrench_fit.diagnostic.npz",
+    "effort_fraction": 1.0,
+    "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+    "offset_limit": 0.25,
+    "iterations": 12,
+    "name": "step13_smooth5_contact_wrench_source_cost"
+  },
+  "worst_effort": {
+    "frame": 1020.0,
+    "peak_wrench_normalized_violation": 0.09924028305943264,
+    "peak_effort_fraction": 1.0531498783364113,
+    "joint": "waist_pitch_joint",
+    "torque": 52.65749391682056,
+    "effort_cap": 50.0
+  },
+  "worst_wrench": {
+    "frame": 1020.0,
+    "peak_wrench_normalized_violation": 0.09924028305943264,
+    "peak_effort_fraction": 1.0531498783364113,
+    "joint": "waist_pitch_joint",
+    "torque": 52.65749391682056,
+    "effort_cap": 50.0
+  },
+  "peak_dense_normalized_violation": 0.09924028305943264,
+  "scope": "Upper-body-only optimistic full-sole inverse-dynamics fit over source frames 960..1035, using source-labeled right and double support with explicit left-wrench allocation. No change to parent root or legs; no claim about stance velocity or observed point/line geometry.",
+  "iterations": [
+    {
+      "iteration": 0,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 3.005857091009645e-10,
+        "iterations": 37,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.1341572161599599,
+      "peak_exact_normalized_violation": 0.14336233747259608,
+      "peak_upper_offset": 0.29103574163886803
+    },
+    {
+      "iteration": 1,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.483531849761249e-11,
+        "iterations": 35,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.12562301150952687,
+      "peak_exact_normalized_violation": 0.14309774478737708,
+      "peak_upper_offset": 0.2956700415057303
+    },
+    {
+      "iteration": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 8.432025910831698e-11,
+        "iterations": 36,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.12021605488997826,
+      "peak_exact_normalized_violation": 0.1420686284226809,
+      "peak_upper_offset": 0.2999164455200132
+    },
+    {
+      "iteration": 3,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.187159366597086e-11,
+        "iterations": 35,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.11386835161703918,
+      "peak_exact_normalized_violation": 0.1426965293373248,
+      "peak_upper_offset": 0.3029782817948396
+    },
+    {
+      "iteration": 4,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 8.566458653547215e-11,
+        "iterations": 36,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.10869473748739775,
+      "peak_exact_normalized_violation": 0.13456651445017667,
+      "peak_upper_offset": 0.3075031621516855
+    },
+    {
+      "iteration": 5,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.5736665576481244e-10,
+        "iterations": 37,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.10560298856163819,
+      "peak_exact_normalized_violation": 0.13140115948271813,
+      "peak_upper_offset": 0.3110637588845063
+    },
+    {
+      "iteration": 6,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.248381793246157e-10,
+        "iterations": 35,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.1003090624770549,
+      "peak_exact_normalized_violation": 0.13002420497390849,
+      "peak_upper_offset": 0.31498682687976953
+    },
+    {
+      "iteration": 7,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.7725705065151374e-10,
+        "iterations": 36,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.09751476838127461,
+      "peak_exact_normalized_violation": 0.11352729737875342,
+      "peak_upper_offset": 0.31888901263963065
+    },
+    {
+      "iteration": 8,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.7466621898831747e-10,
+        "iterations": 33,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.09334564868089978,
+      "peak_exact_normalized_violation": 0.11505128900880088,
+      "peak_upper_offset": 0.32184750012065266
+    },
+    {
+      "iteration": 9,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 7.92950149985927e-11,
+        "iterations": 36,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.09115669077601163,
+      "peak_exact_normalized_violation": 0.11193771698203361,
+      "peak_upper_offset": 0.3249703380433006
+    },
+    {
+      "iteration": 10,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.9874429879607192e-10,
+        "iterations": 35,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.08714440367526513,
+      "peak_exact_normalized_violation": 0.1135082227190139,
+      "peak_upper_offset": 0.3278835809334528
+    },
+    {
+      "iteration": 11,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 2.6452894041906205e-10,
+        "iterations": 34,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.08636817325955957,
+      "peak_exact_normalized_violation": 0.09924028305943264,
+      "peak_upper_offset": 0.33067904631364436
+    }
+  ],
+  "peak_raw_reference_joint_rmse": 0.19893541901692044,
+  "minimum_dense_joint_margin": 0.09175873261192857,
+  "peak_dense_speed_fraction": 0.5827343233316568,
+  "physical_tracking_certified": false,
+  "minimum_continuous_joint_margin": 0.09168859520693212,
+  "maximum_continuous_joint_velocity_fraction": 0.5827349217516022,
+  "joint_minimum": [
+    -0.651450918018621,
+    -0.10708407397278875,
+    0.06599699506029812,
+    0.34257728699965534,
+    -0.4184284262916005,
+    -0.15460000940548688,
+    -0.3105744434418299,
+    -0.2317640341847436,
+    -0.2438391227212601,
+    0.18497063879365083,
+    -0.5982730081226533,
+    0.018525632892783795,
+    -0.011107856349699387,
+    -0.055233374102381,
+    -0.21162890998100706,
+    -0.03139549761423729,
+    -0.00214661760274486,
+    -0.32538733249073615,
+    1.0284179271859177,
+    -0.3224497991284066,
+    -0.510966186759216,
+    -0.3919162638870408,
+    -0.5566085927105581,
+    -0.5392772947678632,
+    -0.08943034329617915,
+    0.5230795983287964,
+    -0.26141957557808265,
+    -0.6432441047606935,
+    -0.18420840951710754
+  ],
+  "joint_maximum": [
+    -0.10715160653176543,
+    0.2205835465815409,
+    0.3293018961269973,
+    0.7754512100469909,
+    -0.1360414008693889,
+    0.10717480891250905,
+    0.5384793973234245,
+    0.09402515385239481,
+    0.14797395809262742,
+    1.4024727159282968,
+    -0.18281335446105557,
+    0.17011136612157435,
+    0.4679383251656829,
+    0.28473509489421495,
+    0.3276424847700365,
+    0.42256369351927325,
+    0.536694119128303,
+    0.1628863608495533,
+    1.545549974528444,
+    0.1565233741733414,
+    0.010573510810533678,
+    0.06708036409092172,
+    0.05693630529438162,
+    -0.112068552473163,
+    0.4622650257763076,
+    1.3155599058773084,
+    0.29082842848031687,
+    -0.26485220758558004,
+    0.2842262610671193
+  ],
+  "joint_maximum_speed": [
+    5.392874014842808,
+    2.5448023202454193,
+    1.603989666781238,
+    5.108370567225311,
+    2.698571173060662,
+    1.842144494951413,
+    5.87696677114062,
+    2.763411541594011,
+    4.047113330725735,
+    11.654698435032046,
+    5.965929151195233,
+    2.4984728580942273,
+    4.150033973190785,
+    4.845744100830185,
+    5.7077354726823355,
+    6.289164022471258,
+    5.580367498633686,
+    11.13122012436946,
+    7.434579593886433,
+    9.36683849440559,
+    8.986343366967091,
+    8.440871796576655,
+    5.763367947875749,
+    6.3854691850319,
+    8.783334141999601,
+    9.444179344955712,
+    12.842835391793837,
+    3.3553511420280286,
+    10.401212344944527
+  ],
+  "preflight_passed": false
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "problem": "priority_problem_",
+    "clarabel": {
+      "status": "PrimalInfeasible",
+      "constraint_residual": 496.38357542138135,
+      "iterations": 14,
+      "accepted": false
+    },
+    "linear_feasibility": {
+      "success": false,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    "last_rows": [
+      {
+        "nonzero": [
+          34
+        ],
+        "bound": 19.79183578491211
+      },
+      {
+        "nonzero": [
+          0,
+          1,
+          2
+        ],
+        "bound": -6.078668594360352
+      },
+      {
+        "nonzero": [
+          3,
+          4,
+          5
+        ],
+        "bound": 102.63665008544922
+      }
+    ],
+    "diagnostic_without_last_two_root_tube_rows": {
+      "success": false,
+      "status": 2,
+      "scope": "Counterfactual diagnostic only; never executed or used to relax original acceptance"
+    }
+  },
+  {
+    "problem": "problem_",
+    "clarabel": {
+      "status": "PrimalInfeasible",
+      "constraint_residual": 4862.79736323656,
+      "iterations": 14,
+      "accepted": false
+    },
+    "linear_feasibility": {
+      "success": false,
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    "last_rows": [
+      {
+        "nonzero": [],
+        "bound": 0.019999999552965164
+      },
+      {
+        "nonzero": [],
+        "bound": 0.019999999552965164
+      },
+      {
+        "nonzero": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "bound": 68.51346588134766
+      }
+    ]
+  }
+]

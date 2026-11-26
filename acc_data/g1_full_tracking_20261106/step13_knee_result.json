@@ -1,0 +1,32 @@
+{
+  "run": "thirteenth_support_knee20",
+  "valid_history_samples": 2178,
+  "active_constraint_samples": 67,
+  "peak_added_constraint_violation": 0.0,
+  "prefix_cutoff_s": 4.22,
+  "prefix_samples": 2111,
+  "prefix": {
+    "history_time": {
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "history_frame": {
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "history_q": {
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "history_qd": {
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "history_torque_qp_total": {
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "prefix_identical": true,
+  "scope": "Constraint and prefix checks only. The separate raw-source/landing audit determines tracking success."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "paper_generalized",
+  "options": [
+    "--fabric-priority-mode",
+    "paper"
+  ],
+  "returncode": 1,
+  "timed_out": false
+}

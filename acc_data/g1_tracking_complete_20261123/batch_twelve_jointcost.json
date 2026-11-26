@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_jointcost940_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-tube-soft-weight-start",
+      "4.7",
+      "--final-tube-soft-weight",
+      "10000"
+    ]
+  },
+  {
+    "name": "twelve_jointcost960_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-tube-soft-weight-start",
+      "4.8",
+      "--final-tube-soft-weight",
+      "10000"
+    ]
+  },
+  {
+    "name": "twelve_jointcost940_100000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--final-tube-soft-weight-start",
+      "4.7",
+      "--final-tube-soft-weight",
+      "100000"
+    ]
+  }
+]

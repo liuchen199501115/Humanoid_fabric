@@ -1,0 +1,45 @@
+[
+  {
+    "name": "ten_comspeed02_zero_momentum01",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--late-momentum-priority-start",
+      "4.08",
+      "--late-momentum-zero-target",
+      "--late-momentum-feedback-damping",
+      "10",
+      "--late-momentum-total-rate-limit",
+      "30",
+      "--late-momentum-metric-scale",
+      "0.1"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_zero_momentum1",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--late-momentum-priority-start",
+      "4.08",
+      "--late-momentum-zero-target",
+      "--late-momentum-feedback-damping",
+      "10",
+      "--late-momentum-total-rate-limit",
+      "30",
+      "--late-momentum-metric-scale",
+      "1.0"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_pitch_shoulder_brake1000",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.08",
+      "--soft-joint-braking-weight",
+      "1000",
+      "--soft-joint-braking-joints",
+      "waist_pitch_joint",
+      "right_shoulder_roll_joint"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "examples/test_g1.py": "26ac7a3081b71758126634cd78a68edb76dc57ff33912805376e59c61506cf9f",
+  "examples/g1_acceleration_cost.py": "be014c3bc1961d1324dbfc88e376cc4649465f02799017cb4a428857c561f4e0",
+  "src/fabrics_sim/fabrics/dynamics_aware.py": "5615eca4fcf1c75b90887ba758be8fabb2be18a32af2a1ca94fa7d112a217d30",
+  "src/fabrics_sim/solver/com_diagnostics.py": "8f126848136a4ec6f4ec12f77ceb2f7604d778983b74ae37fa7aea41e4eca0ca",
+  "src/fabrics_sim/fabrics/g1_pose_fabric.py": "901f0699a9256aa047b87bde38c1d8e8a1cd2560893308b0eef622e79dce863c"
+}

@@ -1,0 +1,453 @@
+{
+  "scope": "Fresh physics from frame zero; original PKL reloaded and measured landings independently reconstructed.",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "full_motion_tracking_passed": false,
+  "trials": [
+    {
+      "run": "baseline_probe",
+      "recording": "/home/sky/Humanoid_fabric/acc_data/g1_wbc_conflict_20261113/baseline_probe.npz",
+      "measured_landing_events": 12,
+      "full_motion_tracking_passed": false,
+      "prefix_fidelity_passing_landings": 12,
+      "first_fidelity_exceeded_time_s": 4.3,
+      "last_source_frame": 989.0,
+      "last_time_s": 4.3,
+      "landings": [
+        {
+          "step": 1,
+          "time_s": 0.188,
+          "source_frame": 37.6,
+          "landing_error_m": 0.011787721130019873,
+          "joint_rmse_rad": 0.11585889756679535,
+          "root_position_error_m": 0.014900225214660168,
+          "root_orientation_error_rad": 0.104503785415284,
+          "prefix_peak_joint_rmse_rad": 0.11585889756679535,
+          "prefix_peak_root_position_error_m": 0.014900225214660168,
+          "prefix_peak_root_orientation_error_rad": 0.104503785415284,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 2,
+          "time_s": 0.41200000000000003,
+          "source_frame": 82.4,
+          "landing_error_m": 0.02827626366215745,
+          "joint_rmse_rad": 0.1715865433216095,
+          "root_position_error_m": 0.02208929881453514,
+          "root_orientation_error_rad": 0.12739480645974444,
+          "prefix_peak_joint_rmse_rad": 0.18372873961925507,
+          "prefix_peak_root_position_error_m": 0.02208929881453514,
+          "prefix_peak_root_orientation_error_rad": 0.12739480645974444,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 3,
+          "time_s": 0.894,
+          "source_frame": 178.8,
+          "landing_error_m": 0.01335595833003698,
+          "joint_rmse_rad": 0.13108669221401215,
+          "root_position_error_m": 0.040054772049188614,
+          "root_orientation_error_rad": 0.19314348761803035,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.040054772049188614,
+          "prefix_peak_root_orientation_error_rad": 0.25114874590039815,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 4,
+          "time_s": 1.308,
+          "source_frame": 270.9200000000001,
+          "landing_error_m": 0.0063785105379707985,
+          "joint_rmse_rad": 0.11005673557519913,
+          "root_position_error_m": 0.030542194843292236,
+          "root_orientation_error_rad": 0.11192140418942256,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045169081538915634,
+          "prefix_peak_root_orientation_error_rad": 0.25114874590039815,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 5,
+          "time_s": 1.716,
+          "source_frame": 368.84000000000003,
+          "landing_error_m": 0.010644502761134083,
+          "joint_rmse_rad": 0.07976747304201126,
+          "root_position_error_m": 0.02674713172018528,
+          "root_orientation_error_rad": 0.07110668424723302,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045169081538915634,
+          "prefix_peak_root_orientation_error_rad": 0.25114874590039815,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 6,
+          "time_s": 2.112,
+          "source_frame": 463.88000000000005,
+          "landing_error_m": 0.03558534392800265,
+          "joint_rmse_rad": 0.0848759114742279,
+          "root_position_error_m": 0.03592750057578087,
+          "root_orientation_error_rad": 0.07739308172715244,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045169081538915634,
+          "prefix_peak_root_orientation_error_rad": 0.25114874590039815,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 7,
+          "time_s": 2.524,
+          "source_frame": 562.76,
+          "landing_error_m": 0.03208394027232433,
+          "joint_rmse_rad": 0.10874995589256287,
+          "root_position_error_m": 0.019320575520396233,
+          "root_orientation_error_rad": 0.12946546469630554,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045246608555316925,
+          "prefix_peak_root_orientation_error_rad": 0.25114874590039815,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 8,
+          "time_s": 2.904,
+          "source_frame": 653.96,
+          "landing_error_m": 0.021613518096986303,
+          "joint_rmse_rad": 0.10764701664447784,
+          "root_position_error_m": 0.04122055694460869,
+          "root_orientation_error_rad": 0.08534165622957575,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045246608555316925,
+          "prefix_peak_root_orientation_error_rad": 0.297435880652178,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 9,
+          "time_s": 3.41,
+          "source_frame": 775.4000000000001,
+          "landing_error_m": 0.013458399932422345,
+          "joint_rmse_rad": 0.03502525016665459,
+          "root_position_error_m": 0.012886869721114635,
+          "root_orientation_error_rad": 0.05362536501549139,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045246608555316925,
+          "prefix_peak_root_orientation_error_rad": 0.297435880652178,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 10,
+          "time_s": 3.58,
+          "source_frame": 816.1999999999999,
+          "landing_error_m": 0.014963777001861035,
+          "joint_rmse_rad": 0.11775314062833786,
+          "root_position_error_m": 0.01593562588095665,
+          "root_orientation_error_rad": 0.2303187224844613,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.045246608555316925,
+          "prefix_peak_root_orientation_error_rad": 0.297435880652178,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 11,
+          "time_s": 3.96,
+          "source_frame": 907.4,
+          "landing_error_m": 0.03397049469663307,
+          "joint_rmse_rad": 0.1432601809501648,
+          "root_position_error_m": 0.12634456157684326,
+          "root_orientation_error_rad": 0.1443425084344537,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.12634456157684326,
+          "prefix_peak_root_orientation_error_rad": 0.297435880652178,
+          "prefix_fidelity_passed": true
+        },
+        {
+          "step": 12,
+          "time_s": 4.216,
+          "source_frame": 968.8400000000001,
+          "landing_error_m": 0.007523931759592858,
+          "joint_rmse_rad": 0.14348295331001282,
+          "root_position_error_m": 0.17612813413143158,
+          "root_orientation_error_rad": 0.20614160110794782,
+          "prefix_peak_joint_rmse_rad": 0.1851285696029663,
+          "prefix_peak_root_position_error_m": 0.17612813413143158,
+          "prefix_peak_root_orientation_error_rad": 0.297435880652178,
+          "prefix_fidelity_passed": true
+        }
+      ],
+      "next_step_diagnostics": {
+        "step": 13,
+        "swing": "left",
+        "missing_evidence": "loaded_landing",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.036629693565004576,
+        "best_loaded_landing_error_m": null,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "weight_clock": "control_time",
+      "returncode": 1,
+      "command": [
+        "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+        "-u",
+        "examples/test_g1.py",
+        "--tracking-profile",
+        "amp-full",
+        "--output-path",
+        "/home/sky/Humanoid_fabric/acc_data/g1_wbc_conflict_20261113/baseline_probe.npz",
+        "--diagnose-qp-time",
+        "3.48",
+        "--diagnose-qp-time",
+        "3.58",
+        "--diagnose-qp-time",
+        "3.65",
+        "--diagnose-qp-time",
+        "3.75",
+        "--diagnose-qp-time",
+        "3.96",
+        "--diagnose-qp-time",
+        "4.216",
+        "--diagnose-qp-time",
+        "4.28"
+      ],
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "failed_time_s": null,
+      "execution": {
+        "tracking_profile": "amp-full",
+        "direct_wbc": true,
+        "tracking_servo": true,
+        "track_full_motion": true,
+        "tracking_steps": 0,
+        "stop_at_fidelity_loss": true,
+        "shoulder_roll_weight_scale": 1.0,
+        "shoulder_roll_weight_start": Infinity,
+        "shoulder_roll_weight_ramp": 0.1,
+        "shoulder_roll_weight_side": "both",
+        "shoulder_roll_guard": false,
+        "shoulder_roll_guard_relative": 0.02,
+        "shoulder_roll_guard_slack": 1.0,
+        "com_velocity_soft_weight": null,
+        "com_velocity_soft_horizon": null,
+        "com_velocity_soft_contraction": null,
+        "com_velocity_soft_onset": null,
+        "com_velocity_soft_width": null
+      },
+      "independent_measured_steps": 12,
+      "independent_next_step_diagnostics": {
+        "step": 13,
+        "swing": "left",
+        "missing_evidence": "loaded_landing",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.036629693565004576,
+        "best_loaded_landing_error_m": null,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "raw_source_audit": {
+        "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+        "frame_count": 2000,
+        "peak_joint_rmse_rad": 0.19934862852096558,
+        "peak_root_position_m": 0.2010059654712677,
+        "peak_root_orientation_rad": 0.2974370491275428,
+        "prefix_landings": 12,
+        "reference_max_difference": 1.5407800674438477e-05,
+        "landings": [
+          {
+            "step": 1,
+            "source_foot_error_m": 0.01178776775288934,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 2,
+            "source_foot_error_m": 0.028276172910626375,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 3,
+            "source_foot_error_m": 0.013355951032364045,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 4,
+            "source_foot_error_m": 0.006378963223648887,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 5,
+            "source_foot_error_m": 0.01064476665052955,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 6,
+            "source_foot_error_m": 0.035585314377766276,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 7,
+            "source_foot_error_m": 0.032083823352039166,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 8,
+            "source_foot_error_m": 0.02161359999090239,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 9,
+            "source_foot_error_m": 0.013458322468304064,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 10,
+            "source_foot_error_m": 0.014963943081237349,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 11,
+            "source_foot_error_m": 0.0339705240066126,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          },
+          {
+            "step": 12,
+            "source_foot_error_m": 0.007523671448439499,
+            "prefix_pose_passed": true,
+            "foot_position_passed": true
+          }
+        ]
+      },
+      "samples": [
+        {
+          "time_s": 3.41,
+          "shoulder_error_rad": [
+            0.05526846647262573,
+            -0.030482381582260132
+          ],
+          "joint_rmse_rad": 0.03502525016665459,
+          "root_position_m": 0.012886869721114635,
+          "root_orientation_rad": 0.05363001670260299
+        },
+        {
+          "time_s": 3.48,
+          "shoulder_error_rad": [
+            0.09364694356918335,
+            -0.1900305151939392
+          ],
+          "joint_rmse_rad": 0.08296740055084229,
+          "root_position_m": 0.02165559120476246,
+          "root_orientation_rad": 0.07977550436337717
+        },
+        {
+          "time_s": 3.58,
+          "shoulder_error_rad": [
+            0.28467392921447754,
+            -0.34733664989471436
+          ],
+          "joint_rmse_rad": 0.11775314062833786,
+          "root_position_m": 0.01593562588095665,
+          "root_orientation_rad": 0.2303192678681208
+        },
+        {
+          "time_s": 3.65,
+          "shoulder_error_rad": [
+            0.2577236294746399,
+            -0.2516854405403137
+          ],
+          "joint_rmse_rad": 0.1279081553220749,
+          "root_position_m": 0.043698713183403015,
+          "root_orientation_rad": 0.2616732297059847
+        },
+        {
+          "time_s": 3.75,
+          "shoulder_error_rad": [
+            0.3001881241798401,
+            -0.2804584503173828
+          ],
+          "joint_rmse_rad": 0.1582648903131485,
+          "root_position_m": 0.07204098254442215,
+          "root_orientation_rad": 0.27708879275592113
+        },
+        {
+          "time_s": 3.96,
+          "shoulder_error_rad": [
+            0.30180492997169495,
+            -0.05095526576042175
+          ],
+          "joint_rmse_rad": 0.1432601809501648,
+          "root_position_m": 0.12634456157684326,
+          "root_orientation_rad": 0.14434312094681037
+        },
+        {
+          "time_s": 4.216,
+          "shoulder_error_rad": [
+            0.02721443772315979,
+            -0.4941888451576233
+          ],
+          "joint_rmse_rad": 0.14348295331001282,
+          "root_position_m": 0.17612813413143158,
+          "root_orientation_rad": 0.2061422684518342
+        }
+      ],
+      "shoulder_intervals": [
+        {
+          "start_s": 3.3,
+          "end_s": 3.58,
+          "per_shoulder_rmse_rad": [
+            0.1348954737186432,
+            0.19513671100139618
+          ],
+          "combined_rmse_rad": 0.1677425503730774,
+          "full_joint_rmse_rad": 0.07726448029279709
+        },
+        {
+          "start_s": 3.58,
+          "end_s": 3.8,
+          "per_shoulder_rmse_rad": [
+            0.2808108329772949,
+            0.2829945981502533
+          ],
+          "combined_rmse_rad": 0.28190481662750244,
+          "full_joint_rmse_rad": 0.14110276103019714
+        },
+        {
+          "start_s": 3.8,
+          "end_s": 4.2,
+          "per_shoulder_rmse_rad": [
+            0.26095542311668396,
+            0.20464101433753967
+          ],
+          "combined_rmse_rad": 0.2344948649406433,
+          "full_joint_rmse_rad": 0.1340731680393219
+        }
+      ],
+      "qp_latency_after_3_58_ms": {
+        "median": 2.7876226231455803,
+        "p95": 2.9791441280394793
+      },
+      "servo_valid": true,
+      "servo_saturation_fraction": 0.0,
+      "qp_validated": [
+        true
+      ],
+      "self_contact_events": [
+        [
+          "4.288",
+          "/World/G1/left_ankle_roll_link/collisions/mesh_2/sphere",
+          "/World/G1/right_ankle_roll_link/collisions/mesh_3/sphere",
+          "-0.0020623113960027695"
+        ]
+      ]
+    }
+  ]
+}

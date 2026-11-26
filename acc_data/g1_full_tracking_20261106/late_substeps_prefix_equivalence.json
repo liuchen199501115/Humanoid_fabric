@@ -1,0 +1,31 @@
+{
+  "trial": "late_substeps4_turn",
+  "through_simulation_time": 3.5,
+  "samples": 1751,
+  "fields": {
+    "history_time": {
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_frame": {
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_q": {
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_qd": {
+      "bitwise_equal": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "clock_max_error_seconds": 1.8789991740320033e-07,
+  "native_dt_before": [
+    0.002
+  ],
+  "native_dt_after": [
+    0.0005
+  ],
+  "scope": "Held command first implementation, without explicit per-substep reissue; a separate physical rerun checks reissued torque."
+}

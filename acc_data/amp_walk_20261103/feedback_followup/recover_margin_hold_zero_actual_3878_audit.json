@@ -1,0 +1,13 @@
+{
+  "success": false,
+  "status": "AlmostPrimalInfeasible",
+  "refinement_history": [
+    {
+      "iteration": 0,
+      "status": "AlmostPrimalInfeasible"
+    }
+  ],
+  "actual_start_time": 3.878,
+  "solve_seconds": 23.58429048396647,
+  "prediction_only": true
+}

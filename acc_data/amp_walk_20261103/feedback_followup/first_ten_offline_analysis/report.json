@@ -1,0 +1,317 @@
+{
+  "scope": "Read-only offline analysis of a historical recording. No controller edits, physical rerun, or counterfactual tracking success. COM targets may differ from original PKL; root error is audited separately.",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_motion_no_mpc.npz",
+  "recording_sha256": "e48dfe6aab6c7fb62d44347326b86f94a45e32e9d63d0162665c78c3acb1157b",
+  "residual_observation": "Observed interval-average COM acceleration from URDF COM velocity differences; QP prediction is left-end instantaneous acceleration. Differences include impacts and discretization, not only model bias.",
+  "windows": {
+    "steps_1_8": {
+      "time_s": [
+        0.0,
+        2.904
+      ],
+      "qp_minus_request": {
+        "mean_xyz_m_s2": [
+          0.19272835806496985,
+          0.4208624287387861,
+          -0.5769855394631063
+        ],
+        "horizontal_vector_rms_m_s2": 5.094040653575537,
+        "net_horizontal_velocity_contribution_m_s": [
+          0.5596831518206724,
+          1.2221844930574348
+        ]
+      },
+      "observed_minus_qp": {
+        "mean_xyz_m_s2": [
+          -0.13318188842222783,
+          0.03482139159801132,
+          0.41094243262103725
+        ],
+        "horizontal_vector_rms_m_s2": 1.8972622876070848,
+        "net_horizontal_velocity_contribution_m_s": [
+          -0.38676020397814964,
+          0.10112132120062486
+        ]
+      },
+      "request_minus_reference_acceleration": {
+        "mean_xyz_m_s2": [
+          -0.017716636183221696,
+          -0.40361701562800517,
+          0.15999195793997656
+        ],
+        "horizontal_vector_rms_m_s2": 1.3653517978111427,
+        "net_horizontal_velocity_contribution_m_s": [
+          -0.0514491114760758,
+          -1.172103813383727
+        ]
+      },
+      "any_joint_clipped_fraction": 0.0,
+      "peak_com_target_error_m": 0.03470897526086307,
+      "peak_root_source_error_m": 0.045246608555316925
+    },
+    "steps_9_10": {
+      "time_s": [
+        2.904,
+        3.58
+      ],
+      "qp_minus_request": {
+        "mean_xyz_m_s2": [
+          -0.3832623365021069,
+          -0.30825864197410663,
+          -0.44036750557153886
+        ],
+        "horizontal_vector_rms_m_s2": 3.4999474342013923,
+        "net_horizontal_velocity_contribution_m_s": [
+          -0.25908533947542434,
+          -0.20838284197449614
+        ]
+      },
+      "observed_minus_qp": {
+        "mean_xyz_m_s2": [
+          -0.3349353957937713,
+          0.25424146317699703,
+          0.3916281235883687
+        ],
+        "horizontal_vector_rms_m_s2": 1.917870338023178,
+        "net_horizontal_velocity_contribution_m_s": [
+          -0.22641632755658944,
+          0.17186722910765004
+        ]
+      },
+      "request_minus_reference_acceleration": {
+        "mean_xyz_m_s2": [
+          0.5535224410126632,
+          -0.1618984767605046,
+          -0.4846278691234499
+        ],
+        "horizontal_vector_rms_m_s2": 1.3630634385973168,
+        "net_horizontal_velocity_contribution_m_s": [
+          0.3741811701245604,
+          -0.10944337029010114
+        ]
+      },
+      "any_joint_clipped_fraction": 0.0,
+      "peak_com_target_error_m": 0.03739058272869236,
+      "peak_root_source_error_m": 0.04258111119270325
+    },
+    "steps_11_13": {
+      "time_s": [
+        3.58,
+        4.3
+      ],
+      "qp_minus_request": {
+        "mean_xyz_m_s2": [
+          -3.4756298566857935,
+          -4.29116501965133,
+          0.029272027148162592
+        ],
+        "horizontal_vector_rms_m_s2": 6.777793348835021,
+        "net_horizontal_velocity_contribution_m_s": [
+          -2.5024534968137706,
+          -3.089638814148956
+        ]
+      },
+      "observed_minus_qp": {
+        "mean_xyz_m_s2": [
+          0.0340341817250804,
+          0.03503702497663985,
+          0.4456911642699027
+        ],
+        "horizontal_vector_rms_m_s2": 2.0416531366327333,
+        "net_horizontal_velocity_contribution_m_s": [
+          0.02450461084205788,
+          0.025226657983180686
+        ]
+      },
+      "request_minus_reference_acceleration": {
+        "mean_xyz_m_s2": [
+          3.1447312932358034,
+          3.6751231724499838,
+          0.858122950378394
+        ],
+        "horizontal_vector_rms_m_s2": 4.988471150426895,
+        "net_horizontal_velocity_contribution_m_s": [
+          2.2642065311297777,
+          2.6460886841639875
+        ]
+      },
+      "any_joint_clipped_fraction": 0.0,
+      "peak_com_target_error_m": 0.23873917962810123,
+      "peak_root_source_error_m": 0.19947116076946259
+    }
+  },
+  "velocity_error_accounting_after_step_10": {
+    "start_time_s": 3.58,
+    "end_time_s": 4.3,
+    "initial_velocity_error_xyz_m_s": [
+      -0.12870746850967407,
+      -0.11914145946502686,
+      -0.5594730153679848
+    ],
+    "final_velocity_error_xyz_m_s": [
+      -0.33970189094543457,
+      -0.5357152819633484,
+      0.4115701913833618
+    ],
+    "change_xyz_m_s": [
+      -0.2109944224357605,
+      -0.41657382249832153,
+      0.9710432067513466
+    ],
+    "terms_xyz_m_s": {
+      "requested_feedback": [
+        2.2642065311297777,
+        2.6460886841639875,
+        0.6178485242724435
+      ],
+      "qp_task_residual": [
+        -2.5024534968137706,
+        -3.089638814148956,
+        0.02107585954667706
+      ],
+      "plant_residual": [
+        0.02450461084205788,
+        0.025226657983180686,
+        0.3208976382743298
+      ],
+      "reference_velocity_discretization": [
+        0.002747916497291225,
+        0.001749648012220384,
+        0.011221142768862907
+      ]
+    },
+    "closure_max_abs_m_s": 4.1889033353115224e-08
+  },
+  "fit": {
+    "formula": "predicted residual in source-yaw horizontal frame = intercept + features @ coefficients",
+    "features": [
+      "com_error_forward_m",
+      "com_error_lateral_m",
+      "velocity_error_forward_m_s",
+      "velocity_error_lateral_m_s",
+      "com_velocity_forward_m_s",
+      "com_velocity_lateral_m_s",
+      "base_angular_velocity_world_z_rad_s",
+      "left_normal_load_fraction",
+      "left_support",
+      "right_support",
+      "double_support"
+    ],
+    "intercept": [
+      0.03217664414689332,
+      0.06882709543169083
+    ],
+    "coefficients": [
+      [
+        -2.078649134398522,
+        1.3387475023101003
+      ],
+      [
+        0.31547332513136966,
+        -0.8711307421188054
+      ],
+      [
+        -0.6007780953293125,
+        0.15887713421771707
+      ],
+      [
+        0.1782398087346439,
+        -0.2621326895303379
+      ],
+      [
+        -0.05345832458974025,
+        -0.03760844694149662
+      ],
+      [
+        -0.09776953237846582,
+        -0.009278707730106112
+      ],
+      [
+        0.04899245939766486,
+        -0.03571721552562485
+      ],
+      [
+        -0.008802141394016071,
+        -0.023648417767372497
+      ],
+      [
+        0.0198707694688832,
+        -0.006708328366307211
+      ],
+      [
+        0.04509143910216772,
+        0.004968760055092897
+      ],
+      [
+        -0.14896113377891232,
+        0.004760933055209223
+      ]
+    ],
+    "train_step_count": 8,
+    "cross_validation": "Leave one entire step out within steps 1-8; no tuning on steps 9-13",
+    "cv_horizontal_vector_rmse_m_s2": {
+      "0.1": 0.4663961331696455,
+      "1.0": 0.4557416201365113,
+      "10.0": 0.43082079505818116,
+      "100.0": 0.38664701780312666
+    },
+    "ridge_lambda": 100.0,
+    "exclusion": "20ms non-overlapping intervals entirely within one step, with no contact-mode transition within 10ms of any sample. Features use only interval-start state. Impact intervals remain in full-window residual accounting.",
+    "metrics": {
+      "train_steps_1_8": {
+        "stable_20ms_blocks": 109,
+        "zero_model_rmse_m_s2": 0.3836575433659437,
+        "constant_bias_rmse_m_s2": 0.38342114683812906,
+        "ridge_model_rmse_m_s2": 0.3521029575837617,
+        "target_mean_forward_lateral_m_s2": [
+          -0.007623252909437805,
+          0.01110048440400646
+        ]
+      },
+      "heldout_steps_9_10": {
+        "stable_20ms_blocks": 24,
+        "zero_model_rmse_m_s2": 0.7187502063271697,
+        "constant_bias_rmse_m_s2": 0.7155538064021636,
+        "ridge_model_rmse_m_s2": 0.7666540487901736,
+        "target_mean_forward_lateral_m_s2": [
+          -0.1349128493616845,
+          0.12202145132679669
+        ]
+      },
+      "unseen_steps_11_13": {
+        "stable_20ms_blocks": 26,
+        "zero_model_rmse_m_s2": 0.48822863521176296,
+        "constant_bias_rmse_m_s2": 0.48788001725304286,
+        "ridge_model_rmse_m_s2": 0.5162491445122879,
+        "target_mean_forward_lateral_m_s2": [
+          -0.013378799612287901,
+          0.014307654834560478
+        ]
+      }
+    },
+    "passes_heldout_prediction_baselines": false,
+    "controller_compensation_validated": false
+  },
+  "additional_task_diagnostics": {
+    "first_ten_steps": {
+      "center_of_mass_component_rms": 3.9747551942431536,
+      "body_orientation_component_rms": 23.57785754180847,
+      "source_pelvis_orientation_component_rms": 37.18288690227024,
+      "joint_posture_component_rms": 63.079897453406744,
+      "commanded_measured_mode_mismatch_fraction": 0.003910614525139665
+    },
+    "after_tenth_landing": {
+      "center_of_mass_component_rms": 4.998663090080384,
+      "body_orientation_component_rms": 87.05188995410818,
+      "source_pelvis_orientation_component_rms": 182.67033178426914,
+      "joint_posture_component_rms": 270.77814275067885,
+      "commanded_measured_mode_mismatch_fraction": 0.030555555555555555
+    }
+  },
+  "interpretation": {
+    "empirical_residual_model": "Rejected: does not outperform zero or constant bias on held-out steps 9-10; this is predictive validation, not a physical compensation experiment.",
+    "dominant_late_horizontal_mean_residual": "QP output relative to task request; actual-minus-QP residual has near-zero signed mean over 3.58-4.30s, but includes sizable transient impacts.",
+    "limits": "No per-tick QP matrices/active sets in this recording, so task conflict versus binding physical constraints is not uniquely identified. No final torque clipping does not imply inactive QP effort limits. First ten successful steps are insufficient to identify counterfactual corrective gains.",
+    "next_candidate": "Evaluate a soft error-contraction condition using actual predicted task acceleration; preserve physical constraints and track slack. No coefficients fitted or controller implementation approved by this offline result."
+  }
+}

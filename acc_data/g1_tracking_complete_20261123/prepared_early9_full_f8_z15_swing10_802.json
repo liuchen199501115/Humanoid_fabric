@@ -1,0 +1,21 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 0.0004313837021296865,
+  "maximum_foot_rotation_residual_rad": 1.8222192913054463e-06,
+  "maximum_com_ik_residual_m": 0.00045439695654954024,
+  "maximum_added_root_rotation_rad": 0.08660255353572549,
+  "worst_frame": 776,
+  "peak_source_joint_rmse_rad": 0.17961540818214417,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": false,
+  "method": "Earlier left touchdown plus smooth right swing, full-body offline IK",
+  "parent_sha256": "5a81742825bbc3a95c6dd56feee400ef460464fb7277c81235fbfe21ec776905",
+  "right_parent_sha256": "b1820d43c63cdfac327f02b6a37bd7f7412f8df6822203212ca697f4eb9455a8",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false
+}

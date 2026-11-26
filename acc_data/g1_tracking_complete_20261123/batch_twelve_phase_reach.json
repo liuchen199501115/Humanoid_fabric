@@ -1,0 +1,64 @@
+[
+  {
+    "name": "twelve_nopause_search8",
+    "parent": "eleven_return_source_transfer60",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "64",
+      "--support-flatten-start",
+      "4.5",
+      "--late-foot-metric-end",
+      "4.65",
+      "--late-foot-metric-end-ramp",
+      ".04",
+      "--late-foot-metric-end-scale",
+      "4096",
+      "--late-upper-metric-scale",
+      "256",
+      "--foot-contact-search-start",
+      "4.7",
+      "--foot-contact-search-acceleration",
+      "8"
+    ]
+  },
+  {
+    "name": "twelve_pause952_search8",
+    "parent": "eleven_return_source_transfer60",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "64",
+      "--support-flatten-start",
+      "4.5",
+      "--late-foot-metric-end",
+      "4.65",
+      "--late-foot-metric-end-ramp",
+      ".04",
+      "--late-foot-metric-end-scale",
+      "4096",
+      "--late-upper-metric-scale",
+      "256",
+      "--foot-contact-search-start",
+      "4.7",
+      "--foot-contact-search-acceleration",
+      "8",
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12"
+    ]
+  },
+  {
+    "name": "twelve_right_short20",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_swing12_source_source60_short20.npz"
+    ]
+  }
+]

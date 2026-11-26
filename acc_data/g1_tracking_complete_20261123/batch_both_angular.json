@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_com15_both_ang4_cap100",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--late-foot-angular-metric-side",
+      "both",
+      "--late-foot-angular-metric-end",
+      "inf"
+    ]
+  },
+  {
+    "name": "ten_com15_both_ang1_cap100",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--late-foot-angular-metric-side",
+      "both",
+      "--late-foot-angular-metric-end",
+      "inf",
+      "--late-foot-angular-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_com15_both_ang4_cap100_385",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--late-foot-angular-metric-side",
+      "both",
+      "--late-foot-angular-metric-end",
+      "inf",
+      "--late-foot-angular-metric-start",
+      "3.85"
+    ]
+  }
+]

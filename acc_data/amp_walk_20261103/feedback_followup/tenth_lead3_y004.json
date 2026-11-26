@@ -1,0 +1,13 @@
+{
+  "peak_foot_position_residual": 9.555572354007422e-08,
+  "peak_foot_rotation_residual": 6.467214678351373e-07,
+  "peak_source_joint_reference_rmse": 0.15498432247157504,
+  "flatten_fraction": 0.5,
+  "extra_height_m": 0.04,
+  "physical_tracking_certified": false,
+  "preflight_passed": true,
+  "lateral_reference_lead_m": -0.03,
+  "world_roll_reference_correction_rad": -0.05,
+  "additional_reference_height_m": 0.002,
+  "original_source_used_for_landing_audit": true
+}

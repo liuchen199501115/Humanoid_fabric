@@ -1,0 +1,65 @@
+{
+  "run": "formula_source",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_verification/formula_source.npz",
+  "measured_landing_events": 1,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 1,
+  "first_fidelity_exceeded_time_s": 1.334,
+  "last_source_frame": 277.16,
+  "last_time_s": 1.334,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.196,
+      "source_frame": 39.2,
+      "landing_error_m": 0.013658082800527088,
+      "joint_rmse_rad": 0.07961496710777283,
+      "root_position_error_m": 0.009746112860739231,
+      "root_orientation_error_rad": 0.05166437429127055,
+      "prefix_peak_joint_rmse_rad": 0.07961496710777283,
+      "prefix_peak_root_position_error_m": 0.009746112860739231,
+      "prefix_peak_root_orientation_error_rad": 0.051799334798898984,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 2,
+    "swing": "right",
+    "missing_evidence": "landing_position",
+    "landing_window_expired": true,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.0323746381665127,
+    "best_loaded_landing_error_m": 0.04435039311647415,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "execution": {
+    "direct_wbc": false,
+    "tracking_servo": false,
+    "profile": "formula-mit",
+    "scope": "phase",
+    "source_reference": true,
+    "sync_frequency": 4.0,
+    "servo_bandwidth": 30.0
+  },
+  "integrator": {
+    "position_step_error": 2.3748725652694702e-07,
+    "position_continuity_error": 0.0,
+    "velocity_continuity_error": 0.0
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "weight_range": [
+    1.0000026226043701,
+    3.999997615814209
+  ],
+  "peak_pd_torque_norm": 55.576759338378906,
+  "peak_joint_rmse": 0.20007164776325226,
+  "peak_root_position": 0.17690417170524597,
+  "returncode": 1
+}

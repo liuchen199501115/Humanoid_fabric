@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ten_support_y20_margin4",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--tracking-margin-start",
+      "4.08",
+      "--tracking-margin-reaction-time",
+      ".04",
+      "--tracking-margin-maximum",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_support_y20_fast18_margin4",
+    "parent": "ten_support_y20_fast18",
+    "options": [
+      "--tracking-margin-start",
+      "4.08",
+      "--tracking-margin-reaction-time",
+      ".04",
+      "--tracking-margin-maximum",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_support_y20_fast18_margin16",
+    "parent": "ten_support_y20_fast18",
+    "options": [
+      "--tracking-margin-start",
+      "4.08",
+      "--tracking-margin-reaction-time",
+      ".04",
+      "--tracking-margin-maximum",
+      "16"
+    ]
+  }
+]

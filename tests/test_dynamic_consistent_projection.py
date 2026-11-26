@@ -11,6 +11,29 @@ from fabrics_sim.solver.dynamic_consistent_gpu import (
 
 
 class ContactStabilizationTest(unittest.TestCase):
+    def test_joint_correction_cost_preserves_contact_without_mutating_mass(self):
+        mass = torch.eye(NV, dtype=torch.float64)[None]
+        jacobian = torch.zeros(1, MAX_CONTACT_DIM, NV, dtype=mass.dtype)
+        jacobian[0, 0, 0] = jacobian[0, 0, 6] = 1.
+        mask = torch.zeros(1, MAX_CONTACT_DIM, dtype=mass.dtype)
+        mask[0, 0] = 1.
+        acceleration = torch.zeros(1, NV, dtype=mass.dtype)
+        acceleration[0, 6] = 2.
+        kwargs = dict(acc_fabric=acceleration, mass_matrix=mass,
+                      stacked_contact_jacobian=jacobian, active_row_mask=mask,
+                      stacked_jdot_v=torch.zeros_like(mask))
+        ordinary, _, _ = dynamically_consistent_projection_masked(**kwargs,
+            config=ProjectionConfig(regularization=1e-10))
+        weighted, _, residual = dynamically_consistent_projection_masked(**kwargs,
+            config=ProjectionConfig(regularization=1e-10, joint_correction_weight=10.))
+        self.assertLess(float(residual.abs().max()), 1e-8)
+        self.assertLess(float((weighted[0, 6]-2).abs()), float((ordinary[0, 6]-2).abs()))
+        torch.testing.assert_close(mass, torch.eye(NV, dtype=mass.dtype)[None])
+        for invalid in (-1., float('inf'), float('nan')):
+            with self.assertRaises(ValueError):
+                dynamically_consistent_projection_masked(**kwargs,
+                    config=ProjectionConfig(joint_correction_weight=invalid))
+
     def test_mask_and_acceleration_limit_apply_per_foot(self):
         dtype = torch.float64
         mass = torch.eye(NV, dtype=dtype).unsqueeze(0)

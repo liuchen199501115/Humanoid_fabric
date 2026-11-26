@@ -1,0 +1,377 @@
+[
+  {
+    "time": 2.1,
+    "pairs": [
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_1",
+          "right_hip_pitch_link_cover_0"
+        ],
+        "sphere_distance": 0.10750773549079895,
+        "convex_distance": 0.16944578289985657,
+        "sphere_barrier_violation": 17.002521514892578,
+        "convex_barrier_violation": 17.830787658691406
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_0",
+          "right_hip_pitch_link_cover_1"
+        ],
+        "sphere_distance": 0.09061835706233978,
+        "convex_distance": 0.16944578289985657,
+        "sphere_barrier_violation": 16.79547119140625,
+        "convex_barrier_violation": 17.830787658691406
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_pitch_link_cover_0"
+        ],
+        "sphere_distance": 0.11972212791442871,
+        "convex_distance": 0.16944578289985657,
+        "sphere_barrier_violation": 16.79159927368164,
+        "convex_barrier_violation": 17.830787658691406
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_1",
+          "right_hip_pitch_link_cover_1"
+        ],
+        "sphere_distance": 0.10187891125679016,
+        "convex_distance": 0.16944578289985657,
+        "sphere_barrier_violation": 16.689838409423828,
+        "convex_barrier_violation": 17.830787658691406
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_0",
+          "right_hip_pitch_link_cover_2"
+        ],
+        "sphere_distance": 0.08467283844947815,
+        "convex_distance": 0.16944578289985657,
+        "sphere_barrier_violation": 16.620616912841797,
+        "convex_barrier_violation": 17.830787658691406
+      }
+    ]
+  },
+  {
+    "time": 2.3000000000000003,
+    "pairs": [
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.18886202573776245,
+        "convex_distance": 0.23155459761619568,
+        "sphere_barrier_violation": 28.42745590209961,
+        "convex_barrier_violation": 15.975686073303223
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_1"
+        ],
+        "sphere_distance": 0.22078171372413635,
+        "convex_distance": 0.23155459761619568,
+        "sphere_barrier_violation": 27.028846740722656,
+        "convex_barrier_violation": 15.975686073303223
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_roll_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_roll_link_cover_0"
+        ],
+        "sphere_distance": 0.1788962036371231,
+        "convex_distance": 0.19247551262378693,
+        "sphere_barrier_violation": 25.032859802246094,
+        "convex_barrier_violation": 11.629777908325195
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_1",
+          "left_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.179045170545578,
+        "convex_distance": 0.23155459761619568,
+        "sphere_barrier_violation": 25.029773712158203,
+        "convex_barrier_violation": 15.975686073303223
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_0"
+        ],
+        "sphere_distance": 0.2635153532028198,
+        "convex_distance": 0.23155459761619568,
+        "sphere_barrier_violation": 23.749229431152344,
+        "convex_barrier_violation": 15.975686073303223
+      }
+    ]
+  },
+  {
+    "time": 2.5,
+    "pairs": [
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.09393817186355591,
+        "convex_distance": 0.1826038658618927,
+        "sphere_barrier_violation": 25.045570373535156,
+        "convex_barrier_violation": 17.04431915283203
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_1",
+          "left_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.09486597776412964,
+        "convex_distance": 0.1826038658618927,
+        "sphere_barrier_violation": 22.836681365966797,
+        "convex_barrier_violation": 17.04431915283203
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_0",
+          "left_hip_pitch_link_cover_0"
+        ],
+        "sphere_distance": 0.099443718791008,
+        "convex_distance": 0.1596532016992569,
+        "sphere_barrier_violation": 22.202442169189453,
+        "convex_barrier_violation": 14.57193374633789
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_pitch_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_1",
+          "left_hip_pitch_link_cover_0"
+        ],
+        "sphere_distance": 0.11269232630729675,
+        "convex_distance": 0.1596532016992569,
+        "sphere_barrier_violation": 22.10157012939453,
+        "convex_barrier_violation": 14.57193374633789
+      },
+      {
+        "links": [
+          "left_rubber_hand",
+          "left_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "left_rubber_hand_cover_2",
+          "left_hip_yaw_link_cover_1"
+        ],
+        "sphere_distance": 0.12650325894355774,
+        "convex_distance": 0.1826038658618927,
+        "sphere_barrier_violation": 21.852981567382812,
+        "convex_barrier_violation": 17.04431915283203
+      }
+    ]
+  },
+  {
+    "time": 2.7,
+    "pairs": [
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_1"
+        ],
+        "sphere_distance": 0.2438734471797943,
+        "convex_distance": 0.2337149977684021,
+        "sphere_barrier_violation": 32.71440505981445,
+        "convex_barrier_violation": 29.283493041992188
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.20849239826202393,
+        "convex_distance": 0.2337149977684021,
+        "sphere_barrier_violation": 32.05035400390625,
+        "convex_barrier_violation": 29.283493041992188
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_0"
+        ],
+        "sphere_distance": 0.28894537687301636,
+        "convex_distance": 0.2337149977684021,
+        "sphere_barrier_violation": 31.1927547454834,
+        "convex_barrier_violation": 29.283493041992188
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_roll_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_roll_link_cover_0"
+        ],
+        "sphere_distance": 0.18165983259677887,
+        "convex_distance": 0.18949013948440552,
+        "sphere_barrier_violation": 29.99083709716797,
+        "convex_barrier_violation": 14.728728294372559
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_1",
+          "right_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.19843322038650513,
+        "convex_distance": 0.2337149977684021,
+        "sphere_barrier_violation": 28.767887115478516,
+        "convex_barrier_violation": 29.283493041992188
+      }
+    ]
+  },
+  {
+    "time": 3.0,
+    "pairs": [
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_0"
+        ],
+        "sphere_distance": 0.25178903341293335,
+        "convex_distance": 0.24079754948616028,
+        "sphere_barrier_violation": 58.778011322021484,
+        "convex_barrier_violation": 36.58897399902344
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_1"
+        ],
+        "sphere_distance": 0.21391716599464417,
+        "convex_distance": 0.24079754948616028,
+        "sphere_barrier_violation": 57.123138427734375,
+        "convex_barrier_violation": 36.58897399902344
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_1",
+          "right_hip_yaw_link_cover_0"
+        ],
+        "sphere_distance": 0.2587234377861023,
+        "convex_distance": 0.24079754948616028,
+        "sphere_barrier_violation": 52.247745513916016,
+        "convex_barrier_violation": 36.58897399902344
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_1",
+          "right_hip_yaw_link_cover_1"
+        ],
+        "sphere_distance": 0.2142154574394226,
+        "convex_distance": 0.24079754948616028,
+        "sphere_barrier_violation": 52.2410774230957,
+        "convex_barrier_violation": 36.58897399902344
+      },
+      {
+        "links": [
+          "right_rubber_hand",
+          "right_hip_yaw_link"
+        ],
+        "sphere_names": [
+          "right_rubber_hand_cover_2",
+          "right_hip_yaw_link_cover_2"
+        ],
+        "sphere_distance": 0.188004732131958,
+        "convex_distance": 0.24079754948616028,
+        "sphere_barrier_violation": 51.657283782958984,
+        "convex_barrier_violation": 36.58897399902344
+      }
+    ]
+  }
+]

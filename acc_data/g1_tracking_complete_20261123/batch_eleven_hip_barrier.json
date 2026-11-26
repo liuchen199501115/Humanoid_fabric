@@ -1,0 +1,50 @@
+[
+  {
+    "name": "eleven_upper64_hip8",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--hip-yaw-barrier-start",
+      "4.5",
+      "--hip-yaw-barrier-bandwidth",
+      "8",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  },
+  {
+    "name": "eleven_upper64_hip12",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--hip-yaw-barrier-start",
+      "4.5",
+      "--hip-yaw-barrier-bandwidth",
+      "12",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  },
+  {
+    "name": "eleven_upper64_hip20",
+    "parent": "eleven_leg16_lateupper64",
+    "options": [
+      "--hip-yaw-barrier-start",
+      "4.5",
+      "--hip-yaw-barrier-bandwidth",
+      "20",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  }
+]

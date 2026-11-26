@@ -1,0 +1,11 @@
+{
+  "all_other_histories_exact": true,
+  "checked_count": 152,
+  "differences": [],
+  "changed_diagnostic_fields": [
+    "history_com_acc_requested",
+    "history_com_task_metric",
+    "history_com_request_source"
+  ],
+  "saved_qp_com_diagnostic_exact": true
+}

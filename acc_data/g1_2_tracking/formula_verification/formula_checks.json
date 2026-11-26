@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "zero_error_neutral_weights",
+    "bounded_smooth_response",
+    "bounded_saturation",
+    "nonfinite_state_rejected",
+    "analytical_MIT_fixed_point_and_zero_base_correction",
+    "nonconvergence_reported",
+    "profile_execution_and_full_clip_guards",
+    "invalid_profile_combinations_rejected",
+    "original_test_g1_unchanged"
+  ],
+  "target_sha256": "061de1b8d6cfbf8c674b45678f7a16c8695f4a27d858e523fc037212f475d1b7"
+}

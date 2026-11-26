@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ten_rooty100_commax0_816",
+    "parent": "ten_rooty100_commax3_816",
+    "options": [
+      "--maximum-support-acceleration",
+      "0"
+    ]
+  },
+  {
+    "name": "ten_rooty100_commax1_816",
+    "parent": "ten_rooty100_commax3_816",
+    "options": [
+      "--maximum-support-acceleration",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_rooty100_comrange6_0_816",
+    "parent": "ten_rooty100_commax3_816",
+    "options": [
+      "--maximum-support-acceleration",
+      "0",
+      "--minimum-support-acceleration",
+      "-6"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "before_source_frame": 740,
+  "history_rows": 1744,
+  "compared_fields": 154,
+  "different_fields": [],
+  "exact_physics_prefix": true,
+  "scope": "Headless no-HDRI candidate compared before its controller changes activate; complete replay remains required for any promoted controller."
+}

@@ -1,0 +1,59 @@
+{
+  "parent": "thirteenth_force_fit150",
+  "scope": "Upper-body-only optimistic full-sole inverse-dynamics fit over source frames 960..1011. No change to root or legs; no claim about stance velocity or observed point/line geometry.",
+  "iterations": [
+    {
+      "iteration": 0,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 5.407896352949138e-13,
+        "iterations": 18,
+        "accepted": true
+      },
+      "peak_linear_slack": 1.990196980295917,
+      "peak_exact_normalized_violation": 2.0018471935847244,
+      "peak_upper_offset": 0.039999999998638326
+    },
+    {
+      "iteration": 1,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.454392162258955e-14,
+        "iterations": 18,
+        "accepted": true
+      },
+      "peak_linear_slack": 1.2463346462999862,
+      "peak_exact_normalized_violation": 1.2411035519611469,
+      "peak_upper_offset": 0.07999999999765044
+    },
+    {
+      "iteration": 2,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 9.80537873118692e-12,
+        "iterations": 19,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.7774867807728914,
+      "peak_exact_normalized_violation": 0.8011598743354642,
+      "peak_upper_offset": 0.11622661044326035
+    },
+    {
+      "iteration": 3,
+      "solver": {
+        "status": "Solved",
+        "constraint_residual": 1.6693096037429066e-17,
+        "iterations": 21,
+        "accepted": true
+      },
+      "peak_linear_slack": 0.6126287455173641,
+      "peak_exact_normalized_violation": 0.6259366214739992,
+      "peak_upper_offset": 0.1309430218238421
+    }
+  ],
+  "peak_raw_reference_joint_rmse": 0.15720312653959345,
+  "minimum_dense_joint_margin": 0.09175873261192857,
+  "peak_dense_speed_fraction": 0.5827343233316568,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

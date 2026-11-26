@@ -1,0 +1,30 @@
+[
+  {
+    "name": "eleven_source60_foot1024_upper256",
+    "parent": "eleven_source60_flat64_foot1024",
+    "options": [
+      "--late-upper-metric-scale",
+      "256"
+    ]
+  },
+  {
+    "name": "eleven_source60_foot4096_upper256",
+    "parent": "eleven_source60_flat64_foot4096",
+    "options": [
+      "--late-upper-metric-scale",
+      "256"
+    ]
+  },
+  {
+    "name": "eleven_source60_foot4096_late_upper256",
+    "parent": "eleven_source60_flat64_foot4096",
+    "options": [
+      "--late-upper-metric-scale",
+      "256",
+      "--late-foot-metric-end",
+      "4.65",
+      "--late-foot-metric-end-ramp",
+      ".04"
+    ]
+  }
+]

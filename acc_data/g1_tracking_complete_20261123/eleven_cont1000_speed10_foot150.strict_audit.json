@@ -1,0 +1,42 @@
+{
+  "name": "eleven_cont1000_speed10_foot150",
+  "landings": 11,
+  "source_frame": 1017.8898697328899,
+  "prefix_end_time_s": 4.0,
+  "history_equal_prefix_fields": 150,
+  "different_prefix_fields": [
+    "history_foot_linear_feedback_blend",
+    "history_foot_linear_feedback_limit",
+    "history_torque_step_change",
+    "history_predicted_joint_velocity",
+    "history_qd",
+    "history_qdd_qp",
+    "history_qdd_fabric",
+    "history_qdd_projected",
+    "history_qdd_qp_reference",
+    "history_qdd_predicted",
+    "history_qdd_nominal",
+    "history_joint_velocity_desired",
+    "history_integration_seed_velocity",
+    "history_torque_feedforward",
+    "history_torque_qp_total",
+    "history_fabric_priority_contact_error",
+    "history_tracking_tube_soft_slack"
+  ],
+  "one_native_qp": true,
+  "exact_applied_qp_torque": true,
+  "unchanged_fidelity": true,
+  "next_step": {
+    "step": 12,
+    "swing": "right",
+    "missing_evidence": "loaded_landing",
+    "landing_window_expired": false,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.08305170815834469,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  }
+}

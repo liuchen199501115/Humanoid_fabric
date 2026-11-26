@@ -1,0 +1,407 @@
+{
+  "source": "acc_data/g1_projected_acc_qp_20261114/continue_20261114_0338/baseline_snapshots.qp_0600.npz",
+  "kind": "same_state_offline_only",
+  "time_s": 1.2,
+  "com_y_target": -4.023087024688721,
+  "root_acceleration_target": [
+    4.820535535290738,
+    -1.8088932619403644,
+    -5.935728090056782,
+    3.0873504329936834,
+    -2.1471310210091588,
+    -7.466610643107331
+  ],
+  "cases": [
+    {
+      "name": "original",
+      "accepted": true,
+      "native_solves": [
+        1
+      ],
+      "max_constraint_violation": 6.288303211476887e-13,
+      "com_y_acceleration": 0.24081216706565134,
+      "root_acceleration": [
+        2.668115458576747,
+        0.6264822463221325,
+        -5.222193535097572,
+        2.4310713138538356,
+        -1.9907093622865053,
+        -7.7318631727107405
+      ],
+      "original_objective_cost_by_group": {
+        "base_translation": 553.6548862369045,
+        "base_rotation": 26.27644636264088,
+        "joints": 1425.0947335271178,
+        "contact_wrench": 1.6495322475496963,
+        "torque": 0.0036221711167774436
+      },
+      "contact_wrench": [
+        1.9550669940009837,
+        9.248133746425696,
+        180.4845019801982,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_joint_acceleration": 76.47756832178158,
+      "largest_joint_acceleration_costs": [
+        {
+          "joint": "waist_roll_joint",
+          "target": 49.58501434931195,
+          "solved": 13.21404311439748,
+          "cost": 661.4244357092603
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "target": 19.029109999210363,
+          "solved": -2.438801398952954,
+          "cost": 230.43584033530453
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "target": 0.3718491650465878,
+          "solved": 21.117109491420887,
+          "cost": 215.18312818743223
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "target": -38.71284428276128,
+          "solved": -21.88898120870274,
+          "cost": 141.52132588851924
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "target": 6.5937996729850115,
+          "solved": -5.340427902369422,
+          "cost": 71.21296512306881
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "target": 29.366828161858436,
+          "solved": 19.818124214729,
+          "cost": 45.58891912383606
+        }
+      ],
+      "torque_at_variable_box_bound": []
+    },
+    {
+      "name": "exact_com_y",
+      "accepted": true,
+      "native_solves": [
+        1
+      ],
+      "max_constraint_violation": 1.2470025012589758e-11,
+      "com_y_acceleration": -4.02308702468872,
+      "root_acceleration": [
+        2.9101972042563578,
+        -2.1615482872940803,
+        -3.8211646604097376,
+        0.7032215011544289,
+        -2.1205128264140547,
+        -7.364773862435175
+      ],
+      "original_objective_cost_by_group": {
+        "base_translation": 412.25683431892446,
+        "base_rotation": 284.7575039382828,
+        "joints": 5934.789808361377,
+        "contact_wrench": 4.1887340130226125,
+        "torque": 0.014474996662742403
+      },
+      "contact_wrench": [
+        104.77616776715213,
+        -104.77616776715213,
+        246.95979307046096,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_joint_acceleration": 64.14344110414699,
+      "largest_joint_acceleration_costs": [
+        {
+          "joint": "right_hip_roll_joint",
+          "target": 6.5937996729850115,
+          "solved": -64.14344110414699,
+          "cost": 2501.881118259583
+        },
+        {
+          "joint": "waist_roll_joint",
+          "target": 49.58501434931195,
+          "solved": -11.264434686606789,
+          "cost": 1851.3295753151554
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "target": 19.029109999210363,
+          "solved": -16.172365306110773,
+          "cost": 619.5725514074973
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "target": 19.228986584612098,
+          "solved": 41.86415327353982,
+          "cost": 256.1756416931565
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "target": 0.3718491650465878,
+          "solved": -21.309419751221885,
+          "cost": 235.03894594848504
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "target": 29.366828161858436,
+          "solved": 48.564719693976244,
+          "cost": 184.2797039189995
+        }
+      ],
+      "torque_at_variable_box_bound": []
+    },
+    {
+      "name": "rotation_weight10",
+      "accepted": true,
+      "native_solves": [
+        1
+      ],
+      "max_constraint_violation": 1.0089706847793423e-12,
+      "com_y_acceleration": -0.052407284672440047,
+      "root_acceleration": [
+        2.8198794202859525,
+        0.6091464584326212,
+        -4.9659615393376235,
+        -1.8582439695768684,
+        -1.464982417041207,
+        -9.74180003105887
+      ],
+      "original_objective_cost_by_group": {
+        "base_translation": 539.4994125300561,
+        "base_rotation": 1505.0358882343537,
+        "joints": 1136.8088443201682,
+        "contact_wrench": 1.8488660942877397,
+        "torque": 0.0033146820762475515
+      },
+      "contact_wrench": [
+        12.388275542903491,
+        2.6207805398555117,
+        190.92111680729823,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_joint_acceleration": 76.07146754491791,
+      "largest_joint_acceleration_costs": [
+        {
+          "joint": "waist_roll_joint",
+          "target": 49.58501434931195,
+          "solved": 17.6349971991152,
+          "cost": 510.40230835072975
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "target": 19.029109999210363,
+          "solved": -3.081314172148902,
+          "cost": 244.43567295414186
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "target": 0.3718491650465878,
+          "solved": 18.101067020158613,
+          "cost": 157.162740039594
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "target": -38.71284428276128,
+          "solved": -23.699944086111593,
+          "cost": 112.693698850868
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "target": 6.5937996729850115,
+          "solved": -2.8676195012051777,
+          "cost": 44.75927115409316
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "target": 29.366828161858436,
+          "solved": 22.55129976000251,
+          "cost": 23.22573692396603
+        }
+      ],
+      "torque_at_variable_box_bound": []
+    },
+    {
+      "name": "joint_weight01",
+      "accepted": true,
+      "native_solves": [
+        1
+      ],
+      "max_constraint_violation": 8.704148513061227e-14,
+      "com_y_acceleration": -0.22325007909325512,
+      "root_acceleration": [
+        4.45060277057658,
+        -1.3992795113448662,
+        -5.782886137805358,
+        3.0121109933419263,
+        -2.142399226033369,
+        -7.491197336160039
+      ],
+      "original_objective_cost_by_group": {
+        "base_translation": 16.399717036697083,
+        "base_rotation": 0.314393435047503,
+        "joints": 2720.9779855839824,
+        "contact_wrench": 1.3883779277245731,
+        "torque": 0.0030058489728675584
+      },
+      "contact_wrench": [
+        14.774825525102544,
+        -2.573540772688579,
+        165.12938666117842,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_joint_acceleration": 77.34250397021023,
+      "largest_joint_acceleration_costs": [
+        {
+          "joint": "waist_roll_joint",
+          "target": 49.58501434931195,
+          "solved": 2.5228634627644064,
+          "cost": 1107.424130457104
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "target": 19.029109999210363,
+          "solved": -23.43804017182915,
+          "cost": 901.7303235542303
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "target": 0.3718491650465878,
+          "solved": 24.9745346430041,
+          "cost": 302.6463690097164
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "target": -38.71284428276128,
+          "solved": -15.926155934970984,
+          "cost": 259.61684254624333
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "target": 6.5937996729850115,
+          "solved": -4.143384255007718,
+          "cost": 57.643616995331904
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "target": 19.228986584612098,
+          "solved": 25.925473766293138,
+          "cost": 22.421492708679466
+        }
+      ],
+      "torque_at_variable_box_bound": []
+    },
+    {
+      "name": "wrench_weight0",
+      "accepted": true,
+      "native_solves": [
+        1
+      ],
+      "max_constraint_violation": 3.0091484859440243e-12,
+      "com_y_acceleration": 0.2405856295550171,
+      "root_acceleration": [
+        2.668243657357186,
+        0.6264844521757954,
+        -5.220091103311804,
+        2.4306555936294805,
+        -1.990426590788132,
+        -7.7317751206359135
+      ],
+      "original_objective_cost_by_group": {
+        "base_translation": 553.7780672892717,
+        "base_rotation": 26.305829795132247,
+        "joints": 1424.9415135261424,
+        "contact_wrench": 1.6508307450731778,
+        "torque": 0.003622144180491612
+      },
+      "contact_wrench": [
+        1.9720900691721712,
+        9.246249075280465,
+        180.55563209568083,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "peak_joint_acceleration": 76.47971479342469,
+      "largest_joint_acceleration_costs": [
+        {
+          "joint": "waist_roll_joint",
+          "target": 49.58501434931195,
+          "solved": 13.212989818297228,
+          "cost": 661.4627457044508
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "target": 19.029109999210363,
+          "solved": -2.434444555972582,
+          "cost": 230.34231741374379
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "target": 0.3718491650465878,
+          "solved": 21.109790828441895,
+          "cost": 215.03132724830516
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "target": -38.71284428276128,
+          "solved": -21.889249503534952,
+          "cost": 141.516812164476
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "target": 6.5937996729850115,
+          "solved": -5.34233128979895,
+          "cost": 71.23568241597599
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "target": 29.366828161858436,
+          "solved": 19.81682512129706,
+          "cost": 45.60132463864468
+        }
+      ],
+      "torque_at_variable_box_bound": []
+    }
+  ],
+  "objective_cost_note": "Squared residual costs under the original diagonal Hessian; common additive constants omitted. Torque variable bounds are distinct from effort inequalities; all original inequality rows remain in every solve."
+}

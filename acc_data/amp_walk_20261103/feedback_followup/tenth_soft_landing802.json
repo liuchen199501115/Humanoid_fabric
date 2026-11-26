@@ -1,0 +1,10 @@
+{
+  "descent_end_frame": 802,
+  "peak_position_residual": 7.213862710052142e-08,
+  "peak_orientation_residual": 5.849382804425976e-08,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 0.07870985567569733,
+  "minimum_dense_native_clearance": -0.0003090283224953111,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

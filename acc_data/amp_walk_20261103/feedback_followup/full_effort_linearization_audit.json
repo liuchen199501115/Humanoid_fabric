@@ -1,0 +1,23 @@
+{
+  "samples": [
+    {
+      "frame": 850.0,
+      "relative_error": 0.0008349604879167521,
+      "maximum_absolute_error": 1.4112254377054295e-05,
+      "maximum_force_torque_variation": 0.018889884826570835
+    },
+    {
+      "frame": 870.0,
+      "relative_error": 0.004199012485852685,
+      "maximum_absolute_error": 0.00010412380457393289,
+      "maximum_force_torque_variation": 0.03466429711274088
+    },
+    {
+      "frame": 930.0,
+      "relative_error": 0.0008018553964894211,
+      "maximum_absolute_error": 1.3214497562124422e-05,
+      "maximum_force_torque_variation": 0.019855853309383775
+    }
+  ],
+  "passed": true
+}

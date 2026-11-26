@@ -1,0 +1,23 @@
+{
+  "name": "posture10_capped150",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--no-preserve-reference-acceleration"
+  ],
+  "measured_steps": 1,
+  "last_time_s": 0.234,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 0.234,
+    "source_frame": 46.800000000000004,
+    "joint_rmse_rad": 0.20125603675842285,
+    "root_position_m": 0.02476193942129612,
+    "root_orientation_rad": 0.23732295084311017
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.20125603675842285
+}

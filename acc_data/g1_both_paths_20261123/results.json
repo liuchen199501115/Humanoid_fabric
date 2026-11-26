@@ -1,0 +1,183 @@
+{
+  "expected_runs": [
+    "baseline",
+    "com_original",
+    "com_delayed",
+    "fabric_metric"
+  ],
+  "completed_runs": 4,
+  "controller_sources_identical_across_runs": true,
+  "scope": "Fresh independent closed-loop runs from the start. Same source/clock/physics/acceptance thresholds. World-Y COM position error. Return code 1 may be an intentionally stopped failed tracking trial.",
+  "trials": [
+    {
+      "name": "baseline",
+      "tracking_evaluated": true,
+      "options": [],
+      "measured_steps": 3,
+      "stop_time_s": 1.356,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.17517568171024323,
+      "peak_root_position_m": 0.18511952459812164,
+      "peak_root_orientation_rad": 0.18504788744632628,
+      "final_com_y_error_m": 0.16556663811206818,
+      "previous_run": "baseline_v2",
+      "bitwise_equal_to_previous": {
+        "history_time": true,
+        "history_q": true,
+        "history_qd": true,
+        "history_qdd_qp": true,
+        "servo_torque": true
+      },
+      "failure_qp_bitwise_equal": {
+        "problem_H": true,
+        "problem_h": true,
+        "problem_G": true,
+        "problem_b": true,
+        "problem_A_eq": true,
+        "problem_b_eq": true,
+        "problem_lb": true,
+        "problem_ub": true
+      },
+      "single_qp": true,
+      "no_task_cache": true,
+      "applied_torque_equals_qp": true,
+      "matched_time_com_y_comparison": {
+        "end_time_s": 1.354,
+        "trial": {
+          "final_error_m": 0.16556663811206818,
+          "rmse_m": 0.061542101204395294
+        },
+        "baseline": {
+          "final_error_m": 0.16556663811206818,
+          "rmse_m": 0.061542101204395294
+        }
+      }
+    },
+    {
+      "name": "com_original",
+      "tracking_evaluated": true,
+      "options": [
+        "--qp-com-feedback-scale",
+        "1"
+      ],
+      "measured_steps": 2,
+      "stop_time_s": 0.768,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20091339945793152,
+      "peak_root_position_m": 0.11174870282411575,
+      "peak_root_orientation_rad": 0.1334472575862072,
+      "final_com_y_error_m": 0.06255514919757843,
+      "previous_run": "feedback1_v2",
+      "bitwise_equal_to_previous": {
+        "history_time": true,
+        "history_q": true,
+        "history_qd": true,
+        "history_qdd_qp": true,
+        "servo_torque": true
+      },
+      "failure_qp_bitwise_equal": {},
+      "single_qp": true,
+      "no_task_cache": true,
+      "applied_torque_equals_qp": true,
+      "matched_time_com_y_comparison": {
+        "end_time_s": 0.768,
+        "trial": {
+          "final_error_m": 0.06255514919757843,
+          "rmse_m": 0.030096622183918953
+        },
+        "baseline": {
+          "final_error_m": 0.024442996829748154,
+          "rmse_m": 0.012208851985633373
+        }
+      }
+    },
+    {
+      "name": "com_delayed",
+      "tracking_evaluated": true,
+      "options": [
+        "--qp-com-feedback-scale",
+        "4",
+        "--qp-com-feedback-start",
+        ".7",
+        "--qp-com-feedback-ramp",
+        ".1"
+      ],
+      "measured_steps": 2,
+      "stop_time_s": 0.9460000000000001,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.2021445333957672,
+      "peak_root_position_m": 0.07822755724191666,
+      "peak_root_orientation_rad": 0.07116284547575033,
+      "final_com_y_error_m": 0.03397566080093384,
+      "previous_run": "feedback4_late",
+      "bitwise_equal_to_previous": {
+        "history_time": true,
+        "history_q": true,
+        "history_qd": true,
+        "history_qdd_qp": true,
+        "servo_torque": true
+      },
+      "failure_qp_bitwise_equal": {},
+      "single_qp": true,
+      "no_task_cache": true,
+      "applied_torque_equals_qp": true,
+      "matched_time_com_y_comparison": {
+        "end_time_s": 0.9460000000000001,
+        "trial": {
+          "final_error_m": 0.03397566080093384,
+          "rmse_m": 0.016393151134252548
+        },
+        "baseline": {
+          "final_error_m": 0.050286076962947845,
+          "rmse_m": 0.01888924278318882
+        }
+      }
+    },
+    {
+      "name": "fabric_metric",
+      "tracking_evaluated": true,
+      "options": [
+        "--qp-fabric-metric"
+      ],
+      "measured_steps": 1,
+      "stop_time_s": 0.334,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.17085261642932892,
+      "peak_root_position_m": 0.020987775176763535,
+      "peak_root_orientation_rad": 0.01962544711259192,
+      "final_com_y_error_m": 0.012757919728755951,
+      "previous_run": "fabric_metric",
+      "bitwise_equal_to_previous": {
+        "history_time": true,
+        "history_q": true,
+        "history_qd": true,
+        "history_qdd_qp": true,
+        "servo_torque": true
+      },
+      "failure_qp_bitwise_equal": {
+        "problem_H": true,
+        "problem_h": true,
+        "problem_G": true,
+        "problem_b": true,
+        "problem_A_eq": true,
+        "problem_b_eq": true,
+        "problem_lb": true,
+        "problem_ub": true
+      },
+      "single_qp": true,
+      "no_task_cache": true,
+      "applied_torque_equals_qp": true,
+      "matched_time_com_y_comparison": {
+        "end_time_s": 0.332,
+        "trial": {
+          "final_error_m": 0.012757919728755951,
+          "rmse_m": 0.006352045573294163
+        },
+        "baseline": {
+          "final_error_m": 0.009418897330760956,
+          "rmse_m": 0.004244549665600061
+        }
+      }
+    }
+  ]
+}

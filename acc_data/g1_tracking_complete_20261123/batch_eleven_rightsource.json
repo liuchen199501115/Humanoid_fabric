@@ -1,0 +1,26 @@
+[
+  {
+    "name": "eleven_cont1000_rightsource",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_swing12_source_ramp24.npz"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_speed10_rightsource",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_swing12_source_ramp24.npz"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_pause12_rightsource",
+    "parent": "eleven_cont1000_speed10_pause12",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_swing12_source_ramp24.npz"
+    ]
+  }
+]

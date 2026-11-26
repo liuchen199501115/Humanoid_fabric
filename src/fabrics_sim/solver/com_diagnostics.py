@@ -23,10 +23,29 @@ def com_acceleration_snapshot(fabric, q, velocity, accelerations):
     com_velocity = torch.bmm(jac, velocity.unsqueeze(-1)).squeeze(-1)
     curvature = torch.bmm((jac_eps - jac) / eps, velocity.unsqueeze(-1)).squeeze(-1)
     params = fabric.fabric_params["center_of_mass_attractor"]
-    requests = getattr(getattr(fabric, "dynamics_tasks", None), "last_requests", None)
+    dynamics = getattr(fabric, "dynamics_tasks", None)
+    acceleration_only = dynamics is not None and not getattr(dynamics, 'cache_task_requests', True)
+    requests = None if acceleration_only else getattr(dynamics, "last_requests", None)
     request = next((task for task in (requests or ()) if task.name == "center_of_mass"), None)
-    if request is not None:
+    snapshot = getattr(dynamics, 'last_snapshot', None)
+    metric = torch.as_tensor(params["metric"], device=q.device) * params["toggle"]
+    if snapshot is not None and 'com_composed_desired' in snapshot:
+        # A single-QP policy can discard its leaves while retaining these
+        # detached numbers. They describe the final COM objective before
+        # policy composition, not the projected generalized acceleration.
+        requested = snapshot['com_composed_desired']
+        metric = snapshot['com_composed_metric'].diagonal(dim1=-2, dim2=-1)
+        request_source = "composed_policy_task"
+    elif acceleration_only:
+        # Use the actual QP reference, including contact projection when used.
+        reference = accelerations.get('qp_reference', accelerations['fabric'])
+        requested = torch.bmm(jac, reference.unsqueeze(-1)).squeeze(-1) + curvature
+        request_source = ("qp_acceleration_reference" if 'qp_reference' in accelerations
+                          else "composed_fabric_acceleration")
+    elif request is not None:
         requested = request.desired
+        if hasattr(request, 'metric'):
+            metric = request.metric.diagonal(dim1=-2, dim2=-1)
         request_source = "wbc_task_request"
     else:
         attractor = CenterOfMassAttractor(True, dict(params), q.device, graph_capturable=False)
@@ -37,8 +56,12 @@ def com_acceleration_snapshot(fabric, q, velocity, accelerations):
         "com_velocity": com_velocity,
         "com_curvature": curvature,
         "com_acc_requested": requested,
-        "com_task_metric": torch.as_tensor(params["metric"], device=q.device) * params["toggle"],
+        "com_task_metric": metric,
     }
+    if snapshot is not None and 'com_acc_desired' in snapshot:
+        # Separate original feedback from the blended generalized QP center.
+        result['com_acc_original_desired'] = snapshot['com_acc_desired']
+        result['com_feedback_curvature'] = snapshot['com_jac_bias']
     for name, acceleration in accelerations.items():
         result["com_acc_" + name] = torch.bmm(jac, acceleration.unsqueeze(-1)).squeeze(-1) + curvature
     diagnostic = {key: value.detach().cpu().numpy().copy() for key, value in result.items()}

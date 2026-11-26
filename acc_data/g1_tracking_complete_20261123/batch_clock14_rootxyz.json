@@ -1,0 +1,48 @@
+[
+  {
+    "name": "ten_anchor_sh16_rootxyz1000",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--root-position-task-late-weight",
+      "1000",
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xyz"
+    ]
+  },
+  {
+    "name": "ten_anchor_sh16_rootxyz3000",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--root-position-task-late-weight",
+      "3000",
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xyz"
+    ]
+  },
+  {
+    "name": "ten_sh16_rootxyz1000",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--root-position-task-late-weight",
+      "1000",
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xyz",
+      "--qp-late-iteration-start",
+      "4.02",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  }
+]

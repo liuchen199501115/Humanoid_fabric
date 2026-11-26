@@ -1,0 +1,230 @@
+{
+  "scope": "Immediate saved response only; finite differences include contact impacts and discretization.",
+  "samples": [
+    {
+      "run": "flatten_support415_run",
+      "time_s": 4.0,
+      "frame": 917.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        -0.04623480141162872,
+        -0.4527665078639984,
+        5.620777130126953,
+        33.826866149902344,
+        -15.874615669250488,
+        -34.654876708984375
+      ],
+      "observed_root_acceleration": [
+        -0.050514932721853256,
+        -0.45880672335624695,
+        5.559667587280273,
+        33.953739166259766,
+        -15.697925567626953,
+        -34.05192184448242
+      ],
+      "root_linear_error_norm": 0.061556316912174225,
+      "root_angular_error_norm": 0.6409919857978821,
+      "joint_acceleration_error_rmse": 3.4263696670532227
+    },
+    {
+      "run": "rolling_contact_damping8",
+      "time_s": 4.3,
+      "frame": 989.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        1.307039499282837,
+        3.1284539699554443,
+        -3.4928090572357178,
+        2.5842971801757812,
+        -21.178144454956055,
+        11.269416809082031
+      ],
+      "observed_root_acceleration": [
+        1.186668872833252,
+        3.090679407119751,
+        -3.382094144821167,
+        2.6308891773223877,
+        -20.678489685058594,
+        9.983643531799316
+      ],
+      "root_linear_error_norm": 0.167850524187088,
+      "root_angular_error_norm": 1.3802313804626465,
+      "joint_acceleration_error_rmse": 3.069133996963501
+    },
+    {
+      "run": "rolling_pelvis_after12",
+      "time_s": 4.3,
+      "frame": 989.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        1.0339866876602173,
+        3.091602325439453,
+        -2.5196688175201416,
+        36.83634948730469,
+        -9.87825870513916,
+        8.648759841918945
+      ],
+      "observed_root_acceleration": [
+        0.9063481688499451,
+        3.0564961433410645,
+        -2.385772705078125,
+        36.81290054321289,
+        -9.470998764038086,
+        7.58621072769165
+      ],
+      "root_linear_error_norm": 0.18828755617141724,
+      "root_angular_error_norm": 1.1381657123565674,
+      "joint_acceleration_error_rmse": 3.423475980758667
+    },
+    {
+      "run": "rolling_stance_after12",
+      "time_s": 4.3,
+      "frame": 989.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        -1.4799777269363403,
+        5.2550859451293945,
+        -9.349985122680664,
+        -16.31482696533203,
+        -3.4413681030273438,
+        22.48143768310547
+      ],
+      "observed_root_acceleration": [
+        -1.6137360334396362,
+        5.267396450042725,
+        -9.33736515045166,
+        -16.436695098876953,
+        -3.3903603553771973,
+        22.496877670288086
+      ],
+      "root_linear_error_norm": 0.13491514325141907,
+      "root_angular_error_norm": 0.1330113708972931,
+      "joint_acceleration_error_rmse": 0.04031091555953026
+    },
+    {
+      "run": "root_task415",
+      "time_s": 4.0,
+      "frame": 917.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        7.870134353637695,
+        -6.322690486907959,
+        4.923570156097412,
+        -26.87112808227539,
+        -7.714869022369385,
+        -25.226484298706055
+      ],
+      "observed_root_acceleration": [
+        8.09621810913086,
+        -6.381362438201904,
+        4.837840557098389,
+        -27.09591293334961,
+        -8.707552909851074,
+        -25.908052444458008
+      ],
+      "root_linear_error_norm": 0.2488088309764862,
+      "root_angular_error_norm": 1.224942684173584,
+      "joint_acceleration_error_rmse": 2.7170169353485107
+    },
+    {
+      "run": "root_task415_support",
+      "time_s": 4.0,
+      "frame": 917.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        7.248597145080566,
+        -4.425106048583984,
+        -0.7363285422325134,
+        -38.37242126464844,
+        1.7451238632202148,
+        4.534794330596924
+      ],
+      "observed_root_acceleration": [
+        6.59504508972168,
+        -4.413872718811035,
+        -0.3032013773918152,
+        -33.01754379272461,
+        -0.03826618194580078,
+        12.225597381591797
+      ],
+      "root_linear_error_norm": 0.7841272950172424,
+      "root_angular_error_norm": 9.539583206176758,
+      "joint_acceleration_error_rmse": 31.52902603149414
+    },
+    {
+      "run": "weighted_after12",
+      "time_s": 4.3,
+      "frame": 989.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        2.724731683731079,
+        2.6785054206848145,
+        0.40948301553726196,
+        36.307979583740234,
+        -15.112653732299805,
+        -0.6419149041175842
+      ],
+      "observed_root_acceleration": [
+        2.6167032718658447,
+        2.6831624507904053,
+        0.5382746458053589,
+        36.29079055786133,
+        -15.21883487701416,
+        -0.7144733667373657
+      ],
+      "root_linear_error_norm": 0.1681639403104782,
+      "root_angular_error_norm": 0.12974832952022552,
+      "joint_acceleration_error_rmse": 3.170898199081421
+    },
+    {
+      "run": "weighted_root_after12",
+      "time_s": 4.3,
+      "frame": 989.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        2.8655569553375244,
+        1.8458002805709839,
+        -1.1980392932891846,
+        34.31777572631836,
+        -11.545949935913086,
+        1.0083270072937012
+      ],
+      "observed_root_acceleration": [
+        2.720653772354126,
+        1.8282084465026855,
+        -1.1043752431869507,
+        34.52688980102539,
+        -11.631532669067383,
+        0.9248554110527039
+      ],
+      "root_linear_error_norm": 0.17343401908874512,
+      "root_angular_error_norm": 0.24087467789649963,
+      "joint_acceleration_error_rmse": 1.3901994228363037
+    },
+    {
+      "run": "weighted_tasks415_history_fixed",
+      "time_s": 4.0,
+      "frame": 917.0,
+      "applied_torque_max_error_Nm": 0.0,
+      "predicted_root_acceleration": [
+        -1.3991032838821411,
+        3.0679922103881836,
+        2.545459270477295,
+        -18.260555267333984,
+        -9.493463516235352,
+        -23.10149574279785
+      ],
+      "observed_root_acceleration": [
+        -1.0233819484710693,
+        4.34565544128418,
+        2.725496768951416,
+        -15.924751281738281,
+        -8.086263656616211,
+        -37.95042419433594
+      ],
+      "root_linear_error_norm": 1.3438762426376343,
+      "root_angular_error_norm": 15.097247123718262,
+      "joint_acceleration_error_rmse": 33.21810531616211
+    }
+  ]
+}

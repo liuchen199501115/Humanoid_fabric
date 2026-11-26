@@ -1,0 +1,19 @@
+{
+  "parent": "turn_recovery_y40",
+  "learning_rollout": "fixed_clock120_body10_overdue",
+  "source_interval": [
+    842,
+    1100
+  ],
+  "gain": 0.5,
+  "preview_frames": 12,
+  "peak_com_projection_error": 0.00047368539537257664,
+  "peak_position_residual": 0.026640324756750305,
+  "peak_orientation_residual": 0.06355575192230188,
+  "minimum_dense_joint_limit_margin": 0.05634091794490814,
+  "minimum_dense_native_clearance": -0.0031816596565600735,
+  "peak_source_joint_reference_rmse": 0.14532943069934845,
+  "maximum_dense_joint_velocity": 16.326887130737305,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

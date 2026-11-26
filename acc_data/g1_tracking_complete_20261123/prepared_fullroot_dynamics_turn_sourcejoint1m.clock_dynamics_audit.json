@@ -1,0 +1,3402 @@
+{
+  "method": "Pair a clock-aware pose fit with its fixed clock and audit exported dynamics.\n\nThe clock is analytically specified or was optimized for the parent pose;\nthe child pose was then optimized under that fixed clock. Record provenance;\noriginal clock slacks do not certify the child. This is offline preparation,\nnot predictive runtime control.\n",
+  "reference": "/home/sky/Humanoid_fabric/acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m.npz",
+  "clock": {
+    "analytic_fourth_transition": {
+      "start": 3.81,
+      "ramp": 0.12,
+      "previous_speed": 1.2,
+      "speed": 1.8
+    },
+    "runtime_optimizer": false,
+    "reference_sha256": "5b029fb70cf0ca5e368c1641da202bbc1b659684346edbfccb60af41d80ba7ef"
+  },
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "original_planning_clock_sha256": null,
+  "original_planning_reference_sha256": "a34d1760ff7b08c4e612aaac3a3ce35c92175a875c75b88a356a7d39dec57cf5",
+  "exact_export_scope": "Nominal full-sole support; SS leg effort and all upper joints, no impact model",
+  "prefix_q_v_a_equal_through_frame": 660.0,
+  "maximum_effort_ratio": 1.6148963182024954,
+  "maximum_cop_residual_m": 0.25623583087497986,
+  "maximum_velocity_ratio": 0.654592752456665,
+  "full_tracking_passed": false,
+  "frames": [
+    {
+      "frame": 660,
+      "phase_speed": 1.1662265533128635,
+      "maximum_effort_ratio": 0.18399598266903944,
+      "maximum_velocity_ratio": 0.07371843183362806,
+      "cop_residual_m": 0.08759004485890684,
+      "friction_residual": -0.2791507336208841,
+      "normal_force_n": 324.0547813079957
+    },
+    {
+      "frame": 661,
+      "phase_speed": 1.1737882410765346,
+      "maximum_effort_ratio": 0.2215134378682922,
+      "maximum_velocity_ratio": 0.07712608414727289,
+      "cop_residual_m": 0.0557174888839,
+      "friction_residual": -0.23693163411430576,
+      "normal_force_n": 331.91438980315587
+    },
+    {
+      "frame": 662,
+      "phase_speed": 1.1802615158585592,
+      "maximum_effort_ratio": 0.2968455718770447,
+      "maximum_velocity_ratio": 0.08216250909341348,
+      "cop_residual_m": 0.02224157757868436,
+      "friction_residual": -0.1956067586767072,
+      "normal_force_n": 341.0484522589303
+    },
+    {
+      "frame": 663,
+      "phase_speed": 1.1856799790556027,
+      "maximum_effort_ratio": 0.38511392170704584,
+      "maximum_velocity_ratio": 0.0888448663659998,
+      "cop_residual_m": -0.012359047955049409,
+      "friction_residual": -0.15412309896240053,
+      "normal_force_n": 351.55007130328624
+    },
+    {
+      "frame": 664,
+      "phase_speed": 1.1900904488876167,
+      "maximum_effort_ratio": 0.558332897456646,
+      "maximum_velocity_ratio": 0.0971830922204095,
+      "cop_residual_m": -0.04755059284170349,
+      "friction_residual": -0.09795616882886539,
+      "normal_force_n": 363.5774713797142
+    },
+    {
+      "frame": 665,
+      "phase_speed": 1.1935539286896866,
+      "maximum_effort_ratio": 0.7315616410585141,
+      "maximum_velocity_ratio": 0.10718097557892671,
+      "cop_residual_m": -0.04077971483190379,
+      "friction_residual": -0.044836434414775514,
+      "normal_force_n": 377.36194652310667
+    },
+    {
+      "frame": 666,
+      "phase_speed": 1.196146817312877,
+      "maximum_effort_ratio": 0.9036877139074171,
+      "maximum_velocity_ratio": 0.11883765297967035,
+      "cop_residual_m": -0.010282151416670795,
+      "friction_residual": 0.003562215600384047,
+      "normal_force_n": 393.2137048430186
+    },
+    {
+      "frame": 667,
+      "phase_speed": 1.197962346164951,
+      "maximum_effort_ratio": 0.7509110007205543,
+      "maximum_velocity_ratio": 0.13034582138061523,
+      "cop_residual_m": -0.01656707289739502,
+      "friction_residual": -0.09947344242513832,
+      "normal_force_n": 361.8101591849528
+    },
+    {
+      "frame": 668,
+      "phase_speed": 1.199112215573911,
+      "maximum_effort_ratio": 0.5957729664575646,
+      "maximum_velocity_ratio": 0.13989076098880251,
+      "cop_residual_m": -0.020389444468380837,
+      "friction_residual": -0.192243598168614,
+      "normal_force_n": 326.4693928403845
+    },
+    {
+      "frame": 669,
+      "phase_speed": 1.1997283855293601,
+      "maximum_effort_ratio": 0.43958521509056175,
+      "maximum_velocity_ratio": 0.1474674843453072,
+      "cop_residual_m": -0.021621772434264545,
+      "friction_residual": -0.2718562087896134,
+      "normal_force_n": 287.01589988078166
+    },
+    {
+      "frame": 670,
+      "phase_speed": 1.1999649511157164,
+      "maximum_effort_ratio": 0.2927657267731053,
+      "maximum_velocity_ratio": 0.1530826929453257,
+      "cop_residual_m": -0.021288041424242826,
+      "friction_residual": -0.2866133030469251,
+      "normal_force_n": 244.0671385067904
+    },
+    {
+      "frame": 671,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.39276512310313183,
+      "maximum_velocity_ratio": 0.15675320496430267,
+      "cop_residual_m": -0.021341852206905373,
+      "friction_residual": -0.14455466166175904,
+      "normal_force_n": 199.0053650894208
+    },
+    {
+      "frame": 672,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5261204373654828,
+      "maximum_velocity_ratio": 0.1584989831254289,
+      "cop_residual_m": 0.005234442599696318,
+      "friction_residual": 0.04935322495111136,
+      "normal_force_n": 153.84782291517828
+    },
+    {
+      "frame": 673,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.4280838554110652,
+      "maximum_velocity_ratio": 0.15860772777248072,
+      "cop_residual_m": 0.003475858936453311,
+      "friction_residual": 0.028336843560264533,
+      "normal_force_n": 186.61489795861038
+    },
+    {
+      "frame": 674,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.35080877677589395,
+      "maximum_velocity_ratio": 0.15736268017743085,
+      "cop_residual_m": -2.342082180196771e-05,
+      "friction_residual": 0.004849620492724858,
+      "normal_force_n": 221.37711631834188
+    },
+    {
+      "frame": 675,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5142864269956183,
+      "maximum_velocity_ratio": 0.18677194118499757,
+      "cop_residual_m": -0.0024880385441233806,
+      "friction_residual": -0.01785134087030336,
+      "normal_force_n": 256.14947395079884
+    },
+    {
+      "frame": 676,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6787748659418174,
+      "maximum_velocity_ratio": 0.2136660099029541,
+      "cop_residual_m": -0.002313888798766182,
+      "friction_residual": -0.037553076527534,
+      "normal_force_n": 289.53662841116625
+    },
+    {
+      "frame": 677,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8428056945969212,
+      "maximum_velocity_ratio": 0.2309274911880493,
+      "cop_residual_m": 0.0008784870760507289,
+      "friction_residual": -0.04890477534690214,
+      "normal_force_n": 320.7383690123297
+    },
+    {
+      "frame": 678,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.005004615660213,
+      "maximum_velocity_ratio": 0.2385563850402832,
+      "cop_residual_m": 0.0062337801082364966,
+      "friction_residual": -0.04150763886822891,
+      "normal_force_n": 349.5653241050177
+    },
+    {
+      "frame": 679,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8412742069235947,
+      "maximum_velocity_ratio": 0.24168307781219484,
+      "cop_residual_m": 0.006933271220844717,
+      "friction_residual": -0.05787498259156841,
+      "normal_force_n": 342.45172002870396
+    },
+    {
+      "frame": 680,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8327922862997292,
+      "maximum_velocity_ratio": 0.24543802738189696,
+      "cop_residual_m": 0.005656130846693097,
+      "friction_residual": -0.07651504119492955,
+      "normal_force_n": 336.69720094970927
+    },
+    {
+      "frame": 681,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8228991299013281,
+      "maximum_velocity_ratio": 0.24982120990753173,
+      "cop_residual_m": 0.0035566154624119346,
+      "friction_residual": -0.0966029796471345,
+      "normal_force_n": 332.20333107359585
+    },
+    {
+      "frame": 682,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8176402116207905,
+      "maximum_velocity_ratio": 0.2548326015472412,
+      "cop_residual_m": 0.0014352257313661426,
+      "friction_residual": -0.11752500519691293,
+      "normal_force_n": 328.8798357584338
+    },
+    {
+      "frame": 683,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8203072392699455,
+      "maximum_velocity_ratio": 0.2604722499847412,
+      "cop_residual_m": -0.00026131040157025665,
+      "friction_residual": -0.13888487922226322,
+      "normal_force_n": 326.6468439977185
+    },
+    {
+      "frame": 684,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8314382642029512,
+      "maximum_velocity_ratio": 0.2667401313781738,
+      "cop_residual_m": -0.0014407751484667372,
+      "friction_residual": -0.15564779983970392,
+      "normal_force_n": 325.4377172811469
+    },
+    {
+      "frame": 685,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8516184733717926,
+      "maximum_velocity_ratio": 0.27188687324523925,
+      "cop_residual_m": -0.0037662577743418145,
+      "friction_residual": -0.20070597293116982,
+      "normal_force_n": 334.607620638367
+    },
+    {
+      "frame": 686,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8751425898212339,
+      "maximum_velocity_ratio": 0.2741631031036377,
+      "cop_residual_m": -0.00528947788992012,
+      "friction_residual": -0.23911192490601998,
+      "normal_force_n": 343.1173033106162
+    },
+    {
+      "frame": 687,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9028750764790701,
+      "maximum_velocity_ratio": 0.2735687971115112,
+      "cop_residual_m": -0.005909631161063044,
+      "friction_residual": -0.27557194710152827,
+      "normal_force_n": 351.0019003092684
+    },
+    {
+      "frame": 688,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9348809322857138,
+      "maximum_velocity_ratio": 0.2701039552688599,
+      "cop_residual_m": -0.005640623709337475,
+      "friction_residual": -0.3100647599025676,
+      "normal_force_n": 358.3113944929403
+    },
+    {
+      "frame": 689,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.970435755385352,
+      "maximum_velocity_ratio": 0.2637686014175415,
+      "cop_residual_m": -0.004608767512807382,
+      "friction_residual": -0.3427052103407094,
+      "normal_force_n": 365.1085227976232
+    },
+    {
+      "frame": 690,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0080314958057912,
+      "maximum_velocity_ratio": 0.25456273555755615,
+      "cop_residual_m": -0.003050667991073943,
+      "friction_residual": -0.37374658410587097,
+      "normal_force_n": 371.4666989837861
+    },
+    {
+      "frame": 691,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9736493915406577,
+      "maximum_velocity_ratio": 0.24428145885467528,
+      "cop_residual_m": -0.0026440527942472843,
+      "friction_residual": -0.3575221740938221,
+      "normal_force_n": 360.50436140759655
+    },
+    {
+      "frame": 692,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9380900595902494,
+      "maximum_velocity_ratio": 0.23471992015838622,
+      "cop_residual_m": -0.0024694014200251197,
+      "friction_residual": -0.34146319233753836,
+      "normal_force_n": 349.60063323861505
+    },
+    {
+      "frame": 693,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9016188961908742,
+      "maximum_velocity_ratio": 0.22587809562683106,
+      "cop_residual_m": -0.002478522393196792,
+      "friction_residual": -0.3255023609730318,
+      "normal_force_n": 338.72767881440956
+    },
+    {
+      "frame": 694,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.864394989517115,
+      "maximum_velocity_ratio": 0.21775600910186768,
+      "cop_residual_m": -0.00263937744214968,
+      "friction_residual": -0.3095873111493661,
+      "normal_force_n": 327.86402892072283
+    },
+    {
+      "frame": 695,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8264700927668969,
+      "maximum_velocity_ratio": 0.21035366058349608,
+      "cop_residual_m": -0.0029363039010398885,
+      "friction_residual": -0.29368157157580244,
+      "normal_force_n": 316.99446725001934
+    },
+    {
+      "frame": 696,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7877884306141435,
+      "maximum_velocity_ratio": 0.2036710262298584,
+      "cop_residual_m": -0.003370153684616126,
+      "friction_residual": -0.2764138690398205,
+      "normal_force_n": 306.1099123341343
+    },
+    {
+      "frame": 697,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8050291155489611,
+      "maximum_velocity_ratio": 0.19747326374053956,
+      "cop_residual_m": -0.0021010675620809316,
+      "friction_residual": -0.2856542295659762,
+      "normal_force_n": 310.3262895234837
+    },
+    {
+      "frame": 698,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8187690761511529,
+      "maximum_velocity_ratio": 0.19152543544769288,
+      "cop_residual_m": -0.0013680427033658225,
+      "friction_residual": -0.29484755821331665,
+      "normal_force_n": 314.84301626973996
+    },
+    {
+      "frame": 699,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8292353044048898,
+      "maximum_velocity_ratio": 0.18582757711410522,
+      "cop_residual_m": -0.0011551153876704202,
+      "friction_residual": -0.3047076370441093,
+      "normal_force_n": 319.6660677983083
+    },
+    {
+      "frame": 700,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8366104807203021,
+      "maximum_velocity_ratio": 0.1803796887397766,
+      "cop_residual_m": -0.001454090961601554,
+      "friction_residual": -0.31541511735464944,
+      "normal_force_n": 324.8067490824243
+    },
+    {
+      "frame": 701,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8410429321415833,
+      "maximum_velocity_ratio": 0.1751817584037781,
+      "cop_residual_m": -0.002263353737564666,
+      "friction_residual": -0.3269100738316414,
+      "normal_force_n": 330.2820327760306
+    },
+    {
+      "frame": 702,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.842659173825323,
+      "maximum_velocity_ratio": 0.17023378610610962,
+      "cop_residual_m": -0.0035861675571995095,
+      "friction_residual": -0.3391023418898485,
+      "normal_force_n": 336.1148964348028
+    },
+    {
+      "frame": 703,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8473728811646632,
+      "maximum_velocity_ratio": 0.16494921445846558,
+      "cop_residual_m": -0.003935306662640926,
+      "friction_residual": -0.33945894216946104,
+      "normal_force_n": 333.70671730195005
+    },
+    {
+      "frame": 704,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8531110001134564,
+      "maximum_velocity_ratio": 0.15874147415161133,
+      "cop_residual_m": -0.0024715451299179327,
+      "friction_residual": -0.339536531897959,
+      "normal_force_n": 330.99829416861235
+    },
+    {
+      "frame": 705,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.859583418343845,
+      "maximum_velocity_ratio": 0.15161056518554689,
+      "cop_residual_m": 1.3535060675713517e-08,
+      "friction_residual": -0.33946646558736093,
+      "normal_force_n": 327.96443284365597
+    },
+    {
+      "frame": 706,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.866668736953307,
+      "maximum_velocity_ratio": 0.14355649948120117,
+      "cop_residual_m": 0.0023279398099943943,
+      "friction_residual": -0.3393086340963396,
+      "normal_force_n": 324.5847541672423
+    },
+    {
+      "frame": 707,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8744236133484973,
+      "maximum_velocity_ratio": 0.13457925319671632,
+      "cop_residual_m": 0.004436804274761127,
+      "friction_residual": -0.3390512484456041,
+      "normal_force_n": 320.843825603295
+    },
+    {
+      "frame": 708,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8830947470784374,
+      "maximum_velocity_ratio": 0.1246788501739502,
+      "cop_residual_m": 0.006307268835728006,
+      "friction_residual": -0.3386100198886358,
+      "normal_force_n": 316.73122472578433
+    },
+    {
+      "frame": 709,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8831907463843915,
+      "maximum_velocity_ratio": 0.11426903009414673,
+      "cop_residual_m": 0.004933024030900138,
+      "friction_residual": -0.35716467705632476,
+      "normal_force_n": 315.4913214314662
+    },
+    {
+      "frame": 710,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8826668323816058,
+      "maximum_velocity_ratio": 0.10376356840133667,
+      "cop_residual_m": 0.003551567502924778,
+      "friction_residual": -0.3760108271967561,
+      "normal_force_n": 314.4875837902665
+    },
+    {
+      "frame": 711,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8813209150206476,
+      "maximum_velocity_ratio": 0.09316244721412659,
+      "cop_residual_m": 0.0021636425756870006,
+      "friction_residual": -0.3952245001693539,
+      "normal_force_n": 313.72112289389844
+    },
+    {
+      "frame": 712,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8790848538715714,
+      "maximum_velocity_ratio": 0.08246567249298095,
+      "cop_residual_m": 0.000762598245122019,
+      "friction_residual": -0.407629084333478,
+      "normal_force_n": 313.1944293920196
+    },
+    {
+      "frame": 713,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8760296856963624,
+      "maximum_velocity_ratio": 0.07167325019836426,
+      "cop_residual_m": -0.0006655421440755348,
+      "friction_residual": -0.4158941883782039,
+      "normal_force_n": 312.91135444263597
+    },
+    {
+      "frame": 714,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8723713742575114,
+      "maximum_velocity_ratio": 0.06808120012283325,
+      "cop_residual_m": -0.0021419595916893014,
+      "friction_residual": -0.424509847277327,
+      "normal_force_n": 312.87707747492567
+    },
+    {
+      "frame": 715,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8379678994584893,
+      "maximum_velocity_ratio": 0.06962823867797852,
+      "cop_residual_m": 0.0001413409514779931,
+      "friction_residual": -0.4054557347256797,
+      "normal_force_n": 297.5188114215137
+    },
+    {
+      "frame": 716,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8020145466953317,
+      "maximum_velocity_ratio": 0.07071785628795624,
+      "cop_residual_m": 0.0020708816174864956,
+      "friction_residual": -0.3860036588135889,
+      "normal_force_n": 281.9083738647558
+    },
+    {
+      "frame": 717,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.764642367162254,
+      "maximum_velocity_ratio": 0.07135006040334702,
+      "cop_residual_m": 0.0036686894816288875,
+      "friction_residual": -0.36607092989375295,
+      "normal_force_n": 266.0328206154389
+    },
+    {
+      "frame": 718,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.726031091112892,
+      "maximum_velocity_ratio": 0.07152484357357025,
+      "cop_residual_m": 0.004959929632154522,
+      "friction_residual": -0.3455761515436405,
+      "normal_force_n": 249.88418061412364
+    },
+    {
+      "frame": 719,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6864157474893904,
+      "maximum_velocity_ratio": 0.07124220579862595,
+      "cop_residual_m": 0.0059727713126759285,
+      "friction_residual": -0.3244385476218034,
+      "normal_force_n": 233.4593656088615
+    },
+    {
+      "frame": 720,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6460924028199269,
+      "maximum_velocity_ratio": 0.0705021545290947,
+      "cop_residual_m": 0.006738318327716054,
+      "friction_residual": -0.3025771501376902,
+      "normal_force_n": 216.76015239876688
+    },
+    {
+      "frame": 721,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6675426326305028,
+      "maximum_velocity_ratio": 0.06954911351203918,
+      "cop_residual_m": 0.005971121665229922,
+      "friction_residual": -0.3122013532184298,
+      "normal_force_n": 225.74524767129498
+    },
+    {
+      "frame": 722,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6895460922356773,
+      "maximum_velocity_ratio": 0.06862753629684448,
+      "cop_residual_m": 0.005212915380479869,
+      "friction_residual": -0.32041899268760593,
+      "normal_force_n": 235.00243457301747
+    },
+    {
+      "frame": 723,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7117738954598904,
+      "maximum_velocity_ratio": 0.06773741543292999,
+      "cop_residual_m": 0.004426783522657019,
+      "friction_residual": -0.3284361062457756,
+      "normal_force_n": 244.53088099329966
+    },
+    {
+      "frame": 724,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7341659344928713,
+      "maximum_velocity_ratio": 0.06687875092029572,
+      "cop_residual_m": 0.0035914009706295466,
+      "friction_residual": -0.3369053977927399,
+      "normal_force_n": 254.33124549548484
+    },
+    {
+      "frame": 725,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7569366491104385,
+      "maximum_velocity_ratio": 0.06605154275894165,
+      "cop_residual_m": 0.002700644149613978,
+      "friction_residual": -0.3458298671843351,
+      "normal_force_n": 264.40563874139696
+    },
+    {
+      "frame": 726,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7805818953414634,
+      "maximum_velocity_ratio": 0.0652557983994484,
+      "cop_residual_m": 0.0017632031335911064,
+      "friction_residual": -0.3552181245819384,
+      "normal_force_n": 274.75757168927595
+    },
+    {
+      "frame": 727,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7900431314289442,
+      "maximum_velocity_ratio": 0.06462240219116211,
+      "cop_residual_m": 0.0026374452961112895,
+      "friction_residual": -0.35753916034779204,
+      "normal_force_n": 273.0911199147114
+    },
+    {
+      "frame": 728,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7994941660226953,
+      "maximum_velocity_ratio": 0.06428226083517075,
+      "cop_residual_m": 0.0035003363711010576,
+      "friction_residual": -0.3599813151448864,
+      "normal_force_n": 271.38901494754396
+    },
+    {
+      "frame": 729,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8084827684451268,
+      "maximum_velocity_ratio": 0.06423536688089371,
+      "cop_residual_m": 0.004345077487807108,
+      "friction_residual": -0.3613239955594356,
+      "normal_force_n": 269.6505883692187
+    },
+    {
+      "frame": 730,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8166362843476502,
+      "maximum_velocity_ratio": 0.06448172777891159,
+      "cop_residual_m": 0.0051725906187950815,
+      "friction_residual": -0.36016272416567163,
+      "normal_force_n": 267.8814354187011
+    },
+    {
+      "frame": 731,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.823666594998903,
+      "maximum_velocity_ratio": 0.0650213435292244,
+      "cop_residual_m": 0.005991349099799264,
+      "friction_residual": -0.3594432781181377,
+      "normal_force_n": 266.0935117625149
+    },
+    {
+      "frame": 732,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8293750590446797,
+      "maximum_velocity_ratio": 0.06585421413183212,
+      "cop_residual_m": 0.006817175803891192,
+      "friction_residual": -0.35925987191072944,
+      "normal_force_n": 264.30525839626597
+    },
+    {
+      "frame": 733,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8340606663359663,
+      "maximum_velocity_ratio": 0.06676852703094482,
+      "cop_residual_m": 0.005925659577155594,
+      "friction_residual": -0.3644344254165429,
+      "normal_force_n": 268.4145859009513
+    },
+    {
+      "frame": 734,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8403770728772706,
+      "maximum_velocity_ratio": 0.07574212551116943,
+      "cop_residual_m": 0.005184806166092916,
+      "friction_residual": -0.3704551525865118,
+      "normal_force_n": 272.7921067792843
+    },
+    {
+      "frame": 735,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8486323090101152,
+      "maximum_velocity_ratio": 0.08794403076171875,
+      "cop_residual_m": 0.004591062165604093,
+      "friction_residual": -0.3773321614706092,
+      "normal_force_n": 277.45461409225464
+    },
+    {
+      "frame": 736,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8593470892976758,
+      "maximum_velocity_ratio": 0.10119322538375855,
+      "cop_residual_m": 0.004255114525665714,
+      "friction_residual": -0.3850565567384405,
+      "normal_force_n": 282.4213621535937
+    },
+    {
+      "frame": 737,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8732610920361494,
+      "maximum_velocity_ratio": 0.11548972129821777,
+      "cop_residual_m": 0.004844341963056609,
+      "friction_residual": -0.39256722225497875,
+      "normal_force_n": 287.7140854312239
+    },
+    {
+      "frame": 738,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8913403480509114,
+      "maximum_velocity_ratio": 0.13083350658416748,
+      "cop_residual_m": 0.0058422874061936315,
+      "friction_residual": -0.39985948385171144,
+      "normal_force_n": 293.3570505120446
+    },
+    {
+      "frame": 739,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8579333182126276,
+      "maximum_velocity_ratio": 0.14804309606552124,
+      "cop_residual_m": 0.005727834750347053,
+      "friction_residual": -0.3983828361482535,
+      "normal_force_n": 284.0773095382656
+    },
+    {
+      "frame": 740,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.808520949508164,
+      "maximum_velocity_ratio": 0.16793700456619262,
+      "cop_residual_m": 0.007645920981092293,
+      "friction_residual": -0.39547975812107333,
+      "normal_force_n": 274.3341724071376
+    },
+    {
+      "frame": 741,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7422355552310888,
+      "maximum_velocity_ratio": 0.19051523208618165,
+      "cop_residual_m": 0.009511144796205026,
+      "friction_residual": -0.38571459905514277,
+      "normal_force_n": 264.23712193092973
+    },
+    {
+      "frame": 742,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6599112182610154,
+      "maximum_velocity_ratio": 0.21577777862548828,
+      "cop_residual_m": 0.011276503268628942,
+      "friction_residual": -0.36093213734593527,
+      "normal_force_n": 253.91566186408957
+    },
+    {
+      "frame": 743,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5641199699056678,
+      "maximum_velocity_ratio": 0.24372465610504152,
+      "cop_residual_m": 0.012914895715654153,
+      "friction_residual": -0.3299247629072967,
+      "normal_force_n": 243.51707212539924
+    },
+    {
+      "frame": 744,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.45919601713828423,
+      "maximum_velocity_ratio": 0.2743558406829834,
+      "cop_residual_m": 0.014415268243692275,
+      "friction_residual": -0.28852384648061286,
+      "normal_force_n": 233.20416186629842
+    },
+    {
+      "frame": 745,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.3338263877712392,
+      "maximum_velocity_ratio": 0.30544867515563967,
+      "cop_residual_m": 0.014669568735849795,
+      "friction_residual": -0.2902163981434895,
+      "normal_force_n": 230.9680677951321
+    },
+    {
+      "frame": 746,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.2258743188222152,
+      "maximum_velocity_ratio": 0.33478055000305174,
+      "cop_residual_m": 0.01480343575762356,
+      "friction_residual": -0.26940744980952347,
+      "normal_force_n": 228.98580270159576
+    },
+    {
+      "frame": 747,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.2296947493946248,
+      "maximum_velocity_ratio": 0.36235144138336184,
+      "cop_residual_m": 0.014943608851923416,
+      "friction_residual": -0.24791628913236205,
+      "normal_force_n": 227.1352916049053
+    },
+    {
+      "frame": 748,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.23395642683312873,
+      "maximum_velocity_ratio": 0.38816137313842775,
+      "cop_residual_m": 0.015234388805654758,
+      "friction_residual": -0.22463898458137493,
+      "normal_force_n": 225.30789301512684
+    },
+    {
+      "frame": 749,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.3350218912389767,
+      "maximum_velocity_ratio": 0.41221027374267577,
+      "cop_residual_m": 0.015834139011958924,
+      "friction_residual": -0.19204880007135294,
+      "normal_force_n": 223.40858097680663
+    },
+    {
+      "frame": 750,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.4397808722623541,
+      "maximum_velocity_ratio": 0.4344982624053955,
+      "cop_residual_m": 0.01691211254544085,
+      "friction_residual": -0.16109466835313618,
+      "normal_force_n": 221.3561761552019
+    },
+    {
+      "frame": 751,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5354720180759975,
+      "maximum_velocity_ratio": 0.45462684631347655,
+      "cop_residual_m": 0.012863750186185647,
+      "friction_residual": -0.16362751016915142,
+      "normal_force_n": 219.08949328689548
+    },
+    {
+      "frame": 752,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6312602690477821,
+      "maximum_velocity_ratio": 0.4721976280212402,
+      "cop_residual_m": 0.009705915884884299,
+      "friction_residual": -0.16576055267883297,
+      "normal_force_n": 216.1030328841072
+    },
+    {
+      "frame": 753,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7269025521887169,
+      "maximum_velocity_ratio": 0.48721065521240237,
+      "cop_residual_m": 0.00750709086645022,
+      "friction_residual": -0.13803463907485877,
+      "normal_force_n": 212.2172319195169
+    },
+    {
+      "frame": 754,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8221272119513706,
+      "maximum_velocity_ratio": 0.4996659278869629,
+      "cop_residual_m": 0.006297505992175347,
+      "friction_residual": -0.10288708157143021,
+      "normal_force_n": 207.24384403311376
+    },
+    {
+      "frame": 755,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9166316560376995,
+      "maximum_velocity_ratio": 0.509563398361206,
+      "cop_residual_m": 0.006061475625772299,
+      "friction_residual": -0.06505652738731878,
+      "normal_force_n": 200.98708339178745
+    },
+    {
+      "frame": 756,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0100803632242108,
+      "maximum_velocity_ratio": 0.5169031143188476,
+      "cop_residual_m": 0.0067275480366466,
+      "friction_residual": -0.024014594876441,
+      "normal_force_n": 193.2440293811398
+    },
+    {
+      "frame": 757,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7926436459616685,
+      "maximum_velocity_ratio": 0.5166767597198486,
+      "cop_residual_m": 0.007876700062655877,
+      "friction_residual": -0.1295358339141014,
+      "normal_force_n": 220.0104115659519
+    },
+    {
+      "frame": 758,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5742208989208919,
+      "maximum_velocity_ratio": 0.50387601852417,
+      "cop_residual_m": 0.008130356085519895,
+      "friction_residual": -0.1999990165751062,
+      "normal_force_n": 241.80644484256584
+    },
+    {
+      "frame": 759,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.354900713054054,
+      "maximum_velocity_ratio": 0.4785008907318115,
+      "cop_residual_m": 0.00719461619425871,
+      "friction_residual": -0.20848102625224338,
+      "normal_force_n": 259.17917020558434
+    },
+    {
+      "frame": 760,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.43657942389150217,
+      "maximum_velocity_ratio": 0.4405514240264893,
+      "cop_residual_m": 0.0048436116476489694,
+      "friction_residual": -0.1855766689604496,
+      "normal_force_n": 273.01053905511026
+    },
+    {
+      "frame": 761,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5940850279082104,
+      "maximum_velocity_ratio": 0.3900275230407715,
+      "cop_residual_m": 0.002845104406334159,
+      "friction_residual": -0.13298930576349727,
+      "normal_force_n": 284.49373115894974
+    },
+    {
+      "frame": 762,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.3584182422501731,
+      "maximum_velocity_ratio": 0.32692928314208985,
+      "cop_residual_m": 0.0040085268812997945,
+      "friction_residual": -0.0795550280654895,
+      "normal_force_n": 295.11113793646285
+    },
+    {
+      "frame": 763,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.34415747706408484,
+      "maximum_velocity_ratio": 0.2602445363998413,
+      "cop_residual_m": 0.002388358051950689,
+      "friction_residual": -0.07054432323955633,
+      "normal_force_n": 282.0864989765296
+    },
+    {
+      "frame": 764,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.46784819419452434,
+      "maximum_velocity_ratio": 0.1989612340927124,
+      "cop_residual_m": 0.0004993142866180875,
+      "friction_residual": -0.06286928353626953,
+      "normal_force_n": 272.9946063622486
+    },
+    {
+      "frame": 765,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5982356385065659,
+      "maximum_velocity_ratio": 0.14307937622070313,
+      "cop_residual_m": -0.0020042838507246283,
+      "friction_residual": -0.05832562154207478,
+      "normal_force_n": 267.66768249955663
+    },
+    {
+      "frame": 766,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7262789760038161,
+      "maximum_velocity_ratio": 0.1836574912071228,
+      "cop_residual_m": -0.005647722640542305,
+      "friction_residual": -0.045689270504604466,
+      "normal_force_n": 266.16998523589484
+    },
+    {
+      "frame": 767,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.852380723167823,
+      "maximum_velocity_ratio": 0.23171308040618896,
+      "cop_residual_m": -0.011176775593432959,
+      "friction_residual": -0.027088970322795624,
+      "normal_force_n": 268.7783008301545
+    },
+    {
+      "frame": 768,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9770862034072412,
+      "maximum_velocity_ratio": 0.2819478750228882,
+      "cop_residual_m": -0.01758998864421888,
+      "friction_residual": -0.024049318112216896,
+      "normal_force_n": 275.9534900944071
+    },
+    {
+      "frame": 769,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6645902889541088,
+      "maximum_velocity_ratio": 0.33188035488128664,
+      "cop_residual_m": -0.017984898864951127,
+      "friction_residual": -0.3753153609425404,
+      "normal_force_n": 468.60580010715574
+    },
+    {
+      "frame": 770,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.5419831983247584,
+      "maximum_velocity_ratio": 0.37902905941009524,
+      "cop_residual_m": -0.01767799417602995,
+      "friction_residual": -0.3948521580052248,
+      "normal_force_n": 659.6687820089661
+    },
+    {
+      "frame": 771,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6745894103408767,
+      "maximum_velocity_ratio": 0.42339396476745605,
+      "cop_residual_m": -0.01635953219060792,
+      "friction_residual": -0.4077204547005246,
+      "normal_force_n": 848.0134835408595
+    },
+    {
+      "frame": 772,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.806517045010051,
+      "maximum_velocity_ratio": 0.46497511863708496,
+      "cop_residual_m": -0.01259473044570274,
+      "friction_residual": -0.33650981533358143,
+      "normal_force_n": 1033.245399732066
+    },
+    {
+      "frame": 773,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9368571164249625,
+      "maximum_velocity_ratio": 0.5037724494934082,
+      "cop_residual_m": -0.005951258904567362,
+      "friction_residual": -0.2574433336310814,
+      "normal_force_n": 1215.672757223605
+    },
+    {
+      "frame": 774,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0643010396165773,
+      "maximum_velocity_ratio": 0.5397860050201416,
+      "cop_residual_m": 0.002877231399375601,
+      "friction_residual": -0.18383688832664363,
+      "normal_force_n": 1396.2591483657702
+    },
+    {
+      "frame": 775,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9369792196451803,
+      "maximum_velocity_ratio": 0.570728874206543,
+      "cop_residual_m": 0.007366123322448074,
+      "friction_residual": -0.11969222099169474,
+      "normal_force_n": 1165.6882646049228
+    },
+    {
+      "frame": 776,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8570284183786525,
+      "maximum_velocity_ratio": 0.5943140983581543,
+      "cop_residual_m": 0.0071867777609197344,
+      "friction_residual": -0.07193118260920377,
+      "normal_force_n": 939.5509415285037
+    },
+    {
+      "frame": 777,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7643338546406084,
+      "maximum_velocity_ratio": 0.6105417728424072,
+      "cop_residual_m": 0.0026071682852340703,
+      "friction_residual": -0.03982034059734375,
+      "normal_force_n": 717.0052682165068
+    },
+    {
+      "frame": 778,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.6577740168554367,
+      "maximum_velocity_ratio": 0.6194117546081543,
+      "cop_residual_m": -0.006145365899324861,
+      "friction_residual": -0.021737669192387694,
+      "normal_force_n": 497.1347868935176
+    },
+    {
+      "frame": 779,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.588101916460936,
+      "maximum_velocity_ratio": 0.6209241867065429,
+      "cop_residual_m": -0.001763443990989851,
+      "friction_residual": -0.015110384864963602,
+      "normal_force_n": 278.97091469804303
+    },
+    {
+      "frame": 780,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9767450130757891,
+      "maximum_velocity_ratio": 0.6150789737701416,
+      "cop_residual_m": 0.01592878797591957,
+      "friction_residual": -0.016468331175743915,
+      "normal_force_n": 61.536131139977336
+    },
+    {
+      "frame": 781,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.836859266080818,
+      "maximum_velocity_ratio": 0.6021451950073242,
+      "cop_residual_m": 0.01280866090605528,
+      "friction_residual": -0.029519946599023614,
+      "normal_force_n": 65.23891839621015
+    },
+    {
+      "frame": 782,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8982988787908329,
+      "maximum_velocity_ratio": 0.5823917865753174,
+      "cop_residual_m": 0.008644316175237235,
+      "friction_residual": -0.03372164816553108,
+      "normal_force_n": 64.90573657521587
+    },
+    {
+      "frame": 783,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9490425527820541,
+      "maximum_velocity_ratio": 0.5558188438415528,
+      "cop_residual_m": 0.011638414812721903,
+      "friction_residual": -0.029582522183439413,
+      "normal_force_n": 61.03499958762091
+    },
+    {
+      "frame": 784,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9861486957859096,
+      "maximum_velocity_ratio": 0.5224262714385987,
+      "cop_residual_m": 0.018462880247965895,
+      "friction_residual": -0.017724851865316575,
+      "normal_force_n": 54.49112073236903
+    },
+    {
+      "frame": 785,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0078429285100658,
+      "maximum_velocity_ratio": 0.4822141170501709,
+      "cop_residual_m": 0.02355280759959131,
+      "friction_residual": 0.0011227149926723282,
+      "normal_force_n": 46.48235292066363
+    },
+    {
+      "frame": 786,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.013612588040095,
+      "maximum_velocity_ratio": 0.4351823806762695,
+      "cop_residual_m": 0.026639947854992855,
+      "friction_residual": 0.02603044062740143,
+      "normal_force_n": 38.55078255077247
+    },
+    {
+      "frame": 787,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9549189536230882,
+      "maximum_velocity_ratio": 0.3808000087738037,
+      "cop_residual_m": 0.016668740535622853,
+      "friction_residual": -0.06239541761973267,
+      "normal_force_n": 57.52084966852219
+    },
+    {
+      "frame": 788,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8959434061821641,
+      "maximum_velocity_ratio": 0.31853585243225097,
+      "cop_residual_m": 0.010632425968254797,
+      "friction_residual": -0.08497037626254778,
+      "normal_force_n": 74.05792226953713
+    },
+    {
+      "frame": 789,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8369835934756604,
+      "maximum_velocity_ratio": 0.24838998317718505,
+      "cop_residual_m": 0.010510218921932319,
+      "friction_residual": -0.06957341609873383,
+      "normal_force_n": 88.34527434050942
+    },
+    {
+      "frame": 790,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7784043043875759,
+      "maximum_velocity_ratio": 0.2813493013381958,
+      "cop_residual_m": 0.014218642753997486,
+      "friction_residual": -0.05712877674212599,
+      "normal_force_n": 101.0985669163066
+    },
+    {
+      "frame": 791,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.7843945804727674,
+      "maximum_velocity_ratio": 0.31814889907836913,
+      "cop_residual_m": 0.021335070101069085,
+      "friction_residual": -0.04954568190695838,
+      "normal_force_n": 113.57287171799796
+    },
+    {
+      "frame": 792,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9695612266598508,
+      "maximum_velocity_ratio": 0.3545426368713379,
+      "cop_residual_m": 0.03118487498121207,
+      "friction_residual": -0.04916680590261411,
+      "normal_force_n": 127.55188599542086
+    },
+    {
+      "frame": 793,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9820936302313721,
+      "maximum_velocity_ratio": 0.38457460403442384,
+      "cop_residual_m": 0.024524856956704328,
+      "friction_residual": -0.09585342064232573,
+      "normal_force_n": 150.3946992683527
+    },
+    {
+      "frame": 794,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9742473772226922,
+      "maximum_velocity_ratio": 0.40228891372680664,
+      "cop_residual_m": 0.01675180203621281,
+      "friction_residual": -0.11793053233069481,
+      "normal_force_n": 166.3143874044421
+    },
+    {
+      "frame": 795,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9431423382310038,
+      "maximum_velocity_ratio": 0.4076855659484863,
+      "cop_residual_m": 0.00947307593286778,
+      "friction_residual": -0.11709226463977067,
+      "normal_force_n": 172.13556037536756
+    },
+    {
+      "frame": 796,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8890895546211173,
+      "maximum_velocity_ratio": 0.40076456069946287,
+      "cop_residual_m": 0.0036623833959361133,
+      "friction_residual": -0.114311418666854,
+      "normal_force_n": 165.83286493320333
+    },
+    {
+      "frame": 797,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8501991805087418,
+      "maximum_velocity_ratio": 0.3815258741378784,
+      "cop_residual_m": -0.00040824358480074833,
+      "friction_residual": -0.1057367343103748,
+      "normal_force_n": 146.7758612966943
+    },
+    {
+      "frame": 798,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9869266238567386,
+      "maximum_velocity_ratio": 0.34996953010559084,
+      "cop_residual_m": 0.016329174655366853,
+      "friction_residual": -0.06765117997915654,
+      "normal_force_n": 115.920628433054
+    },
+    {
+      "frame": 799,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9775871835448395,
+      "maximum_velocity_ratio": 0.31450114250183103,
+      "cop_residual_m": 0.010805109128244072,
+      "friction_residual": -0.07170008889560132,
+      "normal_force_n": 111.45546599053736
+    },
+    {
+      "frame": 800,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9615636460791027,
+      "maximum_velocity_ratio": 0.2835263729095459,
+      "cop_residual_m": 0.022943154180057948,
+      "friction_residual": -0.07494796460334342,
+      "normal_force_n": 111.20133566490777
+    },
+    {
+      "frame": 801,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9394312893627095,
+      "maximum_velocity_ratio": 0.2820711851119995,
+      "cop_residual_m": 0.05855246969296707,
+      "friction_residual": -0.06969218009542912,
+      "normal_force_n": 115.1112855656929
+    },
+    {
+      "frame": 802,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9124172948941215,
+      "maximum_velocity_ratio": 0.2885907173156738,
+      "cop_residual_m": 0.05886648478278436,
+      "friction_residual": -0.06746007827842813,
+      "normal_force_n": 123.42639799018222
+    },
+    {
+      "frame": 803,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8824119682934886,
+      "maximum_velocity_ratio": 0.3003941774368286,
+      "cop_residual_m": 0.03446935593800636,
+      "friction_residual": -0.04321676833887772,
+      "normal_force_n": 136.74644606165756
+    },
+    {
+      "frame": 804,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8519701531715551,
+      "maximum_velocity_ratio": 0.31748151779174805,
+      "cop_residual_m": 0.022244924706538993,
+      "friction_residual": -0.025029860808383993,
+      "normal_force_n": 156.0798893580487
+    },
+    {
+      "frame": 805,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8727131503464587,
+      "maximum_velocity_ratio": 0.3346285104751587,
+      "cop_residual_m": 0.028707728652222965,
+      "friction_residual": -0.05220001528463097,
+      "normal_force_n": 290.24440836580857
+    },
+    {
+      "frame": 806,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8976518294723743,
+      "maximum_velocity_ratio": 0.34661087989807127,
+      "cop_residual_m": 0.03514256328130093,
+      "friction_residual": -0.04339172399570157,
+      "normal_force_n": 424.459931616518
+    },
+    {
+      "frame": 807,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9694139292771162,
+      "maximum_velocity_ratio": 0.35342862606048586,
+      "cop_residual_m": 0.041492451426423556,
+      "friction_residual": -0.039486838054330696,
+      "normal_force_n": 557.2899917183656
+    },
+    {
+      "frame": 808,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0592122433038322,
+      "maximum_velocity_ratio": 0.35508174896240235,
+      "cop_residual_m": 0.047182886849599676,
+      "friction_residual": -0.014823462996579839,
+      "normal_force_n": 688.134679301252
+    },
+    {
+      "frame": 809,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.1336034463597233,
+      "maximum_velocity_ratio": 0.3515702486038208,
+      "cop_residual_m": 0.0510733133118685,
+      "friction_residual": 0.019321569059272712,
+      "normal_force_n": 817.2323855317912
+    },
+    {
+      "frame": 810,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9461106668504224,
+      "maximum_velocity_ratio": 0.3428941249847412,
+      "cop_residual_m": 0.051420642136416034,
+      "friction_residual": 0.04637354085326935,
+      "normal_force_n": 945.656530039252
+    },
+    {
+      "frame": 811,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9423260721591682,
+      "maximum_velocity_ratio": 0.33129613399505614,
+      "cop_residual_m": 0.06024966149437498,
+      "friction_residual": 0.03908651499411595,
+      "normal_force_n": 865.557697325622
+    },
+    {
+      "frame": 812,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.9401396576253939,
+      "maximum_velocity_ratio": 0.31901893615722654,
+      "cop_residual_m": 0.0686777596022621,
+      "friction_residual": 0.026128305722858212,
+      "normal_force_n": 786.5549819403434
+    },
+    {
+      "frame": 813,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.946353413405078,
+      "maximum_velocity_ratio": 0.30606255531311033,
+      "cop_residual_m": 0.07815826208222766,
+      "friction_residual": 0.009583783350631375,
+      "normal_force_n": 706.9441431699377
+    },
+    {
+      "frame": 814,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.96651721309553,
+      "maximum_velocity_ratio": 0.2924269914627075,
+      "cop_residual_m": 0.08986191245583383,
+      "friction_residual": -0.008970187884488548,
+      "normal_force_n": 625.7248510234747
+    },
+    {
+      "frame": 815,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.0047286752079412,
+      "maximum_velocity_ratio": 0.2781122446060181,
+      "cop_residual_m": 0.104618025510492,
+      "friction_residual": -0.028614487155173157,
+      "normal_force_n": 542.6514913573966
+    },
+    {
+      "frame": 816,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 1.06317016415975,
+      "maximum_velocity_ratio": 0.263118314743042,
+      "cop_residual_m": 0.12282139514820142,
+      "friction_residual": -0.04926791626577968,
+      "normal_force_n": 458.28202606448923
+    },
+    {
+      "frame": 817,
+      "phase_speed": 1.2,
+      "maximum_effort_ratio": 0.8522106923491443,
+      "maximum_velocity_ratio": 0.24791038036346436,
+      "cop_residual_m": 0.08397841388600298,
+      "friction_residual": -0.19523958889858797,
+      "normal_force_n": 424.40910572275635
+    },
+    {
+      "frame": 818,
+      "phase_speed": 1.2000525704598102,
+      "maximum_effort_ratio": 0.7247233509896802,
+      "maximum_velocity_ratio": 0.23296380043029785,
+      "cop_residual_m": 0.04677553580274446,
+      "friction_residual": -0.28312569305088514,
+      "normal_force_n": 392.54636898828556
+    },
+    {
+      "frame": 819,
+      "phase_speed": 1.2009444269809,
+      "maximum_effort_ratio": 0.701889799130292,
+      "maximum_velocity_ratio": 0.21841974258422853,
+      "cop_residual_m": 0.02455312648523825,
+      "friction_residual": -0.3532054525821299,
+      "normal_force_n": 362.67902381781164
+    },
+    {
+      "frame": 820,
+      "phase_speed": 1.2038294130304832,
+      "maximum_effort_ratio": 0.7387071074947592,
+      "maximum_velocity_ratio": 0.2044438123703003,
+      "cop_residual_m": 0.014323156533116702,
+      "friction_residual": -0.28950342803405066,
+      "normal_force_n": 334.31812580531835
+    },
+    {
+      "frame": 821,
+      "phase_speed": 1.2095756258604824,
+      "maximum_effort_ratio": 0.7801138062684144,
+      "maximum_velocity_ratio": 0.19110301733016968,
+      "cop_residual_m": 0.029543430061080626,
+      "friction_residual": -0.11686729824012368,
+      "normal_force_n": 306.97255913003784
+    },
+    {
+      "frame": 822,
+      "phase_speed": 1.2187532011795787,
+      "maximum_effort_ratio": 0.8271951351688948,
+      "maximum_velocity_ratio": 0.17838276624679567,
+      "cop_residual_m": 0.058315207836407194,
+      "friction_residual": 0.08658267735734895,
+      "normal_force_n": 280.4101096234469
+    },
+    {
+      "frame": 823,
+      "phase_speed": 1.2316475426828435,
+      "maximum_effort_ratio": 0.6692144252593851,
+      "maximum_velocity_ratio": 0.1636941909790039,
+      "cop_residual_m": 0.056762436187810864,
+      "friction_residual": 0.055968875274020204,
+      "normal_force_n": 270.95912218012074
+    },
+    {
+      "frame": 824,
+      "phase_speed": 1.248286665758751,
+      "maximum_effort_ratio": 0.6872886237384311,
+      "maximum_velocity_ratio": 0.14427220821380615,
+      "cop_residual_m": 0.04632477645360397,
+      "friction_residual": 0.02739450752680947,
+      "normal_force_n": 258.39430586415807
+    },
+    {
+      "frame": 825,
+      "phase_speed": 1.268482246001927,
+      "maximum_effort_ratio": 0.7378598431334319,
+      "maximum_velocity_ratio": 0.11971107721328736,
+      "cop_residual_m": 0.026810490347218795,
+      "friction_residual": 0.0014065871622339307,
+      "normal_force_n": 241.33233403692037
+    },
+    {
+      "frame": 826,
+      "phase_speed": 1.291879791411504,
+      "maximum_effort_ratio": 0.7989050940049153,
+      "maximum_velocity_ratio": 0.11351630091667175,
+      "cop_residual_m": -0.002168963785306508,
+      "friction_residual": -0.022590636556168425,
+      "normal_force_n": 218.5720957557197
+    },
+    {
+      "frame": 827,
+      "phase_speed": 1.31801142970611,
+      "maximum_effort_ratio": 0.8678780976007178,
+      "maximum_velocity_ratio": 0.1137564480304718,
+      "cop_residual_m": 0.012284968515605052,
+      "friction_residual": -0.046249353101063435,
+      "normal_force_n": 189.14278508668895
+    },
+    {
+      "frame": 828,
+      "phase_speed": 1.3463451553805919,
+      "maximum_effort_ratio": 0.9430559595802372,
+      "maximum_velocity_ratio": 0.11160080879926682,
+      "cop_residual_m": 0.06758015457969434,
+      "friction_residual": -0.07224210992321974,
+      "normal_force_n": 152.38537727261297
+    },
+    {
+      "frame": 829,
+      "phase_speed": 1.3763262432759846,
+      "maximum_effort_ratio": 0.9187694370103527,
+      "maximum_velocity_ratio": 0.10868419706821442,
+      "cop_residual_m": 0.020148359063305404,
+      "friction_residual": -0.3322305073347244,
+      "normal_force_n": 260.17824434918595
+    },
+    {
+      "frame": 830,
+      "phase_speed": 1.4074088629246262,
+      "maximum_effort_ratio": 0.8909645925260794,
+      "maximum_velocity_ratio": 0.10680120438337326,
+      "cop_residual_m": 0.005829651378387505,
+      "friction_residual": -0.2801540658343465,
+      "normal_force_n": 381.11381350498624
+    },
+    {
+      "frame": 831,
+      "phase_speed": 1.4390779106724156,
+      "maximum_effort_ratio": 0.8579866539454818,
+      "maximum_velocity_ratio": 0.1079984188079834,
+      "cop_residual_m": 0.020344920339279277,
+      "friction_residual": -0.22909365514569627,
+      "normal_force_n": 516.0315437708869
+    },
+    {
+      "frame": 832,
+      "phase_speed": 1.4708623477591614,
+      "maximum_effort_ratio": 0.8169557760953174,
+      "maximum_velocity_ratio": 0.12552720308303833,
+      "cop_residual_m": 0.02766907778852285,
+      "friction_residual": -0.18064762091219824,
+      "normal_force_n": 665.2002828724146
+    },
+    {
+      "frame": 833,
+      "phase_speed": 1.5023418947481326,
+      "maximum_effort_ratio": 0.9172675843559799,
+      "maximum_velocity_ratio": 0.1414308190345764,
+      "cop_residual_m": 0.05753139214667811,
+      "friction_residual": -0.13627642174141566,
+      "normal_force_n": 828.3299074386048
+    },
+    {
+      "frame": 834,
+      "phase_speed": 1.5331489787158965,
+      "maximum_effort_ratio": 1.253421785455413,
+      "maximum_velocity_ratio": 0.14897528886795045,
+      "cop_residual_m": 0.09248993028287796,
+      "friction_residual": -0.09706124059305912,
+      "normal_force_n": 1004.599755680642
+    },
+    {
+      "frame": 835,
+      "phase_speed": 1.5629675861567098,
+      "maximum_effort_ratio": 1.1164392525325761,
+      "maximum_velocity_ratio": 0.1535835385322571,
+      "cop_residual_m": 0.07981803580559554,
+      "friction_residual": -0.0664691172392848,
+      "normal_force_n": 913.7222130864548
+    },
+    {
+      "frame": 836,
+      "phase_speed": 1.5915303207400906,
+      "maximum_effort_ratio": 1.0257578507120733,
+      "maximum_velocity_ratio": 0.16456300020217896,
+      "cop_residual_m": 0.07560292892755227,
+      "friction_residual": -0.04397651240267754,
+      "normal_force_n": 811.4989635263128
+    },
+    {
+      "frame": 837,
+      "phase_speed": 1.6186146115929132,
+      "maximum_effort_ratio": 0.979741660219593,
+      "maximum_velocity_ratio": 0.19466453790664673,
+      "cop_residual_m": 0.07960449402465819,
+      "friction_residual": -0.030383790048207328,
+      "normal_force_n": 698.8489544125034
+    },
+    {
+      "frame": 838,
+      "phase_speed": 1.6440387180392377,
+      "maximum_effort_ratio": 0.9769176007754818,
+      "maximum_velocity_ratio": 0.22831146717071532,
+      "cop_residual_m": 0.09157070093739557,
+      "friction_residual": -0.02725243881941633,
+      "normal_force_n": 577.2950934614905
+    },
+    {
+      "frame": 839,
+      "phase_speed": 1.667657946766927,
+      "maximum_effort_ratio": 1.0376865576354664,
+      "maximum_velocity_ratio": 0.2655207395553589,
+      "cop_residual_m": 0.11127688855091791,
+      "friction_residual": -0.03691201012083217,
+      "normal_force_n": 448.9326170533252
+    },
+    {
+      "frame": 840,
+      "phase_speed": 1.6893613334271504,
+      "maximum_effort_ratio": 1.1076342784640496,
+      "maximum_velocity_ratio": 0.30628530979156493,
+      "cop_residual_m": 0.1385594428665848,
+      "friction_residual": 0.04807922616939591,
+      "normal_force_n": 316.3866145836478
+    },
+    {
+      "frame": 841,
+      "phase_speed": 1.7090689308553713,
+      "maximum_effort_ratio": 1.0670663301893115,
+      "maximum_velocity_ratio": 0.3432061433792114,
+      "cop_residual_m": 0.13930595806226748,
+      "friction_residual": 0.06681729594341666,
+      "normal_force_n": 272.4108975198051
+    },
+    {
+      "frame": 842,
+      "phase_speed": 1.7267297770196963,
+      "maximum_effort_ratio": 0.9700822590438617,
+      "maximum_velocity_ratio": 0.3685581207275391,
+      "cop_residual_m": 0.12950398159299029,
+      "friction_residual": 0.08219790003930298,
+      "normal_force_n": 225.08752196210048
+    },
+    {
+      "frame": 843,
+      "phase_speed": 1.742320575455075,
+      "maximum_effort_ratio": 0.783730522181244,
+      "maximum_velocity_ratio": 0.38189384937286375,
+      "cop_residual_m": 0.10543402236274906,
+      "friction_residual": 0.09185833924304095,
+      "normal_force_n": 173.44469813413917
+    },
+    {
+      "frame": 844,
+      "phase_speed": 1.7558450996603294,
+      "maximum_effort_ratio": 0.6632104895709494,
+      "maximum_velocity_ratio": 0.38285651206970217,
+      "cop_residual_m": 0.06528376503596431,
+      "friction_residual": 0.09188137942943182,
+      "normal_force_n": 116.87850274115614
+    },
+    {
+      "frame": 845,
+      "phase_speed": 1.7673343232859193,
+      "maximum_effort_ratio": 0.5895648723426865,
+      "maximum_velocity_ratio": 0.3711803436279297,
+      "cop_residual_m": 0.02427655655966401,
+      "friction_residual": 0.07736544789387893,
+      "normal_force_n": 55.210419970721475
+    },
+    {
+      "frame": 846,
+      "phase_speed": 1.7768472742172305,
+      "maximum_effort_ratio": 0.646814024799993,
+      "maximum_velocity_ratio": 0.3466886043548584,
+      "cop_residual_m": 0.06076871277633807,
+      "friction_residual": 0.08068110480511388,
+      "normal_force_n": -11.285620847541077
+    },
+    {
+      "frame": 847,
+      "phase_speed": 1.7844726082653983,
+      "maximum_effort_ratio": 0.6948147434697298,
+      "maximum_velocity_ratio": 0.3174736738204956,
+      "cop_residual_m": 0.08203910925062669,
+      "friction_residual": 0.07337329509512161,
+      "normal_force_n": 2.815377635880197
+    },
+    {
+      "frame": 848,
+      "phase_speed": 1.7903308930351833,
+      "maximum_effort_ratio": 0.7352271417516758,
+      "maximum_velocity_ratio": 0.3028984546661377,
+      "cop_residual_m": 0.09398933626959392,
+      "friction_residual": 0.06128225125305175,
+      "normal_force_n": 17.549511171899983
+    },
+    {
+      "frame": 849,
+      "phase_speed": 1.7945775805610862,
+      "maximum_effort_ratio": 0.7680369799567629,
+      "maximum_velocity_ratio": 0.30888097286224364,
+      "cop_residual_m": 0.09959555726219742,
+      "friction_residual": 0.050242060324140525,
+      "normal_force_n": 32.124822968646114
+    },
+    {
+      "frame": 850,
+      "phase_speed": 1.7974066240373983,
+      "maximum_effort_ratio": 0.7939066153069632,
+      "maximum_velocity_ratio": 0.31674966812133787,
+      "cop_residual_m": 0.10228244112191814,
+      "friction_residual": 0.031412284767767265,
+      "normal_force_n": 46.10375088197424
+    },
+    {
+      "frame": 851,
+      "phase_speed": 1.7990546542232893,
+      "maximum_effort_ratio": 0.8141813099422763,
+      "maximum_velocity_ratio": 0.3265399932861328,
+      "cop_residual_m": 0.10586118251719172,
+      "friction_residual": 0.009712974939909242,
+      "normal_force_n": 59.392285866103194
+    },
+    {
+      "frame": 852,
+      "phase_speed": 1.7998055693651567,
+      "maximum_effort_ratio": 0.9845282400838177,
+      "maximum_velocity_ratio": 0.33829238414764407,
+      "cop_residual_m": 0.11450678127939681,
+      "friction_residual": -0.007968245370260297,
+      "normal_force_n": 72.18646318125745
+    },
+    {
+      "frame": 853,
+      "phase_speed": 1.7999953029050553,
+      "maximum_effort_ratio": 0.9168586374931931,
+      "maximum_velocity_ratio": 0.3474396228790283,
+      "cop_residual_m": 0.10598916274920217,
+      "friction_residual": -0.013875260026466142,
+      "normal_force_n": 66.67849374840802
+    },
+    {
+      "frame": 854,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8527561900770972,
+      "maximum_velocity_ratio": 0.3494281768798828,
+      "cop_residual_m": 0.09588368763227202,
+      "friction_residual": -0.023636466210533103,
+      "normal_force_n": 61.52661511740965
+    },
+    {
+      "frame": 855,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7871883210738646,
+      "maximum_velocity_ratio": 0.34429183006286623,
+      "cop_residual_m": 0.08202770026585661,
+      "friction_residual": -0.02938210000153462,
+      "normal_force_n": 56.59798897739981
+    },
+    {
+      "frame": 856,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7161483681221483,
+      "maximum_velocity_ratio": 0.3320315361022949,
+      "cop_residual_m": 0.061928222823381764,
+      "friction_residual": -0.02305154860684274,
+      "normal_force_n": 52.1030184718438
+    },
+    {
+      "frame": 857,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6363569143907203,
+      "maximum_velocity_ratio": 0.312647271156311,
+      "cop_residual_m": 0.03360875057495422,
+      "friction_residual": 0.007053533833360019,
+      "normal_force_n": 48.32612637323984
+    },
+    {
+      "frame": 858,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7980556710108808,
+      "maximum_velocity_ratio": 0.2861390352249146,
+      "cop_residual_m": 0.005880165966120916,
+      "friction_residual": 0.05082333419996173,
+      "normal_force_n": 45.59722346573174
+    },
+    {
+      "frame": 859,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8253635920307884,
+      "maximum_velocity_ratio": 0.26359870433807375,
+      "cop_residual_m": 0.006588947983880069,
+      "friction_residual": 0.05342525343526975,
+      "normal_force_n": 37.951609003809686
+    },
+    {
+      "frame": 860,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8459587552450526,
+      "maximum_velocity_ratio": 0.2561180830001831,
+      "cop_residual_m": 0.018325871018964716,
+      "friction_residual": 0.06125249122631247,
+      "normal_force_n": 31.787249575406285
+    },
+    {
+      "frame": 861,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8600779729263555,
+      "maximum_velocity_ratio": 0.2636971950531006,
+      "cop_residual_m": 0.0311570732049555,
+      "friction_residual": 0.07370155631570317,
+      "normal_force_n": 27.037074021441608
+    },
+    {
+      "frame": 862,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.868578986029771,
+      "maximum_velocity_ratio": 0.2863360643386841,
+      "cop_residual_m": 0.04394244411928185,
+      "friction_residual": 0.09448277489947503,
+      "normal_force_n": 24.127126688898297
+    },
+    {
+      "frame": 863,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8728890973657896,
+      "maximum_velocity_ratio": 0.3240346431732178,
+      "cop_residual_m": 0.05581714394016833,
+      "friction_residual": 0.1252599935110731,
+      "normal_force_n": 23.97877740158658
+    },
+    {
+      "frame": 864,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8749447866480066,
+      "maximum_velocity_ratio": 0.37679295539855956,
+      "cop_residual_m": 0.06619314234542102,
+      "friction_residual": 0.1497192841306663,
+      "normal_force_n": 27.998720232602615
+    },
+    {
+      "frame": 865,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.811995010063467,
+      "maximum_velocity_ratio": 0.42885284423828124,
+      "cop_residual_m": 0.04830468453374425,
+      "friction_residual": 0.11117189717287518,
+      "normal_force_n": 36.28150270019034
+    },
+    {
+      "frame": 866,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8083984829215156,
+      "maximum_velocity_ratio": 0.46445608139038086,
+      "cop_residual_m": 0.031557389850115074,
+      "friction_residual": 0.07554731471059585,
+      "normal_force_n": 44.093148943097475
+    },
+    {
+      "frame": 867,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8037658735044744,
+      "maximum_velocity_ratio": 0.48360271453857423,
+      "cop_residual_m": 0.03266319125634704,
+      "friction_residual": 0.0493533268702906,
+      "normal_force_n": 49.90471403067788
+    },
+    {
+      "frame": 868,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7987709495620056,
+      "maximum_velocity_ratio": 0.4862926959991455,
+      "cop_residual_m": 0.04813183983607327,
+      "friction_residual": 0.03333873537024788,
+      "normal_force_n": 53.245914694662055
+    },
+    {
+      "frame": 869,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7924362314991191,
+      "maximum_velocity_ratio": 0.47252602577209474,
+      "cop_residual_m": 0.06933470081056638,
+      "friction_residual": 0.022475045541611168,
+      "normal_force_n": 54.64550448781124
+    },
+    {
+      "frame": 870,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8508195518954395,
+      "maximum_velocity_ratio": 0.4423027515411377,
+      "cop_residual_m": 0.0962240029690852,
+      "friction_residual": 0.005917332057951503,
+      "normal_force_n": 55.57014885077445
+    },
+    {
+      "frame": 871,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7758155947083655,
+      "maximum_velocity_ratio": 0.39823987483978274,
+      "cop_residual_m": 0.059011913527763894,
+      "friction_residual": -0.014300227235680918,
+      "normal_force_n": 64.40652925567001
+    },
+    {
+      "frame": 872,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6959653234078351,
+      "maximum_velocity_ratio": 0.3429544925689697,
+      "cop_residual_m": 0.02458759912709842,
+      "friction_residual": -0.03949630908238696,
+      "normal_force_n": 67.41862919554708
+    },
+    {
+      "frame": 873,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6120411777013414,
+      "maximum_velocity_ratio": 0.2764465570449829,
+      "cop_residual_m": 0.004159489996476933,
+      "friction_residual": -0.051248484366968265,
+      "normal_force_n": 64.26562195697994
+    },
+    {
+      "frame": 874,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.5452916449519152,
+      "maximum_velocity_ratio": 0.19871609210968016,
+      "cop_residual_m": 0.025067927945332982,
+      "friction_residual": -0.03973989235872614,
+      "normal_force_n": 55.50222425080903
+    },
+    {
+      "frame": 875,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6471023107392879,
+      "maximum_velocity_ratio": 0.1274828016757965,
+      "cop_residual_m": 0.05633092637463777,
+      "friction_residual": 0.000980076223198497,
+      "normal_force_n": 42.6023424571168
+    },
+    {
+      "frame": 876,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9304480851654958,
+      "maximum_velocity_ratio": 0.11272517591714859,
+      "cop_residual_m": 0.09799051072916753,
+      "friction_residual": 0.04643102736628813,
+      "normal_force_n": 27.98510293536491
+    },
+    {
+      "frame": 877,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7623571195759828,
+      "maximum_velocity_ratio": 0.09590128809213638,
+      "cop_residual_m": 0.08209084662120499,
+      "friction_residual": -0.05311171106580763,
+      "normal_force_n": 95.84636432564399
+    },
+    {
+      "frame": 878,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7639107001785151,
+      "maximum_velocity_ratio": 0.16760345697402954,
+      "cop_residual_m": 0.06300374673658043,
+      "friction_residual": -0.019634434096323098,
+      "normal_force_n": 168.97473334074385
+    },
+    {
+      "frame": 879,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7703480504649753,
+      "maximum_velocity_ratio": 0.23041203022003173,
+      "cop_residual_m": 0.03971678256649539,
+      "friction_residual": 0.02519735106156182,
+      "normal_force_n": 244.8495518503451
+    },
+    {
+      "frame": 880,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7935209254205128,
+      "maximum_velocity_ratio": 0.2760293006896973,
+      "cop_residual_m": 0.0646955693962056,
+      "friction_residual": 0.07173328657946738,
+      "normal_force_n": 321.6040282206548
+    },
+    {
+      "frame": 881,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8298160350463455,
+      "maximum_velocity_ratio": 0.3044552803039551,
+      "cop_residual_m": 0.09720580390732929,
+      "friction_residual": 0.11827500095292827,
+      "normal_force_n": 398.0252673956949
+    },
+    {
+      "frame": 882,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0226286837476932,
+      "maximum_velocity_ratio": 0.31568996906280516,
+      "cop_residual_m": 0.1270487781298569,
+      "friction_residual": 0.165048414880181,
+      "normal_force_n": 473.5543899992865
+    },
+    {
+      "frame": 883,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8240443100702669,
+      "maximum_velocity_ratio": 0.31769962310791017,
+      "cop_residual_m": 0.08685464931139125,
+      "friction_residual": 0.1380900023944694,
+      "normal_force_n": 608.9249825696329
+    },
+    {
+      "frame": 884,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.793510656014371,
+      "maximum_velocity_ratio": 0.31845052242279054,
+      "cop_residual_m": 0.04410125275527564,
+      "friction_residual": 0.10811494756510132,
+      "normal_force_n": 743.8763934184481
+    },
+    {
+      "frame": 885,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7751582155727139,
+      "maximum_velocity_ratio": 0.3179426431655884,
+      "cop_residual_m": 0.059372178923491344,
+      "friction_residual": 0.07689539700146958,
+      "normal_force_n": 878.1668071687745
+    },
+    {
+      "frame": 886,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7546064605641652,
+      "maximum_velocity_ratio": 0.3161760330200195,
+      "cop_residual_m": 0.07357457516791738,
+      "friction_residual": 0.04561711306041511,
+      "normal_force_n": 1011.7859259919965
+    },
+    {
+      "frame": 887,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7359117111025714,
+      "maximum_velocity_ratio": 0.31315062046051023,
+      "cop_residual_m": 0.08584838355464275,
+      "friction_residual": 0.014942170029289499,
+      "normal_force_n": 1144.96860426333
+    },
+    {
+      "frame": 888,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9218544645295083,
+      "maximum_velocity_ratio": 0.30886647701263426,
+      "cop_residual_m": 0.09539300664796294,
+      "friction_residual": -0.014915375728540296,
+      "normal_force_n": 1278.2105901034781
+    },
+    {
+      "frame": 889,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.897901760052639,
+      "maximum_velocity_ratio": 0.3012279748916626,
+      "cop_residual_m": 0.08880567055975404,
+      "friction_residual": -0.14506737088698451,
+      "normal_force_n": 1177.929464760897
+    },
+    {
+      "frame": 890,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8701345455211827,
+      "maximum_velocity_ratio": 0.2881396055221558,
+      "cop_residual_m": 0.08133022811949621,
+      "friction_residual": -0.2742662476540437,
+      "normal_force_n": 1077.097100145563
+    },
+    {
+      "frame": 891,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8393075775618825,
+      "maximum_velocity_ratio": 0.2696013212203979,
+      "cop_residual_m": 0.07336663595064696,
+      "friction_residual": -0.4031779883703731,
+      "normal_force_n": 974.9997046803766
+    },
+    {
+      "frame": 892,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8053156851635159,
+      "maximum_velocity_ratio": 0.24561314582824706,
+      "cop_residual_m": 0.0650149665292083,
+      "friction_residual": -0.5087857900677784,
+      "normal_force_n": 871.2132990129653
+    },
+    {
+      "frame": 893,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7672408325082083,
+      "maximum_velocity_ratio": 0.21617507934570312,
+      "cop_residual_m": 0.0560833012762558,
+      "friction_residual": -0.55667687758093,
+      "normal_force_n": 765.6037175711928
+    },
+    {
+      "frame": 894,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7233854590831958,
+      "maximum_velocity_ratio": 0.18128710985183716,
+      "cop_residual_m": 0.0460914221568286,
+      "friction_residual": -0.6003315556557683,
+      "normal_force_n": 658.326832620994
+    },
+    {
+      "frame": 895,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7481451554140697,
+      "maximum_velocity_ratio": 0.18476803302764894,
+      "cop_residual_m": 0.044753021481066926,
+      "friction_residual": -0.7410391205982406,
+      "normal_force_n": 668.4501661742745
+    },
+    {
+      "frame": 896,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7779262145575271,
+      "maximum_velocity_ratio": 0.2108757495880127,
+      "cop_residual_m": 0.04302565249469125,
+      "friction_residual": -0.8722279220840712,
+      "normal_force_n": 678.7562179921509
+    },
+    {
+      "frame": 897,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8041461822781144,
+      "maximum_velocity_ratio": 0.24090356826782228,
+      "cop_residual_m": 0.04179358572595576,
+      "friction_residual": -0.9766208893929731,
+      "normal_force_n": 689.7268906899557
+    },
+    {
+      "frame": 898,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8272613140625472,
+      "maximum_velocity_ratio": 0.27485146522521975,
+      "cop_residual_m": 0.04196229770471748,
+      "friction_residual": -1.0022967238177698,
+      "normal_force_n": 702.2746003679571
+    },
+    {
+      "frame": 899,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8479751972782998,
+      "maximum_velocity_ratio": 0.312719464302063,
+      "cop_residual_m": 0.044459309701053704,
+      "friction_residual": -0.9321069076694563,
+      "normal_force_n": 717.7491287108645
+    },
+    {
+      "frame": 900,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8672432659611473,
+      "maximum_velocity_ratio": 0.35450756549835205,
+      "cop_residual_m": 0.0690349974310783,
+      "friction_residual": -0.8296515576583058,
+      "normal_force_n": 737.9473242528233
+    },
+    {
+      "frame": 901,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7509773515709885,
+      "maximum_velocity_ratio": 0.3940971851348877,
+      "cop_residual_m": 0.06742958447507567,
+      "friction_residual": -0.80269983854269,
+      "normal_force_n": 775.9848247511883
+    },
+    {
+      "frame": 902,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7800888423065122,
+      "maximum_velocity_ratio": 0.4253697395324707,
+      "cop_residual_m": 0.06442821619417625,
+      "friction_residual": -0.780318827255131,
+      "normal_force_n": 813.9760762355659
+    },
+    {
+      "frame": 903,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8114099435773372,
+      "maximum_velocity_ratio": 0.44832520484924315,
+      "cop_residual_m": 0.059220719514385914,
+      "friction_residual": -0.7641793511939785,
+      "normal_force_n": 849.7982562724544
+    },
+    {
+      "frame": 904,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.843883893928733,
+      "maximum_velocity_ratio": 0.4629636764526367,
+      "cop_residual_m": 0.051667848184902936,
+      "friction_residual": -0.7546724671166017,
+      "normal_force_n": 881.8292958873565
+    },
+    {
+      "frame": 905,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8766797702821382,
+      "maximum_velocity_ratio": 0.4692850589752197,
+      "cop_residual_m": 0.04230417307329374,
+      "friction_residual": -0.7508849349286415,
+      "normal_force_n": 908.9649050564188
+    },
+    {
+      "frame": 906,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9091839405771576,
+      "maximum_velocity_ratio": 0.4672893524169922,
+      "cop_residual_m": 0.03233891291582134,
+      "friction_residual": -0.7505607087485417,
+      "normal_force_n": 930.6407796199826
+    },
+    {
+      "frame": 907,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7799730139155137,
+      "maximum_velocity_ratio": 0.4653027057647705,
+      "cop_residual_m": 0.0428854991923414,
+      "friction_residual": -0.6261373612224584,
+      "normal_force_n": 777.6632519687861
+    },
+    {
+      "frame": 908,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7812538585936889,
+      "maximum_velocity_ratio": 0.4716510772705078,
+      "cop_residual_m": 0.05361672948366947,
+      "friction_residual": -0.5041792402513422,
+      "normal_force_n": 626.6203685751015
+    },
+    {
+      "frame": 909,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7944055546842352,
+      "maximum_velocity_ratio": 0.48633456230163574,
+      "cop_residual_m": 0.06344350161555778,
+      "friction_residual": -0.387161477753393,
+      "normal_force_n": 477.7466407271553
+    },
+    {
+      "frame": 910,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8062850659583018,
+      "maximum_velocity_ratio": 0.5093531131744384,
+      "cop_residual_m": 0.07171906020064919,
+      "friction_residual": -0.2771383913873098,
+      "normal_force_n": 331.33638205459664
+    },
+    {
+      "frame": 911,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8165842779877549,
+      "maximum_velocity_ratio": 0.540706729888916,
+      "cop_residual_m": 0.07823113672281101,
+      "friction_residual": -0.14746178818739275,
+      "normal_force_n": 187.7392507982729
+    },
+    {
+      "frame": 912,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9104057915827103,
+      "maximum_velocity_ratio": 0.5803954124450683,
+      "cop_residual_m": 0.08319701339910074,
+      "friction_residual": 0.08422280554868183,
+      "normal_force_n": 47.35372772719181
+    },
+    {
+      "frame": 913,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7962983997572922,
+      "maximum_velocity_ratio": 0.6178770542144776,
+      "cop_residual_m": 0.05273774689716649,
+      "friction_residual": 0.037236165195047126,
+      "normal_force_n": 56.04372482445115
+    },
+    {
+      "frame": 914,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6785515962146875,
+      "maximum_velocity_ratio": 0.6426095008850098,
+      "cop_residual_m": 0.026930059535762,
+      "friction_residual": 0.027515795152218636,
+      "normal_force_n": 61.39679064776692
+    },
+    {
+      "frame": 915,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6537497334404396,
+      "maximum_velocity_ratio": 0.654592752456665,
+      "cop_residual_m": 0.013751158662075954,
+      "friction_residual": 0.01652261638991969,
+      "normal_force_n": 62.848768681031096
+    },
+    {
+      "frame": 916,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7106432133626881,
+      "maximum_velocity_ratio": 0.6538267612457276,
+      "cop_residual_m": 0.005674860631515775,
+      "friction_residual": 0.027467895741889348,
+      "normal_force_n": 60.31469868671054
+    },
+    {
+      "frame": 917,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7535512115698834,
+      "maximum_velocity_ratio": 0.6403115749359131,
+      "cop_residual_m": 0.02538414489034861,
+      "friction_residual": 0.03236359560047615,
+      "normal_force_n": 54.140372867133074
+    },
+    {
+      "frame": 918,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8512302222203609,
+      "maximum_velocity_ratio": 0.6140472412109375,
+      "cop_residual_m": 0.04627654715281241,
+      "friction_residual": 0.03310736459803309,
+      "normal_force_n": 45.05054806507374
+    },
+    {
+      "frame": 919,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.852463384636883,
+      "maximum_velocity_ratio": 0.5779754161834717,
+      "cop_residual_m": 0.05148902709971892,
+      "friction_residual": 0.030212602502593132,
+      "normal_force_n": 46.002268522316236
+    },
+    {
+      "frame": 920,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8458882899181571,
+      "maximum_velocity_ratio": 0.5350379943847656,
+      "cop_residual_m": 0.05389906001169761,
+      "friction_residual": 0.03331565720287167,
+      "normal_force_n": 45.27496940886674
+    },
+    {
+      "frame": 921,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8320485360598788,
+      "maximum_velocity_ratio": 0.4852348804473877,
+      "cop_residual_m": 0.06996602738199945,
+      "friction_residual": 0.04259330184471104,
+      "normal_force_n": 42.41351910660474
+    },
+    {
+      "frame": 922,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.824182679794331,
+      "maximum_velocity_ratio": 0.42856616973876954,
+      "cop_residual_m": 0.10704850476710749,
+      "friction_residual": 0.05632495720896199,
+      "normal_force_n": 37.32427734393258
+    },
+    {
+      "frame": 923,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0069587296683833,
+      "maximum_velocity_ratio": 0.3650317668914795,
+      "cop_residual_m": 0.14627788193776908,
+      "friction_residual": 0.0709463824328424,
+      "normal_force_n": 30.300681648695008
+    },
+    {
+      "frame": 924,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2250629286075163,
+      "maximum_velocity_ratio": 0.2946317195892334,
+      "cop_residual_m": 0.1845118592054758,
+      "friction_residual": 0.08114479610148613,
+      "normal_force_n": 22.03604773247387
+    },
+    {
+      "frame": 925,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.1016949459561038,
+      "maximum_velocity_ratio": 0.2226346492767334,
+      "cop_residual_m": 0.1706796838501268,
+      "friction_residual": 0.08115035730682126,
+      "normal_force_n": 10.318375032302633
+    },
+    {
+      "frame": 926,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9511366992542043,
+      "maximum_velocity_ratio": 0.18255903720855712,
+      "cop_residual_m": 0.1505451882861471,
+      "friction_residual": 0.0753994729759456,
+      "normal_force_n": 2.693416671688841
+    },
+    {
+      "frame": 927,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8460494885710329,
+      "maximum_velocity_ratio": 0.19615914821624755,
+      "cop_residual_m": 0.1253706606920277,
+      "friction_residual": 0.06124119169461181,
+      "normal_force_n": -1.390075033109311
+    },
+    {
+      "frame": 928,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8335032809474867,
+      "maximum_velocity_ratio": 0.20416707992553712,
+      "cop_residual_m": 0.10106762989073555,
+      "friction_residual": 0.04199053077632895,
+      "normal_force_n": -2.4609677161733945
+    },
+    {
+      "frame": 929,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8203880202135677,
+      "maximum_velocity_ratio": 0.20658283233642577,
+      "cop_residual_m": 0.11730671062802635,
+      "friction_residual": 0.02693628337730408,
+      "normal_force_n": -1.0282870091741687
+    },
+    {
+      "frame": 930,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8184988382558267,
+      "maximum_velocity_ratio": 0.2034064292907715,
+      "cop_residual_m": 0.12496017388918731,
+      "friction_residual": 0.025090746211504703,
+      "normal_force_n": 2.416910544992063
+    },
+    {
+      "frame": 931,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8005253346920418,
+      "maximum_velocity_ratio": 0.20094542503356932,
+      "cop_residual_m": 0.07949435116224587,
+      "friction_residual": 0.039593547692395085,
+      "normal_force_n": 10.5072709647489
+    },
+    {
+      "frame": 932,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7908047140805663,
+      "maximum_velocity_ratio": 0.20550737380981446,
+      "cop_residual_m": 0.03842681788074217,
+      "friction_residual": 0.04643866811732965,
+      "normal_force_n": 18.562190037015498
+    },
+    {
+      "frame": 933,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7920443198754816,
+      "maximum_velocity_ratio": 0.226859712600708,
+      "cop_residual_m": 0.017520134990400425,
+      "friction_residual": 0.046039923675481,
+      "normal_force_n": 26.798307114782595
+    },
+    {
+      "frame": 934,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8064486696368525,
+      "maximum_velocity_ratio": 0.2702418565750122,
+      "cop_residual_m": 0.028926909382090384,
+      "friction_residual": 0.040686228184985844,
+      "normal_force_n": 35.76180086704879
+    },
+    {
+      "frame": 935,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.835720525610555,
+      "maximum_velocity_ratio": 0.3112179279327393,
+      "cop_residual_m": 0.05184404283035169,
+      "friction_residual": 0.0345486992598772,
+      "normal_force_n": 46.3319448069639
+    },
+    {
+      "frame": 936,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8810124472085406,
+      "maximum_velocity_ratio": 0.34978795051574707,
+      "cop_residual_m": 0.08569103302393476,
+      "friction_residual": 0.05518232918491883,
+      "normal_force_n": 59.70964789841103
+    },
+    {
+      "frame": 937,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8083942376434778,
+      "maximum_velocity_ratio": 0.3873821020126343,
+      "cop_residual_m": 0.055430177450095625,
+      "friction_residual": 0.025899586692455994,
+      "normal_force_n": 68.04519516026937
+    },
+    {
+      "frame": 938,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.798765139964589,
+      "maximum_velocity_ratio": 0.4254305839538574,
+      "cop_residual_m": 0.02917457055682981,
+      "friction_residual": 0.021002816446706936,
+      "normal_force_n": 70.56352319200727
+    },
+    {
+      "frame": 939,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8417926517602641,
+      "maximum_velocity_ratio": 0.46393346786499023,
+      "cop_residual_m": 0.04338979525800098,
+      "friction_residual": 0.027921058667878147,
+      "normal_force_n": 65.89241766749865
+    },
+    {
+      "frame": 940,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8945319586341755,
+      "maximum_velocity_ratio": 0.5028906345367432,
+      "cop_residual_m": 0.11507420555925586,
+      "friction_residual": 0.06575073967640335,
+      "normal_force_n": 53.725808275409314
+    },
+    {
+      "frame": 941,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.1766263772428749,
+      "maximum_velocity_ratio": 0.542302131652832,
+      "cop_residual_m": 0.18926171692056554,
+      "friction_residual": 0.1220111362106923,
+      "normal_force_n": 34.847923174016636
+    },
+    {
+      "frame": 942,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.5696008257320222,
+      "maximum_velocity_ratio": 0.5821680068969727,
+      "cop_residual_m": 0.25623583087497986,
+      "friction_residual": 0.22626064761637263,
+      "normal_force_n": 11.093425274803332
+    },
+    {
+      "frame": 943,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.079337033530954,
+      "maximum_velocity_ratio": 0.6156326770782471,
+      "cop_residual_m": 0.17276089113467363,
+      "friction_residual": 0.1778928695572453,
+      "normal_force_n": 61.1377022644043
+    },
+    {
+      "frame": 944,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8853177866861678,
+      "maximum_velocity_ratio": 0.6358405590057373,
+      "cop_residual_m": 0.08622606217952236,
+      "friction_residual": 0.1245880744422637,
+      "normal_force_n": 109.19211039902119
+    },
+    {
+      "frame": 945,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7784586790670305,
+      "maximum_velocity_ratio": 0.6427916526794434,
+      "cop_residual_m": 0.023165391840833677,
+      "friction_residual": 0.1296383513029401,
+      "normal_force_n": 155.01603307883096
+    },
+    {
+      "frame": 946,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7121964078634001,
+      "maximum_velocity_ratio": 0.636486005783081,
+      "cop_residual_m": -0.014793768362278964,
+      "friction_residual": 0.16609819412858462,
+      "normal_force_n": 199.27446301318315
+    },
+    {
+      "frame": 947,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7855179712052086,
+      "maximum_velocity_ratio": 0.6169235706329346,
+      "cop_residual_m": 0.013148467790205202,
+      "friction_residual": 0.23290700100394987,
+      "normal_force_n": 243.51382348115507
+    },
+    {
+      "frame": 948,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9482907515496933,
+      "maximum_velocity_ratio": 0.5841043949127197,
+      "cop_residual_m": 0.032025870240864215,
+      "friction_residual": 0.32736049045343685,
+      "normal_force_n": 290.0967531439492
+    },
+    {
+      "frame": 949,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.098314660552514,
+      "maximum_velocity_ratio": 0.5437443733215332,
+      "cop_residual_m": 0.04784090068514142,
+      "friction_residual": 0.22126587863738875,
+      "normal_force_n": 266.1602835891835
+    },
+    {
+      "frame": 950,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2415778471607137,
+      "maximum_velocity_ratio": 0.5015594005584717,
+      "cop_residual_m": 0.0804708087672582,
+      "friction_residual": 0.07248281270384928,
+      "normal_force_n": 245.1944381855029
+    },
+    {
+      "frame": 951,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.3898010252348991,
+      "maximum_velocity_ratio": 0.4575494766235352,
+      "cop_residual_m": 0.11584688864107262,
+      "friction_residual": -0.11573202999818515,
+      "normal_force_n": 225.5560018439476
+    },
+    {
+      "frame": 952,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7211573883527518,
+      "maximum_velocity_ratio": 0.4117146968841553,
+      "cop_residual_m": 0.15590669974835877,
+      "friction_residual": -0.23193945691138393,
+      "normal_force_n": 206.2765615761902
+    },
+    {
+      "frame": 953,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7604389873213063,
+      "maximum_velocity_ratio": 0.46040687561035154,
+      "cop_residual_m": 0.20163626618164748,
+      "friction_residual": 0.04825835749400436,
+      "normal_force_n": 187.13601132234888
+    },
+    {
+      "frame": 954,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.805232416315958,
+      "maximum_velocity_ratio": 0.5066288948059082,
+      "cop_residual_m": 0.2532336659727019,
+      "friction_residual": 0.38541360277349745,
+      "normal_force_n": 168.73861547378172
+    },
+    {
+      "frame": 955,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0309604186658943,
+      "maximum_velocity_ratio": 0.5416296005249024,
+      "cop_residual_m": 0.15187604851101272,
+      "friction_residual": 0.3111410721154287,
+      "normal_force_n": 232.01513112336497
+    },
+    {
+      "frame": 956,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8727830252588589,
+      "maximum_velocity_ratio": 0.5577876567840576,
+      "cop_residual_m": 0.12085568845521677,
+      "friction_residual": 0.21288606368443513,
+      "normal_force_n": 294.78687843868454
+    },
+    {
+      "frame": 957,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9071367984733079,
+      "maximum_velocity_ratio": 0.5551031112670899,
+      "cop_residual_m": 0.11199261327510865,
+      "friction_residual": 0.10146891745628518,
+      "normal_force_n": 355.1400128918293
+    },
+    {
+      "frame": 958,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9358468908804035,
+      "maximum_velocity_ratio": 0.5335759162902832,
+      "cop_residual_m": 0.10430392037639694,
+      "friction_residual": -0.01773859096557205,
+      "normal_force_n": 412.1935225872503
+    },
+    {
+      "frame": 959,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9606179668022368,
+      "maximum_velocity_ratio": 0.4932060718536377,
+      "cop_residual_m": 0.10329774916833898,
+      "friction_residual": -0.1449038240082306,
+      "normal_force_n": 466.13427948177156
+    },
+    {
+      "frame": 960,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.984146926218014,
+      "maximum_velocity_ratio": 0.4339935779571533,
+      "cop_residual_m": 0.11539057626951095,
+      "friction_residual": -0.26478039841056256,
+      "normal_force_n": 518.2677405293158
+    },
+    {
+      "frame": 961,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9215577505531946,
+      "maximum_velocity_ratio": 0.3660618305206299,
+      "cop_residual_m": 0.06133191301820663,
+      "friction_residual": -0.5189246484521479,
+      "normal_force_n": 599.517712973568
+    },
+    {
+      "frame": 962,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9026163364808393,
+      "maximum_velocity_ratio": 0.29953415393829347,
+      "cop_residual_m": 0.003481702313544183,
+      "friction_residual": -0.7312225737284473,
+      "normal_force_n": 680.6134396196863
+    },
+    {
+      "frame": 963,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.166814796639848,
+      "maximum_velocity_ratio": 0.23441057205200194,
+      "cop_residual_m": -0.05376384602018767,
+      "friction_residual": -0.9224167762359715,
+      "normal_force_n": 760.5574710452009
+    },
+    {
+      "frame": 964,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.280816198127518,
+      "maximum_velocity_ratio": 0.2191368579864502,
+      "cop_residual_m": 0.006523346445287741,
+      "friction_residual": -1.100470416731601,
+      "normal_force_n": 839.1921530945
+    },
+    {
+      "frame": 965,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.211160104494493,
+      "maximum_velocity_ratio": 0.22920782566070558,
+      "cop_residual_m": 0.07056722648525487,
+      "friction_residual": -1.2361698600571327,
+      "normal_force_n": 917.0525637812399
+    },
+    {
+      "frame": 966,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0588260799426066,
+      "maximum_velocity_ratio": 0.2399059772491455,
+      "cop_residual_m": 0.13184696121783995,
+      "friction_residual": -1.3689265500665775,
+      "normal_force_n": 995.2523057747097
+    },
+    {
+      "frame": 967,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.903452009840424,
+      "maximum_velocity_ratio": 0.25181193351745607,
+      "cop_residual_m": 0.10928484672137498,
+      "friction_residual": -1.232932505458157,
+      "normal_force_n": 865.370443630756
+    },
+    {
+      "frame": 968,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8735332276354216,
+      "maximum_velocity_ratio": 0.26550631523132323,
+      "cop_residual_m": 0.0883277937809659,
+      "friction_residual": -1.0458355722750128,
+      "normal_force_n": 736.0642914238318
+    },
+    {
+      "frame": 969,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8592566434984469,
+      "maximum_velocity_ratio": 0.28098909854888915,
+      "cop_residual_m": 0.07268840452979958,
+      "friction_residual": -0.7877271740508368,
+      "normal_force_n": 605.047408087979
+    },
+    {
+      "frame": 970,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9087288538487202,
+      "maximum_velocity_ratio": 0.2982602834701538,
+      "cop_residual_m": 0.06635295312292123,
+      "friction_residual": -0.5100844315036072,
+      "normal_force_n": 470.98138327308874
+    },
+    {
+      "frame": 971,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0553039361875869,
+      "maximum_velocity_ratio": 0.3173198938369751,
+      "cop_residual_m": 0.07350682914801376,
+      "friction_residual": -0.22211064096042757,
+      "normal_force_n": 333.48386353100113
+    },
+    {
+      "frame": 972,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2544052141565154,
+      "maximum_velocity_ratio": 0.3381679058074951,
+      "cop_residual_m": 0.14011767186506138,
+      "friction_residual": 0.07418278344215296,
+      "normal_force_n": 193.11247538567815
+    },
+    {
+      "frame": 973,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.3677953194522718,
+      "maximum_velocity_ratio": 0.35639753341674807,
+      "cop_residual_m": 0.16412928380002745,
+      "friction_residual": 0.08991257422556026,
+      "normal_force_n": 166.69708771353513
+    },
+    {
+      "frame": 974,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.3821954895387325,
+      "maximum_velocity_ratio": 0.36760199069976807,
+      "cop_residual_m": 0.17253475222516568,
+      "friction_residual": 0.09456708133933034,
+      "normal_force_n": 139.46152388505323
+    },
+    {
+      "frame": 975,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2949360665153429,
+      "maximum_velocity_ratio": 0.37178122997283936,
+      "cop_residual_m": 0.1652682761042474,
+      "friction_residual": 0.09140173959259562,
+      "normal_force_n": 110.74284457592394
+    },
+    {
+      "frame": 976,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.106648066251559,
+      "maximum_velocity_ratio": 0.36893529891967775,
+      "cop_residual_m": 0.14273515578250176,
+      "friction_residual": 0.09256971798844993,
+      "normal_force_n": 80.05238652865943
+    },
+    {
+      "frame": 977,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8221550884841341,
+      "maximum_velocity_ratio": 0.3590641975402832,
+      "cop_residual_m": 0.10593529031414531,
+      "friction_residual": 0.0753265319921405,
+      "normal_force_n": 47.10230783730344
+    },
+    {
+      "frame": 978,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.83780260189069,
+      "maximum_velocity_ratio": 0.34216787815093996,
+      "cop_residual_m": 0.06058630310581312,
+      "friction_residual": 0.04303239125172152,
+      "normal_force_n": 11.82255671186013
+    },
+    {
+      "frame": 979,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8229059483906355,
+      "maximum_velocity_ratio": 0.3449842929840088,
+      "cop_residual_m": 0.04358847500952162,
+      "friction_residual": -0.014542021753771494,
+      "normal_force_n": 26.091009660589673
+    },
+    {
+      "frame": 980,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8048068342999148,
+      "maximum_velocity_ratio": 0.35615317821502684,
+      "cop_residual_m": 0.025687106427716277,
+      "friction_residual": -0.016920671923412938,
+      "normal_force_n": 38.40818085418683
+    },
+    {
+      "frame": 981,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7832593779433449,
+      "maximum_velocity_ratio": 0.36847720146179197,
+      "cop_residual_m": 0.015287110468721738,
+      "friction_residual": 0.006204780709717413,
+      "normal_force_n": 48.879085042499746
+    },
+    {
+      "frame": 982,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7656002183452457,
+      "maximum_velocity_ratio": 0.3819563627243042,
+      "cop_residual_m": 0.036730998114664265,
+      "friction_residual": 0.031583370499859265,
+      "normal_force_n": 57.705929254473354
+    },
+    {
+      "frame": 983,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8022011666098057,
+      "maximum_velocity_ratio": 0.39659068584442136,
+      "cop_residual_m": 0.05423705004251369,
+      "friction_residual": 0.05904799523381374,
+      "normal_force_n": 65.16015992666281
+    },
+    {
+      "frame": 984,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.880162913581045,
+      "maximum_velocity_ratio": 0.41238017082214357,
+      "cop_residual_m": 0.06674051756259106,
+      "friction_residual": 0.08385053976472491,
+      "normal_force_n": 71.55801088503208
+    },
+    {
+      "frame": 985,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8595154560849129,
+      "maximum_velocity_ratio": 0.4240423202514648,
+      "cop_residual_m": 0.03772166197123911,
+      "friction_residual": 0.07849869603353113,
+      "normal_force_n": 78.858465115421
+    },
+    {
+      "frame": 986,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8451129168887158,
+      "maximum_velocity_ratio": 0.4262946605682373,
+      "cop_residual_m": 0.039681113100747,
+      "friction_residual": 0.07360178366424883,
+      "normal_force_n": 85.41997184461347
+    },
+    {
+      "frame": 987,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8324901276271877,
+      "maximum_velocity_ratio": 0.41913719177246095,
+      "cop_residual_m": 0.03781870784401475,
+      "friction_residual": 0.0704013950729263,
+      "normal_force_n": 90.98621989404911
+    },
+    {
+      "frame": 988,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8204979633518387,
+      "maximum_velocity_ratio": 0.4025699615478516,
+      "cop_residual_m": 0.03345407642777918,
+      "friction_residual": 0.07061842827503646,
+      "normal_force_n": 95.72005399637715
+    },
+    {
+      "frame": 989,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8388447165056587,
+      "maximum_velocity_ratio": 0.37659289836883547,
+      "cop_residual_m": 0.061140167219221685,
+      "friction_residual": 0.0748058974871068,
+      "normal_force_n": 100.15797424080472
+    },
+    {
+      "frame": 990,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0129439263821847,
+      "maximum_velocity_ratio": 0.3412060499191284,
+      "cop_residual_m": 0.08452780315920676,
+      "friction_residual": 0.08241916185172643,
+      "normal_force_n": 105.16969305839382
+    },
+    {
+      "frame": 991,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9407342445543914,
+      "maximum_velocity_ratio": 0.3079122304916382,
+      "cop_residual_m": 0.07383630489452621,
+      "friction_residual": 0.022456085590107176,
+      "normal_force_n": 117.30295376890399
+    },
+    {
+      "frame": 992,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8460596757436403,
+      "maximum_velocity_ratio": 0.2882142782211304,
+      "cop_residual_m": 0.06067156413326465,
+      "friction_residual": -0.03429030803840033,
+      "normal_force_n": 126.24246682966624
+    },
+    {
+      "frame": 993,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8522418159839398,
+      "maximum_velocity_ratio": 0.282112193107605,
+      "cop_residual_m": 0.04317008430005347,
+      "friction_residual": -0.0722112144970401,
+      "normal_force_n": 131.57726502009086
+    },
+    {
+      "frame": 994,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8713096800880303,
+      "maximum_velocity_ratio": 0.289605975151062,
+      "cop_residual_m": 0.020073551868554935,
+      "friction_residual": -0.09462476868754356,
+      "normal_force_n": 134.35752642092814
+    },
+    {
+      "frame": 995,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8731789165964968,
+      "maximum_velocity_ratio": 0.31069562435150144,
+      "cop_residual_m": -0.007394180629030471,
+      "friction_residual": -0.09469274979617436,
+      "normal_force_n": 137.07627879175854
+    },
+    {
+      "frame": 996,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8415602293083263,
+      "maximum_velocity_ratio": 0.34538114070892334,
+      "cop_residual_m": 0.03572617775510335,
+      "friction_residual": -0.059980919905422536,
+      "normal_force_n": 143.6207629550091
+    },
+    {
+      "frame": 997,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7509608875698434,
+      "maximum_velocity_ratio": 0.3680692195892334,
+      "cop_residual_m": 0.09158817392936407,
+      "friction_residual": 0.07362216647236829,
+      "normal_force_n": 154.74769933518255
+    },
+    {
+      "frame": 998,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8408108377667364,
+      "maximum_velocity_ratio": 0.3531665325164795,
+      "cop_residual_m": 0.1155415538123962,
+      "friction_residual": 0.17207124796568152,
+      "normal_force_n": 164.3474915981215
+    },
+    {
+      "frame": 999,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7330940993852236,
+      "maximum_velocity_ratio": 0.30067307949066163,
+      "cop_residual_m": 0.09342960681723451,
+      "friction_residual": 0.21859177163441923,
+      "normal_force_n": 169.8073644185198
+    },
+    {
+      "frame": 1000,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7798777119445086,
+      "maximum_velocity_ratio": 0.2105888843536377,
+      "cop_residual_m": 0.04006716412108555,
+      "friction_residual": 0.20664165503559778,
+      "normal_force_n": 173.3667751053966
+    },
+    {
+      "frame": 1001,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.9950558714562032,
+      "maximum_velocity_ratio": 0.15615139780817805,
+      "cop_residual_m": 0.10187246392103946,
+      "friction_residual": 0.15991325115274602,
+      "normal_force_n": 181.85229702039447
+    },
+    {
+      "frame": 1002,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.5257886998144325,
+      "maximum_velocity_ratio": 0.15375834703445435,
+      "cop_residual_m": 0.20324672951784178,
+      "friction_residual": 0.20786618929363146,
+      "normal_force_n": 206.56523657039818
+    },
+    {
+      "frame": 1003,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.3630521620030092,
+      "maximum_velocity_ratio": 0.24547417163848878,
+      "cop_residual_m": 0.1939008865273005,
+      "friction_residual": 0.09738550342717615,
+      "normal_force_n": 209.67362508245967
+    },
+    {
+      "frame": 1004,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.4618822414645813,
+      "maximum_velocity_ratio": 0.36671903133392336,
+      "cop_residual_m": 0.17869644004893845,
+      "friction_residual": 0.03609798410775853,
+      "normal_force_n": 211.21940870518364
+    },
+    {
+      "frame": 1005,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.6148963182024954,
+      "maximum_velocity_ratio": 0.44608640670776367,
+      "cop_residual_m": 0.20284464384411102,
+      "friction_residual": 0.027181012450656124,
+      "normal_force_n": 200.4109900937694
+    },
+    {
+      "frame": 1006,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.6115135164424281,
+      "maximum_velocity_ratio": 0.48357625007629396,
+      "cop_residual_m": 0.209651423653946,
+      "friction_residual": 0.050735445501261314,
+      "normal_force_n": 171.8449340095449
+    },
+    {
+      "frame": 1007,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2459520049604837,
+      "maximum_velocity_ratio": 0.4791885852813721,
+      "cop_residual_m": 0.1667637294645201,
+      "friction_residual": 0.06642042649233772,
+      "normal_force_n": 125.63037663516153
+    },
+    {
+      "frame": 1008,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.2231417096957449,
+      "maximum_velocity_ratio": 0.4329234600067139,
+      "cop_residual_m": 0.0680143165948467,
+      "friction_residual": 0.059175071655617785,
+      "normal_force_n": 67.82820909176696
+    },
+    {
+      "frame": 1009,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7353554796333789,
+      "maximum_velocity_ratio": 0.37042579650878904,
+      "cop_residual_m": 0.0408467522570194,
+      "friction_residual": -0.10621810677961868,
+      "normal_force_n": 242.6175195614694
+    },
+    {
+      "frame": 1010,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8373301224303379,
+      "maximum_velocity_ratio": 0.317340612411499,
+      "cop_residual_m": 0.003542919057611888,
+      "friction_residual": -0.14262675153522095,
+      "normal_force_n": 419.3083604663659
+    },
+    {
+      "frame": 1011,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8888798814073208,
+      "maximum_velocity_ratio": 0.27366793155670166,
+      "cop_residual_m": -0.04148885764858438,
+      "friction_residual": -0.22669259982363354,
+      "normal_force_n": 590.5893220663323
+    },
+    {
+      "frame": 1012,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 1.0884284422669355,
+      "maximum_velocity_ratio": 0.23940773010253907,
+      "cop_residual_m": -0.027150259195380753,
+      "friction_residual": -0.3570062085802442,
+      "normal_force_n": 752.1519503389794
+    },
+    {
+      "frame": 1013,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.8712844904234802,
+      "maximum_velocity_ratio": 0.2466897487640381,
+      "cop_residual_m": -0.10442919770703948,
+      "friction_residual": -0.5254663252761886,
+      "normal_force_n": 903.2168420971955
+    },
+    {
+      "frame": 1014,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.827449206983967,
+      "maximum_velocity_ratio": 0.26828091144561766,
+      "cop_residual_m": -0.052407138043266674,
+      "friction_residual": -0.7207613850719002,
+      "normal_force_n": 1047.0454235383233
+    },
+    {
+      "frame": 1015,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6588803582220701,
+      "maximum_velocity_ratio": 0.28263804912567136,
+      "cop_residual_m": -0.02691074928928989,
+      "friction_residual": -0.8640771947593108,
+      "normal_force_n": 996.9577836339682
+    },
+    {
+      "frame": 1016,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.5430289848858716,
+      "maximum_velocity_ratio": 0.29735622406005857,
+      "cop_residual_m": -0.02063355639029969,
+      "friction_residual": -0.9972671859330368,
+      "normal_force_n": 956.0154545799381
+    },
+    {
+      "frame": 1017,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.42321468273468604,
+      "maximum_velocity_ratio": 0.3124354362487793,
+      "cop_residual_m": -0.026468231269734906,
+      "friction_residual": -1.1160851839274488,
+      "normal_force_n": 920.7025810588532
+    },
+    {
+      "frame": 1018,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.34593712670190035,
+      "maximum_velocity_ratio": 0.3278756618499756,
+      "cop_residual_m": -0.03818493665824269,
+      "friction_residual": -1.155389393527912,
+      "normal_force_n": 888.391028248706
+    },
+    {
+      "frame": 1019,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.446822601327874,
+      "maximum_velocity_ratio": 0.34367692470550537,
+      "cop_residual_m": -0.05085755708160698,
+      "friction_residual": -1.1156958547127065,
+      "normal_force_n": 857.4314792034255
+    },
+    {
+      "frame": 1020,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6244731172365525,
+      "maximum_velocity_ratio": 0.3598392248153687,
+      "cop_residual_m": -0.06114341212206427,
+      "friction_residual": -0.9778770269222471,
+      "normal_force_n": 827.2128058182622
+    },
+    {
+      "frame": 1021,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.537723224877777,
+      "maximum_velocity_ratio": 0.3760885000228882,
+      "cop_residual_m": -0.061454914730671814,
+      "friction_residual": -1.08843748295028,
+      "normal_force_n": 791.9138034578873
+    },
+    {
+      "frame": 1022,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.450790091667413,
+      "maximum_velocity_ratio": 0.3921507358551025,
+      "cop_residual_m": -0.06254640818786955,
+      "friction_residual": -1.1321503908716832,
+      "normal_force_n": 756.5916202861097
+    },
+    {
+      "frame": 1023,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.37006751291339945,
+      "maximum_velocity_ratio": 0.4080258846282959,
+      "cop_residual_m": -0.0651866993338017,
+      "friction_residual": -0.9168519200276813,
+      "normal_force_n": 720.6294834451471
+    },
+    {
+      "frame": 1024,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.506059358163994,
+      "maximum_velocity_ratio": 0.42371401786804197,
+      "cop_residual_m": -0.06843867129895385,
+      "friction_residual": -0.6777014613449388,
+      "normal_force_n": 683.6733173053432
+    },
+    {
+      "frame": 1025,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6433289550560504,
+      "maximum_velocity_ratio": 0.43921513557434083,
+      "cop_residual_m": -0.06136391414900169,
+      "friction_residual": -0.4299915375919404,
+      "normal_force_n": 645.6508651605571
+    },
+    {
+      "frame": 1026,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7819185057968224,
+      "maximum_velocity_ratio": 0.4545291423797607,
+      "cop_residual_m": -0.05000624791696665,
+      "friction_residual": -0.1743872560113326,
+      "normal_force_n": 606.7932983634297
+    },
+    {
+      "frame": 1027,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.7327755205546217,
+      "maximum_velocity_ratio": 0.46988496780395506,
+      "cop_residual_m": -0.03216339711284257,
+      "friction_residual": -0.15279632441664337,
+      "normal_force_n": 561.3310899674264
+    },
+    {
+      "frame": 1028,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6838861468774212,
+      "maximum_velocity_ratio": 0.48551139831542967,
+      "cop_residual_m": -0.015421746125376404,
+      "friction_residual": -0.13563981003455122,
+      "normal_force_n": 517.1911415628653
+    },
+    {
+      "frame": 1029,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.6352054080739508,
+      "maximum_velocity_ratio": 0.5014084339141845,
+      "cop_residual_m": -0.0002613711445586704,
+      "friction_residual": -0.12266076204011517,
+      "normal_force_n": 474.2564525251713
+    },
+    {
+      "frame": 1030,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.5866770756072469,
+      "maximum_velocity_ratio": 0.5175760746002197,
+      "cop_residual_m": 0.014453538881200963,
+      "friction_residual": -0.07957865010896431,
+      "normal_force_n": 432.4628506158937
+    },
+    {
+      "frame": 1031,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.5382356663835925,
+      "maximum_velocity_ratio": 0.534014368057251,
+      "cop_residual_m": 0.029035264626336217,
+      "friction_residual": -0.028547233923942265,
+      "normal_force_n": 391.79888569922815
+    },
+    {
+      "frame": 1032,
+      "phase_speed": 1.8,
+      "maximum_effort_ratio": 0.4898072433210853,
+      "maximum_velocity_ratio": 0.5507232189178467,
+      "cop_residual_m": 0.043830263065859444,
+      "friction_residual": 0.023813359485512806,
+      "normal_force_n": 352.3058466559314
+    }
+  ],
+  "windows": [
+    {
+      "first_frame": 660,
+      "last_frame": 815,
+      "maximum_effort_ratio": 1.1336034463597233,
+      "maximum_cop_residual_m": 0.104618025510492
+    },
+    {
+      "first_frame": 816,
+      "last_frame": 884,
+      "maximum_effort_ratio": 1.253421785455413,
+      "maximum_cop_residual_m": 0.13930595806226748
+    },
+    {
+      "first_frame": 885,
+      "last_frame": 1032,
+      "maximum_effort_ratio": 1.6148963182024954,
+      "maximum_cop_residual_m": 0.25623583087497986
+    }
+  ]
+}

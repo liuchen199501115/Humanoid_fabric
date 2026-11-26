@@ -1,0 +1,298 @@
+[
+  {
+    "time": 3.9,
+    "mode": 2,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "Solved",
+        "residual": 8.526512829121202e-14,
+        "support_force": 414.1005429340557,
+        "com_acceleration": [
+          3.8509026350659714,
+          -0.3759415162069164,
+          2.6097592970956667
+        ],
+        "base_angular_acceleration": [
+          -43.350970397575104,
+          58.85522369573387,
+          -4.560814447834097
+        ],
+        "acceleration_change": 0.023856203058088
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "Solved",
+        "residual": 1.1368683772161603e-13,
+        "support_force": 414.10054293537837,
+        "com_acceleration": [
+          3.850902635075448,
+          -0.37594151623121386,
+          2.6097592971353367
+        ],
+        "base_angular_acceleration": [
+          -43.35097039752261,
+          58.8552236959773,
+          -4.560814447745406
+        ],
+        "acceleration_change": 0.02385620330151994
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "Solved",
+        "residual": 1.1368683772161603e-13,
+        "support_force": 414.1005429362874,
+        "com_acceleration": [
+          3.850902635085065,
+          -0.3759415162459483,
+          2.6097592971626007
+        ],
+        "base_angular_acceleration": [
+          -43.35097039747719,
+          58.85522369609843,
+          -4.560814447837774
+        ],
+        "acceleration_change": 0.02385620342264616
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "Solved",
+        "residual": 8.526512829121202e-14,
+        "support_force": 414.1005429367406,
+        "com_acceleration": [
+          3.8509026350898132,
+          -0.37594151625276506,
+          2.6097592971761943
+        ],
+        "base_angular_acceleration": [
+          -43.350970397460095,
+          58.85522369615869,
+          -4.560814447844905
+        ],
+        "acceleration_change": 0.02385620348290729
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "Solved",
+        "residual": 2.5579538487363607e-13,
+        "support_force": 214.533468903089,
+        "com_acceleration": [
+          2.5196228466107478,
+          0.5466559968342531,
+          -3.375451288498898
+        ],
+        "base_angular_acceleration": [
+          0.8614911971367931,
+          -86.24312368119728,
+          -27.473521096409947
+        ],
+        "acceleration_change": 0.031095177779306482
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "Solved",
+        "residual": 8.526512829121202e-14,
+        "support_force": 214.53346946778365,
+        "com_acceleration": [
+          2.5196228406030734,
+          0.5466559882495755,
+          -3.3754512715620386
+        ],
+        "base_angular_acceleration": [
+          0.8614911109321165,
+          -86.24312358033126,
+          -27.473521225680518
+        ],
+        "acceleration_change": 0.03109507691328872
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "Solved",
+        "residual": 6.394884621840902e-14,
+        "support_force": 214.5334696881133,
+        "com_acceleration": [
+          2.519622838866571,
+          0.546655987360902,
+          -3.3754512649536985
+        ],
+        "base_angular_acceleration": [
+          0.861491117722058,
+          -86.2431235630988,
+          -27.473521193338208
+        ],
+        "acceleration_change": 0.031095059680836812
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "Solved",
+        "residual": 1.7763568394002505e-13,
+        "support_force": 214.53347039249113,
+        "com_acceleration": [
+          2.5196228315926694,
+          0.546655977206437,
+          -3.375451243827325
+        ],
+        "base_angular_acceleration": [
+          0.8614910223815311,
+          -86.24312344740855,
+          -27.473521332711158
+        ],
+        "acceleration_change": 0.031094943990581214
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "Solved",
+        "residual": 1.0828671292983927e-11,
+        "support_force": 40.13020479100995,
+        "com_acceleration": [
+          -0.5678453720363281,
+          -0.4467623891277537,
+          -8.606634377478168
+        ],
+        "base_angular_acceleration": [
+          48.934105203613704,
+          -243.499083155804,
+          -6.383245631340686
+        ],
+        "acceleration_change": 0.020082272959825787
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "Solved",
+        "residual": 2.984279490192421e-13,
+        "support_force": 100.00000000021186,
+        "com_acceleration": [
+          -1.4147392994908037,
+          -1.1127674062254984,
+          -6.810961043724143
+        ],
+        "base_angular_acceleration": [
+          48.4079638856492,
+          -241.9116480485298,
+          -7.005700989071562
+        ],
+        "acceleration_change": 257.747799707613
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "Solved",
+        "residual": 7.105427357601002e-13,
+        "support_force": 150.00000000005184,
+        "com_acceleration": [
+          -2.1220188294261773,
+          -1.6689819404848603,
+          -5.311313543724922
+        ],
+        "base_angular_acceleration": [
+          47.322995452949165,
+          -238.56500808267674,
+          -8.233542296243721
+        ],
+        "acceleration_change": 474.8553620917412
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "Solved",
+        "residual": 6.252776074688882e-13,
+        "support_force": 200.0000000001401,
+        "com_acceleration": [
+          -2.829298476719533,
+          -2.2251958720731375,
+          -3.8116660786075256
+        ],
+        "base_angular_acceleration": [
+          46.37013414203347,
+          -233.44058825394632,
+          -7.6468131687898895
+        ],
+        "acceleration_change": 691.1033895520884
+      }
+    ]
+  },
+  {
+    "time": 4.06,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "Solved",
+        "residual": 1.4210854715202004e-13,
+        "support_force": 188.25376700402106,
+        "com_acceleration": [
+          2.094185962684617,
+          -2.6631268649152764,
+          -4.163624185467887
+        ],
+        "base_angular_acceleration": [
+          9.479105244337111,
+          -20.441120169318726,
+          46.92474770390395
+        ],
+        "acceleration_change": 0.030853034621443953
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "Solved",
+        "residual": 9.094947017729282e-13,
+        "support_force": 188.25376650924505,
+        "com_acceleration": [
+          2.0941859571096204,
+          -2.6631268578897407,
+          -4.163624200307547
+        ],
+        "base_angular_acceleration": [
+          9.479105815490232,
+          -20.44112132250699,
+          46.92474917646849
+        ],
+        "acceleration_change": 0.030851562056902537
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "Solved",
+        "residual": 1.9895196601282805e-13,
+        "support_force": 188.25376700414697,
+        "com_acceleration": [
+          2.094185962684523,
+          -2.6631268649167037,
+          -4.163624185464112
+        ],
+        "base_angular_acceleration": [
+          9.479105244175312,
+          -20.441120168676484,
+          46.92474770361126
+        ],
+        "acceleration_change": 0.030853034914130717
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "Solved",
+        "residual": 1.1368683772161603e-13,
+        "support_force": 200.00000000895113,
+        "com_acceleration": [
+          2.03395698251415,
+          -2.8064607341765413,
+          -3.81131974270858
+        ],
+        "base_angular_acceleration": [
+          9.038003315766622,
+          -20.558397973636296,
+          45.3988310688511
+        ],
+        "acceleration_change": 6.700186719921106
+      }
+    ]
+  }
+]

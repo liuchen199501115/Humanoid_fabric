@@ -1,0 +1,65 @@
+{
+  "scope": "Contact rows expressed at the controller patch frame; angular and linear speeds reported separately. Velocity-jump discrepancy includes impacts, solver/model error and timestep discretization, not a causal proof.",
+  "intervals": [
+    {
+      "interval": [
+        3.3,
+        3.5
+      ],
+      "max_active_contact_linear_speed_m_s": 2.4042983055114746,
+      "linear_speed_time": 3.362,
+      "max_active_contact_angular_speed_rad_s": 2.3986496925354004,
+      "angular_speed_time": 3.396,
+      "max_unmodeled_base_angular_velocity_jump_rad_s": 1.3636891153029358,
+      "jump_time": 3.378
+    },
+    {
+      "interval": [
+        3.5,
+        3.7
+      ],
+      "max_active_contact_linear_speed_m_s": 3.8091278076171875,
+      "linear_speed_time": 3.5180000000000002,
+      "max_active_contact_angular_speed_rad_s": 2.020968437194824,
+      "angular_speed_time": 3.698,
+      "max_unmodeled_base_angular_velocity_jump_rad_s": 0.5534855500146034,
+      "jump_time": 3.59
+    },
+    {
+      "interval": [
+        3.7,
+        3.9
+      ],
+      "max_active_contact_linear_speed_m_s": 0.13435892760753632,
+      "linear_speed_time": 3.704,
+      "max_active_contact_angular_speed_rad_s": 2.3869497776031494,
+      "angular_speed_time": 3.7,
+      "max_unmodeled_base_angular_velocity_jump_rad_s": 0.13294245730183699,
+      "jump_time": 3.704
+    },
+    {
+      "interval": [
+        3.9,
+        4.1
+      ],
+      "max_active_contact_linear_speed_m_s": 0.24343626201152802,
+      "linear_speed_time": 3.924,
+      "max_active_contact_angular_speed_rad_s": 1.541221022605896,
+      "angular_speed_time": 3.924,
+      "max_unmodeled_base_angular_velocity_jump_rad_s": 0.4836045787234855,
+      "jump_time": 3.91
+    },
+    {
+      "interval": [
+        4.1,
+        4.3
+      ],
+      "max_active_contact_linear_speed_m_s": 1.7546981573104858,
+      "linear_speed_time": 4.152,
+      "max_active_contact_angular_speed_rad_s": 0.19459879398345947,
+      "angular_speed_time": 4.252,
+      "max_unmodeled_base_angular_velocity_jump_rad_s": 0.7193784377674619,
+      "jump_time": 4.192
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "snapshot": "ten_no_stop_verify.snapshot_3.600",
+    "maximum_torque_error": 1.388942189350928e-05,
+    "maximum_upper_torque_error": 8.981158336307526e-06,
+    "maximum_root_error": 1.388942189350928e-05
+  },
+  {
+    "snapshot": "ten_no_stop_verify.snapshot_3.700",
+    "maximum_torque_error": 0.0001847241959467283,
+    "maximum_upper_torque_error": 4.828271874401935e-05,
+    "maximum_root_error": 0.0001847241959467283
+  },
+  {
+    "snapshot": "ten_no_stop_verify.snapshot_3.800",
+    "maximum_torque_error": 3.065539775892745e-05,
+    "maximum_upper_torque_error": 8.267240117376673e-06,
+    "maximum_root_error": 3.065539775892745e-05
+  }
+]

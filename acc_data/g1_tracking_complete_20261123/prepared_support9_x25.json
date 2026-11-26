@@ -1,0 +1,21 @@
+{
+  "event_end_frame": 762,
+  "next_release_frame": 802,
+  "smoothing_frames": 2.0,
+  "xy_offset_m": [
+    -0.025,
+    0.0
+  ],
+  "peak_ik_position_error_m": 0.00018469409180611325,
+  "worst_frame": 762,
+  "peak_ik_orientation_error_rad": 0.0003055103356242429,
+  "peak_joint_reference_change_rmse": 0.018060078844428062,
+  "peak_root_reference_change_m": 0.006208447273820639,
+  "full_tracking_passed": false,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent": "/home/sky/Humanoid_fabric/acc_data/g1_tracking_complete_20261123/prepared_combined_root_y50.npz",
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "original_audit_retained": true
+}

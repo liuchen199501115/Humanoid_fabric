@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_floor3_linear60_xy18",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--root-xy-tube-start",
+      "4.08",
+      "--root-xy-tube-radius",
+      "0.18",
+      "--root-xy-tube-bandwidth",
+      "10"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_xy17",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--root-xy-tube-start",
+      "4.08",
+      "--root-xy-tube-radius",
+      "0.17",
+      "--root-xy-tube-bandwidth",
+      "10"
+    ]
+  },
+  {
+    "name": "ten_fullroot_clock816_dense_cap1",
+    "parent": "ten_fullroot_clock816_dense",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  }
+]

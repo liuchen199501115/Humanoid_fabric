@@ -1,0 +1,97 @@
+{
+  "run": "formula_weights",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_wbc_verification/formula_weights.npz",
+  "measured_landing_events": 1,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 1,
+  "first_fidelity_exceeded_time_s": 0.26,
+  "last_source_frame": 52.0,
+  "last_time_s": 0.26,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.23800000000000002,
+      "source_frame": 47.6,
+      "landing_error_m": 0.01060008046332723,
+      "joint_rmse_rad": 0.18583758175373077,
+      "root_position_error_m": 0.02847311459481716,
+      "root_orientation_error_rad": 0.23608922902325635,
+      "prefix_peak_joint_rmse_rad": 0.18583758175373077,
+      "prefix_peak_root_position_error_m": 0.02847311459481716,
+      "prefix_peak_root_orientation_error_rad": 0.23608922902325635,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 2,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": null,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "returncode": 1,
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "formula-wbc",
+    "--formula-scope",
+    "weights",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_wbc_verification/formula_weights.npz"
+  ],
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "failed_time_s": null,
+  "failed_source_frame": null,
+  "tested_source_sha256": "a5e8159e9f7560571ec74345643cfdbe3f97bcc391a5065f468769ef13f54a1c",
+  "execution": {
+    "tracking_profile": "formula-wbc",
+    "formula_scope": "weights",
+    "direct_wbc": true,
+    "tracking_servo": true,
+    "formula_source_reference": false,
+    "physical_braking_start": 100.0,
+    "clock_final_speed": 1.2
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "formula_weights_range": [
+    1.0000026226043701,
+    3.913607120513916
+  ],
+  "formula_risk_range": [
+    0.005231446120887995,
+    12.781222343444824
+  ],
+  "formula_activation_range": [
+    0.0,
+    0.9764882326126099
+  ],
+  "raw_source_audit": {
+    "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+    "frame_count": 2000,
+    "peak_joint_rmse_rad": 0.20044849812984467,
+    "peak_root_position_m": 0.03216076269745827,
+    "peak_root_orientation_rad": 0.24488685517683395,
+    "prefix_landings": 1,
+    "reference_max_difference": 0.0,
+    "landings": [
+      {
+        "step": 1,
+        "source_foot_error_m": 0.01060008526229272,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      }
+    ]
+  }
+}

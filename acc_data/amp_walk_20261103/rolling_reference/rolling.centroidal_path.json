@@ -1,0 +1,20 @@
+{
+  "planner": "offline linearized centroidal path plus source-foot pose IK",
+  "source_frames": 2000,
+  "start_frame": 0,
+  "blend_frames": 0,
+  "nominal_com_height_offset_m": 0.0,
+  "contact_model": "reference native heel/toe/flat support geometry; measured WBC contacts unchanged",
+  "qp_status": "solved",
+  "qp_residual": 0.0006194044230680706,
+  "peak_com_plan_offset_m": [
+    0.014947104097849717,
+    0.03090364386926714,
+    0.022578050117624593
+  ],
+  "peak_ik_position_residual_m": 0.03702956438064575,
+  "peak_ik_rotation_residual_rad": 0.22930631041526794,
+  "peak_ik_com_residual_m": 0.018285751342773438,
+  "peak_ik_momentum_residual": 2.2298388481140137,
+  "full_tracking_passed": false
+}

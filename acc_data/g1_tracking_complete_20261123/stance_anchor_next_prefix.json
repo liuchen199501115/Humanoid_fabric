@@ -1,0 +1,14 @@
+[
+  {
+    "candidate": "prepared_stance10_anchor_pose802",
+    "parent": "prepared_support10_early_com15_y20",
+    "exact_prefix_end_frame": 792,
+    "samples": 1585
+  },
+  {
+    "candidate": "prepared_stance10_anchor_pose860_swing11lower25",
+    "parent": "prepared_stance10_anchor_pose860",
+    "exact_prefix_end_frame": 816,
+    "samples": 1633
+  }
+]

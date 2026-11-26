@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ten_anchor_momentum1",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-momentum-priority-start",
+      "4.08",
+      "--late-momentum-zero-target",
+      "--late-momentum-feedback-damping",
+      "10",
+      "--late-momentum-total-rate-limit",
+      "30",
+      "--late-momentum-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_anchor_momentum3",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-momentum-priority-start",
+      "4.08",
+      "--late-momentum-zero-target",
+      "--late-momentum-feedback-damping",
+      "10",
+      "--late-momentum-total-rate-limit",
+      "30",
+      "--late-momentum-metric-scale",
+      "3"
+    ]
+  },
+  {
+    "name": "ten_anchor_momentum10",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-momentum-priority-start",
+      "4.08",
+      "--late-momentum-zero-target",
+      "--late-momentum-feedback-damping",
+      "10",
+      "--late-momentum-total-rate-limit",
+      "30",
+      "--late-momentum-metric-scale",
+      "10"
+    ]
+  }
+]

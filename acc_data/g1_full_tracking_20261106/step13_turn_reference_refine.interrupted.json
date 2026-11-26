@@ -1,0 +1,5 @@
+{
+  "reason": "Boundary reference has 6.6 mm wrist/hip clearance while the fixed endpoint was required to reach 20 mm. Rebuild transition clearance floors; strict core interval and physical constraints unchanged.",
+  "physical_tracking_certified": false,
+  "checkpoint": "step13_turn_boundary_seed.npz"
+}

@@ -1,0 +1,52 @@
+{
+  "measured_landings": 12,
+  "expected_landings": 29,
+  "stop_time_s": 4.3,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "root_position_error_m": 0.2010059654712677,
+  "joint_rmse_rad": 0.19934862852096558,
+  "executed_torque_ticks": 2150,
+  "full_motion_tracking_passed": false,
+  "baseline_comparison": {
+    "history_time": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_q": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_qd": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_frame": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "history_torque_qp_total": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "servo_torque": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "q_final": {
+      "same_shape": true,
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "unit_tests": {
+    "passed": 79,
+    "failed": 0
+  },
+  "restoration_verified": true
+}

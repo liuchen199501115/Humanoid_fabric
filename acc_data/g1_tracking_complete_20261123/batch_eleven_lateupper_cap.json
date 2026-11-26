@@ -1,0 +1,30 @@
+[
+  {
+    "name": "eleven_leg16_lateupper64",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--late-upper-metric-start",
+      "4.5",
+      "--late-upper-metric-scale",
+      "64"
+    ]
+  },
+  {
+    "name": "eleven_leg16_lateupper256",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--late-upper-metric-start",
+      "4.5",
+      "--late-upper-metric-scale",
+      "256"
+    ]
+  },
+  {
+    "name": "eleven_leg16_endcomcap",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--com-upward-speed-end",
+      "4.5"
+    ]
+  }
+]

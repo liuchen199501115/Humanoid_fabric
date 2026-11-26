@@ -1,0 +1,35 @@
+[
+  {
+    "name": "ten_floor3_stop816_tube100",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_floor3_stop816_tube1000",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "1000"
+    ]
+  },
+  {
+    "name": "ten_floor3_stop816_pitch_shoulder_brake",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.08",
+      "--soft-joint-braking-weight",
+      "1000",
+      "--soft-joint-braking-joints",
+      "waist_pitch_joint",
+      "right_shoulder_roll_joint"
+    ]
+  }
+]

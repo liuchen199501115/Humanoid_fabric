@@ -1,0 +1,14 @@
+{
+  "baseline": "acc_data/g1_projected_acc_qp_20261114/continue_knee_20261114/baseline_final.failure.npz",
+  "snapshot_history_matches_baseline": true,
+  "bitwise_fields": [
+    "history_time",
+    "history_q",
+    "history_qd",
+    "history_qdd_qp",
+    "servo_torque"
+  ],
+  "samples": 677,
+  "baseline_sha256": "3ef1a65e3b6c19f6bc3a9bdf20cf24b11191208724aaa95e4c206bc226624916",
+  "controller_code_modified": false
+}

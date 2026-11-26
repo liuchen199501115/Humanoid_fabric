@@ -1,0 +1,14 @@
+[
+  "bash",
+  "examples/run_amp_full_motion.sh",
+  "--output-path",
+  "/home/sky/Humanoid_fabric/acc_data/g1_projected_acc_qp_20261114/tuning/projection1_base100.npz",
+  "--posture-metric-scale",
+  "10",
+  "--joint-feedback-limit",
+  "150",
+  "--projection-joint-correction-weight",
+  "1",
+  "--qp-base-acceleration-weight",
+  "100"
+]

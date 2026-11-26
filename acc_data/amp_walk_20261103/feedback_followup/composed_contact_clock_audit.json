@@ -1,0 +1,6 @@
+{
+  "chain_rule_velocity_error": 4.20892587449373e-09,
+  "chain_rule_acceleration_error": 2.3620388490963595e-07,
+  "no_release_without_verified_eighth_landing": true,
+  "physical_tracking_certified": false
+}

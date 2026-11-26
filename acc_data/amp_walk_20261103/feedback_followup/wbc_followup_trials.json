@@ -1,0 +1,132 @@
+[
+  {
+    "run": "wbc_leg_posture_secondary415",
+    "landings": 10,
+    "last_source_frame": 894.4400000000002,
+    "joint_rmse": 0.202778622508049,
+    "root_position": 0.11972224712371826,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_model_effort_from_start",
+    "landings": 3,
+    "last_source_frame": 228.50739667233896,
+    "joint_rmse": 0.1895523965358734,
+    "root_position": 0.20008791983127594,
+    "root_orientation": 0.3326697396140069,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_landing_pause898",
+    "landings": 11,
+    "last_source_frame": 898.0154338223167,
+    "joint_rmse": 0.20172207057476044,
+    "root_position": 0.167715385556221,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_tenth_descent_lead6_trial",
+    "landings": 9,
+    "last_source_frame": 812.8400000000001,
+    "joint_rmse": 0.20177805423736572,
+    "root_position": 0.045246608555316925,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_configuration415",
+    "landings": 10,
+    "last_source_frame": 928.9999999999999,
+    "joint_rmse": 0.19693677127361298,
+    "root_position": 0.15502163767814636,
+    "root_orientation": 0.3527467784284323,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_configuration_feet_model415",
+    "landings": 11,
+    "last_source_frame": 926.12,
+    "joint_rmse": 0.1851285696029663,
+    "root_position": 0.1586158722639084,
+    "root_orientation": 0.3501658652555468,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_configuration_feet_model415_rot4",
+    "landings": 10,
+    "last_source_frame": 928.52,
+    "joint_rmse": 0.19855080544948578,
+    "root_position": 0.16253416240215302,
+    "root_orientation": 0.351241315008753,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_model_effort_smooth6",
+    "landings": 11,
+    "last_source_frame": 937.1600000000001,
+    "joint_rmse": 0.19029906392097473,
+    "root_position": 0.19231346249580383,
+    "root_orientation": 0.35164467175831854,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_unified_smooth7_model",
+    "landings": 11,
+    "last_source_frame": 937.1600000000001,
+    "joint_rmse": 0.1851285696029663,
+    "root_position": 0.19240151345729828,
+    "root_orientation": 0.3524161981436364,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_flat_support_model",
+    "landings": 10,
+    "last_source_frame": 914.1200000000001,
+    "joint_rmse": 0.20224539935588837,
+    "root_position": 0.16263921558856964,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_model_balance_hierarchy",
+    "landings": 10,
+    "last_source_frame": 842.1200000000001,
+    "joint_rmse": 0.20065589249134064,
+    "root_position": 0.045246608555316925,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_half_flat_support_model",
+    "landings": 11,
+    "last_source_frame": 928.9999999999999,
+    "joint_rmse": 0.2027992606163025,
+    "root_position": 0.17752262949943542,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  },
+  {
+    "run": "wbc_half_flat_upper2",
+    "landings": 10,
+    "last_source_frame": 930.9200000000001,
+    "joint_rmse": 0.2021806687116623,
+    "root_position": 0.17714440822601318,
+    "root_orientation": 0.2974370491275428,
+    "full_motion_tracking_passed": false,
+    "stop_reason": "Original-source fidelity limit exceeded"
+  }
+]

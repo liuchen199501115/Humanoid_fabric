@@ -1,0 +1,6 @@
+{
+  "examples/test_g1.py": "cf4e04c517414b4ec6e89c518263d896524d2b0e43062fd39c688a4451324430",
+  "src/fabrics_sim/fabrics/dynamics_aware.py": "5615eca4fcf1c75b90887ba758be8fabb2be18a32af2a1ca94fa7d112a217d30",
+  "src/fabrics_sim/fabrics/g1_pose_fabric.py": "901f0699a9256aa047b87bde38c1d8e8a1cd2560893308b0eef622e79dce863c",
+  "src/fabrics_sim/fabrics/task_request.py": "68a67c01d4de6de636680bd0467a1530ad8c6e2e2f80211140b6535de3ab28a8"
+}

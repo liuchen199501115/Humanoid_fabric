@@ -1,0 +1,98 @@
+{
+  "parent": "turn_recovery_y40",
+  "iterations": [
+    {
+      "iteration": 0,
+      "status": "solved",
+      "maximum_com_offset": [
+        0.008397858003474501,
+        0.01065256236998606,
+        0.012938052356674574
+      ],
+      "projection_errors": [
+        9.95458724491467e-08,
+        2.2033583041837105e-08,
+        2.981900676562924e-09
+      ],
+      "minimum_normal_force": 182.99874210987127,
+      "maximum_normal_force": 687.683628978646,
+      "maximum_friction_l1": 0.47331373437485746
+    },
+    {
+      "iteration": 1,
+      "status": "solved",
+      "maximum_com_offset": [
+        0.00831509245754651,
+        0.010806497422513817,
+        0.014264551050777318
+      ],
+      "projection_errors": [
+        9.907396752681527e-08,
+        1.528461121933374e-09,
+        1.207908774615245e-10
+      ],
+      "minimum_normal_force": 181.01903409605083,
+      "maximum_normal_force": 639.3008521478075,
+      "maximum_friction_l1": 0.4475146795803032
+    },
+    {
+      "iteration": 2,
+      "status": "solved",
+      "maximum_com_offset": [
+        0.008370768950486572,
+        0.010859357886542976,
+        0.01448055222561892
+      ],
+      "projection_errors": [
+        9.997187538741306e-08,
+        1.0678554340757521e-08,
+        1.2050950217953588e-09
+      ],
+      "minimum_normal_force": 180.09582810206723,
+      "maximum_normal_force": 622.1767489313751,
+      "maximum_friction_l1": 0.44210707071718824
+    },
+    {
+      "iteration": 3,
+      "status": "solved",
+      "maximum_com_offset": [
+        0.008415496128322597,
+        0.010907071969889404,
+        0.014557365331211564
+      ],
+      "projection_errors": [
+        9.977225971026603e-08,
+        1.7806667079189264e-08,
+        2.11136818382263e-09
+      ],
+      "minimum_normal_force": 180.40107618129733,
+      "maximum_normal_force": 615.4354585132237,
+      "maximum_friction_l1": 0.4427412943342699
+    },
+    {
+      "iteration": 4,
+      "status": "solved",
+      "maximum_com_offset": [
+        0.008435288363556788,
+        0.010929631329585177,
+        0.014575132965367126
+      ],
+      "projection_errors": [
+        9.947780493166139e-08,
+        9.205847701792328e-08,
+        1.3420520938066532e-08
+      ],
+      "minimum_normal_force": 180.85886181617371,
+      "maximum_normal_force": 612.3389665180525,
+      "maximum_friction_l1": 0.4418345995151483
+    }
+  ],
+  "peak_com_projection_error": 9.947780493166139e-08,
+  "peak_position_residual": 9.205847701792328e-08,
+  "peak_orientation_residual": 1.3420520938066532e-08,
+  "minimum_dense_joint_limit_margin": 0.02634526789188385,
+  "minimum_dense_native_clearance": -0.002092265431949042,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

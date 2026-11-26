@@ -1,0 +1,348 @@
+{
+  "source": "acc_data/g1_projected_acc_qp_20261114/continue_20261114_0338/baseline_snapshots.qp_0677.npz",
+  "source_sha256": "2e4b919be55d25a71330637e13e6ca6eaac783d401436d71da430a491ed2bced",
+  "axis": "world Y",
+  "reference": "logged unified control reference, including prepared poses, smoothing and source-clock retiming",
+  "pd_request": "reconstructed from logged COM q/v and reference, default Kp_y=35 Kd_y=12 feedback cap=4; not a separately logged leaf request",
+  "integration_note": "Accounting identity along the recorded trajectory only. Contributions are not independent closed-loop counterfactuals. Observed acceleration is measured-state model COM velocity difference, not a physical accelerometer.",
+  "samples": [
+    {
+      "time_s": 0.0,
+      "com_y_m": 0.14279387891292572,
+      "reference_com_y_m": 0.14312919974327087,
+      "position_error_m": -0.0003353208303451538,
+      "velocity_m_s": -0.16790473461151123,
+      "reference_velocity_m_s": -0.16794390976428986,
+      "velocity_error_m_s": 3.917515277862549e-05,
+      "reference_acceleration_m_s2": -0.6102231740951538,
+      "unclipped_feedback_m_s2": 0.011266127228736877,
+      "clipped_feedback_m_s2": 0.011266127228736877,
+      "reconstructed_pd_request_m_s2": -0.5989570468664169,
+      "stages_m_s2": {
+        "fabric": -0.5832294225692749,
+        "projected": -0.34986743330955505,
+        "qp_predicted": -0.08410321921110153,
+        "observed": -0.07858126610517502
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.6,
+      "com_y_m": 0.03588679060339928,
+      "reference_com_y_m": 0.019489284604787827,
+      "position_error_m": 0.01639750599861145,
+      "velocity_m_s": -0.009902672842144966,
+      "reference_velocity_m_s": -0.05865547060966492,
+      "velocity_error_m_s": 0.04875279776751995,
+      "reference_acceleration_m_s2": -0.5288484692573547,
+      "unclipped_feedback_m_s2": -1.1589462831616402,
+      "clipped_feedback_m_s2": -1.1589462831616402,
+      "reconstructed_pd_request_m_s2": -1.687794752418995,
+      "stages_m_s2": {
+        "fabric": -2.0794267654418945,
+        "projected": 5.969945430755615,
+        "qp_predicted": 2.806220531463623,
+        "observed": 2.5703330039978027
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.7000000000000001,
+      "com_y_m": 0.036815740168094635,
+      "reference_com_y_m": 0.015030589886009693,
+      "position_error_m": 0.021785150282084942,
+      "velocity_m_s": 0.013676492497324944,
+      "reference_velocity_m_s": -0.025376582518219948,
+      "velocity_error_m_s": 0.03905307501554489,
+      "reference_acceleration_m_s2": 1.8527181148529053,
+      "unclipped_feedback_m_s2": -1.2311171600595117,
+      "clipped_feedback_m_s2": -1.2311171600595117,
+      "reconstructed_pd_request_m_s2": 0.6216009547933936,
+      "stages_m_s2": {
+        "fabric": 0.16450579464435577,
+        "projected": 0.515830934047699,
+        "qp_predicted": 0.6545575261116028,
+        "observed": 0.710773229598999
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.75,
+      "com_y_m": 0.03802311420440674,
+      "reference_com_y_m": 0.014503231272101402,
+      "position_error_m": 0.023519882932305336,
+      "velocity_m_s": 0.04820314049720764,
+      "reference_velocity_m_s": 0.006879892665892839,
+      "velocity_error_m_s": 0.0413232478313148,
+      "reference_acceleration_m_s2": 0.9024397730827332,
+      "unclipped_feedback_m_s2": -1.3190748766064644,
+      "clipped_feedback_m_s2": -1.3190748766064644,
+      "reconstructed_pd_request_m_s2": -0.41663510352373123,
+      "stages_m_s2": {
+        "fabric": -0.4840696454048157,
+        "projected": -0.9149928689002991,
+        "qp_predicted": 1.555598258972168,
+        "observed": 1.8153599500656128
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.8,
+      "com_y_m": 0.04284605383872986,
+      "reference_com_y_m": 0.01612691953778267,
+      "position_error_m": 0.02671913430094719,
+      "velocity_m_s": 0.13598671555519104,
+      "reference_velocity_m_s": 0.059267766773700714,
+      "velocity_error_m_s": 0.07671894878149033,
+      "reference_acceleration_m_s2": 0.9649814367294312,
+      "unclipped_feedback_m_s2": -1.8557970859110355,
+      "clipped_feedback_m_s2": -1.8557970859110355,
+      "reconstructed_pd_request_m_s2": -0.8908156491816044,
+      "stages_m_s2": {
+        "fabric": -0.801250696182251,
+        "projected": -1.1742589473724365,
+        "qp_predicted": 1.4773669242858887,
+        "observed": 1.405507206916809
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.85,
+      "com_y_m": 0.05130340903997421,
+      "reference_com_y_m": 0.019792713224887848,
+      "position_error_m": 0.031510695815086365,
+      "velocity_m_s": 0.20004071295261383,
+      "reference_velocity_m_s": 0.07686925679445267,
+      "velocity_error_m_s": 0.12317145615816116,
+      "reference_acceleration_m_s2": -0.283526211977005,
+      "unclipped_feedback_m_s2": -2.5809318274259567,
+      "clipped_feedback_m_s2": -2.5809318274259567,
+      "reconstructed_pd_request_m_s2": -2.8644580394029617,
+      "stages_m_s2": {
+        "fabric": -2.8669934272766113,
+        "projected": -2.442997694015503,
+        "qp_predicted": 1.6062657833099365,
+        "observed": 1.7943530082702637
+      },
+      "commanded_contact_mode": 2
+    },
+    {
+      "time_s": 0.9,
+      "com_y_m": 0.06329616159200668,
+      "reference_com_y_m": 0.022796910256147385,
+      "position_error_m": 0.0404992513358593,
+      "velocity_m_s": 0.25158169865608215,
+      "reference_velocity_m_s": 0.036728862673044205,
+      "velocity_error_m_s": 0.21485283598303795,
+      "reference_acceleration_m_s2": -1.1064804792404175,
+      "unclipped_feedback_m_s2": -3.995707828551531,
+      "clipped_feedback_m_s2": -3.995707828551531,
+      "reconstructed_pd_request_m_s2": -5.102188307791948,
+      "stages_m_s2": {
+        "fabric": -4.815318584442139,
+        "projected": -6.315774440765381,
+        "qp_predicted": -1.5471864938735962,
+        "observed": -1.3333110809326172
+      },
+      "commanded_contact_mode": 1
+    },
+    {
+      "time_s": 1.0,
+      "com_y_m": 0.08353375643491745,
+      "reference_com_y_m": 0.02135486528277397,
+      "position_error_m": 0.06217889115214348,
+      "velocity_m_s": 0.15986934304237366,
+      "reference_velocity_m_s": -0.05527438595890999,
+      "velocity_error_m_s": 0.21514372900128365,
+      "reference_acceleration_m_s2": -0.7332549095153809,
+      "unclipped_feedback_m_s2": -4.7579859383404255,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -4.733254909515381,
+      "stages_m_s2": {
+        "fabric": -4.238316535949707,
+        "projected": -4.710816383361816,
+        "qp_predicted": -0.8452293872833252,
+        "observed": -1.120343804359436
+      },
+      "commanded_contact_mode": 1
+    },
+    {
+      "time_s": 1.1,
+      "com_y_m": 0.09660255163908005,
+      "reference_com_y_m": 0.011050152592360973,
+      "position_error_m": 0.08555239904671907,
+      "velocity_m_s": 0.08385933935642242,
+      "reference_velocity_m_s": -0.17012415826320648,
+      "velocity_error_m_s": 0.2539834976196289,
+      "reference_acceleration_m_s2": -1.7123146057128906,
+      "unclipped_feedback_m_s2": -6.0421359380707145,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -5.712314605712891,
+      "stages_m_s2": {
+        "fabric": -5.495278358459473,
+        "projected": -4.744246482849121,
+        "qp_predicted": -1.3468022346496582,
+        "observed": -1.3507007360458374
+      },
+      "commanded_contact_mode": 1
+    },
+    {
+      "time_s": 1.2,
+      "com_y_m": 0.10055859386920929,
+      "reference_com_y_m": -0.01371702179312706,
+      "position_error_m": 0.11427561566233635,
+      "velocity_m_s": 0.02072390727698803,
+      "reference_velocity_m_s": -0.3002925217151642,
+      "velocity_error_m_s": 0.3210164289921522,
+      "reference_acceleration_m_s2": -0.5545302033424377,
+      "unclipped_feedback_m_s2": -7.851843696087599,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -4.554530203342438,
+      "stages_m_s2": {
+        "fabric": -4.5821380615234375,
+        "projected": -4.023087024688721,
+        "qp_predicted": 0.24081207811832428,
+        "observed": 0.20616313815116882
+      },
+      "commanded_contact_mode": 1
+    },
+    {
+      "time_s": 1.25,
+      "com_y_m": 0.10223514586687088,
+      "reference_com_y_m": -0.02896423637866974,
+      "position_error_m": 0.13119938224554062,
+      "velocity_m_s": 0.05433892831206322,
+      "reference_velocity_m_s": -0.29333585500717163,
+      "velocity_error_m_s": 0.34767478331923485,
+      "reference_acceleration_m_s2": 1.4245386123657227,
+      "unclipped_feedback_m_s2": -8.76407577842474,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -2.5754613876342773,
+      "stages_m_s2": {
+        "fabric": -2.6307058334350586,
+        "projected": 2.4148402214050293,
+        "qp_predicted": 0.8288666009902954,
+        "observed": 1.110410213470459
+      },
+      "commanded_contact_mode": 3
+    },
+    {
+      "time_s": 1.3,
+      "com_y_m": 0.10665540397167206,
+      "reference_com_y_m": -0.04172282665967941,
+      "position_error_m": 0.14837823063135147,
+      "velocity_m_s": 0.1053771823644638,
+      "reference_velocity_m_s": -0.22940866649150848,
+      "velocity_error_m_s": 0.3347858488559723,
+      "reference_acceleration_m_s2": 0.028736673295497894,
+      "unclipped_feedback_m_s2": -9.210668258368969,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -3.971263326704502,
+      "stages_m_s2": {
+        "fabric": -4.059192180633545,
+        "projected": 5.139303207397461,
+        "qp_predicted": -1.4100110530853271,
+        "observed": -1.4532170295715332
+      },
+      "commanded_contact_mode": 3
+    },
+    {
+      "time_s": 1.35,
+      "com_y_m": 0.11071282625198364,
+      "reference_com_y_m": -0.05358608439564705,
+      "position_error_m": 0.1642989106476307,
+      "velocity_m_s": 0.07759647071361542,
+      "reference_velocity_m_s": -0.23847034573554993,
+      "velocity_error_m_s": 0.31606681644916534,
+      "reference_acceleration_m_s2": 0.9011659622192383,
+      "unclipped_feedback_m_s2": -9.543263670057058,
+      "clipped_feedback_m_s2": -4.0,
+      "reconstructed_pd_request_m_s2": -3.0988340377807617,
+      "stages_m_s2": {
+        "fabric": -2.850084066390991,
+        "projected": 1.8797752857208252,
+        "qp_predicted": 2.6293857097625732,
+        "observed": 2.928819417953491
+      },
+      "commanded_contact_mode": 3
+    }
+  ],
+  "windows": [
+    {
+      "start_s": 0.7,
+      "end_s": 1.2,
+      "position_error_increase_m": 0.09249046538025141,
+      "integrated_velocity_error_m": 0.0925361177307204,
+      "position_vs_velocity_integral_residual_m": -4.5652350468994296e-05,
+      "initial_velocity_error_contribution_m": 0.019526537507772442,
+      "mean_velocity_error_m_s": 0.1850722354614408,
+      "acceleration_difference_integral_m": {
+        "clipped_feedback": -0.33678680488951984,
+        "fabric_minus_pd": 0.01243646906058981,
+        "projection_minus_fabric": -0.03339110016188018,
+        "qp_minus_projection": 0.4274061265389545,
+        "observed_minus_qp": 0.0013283329215123766,
+        "analytic_reference_minus_interval_reference": 0.0020165567532912636
+      },
+      "feedback_clipped_fraction": 0.596,
+      "observed_minus_qp_acceleration_rms_m_s2": 0.532713362859636
+    },
+    {
+      "start_s": 0.8,
+      "end_s": 1.2,
+      "position_error_increase_m": 0.08755648136138916,
+      "integrated_velocity_error_m": 0.0877273245352553,
+      "position_vs_velocity_integral_residual_m": -0.00017084317386613368,
+      "initial_velocity_error_contribution_m": 0.030687579512596125,
+      "mean_velocity_error_m_s": 0.21931831133813828,
+      "acceleration_difference_integral_m": {
+        "clipped_feedback": -0.2742666780970505,
+        "fabric_minus_pd": 0.01909968190084025,
+        "projection_minus_fabric": -0.014472800202131257,
+        "qp_minus_projection": 0.3258127492260112,
+        "observed_minus_qp": 0.00012158719883116186,
+        "analytic_reference_minus_interval_reference": 0.00074520499615835
+      },
+      "feedback_clipped_fraction": 0.745,
+      "observed_minus_qp_acceleration_rms_m_s2": 0.5714345226857123
+    },
+    {
+      "start_s": 0.9,
+      "end_s": 1.2,
+      "position_error_increase_m": 0.07377636432647705,
+      "integrated_velocity_error_m": 0.07403485360101328,
+      "position_vs_velocity_integral_residual_m": -0.0002584892745362277,
+      "initial_velocity_error_contribution_m": 0.06445585079491137,
+      "mean_velocity_error_m_s": 0.246782845336711,
+      "acceleration_difference_integral_m": {
+        "clipped_feedback": -0.17999743328147372,
+        "fabric_minus_pd": 0.01850608659880608,
+        "projection_minus_fabric": -0.01698723709058763,
+        "qp_minus_projection": 0.19094178742585327,
+        "observed_minus_qp": -0.002887300309739999,
+        "analytic_reference_minus_interval_reference": 3.099463243961056e-06
+      },
+      "feedback_clipped_fraction": 0.9933333333333333,
+      "observed_minus_qp_acceleration_rms_m_s2": 0.1317293330489585
+    },
+    {
+      "start_s": 1.0,
+      "end_s": 1.2,
+      "position_error_increase_m": 0.05209672451019287,
+      "integrated_velocity_error_m": 0.052250607905909394,
+      "position_vs_velocity_integral_residual_m": -0.00015388339571652254,
+      "initial_velocity_error_contribution_m": 0.04302874580025672,
+      "mean_velocity_error_m_s": 0.26125303952954704,
+      "acceleration_difference_integral_m": {
+        "clipped_feedback": -0.07999999999999996,
+        "fabric_minus_pd": 0.0075006303416490575,
+        "projection_minus_fabric": 0.007141980100154863,
+        "qp_minus_projection": 0.07540908558509496,
+        "observed_minus_qp": -0.0009279667765721606,
+        "analytic_reference_minus_interval_reference": 9.813285532592977e-05
+      },
+      "feedback_clipped_fraction": 1.0,
+      "observed_minus_qp_acceleration_rms_m_s2": 0.0693071826209391
+    }
+  ]
+}

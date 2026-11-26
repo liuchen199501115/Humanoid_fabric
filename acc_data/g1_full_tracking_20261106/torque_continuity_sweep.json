@@ -1,0 +1,407 @@
+[
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "weight": 0.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 6.394884621840902e-14,
+      "iterations": 23,
+      "accepted": true
+    },
+    "root_acc": [
+      1.3076164831735975,
+      3.1283224704882007,
+      -3.4936051204103893,
+      2.5849506701026743,
+      -21.207851298075372,
+      11.274265969384942
+    ],
+    "torque_delta_norm": 17.04040890072109,
+    "torque_delta_peak": 9.13944554096259,
+    "tasks": {
+      "center_of_mass": 285887.1590234861,
+      "body_orientation": 270022.16844994226,
+      "source_pelvis_orientation": 1746174.2023506896,
+      "joint_posture": 595716.2746016673,
+      "feet_pose": 608650.7025345168
+    }
+  },
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "weight": 1.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 2.6645352591003757e-14,
+      "iterations": 23,
+      "accepted": true
+    },
+    "root_acc": [
+      1.3119264649556217,
+      3.12995644347179,
+      -3.5161095855167965,
+      2.4678450099720886,
+      -21.41285934925211,
+      11.222306881820067
+    ],
+    "torque_delta_norm": 16.755967213736625,
+    "torque_delta_peak": 8.943712850086783,
+    "tasks": {
+      "center_of_mass": 285681.6826616314,
+      "body_orientation": 270308.6148418734,
+      "source_pelvis_orientation": 1752921.0450266248,
+      "joint_posture": 595521.9672001934,
+      "feet_pose": 608768.7779494703
+    }
+  },
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "weight": 10.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 1.4210854715202004e-13,
+      "iterations": 23,
+      "accepted": true
+    },
+    "root_acc": [
+      1.3455410036659758,
+      3.1400176409149423,
+      -3.6746445941061823,
+      1.675446782125995,
+      -22.878926204808817,
+      10.882381573298389
+    ],
+    "torque_delta_norm": 14.86338348252152,
+    "torque_delta_peak": 7.57668898199516,
+    "tasks": {
+      "center_of_mass": 284195.8130347645,
+      "body_orientation": 272460.5009731647,
+      "source_pelvis_orientation": 1804604.7576062416,
+      "joint_posture": 594675.5488996988,
+      "feet_pose": 609248.9494218206
+    }
+  },
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "weight": 100.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 7.958078640513122e-13,
+      "iterations": 23,
+      "accepted": true
+    },
+    "root_acc": [
+      1.4174005522141824,
+      3.156807975936642,
+      -3.983684518600571,
+      0.540630864019772,
+      -27.131669205822952,
+      10.71378269353312
+    ],
+    "torque_delta_norm": 9.804446494884841,
+    "torque_delta_peak": 4.285885957229333,
+    "tasks": {
+      "center_of_mass": 277457.8603365418,
+      "body_orientation": 276892.6754439013,
+      "source_pelvis_orientation": 2008752.9557141215,
+      "joint_posture": 599999.4634289849,
+      "feet_pose": 610600.6547886434
+    }
+  },
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "weight": 1000.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 6.750155989720952e-13,
+      "iterations": 23,
+      "accepted": true
+    },
+    "root_acc": [
+      1.6167031555817843,
+      3.0860642840156793,
+      -4.09813448477728,
+      5.629089363889016,
+      -33.44679020287512,
+      15.22135310828477
+    ],
+    "torque_delta_norm": 6.4243378557989725,
+    "torque_delta_peak": 2.763747423797298,
+    "tasks": {
+      "center_of_mass": 262486.5775465161,
+      "body_orientation": 282335.09180824633,
+      "source_pelvis_orientation": 2584791.86284359,
+      "joint_posture": 611649.1018479199,
+      "feet_pose": 627077.9212371042
+    }
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "weight": 0.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 3.019806626980426e-14,
+      "iterations": 21,
+      "accepted": true
+    },
+    "root_acc": [
+      1.1454197391992311,
+      -1.6149594136796024,
+      -6.6757926365768725,
+      -10.079047711313713,
+      -7.508819639998593,
+      6.146418683451486
+    ],
+    "torque_delta_norm": 2.8860558889653083,
+    "torque_delta_peak": 1.6593245029167747,
+    "tasks": {
+      "center_of_mass": 6518.9744975261565,
+      "body_orientation": 0.0,
+      "source_pelvis_orientation": 205.99106033156528,
+      "joint_posture": 11122.323022505225,
+      "feet_pose": 6708.717423641878
+    }
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "weight": 1.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 5.684341886080802e-14,
+      "iterations": 20,
+      "accepted": true
+    },
+    "root_acc": [
+      1.162091566760535,
+      -1.5730965874774587,
+      -6.631740689780502,
+      -10.073543107384591,
+      -7.496935550028839,
+      6.117989128662389
+    ],
+    "torque_delta_norm": 2.460993655508355,
+    "torque_delta_peak": 1.4583708716716721,
+    "tasks": {
+      "center_of_mass": 6487.496612383762,
+      "body_orientation": 0.0,
+      "source_pelvis_orientation": 203.1831428352447,
+      "joint_posture": 11108.915529645663,
+      "feet_pose": 6757.310225727345
+    }
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "weight": 10.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 5.684341886080802e-14,
+      "iterations": 21,
+      "accepted": true
+    },
+    "root_acc": [
+      1.2679631270846101,
+      -1.5487260216559302,
+      -6.466781693904313,
+      -10.067982219873898,
+      -7.476800920808136,
+      6.021909754897049
+    ],
+    "torque_delta_norm": 1.5580309245636357,
+    "torque_delta_peak": 0.8263309410381581,
+    "tasks": {
+      "center_of_mass": 6357.732049623998,
+      "body_orientation": 0.0,
+      "source_pelvis_orientation": 197.0446792415479,
+      "joint_posture": 11089.074797390786,
+      "feet_pose": 6927.667634633108
+    }
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "weight": 100.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 1.1368683772161603e-13,
+      "iterations": 20,
+      "accepted": true
+    },
+    "root_acc": [
+      1.5142719697410763,
+      -1.5672944584872617,
+      -6.214907837552093,
+      -10.086379075070383,
+      -7.441270730095768,
+      5.905921189047046
+    ],
+    "torque_delta_norm": 0.75465488708052,
+    "torque_delta_peak": 0.5603739521508206,
+    "tasks": {
+      "center_of_mass": 6225.881959510816,
+      "body_orientation": 0.0,
+      "source_pelvis_orientation": 187.5555938947893,
+      "joint_posture": 11247.98578134567,
+      "feet_pose": 6963.025628627859
+    }
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "weight": 1000.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 8.881784197001252e-14,
+      "iterations": 20,
+      "accepted": true
+    },
+    "root_acc": [
+      1.6675334375465063,
+      -1.555407152164202,
+      -6.0499445215199374,
+      -10.158268078154443,
+      -7.33067631245196,
+      5.999082592630237
+    ],
+    "torque_delta_norm": 0.358322905435092,
+    "torque_delta_peak": 0.2341636245151104,
+    "tasks": {
+      "center_of_mass": 6206.203943196412,
+      "body_orientation": 0.0,
+      "source_pelvis_orientation": 170.00442638949994,
+      "joint_posture": 11779.161364915211,
+      "feet_pose": 6612.212448907966
+    }
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "weight": 0.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 1.7053025658242404e-13,
+      "iterations": 22,
+      "accepted": true
+    },
+    "root_acc": [
+      -3.10355936393006,
+      -0.36812427843927337,
+      4.492924056811272,
+      -13.839123340504708,
+      -23.575894931673794,
+      16.050205261735176
+    ],
+    "torque_delta_norm": 6.828454352580079,
+    "torque_delta_peak": 3.853200902170375,
+    "tasks": {
+      "center_of_mass": 37840.499403116766,
+      "body_orientation": 40026.67470971741,
+      "source_pelvis_orientation": 94485.72485253104,
+      "joint_posture": 132710.5247320337,
+      "feet_pose": 391129.07974152785
+    }
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "weight": 1.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 1.1368683772161603e-13,
+      "iterations": 22,
+      "accepted": true
+    },
+    "root_acc": [
+      -3.1116401254336163,
+      -0.37784058718684704,
+      4.539643906270426,
+      -13.855082985001047,
+      -23.44349517052394,
+      15.998953429481851
+    ],
+    "torque_delta_norm": 6.578240216040837,
+    "torque_delta_peak": 3.682521859195848,
+    "tasks": {
+      "center_of_mass": 38060.88135605313,
+      "body_orientation": 40006.08394496788,
+      "source_pelvis_orientation": 95032.51538654327,
+      "joint_posture": 132811.25517293956,
+      "feet_pose": 390830.1866276419
+    }
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "weight": 10.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 2.842170943040401e-14,
+      "iterations": 22,
+      "accepted": true
+    },
+    "root_acc": [
+      -3.1621245783400607,
+      -0.43223430156177156,
+      4.815230358846132,
+      -13.913527896695403,
+      -22.71506100660388,
+      15.857625454813816
+    ],
+    "torque_delta_norm": 5.231018983595709,
+    "torque_delta_peak": 2.664299171290974,
+    "tasks": {
+      "center_of_mass": 39306.07399389302,
+      "body_orientation": 39950.426389859655,
+      "source_pelvis_orientation": 98541.45439837215,
+      "joint_posture": 133547.6568500894,
+      "feet_pose": 388978.5563078373
+    }
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "weight": 100.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 7.283063041541027e-14,
+      "iterations": 22,
+      "accepted": true
+    },
+    "root_acc": [
+      -3.2823089326564605,
+      -0.5258613608182254,
+      5.378663596585236,
+      -13.796759918063207,
+      -21.606834180839535,
+      16.627889024012173
+    ],
+    "torque_delta_norm": 3.0326074210833363,
+    "torque_delta_peak": 1.7032364809128673,
+    "tasks": {
+      "center_of_mass": 41383.29283026994,
+      "body_orientation": 40114.75949114996,
+      "source_pelvis_orientation": 106513.73126427643,
+      "joint_posture": 136607.34482811904,
+      "feet_pose": 384287.2679038055
+    }
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "weight": 1000.0,
+    "solve": {
+      "status": "Solved",
+      "constraint_residual": 1.8474111129762605e-13,
+      "iterations": 21,
+      "accepted": true
+    },
+    "root_acc": [
+      -3.352723455762224,
+      -0.5304344892296198,
+      5.578897672111437,
+      -13.663195007238903,
+      -20.20611573225218,
+      17.534281204385305
+    ],
+    "torque_delta_norm": 1.7316390523591263,
+    "torque_delta_peak": 1.2063828971781998,
+    "tasks": {
+      "center_of_mass": 42219.31603775276,
+      "body_orientation": 39343.14397576607,
+      "source_pelvis_orientation": 118064.8008052907,
+      "joint_posture": 144830.85905273515,
+      "feet_pose": 378056.67130158603
+    }
+  }
+]

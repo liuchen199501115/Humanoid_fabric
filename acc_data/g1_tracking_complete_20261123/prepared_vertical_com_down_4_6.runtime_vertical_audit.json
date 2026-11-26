@@ -1,0 +1,738 @@
+{
+  "candidate": "prepared_vertical_com_down_4_6",
+  "first_frame": 740,
+  "last_frame": 884,
+  "minimum_vertical_acceleration": -4.205516142591521,
+  "maximum_vertical_acceleration": 5.553455236594172,
+  "negative_required_ground_force_frames": 0,
+  "maximum_foot_position_change_after_runtime_interpolation_m": 0.0007224649509470684,
+  "peak_source_joint_rmse_rad": 0.10683285607625029,
+  "frames": [
+    {
+      "frame": 740,
+      "vertical_acceleration": -2.180260724055793,
+      "required_normal_force_N": 254.3842207748278
+    },
+    {
+      "frame": 741,
+      "vertical_acceleration": -2.2977830378316133,
+      "required_normal_force_N": 250.4658926207092
+    },
+    {
+      "frame": 742,
+      "vertical_acceleration": -2.4100246240730536,
+      "required_normal_force_N": 246.72362995328328
+    },
+    {
+      "frame": 743,
+      "vertical_acceleration": -2.5135445647496706,
+      "required_normal_force_N": 243.27215690928222
+    },
+    {
+      "frame": 744,
+      "vertical_acceleration": -2.604315671591433,
+      "required_normal_force_N": 240.24574454475842
+    },
+    {
+      "frame": 745,
+      "vertical_acceleration": -2.4276788168404817,
+      "required_normal_force_N": 246.135019004976
+    },
+    {
+      "frame": 746,
+      "vertical_acceleration": -2.2553452610760747,
+      "required_normal_force_N": 251.88081656252868
+    },
+    {
+      "frame": 747,
+      "vertical_acceleration": -2.0895444805345056,
+      "required_normal_force_N": 257.40880393359197
+    },
+    {
+      "frame": 748,
+      "vertical_acceleration": -1.9323259760864824,
+      "required_normal_force_N": 262.65064841856554
+    },
+    {
+      "frame": 749,
+      "vertical_acceleration": -1.7855345999289547,
+      "required_normal_force_N": 267.5448405383449
+    },
+    {
+      "frame": 750,
+      "vertical_acceleration": -1.6507844946422474,
+      "required_normal_force_N": 272.03756293591897
+    },
+    {
+      "frame": 751,
+      "vertical_acceleration": -1.5482047333003155,
+      "required_normal_force_N": 275.45768932719807
+    },
+    {
+      "frame": 752,
+      "vertical_acceleration": -1.4515038456615517,
+      "required_normal_force_N": 278.6818073554221
+    },
+    {
+      "frame": 753,
+      "vertical_acceleration": -1.362118765542044,
+      "required_normal_force_N": 281.6620080061557
+    },
+    {
+      "frame": 754,
+      "vertical_acceleration": -1.2812307670926328,
+      "required_normal_force_N": 284.3589062501711
+    },
+    {
+      "frame": 755,
+      "vertical_acceleration": -1.2097241557949163,
+      "required_normal_force_N": 286.74301833281714
+    },
+    {
+      "frame": 756,
+      "vertical_acceleration": -1.1481460703520014,
+      "required_normal_force_N": 288.7961020248891
+    },
+    {
+      "frame": 757,
+      "vertical_acceleration": -0.41287032823466596,
+      "required_normal_force_N": 313.3110349666841
+    },
+    {
+      "frame": 758,
+      "vertical_acceleration": 0.20296450445309921,
+      "required_normal_force_N": 333.8436715841898
+    },
+    {
+      "frame": 759,
+      "vertical_acceleration": 0.7036002533025592,
+      "required_normal_force_N": 350.5354391868687
+    },
+    {
+      "frame": 760,
+      "vertical_acceleration": 1.100846042554778,
+      "required_normal_force_N": 363.7800674631739
+    },
+    {
+      "frame": 761,
+      "vertical_acceleration": 1.413599039879522,
+      "required_normal_force_N": 374.2076095641589
+    },
+    {
+      "frame": 762,
+      "vertical_acceleration": 1.6673342957632928,
+      "required_normal_force_N": 382.66743276606076
+    },
+    {
+      "frame": 763,
+      "vertical_acceleration": 1.8272141816220064,
+      "required_normal_force_N": 387.99801074661747
+    },
+    {
+      "frame": 764,
+      "vertical_acceleration": 1.9665054810504867,
+      "required_normal_force_N": 392.64214174301276
+    },
+    {
+      "frame": 765,
+      "vertical_acceleration": 2.093951231412108,
+      "required_normal_force_N": 396.8913286056651
+    },
+    {
+      "frame": 766,
+      "vertical_acceleration": 2.228853564126529,
+      "required_normal_force_N": 401.3891264395259
+    },
+    {
+      "frame": 767,
+      "vertical_acceleration": 2.4007884595651956,
+      "required_normal_force_N": 407.1216322065403
+    },
+    {
+      "frame": 768,
+      "vertical_acceleration": 2.649332294040381,
+      "required_normal_force_N": 415.4083674899728
+    },
+    {
+      "frame": 769,
+      "vertical_acceleration": 2.5551156562153534,
+      "required_normal_force_N": 412.26707718760167
+    },
+    {
+      "frame": 770,
+      "vertical_acceleration": 2.6052925486560903,
+      "required_normal_force_N": 413.94003208459054
+    },
+    {
+      "frame": 771,
+      "vertical_acceleration": 2.788185940205924,
+      "required_normal_force_N": 420.03790662677306
+    },
+    {
+      "frame": 772,
+      "vertical_acceleration": 3.095985419095855,
+      "required_normal_force_N": 430.30029276612424
+    },
+    {
+      "frame": 773,
+      "vertical_acceleration": 3.5244675833848387,
+      "required_normal_force_N": 444.5863774587202
+    },
+    {
+      "frame": 774,
+      "vertical_acceleration": 4.072662373300245,
+      "required_normal_force_N": 462.86381780391383
+    },
+    {
+      "frame": 775,
+      "vertical_acceleration": 3.644101532993523,
+      "required_normal_force_N": 448.5751099630368
+    },
+    {
+      "frame": 776,
+      "vertical_acceleration": 3.1966488087605986,
+      "required_normal_force_N": 433.656525137151
+    },
+    {
+      "frame": 777,
+      "vertical_acceleration": 2.706555257194485,
+      "required_normal_force_N": 417.3162464312991
+    },
+    {
+      "frame": 778,
+      "vertical_acceleration": 2.1577871567720015,
+      "required_normal_force_N": 399.0196912590674
+    },
+    {
+      "frame": 779,
+      "vertical_acceleration": 1.538712101957738,
+      "required_normal_force_N": 378.3790219354658
+    },
+    {
+      "frame": 780,
+      "vertical_acceleration": 0.8394113893106274,
+      "required_normal_force_N": 355.06353756041125
+    },
+    {
+      "frame": 781,
+      "vertical_acceleration": 1.001722978329687,
+      "required_normal_force_N": 360.47519130138755
+    },
+    {
+      "frame": 782,
+      "vertical_acceleration": 0.9724769763074752,
+      "required_normal_force_N": 359.5000961944478
+    },
+    {
+      "frame": 783,
+      "vertical_acceleration": 0.766846718783623,
+      "required_normal_force_N": 352.6441485747359
+    },
+    {
+      "frame": 784,
+      "vertical_acceleration": 0.4119088690809285,
+      "required_normal_force_N": 340.8101153195249
+    },
+    {
+      "frame": 785,
+      "vertical_acceleration": -0.05462681652696144,
+      "required_normal_force_N": 325.2552827682742
+    },
+    {
+      "frame": 786,
+      "vertical_acceleration": -0.5851306372200922,
+      "required_normal_force_N": 307.5676795403919
+    },
+    {
+      "frame": 787,
+      "vertical_acceleration": -0.8633650961962811,
+      "required_normal_force_N": 298.2910249288089
+    },
+    {
+      "frame": 788,
+      "vertical_acceleration": -1.2745860517494938,
+      "required_normal_force_N": 284.58044864810915
+    },
+    {
+      "frame": 789,
+      "vertical_acceleration": -1.8051223331644914,
+      "required_normal_force_N": 266.891763142689
+    },
+    {
+      "frame": 790,
+      "vertical_acceleration": -2.4222289020197527,
+      "required_normal_force_N": 246.31672538901083
+    },
+    {
+      "frame": 791,
+      "vertical_acceleration": -3.074477242867304,
+      "required_normal_force_N": 224.57002082450325
+    },
+    {
+      "frame": 792,
+      "vertical_acceleration": -3.6934258323468043,
+      "required_normal_force_N": 203.93356799958855
+    },
+    {
+      "frame": 793,
+      "vertical_acceleration": -3.4678711276983583,
+      "required_normal_force_N": 211.45381944055154
+    },
+    {
+      "frame": 794,
+      "vertical_acceleration": -3.2421810753902793,
+      "required_normal_force_N": 218.97858352705643
+    },
+    {
+      "frame": 795,
+      "vertical_acceleration": -3.105456547580353,
+      "required_normal_force_N": 223.53713542638462
+    },
+    {
+      "frame": 796,
+      "vertical_acceleration": -3.12970339779221,
+      "required_normal_force_N": 222.72871774993342
+    },
+    {
+      "frame": 797,
+      "vertical_acceleration": -3.3665973933814053,
+      "required_normal_force_N": 214.8304013993088
+    },
+    {
+      "frame": 798,
+      "vertical_acceleration": -3.8442341569174494,
+      "required_normal_force_N": 198.90544623228038
+    },
+    {
+      "frame": 799,
+      "vertical_acceleration": -1.903960754035121,
+      "required_normal_force_N": 263.5963773154088
+    },
+    {
+      "frame": 800,
+      "vertical_acceleration": -0.18387713893956814,
+      "required_normal_force_N": 320.9459294125847
+    },
+    {
+      "frame": 801,
+      "vertical_acceleration": 1.3351880963450036,
+      "required_normal_force_N": 371.5932991598523
+    },
+    {
+      "frame": 802,
+      "vertical_acceleration": 2.694238446587139,
+      "required_normal_force_N": 416.90558989960607
+    },
+    {
+      "frame": 803,
+      "vertical_acceleration": 3.955606244937931,
+      "required_normal_force_N": 458.96103280387456
+    },
+    {
+      "frame": 804,
+      "vertical_acceleration": 5.203360570980663,
+      "required_normal_force_N": 500.5625869945346
+    },
+    {
+      "frame": 805,
+      "vertical_acceleration": 4.794191040360255,
+      "required_normal_force_N": 486.9204075638629
+    },
+    {
+      "frame": 806,
+      "vertical_acceleration": 4.685094126074327,
+      "required_normal_force_N": 483.28299185071205
+    },
+    {
+      "frame": 807,
+      "vertical_acceleration": 4.775442703886871,
+      "required_normal_force_N": 486.2953166148651
+    },
+    {
+      "frame": 808,
+      "vertical_acceleration": 4.985886985306857,
+      "required_normal_force_N": 493.3117692889857
+    },
+    {
+      "frame": 809,
+      "vertical_acceleration": 5.257602326650515,
+      "required_normal_force_N": 502.3710690737374
+    },
+    {
+      "frame": 810,
+      "vertical_acceleration": 5.553455236594172,
+      "required_normal_force_N": 512.2351429611991
+    },
+    {
+      "frame": 811,
+      "vertical_acceleration": 5.548404831932744,
+      "required_normal_force_N": 512.0667567021239
+    },
+    {
+      "frame": 812,
+      "vertical_acceleration": 5.5268580052564005,
+      "required_normal_force_N": 511.34836089382765
+    },
+    {
+      "frame": 813,
+      "vertical_acceleration": 5.484310566120155,
+      "required_normal_force_N": 509.92978068299885
+    },
+    {
+      "frame": 814,
+      "vertical_acceleration": 5.417944320542954,
+      "required_normal_force_N": 507.7170542638752
+    },
+    {
+      "frame": 815,
+      "vertical_acceleration": 5.326582075606738,
+      "required_normal_force_N": 504.6709326801908
+    },
+    {
+      "frame": 816,
+      "vertical_acceleration": 5.210649507363249,
+      "required_normal_force_N": 500.8056084576412
+    },
+    {
+      "frame": 817,
+      "vertical_acceleration": 4.941347026490213,
+      "required_normal_force_N": 491.826756196515
+    },
+    {
+      "frame": 818,
+      "vertical_acceleration": 4.668584276217249,
+      "required_normal_force_N": 482.73253460189835
+    },
+    {
+      "frame": 819,
+      "vertical_acceleration": 4.392480307954944,
+      "required_normal_force_N": 473.52691298377925
+    },
+    {
+      "frame": 820,
+      "vertical_acceleration": 4.113661485084173,
+      "required_normal_force_N": 464.23077501259564
+    },
+    {
+      "frame": 821,
+      "vertical_acceleration": 3.833311993460854,
+      "required_normal_force_N": 454.8836027971478
+    },
+    {
+      "frame": 822,
+      "vertical_acceleration": 3.553221182364366,
+      "required_normal_force_N": 445.54505528588277
+    },
+    {
+      "frame": 823,
+      "vertical_acceleration": 3.223541621683089,
+      "required_normal_force_N": 434.5531622321171
+    },
+    {
+      "frame": 824,
+      "vertical_acceleration": 2.9025434712726743,
+      "required_normal_force_N": 423.8507173111261
+    },
+    {
+      "frame": 825,
+      "vertical_acceleration": 2.5867953961817123,
+      "required_normal_force_N": 413.32331589697674
+    },
+    {
+      "frame": 826,
+      "vertical_acceleration": 2.2737391142010472,
+      "required_normal_force_N": 402.8856619392062
+    },
+    {
+      "frame": 827,
+      "vertical_acceleration": 1.9616114001774374,
+      "required_normal_force_N": 392.4789674975671
+    },
+    {
+      "frame": 828,
+      "vertical_acceleration": 1.6493775153251127,
+      "required_normal_force_N": 382.0687331992494
+    },
+    {
+      "frame": 829,
+      "vertical_acceleration": 1.3576122642405046,
+      "required_normal_force_N": 372.3409465263365
+    },
+    {
+      "frame": 830,
+      "vertical_acceleration": 1.0567984923380824,
+      "required_normal_force_N": 362.311471835766
+    },
+    {
+      "frame": 831,
+      "vertical_acceleration": 0.745113490195098,
+      "required_normal_force_N": 351.91953791381275
+    },
+    {
+      "frame": 832,
+      "vertical_acceleration": 0.4211432919305422,
+      "required_normal_force_N": 341.1180015232266
+    },
+    {
+      "frame": 833,
+      "vertical_acceleration": 0.08393664169726611,
+      "required_normal_force_N": 329.8751467077105
+    },
+    {
+      "frame": 834,
+      "vertical_acceleration": -0.2669432912204721,
+      "required_normal_force_N": 318.17640903233206
+    },
+    {
+      "frame": 835,
+      "vertical_acceleration": -0.5737789376396619,
+      "required_normal_force_N": 307.9461581682714
+    },
+    {
+      "frame": 836,
+      "vertical_acceleration": -0.8837514768691098,
+      "required_normal_force_N": 297.61131971552237
+    },
+    {
+      "frame": 837,
+      "vertical_acceleration": -1.1975625009684263,
+      "required_normal_force_N": 287.1485017935854
+    },
+    {
+      "frame": 838,
+      "vertical_acceleration": -1.5156322821198347,
+      "required_normal_force_N": 276.54369204794597
+    },
+    {
+      "frame": 839,
+      "vertical_acceleration": -1.8381002781620595,
+      "required_normal_force_N": 265.7922407949973
+    },
+    {
+      "frame": 840,
+      "vertical_acceleration": -2.1648308045306734,
+      "required_normal_force_N": 254.89867191307204
+    },
+    {
+      "frame": 841,
+      "vertical_acceleration": -2.453722840959025,
+      "required_normal_force_N": 245.26668149806733
+    },
+    {
+      "frame": 842,
+      "vertical_acceleration": -2.7346733374165684,
+      "required_normal_force_N": 235.89947109508688
+    },
+    {
+      "frame": 843,
+      "vertical_acceleration": -3.0076235012209502,
+      "required_normal_force_N": 226.79900091930273
+    },
+    {
+      "frame": 844,
+      "vertical_acceleration": -3.2723150362382345,
+      "required_normal_force_N": 217.97388285879964
+    },
+    {
+      "frame": 845,
+      "vertical_acceleration": -3.5282928279417782,
+      "required_normal_force_N": 209.43929095164583
+    },
+    {
+      "frame": 846,
+      "vertical_acceleration": -3.7749124207686657,
+      "required_normal_force_N": 201.21671208228997
+    },
+    {
+      "frame": 847,
+      "vertical_acceleration": -3.8086051424404754,
+      "required_normal_force_N": 200.09335826398984
+    },
+    {
+      "frame": 848,
+      "vertical_acceleration": -3.8331461894750216,
+      "required_normal_force_N": 199.27513172949153
+    },
+    {
+      "frame": 849,
+      "vertical_acceleration": -3.8481734063476214,
+      "required_normal_force_N": 198.77410715757685
+    },
+    {
+      "frame": 850,
+      "vertical_acceleration": -3.8532924900202326,
+      "required_normal_force_N": 198.60343106183606
+    },
+    {
+      "frame": 851,
+      "vertical_acceleration": -3.8480780553048364,
+      "required_normal_force_N": 198.7772862702361
+    },
+    {
+      "frame": 852,
+      "vertical_acceleration": -3.832072572715441,
+      "required_normal_force_N": 199.31092733834774
+    },
+    {
+      "frame": 853,
+      "vertical_acceleration": -3.85136053798803,
+      "required_normal_force_N": 198.66784454891754
+    },
+    {
+      "frame": 854,
+      "vertical_acceleration": -3.886235904290039,
+      "required_normal_force_N": 197.50506000804273
+    },
+    {
+      "frame": 855,
+      "vertical_acceleration": -3.937982541488037,
+      "required_normal_force_N": 195.7797680281669
+    },
+    {
+      "frame": 856,
+      "vertical_acceleration": -4.007755217814547,
+      "required_normal_force_N": 193.4534673176492
+    },
+    {
+      "frame": 857,
+      "vertical_acceleration": -4.096607836380746,
+      "required_normal_force_N": 190.49101954318468
+    },
+    {
+      "frame": 858,
+      "vertical_acceleration": -4.205516142591521,
+      "required_normal_force_N": 186.85989223865357
+    },
+    {
+      "frame": 859,
+      "vertical_acceleration": -4.193198835795558,
+      "required_normal_force_N": 187.2705653138417
+    },
+    {
+      "frame": 860,
+      "vertical_acceleration": -4.187445221611297,
+      "required_normal_force_N": 187.46239738148745
+    },
+    {
+      "frame": 861,
+      "vertical_acceleration": -4.1870804348930255,
+      "required_normal_force_N": 187.47455978726833
+    },
+    {
+      "frame": 862,
+      "vertical_acceleration": -4.190560498626658,
+      "required_normal_force_N": 187.35853048808664
+    },
+    {
+      "frame": 863,
+      "vertical_acceleration": -4.196089168721639,
+      "required_normal_force_N": 187.17419831326814
+    },
+    {
+      "frame": 864,
+      "vertical_acceleration": -4.201736982158997,
+      "required_normal_force_N": 186.98589376335073
+    },
+    {
+      "frame": 865,
+      "vertical_acceleration": -4.013306845165529,
+      "required_normal_force_N": 193.268369721698
+    },
+    {
+      "frame": 866,
+      "vertical_acceleration": -3.8319841966596773,
+      "required_normal_force_N": 199.31387389697414
+    },
+    {
+      "frame": 867,
+      "vertical_acceleration": -3.6565825968358654,
+      "required_normal_force_N": 205.16196354723508
+    },
+    {
+      "frame": 868,
+      "vertical_acceleration": -3.485309549041479,
+      "required_normal_force_N": 210.87240255794595
+    },
+    {
+      "frame": 869,
+      "vertical_acceleration": -3.3157846692618413,
+      "required_normal_force_N": 216.52455565060228
+    },
+    {
+      "frame": 870,
+      "vertical_acceleration": -3.1450605130191684,
+      "required_normal_force_N": 222.2166939901339
+    },
+    {
+      "frame": 871,
+      "vertical_acceleration": -3.1027962984893604,
+      "required_normal_force_N": 223.62583116913598
+    },
+    {
+      "frame": 872,
+      "vertical_acceleration": -3.04203553416409,
+      "required_normal_force_N": 225.65166444174858
+    },
+    {
+      "frame": 873,
+      "vertical_acceleration": -2.96005194252318,
+      "required_normal_force_N": 228.38509101395786
+    },
+    {
+      "frame": 874,
+      "vertical_acceleration": -2.853096651198239,
+      "required_normal_force_N": 231.95110257181318
+    },
+    {
+      "frame": 875,
+      "vertical_acceleration": -2.716316691399771,
+      "required_normal_force_N": 236.5115026369438
+    },
+    {
+      "frame": 876,
+      "vertical_acceleration": -2.543624844600752,
+      "required_normal_force_N": 242.26924602676598
+    },
+    {
+      "frame": 877,
+      "vertical_acceleration": -1.8456956515498748,
+      "required_normal_force_N": 265.53900237217925
+    },
+    {
+      "frame": 878,
+      "vertical_acceleration": -1.141461962467551,
+      "required_normal_force_N": 289.01895781514156
+    },
+    {
+      "frame": 879,
+      "vertical_acceleration": -0.43311362594631164,
+      "required_normal_force_N": 312.6361003027269
+    },
+    {
+      "frame": 880,
+      "vertical_acceleration": 0.280946682267191,
+      "required_normal_force_N": 336.4436864497183
+    },
+    {
+      "frame": 881,
+      "vertical_acceleration": 1.0058682555968375,
+      "required_normal_force_N": 360.61339957946393
+    },
+    {
+      "frame": 882,
+      "vertical_acceleration": 1.7500865343380883,
+      "required_normal_force_N": 385.4264869048559
+    },
+    {
+      "frame": 883,
+      "vertical_acceleration": 3.5630578429174276,
+      "required_normal_force_N": 445.8730207823849
+    },
+    {
+      "frame": 884,
+      "vertical_acceleration": 5.228330537996687,
+      "required_normal_force_N": 501.39511421105067
+    }
+  ],
+  "full_tracking_passed": false
+}

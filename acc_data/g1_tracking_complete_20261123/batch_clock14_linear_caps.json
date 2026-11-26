@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_anchor_linear15",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-foot-linear-feedback-limit",
+      "15"
+    ]
+  },
+  {
+    "name": "ten_anchor_linear30",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-foot-linear-feedback-limit",
+      "30"
+    ]
+  },
+  {
+    "name": "ten_anchor_linear45",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-foot-linear-feedback-limit",
+      "45"
+    ]
+  }
+]

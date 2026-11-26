@@ -1,0 +1,98 @@
+[
+  {
+    "time": 3.9,
+    "scale": 1.0,
+    "valid": true,
+    "shoulder_roll_acceleration": -15.878485280957463,
+    "waist_acceleration": [
+      -31.930720371231086,
+      -34.695656247067156,
+      58.15087589257887
+    ],
+    "root_angular_acceleration": [
+      -19.260536266152666,
+      -38.620957857900024,
+      30.73085033107094
+    ]
+  },
+  {
+    "time": 3.9,
+    "scale": 4.0,
+    "valid": true,
+    "shoulder_roll_acceleration": 31.992104827790783,
+    "waist_acceleration": [
+      -32.498925141789854,
+      -30.544724992290057,
+      56.65440077350242
+    ],
+    "root_angular_acceleration": [
+      -18.816761095055604,
+      -38.17138939717567,
+      32.23803714412768
+    ]
+  },
+  {
+    "time": 3.9,
+    "scale": 16.0,
+    "valid": true,
+    "shoulder_roll_acceleration": 44.861570263972474,
+    "waist_acceleration": [
+      -33.80499224822308,
+      -29.18795795982369,
+      55.59963698827604
+    ],
+    "root_angular_acceleration": [
+      -20.02998742467149,
+      -39.62407204995627,
+      31.31476245751712
+    ]
+  },
+  {
+    "time": 4.0,
+    "scale": 1.0,
+    "valid": true,
+    "shoulder_roll_acceleration": 213.7888024832347,
+    "waist_acceleration": [
+      -727.1572952182605,
+      -659.6016524937311,
+      -370.5410337914331
+    ],
+    "root_angular_acceleration": [
+      328.30598697180824,
+      46.71944213953791,
+      1137.572067112866
+    ]
+  },
+  {
+    "time": 4.0,
+    "scale": 4.0,
+    "valid": true,
+    "shoulder_roll_acceleration": 193.10023537401625,
+    "waist_acceleration": [
+      -721.0035818728371,
+      -657.4092576610924,
+      -368.4975263966494
+    ],
+    "root_angular_acceleration": [
+      321.98452802412675,
+      43.501934814363715,
+      1140.1382063299238
+    ]
+  },
+  {
+    "time": 4.0,
+    "scale": 16.0,
+    "valid": true,
+    "shoulder_roll_acceleration": 171.65827012361567,
+    "waist_acceleration": [
+      -714.6257739262064,
+      -655.1370242305138,
+      -366.37960231247035
+    ],
+    "root_angular_acceleration": [
+      315.43286582479635,
+      40.16725823212459,
+      1142.7977944797105
+    ]
+  }
+]

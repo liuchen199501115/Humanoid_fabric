@@ -1,0 +1,20 @@
+{
+  "name": "projection1_posture3",
+  "returncode": -15,
+  "options": [
+    "--posture-metric-scale",
+    "3",
+    "--joint-feedback-limit",
+    "150",
+    "--projection-joint-correction-weight",
+    "1",
+    "--qp-base-acceleration-weight",
+    "100",
+    "--source-pelvis-weight",
+    "10",
+    "--fabric-angular-feedback-limit",
+    "100",
+    "--joint-tube-end",
+    "0"
+  ]
+}

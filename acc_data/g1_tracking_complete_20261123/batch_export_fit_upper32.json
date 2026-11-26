@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_floor3_linear100_xy18_late",
+    "parent": "ten_floor3_linear60_xy18_late",
+    "options": [
+      "--late-foot-linear-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_floor3_linear60_xy18_late_upper32",
+    "parent": "ten_floor3_linear60_xy18_late",
+    "options": [
+      "--upper-posture-metric-scale",
+      "32"
+    ]
+  },
+  {
+    "name": "ten_floor3_fullroot_export_rot07",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_floor3_fast18_export_rot07.npz"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "twelve_clock06",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-sixth-start",
+      "4.69",
+      "--clock-sixth-ramp",
+      ".08",
+      "--clock-sixth-speed",
+      ".6"
+    ]
+  },
+  {
+    "name": "twelve_clock14",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-sixth-start",
+      "4.69",
+      "--clock-sixth-ramp",
+      ".08",
+      "--clock-sixth-speed",
+      "1.4"
+    ]
+  },
+  {
+    "name": "twelve_jointtube_end",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--joint-tube-end",
+      "4.8"
+    ]
+  }
+]

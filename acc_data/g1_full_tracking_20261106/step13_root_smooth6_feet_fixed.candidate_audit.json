@@ -1,0 +1,28 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_root_smooth6_feet_fixed.npz",
+  "candidate_sha256": "d6a372cb553b6ca2bc891c7aecb4418ee04080c4ccfabbaeaac630a4fd920833",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "scope": "Independent HiGHS nominal rigid-body full-sole audit at 0.125 source-frame spacing, original motor caps; excludes actual contact/impact and physical tracking.",
+  "frames": [
+    960.0,
+    1035.0
+  ],
+  "sample_count": 601,
+  "worst_sample": {
+    "frame": 1012.875,
+    "minimum_normalized_slack": 5.9045466302425265,
+    "base_equality_error": 4.263256414560601e-14,
+    "effort_fraction": 6.506373131250399,
+    "joint": "right_ankle_pitch_joint",
+    "torque": 325.31865656251995
+  },
+  "peak_base_equality_error": 1.3216094885137863e-12,
+  "peak_raw_joint_rmse": 0.14258060971010253,
+  "minimum_sole_clearance": [
+    -0.0009622785830779995,
+    -0.0020644836132104882
+  ],
+  "peak_left_swing_clearance": 0.04872846715168262,
+  "physical_tracking_certified": false,
+  "nominal_dynamics_passed": false
+}

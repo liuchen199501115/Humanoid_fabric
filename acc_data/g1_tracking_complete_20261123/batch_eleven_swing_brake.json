@@ -1,0 +1,29 @@
+[
+  {
+    "name": "eleven_tube1000_swing12",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_swing12_compact918_out20_down20.npz"
+    ]
+  },
+  {
+    "name": "eleven_tube1000_waistbrake",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--physical-braking-start",
+      "4.5",
+      "--physical-braking-waist-only"
+    ]
+  },
+  {
+    "name": "eleven_tube1000_rollbrake",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--physical-braking-start",
+      "4.5",
+      "--physical-braking-joints",
+      "waist_roll_joint"
+    ]
+  }
+]

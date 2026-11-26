@@ -1,0 +1,12 @@
+[
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_r10_l10_u05_a10_scale60",
+    "right_swing10_native_peak_clearance_m": 0.027410477643201495,
+    "right_native_bottom_at802_m": 0.003929199342575372
+  },
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_r10_l10_u05_a10_scale80",
+    "right_swing10_native_peak_clearance_m": 0.025864998774276532,
+    "right_native_bottom_at802_m": 0.0038138322531396096
+  }
+]

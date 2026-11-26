@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_leg16_upper4",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--upper-posture-metric-start",
+      "4.5",
+      "--upper-posture-metric-scale",
+      "4"
+    ]
+  },
+  {
+    "name": "eleven_leg16_upper16",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--upper-posture-metric-start",
+      "4.5",
+      "--upper-posture-metric-scale",
+      "16"
+    ]
+  },
+  {
+    "name": "eleven_leg16_upper64",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--upper-posture-metric-start",
+      "4.5",
+      "--upper-posture-metric-scale",
+      "64"
+    ]
+  }
+]

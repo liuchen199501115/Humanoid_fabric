@@ -1,0 +1,197 @@
+{
+  "note": "World Y; common horizon across completed trials. Startup failures are excluded. No acceptance thresholds changed.",
+  "trials": [
+    {
+      "name": "baseline_v2",
+      "scale": 0.0,
+      "measured_steps": 3,
+      "stop_time_s": 1.356,
+      "stop_reason": "QP validation failed",
+      "last_time": 1.354,
+      "final_com_y_error_m": 0.16556663811206818,
+      "peak_com_y_error_m": 0.16556663811206818,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "bitwise_matches_historical_baseline": true,
+      "comparison_to_baseline": {
+        "end_time_s": 1.354,
+        "trial": {
+          "rmse_m": 0.061542101204395294,
+          "final_error_m": 0.16556663811206818
+        },
+        "baseline": {
+          "rmse_m": 0.061542101204395294,
+          "final_error_m": 0.16556663811206818
+        }
+      },
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.002292255638167262,
+      "common_com_y_final_error_m": 0.00532136857509613
+    },
+    {
+      "name": "fabric_metric",
+      "scale": 0.0,
+      "measured_steps": 1,
+      "stop_time_s": 0.334,
+      "stop_reason": "QP validation failed",
+      "last_time": 0.332,
+      "final_com_y_error_m": 0.012757919728755951,
+      "peak_com_y_error_m": 0.012757919728755951,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 0.332,
+        "trial": {
+          "rmse_m": 0.006352045573294163,
+          "final_error_m": 0.012757919728755951
+        },
+        "baseline": {
+          "rmse_m": 0.004244549665600061,
+          "final_error_m": 0.009418897330760956
+        }
+      },
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.003994188737124205,
+      "common_com_y_final_error_m": 0.008361868560314178
+    },
+    {
+      "name": "feedback025",
+      "scale": 0.25,
+      "measured_steps": 1,
+      "stop_time_s": 0.716,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "last_time": 0.716,
+      "final_com_y_error_m": 0.15774646401405334,
+      "peak_com_y_error_m": 0.15774646401405334,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 0.716,
+        "trial": {
+          "rmse_m": 0.06891736388206482,
+          "final_error_m": 0.15774646401405334
+        },
+        "baseline": {
+          "rmse_m": 0.01097720768302679,
+          "final_error_m": 0.022328335791826248
+        }
+      },
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.005119332578033209,
+      "common_com_y_final_error_m": 0.010964907705783844
+    },
+    {
+      "name": "feedback1_late",
+      "scale": 1.0,
+      "measured_steps": 3,
+      "stop_time_s": 1.18,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "last_time": 1.18,
+      "final_com_y_error_m": 0.11634015291929245,
+      "peak_com_y_error_m": 0.11634015291929245,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 1.18,
+        "trial": {
+          "rmse_m": 0.03979294002056122,
+          "final_error_m": 0.11634015291929245
+        },
+        "baseline": {
+          "rmse_m": 0.039124395698308945,
+          "final_error_m": 0.10798733681440353
+        }
+      },
+      "prefix_through_07_bitwise_equal": true,
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.002292255638167262,
+      "common_com_y_final_error_m": 0.00532136857509613
+    },
+    {
+      "name": "feedback1_v2",
+      "scale": 1.0,
+      "measured_steps": 2,
+      "stop_time_s": 0.768,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "last_time": 0.768,
+      "final_com_y_error_m": 0.06255514919757843,
+      "peak_com_y_error_m": 0.06255514919757843,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 0.768,
+        "trial": {
+          "rmse_m": 0.030096622183918953,
+          "final_error_m": 0.06255514919757843
+        },
+        "baseline": {
+          "rmse_m": 0.012208851985633373,
+          "final_error_m": 0.024442996829748154
+        }
+      },
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.003197811543941498,
+      "common_com_y_final_error_m": 0.0066066160798072815
+    },
+    {
+      "name": "feedback4_late",
+      "scale": 4.0,
+      "measured_steps": 2,
+      "stop_time_s": 0.9460000000000001,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "last_time": 0.9460000000000001,
+      "final_com_y_error_m": 0.03397566080093384,
+      "peak_com_y_error_m": 0.03397566080093384,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 0.9460000000000001,
+        "trial": {
+          "rmse_m": 0.016393151134252548,
+          "final_error_m": 0.03397566080093384
+        },
+        "baseline": {
+          "rmse_m": 0.01888924278318882,
+          "final_error_m": 0.050286076962947845
+        }
+      },
+      "prefix_through_07_bitwise_equal": true,
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.002292255638167262,
+      "common_com_y_final_error_m": 0.00532136857509613
+    },
+    {
+      "name": "feedback4_v2",
+      "scale": 4.0,
+      "measured_steps": 0,
+      "stop_time_s": 0.244,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "last_time": 0.244,
+      "final_com_y_error_m": 0.017134346067905426,
+      "peak_com_y_error_m": 0.017134346067905426,
+      "single_qp": true,
+      "task_cache": false,
+      "applied_torque_equals_qp": true,
+      "comparison_to_baseline": {
+        "end_time_s": 0.244,
+        "trial": {
+          "rmse_m": 0.006362023763358593,
+          "final_error_m": 0.017134346067905426
+        },
+        "baseline": {
+          "rmse_m": 0.002292255638167262,
+          "final_error_m": 0.00532136857509613
+        }
+      },
+      "common_end_time_s": 0.244,
+      "common_com_y_rmse_m": 0.006362023763358593,
+      "common_com_y_final_error_m": 0.017134346067905426
+    }
+  ]
+}

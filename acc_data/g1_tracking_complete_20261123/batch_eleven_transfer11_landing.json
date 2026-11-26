@@ -1,0 +1,23 @@
+[
+  {
+    "name": "eleven_transfer11_rooty_half_roundfix",
+    "parent": "eleven_transfer11_rooty_half",
+    "options": []
+  },
+  {
+    "name": "eleven_transfer11_half_foot10_20",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rooty_half_foot10_20.npz"
+    ]
+  },
+  {
+    "name": "eleven_transfer11_full_foot10_20",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_transfer11_rooty_full_foot10_20.npz"
+    ]
+  }
+]

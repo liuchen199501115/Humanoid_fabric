@@ -1,0 +1,113 @@
+{
+  "run": "mit_consistent60",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_verification/mit_consistent60.npz",
+  "measured_landing_events": 5,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 5,
+  "first_fidelity_exceeded_time_s": 1.8,
+  "last_source_frame": 389.00000000000006,
+  "last_time_s": 1.8,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.188,
+      "source_frame": 37.6,
+      "landing_error_m": 0.011866081988792304,
+      "joint_rmse_rad": 0.11580026894807816,
+      "root_position_error_m": 0.014906903728842735,
+      "root_orientation_error_rad": 0.10454859471089374,
+      "prefix_peak_joint_rmse_rad": 0.11580026894807816,
+      "prefix_peak_root_position_error_m": 0.014906903728842735,
+      "prefix_peak_root_orientation_error_rad": 0.10454859471089374,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 2,
+      "time_s": 0.40800000000000003,
+      "source_frame": 81.60000000000001,
+      "landing_error_m": 0.03286486784657607,
+      "joint_rmse_rad": 0.17078332602977753,
+      "root_position_error_m": 0.021668624132871628,
+      "root_orientation_error_rad": 0.11351119503271774,
+      "prefix_peak_joint_rmse_rad": 0.1836441606283188,
+      "prefix_peak_root_position_error_m": 0.021668624132871628,
+      "prefix_peak_root_orientation_error_rad": 0.12386805508545884,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 3,
+      "time_s": 0.892,
+      "source_frame": 178.4,
+      "landing_error_m": 0.01071382739179312,
+      "joint_rmse_rad": 0.12300463765859604,
+      "root_position_error_m": 0.037615031003952026,
+      "root_orientation_error_rad": 0.2046910623152777,
+      "prefix_peak_joint_rmse_rad": 0.1836441606283188,
+      "prefix_peak_root_position_error_m": 0.037615031003952026,
+      "prefix_peak_root_orientation_error_rad": 0.22037838518903735,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 4,
+      "time_s": 1.304,
+      "source_frame": 269.96000000000004,
+      "landing_error_m": 0.006335504914944722,
+      "joint_rmse_rad": 0.10561815649271011,
+      "root_position_error_m": 0.01825171895325184,
+      "root_orientation_error_rad": 0.08712848647595704,
+      "prefix_peak_joint_rmse_rad": 0.1836441606283188,
+      "prefix_peak_root_position_error_m": 0.043085675686597824,
+      "prefix_peak_root_orientation_error_rad": 0.22037838518903735,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 5,
+      "time_s": 1.724,
+      "source_frame": 370.76000000000005,
+      "landing_error_m": 0.012583528535814837,
+      "joint_rmse_rad": 0.11522438377141953,
+      "root_position_error_m": 0.027464844286441803,
+      "root_orientation_error_rad": 0.13055745490853227,
+      "prefix_peak_joint_rmse_rad": 0.1836441606283188,
+      "prefix_peak_root_position_error_m": 0.043085675686597824,
+      "prefix_peak_root_orientation_error_rad": 0.22037838518903735,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 6,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": false,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 0.014380135605534222,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "execution": {
+    "direct_wbc": false,
+    "tracking_servo": false,
+    "profile": "twelve-mit",
+    "scope": "phase",
+    "source_reference": false,
+    "sync_frequency": 60.0,
+    "servo_bandwidth": 30.0
+  },
+  "integrator": {
+    "position_step_error": 5.960464477539063e-08,
+    "position_continuity_error": 0.0,
+    "velocity_continuity_error": 0.0
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "peak_pd_torque_norm": 20.782045364379883,
+  "peak_joint_rmse": 0.2002025693655014,
+  "peak_root_position": 0.043085675686597824,
+  "returncode": 1
+}

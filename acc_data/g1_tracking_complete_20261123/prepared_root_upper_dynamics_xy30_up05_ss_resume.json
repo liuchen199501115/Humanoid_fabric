@@ -1,0 +1,38 @@
+{
+  "method": "Offline root translation/upper-body spline fit with foot-nullspace leg coupling and exact RNEA derivatives; equal force sharing assumed in double support",
+  "solver_status": "solved",
+  "root_axis_bound_m": 0.03,
+  "upper_axis_bound_rad": 0.05,
+  "node_joint_correction_bound_rad": 0.25,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "lower_limb_effort_scope": "single support only; double support load allocation not constrained",
+  "offline_solver_primal_residual": 0.00034672838391595895,
+  "offline_solver_dual_residual": 0.008939328021964761,
+  "offline_solver_iterations": 124375,
+  "offline_solver_tolerance": 5e-05,
+  "warm_start_path": "acc_data/g1_tracking_complete_20261123/prepared_root_upper_dynamics_xy30_up05_ss.solver_iterate.npz",
+  "preflight_passed": false,
+  "full_tracking_passed": false,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "maximum_upper_joint_limit_violation_rad": -8.86917111975194e-09,
+  "maximum_foot_position_residual_m": 0.005328187470702954,
+  "maximum_foot_rotation_residual_rad": 6.0907500053044875e-05,
+  "maximum_root_correction_m": 0.047270157079365216,
+  "linearized_max_violation": {
+    "joint_velocity": -0.25851777199970444,
+    "joint_torque": 1.2604607086000472,
+    "cop": 0.12613914406728666,
+    "friction": 0.11131743802603372,
+    "normal": 0.010641309337365734
+  },
+  "baseline_max_violation": {
+    "joint_velocity": -0.2504512786865234,
+    "joint_torque": 5.9356695697268025,
+    "cop": 0.6370813590691241,
+    "friction": 0.898096575785642,
+    "normal": 0.42341435850615455
+  },
+  "maximum_actual_joint_correction_rad": 0.4332083761692047,
+  "recomputed_centroidal_and_closed_loop_still_required": true
+}

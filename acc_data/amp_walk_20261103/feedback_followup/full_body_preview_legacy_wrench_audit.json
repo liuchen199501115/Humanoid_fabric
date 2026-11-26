@@ -1,0 +1,36 @@
+[
+  {
+    "nonlinear_base_force_residual": 6.8345743383234305,
+    "nonlinear_base_moment_residual": 2.120771269496324,
+    "nonlinear_joint_residual": 1.479247002066856,
+    "nonlinear_minimum_clearance": -0.0004830248484065311,
+    "nonlinear_support_gap": 0.000701550709677895,
+    "nonlinear_impact_residual": 0.11233986805300206,
+    "nonlinear_impact_energy_increase": 0.0,
+    "nonlinear_support_speed": 0.07442059721012284,
+    "nonlinear_wrench_cone_violation": 18.40746658394542,
+    "nonlinear_impulse_cone_violation": 0.06367734057764388,
+    "nonlinear_integration_position": 4.951133646320149e-07,
+    "nonlinear_integration_orientation": 0.0013583734900614961,
+    "nonlinear_integration_joint": 1.1920928955078125e-07,
+    "nonlinear_verified": false,
+    "run": "fixed_clock120_body10_full_body_preview42_contact24"
+  },
+  {
+    "nonlinear_base_force_residual": 4.209590565901111,
+    "nonlinear_base_moment_residual": 1.9538196111550363,
+    "nonlinear_joint_residual": 2.004062190275107,
+    "nonlinear_minimum_clearance": -0.0004509779140758133,
+    "nonlinear_support_gap": 0.0017685648297777537,
+    "nonlinear_impact_residual": 0.14282285023078983,
+    "nonlinear_impact_energy_increase": 0.0,
+    "nonlinear_support_speed": 0.07879580160009676,
+    "nonlinear_wrench_cone_violation": 54.783346652732064,
+    "nonlinear_impulse_cone_violation": 0.058670184837575065,
+    "nonlinear_integration_position": 4.951133646320149e-07,
+    "nonlinear_integration_orientation": 0.0029539699882602725,
+    "nonlinear_integration_joint": 1.1920928955078125e-07,
+    "nonlinear_verified": false,
+    "run": "fixed_clock120_body10_full_body_preview42_guarded24"
+  }
+]

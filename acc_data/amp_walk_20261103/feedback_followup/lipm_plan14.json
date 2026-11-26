@@ -1,0 +1,18 @@
+{
+  "radius": 0.14,
+  "status": "solved",
+  "initial_state": [
+    2.360334634780884,
+    0.031017668545246124,
+    0.904096782207489,
+    0.06911657750606537
+  ],
+  "source_frames": [
+    180,
+    1999
+  ],
+  "physical_tracking_certified": false,
+  "constraint_violation": 1.539657290550167e-12,
+  "peak_com_offset": 0.028180569209940394,
+  "preflight_passed": true
+}

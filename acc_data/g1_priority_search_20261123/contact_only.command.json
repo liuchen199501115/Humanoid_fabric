@@ -1,0 +1,12 @@
+[
+  "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+  "-u",
+  "-c",
+  "import faulthandler,runpy; faulthandler.dump_traceback_later(60,repeat=True); runpy.run_path('examples/test_g1.py',run_name='__main__')",
+  "--tracking-profile",
+  "amp-full",
+  "--output-path",
+  "/home/sky/Humanoid_fabric/acc_data/g1_priority_search_20261123/contact_only.npz",
+  "--fabric-priority-mode",
+  "contact-tracking"
+]

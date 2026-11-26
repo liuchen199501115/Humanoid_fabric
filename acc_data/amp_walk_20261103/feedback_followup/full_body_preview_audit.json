@@ -1,0 +1,20 @@
+[
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 393.6265146684318,
+    "tube_violation": -0.15490911000860916,
+    "objective": NaN,
+    "solve_seconds": 0.584097414277494,
+    "time": 3.9
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 387.8501810060084,
+    "tube_violation": -0.15511030147604732,
+    "objective": NaN,
+    "solve_seconds": 0.37758809980005026,
+    "time": 4.0
+  }
+]

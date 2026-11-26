@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_rooty100_comspeed02",
+    "parent": "six_source_rooty100_500",
+    "options": [
+      "--com-upward-speed-limit",
+      "0.2",
+      "--com-upward-speed-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_rooty100_comspeed04",
+    "parent": "six_source_rooty100_500",
+    "options": [
+      "--com-upward-speed-limit",
+      "0.4",
+      "--com-upward-speed-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "ten_rooty_cap0_shoulder4_cap3",
+    "parent": "ten_rooty_cap0_shoulder4_t3806",
+    "options": [
+      "--qp-late-equilibration-cap",
+      "3"
+    ]
+  }
+]

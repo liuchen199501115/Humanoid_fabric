@@ -1,0 +1,24 @@
+{
+  "tube_rows": [
+    628,
+    629,
+    630
+  ],
+  "results": {
+    "full": {
+      "status": 2,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "feasible": false
+    },
+    "without_joint_tube": {
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "feasible": true
+    },
+    "without_all_tubes": {
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "feasible": true
+    }
+  }
+}

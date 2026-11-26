@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1.py",
+    "--tracking-profile",
+    "amp-full",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_full_tracking_20261106/thirteenth_turn_orientation_probe.npz",
+    "--rolling-contact-kinematics-start",
+    "3.5",
+    "--reference-pose-candidate",
+    "acc_data/g1_full_tracking_20261106/step13_turn_orientation_probe.npz",
+    "--synchronous-effort-budget-start",
+    "3.54",
+    "--synchronous-effort-budget-fraction",
+    "1",
+    "--diagnose-qp-time",
+    "3.3",
+    "--diagnose-qp-time",
+    "3.6",
+    "--diagnose-qp-time",
+    "4.2"
+  ],
+  "sha256": {
+    "examples/g1_support_knee.py": "52f474cdddcab616e01b6e0d9f9b7f9b276c04a4853ae1b14cff0ddcc3a2a2d1",
+    "acc_data/amp_walk_20261103/feedback_followup/inscribed_patch_wrench.py": "a59e29b31ee3b996c0f9b8465e68866665f20341986b3a923f32ce56b2dd3917",
+    "examples/g1_torque_continuity.py": "38213cfa1357f2a1b0d82faf69422a8f6a02bb13c2ebdf4ee24f395cc279fb5b",
+    "examples/g1_stance_heading.py": "e5c2af4d6c7b8a6be08c26f9e0b3580801eea6a7ba2642d94167dd5d94cf598a",
+    "examples/test_g1.py": "02d2838abb7c25e147fa2cf47b8938c26ae3a465e84a1c52169d177614f954ae",
+    "examples/run_amp_full_motion.sh": "7ffe2ff43d953f8bf7c0da7c4d02707817e925a47ef1d2e6ecd8bfe24a691a52",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "status": "finished",
+  "input_sha256": {
+    "retarget/amp_reference/amp_walk_1ms.pkl": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+    "acc_data/g1_full_tracking_20261106/step13_turn_orientation_probe.npz": "0c80ddae51f33d178377f325178d9fe46eb41b4ce8ffc8c79ba9c84ae7e6ec90"
+  },
+  "returncode": 1,
+  "wall_seconds": 23.250980854034424
+}

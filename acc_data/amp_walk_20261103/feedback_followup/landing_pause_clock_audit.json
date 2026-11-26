@@ -1,0 +1,9 @@
+{
+  "max_velocity_fd_error": 2.4656440222869946e-09,
+  "max_acceleration_fd_error": 1.2130761212507044e-07,
+  "monotone": true,
+  "c2_boundaries": true,
+  "requires_ten_verified_landings_to_resume": true,
+  "source_stop_frame": 809,
+  "physical_tracking_certified": false
+}

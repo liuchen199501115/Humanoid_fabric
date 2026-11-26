@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_cont1000_speed14",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--clock-fifth-speed",
+      "1.4"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_speed10",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--clock-fifth-speed",
+      "1.0"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_pause12_xy10000",
+    "parent": "eleven_cont1000_pause12",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "10000"
+    ]
+  }
+]

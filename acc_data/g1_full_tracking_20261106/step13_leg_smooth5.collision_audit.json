@@ -1,0 +1,33 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+  "candidate_sha256": "923b27d41c5f1dda0d807229facce376de8605f707e25976e35d944660b6cda8",
+  "scope": "Offline original sphere pairs and added convex wrist/body pairs; not a simulation or all-link collision certificate.",
+  "sample_count": 201,
+  "worst_convex": {
+    "frame": 930.0,
+    "minimum_wrist_body_convex_distance_m": 0.030414678156375885,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.09751717746257782,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "worst_original_sphere": {
+    "frame": 960.0,
+    "minimum_wrist_body_convex_distance_m": 0.038141682744026184,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.09041512757539749,
+    "original_sphere_pair": [
+      6,
+      7
+    ]
+  },
+  "physical_tracking_certified": false
+}

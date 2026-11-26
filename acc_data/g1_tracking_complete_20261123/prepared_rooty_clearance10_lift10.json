@@ -1,0 +1,16 @@
+{
+  "method": "Small bounded right swing lift for the earlier source-Y tracking branch.",
+  "parent_file": "prepared_root_smooth_floor3_late11_sigma16.npz",
+  "parent_sha256": "a34d1760ff7b08c4e612aaac3a3ce35c92175a875c75b88a356a7d39dec57cf5",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "start_frame": 762,
+  "end_frame": 802,
+  "added_height_m": 0.01,
+  "maximum_foot_position_residual_m": 2.2721242770546378e-07,
+  "maximum_foot_rotation_residual_rad": 8.544551180910348e-08,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "prefix_q_v_a_equal_through_frame": 756,
+  "root_other_leg_and_upper_body_exactly_unchanged": true,
+  "preflight_passed": true,
+  "full_tracking_passed": false
+}

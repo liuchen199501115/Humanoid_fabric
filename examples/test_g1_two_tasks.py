@@ -90,7 +90,12 @@ def unitree_g1_pd_gains(
 
 
 def unitree_g1_effort_limits() -> np.ndarray:
-    """UNITREE_G1_29DOF_CFG simulated effort limits in G1 joint order."""
+    """Legacy UNITREE_G1_29DOF_CFG software caps, not active asset limits.
+
+    The current rev_1_0 URDF/USD allow 50 Nm at ankles and waist roll/pitch.
+    Use g1_model_effort.model_effort_limits with live simulator limits when
+    the controller should use the active model instead of this older derating.
+    """
     limits = []
     for name in G1_JOINT_NAMES:
         if "_hip_roll_joint" in name or "_knee_joint" in name:

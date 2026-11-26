@@ -1,0 +1,10 @@
+{
+  "source": "baseline_stance50.failure.npz",
+  "saved_status": [
+    "DAQP -1; rejected"
+  ],
+  "linear_feasibility": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  }
+}

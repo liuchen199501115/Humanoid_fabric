@@ -1,0 +1,246 @@
+[
+  {
+    "time": 3.9,
+    "mode": 2,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "support_force": 414.1005428272378,
+        "com_acceleration": [
+          3.850902632761327,
+          -0.3759415157343917,
+          2.6097592938918743
+        ],
+        "base_angular_acceleration": [
+          -43.35097043741463,
+          58.855223517775485,
+          -4.560814505281175
+        ],
+        "acceleration_change": 0.02385602509970397
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "support_force": 414.1005428272378,
+        "com_acceleration": [
+          3.850902632761327,
+          -0.3759415157343917,
+          2.6097592938918743
+        ],
+        "base_angular_acceleration": [
+          -43.35097043741463,
+          58.855223517775485,
+          -4.560814505281175
+        ],
+        "acceleration_change": 0.02385602509970397
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "support_force": 414.1005428272378,
+        "com_acceleration": [
+          3.850902632761327,
+          -0.3759415157343917,
+          2.6097592938918743
+        ],
+        "base_angular_acceleration": [
+          -43.35097043741463,
+          58.855223517775485,
+          -4.560814505281175
+        ],
+        "acceleration_change": 0.02385602509970397
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "solved",
+        "residual": 5.115907697472721e-13,
+        "support_force": 414.1005428272378,
+        "com_acceleration": [
+          3.850902632761327,
+          -0.3759415157343917,
+          2.6097592938918743
+        ],
+        "base_angular_acceleration": [
+          -43.35097043741463,
+          58.855223517775485,
+          -4.560814505281175
+        ],
+        "acceleration_change": 0.02385602509970397
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "solved",
+        "residual": 2.5011104298755527e-12,
+        "support_force": 214.53346644016642,
+        "com_acceleration": [
+          2.5196228654819985,
+          0.5466560264636808,
+          -3.375451362369528
+        ],
+        "base_angular_acceleration": [
+          0.8614915357472834,
+          -86.24312249505488,
+          -27.47351919337054
+        ],
+        "acceleration_change": 0.03109399163690796
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "solved",
+        "residual": 2.5011104298755527e-12,
+        "support_force": 214.53346644016642,
+        "com_acceleration": [
+          2.5196228654819985,
+          0.5466560264636808,
+          -3.375451362369528
+        ],
+        "base_angular_acceleration": [
+          0.8614915357472834,
+          -86.24312249505488,
+          -27.47351919337054
+        ],
+        "acceleration_change": 0.03109399163690796
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "solved",
+        "residual": 2.5011104298755527e-12,
+        "support_force": 214.53346644016642,
+        "com_acceleration": [
+          2.5196228654819985,
+          0.5466560264636808,
+          -3.375451362369528
+        ],
+        "base_angular_acceleration": [
+          0.8614915357472834,
+          -86.24312249505488,
+          -27.47351919337054
+        ],
+        "acceleration_change": 0.03109399163690796
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "solved",
+        "residual": 2.5011104298755527e-12,
+        "support_force": 214.53346644016642,
+        "com_acceleration": [
+          2.5196228654819985,
+          0.5466560264636808,
+          -3.375451362369528
+        ],
+        "base_angular_acceleration": [
+          0.8614915357472834,
+          -86.24312249505488,
+          -27.47351919337054
+        ],
+        "acceleration_change": 0.03109399163690796
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "maximum iterations reached"
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "maximum iterations reached"
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "maximum iterations reached"
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "maximum iterations reached"
+      }
+    ]
+  },
+  {
+    "time": 4.06,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 0.0,
+        "status": "solved",
+        "residual": 6.73594513500575e-12,
+        "support_force": 188.2537670354329,
+        "com_acceleration": [
+          2.0941859630420923,
+          -2.6631268653620177,
+          -4.163624184525858
+        ],
+        "base_angular_acceleration": [
+          9.479105150680326,
+          -20.441119997228327,
+          46.92474745588198
+        ],
+        "acceleration_change": 0.030853282643413138
+      },
+      {
+        "minimum_force": 100.0,
+        "status": "solved",
+        "residual": 6.73594513500575e-12,
+        "support_force": 188.2537670354329,
+        "com_acceleration": [
+          2.0941859630420923,
+          -2.6631268653620177,
+          -4.163624184525858
+        ],
+        "base_angular_acceleration": [
+          9.479105150680326,
+          -20.441119997228327,
+          46.92474745588198
+        ],
+        "acceleration_change": 0.030853282643413138
+      },
+      {
+        "minimum_force": 150.0,
+        "status": "solved",
+        "residual": 6.73594513500575e-12,
+        "support_force": 188.2537670354329,
+        "com_acceleration": [
+          2.0941859630420923,
+          -2.6631268653620177,
+          -4.163624184525858
+        ],
+        "base_angular_acceleration": [
+          9.479105150680326,
+          -20.441119997228327,
+          46.92474745588198
+        ],
+        "acceleration_change": 0.030853282643413138
+      },
+      {
+        "minimum_force": 200.0,
+        "status": "solved",
+        "residual": 6.991740519879386e-12,
+        "support_force": 200.0,
+        "com_acceleration": [
+          2.0339569846655774,
+          -2.80646073439528,
+          -3.8113197429771564
+        ],
+        "base_angular_acceleration": [
+          9.038003125512985,
+          -20.55839783465024,
+          45.398830483494365
+        ],
+        "acceleration_change": 6.700186632667453
+      }
+    ]
+  }
+]

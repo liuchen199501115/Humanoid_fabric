@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ten_rooty_cap0_pause11_802",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--contact-pause-start",
+      "4.01",
+      "--contact-pause-end",
+      "4.42",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  },
+  {
+    "name": "ten_rooty_cap0_pause11_816",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--contact-pause-start",
+      "4.08",
+      "--contact-pause-end",
+      "4.42",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  },
+  {
+    "name": "ten_rooty_cap0_pause11_840",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--contact-pause-start",
+      "4.2",
+      "--contact-pause-end",
+      "4.42",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  }
+]

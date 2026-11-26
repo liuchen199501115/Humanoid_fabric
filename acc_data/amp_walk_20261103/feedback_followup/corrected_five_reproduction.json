@@ -1,0 +1,13 @@
+{
+  "contact_wrench_split_corrected": true,
+  "runs": [
+    "fixed_lower15_gate_xy80_pose",
+    "fixed_five_recovery"
+  ],
+  "end_time_s": 1.822,
+  "sample_count": 912,
+  "q_bit_equal": true,
+  "v_bit_equal": true,
+  "landing_reports_equal": true,
+  "full_tracking_passed": false
+}

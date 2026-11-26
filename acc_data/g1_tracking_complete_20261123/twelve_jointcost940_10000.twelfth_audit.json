@@ -1,0 +1,20 @@
+{
+  "trial": "twelve_jointcost940_10000",
+  "source_sha256": "919eaff9b2521cce1e8b40e263fceb3f3f1873a7bc42500d9932be62f007eca9",
+  "step": 12,
+  "online_landing_time_s": 4.706,
+  "strict_100N_50ms_time_s": 4.716,
+  "source_frame": 960.0098303999999,
+  "hold_start_s": 4.666,
+  "hold_end_s": 4.716,
+  "loaded_hold_elapsed_s": 0.04999999999999982,
+  "minimum_measured_load_n": 101.71916961669922,
+  "maximum_same_frame_source_foot_error_m": 0.0062145193759838135,
+  "peak_unloaded_native_clearance_m": 0.03427376538419197,
+  "peak_joint_rmse_until_certificate_rad": 0.19917282462120056,
+  "peak_root_position_until_certificate_m": 0.19028513133525848,
+  "peak_root_orientation_until_certificate_rad": 0.32945582270622253,
+  "one_native_qp_per_control_update": true,
+  "extra_pd_torque": false,
+  "full_tracking_passed": false
+}

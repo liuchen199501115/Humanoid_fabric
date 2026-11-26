@@ -79,5 +79,32 @@ class ObservedSoleTests(unittest.TestCase):
         G,b=c.wrench_constraints(R,.6,800.)
         self.assertTrue(torch.isfinite(G).all())
 
+    def test_optional_touching_points_need_a_bearing_foot_and_small_separation(self):
+        points=np.array([[-.05,-.025,0.],[-.05,.025,0.],[.12,.025,0.]])
+        c,p,R=self.contact()
+        c.update_support(p,R,points,[100.,0.,0.],[0.,1e-5,2e-5])
+        self.assertTrue(c.point_support)
+        c.update_support(p,R,points,[100.,0.,0.],[0.,1e-5,2e-5],touching_tolerance=5e-5)
+        self.assertTrue(c.polygon_support)
+        c.update_support(p,R,points,[100.,0.,0.],[0.,1e-3,2e-3],touching_tolerance=5e-5)
+        self.assertTrue(c.point_support)
+        for load in (0.,10.):
+            c,p,R=self.contact()
+            c.update_support(p,R,points,[load,0.,0.],[0.,0.,0.],touching_tolerance=5e-5)
+            self.assertFalse(c.polygon_support)
+
+    def test_touching_point_cone_still_excludes_unobserved_corner(self):
+        c,p,R=self.contact()
+        points=np.array([[-.05,-.025,0.],[-.05,.025,0.],[.12,.025,0.]])
+        c.update_support(p,R,points,[100.,0.,0.],[0.,0.,0.],touching_tolerance=5e-5)
+        G,b=c.wrench_constraints(R,.6,800.)
+        force=np.array([0.,0.,100.])
+        for point in points:
+            wrench=np.r_[force,np.cross(point-p[0].numpy()-c.local_point[0].numpy(),force)]
+            self.assertLessEqual(float((G[0]@p.new_tensor(wrench)-b[0]).max()),1e-8)
+        outside=np.array([.12,-.025,0.])-p[0].numpy()-c.local_point[0].numpy()
+        wrench=np.r_[force,np.cross(outside,force)]
+        self.assertGreater(float((G[0]@p.new_tensor(wrench)-b[0]).max()),1e-3)
+
 
 if __name__=='__main__':unittest.main()

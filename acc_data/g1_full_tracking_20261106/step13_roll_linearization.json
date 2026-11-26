@@ -1,0 +1,33 @@
+{
+  "scope": "Audit of approximate runtime-smoothed roll tangent linearization. Final nonlinear dynamics checks remain required.",
+  "samples": [
+    {
+      "frame": 760.0,
+      "coefficient": 6,
+      "maximum_derivative_absolute_error": 2.315083081044162,
+      "derivative_relative_norm_error": 0.0031828847537166724,
+      "maximum_predicted_output_error_for_002_rad_increment": 0.04630166162088324
+    },
+    {
+      "frame": 798.0,
+      "coefficient": 9,
+      "maximum_derivative_absolute_error": 0.1655834006554926,
+      "derivative_relative_norm_error": 0.00029386130321689774,
+      "maximum_predicted_output_error_for_002_rad_increment": 0.003311668013109852
+    },
+    {
+      "frame": 960.0,
+      "coefficient": 23,
+      "maximum_derivative_absolute_error": 0.10114641883592412,
+      "derivative_relative_norm_error": 5.363347828797005e-05,
+      "maximum_predicted_output_error_for_002_rad_increment": 0.0020229283767184826
+    },
+    {
+      "frame": 1000.0,
+      "coefficient": 26,
+      "maximum_derivative_absolute_error": 3.237080060544032,
+      "derivative_relative_norm_error": 0.004129940560182488,
+      "maximum_predicted_output_error_for_002_rad_increment": 0.06474160121088064
+    }
+  ]
+}

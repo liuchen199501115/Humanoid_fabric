@@ -1,0 +1,66 @@
+[
+  {
+    "name": "eleven_leg16_flat1",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--support-flatten-start",
+      "4.5",
+      "--support-flatten-gain",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "1",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  },
+  {
+    "name": "eleven_leg16_flat4",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--support-flatten-start",
+      "4.5",
+      "--support-flatten-gain",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "4",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  },
+  {
+    "name": "eleven_leg16_pelvis1",
+    "parent": "eleven_resume10_leg16",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "1",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100",
+      "--qp-snapshot-times",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.52",
+      "4.55"
+    ]
+  }
+]

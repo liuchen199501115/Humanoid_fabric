@@ -1,0 +1,6 @@
+{
+  "status": "interrupted",
+  "reason": "Independent collision audit found 40.6 mm left hand/hip convex penetration; add collision constraints before continuing.",
+  "physical_trial_run": false,
+  "checkpoint": "step13_whole_body_boundary.checkpoint.npz"
+}

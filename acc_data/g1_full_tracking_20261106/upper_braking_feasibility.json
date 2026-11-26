@@ -1,0 +1,62 @@
+[
+  {
+    "snapshot": "rolling_contact_damping8.qp_2150.npz",
+    "time": 4.3,
+    "feasible": true,
+    "status": 0,
+    "waist_position": [
+      -0.017432227730751038,
+      0.396597295999527,
+      -0.09394114464521408
+    ],
+    "waist_velocity": [
+      -1.2927684783935547,
+      4.808794975280762,
+      -0.35571354627609253
+    ],
+    "waist_acc_lower": [
+      -142.55204372406007,
+      -132.40294151306153,
+      -18.37634496688843
+    ],
+    "waist_acc_upper": [
+      186.15196018218995,
+      -72.24295158386231,
+      41.78364496231079
+    ],
+    "constraint_residual": 1.6396484170400072e-10
+  },
+  {
+    "snapshot": "pelvis_replace_before_turn.qp_1900.npz",
+    "time": 3.8000000000000003,
+    "feasible": false,
+    "bound_construction_failure": "Measured joint state cannot satisfy next-step position limits: indices=[[0, 1]], position=[0.5196748375892639], velocity=[-0.046049781143665314], minimum_acceleration=[-62.60238807201385], maximum_acceleration=[-2395.7041762769245]."
+  },
+  {
+    "snapshot": "root_margin150_turn.qp_2000.npz",
+    "time": 4.0,
+    "feasible": true,
+    "status": 0,
+    "waist_position": [
+      0.24133041501045227,
+      0.012052992358803749,
+      0.07434043288230896
+    ],
+    "waist_velocity": [
+      -0.2667142152786255,
+      -0.14277765154838562,
+      -0.2681426703929901
+    ],
+    "waist_acc_lower": [
+      -175.52972106933595,
+      -28.56694405078888,
+      -30.547499942779538
+    ],
+    "waist_acc_upper": [
+      153.17428283691407,
+      31.59304587841034,
+      29.61248998641968
+    ],
+    "constraint_residual": 1.4551915228366852e-11
+  }
+]

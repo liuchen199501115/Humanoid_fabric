@@ -1,0 +1,6 @@
+{
+  "checked_options": 394,
+  "differences": {},
+  "equivalent": true,
+  "method": "Compare parsed preset to parsed independently replayed trial options, before identical runtime defaults are applied."
+}

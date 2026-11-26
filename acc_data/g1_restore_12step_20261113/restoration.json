@@ -1,0 +1,49 @@
+{
+  "restored_file": "examples/test_g1.py",
+  "source_snapshot": "acc_data/g1_wbc_conflict_20261113/sources/e738f5460f70f46040887b1f30168220badff1239c6646a8a142342661d9a7a9_test_g1.py",
+  "sha256": "e738f5460f70f46040887b1f30168220badff1239c6646a8a142342661d9a7a9",
+  "previous_version_backup": "acc_data/g1_restore_12step_20261113/backup/test_g1.py",
+  "archived_cleanup_test": "acc_data/g1_restore_12step_20261113/backup/test_g1_direct_flow.py",
+  "verification_status": "verified",
+  "baseline_file_checks": {
+    "examples/test_g1.py": {
+      "expected_sha256": "e738f5460f70f46040887b1f30168220badff1239c6646a8a142342661d9a7a9",
+      "actual_sha256": "e738f5460f70f46040887b1f30168220badff1239c6646a8a142342661d9a7a9"
+    },
+    "examples/analyze_g1_shoulder_roll.py": {
+      "expected_sha256": "8ad010f927893ea168df2ecfc90821491bfed78597772a42916564c37f35d440",
+      "actual_sha256": "8ad010f927893ea168df2ecfc90821491bfed78597772a42916564c37f35d440"
+    },
+    "src/fabrics_sim/solver/AccelerationQP.py": {
+      "expected_sha256": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+      "actual_sha256": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348"
+    },
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": {
+      "expected_sha256": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38",
+      "actual_sha256": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+    },
+    "acc_data/amp_walk_20261103/feedback_followup/tube_recovery.py": {
+      "expected_sha256": "20798a92667491d182097710c6d63a993b9cee58750c74394ec4715fd91c9df5",
+      "actual_sha256": "20798a92667491d182097710c6d63a993b9cee58750c74394ec4715fd91c9df5"
+    },
+    "retarget/amp_reference/amp_walk_1ms.pkl": {
+      "expected_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+      "actual_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4"
+    },
+    "acc_data/amp_walk_20261102/amp_walk_native_contacts.pkl": {
+      "expected_sha256": "919eaff9b2521cce1e8b40e263fceb3f3f1873a7bc42500d9932be62f007eca9",
+      "actual_sha256": "919eaff9b2521cce1e8b40e263fceb3f3f1873a7bc42500d9932be62f007eca9"
+    },
+    "acc_data/amp_walk_20261103/feedback_followup/wbc_convex_catch15_25_clear35.npz": {
+      "expected_sha256": "793eb22a5a5d03e9637a515d4c114eb06d7cafaf43befbae00ece603c7485a43",
+      "actual_sha256": "793eb22a5a5d03e9637a515d4c114eb06d7cafaf43befbae00ece603c7485a43"
+    }
+  },
+  "command": [
+    "bash",
+    "examples/run_amp_full_motion.sh",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_restore_12step_20261113/restored.npz"
+  ],
+  "verification_report": "/home/sky/Humanoid_fabric/acc_data/g1_restore_12step_20261113/verification.json"
+}

@@ -1,0 +1,78 @@
+{
+  "scope": "Approximate orientation tangent map including time-varying axes; nonlinear validation remains mandatory.",
+  "samples": [
+    {
+      "frame": 760.0,
+      "axis": "roll",
+      "relative_derivative_error": 0.003247190048709083,
+      "maximum_generalized_output_error_for_002_increment": 0.04469173090928223
+    },
+    {
+      "frame": 760.0,
+      "axis": "pitch",
+      "relative_derivative_error": 0.001847568559240248,
+      "maximum_generalized_output_error_for_002_increment": 0.028193720455173547
+    },
+    {
+      "frame": 760.0,
+      "axis": "yaw",
+      "relative_derivative_error": 0.0203904563091493,
+      "maximum_generalized_output_error_for_002_increment": 0.10919061456077614
+    },
+    {
+      "frame": 798.0,
+      "axis": "roll",
+      "relative_derivative_error": 0.0004991561656648752,
+      "maximum_generalized_output_error_for_002_increment": 0.0052181096911022
+    },
+    {
+      "frame": 798.0,
+      "axis": "pitch",
+      "relative_derivative_error": 0.0005799727230294919,
+      "maximum_generalized_output_error_for_002_increment": 0.005076699410640231
+    },
+    {
+      "frame": 798.0,
+      "axis": "yaw",
+      "relative_derivative_error": 0.0003873449467001574,
+      "maximum_generalized_output_error_for_002_increment": 0.004306248732651738
+    },
+    {
+      "frame": 960.0,
+      "axis": "roll",
+      "relative_derivative_error": 5.225203348014389e-05,
+      "maximum_generalized_output_error_for_002_increment": 0.001819060168049873
+    },
+    {
+      "frame": 960.0,
+      "axis": "pitch",
+      "relative_derivative_error": 2.2319239302204186e-05,
+      "maximum_generalized_output_error_for_002_increment": 0.0006876040944951001
+    },
+    {
+      "frame": 960.0,
+      "axis": "yaw",
+      "relative_derivative_error": 0.00020915446888200245,
+      "maximum_generalized_output_error_for_002_increment": 0.0031835987908061724
+    },
+    {
+      "frame": 1000.0,
+      "axis": "roll",
+      "relative_derivative_error": 0.004065218051878782,
+      "maximum_generalized_output_error_for_002_increment": 0.06561453630429752
+    },
+    {
+      "frame": 1000.0,
+      "axis": "pitch",
+      "relative_derivative_error": 0.0034295262442906476,
+      "maximum_generalized_output_error_for_002_increment": 0.0647064336934433
+    },
+    {
+      "frame": 1000.0,
+      "axis": "yaw",
+      "relative_derivative_error": 0.01526501571891006,
+      "maximum_generalized_output_error_for_002_increment": 0.13172915793444034
+    }
+  ],
+  "maximum_relative_derivative_error": 0.0203904563091493
+}

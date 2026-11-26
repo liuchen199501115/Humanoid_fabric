@@ -1,0 +1,13 @@
+{
+  "success": false,
+  "status": "InsufficientProgress",
+  "refinement_history": [
+    {
+      "iteration": 0,
+      "status": "InsufficientProgress"
+    }
+  ],
+  "actual_start_time": 3.878,
+  "solve_seconds": 20.807628196664155,
+  "prediction_only": true
+}

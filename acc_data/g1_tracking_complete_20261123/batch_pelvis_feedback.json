@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_com15_pelvis405_brake1000",
+    "parent": "ten_com15_ang100_pelvis405",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.05",
+      "--soft-joint-braking-weight",
+      "1000"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_cap100",
+    "parent": "ten_com15_ang100_pelvis405",
+    "options": [
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_scale4_cap100",
+    "parent": "ten_com15_ang100_pelvis405",
+    "options": [
+      "--pelvis-orientation-replace-feedback-limit",
+      "100",
+      "--pelvis-orientation-replace-metric-scale",
+      "4"
+    ]
+  }
+]

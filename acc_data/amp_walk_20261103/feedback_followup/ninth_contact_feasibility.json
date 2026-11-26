@@ -1,0 +1,32 @@
+[
+  {
+    "removed_tube_rows": [],
+    "feasible": false
+  },
+  {
+    "removed_tube_rows": [
+      -3
+    ],
+    "feasible": true
+  },
+  {
+    "removed_tube_rows": [
+      -2
+    ],
+    "feasible": false
+  },
+  {
+    "removed_tube_rows": [
+      -1
+    ],
+    "feasible": false
+  },
+  {
+    "removed_tube_rows": [
+      -3,
+      -2,
+      -1
+    ],
+    "feasible": true
+  }
+]

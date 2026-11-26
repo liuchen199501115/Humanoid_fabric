@@ -1,0 +1,16 @@
+{
+  "method": "Offline quaternion smoothing and bounded foot-preserving IK",
+  "sigma_frames": 12.0,
+  "correction_end_frame": 1200,
+  "maximum_foot_position_residual_m": 6.279251527106002e-07,
+  "maximum_foot_rotation_residual_rad": 5.148868900913306e-07,
+  "maximum_com_change_m": 3.0412117538927525e-07,
+  "maximum_added_root_rotation_rad": 0.024567524995310057,
+  "worst_frame": 774,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

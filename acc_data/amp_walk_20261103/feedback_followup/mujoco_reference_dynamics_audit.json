@@ -1,0 +1,26 @@
+[
+  {
+    "time": 3.9,
+    "mass_max_error": 6.009977950194312e-06,
+    "bias_max_error": 7.175633109035573e-05,
+    "foot_position_max_error": 6.829663398016939e-08
+  },
+  {
+    "time": 4.0,
+    "mass_max_error": 2.5417675786343352e-06,
+    "bias_max_error": 1.4253907810513056e-05,
+    "foot_position_max_error": 3.750621276471522e-07
+  },
+  {
+    "time": 4.04,
+    "mass_max_error": 4.44512287911536e-06,
+    "bias_max_error": 0.00011834720362458029,
+    "foot_position_max_error": 3.148339358105545e-07
+  },
+  {
+    "time": 4.06,
+    "mass_max_error": 2.5417675786343352e-06,
+    "bias_max_error": 4.1563454438175995e-05,
+    "foot_position_max_error": 3.1738456218732836e-07
+  }
+]

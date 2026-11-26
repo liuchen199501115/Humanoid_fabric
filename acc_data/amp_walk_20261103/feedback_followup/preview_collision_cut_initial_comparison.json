@@ -1,0 +1,10 @@
+{
+  "maximum_first_acceleration_difference": 92.04264451051586,
+  "maximum_state_difference": 1.2544961637037368,
+  "relative_objective_difference": 0.015105884502524787,
+  "full_iterations": 9,
+  "generated_iterations": 11,
+  "full_success": true,
+  "generated_success": true,
+  "full_collision_linear_violation": 0.0
+}

@@ -1,0 +1,121 @@
+{
+  "parent": "wbc_convex_catch15_25_clear35",
+  "iterations": [
+    {
+      "iteration": 0,
+      "solver": "solved",
+      "projection_errors": [
+        9.881519333861882e-08,
+        8.024443420846824e-08,
+        1.1428639801634772e-08
+      ],
+      "maximum_com_offset": [
+        0.008872589175788597,
+        0.011623130522973832,
+        0.017662105867450692
+      ],
+      "minimum_normal_force": 149.79699218457841,
+      "maximum_normal_force": 798.9062042768367,
+      "maximum_friction_l1": 0.5349585955083679
+    },
+    {
+      "iteration": 1,
+      "solver": "solved",
+      "projection_errors": [
+        9.984506776815369e-08,
+        9.165665898072423e-09,
+        2.327869825466591e-09
+      ],
+      "maximum_com_offset": [
+        0.009121793687143338,
+        0.011953341729224189,
+        0.017567092759196146
+      ],
+      "minimum_normal_force": 149.99906073957806,
+      "maximum_normal_force": 800.0157098187586,
+      "maximum_friction_l1": 0.5011011484865358
+    },
+    {
+      "iteration": 2,
+      "solver": "solved",
+      "projection_errors": [
+        9.984908661881972e-08,
+        9.310980749699012e-09,
+        2.3704244052923995e-09
+      ],
+      "maximum_com_offset": [
+        0.009126305233775205,
+        0.011961757837518454,
+        0.017567317940869014
+      ],
+      "minimum_normal_force": 149.9999660516943,
+      "maximum_normal_force": 799.9998085420256,
+      "maximum_friction_l1": 0.5000406290666687
+    },
+    {
+      "iteration": 3,
+      "solver": "solved",
+      "projection_errors": [
+        9.98496204425828e-08,
+        9.316644461861825e-09,
+        2.3720839865856566e-09
+      ],
+      "maximum_com_offset": [
+        0.009126479319652495,
+        0.011962067262600037,
+        0.01756731803266425
+      ],
+      "minimum_normal_force": 149.9999996388603,
+      "maximum_normal_force": 800.000003295067,
+      "maximum_friction_l1": 0.5000016296255854
+    },
+    {
+      "iteration": 4,
+      "solver": "solved",
+      "projection_errors": [
+        9.984963298032138e-08,
+        9.316871118264155e-09,
+        2.37214998674542e-09
+      ],
+      "maximum_com_offset": [
+        0.009126486195455792,
+        0.011962079698523793,
+        0.01756731803232265
+      ],
+      "minimum_normal_force": 149.99999997527252,
+      "maximum_normal_force": 799.9999999818767,
+      "maximum_friction_l1": 0.5000000648365897
+    },
+    {
+      "iteration": 5,
+      "solver": "solved",
+      "projection_errors": [
+        9.984963316444328e-08,
+        9.316880168528815e-09,
+        2.3721527703640464e-09
+      ],
+      "maximum_com_offset": [
+        0.009126486468548828,
+        0.011962080193002402,
+        0.017567318032328683
+      ],
+      "minimum_normal_force": 149.99999999916065,
+      "maximum_normal_force": 800.0000000013063,
+      "maximum_friction_l1": 0.5000000025810587
+    }
+  ],
+  "minimum_dense_joint_limit_margin": 0.002533639470736204,
+  "minimum_dense_native_clearance": -0.002210175746922491,
+  "minimum_parent_native_clearance": -0.0020008483781528835,
+  "peak_dense_foot_change": 0.0012594675809751883,
+  "peak_source_joint_reference_rmse": 0.14258060971010253,
+  "peak_joint_correction_rmse": 0.09431112028832346,
+  "minimum_normal_force": 149.99999999916065,
+  "maximum_friction_l1": 0.5036470717203807,
+  "force_audit_frame_range": [
+    740,
+    1110
+  ],
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

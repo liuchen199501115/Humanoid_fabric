@@ -1,0 +1,99 @@
+{
+  "run": "response025",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/response025.npz",
+  "measured_landing_events": 1,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 1,
+  "first_fidelity_exceeded_time_s": 2.398,
+  "last_source_frame": 532.5200000000001,
+  "last_time_s": 2.398,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.188,
+      "source_frame": 37.6,
+      "landing_error_m": 0.011819560504380775,
+      "joint_rmse_rad": 0.11587526649236679,
+      "root_position_error_m": 0.014904748648405075,
+      "root_orientation_error_rad": 0.10455455367242515,
+      "prefix_peak_joint_rmse_rad": 0.11587526649236679,
+      "prefix_peak_root_position_error_m": 0.014904748648405075,
+      "prefix_peak_root_orientation_error_rad": 0.10455455367242515,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 2,
+    "swing": "right",
+    "missing_evidence": "continuous_landing_hold",
+    "landing_window_expired": true,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.020471405441250395,
+    "best_loaded_landing_error_m": 0.03506004065275192,
+    "longest_verified_landing_hold_s": 0.03999999999999998,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "returncode": 1,
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "response-wbc",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/response025.npz",
+    "--response-gain",
+    ".25"
+  ],
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "failed_time_s": null,
+  "failed_source_frame": null,
+  "tested_source_sha256": "8892b70b21d013d736a95a92e8b626ba1a0f6fd5ac2bd27b5c900c6d302a21d7",
+  "execution": {
+    "tracking_profile": "response-wbc",
+    "formula_scope": "phase",
+    "direct_wbc": true,
+    "tracking_servo": true,
+    "formula_source_reference": false,
+    "physical_braking_start": 100.0,
+    "clock_final_speed": 1.2,
+    "response_gain": 0.25,
+    "response_error_onset": null,
+    "state_limit_priority": null,
+    "state_braking_budget": null,
+    "state_limit_weight": null,
+    "state_root_metric": null,
+    "state_root_onset": null,
+    "state_root_angular_scale": null,
+    "state_braking_hard": null,
+    "state_soft_orientation": null
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "response_estimate_range": [
+    -5.546542167663574,
+    4.813590049743652
+  ],
+  "raw_source_audit": {
+    "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+    "frame_count": 2000,
+    "peak_joint_rmse_rad": 0.20185811817646027,
+    "peak_root_position_m": 0.11719439178705215,
+    "peak_root_orientation_rad": 0.24881034484380327,
+    "prefix_landings": 1,
+    "reference_max_difference": 1.5407800674438477e-05,
+    "landings": [
+      {
+        "step": 1,
+        "source_foot_error_m": 0.011819606849795912,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      }
+    ]
+  }
+}

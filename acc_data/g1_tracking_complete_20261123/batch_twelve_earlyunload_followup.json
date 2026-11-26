@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_earlyunload_resume04",
+    "parent": "twelve_earlyunload940_2048",
+    "options": [
+      "--extra-contact-pause-resume",
+      ".04"
+    ]
+  },
+  {
+    "name": "twelve_earlyunload_resume06",
+    "parent": "twelve_earlyunload940_2048",
+    "options": [
+      "--extra-contact-pause-resume",
+      ".06"
+    ]
+  },
+  {
+    "name": "twelve_earlyunload_left16",
+    "parent": "twelve_earlyunload940_2048",
+    "options": [
+      "--foot-metric-final-start",
+      "4.7",
+      "--foot-metric-final-scale",
+      "16",
+      "--foot-metric-final-ramp",
+      ".04",
+      "--foot-metric-final-side",
+      "left"
+    ]
+  }
+]

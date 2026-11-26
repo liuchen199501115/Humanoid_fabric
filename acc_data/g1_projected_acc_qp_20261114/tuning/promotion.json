@@ -1,0 +1,21 @@
+{
+  "selected_trial": "projection1_attitude",
+  "measured_steps": 3,
+  "default_parameters": {
+    "posture_metric_scale": 10.0,
+    "joint_feedback_limit": 150.0,
+    "projection_joint_correction_weight": 1.0,
+    "qp_base_acceleration_weight": 100.0,
+    "source_pelvis_weight": 10.0,
+    "fabric_angular_feedback_limit": 100.0,
+    "com_acceleration_preservation_weight": 0.0,
+    "joint_tube_end": Infinity
+  },
+  "physical_and_auxiliary_constraints_retained": true,
+  "independent_post_promotion_simulation": "not completed: subsequent simulator initialization stalled",
+  "source_sha256": {
+    "examples/test_g1.py": "265fa42c651442c3f9f12072e2fdb7424a0f58a971ea43d5dccaf51d7b081d86",
+    "src/fabrics_sim/solver/dynamic_consistent_gpu.py": "d76fe9de2a9a4daef7f58abae2045ac9f4dddc62bc759b2127fba72b226922ba",
+    "examples/g1_acceleration_cost.py": "6a300db6ca1114319e66f47760aada230836cfbcad0ab542654afa7f362a8d64"
+  }
+}

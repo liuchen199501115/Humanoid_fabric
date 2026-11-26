@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ten_clock14_sh16_rootxy300",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--root-position-task-late-weight",
+      "300",
+      "--root-position-task-late-start",
+      "4.08",
+      "--root-position-task-late-ramp",
+      ".1",
+      "--root-position-task-late-axes",
+      "xy"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_rootxy1000_780",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--root-position-task-late-weight",
+      "1000",
+      "--root-position-task-late-start",
+      "3.9",
+      "--root-position-task-late-ramp",
+      ".18",
+      "--root-position-task-late-axes",
+      "xy"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_waist16",
+    "parent": "ten_clock14_shoulder16",
+    "options": [
+      "--waist-metric-scale",
+      "16"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "offset_m": [
+    0,
+    0.06,
+    -0.02
+  ],
+  "start_s": 3.35,
+  "rise_s": 0.4,
+  "hold_end_s": 4.25,
+  "fall_s": 0.4,
+  "peak_foot_position_residual": 9.816217867911037e-07,
+  "peak_foot_rotation_residual": 0.007630810559754311,
+  "peak_joint_correction_rmse": 0.15716683100187476,
+  "worst_frames": [
+    {
+      "frame": 759,
+      "position_error": 9.816217867911037e-07,
+      "rotation_error": 1.700643647587182e-06
+    },
+    {
+      "frame": 804,
+      "position_error": 9.74540445186082e-07,
+      "rotation_error": 0.007630810559754311
+    },
+    {
+      "frame": 895,
+      "position_error": 9.621735139560542e-07,
+      "rotation_error": 1.3363748046902754e-06
+    }
+  ],
+  "physical_tracking_certified": false,
+  "peak_original_joint_rmse": 0.15716683100187476,
+  "foot_orientation_adaptation_limit_rad": 0.01,
+  "accepted": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "side": 1,
+    "point": 9,
+    "height": 1.4265702550225745e-06,
+    "vertical_velocity": 0.02504903431269745,
+    "acceleration_extrema": [
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -6.189710157522008,
+        "predicted_height_after_2ms": 3.659792072883972e-05
+      },
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -4.908574478788864,
+        "predicted_height_after_2ms": 6.033352353458296e-05
+      }
+    ]
+  },
+  {
+    "side": 1,
+    "point": 11,
+    "height": 2.173087966711451e-06,
+    "vertical_velocity": 0.0003773064058984199,
+    "acceleration_extrema": [
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -6.049120001287605,
+        "predicted_height_after_2ms": -1.1558769273063707e-05
+      },
+      {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "success": true,
+        "jacobian_acceleration": -4.971154765994996,
+        "predicted_height_after_2ms": 9.63701644286774e-06
+      }
+    ]
+  }
+]

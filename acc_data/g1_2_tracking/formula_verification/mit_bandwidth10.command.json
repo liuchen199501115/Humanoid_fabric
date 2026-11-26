@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "twelve-mit",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/formula_verification/mit_bandwidth10.npz",
+    "--servo-bandwidth",
+    "10",
+    "--mit-sync-frequency",
+    "4"
+  ],
+  "sha256": {
+    "examples/test_g1.py": "0968fe197a771461df88a80303dd67e1654ac4d3c2aee8cad55560f5e13c7264",
+    "examples/test_g1_2.py": "ca5569adc0204236678f4f81dbd4bc098108d94f83ec227bc049539d2bf03e0e",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "status": "finished",
+  "returncode": 1,
+  "wall_seconds": 47.71227526664734
+}

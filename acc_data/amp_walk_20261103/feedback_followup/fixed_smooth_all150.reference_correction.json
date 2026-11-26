@@ -1,0 +1,178 @@
+[
+  {
+    "step": 8,
+    "first_frame": 572,
+    "last_frame": 646,
+    "scale": 0.6757806696620473,
+    "peak_correction_before": 0.11838160455226898,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 9,
+    "first_frame": 677,
+    "last_frame": 775,
+    "scale": 1.0,
+    "peak_correction_before": 0.0,
+    "peak_correction_after": 0.0
+  },
+  {
+    "step": 10,
+    "first_frame": 780,
+    "last_frame": 802,
+    "scale": 1.0,
+    "peak_correction_before": 0.03824339807033539,
+    "peak_correction_after": 0.03824339807033539
+  },
+  {
+    "step": 11,
+    "first_frame": 802,
+    "last_frame": 891,
+    "scale": 0.9071617908232462,
+    "peak_correction_before": 0.08818713575601578,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 12,
+    "first_frame": 908,
+    "last_frame": 952,
+    "scale": 1.0,
+    "peak_correction_before": 0.031197646632790565,
+    "peak_correction_after": 0.031197646632790565
+  },
+  {
+    "step": 13,
+    "first_frame": 955,
+    "last_frame": 1026,
+    "scale": 0.4742080627511335,
+    "peak_correction_before": 0.16870231926441193,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 14,
+    "first_frame": 1039,
+    "last_frame": 1070,
+    "scale": 1.0,
+    "peak_correction_before": 0.04723918437957764,
+    "peak_correction_after": 0.04723918437957764
+  },
+  {
+    "step": 15,
+    "first_frame": 1073,
+    "last_frame": 1124,
+    "scale": 0.5192126456840782,
+    "peak_correction_before": 0.15407945215702057,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 16,
+    "first_frame": 1144,
+    "last_frame": 1198,
+    "scale": 1.0,
+    "peak_correction_before": 0.015884846448898315,
+    "peak_correction_after": 0.015884846448898315
+  },
+  {
+    "step": 17,
+    "first_frame": 1198,
+    "last_frame": 1255,
+    "scale": 0.3947620872567806,
+    "peak_correction_before": 0.202653706073761,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 18,
+    "first_frame": 1282,
+    "last_frame": 1322,
+    "scale": 1.0,
+    "peak_correction_before": 0.03327278420329094,
+    "peak_correction_after": 0.03327278420329094
+  },
+  {
+    "step": 19,
+    "first_frame": 1325,
+    "last_frame": 1379,
+    "scale": 0.36453956952259636,
+    "peak_correction_before": 0.21945491433143616,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 20,
+    "first_frame": 1397,
+    "last_frame": 1449,
+    "scale": 1.0,
+    "peak_correction_before": 0.05691654235124588,
+    "peak_correction_after": 0.05691654235124588
+  },
+  {
+    "step": 21,
+    "first_frame": 1454,
+    "last_frame": 1511,
+    "scale": 1.0,
+    "peak_correction_before": 0.0,
+    "peak_correction_after": 0.0
+  },
+  {
+    "step": 22,
+    "first_frame": 1538,
+    "last_frame": 1576,
+    "scale": 1.0,
+    "peak_correction_before": 0.037872426211833954,
+    "peak_correction_after": 0.037872426211833954
+  },
+  {
+    "step": 23,
+    "first_frame": 1581,
+    "last_frame": 1632,
+    "scale": 0.3900530657841356,
+    "peak_correction_before": 0.20510029792785645,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 24,
+    "first_frame": 1655,
+    "last_frame": 1686,
+    "scale": 0.9796261070543562,
+    "peak_correction_before": 0.08166380971670151,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 25,
+    "first_frame": 1688,
+    "last_frame": 1754,
+    "scale": 1.0,
+    "peak_correction_before": 0.04418420419096947,
+    "peak_correction_after": 0.04418420419096947
+  },
+  {
+    "step": 26,
+    "first_frame": 1769,
+    "last_frame": 1799,
+    "scale": 1.0,
+    "peak_correction_before": 0.040916506201028824,
+    "peak_correction_after": 0.040916506201028824
+  },
+  {
+    "step": 27,
+    "first_frame": 1799,
+    "last_frame": 1863,
+    "scale": 0.5043119760810347,
+    "peak_correction_before": 0.15863196551799774,
+    "peak_correction_after": 0.08
+  },
+  {
+    "step": 28,
+    "first_frame": 1873,
+    "last_frame": 1910,
+    "scale": 1.0,
+    "peak_correction_before": 0.04399953410029411,
+    "peak_correction_after": 0.04399953410029411
+  },
+  {
+    "step": 29,
+    "first_frame": 1915,
+    "last_frame": 1970,
+    "scale": 1.0,
+    "peak_correction_before": 0.003162951208651066,
+    "peak_correction_after": 0.003162951208651066
+  }
+]

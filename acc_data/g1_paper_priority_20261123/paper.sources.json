@@ -1,0 +1,9 @@
+{
+  "examples/test_g1.py": "6d6ac87c52c2e7a68b70bea5122a29e58b7914770949ba36af234185642a9110",
+  "src/fabrics_sim/solver/daqp_backend.py": "0753b10611fc5d9d428cf7bdfd6ccb9e0ad437fea43e574f86f3d10df6fe9482",
+  "src/fabrics_sim/fabrics/priority.py": "64ce0764a89caa92471f3d46d91ee03bd47e1334f7d9b0aecc87acb8ab68308c",
+  "src/fabrics_sim/fabrics/dynamics_aware.py": "c85ced7f145942c0941a69c1aefc0c78b929bb1209a8c7bee3c1129bc717ae14",
+  "src/fabrics_sim/fabrics/g1_pose_fabric.py": "96a7563c637c2c46721490bda3427b1145c5b22f9b6422328701df2e35105188",
+  "src/fabrics_sim/solver/active_set_predictor.py": "4de815daaecc670b063ac81e4df4f8b23320ed9828aa302e3c02abea9ae7d296",
+  "examples/g1_soft_tracking_tube.py": "71cceee5c4a131c7149e40a9128528967f192b37874cdce4d56a029d028eb1e0"
+}

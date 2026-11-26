@@ -1,0 +1,272 @@
+[
+  {
+    "time_s": 3.5,
+    "kind": "measured",
+    "cover_min_m": -0.01976197212934494,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_1"
+    ],
+    "corresponding_mesh_m": 0.035644661635160446,
+    "mesh_min_m": 0.035644661635160446,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.5,
+    "kind": "control",
+    "cover_min_m": -0.050518833100795746,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.02407929114997387,
+    "mesh_min_m": 0.02407929114997387,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.5,
+    "kind": "source",
+    "cover_min_m": -0.050768591463565826,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.02179066091775894,
+    "mesh_min_m": 0.02179066091775894,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.6,
+    "kind": "measured",
+    "cover_min_m": -0.027797728776931763,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.043933283537626266,
+    "mesh_min_m": 0.043933283537626266,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.6,
+    "kind": "control",
+    "cover_min_m": -0.025825724005699158,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.061882998794317245,
+    "mesh_min_m": 0.058415934443473816,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.6,
+    "kind": "source",
+    "cover_min_m": -0.02591569721698761,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.05873003229498863,
+    "mesh_min_m": 0.057634610682725906,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.65,
+    "kind": "measured",
+    "cover_min_m": -0.017585009336471558,
+    "cover_pair": [
+      "left_rubber_hand_cover_2",
+      "left_hip_yaw_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.054897814989089966,
+    "mesh_min_m": 0.05036621913313866,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.65,
+    "kind": "control",
+    "cover_min_m": -0.0031186193227767944,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.08574306964874268,
+    "mesh_min_m": 0.08345328271389008,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.65,
+    "kind": "source",
+    "cover_min_m": -0.0017441660165786743,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.08505667746067047,
+    "mesh_min_m": 0.08388438820838928,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.7,
+    "kind": "measured",
+    "cover_min_m": 0.0010737627744674683,
+    "cover_pair": [
+      "left_rubber_hand_cover_0",
+      "left_hip_roll_link_cover_1"
+    ],
+    "corresponding_mesh_m": 0.057085681706666946,
+    "mesh_min_m": 0.055663611739873886,
+    "mesh_min_pair": [
+      "left_rubber_hand",
+      "left_hip_yaw_link"
+    ]
+  },
+  {
+    "time_s": 3.7,
+    "kind": "control",
+    "cover_min_m": -0.012126199901103973,
+    "cover_pair": [
+      "right_wrist_roll_link_cover_2",
+      "right_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.05665966495871544,
+    "mesh_min_m": 0.0493546761572361,
+    "mesh_min_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.7,
+    "kind": "source",
+    "cover_min_m": -0.011900551617145538,
+    "cover_pair": [
+      "right_wrist_roll_link_cover_2",
+      "right_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.05712803825736046,
+    "mesh_min_m": 0.04966886714100838,
+    "mesh_min_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.72,
+    "kind": "measured",
+    "cover_min_m": 0.018867477774620056,
+    "cover_pair": [
+      "left_wrist_roll_link_cover_0",
+      "left_hip_roll_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.07487844675779343,
+    "mesh_min_m": 0.06780540198087692,
+    "mesh_min_pair": [
+      "left_wrist_pitch_link",
+      "left_hip_roll_link"
+    ]
+  },
+  {
+    "time_s": 3.72,
+    "kind": "control",
+    "cover_min_m": -0.017464861273765564,
+    "cover_pair": [
+      "right_rubber_hand_cover_0",
+      "right_hip_roll_link_cover_1"
+    ],
+    "corresponding_mesh_m": 0.055849589407444,
+    "mesh_min_m": 0.05396529287099838,
+    "mesh_min_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.72,
+    "kind": "source",
+    "cover_min_m": -0.01688624918460846,
+    "cover_pair": [
+      "right_rubber_hand_cover_0",
+      "right_hip_roll_link_cover_1"
+    ],
+    "corresponding_mesh_m": 0.057310640811920166,
+    "mesh_min_m": 0.05397733300924301,
+    "mesh_min_pair": [
+      "right_wrist_pitch_link",
+      "right_hip_pitch_link"
+    ]
+  },
+  {
+    "time_s": 3.7600000000000002,
+    "kind": "measured",
+    "cover_min_m": 0.018586009740829468,
+    "cover_pair": [
+      "left_wrist_roll_link_cover_0",
+      "torso_link_cover_0"
+    ],
+    "corresponding_mesh_m": 0.0951874852180481,
+    "mesh_min_m": 0.0951874852180481,
+    "mesh_min_pair": [
+      "left_wrist_roll_link",
+      "torso_link"
+    ]
+  },
+  {
+    "time_s": 3.7600000000000002,
+    "kind": "control",
+    "cover_min_m": -0.06007765233516693,
+    "cover_pair": [
+      "right_rubber_hand_cover_2",
+      "right_hip_yaw_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.025704598054289818,
+    "mesh_min_m": 0.025704598054289818,
+    "mesh_min_pair": [
+      "right_rubber_hand",
+      "right_hip_yaw_link"
+    ]
+  },
+  {
+    "time_s": 3.7600000000000002,
+    "kind": "source",
+    "cover_min_m": -0.0593205988407135,
+    "cover_pair": [
+      "right_rubber_hand_cover_2",
+      "right_hip_yaw_link_cover_2"
+    ],
+    "corresponding_mesh_m": 0.02498445101082325,
+    "mesh_min_m": 0.02498445101082325,
+    "mesh_min_pair": [
+      "right_rubber_hand",
+      "right_hip_yaw_link"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_com15_position17_340",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--position-tube-start",
+      "3.4",
+      "--position-tube-radius",
+      ".17"
+    ]
+  },
+  {
+    "name": "ten_com15_position16_340",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--position-tube-start",
+      "3.4",
+      "--position-tube-radius",
+      ".16"
+    ]
+  },
+  {
+    "name": "ten_com15_position17_360",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--position-tube-start",
+      "3.6",
+      "--position-tube-radius",
+      ".17"
+    ]
+  }
+]

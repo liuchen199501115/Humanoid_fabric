@@ -1,0 +1,1200 @@
+{
+  "baseline_reproduction": {
+    "bitwise_equal_fields": [
+      "history_time",
+      "history_q",
+      "history_qd",
+      "history_qdd_qp",
+      "servo_torque"
+    ],
+    "previous": "/home/sky/Humanoid_fabric/acc_data/g1_projected_acc_qp_20261114/tuning/projection1_attitude.failure.npz",
+    "snapshot_recording_changes_trajectory": false
+  },
+  "trials": [
+    {
+      "name": "base10",
+      "options": [
+        "--qp-base-acceleration-weight",
+        "10"
+      ],
+      "control_states": 331,
+      "applied_effort_ticks": 330,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 37.2,
+          "time": 0.186,
+          "landing_error_m": 0.016948796042395183,
+          "goal": [
+            1.5789072513580322,
+            0.17898057401180267,
+            0.038510896265506744
+          ],
+          "measured_load_n": 739.0997924804688,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.004303993983284238,
+        "best_loaded_landing_error_m": 0.3130798041820526,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 132.0,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.20059460401535034,
+        "peak_root_position_error": 0.1681201010942459,
+        "peak_root_orientation_error": 0.19801784908630676,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.66,
+          "source_frame": 132.0,
+          "joint_rmse_rad": 0.20059460401535034,
+          "root_position_m": 0.1681201010942459,
+          "root_orientation_rad": 0.14014162210815903
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.66,
+          "source_frame": 132.0,
+          "joint_rmse_rad": 0.20059460401535034,
+          "root_position_m": 0.1681201010942459,
+          "root_orientation_rad": 0.14014162210815903
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.66
+    },
+    {
+      "name": "base30",
+      "options": [
+        "--qp-base-acceleration-weight",
+        "30"
+      ],
+      "control_states": 354,
+      "applied_effort_ticks": 353,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 38.800000000000004,
+          "time": 0.194,
+          "landing_error_m": 0.010234431361815654,
+          "goal": [
+            1.5789058208465576,
+            0.1783255636692047,
+            0.03800634294748306
+          ],
+          "measured_load_n": 266.67840576171875,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.006005174759524778,
+        "best_loaded_landing_error_m": 0.3074627220630646,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 141.2,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.20024864375591278,
+        "peak_root_position_error": 0.19492019712924957,
+        "peak_root_orientation_error": 0.19862168698872196,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.706,
+          "source_frame": 141.2,
+          "joint_rmse_rad": 0.20024864375591278,
+          "root_position_m": 0.19492019712924957,
+          "root_orientation_rad": 0.14513425747970232
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.706,
+          "source_frame": 141.2,
+          "joint_rmse_rad": 0.20024864375591278,
+          "root_position_m": 0.19492019712924957,
+          "root_orientation_rad": 0.14513425747970232
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.706
+    },
+    {
+      "name": "baseline_snapshots",
+      "options": [
+        "--diagnose-qp-time",
+        "1.2",
+        "--diagnose-qp-time",
+        "1.3",
+        "--diagnose-qp-time",
+        "1.34",
+        "--diagnose-qp-time",
+        "1.354"
+      ],
+      "control_states": 678,
+      "applied_effort_ticks": 678,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 3,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.012318086883794273,
+          "goal": [
+            1.578912377357483,
+            0.1798873394727707,
+            0.039157819002866745
+          ],
+          "measured_load_n": 522.4107666015625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 82.4,
+          "time": 0.41200000000000003,
+          "landing_error_m": 0.03386797581257624,
+          "goal": [
+            2.0720441341400146,
+            -0.09183526784181595,
+            0.04734122008085251
+          ],
+          "measured_load_n": 315.8450012207031,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        },
+        {
+          "step": 3,
+          "swing": "left",
+          "source_frame": 186.80276525169154,
+          "time": 0.934,
+          "landing_error_m": 0.017637795245387517,
+          "goal": [
+            2.458341121673584,
+            0.10213759541511536,
+            0.03958366811275482
+          ],
+          "measured_load_n": 463.0271301269531,
+          "source_contact_onset_goal": [
+            2.405056953430176,
+            0.1028435006737709,
+            0.04537191241979599
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 4,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.05909938852788377,
+        "best_loaded_landing_error_m": 0.3966974914073944,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 281.96000000000004,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.17517568171024323,
+        "peak_root_position_error": 0.18511952459812164,
+        "peak_root_orientation_error": 0.18504788744632628,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 3,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 1.356,
+        "failed_source_frame": 282.44000000000005
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 1.356
+    },
+    {
+      "name": "baseline_traced",
+      "options": [],
+      "control_states": 678,
+      "applied_effort_ticks": 678,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 3,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.012318086883794273,
+          "goal": [
+            1.578912377357483,
+            0.1798873394727707,
+            0.039157819002866745
+          ],
+          "measured_load_n": 522.4107666015625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 82.4,
+          "time": 0.41200000000000003,
+          "landing_error_m": 0.03386797581257624,
+          "goal": [
+            2.0720441341400146,
+            -0.09183526784181595,
+            0.04734122008085251
+          ],
+          "measured_load_n": 315.8450012207031,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        },
+        {
+          "step": 3,
+          "swing": "left",
+          "source_frame": 186.80276525169154,
+          "time": 0.934,
+          "landing_error_m": 0.017637795245387517,
+          "goal": [
+            2.458341121673584,
+            0.10213759541511536,
+            0.03958366811275482
+          ],
+          "measured_load_n": 463.0271301269531,
+          "source_contact_onset_goal": [
+            2.405056953430176,
+            0.1028435006737709,
+            0.04537191241979599
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 4,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.05909938852788377,
+        "best_loaded_landing_error_m": 0.3966974914073944,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 281.96000000000004,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.17517568171024323,
+        "peak_root_position_error": 0.18511952459812164,
+        "peak_root_orientation_error": 0.18504788744632628,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 3,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 1.356,
+        "failed_source_frame": 282.44000000000005
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 1.356
+    },
+    {
+      "name": "com100",
+      "options": [
+        "--com-acceleration-preservation-weight",
+        "100"
+      ],
+      "control_states": 329,
+      "applied_effort_ticks": 328,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 40.800000000000004,
+          "time": 0.20400000000000001,
+          "landing_error_m": 0.01155240569793911,
+          "goal": [
+            1.578600525856018,
+            0.17779062688350677,
+            0.03797970712184906
+          ],
+          "measured_load_n": 482.0329895019531,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.007384373099700525,
+        "best_loaded_landing_error_m": 0.4072502553462982,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 131.20000000000002,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.20092695951461792,
+        "peak_root_position_error": 0.17904594540596008,
+        "peak_root_orientation_error": 0.18680661555881545,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.656,
+          "source_frame": 131.20000000000002,
+          "joint_rmse_rad": 0.20092695951461792,
+          "root_position_m": 0.17904594540596008,
+          "root_orientation_rad": 0.17950196091845813
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.656,
+          "source_frame": 131.20000000000002,
+          "joint_rmse_rad": 0.20092695951461792,
+          "root_position_m": 0.17904594540596008,
+          "root_orientation_rad": 0.17950196091845813
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.656
+    },
+    {
+      "name": "com1000",
+      "options": [
+        "--com-acceleration-preservation-weight",
+        "1000"
+      ],
+      "control_states": 113,
+      "applied_effort_ticks": 112,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 36.0,
+          "time": 0.18,
+          "landing_error_m": 0.02276082634483341,
+          "goal": [
+            1.578899621963501,
+            0.1795097291469574,
+            0.038919705897569656
+          ],
+          "measured_load_n": 143.3917236328125,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": null,
+        "best_loaded_landing_error_m": null,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 44.800000000000004,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.193898007273674,
+        "peak_root_position_error": 0.010898441076278687,
+        "peak_root_orientation_error": 0.35121451755210426,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.224,
+          "source_frame": 44.800000000000004,
+          "joint_rmse_rad": 0.193898007273674,
+          "root_position_m": 0.010898441076278687,
+          "root_orientation_rad": 0.35121451755210426
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.224,
+          "source_frame": 44.800000000000004,
+          "joint_rmse_rad": 0.193898007273674,
+          "root_position_m": 0.010898441076278687,
+          "root_orientation_rad": 0.35121451755210426
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.224
+    },
+    {
+      "name": "early_tube",
+      "options": [
+        "--tracking-tube-start",
+        "0"
+      ],
+      "control_states": 179,
+      "applied_effort_ticks": 179,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.009974284748192971,
+          "goal": [
+            1.578912377357483,
+            0.1798873394727707,
+            0.039157819002866745
+          ],
+          "measured_load_n": 639.1729736328125,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.01727031212013952,
+        "best_loaded_landing_error_m": 0.012029711157083511,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 71.2,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.12507931888103485,
+        "peak_root_position_error": 0.010166005231440067,
+        "peak_root_orientation_error": 0.0637483149523218,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 0.358,
+        "failed_source_frame": 71.6
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 0.358
+    },
+    {
+      "name": "feedback18",
+      "options": [
+        "--motion-feedback-scale",
+        "18"
+      ],
+      "control_states": 406,
+      "applied_effort_ticks": 405,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 38.0,
+          "time": 0.19,
+          "landing_error_m": 0.01708350448891365,
+          "goal": [
+            1.578944444656372,
+            0.17864367365837097,
+            0.03821016848087311
+          ],
+          "measured_load_n": 534.3355102539062,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.013585428949941664,
+        "best_loaded_landing_error_m": 0.19027970731258392,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 162.0,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.20197966694831848,
+        "peak_root_position_error": 0.105962835252285,
+        "peak_root_orientation_error": 0.16069667852149616,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.81,
+          "source_frame": 162.0,
+          "joint_rmse_rad": 0.20197966694831848,
+          "root_position_m": 0.10587520897388458,
+          "root_orientation_rad": 0.11218506300867
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.81,
+          "source_frame": 162.0,
+          "joint_rmse_rad": 0.20197966694831848,
+          "root_position_m": 0.10587520897388458,
+          "root_orientation_rad": 0.11218506300867
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.81
+    },
+    {
+      "name": "projection03",
+      "options": [
+        "--projection-joint-correction-weight",
+        ".3"
+      ],
+      "control_states": 305,
+      "applied_effort_ticks": 304,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 36.8,
+          "time": 0.184,
+          "landing_error_m": 0.0038059154556411203,
+          "goal": [
+            1.578898310661316,
+            0.17915332317352295,
+            0.038653045892715454
+          ],
+          "measured_load_n": 709.3499755859375,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": 0.00270667415643433,
+        "best_loaded_landing_error_m": 0.3610452711582184,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 121.6,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.20013651251792908,
+        "peak_root_position_error": 0.1564384251832962,
+        "peak_root_orientation_error": 0.10597200039461944,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": false,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 1,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "first_fidelity_exceeded": {
+          "time_s": 0.608,
+          "source_frame": 121.6,
+          "joint_rmse_rad": 0.20013651251792908,
+          "root_position_m": 0.1564384251832962,
+          "root_orientation_rad": 0.10597200039461944
+        },
+        "stop_reason": "Original-source fidelity limit exceeded",
+        "fidelity_stop": {
+          "time_s": 0.608,
+          "source_frame": 121.6,
+          "joint_rmse_rad": 0.20013651251792908,
+          "root_position_m": 0.1564384251832962,
+          "root_orientation_rad": 0.10597200039461944
+        }
+      },
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "stop_time_s": 0.608
+    },
+    {
+      "name": "projection3",
+      "options": [
+        "--projection-joint-correction-weight",
+        "3"
+      ],
+      "control_states": 676,
+      "applied_effort_ticks": 676,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 2,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 34.800000000000004,
+          "time": 0.17400000000000002,
+          "landing_error_m": 0.009502599842755251,
+          "goal": [
+            1.5789265632629395,
+            0.18008649349212646,
+            0.0392758846282959
+          ],
+          "measured_load_n": 503.2574768066406,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 125.6,
+          "time": 0.628,
+          "landing_error_m": 0.039268743551049506,
+          "goal": [
+            2.083366870880127,
+            -0.08956409245729446,
+            0.03486914187669754
+          ],
+          "measured_load_n": 293.66802978515625,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 3,
+        "swing": "left",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.07053421854941333,
+        "best_loaded_landing_error_m": 0.04049263149499893,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 281.00000000000006,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.19666039943695068,
+        "peak_root_position_error": 0.14811810851097107,
+        "peak_root_orientation_error": 0.08038197107401386,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 2,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 1.352,
+        "failed_source_frame": 281.48
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 1.352
+    },
+    {
+      "name": "tube09",
+      "options": [
+        "--tracking-tube-start",
+        ".9"
+      ],
+      "control_states": 676,
+      "applied_effort_ticks": 676,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 3,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.012318086883794273,
+          "goal": [
+            1.578912377357483,
+            0.1798873394727707,
+            0.039157819002866745
+          ],
+          "measured_load_n": 522.4107666015625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 82.4,
+          "time": 0.41200000000000003,
+          "landing_error_m": 0.03386797581257624,
+          "goal": [
+            2.0720441341400146,
+            -0.09183526784181595,
+            0.04734122008085251
+          ],
+          "measured_load_n": 315.8450012207031,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        },
+        {
+          "step": 3,
+          "swing": "left",
+          "source_frame": 186.80276525169154,
+          "time": 0.934,
+          "landing_error_m": 0.01770503394741223,
+          "goal": [
+            2.458341121673584,
+            0.10213759541511536,
+            0.03958366811275482
+          ],
+          "measured_load_n": 495.44439697265625,
+          "source_contact_onset_goal": [
+            2.405056953430176,
+            0.1028435006737709,
+            0.04537191241979599
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 4,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.05572558242878123,
+        "best_loaded_landing_error_m": 0.311666339635849,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 281.00000000000006,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.17517568171024323,
+        "peak_root_position_error": 0.17580077052116394,
+        "peak_root_orientation_error": 0.21756597277716444,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 3,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 1.352,
+        "failed_source_frame": 281.48
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 1.352
+    },
+    {
+      "name": "tube11",
+      "options": [
+        "--tracking-tube-start",
+        "1.1"
+      ],
+      "control_states": 671,
+      "applied_effort_ticks": 671,
+      "single_qp": true,
+      "task_cache": false,
+      "reference_is_projected": true,
+      "applied_torque_equals_qp": true,
+      "motion_speed": 1.0,
+      "clock_final_speed": 1.2,
+      "measured_steps": 3,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.012318086883794273,
+          "goal": [
+            1.578912377357483,
+            0.1798873394727707,
+            0.039157819002866745
+          ],
+          "measured_load_n": 522.4107666015625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 82.4,
+          "time": 0.41200000000000003,
+          "landing_error_m": 0.03386797581257624,
+          "goal": [
+            2.0720441341400146,
+            -0.09183526784181595,
+            0.04734122008085251
+          ],
+          "measured_load_n": 315.8450012207031,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        },
+        {
+          "step": 3,
+          "swing": "left",
+          "source_frame": 186.80276525169154,
+          "time": 0.934,
+          "landing_error_m": 0.017637795245387517,
+          "goal": [
+            2.458341121673584,
+            0.10213759541511536,
+            0.03958366811275482
+          ],
+          "measured_load_n": 463.0271301269531,
+          "source_contact_onset_goal": [
+            2.405056953430176,
+            0.1028435006737709,
+            0.04537191241979599
+          ]
+        }
+      ],
+      "next_step": {
+        "step": 4,
+        "swing": "right",
+        "missing_evidence": "landing_position",
+        "landing_window_expired": false,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.05909938852788377,
+        "best_loaded_landing_error_m": 0.3808005154132843,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      },
+      "tracking": {
+        "source_frame_count": 2000,
+        "first_source_frame": 0.0,
+        "last_source_frame": 278.6,
+        "full_source_covered": false,
+        "final_support_settled": false,
+        "simulation_completed": false,
+        "controller_valid": false,
+        "peak_joint_rmse": 0.17517568171024323,
+        "peak_root_position_error": 0.16652235388755798,
+        "peak_root_orientation_error": 0.18504788744632628,
+        "tolerances": {
+          "joint_rmse_rad": 0.2,
+          "root_position_m": 0.2,
+          "root_orientation_rad": 0.35
+        },
+        "pkl_fidelity_passed": true,
+        "full_clip_tracking_passed": false,
+        "full_tracking_passed": false,
+        "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+        "expected_landings": 29,
+        "measured_landings": 3,
+        "all_source_landings_verified": false,
+        "full_motion_tracking_passed": false,
+        "stop_reason": "QP validation failed",
+        "failed_time_s": 1.342,
+        "failed_source_frame": 279.08000000000004
+      },
+      "stop_reason": "QP validation failed",
+      "stop_time_s": 1.342
+    }
+  ]
+}

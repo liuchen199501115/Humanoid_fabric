@@ -1,0 +1,5 @@
+{
+  "reason": "Fixed-root-orientation fit approaches its 0.18-rad joint reference budget with remaining contact-moment violation. Continue with a bounded world-roll reference correction; original source acceptance unchanged.",
+  "physical_tracking_certified": false,
+  "checkpoint": "step13_turn_roll_seed.npz"
+}

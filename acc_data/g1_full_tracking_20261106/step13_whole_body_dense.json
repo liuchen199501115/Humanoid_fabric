@@ -1,0 +1,1424 @@
+{
+  "peak_runtime_offset": [
+    0.023246178346964255,
+    0.024999999999251277,
+    0.01606642365822681,
+    0.09957953031894223,
+    0.045293359561593666,
+    0.020038478388957497,
+    0.14999999999264294,
+    0.0954275715077775,
+    0.03503756799537122,
+    0.09153733092144084,
+    0.05255905051251769,
+    0.01958547260697965,
+    0.14999999998854774,
+    0.09012188295305783,
+    0.05421324615877604,
+    0.24999999999000874,
+    0.24999999999541256,
+    0.2209266294425138,
+    0.24999999999434772,
+    0.24999999999345768,
+    0.1256037543880167,
+    0.10335142094667758,
+    0.03197101977202322,
+    0.01766463816975702,
+    0.04176223841672561,
+    0.18009528269646757,
+    0.24999999873305828,
+    0.054381892725275605,
+    0.1113875630565048,
+    0.008518703826511192,
+    0.018929049206431472,
+    0.008507820580931958
+  ],
+  "details": [
+    {
+      "frame": 960.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9999984620120584,
+      "joint": "right_hip_pitch_joint",
+      "torque": 87.95586600646892
+    },
+    {
+      "frame": 960.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9597959701101217,
+      "joint": "right_hip_pitch_joint",
+      "torque": 84.4198155772131
+    },
+    {
+      "frame": 961.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9254356105619173,
+      "joint": "left_hip_pitch_joint",
+      "torque": -81.39761574875024
+    },
+    {
+      "frame": 961.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8956588283258236,
+      "joint": "left_hip_pitch_joint",
+      "torque": -78.77856905222635
+    },
+    {
+      "frame": 962.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8657499957801148,
+      "joint": "left_hip_pitch_joint",
+      "torque": -76.14790773850069
+    },
+    {
+      "frame": 962.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8357097159025658,
+      "joint": "left_hip_pitch_joint",
+      "torque": -73.50568484308721
+    },
+    {
+      "frame": 963.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8055413568624018,
+      "joint": "left_hip_pitch_joint",
+      "torque": -70.8521966166826
+    },
+    {
+      "frame": 963.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7752508528709465,
+      "joint": "left_hip_pitch_joint",
+      "torque": -68.18796500878567
+    },
+    {
+      "frame": 963.75,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7600622903926848,
+      "joint": "left_hip_pitch_joint",
+      "torque": -66.85203978797992
+    },
+    {
+      "frame": 964.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7448464468332414,
+      "joint": "left_hip_pitch_joint",
+      "torque": -65.51371503236278
+    },
+    {
+      "frame": 964.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7143383798387378,
+      "joint": "left_hip_pitch_joint",
+      "torque": -62.83034745269087
+    },
+    {
+      "frame": 965.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.683738532691515,
+      "joint": "left_hip_pitch_joint",
+      "torque": -60.138907257788745
+    },
+    {
+      "frame": 965.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6530600248175136,
+      "joint": "left_hip_pitch_joint",
+      "torque": -57.44054837990126
+    },
+    {
+      "frame": 966.0,
+      "wrench_violation": 1.8895400730146658e-07,
+      "effort_fraction": 0.6223167760108694,
+      "joint": "left_hip_pitch_joint",
+      "torque": -54.73649514845926
+    },
+    {
+      "frame": 966.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5839537048842935,
+      "joint": "left_hip_pitch_joint",
+      "torque": -51.36223281527874
+    },
+    {
+      "frame": 967.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5458165103298501,
+      "joint": "left_hip_pitch_joint",
+      "torque": -48.00783768216621
+    },
+    {
+      "frame": 967.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5079033015695531,
+      "joint": "left_hip_pitch_joint",
+      "torque": -44.67314344385072
+    },
+    {
+      "frame": 968.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.47021027335327337,
+      "joint": "left_hip_pitch_joint",
+      "torque": -41.35781540574702
+    },
+    {
+      "frame": 968.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4327316476862666,
+      "joint": "left_hip_pitch_joint",
+      "torque": -38.061345358541985
+    },
+    {
+      "frame": 969.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.39545963224175323,
+      "joint": "left_hip_pitch_joint",
+      "torque": -34.7830479203314
+    },
+    {
+      "frame": 969.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.358384396696345,
+      "joint": "left_hip_pitch_joint",
+      "torque": -31.52205845517872
+    },
+    {
+      "frame": 970.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.34953596144235805,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 17.468059139732294
+    },
+    {
+      "frame": 970.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.39140511164315656,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 19.560469857129945
+    },
+    {
+      "frame": 971.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.43086915590541636,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 21.532685408919026
+    },
+    {
+      "frame": 971.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4678147088965955,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 23.379039363278764
+    },
+    {
+      "frame": 972.0,
+      "wrench_violation": 2.1211543765049627e-06,
+      "effort_fraction": 0.5021566521191129,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 25.095277923422422
+    },
+    {
+      "frame": 972.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.48025117129625483,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 24.000551552725202
+    },
+    {
+      "frame": 973.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4574877938204902,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 22.862951798108025
+    },
+    {
+      "frame": 973.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4339045202125759,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 21.684377735537726
+    },
+    {
+      "frame": 974.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.40953646289252554,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 20.466584108150915
+    },
+    {
+      "frame": 974.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.3844156984037822,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 19.21117394115721
+    },
+    {
+      "frame": 975.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.35857119119211855,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 17.91959473268991
+    },
+    {
+      "frame": 975.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.3320287897224373,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 16.59313825974308
+    },
+    {
+      "frame": 976.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.30481129458113676,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 15.232943981587184
+    },
+    {
+      "frame": 976.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2769385971196714,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 13.840005968480813
+    },
+    {
+      "frame": 977.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.24842788611179192,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 12.41518322936593
+    },
+    {
+      "frame": 977.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.21929391884762886,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 10.959213259794288
+    },
+    {
+      "frame": 978.0,
+      "wrench_violation": 3.0445583419592623e-07,
+      "effort_fraction": 0.21131410408308213,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -5.280211014556148
+    },
+    {
+      "frame": 978.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2181546991350428,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -5.451140378198055
+    },
+    {
+      "frame": 979.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.22515911551764872,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -5.626163227214475
+    },
+    {
+      "frame": 979.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.23233653946776223,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -5.805509102691996
+    },
+    {
+      "frame": 980.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2396909482412791,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -5.98927738630928
+    },
+    {
+      "frame": 980.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.24722133285732598,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -6.1774428661575245
+    },
+    {
+      "frame": 981.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2549219027055995,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -6.36986084936619
+    },
+    {
+      "frame": 981.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2627822672679046,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -6.566271702869806
+    },
+    {
+      "frame": 982.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2707875902718029,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -6.766304705322138
+    },
+    {
+      "frame": 982.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.27891871165680726,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -6.969481094726381
+    },
+    {
+      "frame": 983.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2886415721111081,
+      "joint": "waist_pitch_joint",
+      "torque": -14.424862125820539
+    },
+    {
+      "frame": 983.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.31082850478920987,
+      "joint": "waist_pitch_joint",
+      "torque": -15.533654052554105
+    },
+    {
+      "frame": 984.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.3338440082125829,
+      "joint": "waist_pitch_joint",
+      "torque": -16.6838538010183
+    },
+    {
+      "frame": 984.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.32274947804725196,
+      "joint": "waist_pitch_joint",
+      "torque": -16.129404672934797
+    },
+    {
+      "frame": 985.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.310780509196492,
+      "joint": "waist_pitch_joint",
+      "torque": -15.531255472881265
+    },
+    {
+      "frame": 985.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.30041873928654944,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -7.506713018721346
+    },
+    {
+      "frame": 986.0,
+      "wrench_violation": 6.348090616082984e-07,
+      "effort_fraction": 0.298045500502583,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -7.447411716417621
+    },
+    {
+      "frame": 986.25,
+      "wrench_violation": 1.6195493772806595e-06,
+      "effort_fraction": 0.29664023359441427,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -7.412297610621889
+    },
+    {
+      "frame": 986.375,
+      "wrench_violation": 2.7482289110948403e-06,
+      "effort_fraction": 0.2958843775991753,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -7.393410659517528
+    },
+    {
+      "frame": 986.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.2950935974400478,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -7.3736510408946465
+    },
+    {
+      "frame": 987.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.30323916707539944,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 7.577188455943419
+    },
+    {
+      "frame": 987.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.334012520007628,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 8.346137588859275
+    },
+    {
+      "frame": 988.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.3637853312420077,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 9.090085686863485
+    },
+    {
+      "frame": 988.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.3925710840929686,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 9.809369664265084
+    },
+    {
+      "frame": 989.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.42038450573370734,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 10.504357516293087
+    },
+    {
+      "frame": 989.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4472414948612768,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 11.175446511627973
+    },
+    {
+      "frame": 990.0,
+      "wrench_violation": 1.6898409013368747e-06,
+      "effort_fraction": 0.4731590355110453,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 11.82306103884055
+    },
+    {
+      "frame": 990.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.4917813032216803,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 12.288384939052378
+    },
+    {
+      "frame": 991.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5095858202026754,
+      "joint": "right_shoulder_roll_joint",
+      "torque": 12.733275293531225
+    },
+    {
+      "frame": 991.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5316714503736245,
+      "joint": "waist_roll_joint",
+      "torque": 26.57027992115563
+    },
+    {
+      "frame": 992.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5844672603815712,
+      "joint": "waist_roll_joint",
+      "torque": 29.208750445742755
+    },
+    {
+      "frame": 992.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6371440415585333,
+      "joint": "waist_roll_joint",
+      "torque": 31.841272504683047
+    },
+    {
+      "frame": 993.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6896033555411705,
+      "joint": "waist_roll_joint",
+      "torque": 34.46292664091878
+    },
+    {
+      "frame": 993.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7417450261883509,
+      "joint": "waist_roll_joint",
+      "torque": 37.068706551949745
+    },
+    {
+      "frame": 994.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7934677429069664,
+      "joint": "waist_roll_joint",
+      "torque": 39.653549241039954
+    },
+    {
+      "frame": 994.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8446697744904115,
+      "joint": "waist_roll_joint",
+      "torque": 42.212370691294524
+    },
+    {
+      "frame": 995.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8952498022411238,
+      "joint": "waist_roll_joint",
+      "torque": 44.74010750095737
+    },
+    {
+      "frame": 995.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9451078814757843,
+      "joint": "waist_roll_joint",
+      "torque": 47.23176493463214
+    },
+    {
+      "frame": 996.0,
+      "wrench_violation": 1.0003182775500646e-05,
+      "effort_fraction": 0.9941465407334665,
+      "joint": "waist_roll_joint",
+      "torque": 49.682471856207755
+    },
+    {
+      "frame": 996.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9471711057563796,
+      "joint": "waist_roll_joint",
+      "torque": 47.33487456490666
+    },
+    {
+      "frame": 997.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9006959549068602,
+      "joint": "waist_roll_joint",
+      "torque": 45.01227897211738
+    },
+    {
+      "frame": 997.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8548946154919118,
+      "joint": "waist_roll_joint",
+      "torque": 42.72335710474263
+    },
+    {
+      "frame": 998.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8099233048639054,
+      "joint": "waist_roll_joint",
+      "torque": 40.47591592472879
+    },
+    {
+      "frame": 998.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.765919661702206,
+      "joint": "waist_roll_joint",
+      "torque": 38.27683392486709
+    },
+    {
+      "frame": 999.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7230019497049344,
+      "joint": "waist_roll_joint",
+      "torque": 36.13202133329067
+    },
+    {
+      "frame": 999.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.681268814353059,
+      "joint": "waist_roll_joint",
+      "torque": 34.04640795776041
+    },
+    {
+      "frame": 1000.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6407996736357702,
+      "joint": "waist_roll_joint",
+      "torque": 32.02396271216491
+    },
+    {
+      "frame": 1000.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6016558208772231,
+      "joint": "waist_roll_joint",
+      "torque": 30.067748730285302
+    },
+    {
+      "frame": 1001.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5638823120021427,
+      "joint": "waist_roll_joint",
+      "torque": 28.180017681890956
+    },
+    {
+      "frame": 1001.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5275107006502423,
+      "joint": "waist_roll_joint",
+      "torque": 26.362346460078406
+    },
+    {
+      "frame": 1002.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5418730239685806,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 27.0801035459972
+    },
+    {
+      "frame": 1002.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5824841371574979,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 29.1096438656457
+    },
+    {
+      "frame": 1002.625,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5908742428681826,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 29.528939385734883
+    },
+    {
+      "frame": 1002.75,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.5985126000444908,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 29.910666273965674
+    },
+    {
+      "frame": 1002.875,
+      "wrench_violation": 2.034852574103697e-05,
+      "effort_fraction": 0.6053760365842377,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 30.253666504566755
+    },
+    {
+      "frame": 1003.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6114414905345936,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 30.556787556480643
+    },
+    {
+      "frame": 1003.375,
+      "wrench_violation": 4.655610049280733e-06,
+      "effort_fraction": 0.6246211859721406,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.215442815861433
+    },
+    {
+      "frame": 1003.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6272666225073686,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.34764850267284
+    },
+    {
+      "frame": 1003.625,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6290007517009736,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.434311606477177
+    },
+    {
+      "frame": 1003.75,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6298013755614027,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.474322782680463
+    },
+    {
+      "frame": 1003.875,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6296464763197919,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.466581693317323
+    },
+    {
+      "frame": 1004.0,
+      "wrench_violation": 7.614555609935635e-06,
+      "effort_fraction": 0.6285142275465521,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 31.409997562602335
+    },
+    {
+      "frame": 1004.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.6764106219402474,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -16.90180989967158
+    },
+    {
+      "frame": 1005.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7309174107622239,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -18.26379824377534
+    },
+    {
+      "frame": 1005.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7830168356171552,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -19.565632582589227
+    },
+    {
+      "frame": 1006.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8324897829349182,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -20.801837815946968
+    },
+    {
+      "frame": 1006.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.879122822249144,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -21.967080850233
+    },
+    {
+      "frame": 1007.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.922711416342147,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -23.056250811876456
+    },
+    {
+      "frame": 1007.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9630636738902674,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -24.064552816573784
+    },
+    {
+      "frame": 1008.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 1.000004740134409,
+      "joint": "left_shoulder_roll_joint",
+      "torque": -24.987617681165474
+    },
+    {
+      "frame": 1008.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9825096416632411,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -24.550458921464866
+    },
+    {
+      "frame": 1008.625,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9784317383101568,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -24.44856231454087
+    },
+    {
+      "frame": 1008.75,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9744245018231741,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -24.348431495879666
+    },
+    {
+      "frame": 1008.875,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.970464801706608,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -24.249488492237983
+    },
+    {
+      "frame": 1009.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9665297939337426,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -24.15116248851568
+    },
+    {
+      "frame": 1009.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.950590210673262,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -23.75287216395536
+    },
+    {
+      "frame": 1010.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9332972836736915,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -23.320765163747048
+    },
+    {
+      "frame": 1010.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.913341280521117,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -22.822114550197313
+    },
+    {
+      "frame": 1011.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8895035408103583,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -22.226469047361483
+    },
+    {
+      "frame": 1011.5,
+      "wrench_violation": 2.5905727323856202e-06,
+      "effort_fraction": 0.8606637251217919,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": -21.505834174846463
+    },
+    {
+      "frame": 1012.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9062820550437216,
+      "joint": "right_hip_roll_joint",
+      "torque": -125.91021561871763
+    },
+    {
+      "frame": 1012.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9541822826931186,
+      "joint": "right_hip_roll_joint",
+      "torque": -132.5650180148991
+    },
+    {
+      "frame": 1012.99999,
+      "wrench_violation": 4.9902506022960185e-05,
+      "effort_fraction": 1.0000058248037331,
+      "joint": "right_hip_roll_joint",
+      "torque": -138.93130545869332
+    },
+    {
+      "frame": 1013.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9637753811591391,
+      "joint": "right_hip_roll_joint",
+      "torque": -133.89779194503055
+    },
+    {
+      "frame": 1013.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.999300112650255,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 49.94002160488553
+    },
+    {
+      "frame": 1014.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.999819498810083,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 49.965977927430416
+    },
+    {
+      "frame": 1014.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9995929687582257,
+      "joint": "right_ankle_pitch_joint",
+      "torque": 49.9546570884345
+    },
+    {
+      "frame": 1015.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9742914601344969,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.345107116785346
+    },
+    {
+      "frame": 1015.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.975504669911736,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.375422195168504
+    },
+    {
+      "frame": 1016.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.977038471485857,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.413748060831654
+    },
+    {
+      "frame": 1016.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9788768026894402,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.459683360378655
+    },
+    {
+      "frame": 1017.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9810089416160537,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.512960180180716
+    },
+    {
+      "frame": 1017.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9834296619991307,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.573447928905992
+    },
+    {
+      "frame": 1018.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9861389582930453,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.641146467983152
+    },
+    {
+      "frame": 1018.125,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.986861815534729,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.659208862758227
+    },
+    {
+      "frame": 1018.25,
+      "wrench_violation": 7.306996396838628e-10,
+      "effort_fraction": 0.9876030817233207,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.67773125108012
+    },
+    {
+      "frame": 1018.375,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9883628770465408,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.696716636139406
+    },
+    {
+      "frame": 1018.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9891413321255192,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.716168281831465
+    },
+    {
+      "frame": 1019.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9924446334490697,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.798709521133464
+    },
+    {
+      "frame": 1019.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.996058451663657,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.88900980101334
+    },
+    {
+      "frame": 1020.0,
+      "wrench_violation": 1.0515720369128068e-10,
+      "effort_fraction": 0.9999920541418424,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 24.987300689935896
+    },
+    {
+      "frame": 1020.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9141902914294258,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 22.843329209620936
+    },
+    {
+      "frame": 1021.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8279362366575942,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 20.688056081816416
+    },
+    {
+      "frame": 1021.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7408133573549547,
+      "joint": "right_shoulder_pitch_joint",
+      "torque": 18.51107320171119
+    },
+    {
+      "frame": 1022.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.7817823805305261,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 19.534786637053898
+    },
+    {
+      "frame": 1022.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8427229146460612,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 21.057538186771893
+    },
+    {
+      "frame": 1023.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8929373178644476,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.312270548880775
+    },
+    {
+      "frame": 1023.125,
+      "wrench_violation": 8.40290165183763e-09,
+      "effort_fraction": 0.9038597313097023,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.58519434651094
+    },
+    {
+      "frame": 1023.25,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9141434716973524,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.842159301601473
+    },
+    {
+      "frame": 1023.375,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9237960453816285,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 23.083352979172993
+    },
+    {
+      "frame": 1023.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.932825285680873,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 23.3089711142616
+    },
+    {
+      "frame": 1024.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9628763735686273,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.0598726499297
+    },
+    {
+      "frame": 1024.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9836579910089017,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.579153299863442
+    },
+    {
+      "frame": 1025.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9958039794663842,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.882651177178133
+    },
+    {
+      "frame": 1025.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 1.0000038605780353,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.98759570325126
+    },
+    {
+      "frame": 1025.625,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.999897540809554,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.984939038117446
+    },
+    {
+      "frame": 1026.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9969928681687273,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.91235853272088
+    },
+    {
+      "frame": 1026.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.993950520554793,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.836337874038826
+    },
+    {
+      "frame": 1027.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9869198708960245,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.660659521054306
+    },
+    {
+      "frame": 1027.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9766381537623887,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.40374512202191
+    },
+    {
+      "frame": 1028.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9638144317765669,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 24.08331237868491
+    },
+    {
+      "frame": 1028.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9491302296275361,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 23.716390888689162
+    },
+    {
+      "frame": 1029.0,
+      "wrench_violation": 2.832142162794522e-05,
+      "effort_fraction": 0.9332405786526364,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 23.319348247076697
+    },
+    {
+      "frame": 1029.5,
+      "wrench_violation": 1.888671263081381e-06,
+      "effort_fraction": 0.9167754897111151,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.907926849712297
+    },
+    {
+      "frame": 1030.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9003418737813935,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.497291884206234
+    },
+    {
+      "frame": 1030.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8845259302902325,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 22.102091008287456
+    },
+    {
+      "frame": 1031.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8698960228646087,
+      "joint": "left_shoulder_pitch_joint",
+      "torque": 21.736526207651412
+    },
+    {
+      "frame": 1031.5,
+      "wrench_violation": 3.5932860672660116e-05,
+      "effort_fraction": 0.9318863810490889,
+      "joint": "waist_roll_joint",
+      "torque": -46.57102047098245
+    },
+    {
+      "frame": 1032.0,
+      "wrench_violation": 4.316755237654358e-05,
+      "effort_fraction": 1.00000528790147,
+      "joint": "waist_roll_joint",
+      "torque": -49.97526273698899
+    },
+    {
+      "frame": 1032.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9776486653496733,
+      "joint": "waist_roll_joint",
+      "torque": -48.85799055907645
+    },
+    {
+      "frame": 1033.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.952578014569468,
+      "joint": "waist_roll_joint",
+      "torque": -47.60508482459046
+    },
+    {
+      "frame": 1033.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.9250284352451736,
+      "joint": "waist_roll_joint",
+      "torque": -46.22829463989618
+    },
+    {
+      "frame": 1034.0,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8952201637305213,
+      "joint": "waist_roll_joint",
+      "torque": -44.73862631643524
+    },
+    {
+      "frame": 1034.5,
+      "wrench_violation": 0.0,
+      "effort_fraction": 0.8633593988254372,
+      "joint": "waist_roll_joint",
+      "torque": -43.14638463891933
+    },
+    {
+      "frame": 1035.0,
+      "wrench_violation": 3.566859275735924e-05,
+      "effort_fraction": 0.8296390144265906,
+      "joint": "waist_roll_joint",
+      "torque": -41.46120848004019
+    }
+  ],
+  "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz",
+  "search_parameters": {
+    "name": "step13_whole_body_dense",
+    "initial_fit": "acc_data/g1_full_tracking_20261106/step13_whole_body_proximal.diagnostic.npz",
+    "iterations": 8,
+    "effort_fraction": 1.0,
+    "trust": 0.005,
+    "parent": "acc_data/g1_full_tracking_20261106/step13_leg_smooth5_clearance_audit.npz"
+  },
+  "audit_padding": {
+    "wrench_normalized": 0.0005,
+    "effort_fraction": 0.9995,
+    "collision_m": 0.0002
+  },
+  "scope": "Offline nominal full-sole dynamics with original sphere and added convex wrist/body distances (20 mm), source contact labels, fixed root orientation, preserved foot paths; no physical tracking certification.",
+  "iterations": [
+    {
+      "minimum_collision_distance_m": 0.02020016498863697,
+      "peak_collision_slack": 3.755199957469284e-21,
+      "iteration": 0,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 2.392096937198218e-14,
+        "cone_residual": 0.0,
+        "iterations": 39
+      },
+      "peak_linear_slack": 2.847101371519516e-19,
+      "peak_exact_violation": 0.0002639283589144499,
+      "foot_error": [
+        0.0008639661920253454,
+        0.0085147325233155
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "minimum_collision_distance_m": 0.020199986174702644,
+      "peak_collision_slack": 3.799960773043141e-24,
+      "iteration": 1,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 4.961239752354629e-13,
+        "cone_residual": 0.0,
+        "iterations": 38
+      },
+      "peak_linear_slack": 3.1521194596153644e-16,
+      "peak_exact_violation": 6.017919674761131e-05,
+      "foot_error": [
+        0.0008639497343919918,
+        0.008538591353984316
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    },
+    {
+      "minimum_collision_distance_m": 0.020200226455926895,
+      "peak_collision_slack": 1.2354305669815293e-25,
+      "iteration": 2,
+      "solver": {
+        "status": "Solved",
+        "linear_residual": 9.072603779358701e-15,
+        "cone_residual": 0.0,
+        "iterations": 39
+      },
+      "peak_linear_slack": 3.3305458548791534e-18,
+      "peak_exact_violation": 4.9902506022960185e-05,
+      "foot_error": [
+        0.0008639612706651419,
+        0.008550146625451427
+      ],
+      "peak_raw_joint_rmse": 0.14258060971010253
+    }
+  ],
+  "worst_wrench": {
+    "frame": 1012.99999,
+    "wrench_violation": 4.9902506022960185e-05,
+    "effort_fraction": 1.0000058248037331,
+    "joint": "right_hip_roll_joint",
+    "torque": -138.93130545869332
+  },
+  "worst_effort": {
+    "frame": 1012.99999,
+    "wrench_violation": 4.9902506022960185e-05,
+    "effort_fraction": 1.0000058248037331,
+    "joint": "right_hip_roll_joint",
+    "torque": -138.93130545869332
+  },
+  "physical_tracking_certified": false,
+  "minimum_continuous_joint_margin": 0.06168816649598349,
+  "maximum_continuous_joint_velocity_fraction": 0.5151240599003526,
+  "joint_minimum": [
+    -0.651450918018621,
+    -0.11308698842591829,
+    0.0667573928821787,
+    0.23115404214816468,
+    -0.4184246397449999,
+    -0.1896397041767705,
+    -0.2817696265606477,
+    -0.23155673726285544,
+    -0.24041783170745384,
+    0.33454749783362636,
+    -0.5999303820272645,
+    0.003685416942266027,
+    0.04983044208837601,
+    -0.21800038605678715,
+    0.05268027447164058,
+    0.06326318922146787,
+    0.04796659052670102,
+    -0.24851312867996503,
+    1.101508519813136,
+    -0.1205336538687391,
+    -0.33069666356508665,
+    -0.20394052039753632,
+    -0.49372582763229,
+    -0.41675925853499257,
+    0.16511023605493533,
+    0.6856028381284772,
+    -0.022344161351131226,
+    -0.4038448523292623,
+    0.025206718997792848
+  ],
+  "joint_maximum": [
+    -0.04755185806241392,
+    0.24513043538732446,
+    0.32940327839696587,
+    0.7733143574519159,
+    -0.06668462071127643,
+    0.10717480891250905,
+    0.48952909479434475,
+    0.1437798980289659,
+    0.14797395809262742,
+    1.4015864212369562,
+    -0.11858632713475045,
+    0.20011179483252298,
+    0.3873081763086714,
+    0.23587401519950585,
+    0.25271824579083346,
+    0.5729689558472658,
+    0.5306457990914691,
+    0.004231234236670383,
+    1.4107939827528364,
+    -0.024046209951241806,
+    -0.18761548339232417,
+    -0.05954936794086267,
+    -0.012233146656268314,
+    -0.12051836573482122,
+    0.2708618336575091,
+    1.149300875645794,
+    0.05864138763426606,
+    -0.2878904726044493,
+    0.16279479851967407
+  ],
+  "joint_maximum_speed": [
+    5.550963362131929,
+    2.6620852007977756,
+    1.5916698704079655,
+    5.833598022729962,
+    2.4895443754140225,
+    2.4100410681147366,
+    5.868917422206505,
+    2.736104374755647,
+    4.190727715713716,
+    10.302481198007051,
+    7.266221201479301,
+    2.868479164280701,
+    6.042169083889532,
+    4.36984281051054,
+    2.3242843266097313,
+    6.028745818054857,
+    6.8514356013533,
+    1.8902098450592484,
+    3.1439237769368056,
+    0.84556508963204,
+    1.7743510102631905,
+    1.7759476590697805,
+    3.380043395783784,
+    4.769123048191285,
+    1.9835457284508524,
+    3.338400160621104,
+    0.9746966437361437,
+    0.9478413801899683,
+    1.1975442970769041
+  ],
+  "preflight_passed": true
+}

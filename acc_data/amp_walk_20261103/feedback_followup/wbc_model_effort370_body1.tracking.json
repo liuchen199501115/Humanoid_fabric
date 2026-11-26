@@ -1,0 +1,33 @@
+{
+  "source_frame_count": 2000,
+  "first_source_frame": 0.0,
+  "last_source_frame": 842.1200000000001,
+  "full_source_covered": false,
+  "final_support_settled": false,
+  "simulation_completed": false,
+  "controller_valid": false,
+  "peak_joint_rmse": 0.20212316513061523,
+  "peak_root_position_error": 0.09133882075548172,
+  "peak_root_orientation_error": 0.2974370491275428,
+  "tolerances": {
+    "joint_rmse_rad": 0.2,
+    "root_position_m": 0.2,
+    "root_orientation_rad": 0.35
+  },
+  "pkl_fidelity_passed": false,
+  "full_clip_tracking_passed": false,
+  "full_tracking_passed": false,
+  "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+  "expected_landings": 29,
+  "measured_landings": 9,
+  "all_source_landings_verified": false,
+  "full_motion_tracking_passed": false,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 3.688,
+    "source_frame": 842.1200000000001,
+    "joint_rmse_rad": 0.20212316513061523,
+    "root_position_m": 0.09133882075548172,
+    "root_orientation_rad": 0.25552033928791246
+  }
+}

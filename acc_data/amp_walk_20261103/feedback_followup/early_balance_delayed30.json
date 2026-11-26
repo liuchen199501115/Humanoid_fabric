@@ -1,0 +1,11 @@
+{
+  "pelvis_y_shift": -0.03,
+  "pelvis_z_shift": -0.006,
+  "peak_position_residual": 9.947712499996611e-08,
+  "peak_orientation_residual": 1.0811057512447369e-07,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 0.0013210266113281022,
+  "initial_qva_preserved": true,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

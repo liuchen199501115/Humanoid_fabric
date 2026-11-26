@@ -1,0 +1,28 @@
+[
+  {
+    "name": "twelve_step11_short20_left20",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_step11_foot_short20_left20.npz"
+    ]
+  },
+  {
+    "name": "twelve_step11_short30",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_step11_foot_short30.npz"
+    ]
+  },
+  {
+    "name": "twelve_guard18_foot256_search8",
+    "parent": "twelve_guard_position18",
+    "options": [
+      "--late-foot-metric-end-scale",
+      "256",
+      "--foot-contact-search-acceleration",
+      "8"
+    ]
+  }
+]

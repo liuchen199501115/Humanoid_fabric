@@ -1,0 +1,36 @@
+[
+  {
+    "name": "twelve_pelvis930",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.65",
+      "--late-pelvis-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "twelve_pelvis940",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.7",
+      "--late-pelvis-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "twelve_rootxy930",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--root-position-task-late-start",
+      "4.65",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "1000"
+    ]
+  }
+]

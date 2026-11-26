@@ -1,0 +1,34 @@
+[
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 400.48232809695145,
+    "tube_violation": -0.15487397467731187,
+    "objective": NaN,
+    "numerical_velocity_trust_recovered": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 2.936710116453469,
+    "time": 3.7
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 402.0237918853592,
+    "tube_violation": -0.1548739747053647,
+    "objective": NaN,
+    "numerical_velocity_trust_recovered": true,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 2.7764995750039816,
+    "time": 3.8
+  }
+]

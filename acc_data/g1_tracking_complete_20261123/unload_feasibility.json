@@ -1,0 +1,14 @@
+[
+  {
+    "time": 3.6,
+    "minimum_right_normal_force": 100.0,
+    "feasible": true,
+    "scope": "Frozen diagnostic QP from root-guard ablation; no runtime LP or contact release."
+  },
+  {
+    "time": 3.7,
+    "minimum_right_normal_force": 0.0,
+    "feasible": true,
+    "scope": "Frozen diagnostic QP from root-guard ablation; no runtime LP or contact release."
+  }
+]

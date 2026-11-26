@@ -1,0 +1,20 @@
+[
+  {
+    "mode": "physical",
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "feasible": false,
+    "physical_tracking_certified": false
+  },
+  {
+    "mode": "minimum_friction_excess",
+    "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "feasible": false,
+    "physical_tracking_certified": false
+  },
+  {
+    "mode": "without_friction",
+    "status": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)",
+    "feasible": false,
+    "physical_tracking_certified": false
+  }
+]

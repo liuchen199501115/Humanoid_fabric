@@ -1,0 +1,12 @@
+{
+  "incorrect_landing_retains_previous_support": true,
+  "premature_loaded_collision_still_constrained": true,
+  "lost_support_never_claimed": true,
+  "correct_landing_allows_double_support_hold": true,
+  "completed_tracker_uses_source_plan": true,
+  "anticipation_survives_verified_landing_transition": true,
+  "anticipation_checks_actual_load_and_source_error": true,
+  "physical_tracking_certified": false,
+  "optional_hysteresis_survives_load_fluctuations": true,
+  "hysteresis_releases_on_support_loss_or_source_error": true
+}

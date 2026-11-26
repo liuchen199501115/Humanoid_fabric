@@ -1,0 +1,266 @@
+[
+  {
+    "time_s": 2.5,
+    "tasks": [
+      {
+        "name": "center_of_mass",
+        "cost": 1598.0260169876021,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "joint_posture",
+        "cost": 1389.8946980182984,
+        "active_rows": 29,
+        "weighted_rows": 29
+      },
+      {
+        "name": "feet_pose",
+        "cost": 363.0215439985922,
+        "active_rows": 6,
+        "weighted_rows": 6
+      },
+      {
+        "name": "body_orientation",
+        "cost": 18.744988615455497,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0,
+        "active_rows": 6,
+        "weighted_rows": 0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0,
+        "active_rows": 76,
+        "weighted_rows": 0
+      },
+      {
+        "name": "support_orientation_1",
+        "cost": 0.0,
+        "active_rows": 1,
+        "weighted_rows": 0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      }
+    ],
+    "metric_reconstruction_max_error": 4.383041812161537e-06
+  },
+  {
+    "time_s": 2.6,
+    "tasks": [
+      {
+        "name": "feet_pose",
+        "cost": 7951.9609332025375,
+        "active_rows": 6,
+        "weighted_rows": 6
+      },
+      {
+        "name": "joint_posture",
+        "cost": 6944.84482193642,
+        "active_rows": 29,
+        "weighted_rows": 29
+      },
+      {
+        "name": "center_of_mass",
+        "cost": 4243.736269996494,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "body_orientation",
+        "cost": 413.8790938218517,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0,
+        "active_rows": 6,
+        "weighted_rows": 0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0,
+        "active_rows": 95,
+        "weighted_rows": 0
+      },
+      {
+        "name": "support_orientation_0",
+        "cost": 0.0,
+        "active_rows": 1,
+        "weighted_rows": 0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0,
+        "active_rows": 1,
+        "weighted_rows": 0
+      }
+    ],
+    "metric_reconstruction_max_error": 3.5053625708769687e-06
+  },
+  {
+    "time_s": 2.9,
+    "tasks": [
+      {
+        "name": "center_of_mass",
+        "cost": 4192.763100399192,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "joint_posture",
+        "cost": 2198.6181904655623,
+        "active_rows": 29,
+        "weighted_rows": 29
+      },
+      {
+        "name": "feet_pose",
+        "cost": 1356.3106835828885,
+        "active_rows": 6,
+        "weighted_rows": 6
+      },
+      {
+        "name": "body_orientation",
+        "cost": 33.924258533173614,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0,
+        "active_rows": 6,
+        "weighted_rows": 0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0,
+        "active_rows": 126,
+        "weighted_rows": 0
+      },
+      {
+        "name": "support_orientation_0",
+        "cost": 0.0,
+        "active_rows": 1,
+        "weighted_rows": 0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0,
+        "active_rows": 2,
+        "weighted_rows": 0
+      }
+    ],
+    "metric_reconstruction_max_error": 2.8146984050181345e-06
+  },
+  {
+    "time_s": 3.0500000000000003,
+    "tasks": [
+      {
+        "name": "body_orientation",
+        "cost": 70099.60500186488,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "feet_pose",
+        "cost": 59932.10548504225,
+        "active_rows": 6,
+        "weighted_rows": 6
+      },
+      {
+        "name": "joint_posture",
+        "cost": 51790.05686141884,
+        "active_rows": 29,
+        "weighted_rows": 29
+      },
+      {
+        "name": "center_of_mass",
+        "cost": 8837.578822148971,
+        "active_rows": 3,
+        "weighted_rows": 3
+      },
+      {
+        "name": "centroidal_momentum",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "source_pelvis_orientation",
+        "cost": 0.0,
+        "active_rows": 3,
+        "weighted_rows": 0
+      },
+      {
+        "name": "hand_pose",
+        "cost": 0.0,
+        "active_rows": 6,
+        "weighted_rows": 0
+      },
+      {
+        "name": "collision",
+        "cost": 0.0,
+        "active_rows": 60,
+        "weighted_rows": 0
+      },
+      {
+        "name": "support_orientation_0",
+        "cost": 0.0,
+        "active_rows": 1,
+        "weighted_rows": 0
+      },
+      {
+        "name": "joint_limit_avoidance",
+        "cost": 0.0,
+        "active_rows": 2,
+        "weighted_rows": 0
+      }
+    ],
+    "metric_reconstruction_max_error": 2.8146984050181345e-06
+  }
+]

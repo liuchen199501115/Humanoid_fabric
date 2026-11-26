@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ten_floor3_fullroot_refine1",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_floor3_fast18_export_refine1.npz"
+    ]
+  },
+  {
+    "name": "ten_floor3_fullroot_refine1_xy18",
+    "parent": "ten_floor3_linear60_xy18_late",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_floor3_fast18_export_refine1.npz"
+    ]
+  }
+]

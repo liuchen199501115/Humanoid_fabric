@@ -1,0 +1,33 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_whole_body_fit.diagnostic.npz",
+  "candidate_sha256": "4e8c23dbe92d4a8923ffe0272a192616be2c017d4289fe469ebfb63462508efb",
+  "scope": "Offline original sphere pairs and added convex wrist/body pairs; not a simulation or all-link collision certificate.",
+  "sample_count": 201,
+  "worst_convex": {
+    "frame": 973.0,
+    "minimum_wrist_body_convex_distance_m": -0.04061112925410271,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.0803382396697998,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "worst_original_sphere": {
+    "frame": 1029.0,
+    "minimum_wrist_body_convex_distance_m": 0.015322059392929077,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.0766734927892685,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "physical_tracking_certified": false
+}

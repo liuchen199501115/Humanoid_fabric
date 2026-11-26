@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_commax3_pelvis03_816",
+    "parent": "ten_anchor_support1_commax3_816",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.08",
+      "--late-pelvis-metric-scale",
+      "0.3"
+    ]
+  },
+  {
+    "name": "ten_commax3_pelvis1_816",
+    "parent": "ten_anchor_support1_commax3_816",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.08",
+      "--late-pelvis-metric-scale",
+      "1.0"
+    ]
+  },
+  {
+    "name": "ten_commax3_pelvis1_836",
+    "parent": "ten_anchor_support1_commax3_816",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.18",
+      "--late-pelvis-metric-scale",
+      "1.0"
+    ]
+  }
+]

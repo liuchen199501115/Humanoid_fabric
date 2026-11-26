@@ -1,0 +1,64 @@
+[
+  {
+    "name": "ten_com_gain2",
+    "leg_rmse": 0.2581700384616852,
+    "upper_rmse": 0.15101449191570282,
+    "largest_errors": [
+      {
+        "joint": "left_hip_yaw_joint",
+        "error": -0.5587493777275085
+      },
+      {
+        "joint": "left_knee_joint",
+        "error": -0.5105154514312744
+      },
+      {
+        "joint": "waist_yaw_joint",
+        "error": -0.3526723086833954
+      },
+      {
+        "joint": "left_hip_pitch_joint",
+        "error": 0.30554184317588806
+      },
+      {
+        "joint": "left_hip_roll_joint",
+        "error": -0.2981227934360504
+      },
+      {
+        "joint": "left_shoulder_pitch_joint",
+        "error": -0.27902111411094666
+      }
+    ]
+  },
+  {
+    "name": "ten_com_gain125",
+    "leg_rmse": 0.2510240375995636,
+    "upper_rmse": 0.12704260647296906,
+    "largest_errors": [
+      {
+        "joint": "left_hip_roll_joint",
+        "error": -0.533589243888855
+      },
+      {
+        "joint": "left_hip_yaw_joint",
+        "error": -0.484112411737442
+      },
+      {
+        "joint": "right_knee_joint",
+        "error": 0.2811211347579956
+      },
+      {
+        "joint": "waist_yaw_joint",
+        "error": -0.24850663542747498
+      },
+      {
+        "joint": "left_knee_joint",
+        "error": -0.22524017095565796
+      },
+      {
+        "joint": "right_hip_pitch_joint",
+        "error": -0.21011023223400116
+      }
+    ]
+  }
+]

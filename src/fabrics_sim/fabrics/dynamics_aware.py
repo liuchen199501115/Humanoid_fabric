@@ -52,6 +52,9 @@ class DynamicsAwareTasks:
         self.collision_enabled = True
         self.momentum_enabled = True
         self.last_snapshot = None
+        self.cache_task_requests = True
+        self.priority_mode = 'none'
+        self.priority_joint_armature = None
         self.last_requests = None
         self.managed_walking = False
         # Opt-in for a dynamically checked full-body reference. Only feedback
@@ -59,7 +62,11 @@ class DynamicsAwareTasks:
         self.preserve_reference_acceleration = False
         self.source_pelvis_metric_scale = 0.0
         self.wrist_hip_barrier = False
+        self.collision_barrier_bandwidth = 8.0
         self.convex_wrist_geometry = None
+        self.hip_yaw_barrier_geometry = None
+        self.hip_yaw_barrier_bandwidth = 8.
+        self.hip_yaw_barrier_margin = .02
         self.stable_constraint_rows = False
         self.last_collision_constraints = None
         self.original_collision_pairs = len(self.config['collision']['pairs'])
@@ -128,6 +135,18 @@ class DynamicsAwareTasks:
     def barrier_pair_count(self):
         return (len(self.pairs) if self.convex_wrist_geometry is None else
                 self.original_collision_pairs+len(self.convex_wrist_geometry.pairs))
+
+    def enable_hip_yaw_barrier(self, bandwidth=8., margin=.02):
+        """Add the observed cross-hip mesh pair to the existing physical QP."""
+        import math
+        if not math.isfinite(bandwidth) or bandwidth <= 0 or not math.isfinite(margin) or margin < 0:
+            raise ValueError('Hip barrier needs positive bandwidth and nonnegative margin')
+        from fabrics_sim.reference.convex_collision import ConvexLinkCollision
+        self.hip_yaw_barrier_geometry = ConvexLinkCollision(
+            self.fabric.urdf_path, self.model.kinematics,
+            [('left_hip_yaw_link', 'right_hip_yaw_link')])
+        self.hip_yaw_barrier_bandwidth = bandwidth
+        self.hip_yaw_barrier_margin = margin
 
     def collision_geometry(self, snapshot):
         distance, jacobian = self._sphere_geometry(snapshot)
@@ -241,6 +260,10 @@ class DynamicsAwareTasks:
         limit = tensor(params["max_acceleration"])
         requests.append(self._request("center_of_mass", state["com_jac"], state["com_jac_bias"],
                                       self._limit_tracking(desired, acceleration, limit), tensor(params["metric"]) * params["toggle"], priority="high"))
+        # Carry the original feedback target across contact projection without
+        # retaining the task list. Use exactly the bias/metric of this leaf.
+        state["com_acc_desired"] = requests[-1].desired
+        state["com_acc_metric"] = requests[-1].metric
 
         params = self.config["momentum"]
         desired = self._limit_tracking(
@@ -308,14 +331,15 @@ class DynamicsAwareTasks:
                     self.config["managed_walking"]["swing_metric_scale"]
                     if self.managed_walking and name == "feet_pose" else 1.), active_rows, priority))
 
-        params = f.fabric_params["joint_posture_attractor"]
-        error, A = f.joint_posture_taskmap(q, None)
-        velocity, acceleration = self.references(f.fabrics_features["joint_posture"]["joint_posture_attractor"], error)
-        desired = acceleration - params["stiffness"] * error - params["damping"] * (v[:, 6:] - velocity)
-        requests.append(self._request("joint_posture", A, torch.zeros_like(error),
-            self._limit_tracking(desired, acceleration, params["max_acceleration"]),
-            params["metric"] * params["toggle"] * (
-                self.config["managed_walking"]["posture_metric_scale"] if self.managed_walking else 1.)))
+        if f.joint_posture_enabled:
+            params = f.fabric_params["joint_posture_attractor"]
+            error, A = f.joint_posture_taskmap(q, None)
+            velocity, acceleration = self.references(f.fabrics_features["joint_posture"]["joint_posture_attractor"], error)
+            desired = acceleration - params["stiffness"] * error - params["damping"] * (v[:, 6:] - velocity)
+            requests.append(self._request("joint_posture", A, torch.zeros_like(error),
+                self._limit_tracking(desired, acceleration, params["max_acceleration"]),
+                params["metric"] * params["toggle"] * (
+                    self.config["managed_walking"]["posture_metric_scale"] if self.managed_walking else 1.)))
 
         if self.collision_enabled:
             params = self.config["collision"]
@@ -329,7 +353,25 @@ class DynamicsAwareTasks:
                 from fabrics_sim.solver.collision_barrier import wrist_collision_barrier
                 self.last_collision_constraints = wrist_collision_barrier(
                     distance, A, bias, speed, self.original_collision_pairs,
-                    self.barrier_pair_count, safe, self.stable_constraint_rows)
+                    self.barrier_pair_count, safe, self.stable_constraint_rows, self.collision_barrier_bandwidth)
+            if self.hip_yaw_barrier_geometry is not None:
+                from fabrics_sim.solver.collision_barrier import wrist_collision_barrier
+                geometry = self.hip_yaw_barrier_geometry
+                hip_distance, hip_A = geometry.evaluate(state)
+                _, hip_plus = geometry.evaluate(plus)
+                _, hip_minus = geometry.evaluate(minus)
+                hip_bias = (((hip_plus-hip_minus)/(2*eps))@v[..., None]).squeeze(-1)
+                hip_speed = (hip_A@v[..., None]).squeeze(-1)
+                hip_C, hip_bound = wrist_collision_barrier(
+                    hip_distance, hip_A, hip_bias, hip_speed, 0, 1,
+                    self.hip_yaw_barrier_margin, True, self.hip_yaw_barrier_bandwidth)
+                if self.last_collision_constraints is None:
+                    self.last_collision_constraints = hip_C, hip_bound
+                else:
+                    old_C, old_bound = self.last_collision_constraints
+                    self.last_collision_constraints = (torch.cat((old_C, hip_C), 1),
+                                                       torch.cat((old_bound, hip_bound), 1))
+                state['hip_yaw_distance'] = hip_distance
             t = ((engage - distance) / (engage - safe)).clamp(0, 1)
             gate = t.square() * (3 - 2 * t)
             desired = (params["stiffness"] * ((distance - safe).clamp_min(0.005).pow(-3) - (engage - safe)**-3).clamp_min(0)
@@ -339,5 +381,41 @@ class DynamicsAwareTasks:
                     q.new_full((distance.shape[1]-self.barrier_pair_count,), params['metric']))) * gate,
                 distance < engage))
             state["collision_distance"] = distance
-        self.last_requests = requests
+        if self.priority_mode in ('paper', 'paper-tracking'):
+            from fabrics_sim.fabrics.priority import prioritize_requests
+
+            def jacobians(snapshot):
+                values = {'center_of_mass': snapshot['com_jac'],
+                          'centroidal_momentum': snapshot['momentum_matrix']}
+                body_link = self.config['body']['link'] if self.body_reference is None else self.body_reference[3]
+                values['body_orientation'] = snapshot['angular_jac'][:, self.model.kinematics.get_link_index(body_link)]
+                values['source_pelvis_orientation'] = snapshot['angular_jac'][:, self.model.kinematics.get_link_index('pelvis')]
+                for name, taskmap in (('feet_pose', f.feet_pose_taskmap), ('hand_pose', f.hand_pose_taskmap)):
+                    indices = [self.model.kinematics.get_link_index(taskmap.frame_groups[n][0]) for n in taskmap.end_effector_order]
+                    values[name] = torch.cat((snapshot['origin_jac'][:, indices], snapshot['angular_jac'][:, indices]), 2).flatten(1, 2)
+                if self.collision_enabled:
+                    values['collision'] = self.collision_geometry(snapshot)[1]
+                for request in requests:
+                    if request.name == 'joint_posture':
+                        values[request.name] = request.A
+                return values
+
+            samples = (state, plus, minus)
+            masses = [self.model.mass_matrix(s) for s in samples]
+            if self.priority_joint_armature is not None:
+                armature = torch.as_tensor(self.priority_joint_armature, device=q.device, dtype=q.dtype)
+                if armature.shape != (q.shape[0], 29) or not torch.isfinite(armature).all() or (armature < 0).any():
+                    raise ValueError('Priority armature must be finite nonnegative [B,29] in Fabric order')
+                for mass in masses:
+                    mass[:, 6:, 6:] += torch.diag_embed(armature)
+            requests, diagnostics = prioritize_requests(requests,
+                masses,
+                tuple(jacobians(s) for s in samples), v, eps,
+                physical_targets=self.priority_mode == 'paper-tracking')
+            state.update(diagnostics)
+        elif self.priority_mode != 'none':
+            raise ValueError('Unknown Fabric priority mode')
+        # Acceleration-only control consumes these leaves locally, without
+        # retaining a second task-level interface to the downstream QP.
+        self.last_requests = requests if self.cache_task_requests else None
         return requests

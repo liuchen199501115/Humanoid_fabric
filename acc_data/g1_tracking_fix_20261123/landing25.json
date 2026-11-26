@@ -1,0 +1,21 @@
+{
+  "start_frame": 373,
+  "landing_frame": 450,
+  "release_frame": 572,
+  "end_frame": 640,
+  "side": 1,
+  "offset_m": [
+    0.0,
+    -0.025,
+    0.0
+  ],
+  "peak_position_residual_m": 1.9888609752067958e-07,
+  "peak_orientation_residual_rad": 2.2209467593340851e-07,
+  "parent": "acc_data/amp_walk_20261103/feedback_followup/wbc_convex_catch15_25_clear35.npz",
+  "parent_sha256": "793eb22a5a5d03e9637a515d4c114eb06d7cafaf43befbae00ece603c7485a43",
+  "original_source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "root_unchanged": true,
+  "original_pkl_retained_for_audit": true,
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "Original prepared reference inverse dynamics, prescribed kinematics and source contacts; single support only, feasibility not guaranteed",
+  "windows": [
+    {
+      "first_frame": 660,
+      "last_frame": 740,
+      "worst_single_support_frame": 678,
+      "joint": "right_ankle_roll_joint",
+      "required_torque_nm": -65.91891250055271,
+      "budget_nm": 40.0,
+      "ratio": 1.6479728125138178,
+      "required_force_N": [
+        -22.58079064142136,
+        -59.11803644503742,
+        297.7514578487289
+      ]
+    },
+    {
+      "first_frame": 740,
+      "last_frame": 780,
+      "worst_single_support_frame": 758,
+      "joint": "right_ankle_pitch_joint",
+      "required_torque_nm": 60.06486296908126,
+      "budget_nm": 40.0,
+      "ratio": 1.5016215742270316,
+      "required_force_N": [
+        -70.94790483590234,
+        -16.097803728497784,
+        307.1831876627576
+      ]
+    },
+    {
+      "first_frame": 780,
+      "last_frame": 802,
+      "worst_single_support_frame": 800,
+      "joint": "left_ankle_roll_joint",
+      "required_torque_nm": 113.89328502624788,
+      "budget_nm": 40.0,
+      "ratio": 2.847332125656197,
+      "required_force_N": [
+        14.479122508477761,
+        180.72675087674793,
+        224.27278301781053
+      ]
+    },
+    {
+      "first_frame": 802,
+      "last_frame": 884,
+      "worst_single_support_frame": 882,
+      "joint": "right_ankle_pitch_joint",
+      "required_torque_nm": 166.15293099507593,
+      "budget_nm": 40.0,
+      "ratio": 4.153823274876898,
+      "required_force_N": [
+        -103.61826735799347,
+        50.9971530020097,
+        408.72434612855784
+      ]
+    }
+  ]
+}

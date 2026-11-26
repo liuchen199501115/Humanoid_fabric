@@ -1,0 +1,12 @@
+{
+  "method": "C2 reduction of right swing height over source780-802; endpoints and all other coordinates retained",
+  "height_reduction_m": 0.015,
+  "maximum_foot_position_residual_m": 6.12871401469233e-08,
+  "maximum_foot_rotation_residual_rad": 7.697201596664259e-08,
+  "prepared_native_peak_clearance_m": 0.042842078459630915,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "parent_sha256": "5bd3e6d431bbfd038b4e541dacc75a73652c405500e5d9d1e2068f8ecc24b380",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

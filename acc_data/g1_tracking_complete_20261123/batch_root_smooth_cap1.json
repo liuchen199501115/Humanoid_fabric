@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_floor3_smooth16_stop_cap1",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth16_source_root1000_cap1",
+    "parent": "ten_floor3_smooth16_source_root1000",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth8_pelvis3_cap1",
+    "parent": "ten_floor3_stop816_root_smooth8_pelvis3",
+    "options": [
+      "--qp-late-equilibration-start",
+      "3.806",
+      "--qp-late-equilibration-cap",
+      "1"
+    ]
+  }
+]

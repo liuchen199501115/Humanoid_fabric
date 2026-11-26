@@ -1,0 +1,86 @@
+[
+  {
+    "time": 1.34,
+    "case": "original",
+    "accepted": true,
+    "angular_acceleration": [
+      -4.782200497023689,
+      89.18523421274244,
+      -47.31054224085986
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  },
+  {
+    "time": 1.34,
+    "case": "without_joint_tube",
+    "accepted": true,
+    "angular_acceleration": [
+      88.7118021428922,
+      -45.44146194086729,
+      -42.75569039389351
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  },
+  {
+    "time": 1.34,
+    "case": "without_all_tubes",
+    "accepted": true,
+    "angular_acceleration": [
+      87.54775788541434,
+      -45.45847746196216,
+      -42.31093645808903
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  },
+  {
+    "time": 1.354,
+    "case": "original",
+    "accepted": true,
+    "angular_acceleration": [
+      413.8484511822106,
+      762.1823175036565,
+      -922.3795748173744
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  },
+  {
+    "time": 1.354,
+    "case": "without_joint_tube",
+    "accepted": true,
+    "angular_acceleration": [
+      293.65270815023206,
+      -256.18037216287115,
+      -106.67590504022267
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  },
+  {
+    "time": 1.354,
+    "case": "without_all_tubes",
+    "accepted": true,
+    "angular_acceleration": [
+      107.85423223676864,
+      -127.18928990640774,
+      31.22508466396962
+    ],
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "matching_latest_state": true
+  }
+]

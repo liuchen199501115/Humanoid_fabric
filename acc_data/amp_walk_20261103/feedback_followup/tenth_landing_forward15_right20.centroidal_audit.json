@@ -1,0 +1,18 @@
+{
+  "name": "tenth_landing_forward15_right20",
+  "source_frames": [
+    740,
+    920
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    6.960943855160122,
+    10.497558041237602,
+    12.174030071837493
+  ],
+  "minimum_reference_normal_force": -78.81946236468464,
+  "maximum_reference_normal_force": 907.207457271852,
+  "negative_force_samples": 15,
+  "peak_momentum_rate": 115.32045145805769,
+  "physical_tracking_certified": false
+}

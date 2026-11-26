@@ -1,0 +1,15 @@
+{
+  "method": "True tenth touchdown advance with phase stopping and pose rejoining",
+  "advance_frames": 6,
+  "target_touchdown_frame": 796,
+  "original_touchdown_frame": 802,
+  "rejoin_frame": 822,
+  "maximum_foot_position_residual_m": 2.692701610964814e-07,
+  "maximum_foot_rotation_residual_rad": 2.243929275383675e-07,
+  "maximum_foot_target_change_m": 0.20143263560572042,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "parent_sha256": "0a469e316205460e84ea5c3292632f03ff2fc80414a1faa9aa7a0acc550f4e67",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

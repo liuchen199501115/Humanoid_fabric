@@ -1,0 +1,14 @@
+{
+  "static_com_acceleration": [
+    0.0,
+    -2.2229160893330048e-35,
+    0.0
+  ],
+  "static_angular_momentum_rate": [
+    4.965165910583137e-34,
+    0.0,
+    0.0
+  ],
+  "constraint_residual": 4.336808689942018e-19,
+  "physical_tracking_certified": false
+}

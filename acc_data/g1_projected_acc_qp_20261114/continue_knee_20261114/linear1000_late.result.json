@@ -1,0 +1,203 @@
+{
+  "name": "linear1000_late",
+  "options": [
+    "--qp-base-linear-acceleration-weight",
+    "1000",
+    "--qp-base-linear-weight-start",
+    ".7",
+    "--qp-base-linear-weight-ramp",
+    ".2"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "tracking_evaluated": true,
+  "steps": {
+    "scope": "continuous source steps, same-frame original foot-link targets",
+    "landing_goal_policy": "source_pose",
+    "expected_steps": 29,
+    "measured_steps": 3,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 35.199999999999996,
+        "time": 0.176,
+        "landing_error_m": 0.012318086883794273,
+        "goal": [
+          1.578912377357483,
+          0.1798873394727707,
+          0.039157819002866745
+        ],
+        "measured_load_n": 522.4107666015625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 82.4,
+        "time": 0.41200000000000003,
+        "landing_error_m": 0.03386797581257624,
+        "goal": [
+          2.0720441341400146,
+          -0.09183526784181595,
+          0.04734122008085251
+        ],
+        "measured_load_n": 315.8450012207031,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      },
+      {
+        "step": 3,
+        "swing": "left",
+        "source_frame": 187.6042526045385,
+        "time": 0.9380000000000001,
+        "landing_error_m": 0.022537293593427463,
+        "goal": [
+          2.4583489894866943,
+          0.10222718864679337,
+          0.039629850536584854
+        ],
+        "measured_load_n": 454.72308349609375,
+        "source_contact_onset_goal": [
+          2.405056953430176,
+          0.1028435006737709,
+          0.04537191241979599
+        ]
+      }
+    ],
+    "continuous": true,
+    "initial_partial_step": true,
+    "measured_steps_complete": false,
+    "full_pkl_tracking": false,
+    "next_step_diagnostics": {
+      "step": 4,
+      "swing": "right",
+      "missing_evidence": "loaded_landing",
+      "landing_window_expired": false,
+      "airborne_verified": true,
+      "peak_unloaded_clearance_m": 0.09889018717587406,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    },
+    "fixed_contact_onset_audit": {
+      "measured_steps": 1,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 35.199999999999996,
+          "time": 0.176,
+          "landing_error_m": 0.026573577122984558,
+          "goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ],
+          "measured_load_n": 522.4107666015625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        }
+      ],
+      "next_step_diagnostics": {
+        "step": 2,
+        "swing": "right",
+        "missing_evidence": "continuous_landing_hold",
+        "landing_window_expired": true,
+        "airborne_verified": true,
+        "peak_unloaded_clearance_m": 0.03316034849398963,
+        "best_loaded_landing_error_m": 0.03626301851423212,
+        "longest_verified_landing_hold_s": 0.008000000000000007,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      }
+    },
+    "pkl_fidelity": {
+      "source_frame_count": 2000,
+      "first_source_frame": 0.0,
+      "last_source_frame": 218.52669722515378,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.20015236735343933,
+      "peak_root_position_error": 0.09512285143136978,
+      "peak_root_orientation_error": 0.18983296048593643,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_clip_tracking_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+    },
+    "last_time_s": 1.086,
+    "last_source_frame": 218.52669722515378,
+    "controller_valid": false,
+    "controller_validation_available": true,
+    "stable_final_support": false,
+    "stopped_at_tracking_steps": false,
+    "ground_support_evidence_available": true,
+    "native_clearance_geometry_available": true,
+    "measured_mode_available": true,
+    "bounded_source_covered": false,
+    "pkl_fidelity_available": true,
+    "pkl_fidelity_passed": false,
+    "steps_tracking_passed": false
+  },
+  "tracking": {
+    "source_frame_count": 2000,
+    "first_source_frame": 0.0,
+    "last_source_frame": 218.52669722515378,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.20015236735343933,
+    "peak_root_position_error": 0.09512285143136978,
+    "peak_root_orientation_error": 0.18983296048593643,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_clip_tracking_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+    "expected_landings": 29,
+    "measured_landings": 3,
+    "all_source_landings_verified": false,
+    "full_motion_tracking_passed": false,
+    "first_fidelity_exceeded": {
+      "time_s": 1.086,
+      "source_frame": 218.52669722515378,
+      "joint_rmse_rad": 0.20015236735343933,
+      "root_position_m": 0.09512285143136978,
+      "root_orientation_rad": 0.1186182078283236
+    },
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 1.086,
+      "source_frame": 218.52669722515378,
+      "joint_rmse_rad": 0.20015236735343933,
+      "root_position_m": 0.09512285143136978,
+      "root_orientation_rad": 0.1186182078283236
+    }
+  }
+}

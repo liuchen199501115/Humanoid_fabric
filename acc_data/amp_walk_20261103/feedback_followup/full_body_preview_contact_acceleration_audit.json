@@ -1,0 +1,12 @@
+[
+  {
+    "file": "fixed_clock120_body10_full_body_preview42_guarded24.full_body_preview.first_plan.npz",
+    "worst": {
+      "acceleration": 107.201948138869,
+      "stage": 19,
+      "frame": 954.2,
+      "foot": 0,
+      "point": 10
+    }
+  }
+]

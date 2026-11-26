@@ -1,0 +1,50 @@
+[
+  {
+    "name": "eight_source_root_xyz1000_660",
+    "parent": "ten_floor3_smooth16_source_root1000_cap1",
+    "options": [
+      "--root-position-task-start",
+      "3.3",
+      "--root-position-task-ramp",
+      ".2",
+      "--root-position-task-weight",
+      "1000",
+      "--root-position-task-axes",
+      "xyz",
+      "--qp-late-equilibration-start",
+      "3.154"
+    ]
+  },
+  {
+    "name": "eight_source_root_xy1000_660",
+    "parent": "ten_floor3_smooth16_source_root1000_cap1",
+    "options": [
+      "--root-position-task-start",
+      "3.3",
+      "--root-position-task-ramp",
+      ".2",
+      "--root-position-task-weight",
+      "1000",
+      "--root-position-task-axes",
+      "xy",
+      "--qp-late-equilibration-start",
+      "3.154"
+    ]
+  },
+  {
+    "name": "eight_source_root_xy300_660",
+    "parent": "ten_floor3_smooth16_source_root1000_cap1",
+    "options": [
+      "--root-position-task-start",
+      "3.3",
+      "--root-position-task-ramp",
+      ".2",
+      "--root-position-task-weight",
+      "300",
+      "--root-position-task-axes",
+      "xy",
+      "--qp-late-equilibration-start",
+      "3.154"
+    ]
+  }
+]

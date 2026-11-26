@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ten_support_y20_position_rate2",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--late-position-tube-start",
+      "4.08",
+      "--late-position-tube-bandwidth",
+      "2"
+    ]
+  },
+  {
+    "name": "ten_support_y20_position_rate5",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--late-position-tube-start",
+      "4.08",
+      "--late-position-tube-bandwidth",
+      "5"
+    ]
+  }
+]

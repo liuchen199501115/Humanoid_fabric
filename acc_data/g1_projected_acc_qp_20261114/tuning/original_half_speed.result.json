@@ -1,0 +1,32 @@
+{
+  "name": "original_half_speed",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--swing-midpoint-clearance",
+    "0",
+    "--smooth-stride",
+    "0",
+    "--motion-speed",
+    ".5",
+    "--clock-final-speed",
+    "1",
+    "--duration",
+    "24"
+  ],
+  "measured_steps": 1,
+  "last_time_s": 0.71,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 0.71,
+    "source_frame": 71.0,
+    "joint_rmse_rad": 0.1697167158126831,
+    "root_position_m": 0.2002229392528534,
+    "root_orientation_rad": 0.2678222044003383
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.1697167158126831
+}

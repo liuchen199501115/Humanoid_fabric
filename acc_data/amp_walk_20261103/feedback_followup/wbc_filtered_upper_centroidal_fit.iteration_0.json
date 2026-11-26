@@ -1,0 +1,20 @@
+{
+  "preflight_passed": false,
+  "physical_tracking_certified": false,
+  "planning_iteration": 0,
+  "sample_frame_stride": 0.5,
+  "minimum_joint_margin": 0.013128310441970825,
+  "maximum_joint_velocity_fraction": 0.7286809682846069,
+  "minimum_native_sole_clearance": -0.0015596551841809553,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "peak_foot_position_change": 0.0014441739320094312,
+  "peak_foot_orientation_change": 0.0019522105878960166,
+  "nonlinear_normal_force_range": [
+    117.00703222385498,
+    875.3641284007549
+  ],
+  "nonlinear_friction_l1_required": 0.4486758050485278,
+  "nonlinear_cop_violation": 0.39445336948941956,
+  "requires_nonlinear_dynamic_audit": false,
+  "requires_native_body_collision_audit": true
+}

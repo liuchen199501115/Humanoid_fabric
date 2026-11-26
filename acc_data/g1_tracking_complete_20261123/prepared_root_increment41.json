@@ -1,0 +1,13 @@
+{
+  "hold_end_source_s": 4.1,
+  "peak_foot_position_error_m": 5.049003414152587e-07,
+  "peak_foot_rotation_error_rad": 7.046661945485216e-07,
+  "peak_root_rotation_change_rad": 0.08303808220805348,
+  "worst_frame": 620,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.0659293681383133,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "6039a0861e25259f092c411e2846d4da848f13b2b3cea68da4832766c3ab4f41",
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

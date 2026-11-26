@@ -1,0 +1,6 @@
+{
+  "no_third_transition_exactly_preserved": true,
+  "peak_phase_derivative_error": 1.9638946024969073e-09,
+  "peak_rate_derivative_error": 7.086886190735275e-10,
+  "physical_tracking_certified": false
+}

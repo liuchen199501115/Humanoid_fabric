@@ -1,0 +1,16 @@
+{
+  "saved_status": [
+    "DAQP -1; rejected"
+  ],
+  "linear_feasibility": {
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "prefix_equal": {
+    "history_time": true,
+    "history_q": true,
+    "history_qd": true,
+    "history_qdd_qp": true,
+    "servo_torque": true
+  }
+}

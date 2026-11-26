@@ -1,0 +1,17 @@
+{
+  "flow": "Fabric -> contact projection -> single QP -> joint effort",
+  "source_sha256": {
+    "examples/test_g1.py": "1abccb636c6394925e64e7e30b958622321ec1c59bc29941fcf0c62662df34dc",
+    "examples/run_amp_full_motion.sh": "78247c1868b63906eab7f6cd0340da9c7c76f84f21cf818ce799deba7c9b7763",
+    "src/fabrics_sim/fabrics/dynamics_aware.py": "5c1816de51c2097cef6a55a09a3ff3f8a42ac3328e6b50161ea2ba6984df5c0c",
+    "src/fabrics_sim/solver/daqp_backend.py": "0753b10611fc5d9d428cf7bdfd6ccb9e0ad437fea43e574f86f3d10df6fe9482",
+    "src/fabrics_sim/solver/dynamic_consistent_gpu.py": "43a19e61ab8899c4149ad3b630cab5172a9235c032e9d97c1755cf2312637555",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "command": [
+    "bash",
+    "examples/run_amp_full_motion.sh",
+    "--output-path",
+    "acc_data/g1_projected_acc_qp_20261114/recheck_20261114_011501/tracking.npz"
+  ]
+}

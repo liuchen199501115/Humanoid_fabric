@@ -1,0 +1,7 @@
+{
+  "name": "baseline",
+  "status": "aborted_initialization",
+  "tracking_evaluated": false,
+  "reason": "NVIDIA UVM initialization blocked; no control-loop data",
+  "termination": "SIGKILL requested; kernel-waiting processes may remain until driver recovery"
+}

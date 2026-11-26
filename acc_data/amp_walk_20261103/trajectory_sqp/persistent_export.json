@@ -1,0 +1,50 @@
+{
+  "optimized_source_frames": 480,
+  "source_frames": 2000,
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "peak_reference_joint_rmse": 0.13948797038222188,
+  "peak_root_position_offset": 0.041013811307585746,
+  "peak_root_orientation_offset": 0.16168667168120732,
+  "initial_joint_rmse": 0.04053322412118843,
+  "initial_root_position_offset": 0.004649599336066989,
+  "reference_flights": [
+    {
+      "side": 0,
+      "first_frame": 0,
+      "last_frame": 22,
+      "peak_native_clearance_m": 0.05339173225111142
+    },
+    {
+      "side": 0,
+      "first_frame": 104,
+      "last_frame": 171,
+      "peak_native_clearance_m": 0.055997210487663374
+    },
+    {
+      "side": 0,
+      "first_frame": 289,
+      "last_frame": 358,
+      "peak_native_clearance_m": 0.06500824813223272
+    },
+    {
+      "side": 1,
+      "first_frame": 27,
+      "last_frame": 67,
+      "peak_native_clearance_m": 0.05495232829101013
+    },
+    {
+      "side": 1,
+      "first_frame": 184,
+      "last_frame": 256,
+      "peak_native_clearance_m": 0.05609425062448792
+    },
+    {
+      "side": 1,
+      "first_frame": 373,
+      "last_frame": 450,
+      "peak_native_clearance_m": 0.056541718198884816
+    }
+  ],
+  "full_tracking_passed": false,
+  "scope": "Offline candidate; all source/landing/fidelity gates require independent physical recording"
+}

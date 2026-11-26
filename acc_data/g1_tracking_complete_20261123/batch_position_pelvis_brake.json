@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_com15_position17_pelvis4",
+    "parent": "ten_com15_pelvis405_scale4_cap100",
+    "options": [
+      "--position-tube-start",
+      "3.4",
+      "--position-tube-radius",
+      ".17"
+    ]
+  },
+  {
+    "name": "ten_com15_position17_brake100",
+    "parent": "ten_com15_pelvis405_brake100",
+    "options": [
+      "--position-tube-start",
+      "3.4",
+      "--position-tube-radius",
+      ".17"
+    ]
+  },
+  {
+    "name": "ten_com15_position17_brake1000",
+    "parent": "ten_com15_pelvis405_brake_cap1",
+    "options": [
+      "--position-tube-start",
+      "3.4",
+      "--position-tube-radius",
+      ".17"
+    ]
+  }
+]

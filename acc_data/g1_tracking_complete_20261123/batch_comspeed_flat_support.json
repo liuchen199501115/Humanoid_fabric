@@ -1,0 +1,52 @@
+[
+  {
+    "name": "ten_comspeed02_flat_tilt4",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--support-flatten-start",
+      "4.08",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "4",
+      "--support-orientation-roll-pitch-only"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_flat_tilt16",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--support-flatten-start",
+      "4.08",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "16",
+      "--support-orientation-roll-pitch-only"
+    ]
+  },
+  {
+    "name": "ten_comspeed02_flat_full16",
+    "parent": "ten_rooty100_comspeed02",
+    "options": [
+      "--support-flatten-start",
+      "4.08",
+      "--support-flatten-gain-scale",
+      "3",
+      "--support-flatten-feedback-limit",
+      "100",
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "16"
+    ]
+  }
+]

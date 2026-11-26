@@ -1,0 +1,19 @@
+baseline_verify 7 2.682 QP validation failed
+earlier_landing25 5 2.094 QP validation failed
+earlier_slow 5 2.094 QP validation failed
+fast_resume 7 2.882 Original-source fidelity limit exceeded
+joint_barrier_end 7 2.592 Original-source fidelity limit exceeded
+landing25_feet16 7 2.966 Original-source fidelity limit exceeded
+landing25_feet4 7 2.988 Original-source fidelity limit exceeded
+seven_release 7 2.716 Original-source fidelity limit exceeded
+slow_com8 7 2.846 Original-source fidelity limit exceeded
+slow_landing25 7 3.104 Original-source fidelity limit exceeded
+slow_stance 7 2.842 Original-source fidelity limit exceeded
+slow_transfer 7 2.888 Original-source fidelity limit exceeded
+slow_upper100 7 2.898 Original-source fidelity limit exceeded
+slow_upper25 7 2.876 Original-source fidelity limit exceeded
+slow_upper2_com2 7 2.892 Original-source fidelity limit exceeded
+slow_upper4 7 2.894 Original-source fidelity limit exceeded
+soft_cold 7 2.748 Original-source fidelity limit exceeded
+transfer_hard 7 2.682 QP validation failed
+transfer_soft 7 2.7560000000000002 Original-source fidelity limit exceeded

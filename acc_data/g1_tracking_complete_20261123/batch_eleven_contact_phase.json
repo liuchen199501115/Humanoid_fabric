@@ -1,0 +1,64 @@
+[
+  {
+    "name": "eleven_source60_late4096_pause958",
+    "parent": "eleven_return_source_transfer60",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "64",
+      "--support-flatten-start",
+      "4.5",
+      "--late-foot-metric-end",
+      "4.65",
+      "--late-foot-metric-end-ramp",
+      ".04",
+      "--late-foot-metric-end-scale",
+      "4096",
+      "--late-upper-metric-scale",
+      "256",
+      "--extra-contact-pause",
+      "4.6",
+      "4.79",
+      "12"
+    ]
+  },
+  {
+    "name": "eleven_source60_late4096_pause960",
+    "parent": "eleven_return_source_transfer60",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "64",
+      "--support-flatten-start",
+      "4.5",
+      "--late-foot-metric-end",
+      "4.65",
+      "--late-foot-metric-end-ramp",
+      ".04",
+      "--late-foot-metric-end-scale",
+      "4096",
+      "--late-upper-metric-scale",
+      "256",
+      "--extra-contact-pause",
+      "4.6",
+      "4.8",
+      "12"
+    ]
+  },
+  {
+    "name": "eleven_source60_late4096_spline2",
+    "parent": "eleven_source60_foot4096_late_upper256",
+    "options": [
+      "--late-reference-smooth-stride",
+      "2",
+      "--late-reference-smooth-start",
+      "4.65",
+      "--late-reference-smooth-ramp",
+      ".1"
+    ]
+  }
+]

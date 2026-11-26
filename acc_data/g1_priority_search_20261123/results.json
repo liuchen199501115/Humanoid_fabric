@@ -1,0 +1,1030 @@
+{
+  "scope": "Same complete original PKL and acceptance limits. Slower playback trials are labeled in options. All runs use one inverse-dynamics QP and no MPC. Verified steps are observations, not a theoretical maximum.",
+  "trials": [
+    {
+      "name": "baseline_verify",
+      "options": [
+        "--fabric-priority-mode",
+        "none"
+      ],
+      "stop_time_s": 1.356,
+      "landings": 3,
+      "expected_landings": 29,
+      "last_source_frame": 281.96000000000004,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.17517568171024323,
+      "peak_root_position_m": 0.18511952459812164,
+      "peak_root_orientation_rad": 0.18504788744632628,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 678
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "best_verify",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ],
+      "stop_time_s": 2.308,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 510.44,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.18389828503131866,
+      "peak_root_position_m": 0.06654072552919388,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1154
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "contact_feedback_fixed",
+      "options": [
+        "--fabric-priority-mode",
+        "contact-tracking",
+        "--fabric-tracking-feedback"
+      ],
+      "stop_time_s": 0.22,
+      "landings": 0,
+      "expected_landings": 29,
+      "last_source_frame": 44.0,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20218144357204437,
+      "peak_root_position_m": 0.02126644365489483,
+      "peak_root_orientation_rad": 0.008913044324302163,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 111
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "contact_only",
+      "options": [
+        "--fabric-priority-mode",
+        "contact-tracking"
+      ],
+      "stop_time_s": 0.23800000000000002,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 47.6,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20058324933052063,
+      "peak_root_position_m": 0.02687518112361431,
+      "peak_root_orientation_rad": 0.05667151329094132,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 120
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "landing_pos16",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only",
+        "--qp-single-proximal",
+        ".0001",
+        "--qp-single-proximal-start",
+        "2.3",
+        "--late-foot-metric-start",
+        "1.9",
+        "--late-foot-metric-scale",
+        "16",
+        "--late-foot-angular-metric-start",
+        "1.9",
+        "--late-foot-angular-metric-scale",
+        ".0625"
+      ],
+      "stop_time_s": 2.374,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 526.76,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20251566171646118,
+      "peak_root_position_m": 0.06639254093170166,
+      "peak_root_orientation_rad": 0.20545019724404337,
+      "max_tube_slack": [
+        2047.9227928957912,
+        8.014792567877141e-14,
+        2.0036981419692852e-14
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1188
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "landing_pos4",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only",
+        "--qp-single-proximal",
+        ".0001",
+        "--qp-single-proximal-start",
+        "2.3",
+        "--late-foot-metric-start",
+        "1.9",
+        "--late-foot-metric-scale",
+        "4",
+        "--late-foot-angular-metric-start",
+        "1.9",
+        "--late-foot-angular-metric-scale",
+        ".25"
+      ],
+      "stop_time_s": 2.12,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 465.32,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.18389828503131866,
+      "peak_root_position_m": 0.060347478836774826,
+      "peak_root_orientation_rad": 0.19860997104626346,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1060
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "no_momentum",
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--disable-momentum-task"
+      ],
+      "stop_time_s": 0.444,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 88.8,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20072820782661438,
+      "peak_root_position_m": 0.07369659841060638,
+      "peak_root_orientation_rad": 0.041853670924918325,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 223
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "posture100",
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--posture-metric-scale",
+        "100"
+      ],
+      "stop_time_s": 0.602,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 120.39999999999999,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20065715909004211,
+      "peak_root_position_m": 0.11671724915504456,
+      "peak_root_orientation_rad": 0.09575309107519112,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 302
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "posture1000",
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--posture-metric-scale",
+        "1000"
+      ],
+      "stop_time_s": 0.47800000000000004,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 95.60000000000001,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.15527358651161194,
+      "peak_root_position_m": 0.05877017602324486,
+      "peak_root_orientation_rad": 0.35266911010702096,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 240
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_only",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ],
+      "stop_time_s": 0.52,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 104.0,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20016314089298248,
+      "peak_root_position_m": 0.140128493309021,
+      "peak_root_orientation_rad": 0.34909975735638626,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 261
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_prox",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only",
+        "--qp-single-proximal",
+        ".0001",
+        "--qp-single-proximal-start",
+        "2.3"
+      ],
+      "stop_time_s": 2.376,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 527.2399999999999,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20116913318634033,
+      "peak_root_position_m": 0.07013005763292313,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        1214.3146068597814,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1189
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_pure_repeat",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ],
+      "stop_time_s": 2.308,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 510.44,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.18389828503131866,
+      "peak_root_position_m": 0.06654072552919388,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1154
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_soft001",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        ".001",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ],
+      "stop_time_s": 0.42,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 84.0,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.18926557898521423,
+      "peak_root_position_m": 0.0826374739408493,
+      "peak_root_orientation_rad": 0.35194319476612984,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 211
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_soft10",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "10",
+        "--tracking-tube-soft-start",
+        "2.1",
+        "--tracking-tube-soft-joint-only"
+      ],
+      "stop_time_s": 2.344,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 519.08,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.18389828503131866,
+      "peak_root_position_m": 0.0675683245062828,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        835.5110304955689,
+        0.0,
+        6.451787950228074e-16
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1172
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "primary_soft100",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only"
+      ],
+      "stop_time_s": 2.34,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 518.12,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "QP validation failed",
+      "peak_joint_rmse_rad": 0.18389828503131866,
+      "peak_root_position_m": 0.06654483824968338,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        1214.3146068597985,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1170
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "slow050",
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--motion-speed",
+        ".5",
+        "--clock-final-speed",
+        "1",
+        "--posture-metric-scale",
+        "100",
+        "--duration",
+        "30"
+      ],
+      "stop_time_s": 0.746,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 74.6,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.16701239347457886,
+      "peak_root_position_m": 0.20129725337028503,
+      "peak_root_orientation_rad": 0.26485404911000826,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 374
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "slow075",
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--motion-speed",
+        ".75",
+        "--clock-final-speed",
+        "1",
+        "--posture-metric-scale",
+        "100"
+      ],
+      "stop_time_s": 0.9500000000000001,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 142.5,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.15898732841014862,
+      "peak_root_position_m": 0.20069263875484467,
+      "peak_root_orientation_rad": 0.10828563953136444,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 476
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "tracking",
+      "options": [
+        "--fabric-priority-mode",
+        "paper-tracking",
+        "--posture-metric-scale",
+        "10"
+      ],
+      "stop_time_s": 0.598,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 119.6,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.200065478682518,
+      "peak_root_position_m": 0.10529359430074692,
+      "peak_root_orientation_rad": 0.05789397928153907,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 300
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "tracking100",
+      "options": [
+        "--fabric-priority-mode",
+        "paper-tracking",
+        "--posture-metric-scale",
+        "100"
+      ],
+      "stop_time_s": 0.628,
+      "landings": 1,
+      "expected_landings": 29,
+      "last_source_frame": 125.6,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.2002825140953064,
+      "peak_root_position_m": 0.13207842409610748,
+      "peak_root_orientation_rad": 0.117078945924129,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 315
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "tracking_oldweights",
+      "options": [
+        "--fabric-priority-mode",
+        "paper-tracking",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ],
+      "stop_time_s": 0.2,
+      "landings": 0,
+      "expected_landings": 29,
+      "last_source_frame": 40.0,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20256184041500092,
+      "peak_root_position_m": 0.027033746242523193,
+      "peak_root_orientation_rad": 0.02098525993481872,
+      "max_tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 101
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "transfer040",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only",
+        "--qp-single-proximal",
+        ".0001",
+        "--qp-single-proximal-start",
+        "2.3",
+        "--anticipate-unload-start",
+        "2.0",
+        "--anticipate-unload-error-limit",
+        ".04"
+      ],
+      "stop_time_s": 2.376,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 527.2399999999999,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20116913318634033,
+      "peak_root_position_m": 0.07013005763292313,
+      "peak_root_orientation_rad": 0.19171464939901367,
+      "max_tube_slack": [
+        1214.3146068597814,
+        0.0,
+        0.0
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1189
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    },
+    {
+      "name": "transfer_fast",
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30",
+        "--tracking-tube-soft-weight",
+        "100",
+        "--tracking-tube-soft-start",
+        "2.3",
+        "--tracking-tube-soft-joint-only",
+        "--qp-single-proximal",
+        ".0001",
+        "--qp-single-proximal-start",
+        "2.3",
+        "--anticipate-unload-start",
+        "2.0",
+        "--anticipate-unload-error-limit",
+        ".04",
+        "--late-unload-start",
+        "2.0",
+        "--late-unload-ramp",
+        ".02",
+        "--late-unload-weight",
+        ".2"
+      ],
+      "stop_time_s": 2.436,
+      "landings": 5,
+      "expected_landings": 29,
+      "last_source_frame": 541.64,
+      "source_frames": 2000,
+      "full_tracking_passed": false,
+      "stop_reason": "Original-source fidelity limit exceeded",
+      "peak_joint_rmse_rad": 0.20082707703113556,
+      "peak_root_position_m": 0.11265875399112701,
+      "peak_root_orientation_rad": 0.27302954217044,
+      "max_tube_slack": [
+        4571.36985846277,
+        2.410749228152208e-15,
+        4.821483370640578e-15
+      ],
+      "statuses": {
+        "DAQP 1; KKT certified": 1219
+      },
+      "invariants": {
+        "one_native_attempt_per_update": true,
+        "no_task_cache_at_qp": true,
+        "no_second_qp": true,
+        "exact_applied_qp_torque": true,
+        "original_fidelity_limits": true
+      }
+    }
+  ],
+  "incomplete_runs": [
+    {
+      "name": "contact_feedback",
+      "returncode": 1,
+      "timed_out": false,
+      "options": [
+        "--fabric-priority-mode",
+        "contact-tracking",
+        "--fabric-tracking-feedback"
+      ]
+    },
+    {
+      "name": "feedback_sum",
+      "returncode": -15,
+      "timed_out": false,
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ]
+    },
+    {
+      "name": "feedback_sum_fixed",
+      "returncode": -15,
+      "timed_out": false,
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ]
+    },
+    {
+      "name": "primary_pure",
+      "returncode": -11,
+      "timed_out": false,
+      "options": [
+        "--fabric-priority-mode",
+        "none",
+        "--fabric-tracking-feedback",
+        "--fabric-secondary-scale",
+        "0",
+        "--fabric-root-regularization",
+        "1e-10",
+        "--qp-task-only-objective",
+        "--posture-metric-scale",
+        "1",
+        "--source-pelvis-weight",
+        "1",
+        "--joint-feedback-limit",
+        "30"
+      ]
+    },
+    {
+      "name": "source_momentum",
+      "returncode": 1,
+      "timed_out": false,
+      "options": [
+        "--fabric-priority-mode",
+        "paper",
+        "--source-momentum-reference",
+        "--posture-metric-scale",
+        "100"
+      ]
+    }
+  ]
+}

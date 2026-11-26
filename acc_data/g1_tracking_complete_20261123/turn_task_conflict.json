@@ -1,0 +1,317 @@
+{
+  "scope": "Frozen-state task/barrier ablation; physical constraints remain unchanged.\nNot a controller, rollout, or tracking result. Softening auxiliary fidelity\nbarriers here only diagnoses cost conflict; the source auditor is unchanged.\n",
+  "cases": [
+    {
+      "time_s": 3.8,
+      "case": "original",
+      "certificate_passed": true,
+      "root_acceleration": [
+        9.756817318953953,
+        -5.438506098233852,
+        17.641208762689963,
+        2.0783519569473556,
+        -99.99398154948051,
+        -16.559946550250874
+      ],
+      "com_acceleration": [
+        -5.265797481912817,
+        1.3363279419401568,
+        4.714504914639268
+      ],
+      "right_knee_acceleration": -515.3199187255767,
+      "waist_roll_acceleration": -70.32329351548631,
+      "tube_slack": [
+        158.3989518184327,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": 2.7563485787140962e-05
+    },
+    {
+      "time_s": 3.8,
+      "case": "stance25",
+      "certificate_passed": true,
+      "root_acceleration": [
+        10.787174302713717,
+        -5.782322758928335,
+        17.82380288283258,
+        -7.242280540955635,
+        -111.6225560847569,
+        -6.516204424642719
+      ],
+      "com_acceleration": [
+        -5.234131106035462,
+        0.6049771354530229,
+        4.747491786894053
+      ],
+      "right_knee_acceleration": -533.5762226692285,
+      "waist_roll_acceleration": -69.54342855890444,
+      "tube_slack": [
+        121.78814537512956,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.8,
+      "case": "pelvis4",
+      "certificate_passed": true,
+      "root_acceleration": [
+        9.246770847023313,
+        -5.094860234380553,
+        17.29557877585869,
+        5.064672864825713,
+        -92.10127091871094,
+        -15.467892132084845
+      ],
+      "com_acceleration": [
+        -5.323641245152133,
+        1.2527646890408537,
+        4.712454947188332
+      ],
+      "right_knee_acceleration": -505.6607608834108,
+      "waist_roll_acceleration": -70.14685209285658,
+      "tube_slack": [
+        164.5720984532769,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.8,
+      "case": "soft_orientation",
+      "certificate_passed": true,
+      "root_acceleration": [
+        9.890135957677025,
+        -5.49314864445257,
+        17.67977972043688,
+        9.209531221456658,
+        -104.30669348884992,
+        -12.411282919902428
+      ],
+      "com_acceleration": [
+        -5.207666243811116,
+        1.5570317081406717,
+        4.7375811458482
+      ],
+      "right_knee_acceleration": -515.4856350870633,
+      "waist_roll_acceleration": -78.61560630520692,
+      "tube_slack": [
+        160.09696259984895,
+        0.0,
+        35.5829621040195
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.8,
+      "case": "soft_position",
+      "certificate_passed": true,
+      "root_acceleration": [
+        9.331616271325766,
+        -8.388538474428682,
+        16.70105427647698,
+        -3.7010087570028243,
+        -105.61783080994184,
+        -8.691139537480378
+      ],
+      "com_acceleration": [
+        -5.376828685955403,
+        0.6315958193396192,
+        4.646154030380739
+      ],
+      "right_knee_acceleration": -512.0461625166813,
+      "waist_roll_acceleration": -86.82584552953723,
+      "tube_slack": [
+        165.7875366556233,
+        24.94876382446749,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.8,
+      "case": "soft_both",
+      "certificate_passed": true,
+      "root_acceleration": [
+        9.491213522439478,
+        -7.953000386070379,
+        16.878247861706917,
+        2.1157140304243804,
+        -107.673456974197,
+        -7.10796259858873
+      ],
+      "com_acceleration": [
+        -5.319163639106883,
+        0.8959356372969456,
+        4.672937462377349
+      ],
+      "right_knee_acceleration": -512.684713086377,
+      "waist_roll_acceleration": -89.86611070394032,
+      "tube_slack": [
+        165.7672273520999,
+        20.948479834262823,
+        24.400288232875212
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.9,
+      "case": "original",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -1.129555138369462,
+        2.7131253082693436,
+        5.045851217605678,
+        14.425165451580973,
+        8.560807221552054,
+        21.59896273647848
+      ],
+      "com_acceleration": [
+        1.3565429279152381,
+        -2.3424485920460283,
+        3.061354085794301
+      ],
+      "right_knee_acceleration": -71.27685974904327,
+      "waist_roll_acceleration": -17.199075822793308,
+      "tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": 4.400292141326645e-06
+    },
+    {
+      "time_s": 3.9,
+      "case": "stance25",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -2.0672371344239453,
+        3.158282643237347,
+        4.8282924321839005,
+        14.498635966631488,
+        9.966402811776769,
+        33.11837559203289
+      ],
+      "com_acceleration": [
+        1.0861458843215108,
+        -3.0992801274209887,
+        2.662334912074096
+      ],
+      "right_knee_acceleration": -109.37444732595168,
+      "waist_roll_acceleration": -22.952800264633492,
+      "tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.9,
+      "case": "pelvis4",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -1.014116040876006,
+        2.5901188687799133,
+        5.293448899533093,
+        3.7079390957993845,
+        4.682335714817773,
+        30.82026392000639
+      ],
+      "com_acceleration": [
+        1.4340755865601205,
+        -2.8033612343053314,
+        3.304578705219992
+      ],
+      "right_knee_acceleration": -80.17130990010848,
+      "waist_roll_acceleration": -12.86340464673079,
+      "tube_slack": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.9,
+      "case": "soft_orientation",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -0.34323912374406435,
+        2.5914745355627673,
+        4.413555332775957,
+        28.846198369404522,
+        -0.33286669885008013,
+        13.425629013421842
+      ],
+      "com_acceleration": [
+        1.6597890115203526,
+        -1.7337932504668299,
+        2.3349199360349058
+      ],
+      "right_knee_acceleration": -60.311501057345495,
+      "waist_roll_acceleration": -28.847914135668955,
+      "tube_slack": [
+        0.0,
+        0.0,
+        65.26917982258608
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.9,
+      "case": "soft_position",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -4.034996699648163,
+        -7.7776840489460195,
+        -6.546132555287314,
+        7.869990777245466,
+        -5.251280152599145,
+        15.22143452326299
+      ],
+      "com_acceleration": [
+        0.6232338405937359,
+        -1.158854050570384,
+        -2.375933312806768
+      ],
+      "right_knee_acceleration": -11.331086108788915,
+      "waist_roll_acceleration": -80.71763536341379,
+      "tube_slack": [
+        0.0,
+        122.11426833659984,
+        0.0
+      ],
+      "reproduced_acceleration_error": null
+    },
+    {
+      "time_s": 3.9,
+      "case": "soft_both",
+      "certificate_passed": true,
+      "root_acceleration": [
+        -3.877870892019303,
+        -7.732221234931217,
+        -6.116821999269087,
+        13.731395586893221,
+        -6.965794852820807,
+        12.678878369381538
+      ],
+      "com_acceleration": [
+        0.6813258515231713,
+        -1.1114451518008972,
+        -2.132711251556673
+      ],
+      "right_knee_acceleration": -11.076721589539304,
+      "waist_roll_acceleration": -85.79579355795615,
+      "tube_slack": [
+        0.0,
+        120.18030554373274,
+        23.313865825572258
+      ],
+      "reproduced_acceleration_error": null
+    }
+  ]
+}

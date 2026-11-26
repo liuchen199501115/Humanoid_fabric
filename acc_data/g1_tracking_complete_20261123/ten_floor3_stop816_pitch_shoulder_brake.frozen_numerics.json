@@ -1,0 +1,146 @@
+[
+  {
+    "cap": 1.0,
+    "proximal": 0.0,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 16,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 1.0,
+    "proximal": 0.0001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 361,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 1.0,
+    "proximal": 0.001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 3436,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.0,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 9,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.0001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 57,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 3.0,
+    "proximal": 0.001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 423,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.0,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 9,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.0001,
+    "valid": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "iterations": 34,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 10.0,
+    "proximal": 0.001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 75,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.0,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 9,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.0001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 34,
+    "native_attempts": [
+      1
+    ]
+  },
+  {
+    "cap": 30.0,
+    "proximal": 0.001,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 70,
+    "native_attempts": [
+      1
+    ]
+  }
+]

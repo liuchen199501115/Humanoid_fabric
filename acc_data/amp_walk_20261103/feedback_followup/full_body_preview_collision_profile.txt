@@ -1,0 +1,43 @@
+         5712604 function calls (5709070 primitive calls) in 17.645 seconds
+
+   Ordered by: cumulative time
+   List reduced from 580 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.700    0.700   17.645   17.645 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:28(solve)
+        1   12.925   12.925   12.925   12.925 {method 'solve' of 'builtins.DefaultSolver' objects}
+       23    0.009    0.000    3.070    0.133 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/shared_dynamics_linearization.py:5(derivatives)
+     3326    0.014    0.000    3.062    0.001 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/preview_collision.py:36(evaluate)
+     3243    1.228    0.000    2.172    0.001 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/preview_collision.py:41(collision_state)
+     3326    0.291    0.000    0.876    0.000 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/mujoco_reference_dynamics.py:33(evaluate)
+    26003    0.257    0.000    0.634    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:1468(cross)
+    78045    0.113    0.000    0.324    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:1393(moveaxis)
+     3948    0.009    0.000    0.309    0.000 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:221(patch_bias)
+     3948    0.029    0.000    0.299    0.000 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:223(<listcomp>)
+     1194    0.007    0.000    0.279    0.000 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:36(add)
+    84340    0.058    0.000    0.189    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:615(flatnonzero)
+     6652    0.024    0.000    0.181    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:2249(isclose)
+   159416    0.110    0.000    0.171    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:1330(normalize_axis_tuple)
+     1727    0.003    0.000    0.137    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_lil.py:267(__setitem__)
+     1727    0.009    0.000    0.134    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_index.py:124(__setitem__)
+     5322    0.017    0.000    0.129    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_compressed.py:29(__init__)
+     6652    0.044    0.000    0.121    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/numeric.py:2330(within_tol)
+    13610    0.089    0.000    0.120    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/lib/index_tricks.py:326(__getitem__)
+     1276    0.001    0.000    0.118    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_base.py:1082(tocsc)
+    12972    0.004    0.000    0.118    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/einsumfunc.py:1009(einsum)
+    12972    0.113    0.000    0.113    0.000 {built-in method numpy.core._multiarray_umath.c_einsum}
+     1275    0.002    0.000    0.102    0.000 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:270(padded)
+     1277    0.002    0.000    0.097    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_construct.py:917(_block)
+        1    0.000    0.000    0.096    0.096 /home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/full_body_preview_collision_seeded.py:271(<listcomp>)
+     1727    0.070    0.000    0.076    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_lil.py:255(_set_arrayXarray)
+     1275    0.001    0.000    0.068    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_construct.py:712(hstack)
+    30519    0.064    0.000    0.064    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    84364    0.016    0.000    0.062    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1881(nonzero)
+     1324    0.015    0.000    0.062    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_lil.py:402(tocsr)
+    26885    0.020    0.000    0.061    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)
+    92520    0.025    0.000    0.059    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/fromnumeric.py:53(_wrapfunc)
+    84364    0.036    0.000    0.058    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/numpy/core/fromnumeric.py:1768(ravel)
+     1277    0.016    0.000    0.058    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_construct.py:613(_compressed_sparse_stack)
+     1276    0.006    0.000    0.057    0.000 /home/sky/anaconda3/envs/humanoid_fabric/lib/python3.11/site-packages/scipy/sparse/_csr.py:63(tocsc)
+
+

@@ -1,0 +1,14 @@
+{
+  "baseline": "nine_plant20",
+  "reproduction": "ten_arms4",
+  "prefix_time_s": 4.072,
+  "samples": 2037,
+  "q_bit_identical": true,
+  "qd_bit_identical": true,
+  "landing_reports_identical": true,
+  "verified_landings": 10,
+  "contact_wrench_split_corrected": false,
+  "requires_revalidation_after_wrench_split_fix": true,
+  "full_tracking_passed": false,
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4"
+}

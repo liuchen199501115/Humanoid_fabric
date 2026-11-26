@@ -1,0 +1,23 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0016137365971813367,
+    0.009706366659402721,
+    0.0009939114108103997
+  ],
+  "maximum_foot_position_residual_m": 5.364418029785156e-07,
+  "maximum_foot_rotation_residual_rad": 4.729088259941796e-07,
+  "maximum_com_ik_residual_m": 2.4538500498700375e-07,
+  "maximum_added_root_rotation_rad": 0.03307291292606689,
+  "worst_frame": 998,
+  "peak_source_joint_rmse_rad": 0.16656406223773956,
+  "peak_source_root_displacement_m": 0.07938320934772491,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Offline source-waist restoration preserving COM and both feet; root attitude bounded by existing IK",
+  "parent_file": "prepared_stance10_anchor_smooth16_hold884_drop20.npz",
+  "parent_sha256": "66161c9520d7ecd9a3e7f3fe6e78efaaea5943bd3d2b604e26c9d8c59e7ccd7e",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "waist_restoration_fraction": 0.5,
+  "prefix_q_v_a_equal_through_frame": 816,
+  "full_tracking_passed": false
+}

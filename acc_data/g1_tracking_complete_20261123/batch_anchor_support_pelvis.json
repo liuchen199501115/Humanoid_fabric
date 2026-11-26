@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_anchor_support4_pelvis1",
+    "parent": "ten_anchor884_root1000_support4",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.08",
+      "--late-pelvis-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "ten_anchor_support4_pelvis3",
+    "parent": "ten_anchor884_root1000_support4",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.08",
+      "--late-pelvis-metric-scale",
+      "3"
+    ]
+  },
+  {
+    "name": "ten_anchor884_root1000_support1",
+    "parent": "ten_smooth16_anchor884_drop20_root1000",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "1"
+    ]
+  }
+]

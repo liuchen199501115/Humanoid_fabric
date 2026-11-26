@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ten_stance_anchor_pose802_fast18",
+    "parent": "ten_support_y20_fast18",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_anchor_pose802.npz"
+    ]
+  },
+  {
+    "name": "ten_stance_anchor_lower25_fast18",
+    "parent": "ten_stance_anchor_pose860_fast18",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_anchor_pose860_swing11lower25.npz"
+    ]
+  }
+]

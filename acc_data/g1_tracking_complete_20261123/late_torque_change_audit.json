@@ -1,0 +1,32 @@
+[
+  {
+    "joint": "left_hip_roll_joint",
+    "step_rms_Nm": 9.662858963012695,
+    "step_max_Nm": 77.30860137939453
+  },
+  {
+    "joint": "right_hip_pitch_joint",
+    "step_rms_Nm": 9.218352317810059,
+    "step_max_Nm": 104.29385375976562
+  },
+  {
+    "joint": "right_knee_joint",
+    "step_rms_Nm": 8.194157600402832,
+    "step_max_Nm": 93.85726928710938
+  },
+  {
+    "joint": "left_hip_pitch_joint",
+    "step_rms_Nm": 7.571056365966797,
+    "step_max_Nm": 59.319976806640625
+  },
+  {
+    "joint": "right_hip_roll_joint",
+    "step_rms_Nm": 6.445859432220459,
+    "step_max_Nm": 43.22278594970703
+  },
+  {
+    "joint": "waist_roll_joint",
+    "step_rms_Nm": 5.080838203430176,
+    "step_max_Nm": 52.252220153808594
+  }
+]

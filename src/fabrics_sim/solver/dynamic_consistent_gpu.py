@@ -70,6 +70,9 @@ class ProjectionConfig:
     """Projection and optional contact-stabilization settings."""
 
     regularization: float = 1.0e-6
+    # Optional extra cost on joint acceleration corrections: W=M+w*S^T*S.
+    # Zero retains the original dynamically consistent projection exactly.
+    joint_correction_weight: float = 0.0
     contact_kp: float = 0.0
     contact_kd: float = 0.0
     contact_stabilization_mask: tuple[float, ...] = (1.0,) * FOOT_TASK_DIM
@@ -371,6 +374,12 @@ def dynamically_consistent_projection_masked(
     M = mass_matrix
     if config.symmetrize_mass_matrix:
         M = 0.5 * (M + M.transpose(-1, -2))
+    if not math.isfinite(config.joint_correction_weight) or config.joint_correction_weight < 0:
+        raise ValueError('joint_correction_weight must be finite and nonnegative')
+    if config.joint_correction_weight:
+        correction_cost = torch.zeros(NV, device=M.device, dtype=M.dtype)
+        correction_cost[6:] = config.joint_correction_weight
+        M = M + torch.diag(correction_cost).unsqueeze(0)
 
     # Masking a row removes the corresponding inactive contact constraint.
     row_mask_3d = active_row_mask.unsqueeze(-1)

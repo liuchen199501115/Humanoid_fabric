@@ -1,0 +1,32 @@
+[
+  {
+    "name": "six_source_rooty100_500",
+    "parent": "six_source_rootxy100_500",
+    "options": [
+      "--root-position-task-axes",
+      "y",
+      "--root-position-task-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "six_source_rooty300_500",
+    "parent": "six_source_rootxy100_500",
+    "options": [
+      "--root-position-task-axes",
+      "y",
+      "--root-position-task-weight",
+      "300"
+    ]
+  },
+  {
+    "name": "six_source_rooty1000_500",
+    "parent": "six_source_rootxy100_500",
+    "options": [
+      "--root-position-task-axes",
+      "y",
+      "--root-position-task-weight",
+      "1000"
+    ]
+  }
+]

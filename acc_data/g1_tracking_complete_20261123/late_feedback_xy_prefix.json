@@ -1,0 +1,16 @@
+[
+  {
+    "trial": "ten_floor3_linear60",
+    "parent": "ten_lower11_40_comdown20_floor3_fast18",
+    "before_source_frame": 816,
+    "updates": 1903,
+    "identical_fields": 163
+  },
+  {
+    "trial": "ten_floor3_linear60_xy18_late",
+    "parent": "ten_floor3_linear60",
+    "before_source_frame": 840,
+    "updates": 1947,
+    "identical_fields": 165
+  }
+]

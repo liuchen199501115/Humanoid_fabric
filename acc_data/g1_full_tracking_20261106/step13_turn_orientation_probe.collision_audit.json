@@ -1,0 +1,38 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_turn_orientation_probe.npz",
+  "candidate_sha256": "0c80ddae51f33d178377f325178d9fe46eb41b4ce8ffc8c79ba9c84ae7e6ec90",
+  "scope": "Offline original sphere pairs and added convex wrist/body pairs; not a simulation or all-link collision certificate.",
+  "sample_count": 1261,
+  "frame_range": [
+    720.0,
+    1035.0
+  ],
+  "frame_spacing": 0.25,
+  "worst_convex": {
+    "frame": 930.0,
+    "minimum_wrist_body_convex_distance_m": 0.020203443244099617,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_roll_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.08987392485141754,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "worst_original_sphere": {
+    "frame": 747.75,
+    "minimum_wrist_body_convex_distance_m": 0.032301999628543854,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.07592570781707764,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "root_continue41",
+    "cap": 10,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 76
+  },
+  {
+    "name": "root_continue41",
+    "cap": 30,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 76
+  },
+  {
+    "name": "root_continue41",
+    "cap": 100,
+    "valid": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "iterations": 76
+  },
+  {
+    "name": "root_continue41",
+    "cap": 300,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 76
+  },
+  {
+    "name": "root_continue41",
+    "cap": 1000,
+    "valid": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "iterations": 76
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 10,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 60
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 30,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 60
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 100,
+    "valid": false,
+    "status": [
+      "DAQP -2; rejected"
+    ],
+    "iterations": 136
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 300,
+    "valid": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "iterations": 137
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 1000,
+    "valid": false,
+    "status": [
+      "DAQP -2; rejected"
+    ],
+    "iterations": 283
+  }
+]

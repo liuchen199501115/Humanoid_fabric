@@ -1,0 +1,83 @@
+[
+  {
+    "name": "ten_clock14_sh16_pelvis1",
+    "max_iterations": 5000,
+    "valid": false,
+    "iterations": 5000,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis1",
+    "max_iterations": 20000,
+    "valid": true,
+    "iterations": 20000,
+    "status": [
+      "DAQP -4; KKT certified"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis1",
+    "max_iterations": 50000,
+    "valid": true,
+    "iterations": 50000,
+    "status": [
+      "DAQP -4; KKT certified"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis4",
+    "max_iterations": 5000,
+    "valid": false,
+    "iterations": 5000,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis4",
+    "max_iterations": 20000,
+    "valid": false,
+    "iterations": 20000,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_pelvis4",
+    "max_iterations": 50000,
+    "valid": true,
+    "iterations": 50000,
+    "status": [
+      "DAQP -4; KKT certified"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_anchor884",
+    "max_iterations": 5000,
+    "valid": false,
+    "iterations": 5000,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_anchor884",
+    "max_iterations": 20000,
+    "valid": false,
+    "iterations": 20000,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "name": "ten_clock14_sh16_anchor884",
+    "max_iterations": 50000,
+    "valid": true,
+    "iterations": 50000,
+    "status": [
+      "DAQP -4; KKT certified"
+    ]
+  }
+]

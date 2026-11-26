@@ -1,0 +1,16 @@
+[
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_after816_cop1_scale60",
+    "exact_runtime_prefix_last_frame": 816.0,
+    "samples": 1635,
+    "peak_source_root_orientation_rad": 0.1247273020443008,
+    "full_tracking_passed": false
+  },
+  {
+    "candidate": "prepared_fullroot_dynamics_com15_after816_cop1_scale90",
+    "exact_runtime_prefix_last_frame": 816.0,
+    "samples": 1635,
+    "peak_source_root_orientation_rad": 0.1870811056222246,
+    "full_tracking_passed": false
+  }
+]

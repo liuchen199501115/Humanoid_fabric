@@ -1,0 +1,4 @@
+{"time": 3.68, "frame": 840.2, "actual_mode": 2, "joint_rmse": 0.15559180125573965, "root_position": 0.044833524118851394, "root_orientation": 0.10074718534151936}
+{"time": 3.686, "frame": 841.64, "actual_mode": 2, "joint_rmse": 0.15477510547637044, "root_position": 0.04654274084354715, "root_orientation": 0.10636933446185864}
+{"time": 3.708, "frame": 846.9200000000001, "actual_mode": 2, "joint_rmse": 0.14234460060215515, "root_position": 0.04855883562594329, "root_orientation": 0.10240346223793774}
+{"time": 3.714, "frame": 848.3599999999999, "actual_mode": 2, "joint_rmse": 0.14384881903723534, "root_position": 0.04780554353797528, "root_orientation": 0.10003021382824831}

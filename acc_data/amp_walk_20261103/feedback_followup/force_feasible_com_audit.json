@@ -1,0 +1,42 @@
+[
+  {
+    "reference": "turn_recovery_y40",
+    "source_frames": [
+      740,
+      1000
+    ],
+    "dense_samples": 1041,
+    "minimum_normal_force": -81.48319886279897,
+    "maximum_normal_force": 925.688975967313,
+    "negative_force_samples": 30,
+    "maximum_world_friction_l1": 54.9981843924731,
+    "maximum_planned_sole_friction_l1": 57.49420166619145,
+    "maximum_cop_outside_planned_sole_hull": 11.11914036566463,
+    "peak_momentum_rate": [
+      97.12555734573525,
+      116.6434467473575,
+      22.31799029883718
+    ],
+    "physical_tracking_certified": false
+  },
+  {
+    "reference": "turn_force_feasible_com_floor",
+    "source_frames": [
+      740,
+      1000
+    ],
+    "dense_samples": 1041,
+    "minimum_normal_force": 180.4946776293502,
+    "maximum_normal_force": 622.4060928110671,
+    "negative_force_samples": 0,
+    "maximum_world_friction_l1": 0.5181416932865756,
+    "maximum_planned_sole_friction_l1": 0.5017330674021425,
+    "maximum_cop_outside_planned_sole_hull": 0.5068556730304827,
+    "peak_momentum_rate": [
+      112.1059815607933,
+      184.15079343541728,
+      21.488539582181396
+    ],
+    "physical_tracking_certified": false
+  }
+]

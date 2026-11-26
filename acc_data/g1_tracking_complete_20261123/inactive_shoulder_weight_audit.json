@@ -1,0 +1,9 @@
+{
+  "parent": "ten_rooty100_commax0_816",
+  "trial": "ten_rooty_cap0_shoulder16",
+  "same_history_fields": 166,
+  "differing_fields": [],
+  "activation_time": 4.08,
+  "stop_time": 4.018,
+  "meaning": "Shoulder task never activated; not an active-weight comparison."
+}

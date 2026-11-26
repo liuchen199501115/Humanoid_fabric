@@ -1,0 +1,52 @@
+{
+  "trial": "ten_waist_bounds",
+  "joint_stops": [
+    {
+      "joint": "left_ankle_roll_joint",
+      "count": 163,
+      "first_time_s": 3.178,
+      "late_first_time_s": 3.2520000000000002,
+      "peak_outward_predicted_acceleration_rad_s2": 40.780418395996094,
+      "observed_acceleration_rms_rad_s2": 0.1150747070817344
+    },
+    {
+      "joint": "right_ankle_roll_joint",
+      "count": 4,
+      "first_time_s": 3.728,
+      "late_first_time_s": 3.728,
+      "peak_outward_predicted_acceleration_rad_s2": 221.45166015625,
+      "observed_acceleration_rms_rad_s2": 0.0003197613509460643
+    }
+  ],
+  "root_angular_intervals": [
+    {
+      "start_s": 3.2,
+      "end_s": 3.6,
+      "mean_predicted_root_angular_acceleration": [
+        -3.013556718826294,
+        -2.438009262084961,
+        -1.556248664855957
+      ],
+      "mean_observed_root_angular_acceleration": [
+        -2.742248848080615,
+        -2.415271550416952,
+        -1.615188568830507
+      ]
+    },
+    {
+      "start_s": 3.65,
+      "end_s": 3.75,
+      "mean_predicted_root_angular_acceleration": [
+        -4.469679355621338,
+        -14.276322364807129,
+        10.865874290466309
+      ],
+      "mean_observed_root_angular_acceleration": [
+        -5.310563408598452,
+        -13.427033716318086,
+        8.16487095185668
+      ]
+    }
+  ],
+  "note": "Outward QP predictions while a joint is stationary at its physical stop identify unmodeled stop reactions. Interval differences can also include foot impacts; this is diagnostic evidence, not a causal proof in isolation."
+}

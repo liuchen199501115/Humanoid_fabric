@@ -1,0 +1,5 @@
+{
+  "status": "interrupted",
+  "reason": "Zero-slack linear subproblem is feasible; continue hard feasibility and exact nonlinear checks.",
+  "physical_trial_run": false
+}

@@ -1,0 +1,62 @@
+{
+  "clock": {
+    "first_start": 0.9,
+    "first_ramp": 0.35,
+    "first_speed": 1.2,
+    "second_start": 3.1,
+    "second_ramp": 0.3,
+    "second_speed": 0.9
+  },
+  "scope": "Negative total normal force is infeasible on unassisted level ground. The horizontal-force ratio uses a diagnostic circular 0.6 budget, not the exact configuration-dependent QP cones or effective simulator friction. This does not prove impossibility inside the original tracking error bounds.",
+  "samples": 2566,
+  "negative_normal_samples": 5,
+  "minimum_required_normal_N": -387.17025925003725,
+  "worst_frame": 20.0,
+  "circular_budget_06_exceeded_samples": 65,
+  "turn_samples": [
+    {
+      "frame_range": [
+        740,
+        880
+      ],
+      "samples": 194,
+      "negative_normal_samples": 0,
+      "minimum_required_normal_N": 96.48010979883986,
+      "circular_budget_06_exceeded_samples": 9
+    },
+    {
+      "frame_range": [
+        880,
+        955
+      ],
+      "samples": 104,
+      "negative_normal_samples": 0,
+      "minimum_required_normal_N": 187.1735888570502,
+      "circular_budget_06_exceeded_samples": 0
+    },
+    {
+      "frame_range": [
+        955,
+        1073
+      ],
+      "samples": 164,
+      "negative_normal_samples": 0,
+      "minimum_required_normal_N": 169.92508195737673,
+      "circular_budget_06_exceeded_samples": 0
+    },
+    {
+      "frame_range": [
+        1073,
+        1999
+      ],
+      "samples": 1286,
+      "negative_normal_samples": 0,
+      "minimum_required_normal_N": 132.79988533127877,
+      "circular_budget_06_exceeded_samples": 18
+    }
+  ],
+  "configured_ground_material": {
+    "static_friction": 1.0,
+    "dynamic_friction": 0.8
+  }
+}

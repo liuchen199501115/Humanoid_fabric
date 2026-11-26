@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ten_anchor_sh16_clock10_iter50k",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--clock-fourth-speed",
+      "1.0"
+    ]
+  },
+  {
+    "name": "ten_anchor_sh16_clock12_iter50k",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--clock-fourth-speed",
+      "1.2"
+    ]
+  },
+  {
+    "name": "ten_pelvis4_clock14_cap10_iter50k",
+    "parent": "ten_clock14_sh16_pelvis4_iter50k",
+    "options": [
+      "--qp-late-equilibration-start",
+      "4.02",
+      "--qp-late-equilibration-cap",
+      "10"
+    ]
+  }
+]

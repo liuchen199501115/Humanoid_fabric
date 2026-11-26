@@ -1,0 +1,173 @@
+{
+  "inequality_rows": [
+    454,
+    512,
+    560,
+    628,
+    630
+  ],
+  "torque_bounds": [
+    [
+      1,
+      "lower",
+      "left_hip_roll_joint"
+    ],
+    [
+      3,
+      "lower",
+      "left_knee_joint"
+    ],
+    [
+      4,
+      "upper",
+      "left_ankle_pitch_joint"
+    ],
+    [
+      5,
+      "lower",
+      "left_ankle_roll_joint"
+    ],
+    [
+      6,
+      "lower",
+      "right_hip_pitch_joint"
+    ],
+    [
+      7,
+      "lower",
+      "right_hip_roll_joint"
+    ],
+    [
+      8,
+      "upper",
+      "right_hip_yaw_joint"
+    ],
+    [
+      9,
+      "upper",
+      "right_knee_joint"
+    ],
+    [
+      10,
+      "upper",
+      "right_ankle_pitch_joint"
+    ],
+    [
+      11,
+      "lower",
+      "right_ankle_roll_joint"
+    ],
+    [
+      12,
+      "upper",
+      "waist_yaw_joint"
+    ],
+    [
+      13,
+      "upper",
+      "waist_roll_joint"
+    ],
+    [
+      14,
+      "lower",
+      "waist_pitch_joint"
+    ],
+    [
+      15,
+      "upper",
+      "left_shoulder_pitch_joint"
+    ],
+    [
+      16,
+      "lower",
+      "left_shoulder_roll_joint"
+    ],
+    [
+      18,
+      "upper",
+      "left_elbow_joint"
+    ],
+    [
+      19,
+      "upper",
+      "left_wrist_roll_joint"
+    ],
+    [
+      20,
+      "upper",
+      "left_wrist_pitch_joint"
+    ],
+    [
+      21,
+      "upper",
+      "left_wrist_yaw_joint"
+    ],
+    [
+      22,
+      "lower",
+      "right_shoulder_pitch_joint"
+    ],
+    [
+      23,
+      "lower",
+      "right_shoulder_roll_joint"
+    ],
+    [
+      25,
+      "upper",
+      "right_elbow_joint"
+    ],
+    [
+      26,
+      "lower",
+      "right_wrist_roll_joint"
+    ],
+    [
+      27,
+      "upper",
+      "right_wrist_pitch_joint"
+    ],
+    [
+      28,
+      "lower",
+      "right_wrist_yaw_joint"
+    ]
+  ],
+  "scope": "Deletion filter with original dynamics/contact equalities fixed. One conflict subset, not a unique cause.",
+  "collision_rows": [
+    {
+      "G_row": 454,
+      "pair_index": 436,
+      "pair": [
+        "right_rubber_hand_cover_2",
+        "right_hip_roll_link_cover_2"
+      ],
+      "distance_m": 0.11693991720676422,
+      "distance_rate_m_s": 0.29605990648269653
+    },
+    {
+      "G_row": 512,
+      "pair_index": 572,
+      "pair": [
+        "left_rubber_hand_cover_2",
+        "torso_link_cover_0"
+      ],
+      "distance_m": 0.24273419380187988,
+      "distance_rate_m_s": 0.8766005039215088
+    },
+    {
+      "G_row": 560,
+      "pair_index": 682,
+      "pair": [
+        "right_wrist_yaw_link_cover_2",
+        "torso_link_cover_2"
+      ],
+      "distance_m": 0.2709895372390747,
+      "distance_rate_m_s": 0.15636278688907623
+    }
+  ],
+  "tube_rows": {
+    "628": "joint RMSE tracking tube",
+    "630": "root orientation tracking tube"
+  }
+}

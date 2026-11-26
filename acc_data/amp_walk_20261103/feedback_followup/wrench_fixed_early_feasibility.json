@@ -1,0 +1,46 @@
+[
+  {
+    "name": "fixed_lower15_all150",
+    "rows": 649,
+    "checks": {
+      "all": {
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+      },
+      "without_aux_joint": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "without_aux_orientation": {
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+      },
+      "without_aux_tubes": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      }
+    }
+  },
+  {
+    "name": "fixed_tail15_arms",
+    "rows": 641,
+    "checks": {
+      "all": {
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+      },
+      "without_aux_joint": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "without_aux_orientation": {
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+      },
+      "without_aux_tubes": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      }
+    }
+  }
+]

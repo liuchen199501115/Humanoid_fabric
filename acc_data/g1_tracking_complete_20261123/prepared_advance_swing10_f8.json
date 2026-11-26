@@ -1,0 +1,13 @@
+{
+  "advance_frames": 8,
+  "advance_source_seconds": 0.04,
+  "peak_foot_position_error_m": 4.858925132612679e-07,
+  "peak_foot_rotation_error_rad": 2.90190551438794e-07,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_control_joint_change_rmse_rad": 0.1363261193037033,
+  "root_other_leg_and_upper_body_exactly_unchanged": true,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

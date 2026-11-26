@@ -1,0 +1,8 @@
+{
+  "name": "lipm_reference50",
+  "minimum_reference_normal_force": 52.95294710618987,
+  "maximum_reference_normal_force": 832.0988755667386,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 161.86122826883033,
+  "physical_tracking_certified": false
+}

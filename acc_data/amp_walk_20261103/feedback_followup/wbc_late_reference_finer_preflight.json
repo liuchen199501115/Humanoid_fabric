@@ -1,0 +1,38 @@
+[
+  {
+    "stride": 6,
+    "minimum_native_clearance": -0.0014263382376807077,
+    "minimum_joint_margin": 0.05943781137466431,
+    "max_velocity_fraction": 0.42674392461776733,
+    "max_root_angular_acceleration": 24.688478469848633,
+    "physical_tracking_certified": false,
+    "preflight_passed": true
+  },
+  {
+    "stride": 7,
+    "minimum_native_clearance": -0.0014501228516096282,
+    "minimum_joint_margin": 0.0629606693983078,
+    "max_velocity_fraction": 0.42344990372657776,
+    "max_root_angular_acceleration": 19.714879989624023,
+    "physical_tracking_certified": false,
+    "preflight_passed": true
+  },
+  {
+    "stride": 8,
+    "minimum_native_clearance": -0.0018309740022967869,
+    "minimum_joint_margin": 0.06547991931438446,
+    "max_velocity_fraction": 0.41228383779525757,
+    "max_root_angular_acceleration": 20.021089553833008,
+    "physical_tracking_certified": false,
+    "preflight_passed": true
+  },
+  {
+    "stride": 9,
+    "minimum_native_clearance": -0.002298828783154558,
+    "minimum_joint_margin": 0.0642409473657608,
+    "max_velocity_fraction": 0.3863770365715027,
+    "max_root_angular_acceleration": 20.062484741210938,
+    "physical_tracking_certified": false,
+    "preflight_passed": false
+  }
+]

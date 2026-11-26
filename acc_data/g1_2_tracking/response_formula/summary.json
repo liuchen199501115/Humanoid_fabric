@@ -1,0 +1,25 @@
+{
+  "full_motion_tracking_passed": false,
+  "physical_trials": 17,
+  "best_prefix": 12,
+  "best_prefix_run": "stop25_root500",
+  "best_last_source_frame": 992.36,
+  "source_frame_count": 2000,
+  "expected_landings": 29,
+  "regression_tests": {
+    "passed": 36,
+    "failed": 0,
+    "log": "acc_data/g1_2_tracking/response_formula/tests.log"
+  },
+  "implementation_sha256": {
+    "examples/test_g1_2.py": "3629b7764d010f713b71c26e239ebfdb0cf56a29a1afdbb198346e33a2772d9a",
+    "examples/g1_response_feedback.py": "fe794e803f3988018c1c74e41061cc61d89e4929ef82b7e07eed884709599446",
+    "tests/test_g1_response_feedback.py": "6bd012ad4c77b0e0f86bfc81ab36122501640f1afdc3faeac28a8d47cc955961"
+  },
+  "limitations": [
+    "State corrections augment the historical schedule; no claim that all time gates were removed.",
+    "Stopping budget calibrated from the stable 0--4.1 s interval, not a physical deceleration guarantee.",
+    "Offline feasible snapshots do not establish closed-loop tracking.",
+    "No whole-clip success unless all original fidelity and 29 landing checks pass."
+  ]
+}

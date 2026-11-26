@@ -1,0 +1,30 @@
+{
+  "name": "projection1_attitude3",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--projection-joint-correction-weight",
+    "1",
+    "--qp-base-acceleration-weight",
+    "10",
+    "--source-pelvis-weight",
+    "3",
+    "--fabric-angular-feedback-limit",
+    "100"
+  ],
+  "measured_steps": 3,
+  "last_time_s": 1.216,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 1.216,
+    "source_frame": 248.84276525169153,
+    "joint_rmse_rad": 0.1494804173707962,
+    "root_position_m": 0.20087431371212006,
+    "root_orientation_rad": 0.056185465232304846
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.17755837738513947
+}

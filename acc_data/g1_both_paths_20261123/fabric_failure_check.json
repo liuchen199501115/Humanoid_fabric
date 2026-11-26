@@ -1,0 +1,44 @@
+{
+  "source": "acc_data/g1_both_paths_20261123/fabric_metric.failure.npz",
+  "scope": "offline frozen-state only; no controller constraints or solver tolerances changed",
+  "last_applied_time_s": 0.332,
+  "saved_primal_residual": 0.00010469423887116136,
+  "cases": [
+    {
+      "single_solve": true,
+      "accepted": false,
+      "status": [
+        "DAQP 1; rejected"
+      ],
+      "native_solve_counts": [
+        1
+      ],
+      "primal_residual": 1.2364904478090466e-07
+    },
+    {
+      "single_solve": false,
+      "accepted": true,
+      "status": [
+        "DAQP 1; KKT polished"
+      ],
+      "native_solve_counts": [
+        1
+      ],
+      "primal_residual": 4.547473508864641e-13
+    }
+  ],
+  "linear_feasibility": {
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "residual": 1.2850981434553432e-07
+  },
+  "native_certificate": {
+    "flag": 1,
+    "stationarity": 1.3921086505774838e-12,
+    "stationarity_limit": 1e-08,
+    "complementarity": 4.043510942599854e-07,
+    "complementarity_limit": 1e-07,
+    "primal_residual": 1.2364904478090466e-07,
+    "primal_limit": 1e-06
+  }
+}

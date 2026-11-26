@@ -150,6 +150,10 @@ class G1PhysicalTasksTest(unittest.TestCase):
 
     def setUp(self):
         f, q = self.fabric, self.q
+        f.dynamics_tasks.cache_task_requests = True
+        f.dynamics_tasks.priority_mode = 'none'
+        f.dynamics_tasks.priority_joint_armature = None
+        f.dynamics_tasks.wrist_hip_barrier = False
         f.dynamics_tasks.set_hand_tracking("position")
         f.dynamics_tasks.body_reference = None
         f.dynamics_tasks.collision_enabled = True
@@ -168,6 +172,50 @@ class G1PhysicalTasksTest(unittest.TestCase):
             transforms = taskmap.robot_kinematics.batch_link_transforms_torch[:, taskmap.link_indices].clone()
             setter(transforms[..., :3], transforms[..., 3:])
 
+    def test_paper_priority_real_g1_preserves_physical_constraint_rows(self):
+        f = self.fabric
+        velocity = .05 * torch.randn(4, 35)
+        f.dynamics_tasks.wrist_hip_barrier = True
+        f.compute_acceleration(self.q, velocity)
+        constraints = tuple(v.clone() for v in f.dynamics_tasks.last_collision_constraints)
+        f.dynamics_tasks.priority_mode = 'paper'
+        f.dynamics_tasks.priority_joint_armature = torch.full((4, 29), .01)
+        f.dynamics_tasks.cache_task_requests = False
+        acceleration = f.compute_acceleration(self.q, velocity)
+        state = f.dynamics_tasks.last_snapshot
+        self.assertTrue(torch.isfinite(acceleration).all())
+        self.assertIsNone(f.dynamics_tasks.last_requests)
+        self.assertLess(state['fabric_priority_nullspace_error'].max().item(), 1e-9)
+        self.assertLess(state['fabric_priority_idempotence_error'].max().item(), 1e-9)
+        self.assertGreater(torch.linalg.eigvalsh(state['fabric_acc_metric']).min().item(), 0.)
+        for value, actual in zip(constraints, f.dynamics_tasks.last_collision_constraints):
+            torch.testing.assert_close(actual, value)
+
+    def test_acceleration_only_clears_cached_leaves_without_changing_acceleration(self):
+        f = self.fabric
+        velocity = torch.zeros(4, 35)
+        expected = f.compute_acceleration(self.q, velocity)
+        self.assertIsNotNone(f.dynamics_tasks.last_requests)
+        com = next(r for r in f.dynamics_tasks.last_requests if r.name == 'center_of_mass')
+        desired, metric, bias = com.desired.clone(), com.metric.clone(), com.bias.clone()
+        expected_metric = f.dynamics_tasks.config['regularization'] * torch.eye(35)[None]
+        for request in f.dynamics_tasks.last_requests:
+            expected_metric = expected_metric + request.natural_form()[0]
+        torch.testing.assert_close(f.dynamics_tasks.last_snapshot['fabric_acc_metric'], expected_metric)
+        constraints = f.dynamics_tasks.last_collision_constraints
+        f.dynamics_tasks.cache_task_requests = False
+        actual = f.compute_acceleration(self.q, velocity)
+        self.assertIsNone(f.dynamics_tasks.last_requests)
+        self.assertIsNotNone(f.dynamics_tasks.last_snapshot)
+        torch.testing.assert_close(f.dynamics_tasks.last_snapshot['com_acc_desired'], desired)
+        torch.testing.assert_close(f.dynamics_tasks.last_snapshot['com_acc_metric'], metric)
+        torch.testing.assert_close(f.dynamics_tasks.last_snapshot['com_jac_bias'], bias)
+        torch.testing.assert_close(f.dynamics_tasks.last_snapshot['fabric_acc_metric'], expected_metric)
+        torch.testing.assert_close(actual, expected, rtol=0., atol=0.)
+        if constraints is not None:
+            for before, after in zip(constraints, f.dynamics_tasks.last_collision_constraints):
+                torch.testing.assert_close(before, after, rtol=0., atol=0.)
+
     def test_managed_walking_changes_soft_metrics_without_changing_contact_rows(self):
         f=self.fabric
         f.set_contact_state(torch.tensor([[True,False]]).expand(4,-1))
@@ -180,6 +228,30 @@ class G1PhysicalTasksTest(unittest.TestCase):
             torch.testing.assert_close(walking[name].active,baseline[name].active)
             torch.testing.assert_close(walking[name].desired,baseline[name].desired)
         self.assertFalse(walking['feet_pose'].active[:,:6].any())
+
+    def test_disabled_posture_stays_disabled_after_reference_updates(self):
+        from unittest.mock import patch
+
+        f, q = self.fabric, self.q
+        velocity = torch.zeros(4, 35)
+        baseline = {task.name: task for task in f.compute_task_requests(q, velocity)}
+        with patch.object(f, 'joint_posture_enabled', False):
+            for offset in (.1, -.2):
+                f.set_joint_posture_target(q[:, 7:] + offset,
+                    torch.ones(4, 29), torch.full((4, 29), 2.))
+                tasks = {task.name: task for task in f.compute_task_requests(q, velocity)}
+                self.assertEqual(set(tasks), set(baseline) - {'joint_posture'})
+                for name, task in tasks.items():
+                    torch.testing.assert_close(task.desired, baseline[name].desired)
+                    torch.testing.assert_close(task.metric, baseline[name].metric)
+                # The legacy Fabric term must also stay inactive.
+                term = f.joint_posture_term
+                error = torch.full((4, 29), offset)
+                term.metric_eval(error, velocity[:, 6:], None)
+                term.force_eval(error, velocity[:, 6:],
+                    f.fabrics_features['joint_posture']['joint_posture_attractor'])
+                self.assertEqual(term.metric.count_nonzero(), 0)
+                self.assertEqual(term.force.count_nonzero(), 0)
 
     def test_source_pelvis_target_sees_tilt_hidden_by_waist_compensation(self):
         f = self.fabric
@@ -428,6 +500,41 @@ class G1PhysicalTasksTest(unittest.TestCase):
             tasks.wrist_hip_barrier = False
             tasks.stable_constraint_rows = False
             tasks._set_collision_geometry(tasks.config['collision']['spheres'],tasks.config['collision']['pairs'])
+
+    def test_cross_hip_barrier_preserves_tasks_and_adds_one_physical_row(self):
+        tasks = self.fabric.dynamics_tasks
+        velocity = torch.full((4, 35), .07)
+        before = self.fabric.compute_task_requests(self.q, velocity)
+        try:
+            tasks.enable_hip_yaw_barrier(bandwidth=12., margin=.015)
+            after = self.fabric.compute_task_requests(self.q, velocity)
+            C, bound = tasks.last_collision_constraints
+            self.assertEqual(C.shape, (4, 1, 35))
+            self.assertEqual(bound.shape, (4, 1))
+            self.assertTrue(torch.isfinite(C).all() and torch.isfinite(bound).all())
+            for left, right in zip(before, after):
+                for field in ('A', 'bias', 'desired', 'metric', 'active'):
+                    torch.testing.assert_close(getattr(left, field), getattr(right, field), rtol=0, atol=0)
+            geom = tasks.hip_yaw_barrier_geometry
+            eps = tasks.config['difference_step']
+            state, plus, minus = tasks.model.evaluate(self.q, velocity, self.fabric.integrate_root_position, eps)
+            distance, J = geom.evaluate(state)
+            _, Jp = geom.evaluate(plus)
+            _, Jm = geom.evaluate(minus)
+            speed = (J@velocity[..., None]).squeeze(-1)
+            bias = (((Jp-Jm)/(2*eps))@velocity[..., None]).squeeze(-1)
+            torch.testing.assert_close(C, -J)
+            # At the barrier boundary, h'' + 2*w*h' + w^2*h = 0.
+            qdd = C * (bound/(C.square().sum(-1)))[..., None]
+            physical_acc = (J*qdd).sum(-1)+bias
+            torch.testing.assert_close(physical_acc+24*speed+144*(distance-.015),
+                                       torch.zeros_like(bound), atol=2e-5, rtol=0)
+            self.fabric.compute_task_requests(self.q, velocity)
+            self.assertEqual(tasks.last_collision_constraints[0].shape, (4, 1, 35))
+        finally:
+            tasks.hip_yaw_barrier_geometry = None
+        self.fabric.compute_task_requests(self.q, velocity)
+        self.assertIsNone(tasks.last_collision_constraints)
 
     def test_wrist_body_cover_includes_observed_nonadjacent_collision_pairs(self):
         tasks=self.fabric.dynamics_tasks

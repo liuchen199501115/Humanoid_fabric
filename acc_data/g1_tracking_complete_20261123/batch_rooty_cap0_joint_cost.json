@@ -1,0 +1,40 @@
+[
+  {
+    "name": "ten_rooty_cap0_shoulder4",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--shoulder-roll-weight-scale",
+      "4",
+      "--shoulder-roll-weight-start",
+      "4.08",
+      "--shoulder-roll-weight-ramp",
+      ".06",
+      "--shoulder-roll-weight-side",
+      "right"
+    ]
+  },
+  {
+    "name": "ten_rooty_cap0_shoulder16",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--shoulder-roll-weight-scale",
+      "16",
+      "--shoulder-roll-weight-start",
+      "4.08",
+      "--shoulder-roll-weight-ramp",
+      ".06",
+      "--shoulder-roll-weight-side",
+      "right"
+    ]
+  },
+  {
+    "name": "ten_rooty_cap0_jointtube100",
+    "parent": "ten_rooty100_commax0_816",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "3.806",
+      "--late-tube-soft-weight",
+      "100"
+    ]
+  }
+]

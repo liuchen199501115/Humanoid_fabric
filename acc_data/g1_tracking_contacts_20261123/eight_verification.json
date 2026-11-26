@@ -1,0 +1,35 @@
+{
+  "exact_history_fields": 153,
+  "excluded_history_fields": [
+    "history_qp_wall_seconds"
+  ],
+  "prepared_reference_sha256": "20801af0b615253cfce4268eae2f805036d80fd841d5a08f286eef618ef179a1",
+  "reference_and_source_match": true,
+  "self_collision_enabled": true,
+  "self_contact_events": 0,
+  "minimum_hard_cover_distance_after_1_85_s_m": 0.020174577832221985,
+  "original_acceptance_limits": true,
+  "measured_steps": 8,
+  "expected_steps": 29,
+  "landing8": {
+    "step": 8,
+    "swing": "right",
+    "source_frame": 647.0000000000001,
+    "time": 3.1,
+    "landing_error_m": 0.03157963491533057,
+    "goal": [
+      4.721093654632568,
+      -0.4691067636013031,
+      0.05357775092124939
+    ],
+    "measured_load_n": 2633.423095703125,
+    "source_contact_onset_goal": [
+      4.712121486663818,
+      -0.4676639437675476,
+      0.05950581654906273
+    ]
+  },
+  "landing8_joint_rmse_rad": 0.16412770748138428,
+  "landing8_root_position_error_m": 0.15438538789749146,
+  "full_tracking_passed": false
+}

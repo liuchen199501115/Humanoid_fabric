@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ten_support10_com15_x20",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_support10_early_com15_x20.npz"
+    ]
+  },
+  {
+    "name": "ten_support10_com15_y20",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_support10_early_com15_y20.npz"
+    ]
+  },
+  {
+    "name": "ten_support10_com15_x15_y15",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_support10_early_com15_x15_y15.npz"
+    ]
+  }
+]

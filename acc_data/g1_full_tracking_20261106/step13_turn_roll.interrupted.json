@@ -1,0 +1,5 @@
+{
+  "reason": "Continue with all three bounded root-orientation directions after the roll-only search; remaining contact pitch/yaw moment requirements cannot be corrected by roll alone. Independent finite-difference tangent audit recorded before this continuation.",
+  "physical_tracking_certified": false,
+  "continuation_seed": "step13_turn_orientation_seed.npz"
+}

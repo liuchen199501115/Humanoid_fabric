@@ -1,0 +1,12 @@
+{
+  "candidate": "contact_compatible_b15.npz",
+  "dense_sample_count": 3999,
+  "minimum_joint_limit_margin": 8.86917111975194e-09,
+  "peak_joint_reference_rmse": 0.15174280107021332,
+  "peak_root_position_delta": 0.027872415259480476,
+  "initial_qva_equal": true,
+  "joint_velocity_finite_difference_max_error": 0.0034947991371154785,
+  "joint_acceleration_finite_difference_max_error": 0.115325927734375,
+  "physical_tracking_certified": false,
+  "curve_audit_passed": true
+}

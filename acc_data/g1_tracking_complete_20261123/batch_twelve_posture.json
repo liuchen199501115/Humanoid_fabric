@@ -1,0 +1,53 @@
+[
+  {
+    "name": "twelve_waist16",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-waist-metric-start",
+      "4.8",
+      "--late-waist-metric-scale",
+      "16",
+      "--late-waist-metric-ramp",
+      ".04",
+      "--qp-snapshot-times",
+      "4.7",
+      "4.74",
+      "4.78",
+      "4.8"
+    ]
+  },
+  {
+    "name": "twelve_armfeedback100",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--global-posture-feedback-start",
+      "4.8",
+      "--global-posture-feedback-joints",
+      "arms",
+      "--global-posture-feedback-limit",
+      "100",
+      "--global-posture-feedback-metric-scale",
+      "4",
+      "--qp-snapshot-times",
+      "4.7",
+      "4.74",
+      "4.78",
+      "4.8"
+    ]
+  },
+  {
+    "name": "twelve_pelvis1",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-pelvis-priority-start",
+      "4.8",
+      "--late-pelvis-metric-scale",
+      "1",
+      "--qp-snapshot-times",
+      "4.7",
+      "4.74",
+      "4.78",
+      "4.8"
+    ]
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "run": "brake_waist20",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/brake_waist20.npz",
+  "measured_landing_events": 5,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 5,
+  "first_fidelity_exceeded_time_s": 2.048,
+  "last_source_frame": 448.5200000000001,
+  "last_time_s": 2.048,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.188,
+      "source_frame": 37.6,
+      "landing_error_m": 0.011787721130019873,
+      "joint_rmse_rad": 0.11585889756679535,
+      "root_position_error_m": 0.014900225214660168,
+      "root_orientation_error_rad": 0.104503785415284,
+      "prefix_peak_joint_rmse_rad": 0.11585889756679535,
+      "prefix_peak_root_position_error_m": 0.014900225214660168,
+      "prefix_peak_root_orientation_error_rad": 0.104503785415284,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 2,
+      "time_s": 0.41200000000000003,
+      "source_frame": 82.4,
+      "landing_error_m": 0.028834447968767773,
+      "joint_rmse_rad": 0.17244727909564972,
+      "root_position_error_m": 0.022470014169812202,
+      "root_orientation_error_rad": 0.10771284623794389,
+      "prefix_peak_joint_rmse_rad": 0.18372873961925507,
+      "prefix_peak_root_position_error_m": 0.022470014169812202,
+      "prefix_peak_root_orientation_error_rad": 0.12381471331920596,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 3,
+      "time_s": 0.87,
+      "source_frame": 174.0,
+      "landing_error_m": 0.0057019885400769734,
+      "joint_rmse_rad": 0.13566040992736816,
+      "root_position_error_m": 0.05315638706088066,
+      "root_orientation_error_rad": 0.165237154856488,
+      "prefix_peak_joint_rmse_rad": 0.19084101915359497,
+      "prefix_peak_root_position_error_m": 0.05315638706088066,
+      "prefix_peak_root_orientation_error_rad": 0.3241548788335943,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 4,
+      "time_s": 1.334,
+      "source_frame": 277.16,
+      "landing_error_m": 0.021929683768237625,
+      "joint_rmse_rad": 0.10764789581298828,
+      "root_position_error_m": 0.03328108787536621,
+      "root_orientation_error_rad": 0.12360234674723428,
+      "prefix_peak_joint_rmse_rad": 0.19084101915359497,
+      "prefix_peak_root_position_error_m": 0.05896565318107605,
+      "prefix_peak_root_orientation_error_rad": 0.3241548788335943,
+      "prefix_fidelity_passed": true
+    },
+    {
+      "step": 5,
+      "time_s": 1.728,
+      "source_frame": 371.72,
+      "landing_error_m": 0.00868053222941083,
+      "joint_rmse_rad": 0.11691174656152725,
+      "root_position_error_m": 0.11301729828119278,
+      "root_orientation_error_rad": 0.2501352131406223,
+      "prefix_peak_joint_rmse_rad": 0.19084101915359497,
+      "prefix_peak_root_position_error_m": 0.11301729828119278,
+      "prefix_peak_root_orientation_error_rad": 0.3241548788335943,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 6,
+    "swing": "right",
+    "missing_evidence": "loaded_landing",
+    "landing_window_expired": false,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.0931173574466797,
+    "best_loaded_landing_error_m": null,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "returncode": 1,
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "response-wbc",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/brake_waist20.npz",
+    "--response-gain",
+    "0",
+    "--state-limit-priority",
+    "waist",
+    "--state-limit-weight",
+    "20"
+  ],
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "failed_time_s": null,
+  "failed_source_frame": null,
+  "tested_source_sha256": "cb07040469e96745679b0295d54b9386a6069cfca42c5dbc1fbde34b6d1167d2",
+  "execution": {
+    "tracking_profile": "response-wbc",
+    "formula_scope": "phase",
+    "direct_wbc": true,
+    "tracking_servo": true,
+    "formula_source_reference": false,
+    "physical_braking_start": 100.0,
+    "clock_final_speed": 1.2,
+    "response_gain": 0.0,
+    "response_error_onset": 0.0,
+    "state_limit_priority": "waist",
+    "state_braking_budget": null,
+    "state_limit_weight": 20.0,
+    "state_root_metric": null,
+    "state_root_onset": null,
+    "state_root_angular_scale": null,
+    "state_braking_hard": null,
+    "state_soft_orientation": null
+  },
+  "servo_valid": true,
+  "servo_saturation_fraction": 0.0,
+  "qp_validated": [
+    true
+  ],
+  "response_estimate_range": [
+    -4.105123043060303,
+    2.8461530208587646
+  ],
+  "response_activation_range": [
+    1.0,
+    1.0
+  ],
+  "state_braking_active_range": [
+    0.0,
+    1.0
+  ],
+  "raw_source_audit": {
+    "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+    "frame_count": 2000,
+    "peak_joint_rmse_rad": 0.20003753900527954,
+    "peak_root_position_m": 0.17656046152114868,
+    "peak_root_orientation_rad": 0.3241554996739286,
+    "prefix_landings": 5,
+    "reference_max_difference": 4.738569259643555e-06,
+    "landings": [
+      {
+        "step": 1,
+        "source_foot_error_m": 0.01178776775288934,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      },
+      {
+        "step": 2,
+        "source_foot_error_m": 0.02883435363063152,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      },
+      {
+        "step": 3,
+        "source_foot_error_m": 0.005701914501616998,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      },
+      {
+        "step": 4,
+        "source_foot_error_m": 0.02192962119586239,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      },
+      {
+        "step": 5,
+        "source_foot_error_m": 0.008680473658564681,
+        "prefix_pose_passed": true,
+        "foot_position_passed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,1208 @@
+{
+  "scope": "Offline sensitivity only; cap=200 rad/s^2, vertical change<=0.5 m/s^2, swing linear/angular residual growth<=0.5/5, body/pelvis angular residual growth<=5. All saved constraints retained. Minimum vertical departure separately removes only the newly added vertical protection and minimizes its required relaxation, retaining original constraints and other added protections.",
+  "common_feasible_parameters_first_five": [
+    [
+      0.5,
+      0.25
+    ],
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      1.0,
+      0.25
+    ],
+    [
+      1.0,
+      0.5
+    ]
+  ],
+  "records": [
+    {
+      "time": 3.5,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.1857741573833853,
+          "feasible": true,
+          "violation": 6.153300091682468e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.17014977780316728,
+          "feasible": true,
+          "violation": 6.153300091682468e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.13890101864273127,
+          "feasible": true,
+          "violation": 6.153300091682468e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.07640350032185925,
+          "feasible": true,
+          "violation": 6.153300091682468e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.048591536319884804,
+          "feasible": false,
+          "violation": 6.153300091682468e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.1737627649277532,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.1580352882638297,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.12658033493598272,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.06367042828028877,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.06214938503109915,
+          "feasible": false,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.1494373084936209,
+          "feasible": true,
+          "violation": 1.0871303857129533e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.13334577639967393,
+          "feasible": true,
+          "violation": 1.0871303857129533e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.10116271221177997,
+          "feasible": true,
+          "violation": 1.0871303857129533e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.03679658383599205,
+          "feasible": true,
+          "violation": 1.0871303857129533e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.0919356729155838,
+          "feasible": false,
+          "violation": 1.0871303857129533e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.09957494452700885,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.08212385652256479,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.04722168051367667,
+          "feasible": true,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.022582671504099566,
+          "feasible": false,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.16219137553965204,
+          "feasible": false,
+          "violation": 1.2889245226688217e-11
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.0521264827270731,
+          "feasible": true,
+          "violation": 3.205968823749572e-11
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.029430502699834493,
+          "feasible": true,
+          "violation": 3.205968823749572e-11
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 0.015961457354642716,
+          "feasible": false,
+          "violation": 3.205968823749572e-11
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.10674537746359714,
+          "feasible": false,
+          "violation": 3.205968823749572e-11
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.288313217681506,
+          "feasible": false,
+          "violation": 3.205968823749572e-11
+        }
+      ],
+      "vertical_departure": {
+        "status": 0,
+        "minimum_vertical_departure": 0.6911324652297751,
+        "violation": 1.7337242752546445e-12
+      }
+    },
+    {
+      "time": 3.7,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.18045497705738267,
+          "feasible": true,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.1315800462389891,
+          "feasible": true,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.033830184602201996,
+          "feasible": true,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.16166953867137224,
+          "feasible": false,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.5526689852185207,
+          "feasible": false,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.08153377647164506,
+          "feasible": true,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.029530887009484363,
+          "feasible": true,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 0.07447489191483703,
+          "feasible": false,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.2824864497634798,
+          "feasible": false,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.6985095654607654,
+          "feasible": false,
+          "violation": 1.4210854715202004e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": 0.13404922240728068,
+          "feasible": false,
+          "violation": 1.7053025658242404e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": 0.19282160623455047,
+          "feasible": false,
+          "violation": 1.7053025658242404e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 0.31036637388909005,
+          "feasible": false,
+          "violation": 1.7053025658242404e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.5454559091981692,
+          "feasible": false,
+          "violation": 1.7053025658242404e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 1.0156349798163276,
+          "feasible": false,
+          "violation": 1.7053025658242404e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": 0.6361776109949515,
+          "feasible": false,
+          "violation": 5.684341886080801e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": 0.7105432918627388,
+          "feasible": false,
+          "violation": 5.684341886080801e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 0.8592746535983133,
+          "feasible": false,
+          "violation": 5.684341886080801e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 1.1567373770694624,
+          "feasible": false,
+          "violation": 5.684341886080801e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 1.7516628240117607,
+          "feasible": false,
+          "violation": 5.684341886080801e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": 1.9242839514895334,
+          "feasible": false,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": 2.0380534596795528,
+          "feasible": false,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 2.2655924760595916,
+          "feasible": false,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 2.720670508819669,
+          "feasible": false,
+          "violation": 1.1368683772161603e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 3.6308265743398245,
+          "feasible": false,
+          "violation": 1.1368683772161603e-13
+        }
+      ],
+      "vertical_departure": {
+        "status": 2
+      }
+    },
+    {
+      "time": 3.8,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.8334673986588919,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.7549288584708285,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.5978517780947017,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.2836976173424481,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.655389295837941,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.796755127745755,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.7065972288180231,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.5262814309625594,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.165649835251632,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.4443866438297772,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.6586507897049307,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.5427359951861324,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.3109064061485356,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.8472472280733421,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.08007112807704497,
+          "feasible": false,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.1237229287650765,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.9462216306172266,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.5912190343215269,
+          "feasible": true,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 0.1187861582698726,
+          "feasible": false,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 1.5387965434526716,
+          "feasible": false,
+          "violation": 1.3855583347321954e-12
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": 0.9810095325474362,
+          "feasible": false,
+          "violation": 2.0747847884194925e-12
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": 1.3219746877410632,
+          "feasible": false,
+          "violation": 2.0747847884194925e-12
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 2.0039049981283164,
+          "feasible": false,
+          "violation": 2.0747847884194925e-12
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 3.3677656189028227,
+          "feasible": false,
+          "violation": 2.0747847884194925e-12
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 6.095486860451835,
+          "feasible": false,
+          "violation": 2.0747847884194925e-12
+        }
+      ],
+      "vertical_departure": {
+        "status": 0,
+        "minimum_vertical_departure": 1.2108937010652352,
+        "violation": 3.979039320256561e-13
+      }
+    },
+    {
+      "time": 4.0,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.7388606789507985,
+          "feasible": true,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.7108167459110692,
+          "feasible": true,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.6547288798316107,
+          "feasible": true,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.5425531476726935,
+          "feasible": true,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.3182016833548591,
+          "feasible": true,
+          "violation": 1.9539925233402755e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.8872373034786062,
+          "feasible": true,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.8470720647670748,
+          "feasible": true,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.7667415873440119,
+          "feasible": true,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.6060806324978861,
+          "feasible": true,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.28475872280563463,
+          "feasible": true,
+          "violation": 2.1316282072803006e-13
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.1262973375895495,
+          "feasible": true,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.054372177991347,
+          "feasible": true,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.9105218587949422,
+          "feasible": true,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.6228212204021324,
+          "feasible": true,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.047419943616512805,
+          "feasible": true,
+          "violation": 9.947598300641403e-14
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.3741124068731276,
+          "feasible": true,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.2085981673293162,
+          "feasible": true,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.8775696882416935,
+          "feasible": true,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -0.2155127300664479,
+          "feasible": true,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 1.1086011862840432,
+          "feasible": false,
+          "violation": 8.526512829121202e-14
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -0.9470405358820309,
+          "feasible": true,
+          "violation": 1.2789769243681803e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -0.4740711837579339,
+          "feasible": true,
+          "violation": 1.2789769243681803e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": 0.47186752049026004,
+          "feasible": false,
+          "violation": 1.2789769243681803e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 2.363744928986648,
+          "feasible": false,
+          "violation": 1.2789769243681803e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 6.147499745979424,
+          "feasible": false,
+          "violation": 1.2789769243681803e-13
+        }
+      ],
+      "vertical_departure": {
+        "status": 0,
+        "minimum_vertical_departure": 0.0,
+        "violation": 2.0605739337042905e-13
+      }
+    },
+    {
+      "time": 4.15,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.2626592743739602,
+          "feasible": true,
+          "violation": 3.1597835459251655e-11
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.234723009453746,
+          "feasible": true,
+          "violation": 3.1597835459251655e-11
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.1788504796133177,
+          "feasible": true,
+          "violation": 3.1597835459251655e-11
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.067105419932461,
+          "feasible": true,
+          "violation": 3.1597835459251655e-11
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.8436153005707476,
+          "feasible": true,
+          "violation": 3.1597835459251655e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.513485169526961,
+          "feasible": true,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.4704815650052727,
+          "feasible": true,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.3844743559618955,
+          "feasible": true,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.212459937875141,
+          "feasible": true,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.8684311017016321,
+          "feasible": true,
+          "violation": 4.1310954657092225e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -1.9485899108644584,
+          "feasible": true,
+          "violation": 1.659827830735594e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -1.8635226698112946,
+          "feasible": true,
+          "violation": 1.659827830735594e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.6933881877049668,
+          "feasible": true,
+          "violation": 1.659827830735594e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.3531192234923113,
+          "feasible": true,
+          "violation": 1.659827830735594e-11
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": -0.6725812950670003,
+          "feasible": true,
+          "violation": 1.659827830735594e-11
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -2.6299753303343234,
+          "feasible": true,
+          "violation": 2.7711166694643907e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -2.413064986904103,
+          "feasible": true,
+          "violation": 2.7711166694643907e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -1.9792443000436633,
+          "feasible": true,
+          "violation": 2.7711166694643907e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": -1.1116029263227833,
+          "feasible": true,
+          "violation": 2.7711166694643907e-13
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 0.6236798211189765,
+          "feasible": false,
+          "violation": 2.7711166694643907e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 0,
+          "minimum_excess": -2.9462666524622554,
+          "feasible": true,
+          "violation": 1.3500311979441904e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 0,
+          "minimum_excess": -2.274806787021501,
+          "feasible": true,
+          "violation": 1.3500311979441904e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 0,
+          "minimum_excess": -0.9318870561399923,
+          "feasible": true,
+          "violation": 1.3500311979441904e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 0,
+          "minimum_excess": 1.753952405623025,
+          "feasible": false,
+          "violation": 1.3500311979441904e-13
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 0,
+          "minimum_excess": 7.12563132914906,
+          "feasible": false,
+          "violation": 1.3500311979441904e-13
+        }
+      ],
+      "vertical_departure": {
+        "status": 0,
+        "minimum_vertical_departure": 0.0,
+        "violation": 1.3677947663381929e-13
+      }
+    },
+    {
+      "time": 4.25,
+      "grid": [
+        {
+          "lambda_": 0.5,
+          "kappa": 0.25,
+          "status": 2
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 0.5,
+          "status": 2
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 1.0,
+          "status": 2
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 2.0,
+          "status": 2
+        },
+        {
+          "lambda_": 0.5,
+          "kappa": 4.0,
+          "status": 2
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.25,
+          "status": 2
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 0.5,
+          "status": 2
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 1.0,
+          "status": 2
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 2.0,
+          "status": 2
+        },
+        {
+          "lambda_": 1.0,
+          "kappa": 4.0,
+          "status": 2
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.25,
+          "status": 2
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 0.5,
+          "status": 2
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 1.0,
+          "status": 2
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 2.0,
+          "status": 2
+        },
+        {
+          "lambda_": 2.0,
+          "kappa": 4.0,
+          "status": 2
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.25,
+          "status": 2
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 0.5,
+          "status": 2
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 1.0,
+          "status": 2
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 2.0,
+          "status": 2
+        },
+        {
+          "lambda_": 4.0,
+          "kappa": 4.0,
+          "status": 2
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.25,
+          "status": 2
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 0.5,
+          "status": 2
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 1.0,
+          "status": 2
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 2.0,
+          "status": 2
+        },
+        {
+          "lambda_": 8.0,
+          "kappa": 4.0,
+          "status": 2
+        }
+      ],
+      "vertical_departure": {
+        "status": 2
+      }
+    }
+  ]
+}

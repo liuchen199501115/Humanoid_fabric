@@ -1,0 +1,26 @@
+{
+  "maximum_com_correction_by_axis_m": [
+    0.0,
+    0.0,
+    0.03
+  ],
+  "maximum_foot_position_residual_m": 5.442338408770979e-07,
+  "maximum_foot_rotation_residual_rad": 2.5894395442736667e-07,
+  "maximum_com_ik_residual_m": 2.7091661598324384e-07,
+  "maximum_added_root_rotation_rad": 0.0864689872651854,
+  "worst_frame": 888,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.06768826395273209,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "preflight_passed": true,
+  "method": "Bounded late swing11 lowering with optional COM drop; both foot angles retained.",
+  "reduction_m": 0.05,
+  "com_drop_m": 0.03,
+  "landing_floor_m": 0.003,
+  "fade_start_frame": 900,
+  "fade_end_frame": 924,
+  "maximum_native_swing11_clearance_m": 0.051547431230875886,
+  "minimum_native_swing11_clearance_m": 0.0017021758345571944,
+  "parent_sha256": "2cb16e2225e2b776c49d7852647093f3ed6797fda1383bd174bb1b1bf809195b",
+  "full_tracking_passed": false
+}

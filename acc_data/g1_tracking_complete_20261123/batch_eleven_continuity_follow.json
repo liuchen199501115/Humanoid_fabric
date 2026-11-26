@@ -1,0 +1,28 @@
+[
+  {
+    "name": "eleven_cont1000_pause12",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_source",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_return_source_ramp60.npz"
+    ]
+  },
+  {
+    "name": "eleven_continuity3000",
+    "parent": "eleven_continuity1000",
+    "options": [
+      "--torque-continuity-weight",
+      "3000"
+    ]
+  }
+]

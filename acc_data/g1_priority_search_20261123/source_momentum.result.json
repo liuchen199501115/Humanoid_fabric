@@ -1,0 +1,12 @@
+{
+  "name": "source_momentum",
+  "options": [
+    "--fabric-priority-mode",
+    "paper",
+    "--source-momentum-reference",
+    "--posture-metric-scale",
+    "100"
+  ],
+  "returncode": 1,
+  "timed_out": false
+}

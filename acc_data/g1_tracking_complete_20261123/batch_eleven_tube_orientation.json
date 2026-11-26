@@ -1,0 +1,36 @@
+[
+  {
+    "name": "eleven_tube1000_pelvis1",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "1",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "4",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_tube1000_ori32",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--orientation-tube-start",
+      "4.5",
+      "--orientation-tube-radius",
+      ".32"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1_2.py",
+    "--tracking-profile",
+    "response-wbc",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_2_tracking/response_formula/stop25_hard_recovery.npz",
+    "--response-gain",
+    "0",
+    "--state-limit-priority",
+    "waist",
+    "--state-limit-weight",
+    "80",
+    "--state-braking-budget",
+    "25",
+    "--state-braking-hard",
+    "--state-soft-orientation"
+  ],
+  "status": "finished",
+  "sha256": {
+    "examples/test_g1_2.py": "3629b7764d010f713b71c26e239ebfdb0cf56a29a1afdbb198346e33a2772d9a",
+    "examples/g1_response_feedback.py": "fe794e803f3988018c1c74e41061cc61d89e4929ef82b7e07eed884709599446",
+    "examples/test_g1.py": "02d2838abb7c25e147fa2cf47b8938c26ae3a465e84a1c52169d177614f954ae",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "source_snapshots": {
+    "examples/test_g1_2.py": "acc_data/g1_2_tracking/response_formula/sources/3629b7764d010f713b71c26e239ebfdb0cf56a29a1afdbb198346e33a2772d9a_test_g1_2.py",
+    "examples/g1_response_feedback.py": "acc_data/g1_2_tracking/response_formula/sources/fe794e803f3988018c1c74e41061cc61d89e4929ef82b7e07eed884709599446_g1_response_feedback.py",
+    "examples/test_g1.py": "acc_data/g1_2_tracking/response_formula/sources/02d2838abb7c25e147fa2cf47b8938c26ae3a465e84a1c52169d177614f954ae_test_g1.py",
+    "src/fabrics_sim/solver/AccelerationQP.py": "acc_data/g1_2_tracking/response_formula/sources/ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348_AccelerationQP.py",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "acc_data/g1_2_tracking/response_formula/sources/d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38_unload_qp.py"
+  },
+  "returncode": 1,
+  "wall_seconds": 92.36941797658801
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "ten_anchor_waistsource_half",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_late_waist_source_anchor_half_free.npz"
+    ]
+  },
+  {
+    "name": "ten_anchor_waistsource_full",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_late_waist_source_anchor_full_free.npz"
+    ]
+  },
+  {
+    "name": "ten_anchor_waistbrake1000",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--soft-joint-braking-start",
+      "4.08",
+      "--soft-joint-braking-weight",
+      "1000",
+      "--soft-joint-braking-joints",
+      "waist_roll_joint",
+      "waist_pitch_joint"
+    ]
+  }
+]

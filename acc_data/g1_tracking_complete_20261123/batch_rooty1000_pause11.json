@@ -1,0 +1,47 @@
+[
+  {
+    "name": "rooty1000_lift10_pause11_840_884",
+    "parent": "rooty1000_clock14_lift10",
+    "options": [
+      "--contact-pause-start",
+      "4.2",
+      "--contact-pause-end",
+      "4.42",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  },
+  {
+    "name": "rooty1000_lift10_pause11_840_900",
+    "parent": "rooty1000_clock14_lift10",
+    "options": [
+      "--contact-pause-start",
+      "4.2",
+      "--contact-pause-end",
+      "4.5",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  },
+  {
+    "name": "rooty1000_lift10_pause11_860_900",
+    "parent": "rooty1000_clock14_lift10",
+    "options": [
+      "--contact-pause-start",
+      "4.3",
+      "--contact-pause-end",
+      "4.5",
+      "--contact-pause-landings",
+      "11",
+      "--contact-pause-resume",
+      ".3",
+      "--contact-pause-early-resume"
+    ]
+  }
+]

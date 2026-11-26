@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_pause960_search05",
+    "parent": "eleven_source60_late4096_pause960",
+    "options": [
+      "--foot-contact-search-start",
+      "4.7",
+      "--foot-contact-search-acceleration",
+      ".5"
+    ]
+  },
+  {
+    "name": "eleven_pause960_search1",
+    "parent": "eleven_source60_late4096_pause960",
+    "options": [
+      "--foot-contact-search-start",
+      "4.7",
+      "--foot-contact-search-acceleration",
+      "1"
+    ]
+  },
+  {
+    "name": "eleven_pause960_search2",
+    "parent": "eleven_source60_late4096_pause960",
+    "options": [
+      "--foot-contact-search-start",
+      "4.7",
+      "--foot-contact-search-acceleration",
+      "2"
+    ]
+  }
+]

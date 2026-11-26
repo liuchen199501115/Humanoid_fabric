@@ -1,0 +1,23 @@
+[
+  {
+    "name": null,
+    "peak_joint_acc": 382.60552978515625,
+    "peak_joint_speed": 9.069192886352539,
+    "worst_frame": 792.0,
+    "worst_joint": 9
+  },
+  {
+    "name": "stance_left_y004",
+    "peak_joint_acc": 382.60552978515625,
+    "peak_joint_speed": 9.069192886352539,
+    "worst_frame": 792.0,
+    "worst_joint": 9
+  },
+  {
+    "name": "tenth_flat50_y004",
+    "peak_joint_acc": 462.0853271484375,
+    "peak_joint_speed": 11.204843521118164,
+    "worst_frame": 804.0,
+    "worst_joint": 9
+  }
+]

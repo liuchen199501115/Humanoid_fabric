@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_gated_retain11_f250",
+    "parent": "eleven_gated_retain11_w100",
+    "options": [
+      "--retain-planned-support-force",
+      "250"
+    ]
+  },
+  {
+    "name": "eleven_pre11_upcap0",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--maximum-support-acceleration-start",
+      "4.3",
+      "--maximum-support-acceleration",
+      "0"
+    ]
+  },
+  {
+    "name": "eleven_pre11_rooty10000_tube3000",
+    "parent": "eleven_pre11_rooty10000",
+    "options": [
+      "--late-tube-soft-weight",
+      "3000",
+      "--qp-final-equilibration-start",
+      "4.348",
+      "--qp-final-equilibration-cap",
+      "2"
+    ]
+  }
+]

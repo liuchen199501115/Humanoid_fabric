@@ -1,0 +1,16 @@
+[
+  {
+    "stride": 6,
+    "maximum_root_orientation_change": 0.006160467719791347,
+    "maximum_joint_rmse_change": 0.01617155224084854,
+    "old_peak_angular_acceleration": 160.5666046142578,
+    "new_peak_angular_acceleration": 63.933414459228516
+  },
+  {
+    "stride": 10,
+    "maximum_root_orientation_change": 0.014655491826782921,
+    "maximum_joint_rmse_change": 0.029716864228248596,
+    "old_peak_angular_acceleration": 160.5666046142578,
+    "new_peak_angular_acceleration": 19.223960876464844
+  }
+]

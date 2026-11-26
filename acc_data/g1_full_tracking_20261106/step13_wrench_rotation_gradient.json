@@ -1,0 +1,47 @@
+{
+  "script_sha256": "a3b267fb93bd1fbbf793d3538435f7012827eb620f132c359b9301dcd6dd903f",
+  "cases": [
+    {
+      "frame": 960,
+      "foot": 0,
+      "maximum_absolute_error": 4.828859534455887e-11
+    },
+    {
+      "frame": 960,
+      "foot": 1,
+      "maximum_absolute_error": 1.2023700091123857e-10
+    },
+    {
+      "frame": 973,
+      "foot": 0,
+      "maximum_absolute_error": 1.579227859593857e-10
+    },
+    {
+      "frame": 973,
+      "foot": 1,
+      "maximum_absolute_error": 9.159084601861878e-11
+    },
+    {
+      "frame": 1008,
+      "foot": 0,
+      "maximum_absolute_error": 2.3588900971427407e-10
+    },
+    {
+      "frame": 1008,
+      "foot": 1,
+      "maximum_absolute_error": 1.1692983040156868e-10
+    },
+    {
+      "frame": 1020,
+      "foot": 0,
+      "maximum_absolute_error": 8.864681211306902e-11
+    },
+    {
+      "frame": 1020,
+      "foot": 1,
+      "maximum_absolute_error": 8.755399183435486e-11
+    }
+  ],
+  "passed": true,
+  "physical_tracking_certified": false
+}

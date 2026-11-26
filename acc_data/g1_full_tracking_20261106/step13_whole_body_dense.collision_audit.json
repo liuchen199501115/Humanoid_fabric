@@ -1,0 +1,33 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step13_whole_body_dense.npz",
+  "candidate_sha256": "5aad1519268827a51c0e63425568d7f94d12ea6df6c206ba23ff3159e2a24ca4",
+  "scope": "Offline original sphere pairs and added convex wrist/body pairs; not a simulation or all-link collision certificate.",
+  "sample_count": 801,
+  "worst_convex": {
+    "frame": 1033.25,
+    "minimum_wrist_body_convex_distance_m": 0.020184393972158432,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.06345623731613159,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "worst_original_sphere": {
+    "frame": 1032.5,
+    "minimum_wrist_body_convex_distance_m": 0.020400574430823326,
+    "mesh_pair": [
+      "left_rubber_hand",
+      "left_hip_pitch_link"
+    ],
+    "minimum_original_sphere_distance_m": 0.06328344345092773,
+    "original_sphere_pair": [
+      2,
+      0
+    ]
+  },
+  "physical_tracking_certified": false
+}

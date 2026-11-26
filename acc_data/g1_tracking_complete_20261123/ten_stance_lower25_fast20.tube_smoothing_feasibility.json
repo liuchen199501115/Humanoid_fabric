@@ -1,0 +1,61 @@
+{
+  "scope": "Offline frozen-state source-tube smoothing; all physical constraints and independent source acceptance unchanged",
+  "cases": [
+    {
+      "stride": 2,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "normalized_bounds": [
+        [
+          -13925.2998046875,
+          -447.03692626953125,
+          -9991.9619140625
+        ]
+      ]
+    },
+    {
+      "stride": 4,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "normalized_bounds": [
+        [
+          -13935.1220703125,
+          -453.57568359375,
+          -9823.3603515625
+        ]
+      ]
+    },
+    {
+      "stride": 6,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "normalized_bounds": [
+        [
+          -13903.216796875,
+          -453.0136413574219,
+          -9827.1435546875
+        ]
+      ]
+    },
+    {
+      "stride": 8,
+      "valid": false,
+      "status": [
+        "DAQP -1; rejected"
+      ],
+      "normalized_bounds": [
+        [
+          -13860.056640625,
+          -440.4395446777344,
+          -9801.1484375
+        ]
+      ]
+    }
+  ]
+}

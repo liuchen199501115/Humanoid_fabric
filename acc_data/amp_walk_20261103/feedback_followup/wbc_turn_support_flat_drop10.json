@@ -1,0 +1,11 @@
+{
+  "root_drop": 0.01,
+  "peak_position_residual": 0.02515553225471226,
+  "peak_orientation_residual": 0.07790832014877189,
+  "peak_source_joint_reference_rmse": 0.17348961532115936,
+  "minimum_dense_joint_margin": 0.07805365324020386,
+  "minimum_dense_native_clearance": -0.0006308909381162256,
+  "maximum_joint_velocity_fraction": 1.0774856805801392,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

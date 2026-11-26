@@ -1,0 +1,31 @@
+{
+  "candidate": "acc_data/g1_full_tracking_20261106/step12_grounded_landing.npz",
+  "candidate_sha256": "995002f977de12ad85b9e66ba5e18827a11c8adbca26ad5497d64ae4a3a8bf54",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "reference_quantization": "float32 as loaded by the controller",
+  "normal_floor_frame": "local foot normal",
+  "audit_script_sha256": "8a5752a33aded1ab11d67f68121a98c345946500576750fc0e48a825cedbe9db",
+  "scope": "Independent HiGHS nominal rigid-body full-sole audit at 0.125 source-frame spacing, original motor caps; excludes actual contact/impact and physical tracking.",
+  "frames": [
+    960.0,
+    1035.0
+  ],
+  "sample_count": 601,
+  "worst_sample": {
+    "frame": 960.0,
+    "minimum_normalized_slack": 0.3535934453276916,
+    "base_equality_error": 3.552713678800501e-15,
+    "effort_fraction": 1.1122652875771628,
+    "joint": "right_ankle_pitch_joint",
+    "torque": 55.61326437885814
+  },
+  "peak_base_equality_error": 1.7053025658242404e-13,
+  "peak_raw_joint_rmse": 0.14258060971010253,
+  "minimum_sole_clearance": [
+    -0.0016458606865192918,
+    -0.001970679002606973
+  ],
+  "peak_left_swing_clearance": 0.04939287763377019,
+  "physical_tracking_certified": false,
+  "nominal_dynamics_passed": false
+}

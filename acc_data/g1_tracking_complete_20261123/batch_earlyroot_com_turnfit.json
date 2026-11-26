@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ten_rooty100_commax3_816",
+    "parent": "six_source_rooty100_500",
+    "options": [
+      "--maximum-support-acceleration",
+      "3",
+      "--maximum-support-acceleration-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "nine_rooty1000_turn_sourcejoint1m",
+    "parent": "six_source_rooty1000_500",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m.npz"
+    ]
+  },
+  {
+    "name": "nine_rooty1000_turn_sourcejoint1m_refine1",
+    "parent": "six_source_rooty1000_500",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_turn_sourcejoint1m_refine1.npz"
+    ]
+  }
+]

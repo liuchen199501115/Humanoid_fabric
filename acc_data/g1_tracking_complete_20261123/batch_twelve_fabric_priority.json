@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_fabric_contact900",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-fabric-priority-start",
+      "4.5",
+      "--late-fabric-priority-mode",
+      "contact-tracking"
+    ]
+  },
+  {
+    "name": "twelve_fabric_paper900",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-fabric-priority-start",
+      "4.5",
+      "--late-fabric-priority-mode",
+      "paper-tracking"
+    ]
+  },
+  {
+    "name": "twelve_fabric_contact960",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--late-fabric-priority-start",
+      "4.8",
+      "--late-fabric-priority-mode",
+      "contact-tracking"
+    ]
+  }
+]

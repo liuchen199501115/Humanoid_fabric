@@ -1,0 +1,355 @@
+{
+  "success": true,
+  "status": "Solved",
+  "nonlinear_inactive_wrench": 1.455015234415672e-15,
+  "nonlinear_collision_barrier": 0.014942707204921746,
+  "nonlinear_node_clearance": -1.991984293966964e-05,
+  "nonlinear_landing_error": 0.034982747046051955,
+  "nonlinear_base_force_residual": 0.29703515558638216,
+  "nonlinear_base_moment_residual": 0.1435074745450452,
+  "nonlinear_joint_residual": 0.09500490985300339,
+  "nonlinear_minimum_clearance": -9.957755114776978e-05,
+  "nonlinear_support_gap": 3.8439548807008006e-05,
+  "nonlinear_impact_residual": 0.07450133023637122,
+  "nonlinear_impact_energy_increase": 0.0003597239112984596,
+  "nonlinear_support_speed": 0.04009360200797709,
+  "nonlinear_contact_acceleration": 0.8776404368983229,
+  "nonlinear_wrench_cone_violation": 0.05490361291221291,
+  "nonlinear_impulse_cone_violation": 0.003393009178048273,
+  "nonlinear_integration_position": 1.432992849370397e-06,
+  "nonlinear_integration_orientation": 0.0018321090836540405,
+  "nonlinear_integration_joint": 4.76837158203125e-07,
+  "nonlinear_verified": true,
+  "refinement_history": [
+    {
+      "iteration": 0,
+      "status": "Solved",
+      "elastic_slacks": {
+        "future_contact_acceleration": 5.241938221411032,
+        "future_ground": 0.011419345492036754,
+        "future_contact_velocity": 0.4420422270314323,
+        "future_contact_position": 0.014547597243395195
+      },
+      "nonlinear_inactive_wrench": 3.728640275596587e-14,
+      "nonlinear_collision_barrier": 4.292565131340634,
+      "nonlinear_node_clearance": -0.006020410197649331,
+      "nonlinear_landing_error": 0.05842564062271937,
+      "nonlinear_base_force_residual": 63.204952979962044,
+      "nonlinear_base_moment_residual": 82.2091382299998,
+      "nonlinear_joint_residual": 49.66360672334079,
+      "nonlinear_minimum_clearance": -0.006271548523798749,
+      "nonlinear_support_gap": 0.041896341360221426,
+      "nonlinear_impact_residual": 1.0712765956392205,
+      "nonlinear_impact_energy_increase": 0.07945513349749689,
+      "nonlinear_support_speed": 0.8570230666589908,
+      "nonlinear_contact_acceleration": 18.103244409876854,
+      "nonlinear_wrench_cone_violation": 8.259686740694221,
+      "nonlinear_impulse_cone_violation": 0.10136343387949076,
+      "nonlinear_integration_position": 1.4367068759434164e-06,
+      "nonlinear_integration_orientation": 0.002736894730276298,
+      "nonlinear_integration_joint": 3.5762786865234375e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 1,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 6.544414646154494e-14,
+      "nonlinear_collision_barrier": 9.804163127278162,
+      "nonlinear_node_clearance": -0.0015154485330713882,
+      "nonlinear_landing_error": 0.03932101384280918,
+      "nonlinear_base_force_residual": 144.23866385536303,
+      "nonlinear_base_moment_residual": 84.29201481575053,
+      "nonlinear_joint_residual": 48.24721929145309,
+      "nonlinear_minimum_clearance": -0.0015154485330713882,
+      "nonlinear_support_gap": 0.013661338469661582,
+      "nonlinear_impact_residual": 2.514502618113257,
+      "nonlinear_impact_energy_increase": 0.011820368272189796,
+      "nonlinear_support_speed": 0.4810609468236034,
+      "nonlinear_contact_acceleration": 43.905337368777204,
+      "nonlinear_wrench_cone_violation": 17.794035187791884,
+      "nonlinear_impulse_cone_violation": 0.059505465461690374,
+      "nonlinear_integration_position": 1.9092103693541247e-06,
+      "nonlinear_integration_orientation": 0.005720581284390987,
+      "nonlinear_integration_joint": 3.5762786865234375e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 2,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 1.6109558946578536e-14,
+      "nonlinear_collision_barrier": 3.116150133044627,
+      "nonlinear_node_clearance": -0.00016276692377231033,
+      "nonlinear_landing_error": 0.03048279156361007,
+      "nonlinear_base_force_residual": 54.14968796421747,
+      "nonlinear_base_moment_residual": 17.60406766711754,
+      "nonlinear_joint_residual": 9.195190212857108,
+      "nonlinear_minimum_clearance": -0.0003087470803773834,
+      "nonlinear_support_gap": 0.003725472006585538,
+      "nonlinear_impact_residual": 1.075169534663014,
+      "nonlinear_impact_energy_increase": 0.0,
+      "nonlinear_support_speed": 0.13365837004257358,
+      "nonlinear_contact_acceleration": 9.159496244485204,
+      "nonlinear_wrench_cone_violation": 3.251630611222595,
+      "nonlinear_impulse_cone_violation": 0.07431873995662706,
+      "nonlinear_integration_position": 9.830249847454215e-07,
+      "nonlinear_integration_orientation": 0.0025832916039576228,
+      "nonlinear_integration_joint": 5.960464477539062e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 3,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 2.2144680454059137e-14,
+      "nonlinear_collision_barrier": 1.0504219344271544,
+      "nonlinear_node_clearance": -1.932419786217221e-05,
+      "nonlinear_landing_error": 0.034993494982287994,
+      "nonlinear_base_force_residual": 9.118623421924832,
+      "nonlinear_base_moment_residual": 4.690272156708168,
+      "nonlinear_joint_residual": 3.2107162963845823,
+      "nonlinear_minimum_clearance": -0.00010265194358531626,
+      "nonlinear_support_gap": 0.0008944903446431521,
+      "nonlinear_impact_residual": 0.3537067304652794,
+      "nonlinear_impact_energy_increase": 0.0,
+      "nonlinear_support_speed": 0.04745002734873834,
+      "nonlinear_contact_acceleration": 2.1503651527797687,
+      "nonlinear_wrench_cone_violation": 0.995643373987761,
+      "nonlinear_impulse_cone_violation": 0.010626162205049776,
+      "nonlinear_integration_position": 1.4502435994859265e-06,
+      "nonlinear_integration_orientation": 0.0019523484605498166,
+      "nonlinear_integration_joint": 7.152557373046875e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 4,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 6.911033688479545e-15,
+      "nonlinear_collision_barrier": 0.280022987433008,
+      "nonlinear_node_clearance": -1.9741847996732065e-05,
+      "nonlinear_landing_error": 0.03439364520636031,
+      "nonlinear_base_force_residual": 3.2904306796485923,
+      "nonlinear_base_moment_residual": 1.6935943951318466,
+      "nonlinear_joint_residual": 0.7514684191231513,
+      "nonlinear_minimum_clearance": -0.0001564669648377176,
+      "nonlinear_support_gap": 0.0010338733633561692,
+      "nonlinear_impact_residual": 0.43448827255737404,
+      "nonlinear_impact_energy_increase": 0.0,
+      "nonlinear_support_speed": 0.04540358960028784,
+      "nonlinear_contact_acceleration": 1.3315544482158457,
+      "nonlinear_wrench_cone_violation": 0.20580611935097437,
+      "nonlinear_impulse_cone_violation": 0.017281037038894498,
+      "nonlinear_integration_position": 1.9082797281243946e-06,
+      "nonlinear_integration_orientation": 0.0021028556836543413,
+      "nonlinear_integration_joint": 2.384185791015625e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 5,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 6.7985642594510205e-15,
+      "nonlinear_collision_barrier": 0.06678876230123443,
+      "nonlinear_node_clearance": -1.9756851002292186e-05,
+      "nonlinear_landing_error": 0.034677986619562534,
+      "nonlinear_base_force_residual": 1.6548645344775783,
+      "nonlinear_base_moment_residual": 0.6711250946813969,
+      "nonlinear_joint_residual": 0.32027859086264104,
+      "nonlinear_minimum_clearance": -7.91619654346154e-05,
+      "nonlinear_support_gap": 0.0004028780628030984,
+      "nonlinear_impact_residual": 0.2469361767090806,
+      "nonlinear_impact_energy_increase": 0.0,
+      "nonlinear_support_speed": 0.044287563175293976,
+      "nonlinear_contact_acceleration": 0.9454769979894118,
+      "nonlinear_wrench_cone_violation": 0.0728987957236491,
+      "nonlinear_impulse_cone_violation": 0.008396303953228046,
+      "nonlinear_integration_position": 1.4367068759434164e-06,
+      "nonlinear_integration_orientation": 0.0021167574942835493,
+      "nonlinear_integration_joint": 2.384185791015625e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 6,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 6.154470872398375e-15,
+      "nonlinear_collision_barrier": 0.08993924440882672,
+      "nonlinear_node_clearance": -1.971204598567866e-05,
+      "nonlinear_landing_error": 0.0348780057575055,
+      "nonlinear_base_force_residual": 1.3169094391871452,
+      "nonlinear_base_moment_residual": 0.35285909582591457,
+      "nonlinear_joint_residual": 0.26144225935658305,
+      "nonlinear_minimum_clearance": -7.527655957899337e-05,
+      "nonlinear_support_gap": 0.0001704039172581301,
+      "nonlinear_impact_residual": 0.15316320522151528,
+      "nonlinear_impact_energy_increase": 0.0,
+      "nonlinear_support_speed": 0.04397956396774271,
+      "nonlinear_contact_acceleration": 0.8957529191965871,
+      "nonlinear_wrench_cone_violation": 0.09132602011897006,
+      "nonlinear_impulse_cone_violation": 0.0033664037675692204,
+      "nonlinear_integration_position": 9.573923590307838e-07,
+      "nonlinear_integration_orientation": 0.002044940491412778,
+      "nonlinear_integration_joint": 4.76837158203125e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 7,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 4.137242863201599e-15,
+      "nonlinear_collision_barrier": 0.035560936353880024,
+      "nonlinear_node_clearance": -1.9880601105019824e-05,
+      "nonlinear_landing_error": 0.034952437420077295,
+      "nonlinear_base_force_residual": 0.7160452878640593,
+      "nonlinear_base_moment_residual": 0.1751714375937593,
+      "nonlinear_joint_residual": 0.16118874933084193,
+      "nonlinear_minimum_clearance": -8.119718605174853e-05,
+      "nonlinear_support_gap": 7.115852191625499e-05,
+      "nonlinear_impact_residual": 0.10897562686420528,
+      "nonlinear_impact_energy_increase": 0.00040682778006839726,
+      "nonlinear_support_speed": 0.03842724696480195,
+      "nonlinear_contact_acceleration": 0.8850249658752195,
+      "nonlinear_wrench_cone_violation": 0.04733610798154331,
+      "nonlinear_impulse_cone_violation": 0.004568701264749286,
+      "nonlinear_integration_position": 1.9110702922202824e-06,
+      "nonlinear_integration_orientation": 0.0019286378013436986,
+      "nonlinear_integration_joint": 4.76837158203125e-07,
+      "nonlinear_verified": false
+    },
+    {
+      "iteration": 8,
+      "status": "Solved",
+      "elastic_slacks": {},
+      "nonlinear_inactive_wrench": 1.455015234415672e-15,
+      "nonlinear_collision_barrier": 0.014942707204921746,
+      "nonlinear_node_clearance": -1.991984293966964e-05,
+      "nonlinear_landing_error": 0.034982747046051955,
+      "nonlinear_base_force_residual": 0.29703515558638216,
+      "nonlinear_base_moment_residual": 0.1435074745450452,
+      "nonlinear_joint_residual": 0.09500490985300339,
+      "nonlinear_minimum_clearance": -9.957755114776978e-05,
+      "nonlinear_support_gap": 3.8439548807008006e-05,
+      "nonlinear_impact_residual": 0.07450133023637122,
+      "nonlinear_impact_energy_increase": 0.0003597239112984596,
+      "nonlinear_support_speed": 0.04009360200797709,
+      "nonlinear_contact_acceleration": 0.8776404368983229,
+      "nonlinear_wrench_cone_violation": 0.05490361291221291,
+      "nonlinear_impulse_cone_violation": 0.003393009178048273,
+      "nonlinear_integration_position": 1.432992849370397e-06,
+      "nonlinear_integration_orientation": 0.0018321090836540405,
+      "nonlinear_integration_joint": 4.76837158203125e-07,
+      "nonlinear_verified": true
+    }
+  ],
+  "contact_patch_release_history": [
+    {
+      "iteration": 0,
+      "stage": 16,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 17,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 18,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 19,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 20,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 21,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 22,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 23,
+      "side": 0,
+      "released": [
+        8
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 24,
+      "side": 0,
+      "released": [
+        10
+      ]
+    },
+    {
+      "iteration": 0,
+      "stage": 25,
+      "side": 0,
+      "released": [
+        10
+      ]
+    },
+    {
+      "iteration": 1,
+      "stage": 12,
+      "side": 1,
+      "released": [
+        10
+      ]
+    },
+    {
+      "iteration": 1,
+      "stage": 13,
+      "side": 1,
+      "released": [
+        12
+      ]
+    },
+    {
+      "iteration": 2,
+      "stage": 7,
+      "side": 1,
+      "released": [
+        11
+      ]
+    }
+  ],
+  "actual_start_time": 3.68,
+  "solve_seconds": 183.67213790677488,
+  "prediction_only": true
+}

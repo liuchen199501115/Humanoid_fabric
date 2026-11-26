@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_comxy16_earlyposture",
+    "parent": "twelve_comxy816_16",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.08",
+      "--late-upper-metric-start",
+      "4.08"
+    ]
+  },
+  {
+    "name": "twelve_comxy40_earlyposture",
+    "parent": "twelve_comxy860_40",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.3",
+      "--late-upper-metric-start",
+      "4.3"
+    ]
+  },
+  {
+    "name": "twelve_earlyposture",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--leg-posture-metric-start",
+      "4.08",
+      "--late-upper-metric-start",
+      "4.08"
+    ]
+  }
+]

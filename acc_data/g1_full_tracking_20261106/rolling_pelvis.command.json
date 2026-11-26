@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1.py",
+    "--tracking-profile",
+    "amp-full",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/g1_full_tracking_20261106/rolling_pelvis.npz",
+    "--rolling-contact-kinematics-start",
+    "3.5",
+    "--late-pelvis-priority-start",
+    "4.2",
+    "--late-pelvis-metric-scale",
+    ".1"
+  ],
+  "sha256": {
+    "examples/test_g1.py": "c40f569998c51b74b57cf1a9f2eed8dfda2656750924400e1e92758edb1f686a",
+    "examples/test_g1_2.py": "061de1b8d6cfbf8c674b45678f7a16c8695f4a27d858e523fc037212f475d1b7",
+    "src/fabrics_sim/solver/AccelerationQP.py": "ac9e31d7662b44300c44f76866afbcd57d61f30d23bdd08716a94444bd365348",
+    "acc_data/amp_walk_20261103/feedback_followup/unload_qp.py": "d985131281045f508d02684814268754631efdea2b9bfcc48f31d2e9a44c3b38"
+  },
+  "status": "finished",
+  "returncode": 1,
+  "wall_seconds": 92.69473218917847
+}

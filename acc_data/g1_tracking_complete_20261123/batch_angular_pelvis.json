@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_com15_ang100_pelvis405",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.05",
+      "--pelvis-orientation-replace-ramp",
+      ".1"
+    ]
+  },
+  {
+    "name": "ten_com15_ang100_pelvis395",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "3.95",
+      "--pelvis-orientation-replace-ramp",
+      ".1"
+    ]
+  },
+  {
+    "name": "ten_com15_both385_pelvis405",
+    "parent": "ten_com15_both_ang4_cap100_385",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.05",
+      "--pelvis-orientation-replace-ramp",
+      ".1"
+    ]
+  }
+]

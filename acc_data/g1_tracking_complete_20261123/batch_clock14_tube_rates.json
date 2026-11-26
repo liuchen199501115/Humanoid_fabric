@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_anchor_positionrate4",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-position-tube-start",
+      "4.08",
+      "--late-position-tube-bandwidth",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_anchor_positionrate20",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-position-tube-start",
+      "4.08",
+      "--late-position-tube-bandwidth",
+      "20"
+    ]
+  },
+  {
+    "name": "ten_anchor_alltuberate20",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-tracking-tube-start",
+      "4.08",
+      "--late-tracking-tube-bandwidth",
+      "20"
+    ]
+  }
+]

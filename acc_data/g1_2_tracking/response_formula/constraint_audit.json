@@ -1,0 +1,39 @@
+{
+  "scope": "Offline feasibility counterfactual only. All physical and state braking rows retained; optional removal concerns only the final auxiliary orientation tube.",
+  "trials": [
+    {
+      "run": "stop25_hard",
+      "time_s": 4.2620000000000005,
+      "cases": [
+        {
+          "auxiliary_orientation_row_removed": false,
+          "status": 2,
+          "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+        },
+        {
+          "auxiliary_orientation_row_removed": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "max_residual": 4.951061782776378e-11
+        }
+      ]
+    },
+    {
+      "run": "stop25_hard_root500",
+      "time_s": 4.274,
+      "cases": [
+        {
+          "auxiliary_orientation_row_removed": false,
+          "status": 2,
+          "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+        },
+        {
+          "auxiliary_orientation_row_removed": true,
+          "status": 0,
+          "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+          "max_residual": 4.057483238284476e-10
+        }
+      ]
+    }
+  ]
+}

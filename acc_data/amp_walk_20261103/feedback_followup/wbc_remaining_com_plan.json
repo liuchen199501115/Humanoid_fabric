@@ -1,0 +1,22 @@
+{
+  "source_frames": [
+    700,
+    1999
+  ],
+  "rate": 1.2,
+  "vertical_status": "solved",
+  "physical_tracking_certified": false,
+  "planning": "single offline reduced centroidal fit; no runtime predictive control",
+  "vertical_constraint_residual": 6.900263116449423e-07,
+  "height_offset_range": [
+    -2.220446049250313e-16,
+    -0.009166677114525124,
+    -0.0006264160145303954,
+    -0.0071506438186639265
+  ],
+  "horizontal_status": "primal infeasible",
+  "horizontal_solver_residuals": [
+    0.04087075848790618,
+    8.468101726593373e-05
+  ]
+}

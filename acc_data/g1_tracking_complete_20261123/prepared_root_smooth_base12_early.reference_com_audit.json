@@ -1,0 +1,52 @@
+{
+  "parent_sha256": "7d826bd5a41dd42e3b99f74b3e61a0fb6f2dd54839bffc4381ff132132ce3818",
+  "mass_kg": 33.34114202000001,
+  "screening_assumption": "Zero centroidal angular momentum rate; full nominal sole footprints. Not a proof of whole-body feasibility.",
+  "windows": [
+    {
+      "first_frame": 640,
+      "last_frame": 740,
+      "minimum_vertical_acceleration": -2.3793160168934264,
+      "maximum_vertical_acceleration": 7.3394695497372595,
+      "negative_required_normal_force_frames": 0,
+      "zero_momentum_zmp_outside_fraction": 0.6039603960396039,
+      "zero_momentum_zmp_outside_median_m": 0.02379937538931487
+    },
+    {
+      "first_frame": 740,
+      "last_frame": 802,
+      "minimum_vertical_acceleration": -12.104783548486012,
+      "maximum_vertical_acceleration": 8.272614078457991,
+      "negative_required_normal_force_frames": 8,
+      "zero_momentum_zmp_outside_fraction": 0.6825396825396826,
+      "zero_momentum_zmp_outside_median_m": 0.10450735123303867
+    },
+    {
+      "first_frame": 802,
+      "last_frame": 884,
+      "minimum_vertical_acceleration": -6.787178066326305,
+      "maximum_vertical_acceleration": 10.12349573805841,
+      "negative_required_normal_force_frames": 0,
+      "zero_momentum_zmp_outside_fraction": 0.8795180722891566,
+      "zero_momentum_zmp_outside_median_m": 0.14254080417329396
+    },
+    {
+      "first_frame": 884,
+      "last_frame": 1000,
+      "minimum_vertical_acceleration": -7.37346523081942,
+      "maximum_vertical_acceleration": 17.245192670648976,
+      "negative_required_normal_force_frames": 0,
+      "zero_momentum_zmp_outside_fraction": 0.7435897435897436,
+      "zero_momentum_zmp_outside_median_m": 0.1036074101432024
+    },
+    {
+      "first_frame": 1000,
+      "last_frame": 1998,
+      "minimum_vertical_acceleration": -9.96858989163593,
+      "maximum_vertical_acceleration": 18.194742525185575,
+      "negative_required_normal_force_frames": 1,
+      "zero_momentum_zmp_outside_fraction": 0.7037037037037037,
+      "zero_momentum_zmp_outside_median_m": 0.04860438247825294
+    }
+  ]
+}

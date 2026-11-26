@@ -1,0 +1,16 @@
+{
+  "run": "thirteenth_late_upper_braking200",
+  "activation_source_seconds": 4.75,
+  "prefix_last_time_s": 4.136,
+  "prefix_sample_count": 2069,
+  "prefix_checks": {
+    "history_q": true,
+    "history_qd": true,
+    "history_torque_qp_total": true,
+    "history_frame": true,
+    "history_time": true
+  },
+  "waist_stop_time_s": 4.34,
+  "waist_roll_at_4_3": 0.2982392907142639,
+  "waist_roll_speed_at_4_3": 3.6043407917022705
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "fullroot80_com15_ang100",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_r10_l10_u05_a10_scale80_waist30_swing10lower25_com_y15.npz"
+    ]
+  },
+  {
+    "name": "fullroot90_com15_ang100",
+    "parent": "ten_com15_right_ang4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_r10_l10_u05_a10_scale90_waist30_swing10lower25_com_y15.npz"
+    ]
+  },
+  {
+    "name": "fullroot80_com15_pelvis405",
+    "parent": "ten_com15_pelvis405_scale4_cap100",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_r10_l10_u05_a10_scale80_waist30_swing10lower25_com_y15.npz"
+    ]
+  }
+]

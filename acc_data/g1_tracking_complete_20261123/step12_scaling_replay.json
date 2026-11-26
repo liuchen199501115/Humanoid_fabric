@@ -1,0 +1,167 @@
+[
+  {
+    "name": "eleven_tube1000_ori32",
+    "cap": 1.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_ori32",
+    "cap": 2.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_ori32",
+    "cap": 5.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_ori32",
+    "cap": 10.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_ori32",
+    "cap": 100.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "cap": 1.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "cap": 2.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "cap": 5.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "cap": 10.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_tube1000_pelvis4",
+    "cap": 100.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "cap": 1.0,
+    "certified": false,
+    "status": [
+      "DAQP 1; rejected"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "cap": 2.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "cap": 5.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "cap": 10.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "cap": 100.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "attempts": [
+      1
+    ]
+  }
+]

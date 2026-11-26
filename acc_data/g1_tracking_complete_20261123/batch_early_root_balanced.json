@@ -1,0 +1,34 @@
+[
+  {
+    "name": "eight_source_root_xy1000_660_tube100",
+    "parent": "eight_source_root_xy1000_660",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "3.3",
+      "--late-tube-soft-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "eight_source_root_xy100_660",
+    "parent": "eight_source_root_xy1000_660",
+    "options": [
+      "--root-position-task-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "eight_source_root_xy300_720",
+    "parent": "eight_source_root_xy1000_660",
+    "options": [
+      "--root-position-task-start",
+      "3.6",
+      "--root-position-task-ramp",
+      ".15",
+      "--root-position-task-weight",
+      "300",
+      "--qp-late-equilibration-start",
+      "3.404"
+    ]
+  }
+]

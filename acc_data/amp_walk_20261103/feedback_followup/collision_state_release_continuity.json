@@ -1,0 +1,13 @@
+{
+  "previous_time": 3.72,
+  "current_time": 3.7600000000000002,
+  "interval": 0.040000000000000036,
+  "stage": 6,
+  "root_position": 0.0009826546850227106,
+  "root_orientation": 0.009181029278599434,
+  "joint_rmse": 0.007170701165479276,
+  "joint_max": 0.026753032580018044,
+  "root_velocity": 0.030773504970972542,
+  "root_angular_velocity": 0.4685530482417714,
+  "joint_velocity_max": 1.3517282163845912
+}

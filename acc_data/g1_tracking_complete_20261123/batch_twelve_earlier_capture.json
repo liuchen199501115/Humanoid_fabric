@@ -1,0 +1,36 @@
+[
+  {
+    "name": "twelve_search11_2",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--foot-contact-search-start",
+      "4.3",
+      "--foot-contact-search-acceleration",
+      "2"
+    ]
+  },
+  {
+    "name": "twelve_search11_4",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--foot-contact-search-start",
+      "4.3",
+      "--foot-contact-search-acceleration",
+      "4"
+    ]
+  },
+  {
+    "name": "twelve_rootxy900_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "10000"
+    ]
+  }
+]

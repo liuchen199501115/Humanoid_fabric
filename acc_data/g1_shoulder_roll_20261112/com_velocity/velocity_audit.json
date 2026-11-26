@@ -1,0 +1,201 @@
+[
+  {
+    "run": "baseline_live",
+    "steps": 12,
+    "stop_time_s": 4.3,
+    "guard": null,
+    "intervals": [
+      {
+        "start": 3.3,
+        "end": 3.58,
+        "com_velocity_rms_norm_mps": 0.24149751663208008
+      },
+      {
+        "start": 3.58,
+        "end": 3.8,
+        "com_velocity_rms_norm_mps": 0.5040732622146606
+      },
+      {
+        "start": 3.8,
+        "end": 4.2,
+        "com_velocity_rms_norm_mps": 0.3521859049797058
+      }
+    ],
+    "augmented_snapshots": []
+  },
+  {
+    "run": "soft001_h100",
+    "steps": 9,
+    "stop_time_s": 3.72,
+    "guard": {
+      "active_ticks": 87,
+      "first_activation_s": 2.562,
+      "peak_required_slack_mps": 1.9959356784820557,
+      "active_forecast_improves_fraction": 0.25287356321839083,
+      "before_activation_max_pose_difference": 0.0
+    },
+    "intervals": [
+      {
+        "start": 3.3,
+        "end": 3.58,
+        "com_velocity_rms_norm_mps": 0.3269555866718292
+      }
+    ],
+    "forecast_comparison": {
+      "samples": 37,
+      "future_error_prediction_rms_norm_mps": 1.4046075344085693,
+      "actual_future_error_smaller_fraction": 0.918918918918919
+    },
+    "augmented_snapshots": [
+      {
+        "file": "soft001_h100.com_soft_1790.npz",
+        "inequality": 7.105427357601002e-15,
+        "equality": 5.633493671552969e-12,
+        "bounds": 0.0,
+        "slack_mps": [
+          [
+            0.12575709754114073,
+            0.5286170310259075,
+            1.7125498146694647
+          ]
+        ]
+      },
+      {
+        "file": "soft001_h100.com_soft_1825.npz",
+        "inequality": 1.8474111129762605e-13,
+        "equality": 1.9457147004686703e-10,
+        "bounds": 4.973799150320701e-14,
+        "slack_mps": [
+          [
+            0.13684551045158533,
+            0.24683805177845428,
+            0.4648728411341281
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "run": "soft01_h100",
+    "steps": 9,
+    "stop_time_s": 3.748,
+    "guard": {
+      "active_ticks": 119,
+      "first_activation_s": 2.562,
+      "peak_required_slack_mps": 3.5639808177948,
+      "active_forecast_improves_fraction": 0.20168067226890757,
+      "before_activation_max_pose_difference": 0.0
+    },
+    "intervals": [
+      {
+        "start": 3.3,
+        "end": 3.58,
+        "com_velocity_rms_norm_mps": 0.36407670378685
+      }
+    ],
+    "forecast_comparison": {
+      "samples": 69,
+      "future_error_prediction_rms_norm_mps": 1.626200795173645,
+      "actual_future_error_smaller_fraction": 0.37681159420289856
+    },
+    "augmented_snapshots": [
+      {
+        "file": "soft01_h100.com_soft_1790.npz",
+        "inequality": 1.1102230246251565e-16,
+        "equality": 1.8551826741486366e-12,
+        "bounds": 0.0,
+        "slack_mps": [
+          [
+            0.01529903329231756,
+            0.5272401512460152,
+            1.711253401264075
+          ]
+        ]
+      },
+      {
+        "file": "soft01_h100.com_soft_1825.npz",
+        "inequality": 9.841016890277388e-13,
+        "equality": 2.880362615087506e-10,
+        "bounds": 2.6716406864579767e-12,
+        "slack_mps": [
+          [
+            0.9067343720586283,
+            0.15131113509772331,
+            0.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "run": "soft01_h50",
+    "steps": 9,
+    "stop_time_s": 3.682,
+    "guard": {
+      "active_ticks": 62,
+      "first_activation_s": 2.562,
+      "peak_required_slack_mps": 1.3180220127105713,
+      "active_forecast_improves_fraction": 0.12903225806451613,
+      "before_activation_max_pose_difference": 0.0
+    },
+    "intervals": [
+      {
+        "start": 3.3,
+        "end": 3.58,
+        "com_velocity_rms_norm_mps": 0.2845670282840729
+      }
+    ],
+    "forecast_comparison": {
+      "samples": 37,
+      "future_error_prediction_rms_norm_mps": 0.6372123956680298,
+      "actual_future_error_smaller_fraction": 0.43243243243243246
+    },
+    "augmented_snapshots": [
+      {
+        "file": "soft01_h50.com_soft_1790.npz",
+        "inequality": 1.4210854715202004e-13,
+        "equality": 2.893330020015128e-11,
+        "bounds": 0.0,
+        "slack_mps": [
+          [
+            0.13302951369752428,
+            0.21093234955941664,
+            0.7512275977053139
+          ]
+        ]
+      },
+      {
+        "file": "soft01_h50.com_soft_1825.npz",
+        "inequality": 1.971756091734278e-13,
+        "equality": 6.565414878423326e-11,
+        "bounds": 2.1316282072803006e-13,
+        "slack_mps": [
+          [
+            0.5315400569816761,
+            0.2934326266222193,
+            0.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "run": "soft1_h100_v2",
+    "steps": 9,
+    "stop_time_s": 3.5740000000000003,
+    "guard": {
+      "active_ticks": 28,
+      "first_activation_s": 2.562,
+      "peak_required_slack_mps": 1.756230354309082,
+      "active_forecast_improves_fraction": 0.21428571428571427,
+      "before_activation_max_pose_difference": 0.0
+    },
+    "intervals": [],
+    "forecast_comparison": {
+      "samples": 5,
+      "future_error_prediction_rms_norm_mps": 0.3874882161617279,
+      "actual_future_error_smaller_fraction": 1.0
+    },
+    "augmented_snapshots": []
+  }
+]

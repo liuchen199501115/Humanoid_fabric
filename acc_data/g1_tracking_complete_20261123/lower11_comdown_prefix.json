@@ -1,0 +1,17 @@
+[
+  {
+    "reference": "prepared_stance10_anchor_pose860_swing11lower40_comdown20",
+    "exact_prefix_q_v_a_end_frame": 816,
+    "samples": 1633
+  },
+  {
+    "reference": "prepared_stance10_anchor_pose860_swing11lower40_comdown20_floor3",
+    "exact_prefix_q_v_a_end_frame": 816,
+    "samples": 1633
+  },
+  {
+    "reference": "prepared_stance10_anchor_pose860_swing11lower50_comdown30_floor3",
+    "exact_prefix_q_v_a_end_frame": 816,
+    "samples": 1633
+  }
+]

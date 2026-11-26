@@ -1,0 +1,5 @@
+{
+  "peak_velocity_limit_ratio": 0.8504630327224731,
+  "worst_joint": "right_knee_joint",
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,21 @@
+{
+  "method": "Offline bounded COM height fit and foot-preserving IK; no runtime MPC",
+  "fitted_vertical_acceleration_limits": [
+    -4.0,
+    6.0
+  ],
+  "offline_solver_status": "solved",
+  "maximum_com_height_correction_m": 0.011790827165419234,
+  "maximum_foot_position_residual_m": 5.717613778912788e-07,
+  "maximum_foot_rotation_residual_rad": 3.920408585062118e-07,
+  "maximum_com_ik_residual_m": 3.2595722398998106e-07,
+  "maximum_added_root_rotation_rad": 0.06307119873378833,
+  "worst_frame": 644,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "full_tracking_passed": false,
+  "preflight_passed": true
+}

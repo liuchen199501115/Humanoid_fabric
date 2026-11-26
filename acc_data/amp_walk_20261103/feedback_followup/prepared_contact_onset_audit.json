@@ -1,0 +1,44 @@
+[
+  {
+    "side": 0,
+    "onset": 762,
+    "height_m": 0.0022771535729377568,
+    "first_floor_frame": 763
+  },
+  {
+    "side": 0,
+    "onset": 884,
+    "height_m": 0.016915376364242743,
+    "first_floor_frame": 891
+  },
+  {
+    "side": 0,
+    "onset": 1013,
+    "height_m": 0.013705047773599224,
+    "first_floor_frame": 1025
+  },
+  {
+    "side": 1,
+    "onset": 640,
+    "height_m": 0.011744125769887058,
+    "first_floor_frame": 647
+  },
+  {
+    "side": 1,
+    "onset": 802,
+    "height_m": 0.009439821646034748,
+    "first_floor_frame": 806
+  },
+  {
+    "side": 1,
+    "onset": 952,
+    "height_m": 0.005040899279823721,
+    "first_floor_frame": 955
+  },
+  {
+    "side": 1,
+    "onset": 1070,
+    "height_m": 0.0043269112275812,
+    "first_floor_frame": 1073
+  }
+]

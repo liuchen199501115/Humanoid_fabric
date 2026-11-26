@@ -1,0 +1,62 @@
+[
+  {
+    "case": "baseline",
+    "status": "solved",
+    "maximum_physical_residual": 2.0250036243396607e-06,
+    "root_angular_acceleration": [
+      6.213862890717132,
+      -16.71439903513227,
+      38.7839429887591
+    ],
+    "waist_acceleration": [
+      -179.37246145820197,
+      44.24555298058215,
+      103.77053760812167
+    ]
+  },
+  {
+    "case": "stance30",
+    "status": "solved",
+    "maximum_physical_residual": 4.017501709085991e-07,
+    "root_angular_acceleration": [
+      15.52327116783083,
+      -13.702558730858811,
+      64.6154588188821
+    ],
+    "waist_acceleration": [
+      -187.64411089150641,
+      33.79931387244174,
+      81.61229171861211
+    ]
+  },
+  {
+    "case": "stance10",
+    "status": "solved",
+    "maximum_physical_residual": 5.423047923613922e-06,
+    "root_angular_acceleration": [
+      22.266421244980833,
+      -18.565474308805495,
+      76.0976039958326
+    ],
+    "waist_acceleration": [
+      -190.7745816189521,
+      25.583306029332533,
+      77.56861498996867
+    ]
+  },
+  {
+    "case": "stance30_pelvis",
+    "status": "solved",
+    "maximum_physical_residual": 8.949298262450611e-07,
+    "root_angular_acceleration": [
+      -6.904328712762594,
+      -16.643149481808464,
+      6.812003930691863
+    ],
+    "waist_acceleration": [
+      -133.57665543111548,
+      57.56840079976457,
+      120.89431115623061
+    ]
+  }
+]

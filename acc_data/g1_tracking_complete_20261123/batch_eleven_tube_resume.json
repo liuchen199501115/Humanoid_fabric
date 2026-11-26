@@ -1,0 +1,30 @@
+[
+  {
+    "name": "eleven_speed24_tube1000",
+    "parent": "eleven_hip_leg64_speed24",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.5",
+      "--late-tube-soft-weight",
+      "1000"
+    ]
+  },
+  {
+    "name": "eleven_speed24_tube10000",
+    "parent": "eleven_hip_leg64_speed24",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.5",
+      "--late-tube-soft-weight",
+      "10000"
+    ]
+  },
+  {
+    "name": "eleven_speed24_resume05",
+    "parent": "eleven_hip_leg64_speed24",
+    "options": [
+      "--contact-pause-resume",
+      ".05"
+    ]
+  }
+]

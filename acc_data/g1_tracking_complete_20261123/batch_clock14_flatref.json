@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_flatref_anchor_base",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_flat_anchor884.npz"
+    ]
+  },
+  {
+    "name": "ten_flatref_anchor_support1",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_flat_anchor884.npz",
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "1",
+      "--support-orientation-roll-pitch-only"
+    ]
+  },
+  {
+    "name": "ten_flatref_anchor_support4",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_stance10_flat_anchor884.npz",
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "4",
+      "--support-orientation-roll-pitch-only"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "projection1_com100",
+  "status": "aborted_during_simulator_initialization",
+  "tracking_evaluated": false,
+  "reason": "No control output after simulator startup; terminated owned parent and child processes. No result counted."
+}

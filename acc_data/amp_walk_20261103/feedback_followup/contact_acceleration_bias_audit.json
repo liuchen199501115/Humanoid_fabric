@@ -1,0 +1,17 @@
+[
+  {
+    "time": 3.5,
+    "origin_bias_max_error": 2.1261299565367153e-07,
+    "point_bias_max_error": 1.955916815177261e-07
+  },
+  {
+    "time": 3.7,
+    "origin_bias_max_error": 9.816215396085681e-09,
+    "point_bias_max_error": 9.842388237757405e-09
+  },
+  {
+    "time": 3.8,
+    "origin_bias_max_error": 5.48279288636877e-09,
+    "point_bias_max_error": 5.8112235024054826e-09
+  }
+]

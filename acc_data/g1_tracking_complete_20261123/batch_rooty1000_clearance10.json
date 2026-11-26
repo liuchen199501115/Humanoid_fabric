@@ -1,0 +1,54 @@
+[
+  {
+    "name": "rooty1000_clock14_lift5",
+    "parent": "six_source_rooty1000_500",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_rooty_clearance10_lift5.npz",
+      "--clock-fourth-speed",
+      "1.4",
+      "--com-upward-speed-limit",
+      ".2",
+      "--com-upward-speed-start",
+      "4.08",
+      "--qp-late-iteration-start",
+      "3.806",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  },
+  {
+    "name": "rooty1000_clock14_lift10",
+    "parent": "six_source_rooty1000_500",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_rooty_clearance10_lift10.npz",
+      "--clock-fourth-speed",
+      "1.4",
+      "--com-upward-speed-limit",
+      ".2",
+      "--com-upward-speed-start",
+      "4.08",
+      "--qp-late-iteration-start",
+      "3.806",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  },
+  {
+    "name": "rooty1000_clock14_base",
+    "parent": "six_source_rooty1000_500",
+    "options": [
+      "--clock-fourth-speed",
+      "1.4",
+      "--com-upward-speed-limit",
+      ".2",
+      "--com-upward-speed-start",
+      "4.08",
+      "--qp-late-iteration-start",
+      "3.806",
+      "--qp-late-iterations",
+      "50000"
+    ]
+  }
+]

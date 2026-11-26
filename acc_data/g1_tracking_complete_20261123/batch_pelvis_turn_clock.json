@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ten_com15_pelvis405_clock14",
+    "parent": "ten_com15_pelvis405_scale4_cap100",
+    "options": [
+      "--clock-fourth-start",
+      "3.82",
+      "--clock-fourth-ramp",
+      ".12",
+      "--clock-fourth-speed",
+      "1.4"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_clock16",
+    "parent": "ten_com15_pelvis405_scale4_cap100",
+    "options": [
+      "--clock-fourth-start",
+      "3.82",
+      "--clock-fourth-ramp",
+      ".12",
+      "--clock-fourth-speed",
+      "1.6"
+    ]
+  },
+  {
+    "name": "ten_com15_pelvis405_clock10",
+    "parent": "ten_com15_pelvis405_scale4_cap100",
+    "options": [
+      "--clock-fourth-start",
+      "3.82",
+      "--clock-fourth-ramp",
+      ".12",
+      "--clock-fourth-speed",
+      "1.0"
+    ]
+  }
+]

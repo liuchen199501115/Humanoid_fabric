@@ -1,0 +1,15 @@
+{
+  "full_motion_tracking_passed": false,
+  "complete_physics_trial": false,
+  "last_successful_prediction_time": 3.814,
+  "actual_last_observed_state": {
+    "time": 3.846,
+    "frame": 880.04,
+    "actual_mode": 2,
+    "joint_rmse": 0.13387066579399554,
+    "root_position": 0.08086252219220143,
+    "root_orientation": 0.0959944506870906
+  },
+  "reason": "At actual 3.846 s, the original source contact schedule repeatedly fails nonlinear refinement. Native reference sole remains 16.9 mm above ground at source contact onset 884. A candidate delaying predicted contact until native sole arrival passes unchanged prediction checks at initial 3.680 s and this actual 3.846 s state. Replaced for continuous simulation validation; original source fidelity and actual flight/landing acceptance unchanged.",
+  "next_candidate": "full_body_preview42_collision_native_timing28"
+}

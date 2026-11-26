@@ -1,0 +1,39 @@
+{
+  "offset_m": [
+    0,
+    0.05,
+    -0.015
+  ],
+  "start_s": 2.5,
+  "rise_s": 0.3,
+  "hold_end_s": 4.1,
+  "fall_s": 0.5,
+  "peak_foot_position_residual": 9.928418511689743e-07,
+  "peak_foot_rotation_residual": 0.019576638472455502,
+  "peak_joint_correction_rmse": 0.1367676715516844,
+  "worst_frames": [
+    {
+      "frame": 877,
+      "position_error": 9.928418511689743e-07,
+      "rotation_error": 7.233157907729841e-07
+    },
+    {
+      "frame": 843,
+      "position_error": 9.80476379858177e-07,
+      "rotation_error": 5.668588282790394e-07
+    },
+    {
+      "frame": 517,
+      "position_error": 9.775026567076406e-07,
+      "rotation_error": 5.138385827857439e-07
+    }
+  ],
+  "physical_tracking_certified": false,
+  "verified_foot_position_error_m": 1.0034268136511343e-06,
+  "verified_foot_rotation_error_rad": 0.01957664254014278,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.06657616049051285,
+  "parent_sha256": "6039a0861e25259f092c411e2846d4da848f13b2b3cea68da4832766c3ab4f41",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "preflight_passed": false
+}

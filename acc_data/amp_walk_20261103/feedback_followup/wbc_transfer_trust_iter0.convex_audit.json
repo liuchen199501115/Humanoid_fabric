@@ -1,0 +1,1316 @@
+{
+  "passed": false,
+  "scope": "Configured native convex wrist/hip/torso/shoulder pairs, original pair links, and foot-foot; sampled geometry, not a continuous full-body certificate",
+  "samples": 937,
+  "turn_stride_frames": 0.5,
+  "rest_stride_frames": 6,
+  "minimum_gap_m": -0.030497553820464072,
+  "pairs": [
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "pelvis_contour_link"
+      ],
+      "minimum_gap_m": 0.1134057500327466,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "pelvis_contour_link"
+      ],
+      "minimum_gap_m": 0.112678469667658,
+      "frame": 276.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.14959180190791596,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.1521553206910723,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "left_elbow_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.0631638554526931,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "right_elbow_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.06987498792219134,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_wrist_yaw_link"
+      ],
+      "minimum_gap_m": 0.36660052254286984,
+      "frame": 935.0
+    },
+    {
+      "pair": [
+        "left_knee_link",
+        "right_knee_link"
+      ],
+      "minimum_gap_m": 0.08044868834570762,
+      "frame": 24.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.04290868503527847,
+      "frame": 186.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.04272379546654544,
+      "frame": 186.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.1792915295251886,
+      "frame": 204.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.23175583529346583,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.24543244791667648,
+      "frame": 624.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.2867813799112052,
+      "frame": 270.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.08959770326843637,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.3622845492159204,
+      "frame": 72.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.35389565697838116,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_roll_link",
+        "right_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.31868204773539566,
+      "frame": 702.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.023145550115415477,
+      "frame": 192.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.02360633326899672,
+      "frame": 198.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.1301048508431722,
+      "frame": 210.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.23462531116474789,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.24450602805036864,
+      "frame": 618.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.27018973390625817,
+      "frame": 276.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.1031216544342178,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.3748718566721193,
+      "frame": 72.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.3678731061496355,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_wrist_pitch_link",
+        "right_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.33079668079690355,
+      "frame": 702.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.028254841100309937,
+      "frame": 192.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.027579054592307545,
+      "frame": 198.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.11512876510655286,
+      "frame": 210.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.24226382373483668,
+      "frame": 1530.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.2526326300948358,
+      "frame": 306.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.2688856074446266,
+      "frame": 276.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.40326189377519356,
+      "frame": 60.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.4107374085357453,
+      "frame": 60.0
+    },
+    {
+      "pair": [
+        "left_wrist_yaw_link",
+        "right_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.3660820523473215,
+      "frame": 702.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.23256984617091664,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.2383752466249498,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.2816079350310964,
+      "frame": 1608.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.0376010044321436,
+      "frame": 684.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.03874106823013101,
+      "frame": 690.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.11480462485296422,
+      "frame": 833.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.09735278790695945,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.37097254829836734,
+      "frame": 1620.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.3551097136443904,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_roll_link",
+        "left_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.31352987940421856,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.23194594650661288,
+      "frame": 90.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.23467148774691876,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.2607217264048558,
+      "frame": 923.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.022077392463793703,
+      "frame": 672.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.024809774575735674,
+      "frame": 684.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.06882541234101443,
+      "frame": 835.5
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.11051739265643669,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.38400225881445665,
+      "frame": 1620.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.36874030605332275,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_pitch_link",
+        "left_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.32463694037600904,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.23439692880720958,
+      "frame": 90.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.2343514025053134,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.2513676158428301,
+      "frame": 924.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.017744706569772256,
+      "frame": 672.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.025719528056128354,
+      "frame": 684.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.05395483937467005,
+      "frame": 834.5
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.4135019627392363,
+      "frame": 1620.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.4055758559167005,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_wrist_yaw_link",
+        "left_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.35171234486446734,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.02830674336357763,
+      "frame": 738.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.013583674105785789,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.02644773974327852,
+      "frame": 934.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.24569159385141182,
+      "frame": 1530.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.21953294895767692,
+      "frame": 1530.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.21931858448761085,
+      "frame": 1530.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.19101821253171558,
+      "frame": 738.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.4367082907869617,
+      "frame": 60.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.44505624684969136,
+      "frame": 60.0
+    },
+    {
+      "pair": [
+        "left_rubber_hand",
+        "right_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.39230230864670956,
+      "frame": 732.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.22368690762495938,
+      "frame": 90.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_hip_roll_link"
+      ],
+      "minimum_gap_m": 0.19560630985943675,
+      "frame": 927.5
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_hip_yaw_link"
+      ],
+      "minimum_gap_m": 0.19437435817645798,
+      "frame": 926.5
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_pitch_link"
+      ],
+      "minimum_gap_m": 0.019055557663618567,
+      "frame": 240.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "minimum_gap_m": -0.008518107208874508,
+      "frame": 222.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "minimum_gap_m": -0.030497553820464072,
+      "frame": 827.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "torso_link"
+      ],
+      "minimum_gap_m": 0.19167147562018733,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_shoulder_pitch_link"
+      ],
+      "minimum_gap_m": 0.44617830776701495,
+      "frame": 1100.5
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_shoulder_roll_link"
+      ],
+      "minimum_gap_m": 0.4424658061860811,
+      "frame": 1164.0
+    },
+    {
+      "pair": [
+        "right_rubber_hand",
+        "left_shoulder_yaw_link"
+      ],
+      "minimum_gap_m": 0.3774849415612951,
+      "frame": 1170.0
+    },
+    {
+      "pair": [
+        "left_ankle_roll_link",
+        "right_ankle_roll_link"
+      ],
+      "minimum_gap_m": 0.03803250510163133,
+      "frame": 756.0
+    }
+  ],
+  "violations": [
+    {
+      "frame": 204.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.0028871084612382644
+    },
+    {
+      "frame": 204.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0038063069194983297
+    },
+    {
+      "frame": 210.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.005926937989890553
+    },
+    {
+      "frame": 210.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.008799781296962093
+    },
+    {
+      "frame": 216.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.006342735775224059
+    },
+    {
+      "frame": 216.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.007101000597703947
+    },
+    {
+      "frame": 222.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.008518107208874508
+    },
+    {
+      "frame": 228.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.003624193672499205
+    },
+    {
+      "frame": 402.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0002332178396724816
+    },
+    {
+      "frame": 600.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -0.0007111249417211336
+    },
+    {
+      "frame": 600.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0084256819819593
+    },
+    {
+      "frame": 606.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.008252933561213923
+    },
+    {
+      "frame": 612.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_roll_link"
+      ],
+      "gap": -5.8858162873309286e-05
+    },
+    {
+      "frame": 612.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0006469333640910993
+    },
+    {
+      "frame": 809.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0007722997866383974
+    },
+    {
+      "frame": 810.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0019483412581728283
+    },
+    {
+      "frame": 810.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0030993975242234184
+    },
+    {
+      "frame": 811.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.004228630256694055
+    },
+    {
+      "frame": 811.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.005337831223011296
+    },
+    {
+      "frame": 812.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.006428780891155183
+    },
+    {
+      "frame": 812.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.00750868934819059
+    },
+    {
+      "frame": 813.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.008573959685310396
+    },
+    {
+      "frame": 813.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.009626191322502179
+    },
+    {
+      "frame": 814.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.01066702919636726
+    },
+    {
+      "frame": 814.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.011698082450161854
+    },
+    {
+      "frame": 815.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.01271600508061806
+    },
+    {
+      "frame": 815.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.013718961979210935
+    },
+    {
+      "frame": 816.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.01470159980885589
+    },
+    {
+      "frame": 816.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.015679238928364123
+    },
+    {
+      "frame": 817.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0166508056527622
+    },
+    {
+      "frame": 817.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.017622790834927106
+    },
+    {
+      "frame": 818.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.018591518574519218
+    },
+    {
+      "frame": 818.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.019558264552796925
+    },
+    {
+      "frame": 819.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.020498864432065094
+    },
+    {
+      "frame": 819.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.021404908640276107
+    },
+    {
+      "frame": 820.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0222716135825634
+    },
+    {
+      "frame": 820.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0231569317730653
+    },
+    {
+      "frame": 821.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0241414407228529
+    },
+    {
+      "frame": 821.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.025073614252489863
+    },
+    {
+      "frame": 822.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02592539495999493
+    },
+    {
+      "frame": 822.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.026689276267791037
+    },
+    {
+      "frame": 823.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.027373408447660327
+    },
+    {
+      "frame": 823.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02798635975807261
+    },
+    {
+      "frame": 824.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.028529797013864464
+    },
+    {
+      "frame": 824.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02901028724629766
+    },
+    {
+      "frame": 825.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02943456836684013
+    },
+    {
+      "frame": 825.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.029809582303048497
+    },
+    {
+      "frame": 826.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.03014203663669138
+    },
+    {
+      "frame": 826.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.03043148835562015
+    },
+    {
+      "frame": 827.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.030497553820464072
+    },
+    {
+      "frame": 827.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.030289552365080102
+    },
+    {
+      "frame": 828.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02993030583229434
+    },
+    {
+      "frame": 828.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.029454876792019923
+    },
+    {
+      "frame": 829.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.028811785582649938
+    },
+    {
+      "frame": 829.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.027947962792133504
+    },
+    {
+      "frame": 830.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.026920180401997704
+    },
+    {
+      "frame": 830.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.025876970253536684
+    },
+    {
+      "frame": 831.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.024841557165011935
+    },
+    {
+      "frame": 831.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02382264846069706
+    },
+    {
+      "frame": 832.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02282893300501651
+    },
+    {
+      "frame": 832.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.02179921584565761
+    },
+    {
+      "frame": 833.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.020709071180925298
+    },
+    {
+      "frame": 833.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.019672298980308225
+    },
+    {
+      "frame": 834.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.018695754365263863
+    },
+    {
+      "frame": 834.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.017784673437099295
+    },
+    {
+      "frame": 835.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.01693892340759321
+    },
+    {
+      "frame": 835.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.01609819669346494
+    },
+    {
+      "frame": 836.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.015111335510460478
+    },
+    {
+      "frame": 836.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.014094449117340806
+    },
+    {
+      "frame": 837.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.013116313030271911
+    },
+    {
+      "frame": 837.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.012119999873802204
+    },
+    {
+      "frame": 838.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.010897511887437305
+    },
+    {
+      "frame": 838.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.009048771583536673
+    },
+    {
+      "frame": 839.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.006608455808019859
+    },
+    {
+      "frame": 839.5,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.003925984902677171
+    },
+    {
+      "frame": 840.0,
+      "pair": [
+        "right_rubber_hand",
+        "right_hip_yaw_link"
+      ],
+      "gap": -0.0008751780825438102
+    }
+  ]
+}

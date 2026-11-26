@@ -1,0 +1,40 @@
+{
+  "run": "wbc_convex_from_start",
+  "recording": "/home/sky/Humanoid_fabric/acc_data/amp_walk_20261103/feedback_followup/wbc_convex_from_start.npz",
+  "measured_landing_events": 1,
+  "full_motion_tracking_passed": false,
+  "prefix_fidelity_passing_landings": 1,
+  "first_fidelity_exceeded_time_s": 1.984,
+  "last_source_frame": 433.1600000000001,
+  "last_time_s": 1.984,
+  "landings": [
+    {
+      "step": 1,
+      "time_s": 0.176,
+      "source_frame": 35.199999999999996,
+      "landing_error_m": 0.012622956177253964,
+      "joint_rmse_rad": 0.08923974633216858,
+      "root_position_error_m": 0.016761478036642075,
+      "root_orientation_error_rad": 0.09634730588731634,
+      "prefix_peak_joint_rmse_rad": 0.08923974633216858,
+      "prefix_peak_root_position_error_m": 0.016761478036642075,
+      "prefix_peak_root_orientation_error_rad": 0.09634730588731634,
+      "prefix_fidelity_passed": true
+    }
+  ],
+  "next_step_diagnostics": {
+    "step": 2,
+    "swing": "right",
+    "missing_evidence": "verified_flight",
+    "landing_window_expired": true,
+    "airborne_verified": false,
+    "peak_unloaded_clearance_m": 0.015334366494676996,
+    "best_loaded_landing_error_m": 0.0180790014564991,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "no_mpc_verified": true,
+  "self_contact_events": []
+}

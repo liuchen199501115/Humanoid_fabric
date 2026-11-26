@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/sky/anaconda3/envs/humanoid_fabric/bin/python",
+    "-u",
+    "examples/test_g1.py",
+    "--duration",
+    "0.006",
+    "--device",
+    "cpu",
+    "--qp-solver",
+    "daqp",
+    "--output-path",
+    "/home/sky/Humanoid_fabric/acc_data/environment_recovery/isaac_smoke_20261106_031201.npz"
+  ],
+  "returncode": 0,
+  "wall_seconds": 11.523146965540946,
+  "test_g1_sha256": "490f698308ce5397edb6fc32badc8286691db65ce50d91139507f082b95f01a0",
+  "sandbox_repaired": false,
+  "execution_route": "approved escalation"
+}

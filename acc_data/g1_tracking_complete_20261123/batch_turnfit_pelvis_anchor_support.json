@@ -1,0 +1,32 @@
+[
+  {
+    "name": "turn_fit_pelvis1",
+    "parent": "eight_turn_sourcejoint1m",
+    "options": [
+      "--late-pelvis-priority-start",
+      "3.3",
+      "--late-pelvis-metric-scale",
+      "1"
+    ]
+  },
+  {
+    "name": "turn_fit_pelvis3",
+    "parent": "eight_turn_sourcejoint1m",
+    "options": [
+      "--late-pelvis-priority-start",
+      "3.3",
+      "--late-pelvis-metric-scale",
+      "3"
+    ]
+  },
+  {
+    "name": "ten_anchor884_root1000_support4",
+    "parent": "ten_smooth16_anchor884_drop20_root1000",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.08",
+      "--support-orientation-metric-scale",
+      "4"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "step": 8,
+    "offset_m": [
+      0.005,
+      0.015,
+      0
+    ],
+    "failed_source_frame": 758,
+    "position_residual_m": 0.0003207456271704144
+  },
+  {
+    "step": 8,
+    "offset_m": [
+      0,
+      0.01,
+      0
+    ],
+    "failed_source_frame": 761,
+    "position_residual_m": 0.00019794424014685927
+  }
+]

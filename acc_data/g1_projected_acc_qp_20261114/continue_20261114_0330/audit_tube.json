@@ -1,0 +1,172 @@
+{
+  "kind": "offline_saved_state_only",
+  "tracking_evaluated": false,
+  "source": "acc_data/g1_projected_acc_qp_20261114/tuning/projection1_attitude.failure.npz",
+  "source_sha256": "05391206fc7e1f176cf40b932f4422a606d4506d2ee73dd5de8c4068b72301ae",
+  "source_time_s": 1.356,
+  "reconstructed_tube_matches": true,
+  "joint_tube_row": 628,
+  "minimum_feasible_bound": -7.371278977551723,
+  "original_bound": -42.027244567871094,
+  "original_diagnostics": [
+    0.012165864929556847,
+    -0.1102466881275177,
+    0.011411964893341064
+  ],
+  "results": [
+    {
+      "joint_bandwidth": 4,
+      "bound": -41.726219177246094,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        -0.061583228409290314
+      ]
+    },
+    {
+      "joint_bandwidth": 10,
+      "bound": -42.027244567871094,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        0.011411964893341064
+      ]
+    },
+    {
+      "joint_bandwidth": 15,
+      "bound": -41.608978271484375,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        0.07224129140377045
+      ]
+    },
+    {
+      "joint_bandwidth": 20,
+      "bound": -40.582420349121094,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        0.13307061791419983
+      ]
+    },
+    {
+      "joint_bandwidth": 30,
+      "bound": -36.70442199707031,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        0.2547292709350586
+      ]
+    },
+    {
+      "joint_bandwidth": 40,
+      "bound": -30.393251419067383,
+      "lp_feasible": false,
+      "single_qp_accepted": false,
+      "solver_status": [
+        "DAQP -1; rejected"
+      ],
+      "native_calls": [
+        1
+      ],
+      "barrier_diagnostics": [
+        0.012165864929556847,
+        -0.1102466881275177,
+        0.37638792395591736
+      ]
+    }
+  ],
+  "joint_bound_components": {
+    "reference_acceleration": -0.37713372707366943,
+    "relative_velocity": -40.661766052246094,
+    "barrier_rate_term": -2.204933762550354,
+    "barrier_position_term": 1.2165864929556847,
+    "relative_velocity_rms_rad_s": 4.508977890014648
+  },
+  "largest_relative_joint_velocities": [
+    {
+      "joint": "left_hip_yaw_joint",
+      "actual_rad_s": 12.103102684020996,
+      "reference_rad_s": -0.6380590200424194,
+      "previous_tick_prediction_rad_s": 12.096942901611328,
+      "error_rad_s": 12.741161346435547
+    },
+    {
+      "joint": "right_knee_joint",
+      "actual_rad_s": -10.071831703186035,
+      "reference_rad_s": 0.4470680356025696,
+      "previous_tick_prediction_rad_s": -10.046679496765137,
+      "error_rad_s": -10.518899917602539
+    },
+    {
+      "joint": "waist_pitch_joint",
+      "actual_rad_s": -8.182647705078125,
+      "reference_rad_s": -0.4692479968070984,
+      "previous_tick_prediction_rad_s": -8.185201644897461,
+      "error_rad_s": -7.713399887084961
+    },
+    {
+      "joint": "left_hip_pitch_joint",
+      "actual_rad_s": -8.71718978881836,
+      "reference_rad_s": -1.586480736732483,
+      "previous_tick_prediction_rad_s": -8.725445747375488,
+      "error_rad_s": -7.130709171295166
+    },
+    {
+      "joint": "right_ankle_roll_joint",
+      "actual_rad_s": 5.3504204750061035,
+      "reference_rad_s": -0.3190179765224457,
+      "previous_tick_prediction_rad_s": 5.5218377113342285,
+      "error_rad_s": 5.669438362121582
+    },
+    {
+      "joint": "left_shoulder_roll_joint",
+      "actual_rad_s": 4.832828521728516,
+      "reference_rad_s": -0.47740599513053894,
+      "previous_tick_prediction_rad_s": 4.845747947692871,
+      "error_rad_s": 5.310234546661377
+    }
+  ],
+  "last_interval_s": 0.0020000000000000018
+}

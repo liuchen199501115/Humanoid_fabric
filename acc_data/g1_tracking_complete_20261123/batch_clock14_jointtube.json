@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_anchor_jointtube100",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "ten_anchor_jointtube1000",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "1000"
+    ]
+  },
+  {
+    "name": "ten_anchor_jointtube10000",
+    "parent": "ten_clock14_sh16_anchor884_iter50k",
+    "options": [
+      "--late-tube-soft-weight-start",
+      "4.08",
+      "--late-tube-soft-weight",
+      "10000"
+    ]
+  }
+]

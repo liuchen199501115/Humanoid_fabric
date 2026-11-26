@@ -1,0 +1,6 @@
+{
+  "pchip_vs_bspline_peak_joint_rmse": 0.002442015800625086,
+  "peak_root_position": 0.0013078079791739583,
+  "peak_root_angle": 0.0014103831903108438,
+  "full_tracking_passed": false
+}

@@ -1,0 +1,10 @@
+{
+  "gain": 1.0,
+  "peak_position_residual": 0.01583935518935446,
+  "peak_orientation_residual": 0.024466873760853693,
+  "peak_source_joint_rmse": 0.0843404212705937,
+  "minimum_dense_joint_limit_margin": 0.002254584360122658,
+  "initial_qva_preserved": true,
+  "physical_tracking_certified": false,
+  "preflight_passed": false
+}

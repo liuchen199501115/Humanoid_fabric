@@ -1,0 +1,48 @@
+{
+  "full_motion_tracking_passed": false,
+  "physical_trials": 7,
+  "named_profile": "drift-wbc",
+  "physically_tested_equivalent_run": "state_com_xyz4",
+  "baseline": {
+    "prefix": 12,
+    "last_source_frame": 989.0,
+    "last_time_s": 4.3,
+    "last_landing": {
+      "step": 12,
+      "time_s": 4.216,
+      "root_position_error_m": 0.17612813413143158,
+      "root_orientation_error_rad": 0.20614160110794782,
+      "joint_rmse_rad": 0.14348295331001282
+    }
+  },
+  "implemented_correction": {
+    "prefix": 12,
+    "last_source_frame": 1007.7200000000001,
+    "last_time_s": 4.378,
+    "last_landing": {
+      "step": 12,
+      "time_s": 4.22,
+      "root_position_error_m": 0.13789057731628418,
+      "root_orientation_error_rad": 0.10182802347953784,
+      "joint_rmse_rad": 0.10703714191913605
+    },
+    "first_state_com_activation_s": 3.646,
+    "first_state_or_phase_difference_s": 3.648
+  },
+  "tests": {
+    "passed": 45,
+    "failed": 0
+  },
+  "final_source_sha256": {
+    "examples/test_g1_2.py": "efcba7f80dbac6b1609c303a345e53203a9865ef02cd66185d91139f27b46d0d",
+    "examples/g1_response_feedback.py": "d1c61be5cce2f5e80a2f3dd34dcb706b6e39461e3b4d12fc87cdf4dd4be08b14",
+    "tests/test_g1_response_feedback.py": "1a95efc38103697ae20f12e763880c3a184576d25f67ad4339705e9e3f80cebf"
+  },
+  "limitations": [
+    "Only partial improvement; step 13 and full PKL still fail.",
+    "The state metric uses a local error extrapolation, not a feasibility planner.",
+    "Existing historical schedule and reference preprocessing remain.",
+    "Offline constraint removals are diagnostic only; numerical LP errors are inconclusive.",
+    "Earlier model effort activation and slower clock regressed and were not selected."
+  ]
+}

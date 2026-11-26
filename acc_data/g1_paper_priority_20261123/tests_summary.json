@@ -1,0 +1,21 @@
+{
+  "targeted_tests": 66,
+  "passed": 66,
+  "failed": 0,
+  "patterns": [
+    "test_fabric_priority.py",
+    "test_dynamics_aware_tasks.py",
+    "test_g1_single_qp.py",
+    "test_g1_full_tracking.py",
+    "test_g1_acceleration_cost.py",
+    "test_g1_soft_tracking_tube.py"
+  ],
+  "broader_run": {
+    "pattern": "test_g1_*",
+    "tests": 110,
+    "passed": 109,
+    "errors": 1,
+    "error": "Existing shoulder-roll analysis test requires unavailable clarabel; unrelated to the single-DAQP path"
+  },
+  "launcher_bash_syntax": "passed"
+}

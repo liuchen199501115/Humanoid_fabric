@@ -1,0 +1,9 @@
+{
+  "extra_clearance_m": 0.01,
+  "peak_position_residual": 9.91610636607015e-08,
+  "peak_orientation_residual": 7.632328072570229e-08,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "minimum_dense_joint_limit_margin": 0.12264874577522278,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

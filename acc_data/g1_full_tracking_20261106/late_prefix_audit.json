@@ -1,0 +1,58 @@
+[
+  {
+    "run": "torque_continuity100_after12",
+    "cutoff_s": 4.22,
+    "samples": 2111,
+    "fields": {
+      "history_time": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_frame": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_q": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_qd": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_torque_qp_total": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      }
+    },
+    "identical": true
+  },
+  {
+    "run": "stance_heading_turn_v3",
+    "cutoff_s": 4.09,
+    "samples": 2046,
+    "fields": {
+      "history_time": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_frame": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_q": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_qd": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      },
+      "history_torque_qp_total": {
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0
+      }
+    },
+    "identical": true
+  }
+]

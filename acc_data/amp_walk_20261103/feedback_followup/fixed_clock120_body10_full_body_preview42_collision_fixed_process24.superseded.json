@@ -1,0 +1,8 @@
+{
+  "full_motion_tracking_passed": false,
+  "complete_physics_trial": false,
+  "last_prediction_time": 3.724,
+  "reason": "Replace held 10 ms acceleration with a qualified 2 ms initial control sequence and exact full-constraint row generation. Six verified forecasts were executed, but projection repeatedly triggered replanning after 6-8 ms; this run has no complete physical report.",
+  "next_candidate": "full_body_preview42_collision_fine_process28",
+  "preflight": "full_body_preview_collision_fine_initial_audit.json"
+}

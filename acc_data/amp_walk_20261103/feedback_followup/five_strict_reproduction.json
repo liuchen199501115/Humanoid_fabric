@@ -1,0 +1,10 @@
+{
+  "first_run": "leg150_vertical155.npz",
+  "independent_run": "late_right_leg150.npz",
+  "verified_prefix_time_s": 1.898,
+  "verified_samples": 950,
+  "maximum_q_difference": 0.0,
+  "maximum_v_difference": 0.0,
+  "five_landing_events_identical": true,
+  "full_tracking_passed": false
+}

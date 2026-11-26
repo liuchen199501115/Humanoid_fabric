@@ -1,0 +1,142 @@
+{
+  "parent": "turn_centroidal_pose_fit_composed",
+  "iterations": [
+    {
+      "iteration": 0,
+      "status": "Solved; constraint residual 1.72e-13",
+      "peak_linearized_cop_slack_m": 0.05162118984735672,
+      "maximum_coordinate_offset": [
+        0.01460792875854811,
+        0.011546161574576937,
+        0.01772199073832923,
+        0.05676212774832597,
+        0.05687476521539225,
+        0.03611151932300196
+      ],
+      "projection_errors": [
+        8.437893127503675e-07,
+        6.049449994287342e-08,
+        4.04983160310561e-08
+      ]
+    },
+    {
+      "iteration": 1,
+      "status": "Solved; constraint residual 5.06e-15",
+      "peak_linearized_cop_slack_m": 0.05439468054244241,
+      "maximum_coordinate_offset": [
+        0.012766040239696793,
+        0.010780659162349653,
+        0.017546282866663536,
+        0.09636099493176344,
+        0.10997579013820041,
+        0.022431477824381967
+      ],
+      "projection_errors": [
+        9.974709985972115e-08,
+        6.138872774094912e-08,
+        3.789538171309437e-08
+      ]
+    },
+    {
+      "iteration": 2,
+      "status": "Solved; constraint residual 1.42e-14",
+      "peak_linearized_cop_slack_m": 0.052903602327527485,
+      "maximum_coordinate_offset": [
+        0.01322691767255648,
+        0.010911963266486586,
+        0.017208109482961587,
+        0.09391370284840604,
+        0.11306135976078274,
+        0.026238661296541545
+      ],
+      "projection_errors": [
+        9.991946616984197e-08,
+        5.6774903304610415e-08,
+        3.791887770664978e-08
+      ]
+    },
+    {
+      "iteration": 3,
+      "status": "Solved; constraint residual 3.28e-14",
+      "peak_linearized_cop_slack_m": 0.05292313304862695,
+      "maximum_coordinate_offset": [
+        0.013238924055116733,
+        0.010954402670955961,
+        0.01740022102439639,
+        0.09391584024584104,
+        0.11096989935252825,
+        0.02726603870990539
+      ],
+      "projection_errors": [
+        9.971395837642247e-08,
+        3.3480584998704434e-08,
+        3.7951646602241935e-08
+      ]
+    },
+    {
+      "iteration": 4,
+      "status": "Solved; constraint residual 5.43e-15",
+      "peak_linearized_cop_slack_m": 0.053123466894674634,
+      "maximum_coordinate_offset": [
+        0.013250832378360675,
+        0.010911532549915356,
+        0.017406460230716816,
+        0.09369594464965424,
+        0.11309221517210143,
+        0.026083002054432633
+      ],
+      "projection_errors": [
+        9.914337300332177e-08,
+        3.66562029403336e-08,
+        3.79674067723703e-08
+      ]
+    },
+    {
+      "iteration": 5,
+      "status": "Solved; constraint residual 5.18e-15",
+      "peak_linearized_cop_slack_m": 0.05324882384929075,
+      "maximum_coordinate_offset": [
+        0.0132530700194432,
+        0.011003660168995729,
+        0.017462269601175147,
+        0.0946135074454162,
+        0.11192475873051995,
+        0.025353520549771944
+      ],
+      "projection_errors": [
+        9.924284871927007e-08,
+        3.4244910877348506e-08,
+        3.7920040563035013e-08
+      ]
+    }
+  ],
+  "peak_com_projection_error": 9.924284871927007e-08,
+  "peak_position_residual": 3.4244910877348506e-08,
+  "peak_orientation_residual": 3.7920040563035013e-08,
+  "minimum_dense_joint_limit_margin": 0.01565060019493103,
+  "minimum_dense_native_clearance": -0.0007385789859835762,
+  "peak_source_joint_reference_rmse": 0.1457168012857437,
+  "physical_tracking_certified": false,
+  "preflight_passed": true,
+  "maximum_additional_clearance_target": 0.0026476999608214956,
+  "clearance_repair_iterations": [
+    {
+      "iteration": 0,
+      "minimum_clearance": -0.001837057733719498
+    },
+    {
+      "iteration": 1,
+      "minimum_clearance": -0.0007385789859835762
+    }
+  ],
+  "native_floor_repair_required": false,
+  "maximum_dense_joint_velocity": 14.290294647216797,
+  "floor_ik_peak_residual": [
+    9.291015046540406e-08,
+    3.278637777647268e-08
+  ],
+  "audited_source_frame_interval": [
+    694.0,
+    1086.75
+  ]
+}

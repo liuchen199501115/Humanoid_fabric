@@ -1,0 +1,194 @@
+{
+  "name": "feedback1_v2",
+  "scale": 1.0,
+  "returncode": 1,
+  "steps": {
+    "scope": "continuous source steps, same-frame original foot-link targets",
+    "landing_goal_policy": "source_pose",
+    "expected_steps": 29,
+    "measured_steps": 2,
+    "landings": [
+      {
+        "step": 1,
+        "swing": "left",
+        "source_frame": 37.6,
+        "time": 0.188,
+        "landing_error_m": 0.007118414565406906,
+        "goal": [
+          1.5789246559143066,
+          0.1788153499364853,
+          0.03835587203502655
+        ],
+        "measured_load_n": 677.597900390625,
+        "source_contact_onset_goal": [
+          1.5718071460723877,
+          0.19158045947551727,
+          0.04952828213572502
+        ]
+      },
+      {
+        "step": 2,
+        "swing": "right",
+        "source_frame": 78.4,
+        "time": 0.392,
+        "landing_error_m": 0.020040387177547376,
+        "goal": [
+          2.0696146488189697,
+          -0.09203363209962845,
+          0.0495346263051033
+        ],
+        "measured_load_n": 390.1504821777344,
+        "source_contact_onset_goal": [
+          2.0546042919158936,
+          -0.09282495826482773,
+          0.06013905629515648
+        ]
+      }
+    ],
+    "continuous": true,
+    "initial_partial_step": true,
+    "measured_steps_complete": false,
+    "full_pkl_tracking": false,
+    "next_step_diagnostics": {
+      "step": 3,
+      "swing": "left",
+      "missing_evidence": "verified_flight",
+      "landing_window_expired": false,
+      "airborne_verified": false,
+      "peak_unloaded_clearance_m": null,
+      "best_loaded_landing_error_m": null,
+      "longest_verified_landing_hold_s": 0.0,
+      "required_clearance_m": 0.02,
+      "required_landing_hold_s": 0.05,
+      "landing_position_tolerance_m": 0.04
+    },
+    "fixed_contact_onset_audit": {
+      "measured_steps": 2,
+      "landings": [
+        {
+          "step": 1,
+          "swing": "left",
+          "source_frame": 37.6,
+          "time": 0.188,
+          "landing_error_m": 0.017339083260691467,
+          "goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ],
+          "measured_load_n": 677.597900390625,
+          "source_contact_onset_goal": [
+            1.5718071460723877,
+            0.19158045947551727,
+            0.04952828213572502
+          ]
+        },
+        {
+          "step": 2,
+          "swing": "right",
+          "source_frame": 78.4,
+          "time": 0.392,
+          "landing_error_m": 0.03818165130381293,
+          "goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ],
+          "measured_load_n": 390.1504821777344,
+          "source_contact_onset_goal": [
+            2.0546042919158936,
+            -0.09282495826482773,
+            0.06013905629515648
+          ]
+        }
+      ],
+      "next_step_diagnostics": {
+        "step": 3,
+        "swing": "left",
+        "missing_evidence": "verified_flight",
+        "landing_window_expired": false,
+        "airborne_verified": false,
+        "peak_unloaded_clearance_m": null,
+        "best_loaded_landing_error_m": null,
+        "longest_verified_landing_hold_s": 0.0,
+        "required_clearance_m": 0.02,
+        "required_landing_hold_s": 0.05,
+        "landing_position_tolerance_m": 0.04
+      }
+    },
+    "pkl_fidelity": {
+      "source_frame_count": 2000,
+      "first_source_frame": 0.0,
+      "last_source_frame": 153.6,
+      "full_source_covered": false,
+      "final_support_settled": false,
+      "simulation_completed": false,
+      "controller_valid": false,
+      "peak_joint_rmse": 0.20091339945793152,
+      "peak_root_position_error": 0.11174870282411575,
+      "peak_root_orientation_error": 0.1334472575862072,
+      "tolerances": {
+        "joint_rmse_rad": 0.2,
+        "root_position_m": 0.2,
+        "root_orientation_rad": 0.35
+      },
+      "pkl_fidelity_passed": false,
+      "full_clip_tracking_passed": false,
+      "full_tracking_passed": false,
+      "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization."
+    },
+    "last_time_s": 0.768,
+    "last_source_frame": 153.6,
+    "controller_valid": false,
+    "controller_validation_available": true,
+    "stable_final_support": false,
+    "stopped_at_tracking_steps": false,
+    "ground_support_evidence_available": true,
+    "native_clearance_geometry_available": true,
+    "measured_mode_available": true,
+    "bounded_source_covered": false,
+    "pkl_fidelity_available": true,
+    "pkl_fidelity_passed": false,
+    "steps_tracking_passed": false
+  },
+  "tracking": {
+    "source_frame_count": 2000,
+    "first_source_frame": 0.0,
+    "last_source_frame": 153.6,
+    "full_source_covered": false,
+    "final_support_settled": false,
+    "simulation_completed": false,
+    "controller_valid": false,
+    "peak_joint_rmse": 0.20091339945793152,
+    "peak_root_position_error": 0.11174870282411575,
+    "peak_root_orientation_error": 0.1334472575862072,
+    "tolerances": {
+      "joint_rmse_rad": 0.2,
+      "root_position_m": 0.2,
+      "root_orientation_rad": 0.35
+    },
+    "pkl_fidelity_passed": false,
+    "full_clip_tracking_passed": false,
+    "full_tracking_passed": false,
+    "scope": "Original, ground-aligned PKL at the retimed source clock; no per-frame root alignment or stride rescaling. Peak errors include initialization.",
+    "expected_landings": 29,
+    "measured_landings": 2,
+    "all_source_landings_verified": false,
+    "full_motion_tracking_passed": false,
+    "first_fidelity_exceeded": {
+      "time_s": 0.768,
+      "source_frame": 153.6,
+      "joint_rmse_rad": 0.20091339945793152,
+      "root_position_m": 0.11174870282411575,
+      "root_orientation_rad": 0.11314492329408009
+    },
+    "stop_reason": "Original-source fidelity limit exceeded",
+    "fidelity_stop": {
+      "time_s": 0.768,
+      "source_frame": 153.6,
+      "joint_rmse_rad": 0.20091339945793152,
+      "root_position_m": 0.11174870282411575,
+      "root_orientation_rad": 0.11314492329408009
+    }
+  }
+}

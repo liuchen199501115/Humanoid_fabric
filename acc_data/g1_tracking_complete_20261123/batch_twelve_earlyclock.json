@@ -1,0 +1,32 @@
+[
+  {
+    "name": "twelve_earlyclock10",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-fifth-start",
+      "4.26",
+      "--clock-fifth-speed",
+      "1.0"
+    ]
+  },
+  {
+    "name": "twelve_earlyclock8",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-fifth-start",
+      "4.26",
+      "--clock-fifth-speed",
+      ".8"
+    ]
+  },
+  {
+    "name": "twelve_earlyclock6",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--clock-fifth-start",
+      "4.26",
+      "--clock-fifth-speed",
+      ".6"
+    ]
+  }
+]

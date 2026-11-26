@@ -1,0 +1,9 @@
+{
+  "tests_run": 114,
+  "passed": 114,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "log": "step13_tests_knee.log",
+  "scope": "Unit/regression checks; not a physical tracking certificate."
+}

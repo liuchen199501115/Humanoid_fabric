@@ -1,0 +1,34 @@
+[
+  {
+    "name": "eleven_hip20_foot64",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--late-foot-metric-end",
+      "4.5",
+      "--late-foot-metric-end-ramp",
+      ".06",
+      "--late-foot-metric-end-scale",
+      "64"
+    ]
+  },
+  {
+    "name": "eleven_hip20_foot256",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--late-foot-metric-end",
+      "4.5",
+      "--late-foot-metric-end-ramp",
+      ".06",
+      "--late-foot-metric-end-scale",
+      "256"
+    ]
+  },
+  {
+    "name": "eleven_hip20_leg64",
+    "parent": "eleven_upper64_hip20",
+    "options": [
+      "--leg-posture-metric-scale",
+      "64"
+    ]
+  }
+]

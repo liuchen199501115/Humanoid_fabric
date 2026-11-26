@@ -1,0 +1,34 @@
+[
+  {
+    "name": "eleven_cont1000_flat64_gatefix",
+    "parent": "eleven_cont1000_flat_tilt64",
+    "options": []
+  },
+  {
+    "name": "eleven_cont1000_flat64_pause12",
+    "parent": "eleven_cont1000_flat_tilt64",
+    "options": [
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12"
+    ]
+  },
+  {
+    "name": "eleven_source60_flat64_pause12",
+    "parent": "eleven_return_source_transfer60",
+    "options": [
+      "--support-orientation-priority-start",
+      "4.5",
+      "--support-orientation-roll-pitch-only",
+      "--support-orientation-metric-scale",
+      "64",
+      "--support-flatten-start",
+      "4.5",
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12"
+    ]
+  }
+]

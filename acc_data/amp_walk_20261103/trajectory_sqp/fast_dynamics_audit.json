@@ -1,0 +1,20 @@
+{
+  "geometry_error": {
+    "transforms": 0.0,
+    "rotations": 0.0,
+    "origin_jac": 0.0,
+    "angular_jac": 0.0,
+    "link_com": 0.0,
+    "link_com_jac": 0.0
+  },
+  "force_error": 1.765698698363849e-12,
+  "contact_jacobian_error": 0.0,
+  "snapshot_times": [
+    0.03892677556723356,
+    0.026084885001182556
+  ],
+  "generalized_force_times": [
+    0.21604083944112062,
+    0.1093784561380744
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "root_y_offset": 0.04,
+  "peak_position_residual": 8.79340079984286e-08,
+  "peak_orientation_residual": 1.1399837758479248e-07,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "peak_root_position_change": 0.040311310440301895,
+  "minimum_dense_joint_limit_margin": 0.011253207921981812,
+  "physical_tracking_certified": false,
+  "preflight_passed": true
+}

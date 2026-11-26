@@ -1,0 +1,7 @@
+{
+  "name": "metric_polish",
+  "tracking_evaluated": false,
+  "returncode": 130,
+  "timed_out": false,
+  "stop_reason": "Sandbox CUDA context unavailable; interrupted before tracking; rerun as metric_polish_gpu"
+}

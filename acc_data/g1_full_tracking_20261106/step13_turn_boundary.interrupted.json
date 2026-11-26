@@ -1,0 +1,5 @@
+{
+  "reason": "Root lateral search box is active at 60 mm while nominal force violation remains. Continue with a wider reference search and an explicit original-source root-position cone of 160 mm; physical tracking tolerance remains 200 mm.",
+  "physical_tracking_certified": false,
+  "checkpoint": "step13_turn_wide_seed.npz"
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "eta_prox": 1e-12,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03718308098905254,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "eta_prox": 1e-10,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.036766338991583325,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "eta_prox": 1e-09,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03673800999240484,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_anchor884",
+    "eta_prox": 1e-08,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03673932699894067,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "eta_prox": 1e-12,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.036491314007434994,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "eta_prox": 1e-10,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.036400181998033077,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "eta_prox": 1e-09,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03651902300771326,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_clock14_sh16_pelvis1_iter50k",
+    "eta_prox": 1e-08,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03653037299227435,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "eta_prox": 1e-12,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.036884493005345576,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "eta_prox": 1e-10,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03768361698894296,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "eta_prox": 1e-09,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03711109299911186,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  },
+  {
+    "trial": "ten_anchor_lateleg16",
+    "eta_prox": 1e-08,
+    "valid": false,
+    "iterations": 5000,
+    "native_calls": 1,
+    "wall_s": 0.03717407300428022,
+    "status": [
+      "DAQP -4; rejected"
+    ]
+  }
+]

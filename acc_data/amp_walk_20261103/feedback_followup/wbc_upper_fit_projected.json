@@ -1,0 +1,119 @@
+{
+  "repaired_frames": [
+    {
+      "frame": 804,
+      "com": 0.0011862434276618595,
+      "position": 0.00038462125933099253,
+      "orientation": 0.0050075968256489195,
+      "evaluations": 5
+    },
+    {
+      "frame": 805,
+      "com": 0.0012275289346412293,
+      "position": 0.00039877737609818694,
+      "orientation": 0.0051609753941434825,
+      "evaluations": 5
+    },
+    {
+      "frame": 806,
+      "com": 0.000835680689596831,
+      "position": 0.0002718931044450542,
+      "orientation": 0.0035018887000226374,
+      "evaluations": 10
+    },
+    {
+      "frame": 807,
+      "com": 0.0003603790600265145,
+      "position": 0.00011738558182660969,
+      "orientation": 0.0015052459173174279,
+      "evaluations": 5
+    },
+    {
+      "frame": 825,
+      "com": 0.0006119915190076201,
+      "position": 0.00021108573374707958,
+      "orientation": 0.0014829564128209021,
+      "evaluations": 5
+    },
+    {
+      "frame": 826,
+      "com": 0.001259634499628495,
+      "position": 0.0004350707293351688,
+      "orientation": 0.003049433815831811,
+      "evaluations": 5
+    },
+    {
+      "frame": 827,
+      "com": 0.0016215399404927128,
+      "position": 0.0005609117958341743,
+      "orientation": 0.003922332153262517,
+      "evaluations": 5
+    },
+    {
+      "frame": 828,
+      "com": 0.0017104216925228168,
+      "position": 0.0005926190909093848,
+      "orientation": 0.004134135248710594,
+      "evaluations": 5
+    },
+    {
+      "frame": 829,
+      "com": 0.0015135297980712898,
+      "position": 0.000525299800488921,
+      "orientation": 0.0036577702249760385,
+      "evaluations": 5
+    },
+    {
+      "frame": 830,
+      "com": 0.0011101549048057034,
+      "position": 0.0003859732030702347,
+      "orientation": 0.002683589871622563,
+      "evaluations": 5
+    },
+    {
+      "frame": 831,
+      "com": 0.0006143529363875999,
+      "position": 0.00021398390272332076,
+      "orientation": 0.0014852729487074418,
+      "evaluations": 5
+    },
+    {
+      "frame": 1007,
+      "com": 0.00013363350710470773,
+      "position": 4.775605556669493e-05,
+      "orientation": 2.887047388733835e-06,
+      "evaluations": 28
+    },
+    {
+      "frame": 1008,
+      "com": 0.0001140842148497687,
+      "position": 4.078161384717127e-05,
+      "orientation": 2.320729192873561e-06,
+      "evaluations": 26
+    },
+    {
+      "frame": 1009,
+      "com": 5.85963259592792e-14,
+      "position": 9.088001558543916e-15,
+      "orientation": 3.1697304828454006e-15,
+      "evaluations": 9
+    }
+  ],
+  "physical_tracking_certified": false,
+  "preflight_passed": false,
+  "requires_nonlinear_dynamic_audit": false,
+  "sample_frame_stride": 0.5,
+  "minimum_joint_margin": 0.004174143075942993,
+  "maximum_joint_velocity_fraction": 0.7296196818351746,
+  "minimum_native_sole_clearance": -0.001886317740319679,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "peak_foot_position_change": 0.001386226184089785,
+  "peak_foot_orientation_change": 0.004255345448127008,
+  "nonlinear_normal_force_range": [
+    118.87500918838282,
+    884.092945344072
+  ],
+  "nonlinear_friction_l1_required": 1.5446814174873207,
+  "nonlinear_cop_violation": 0.6461765156056094,
+  "requires_native_body_collision_audit": true
+}

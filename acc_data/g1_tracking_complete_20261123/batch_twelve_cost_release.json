@@ -1,0 +1,38 @@
+[
+  {
+    "name": "twelve_continuity100",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--torque-continuity-end",
+      "4.8",
+      "--torque-continuity-end-ramp",
+      ".06",
+      "--torque-continuity-end-weight",
+      "100"
+    ]
+  },
+  {
+    "name": "twelve_continuity0",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--torque-continuity-end",
+      "4.8",
+      "--torque-continuity-end-ramp",
+      ".06",
+      "--torque-continuity-end-weight",
+      "0"
+    ]
+  },
+  {
+    "name": "twelve_foot16_final",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--foot-metric-final-start",
+      "4.8",
+      "--foot-metric-final-scale",
+      "16",
+      "--foot-metric-final-ramp",
+      ".06"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "window": 81,
+  "peak_source_foot_error": 0.11538296425418727,
+  "peak_source_joint_rmse": 0.14258060971010253,
+  "joint_margin": -0.010103166103363037,
+  "preflight_passed": false,
+  "physical_tracking_certified": false
+}

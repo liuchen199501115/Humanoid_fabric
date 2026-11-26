@@ -1,0 +1,34 @@
+[
+  {
+    "name": "eleven_cont1000_speed10_pause12",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--extra-contact-pause",
+      "4.6",
+      "4.76",
+      "12"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_source_cap2",
+    "parent": "eleven_cont1000_source",
+    "options": [
+      "--qp-final-equilibration-start",
+      "4.248",
+      "--qp-final-equilibration-cap",
+      "2"
+    ]
+  },
+  {
+    "name": "eleven_cont1000_speed10_foot150",
+    "parent": "eleven_cont1000_speed10",
+    "options": [
+      "--late-foot-linear-feedback-start",
+      "4.5",
+      "--late-foot-linear-feedback-limit",
+      "150",
+      "--late-foot-linear-feedback-side",
+      "right"
+    ]
+  }
+]

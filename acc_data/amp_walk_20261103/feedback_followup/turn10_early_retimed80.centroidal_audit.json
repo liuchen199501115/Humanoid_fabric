@@ -1,0 +1,13 @@
+{
+  "clock_final_speed": 0.8,
+  "source_frames": [
+    660,
+    1999
+  ],
+  "minimum_normal_force": 149.07112885956494,
+  "maximum_normal_force": 598.2247987535214,
+  "negative_force_samples": 0,
+  "peak_required_friction_norm": 0.7810099789454923,
+  "peak_friction_frame": 1602,
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ten_lower25_fast18_tube4",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--late-tube-smooth-start",
+      "4.08",
+      "--late-tube-smooth-ramp",
+      ".1",
+      "--late-tube-smooth-stride",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_lower25_fast18_tube6",
+    "parent": "ten_stance_anchor_lower25_fast18",
+    "options": [
+      "--late-tube-smooth-start",
+      "4.08",
+      "--late-tube-smooth-ramp",
+      ".1",
+      "--late-tube-smooth-stride",
+      "6"
+    ]
+  },
+  {
+    "name": "ten_fullroot_clock816_dense",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_support_y20_clock816_dense.npz",
+      "--prepared-source-clock",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_support_y20_clock816_dense_clock.npz"
+    ]
+  }
+]

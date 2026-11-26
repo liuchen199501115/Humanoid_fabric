@@ -1,0 +1,25 @@
+{
+  "method": "Offline linearized CoP fit with frozen reference angular momentum",
+  "xy_bound_mm": 50.0,
+  "momentum_model": "filtered reference, sigma=20.0 frames",
+  "parent_sha256": "252e70b94866fb566bfad2885925da0f03cd01bfee4e16b512e89f9037b1288a",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "offline_solver_status": "solved",
+  "full_tracking_passed": false,
+  "preflight_passed": false,
+  "linearized_cop_constraint_max_residual_m": 2.444762502884501e-05,
+  "maximum_com_correction_by_axis_m": [
+    0.007397445423196986,
+    0.01690580065676752,
+    0.0
+  ],
+  "maximum_foot_position_residual_m": 0.003816887125076603,
+  "maximum_foot_rotation_residual_rad": 0.0020819331717492574,
+  "maximum_com_ik_residual_m": 0.004200538094340042,
+  "maximum_added_root_rotation_rad": 0.08660253965749101,
+  "worst_frame": 1602,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "peak_source_root_displacement_m": 0.04998929798603058,
+  "runtime_spline_acceleration_still_requires_audit": true,
+  "recomputed_momentum_and_runtime_spline_still_require_audit": true
+}

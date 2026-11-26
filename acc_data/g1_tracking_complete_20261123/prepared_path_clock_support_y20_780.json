@@ -1,0 +1,794 @@
+{
+  "method": "Offline whole-turn path retiming, never a runtime predictive controller.\n\nFor phase speed squared x and phase acceleration u, exact RNEA along a fixed\npose path is G + X*x + U*u. Explicit slacks report physical path conflicts;\na solved optimization does not certify closed-loop tracking or impact behavior.\n",
+  "parent_file": "prepared_support10_early_com15_y20.npz",
+  "parent_sha256": "c7b4d7a286722e63fea2f7616e48acd802d78c46f5c086ac1316ea0a270216cd",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "solver_status": "solved inaccurate",
+  "linearization_error": 2.2737367544323206e-13,
+  "full_tracking_passed": false,
+  "preflight_passed": true,
+  "physical_scope": "Optimistic full nominal sole support; leg effort only in single support; upper-body effort in all modes; no impact model",
+  "speed_range": [
+    0.4302546821022234,
+    1.200000018218479
+  ],
+  "maximum_phase_acceleration": 6.000000001287297,
+  "time_change_s": 0.5450420201627164,
+  "maximum_physical_violation_by_kind": {
+    "motor": 1.0373437748572831,
+    "friction": 0.3066815754848279,
+    "normal": 0.15641201045808784,
+    "cop": 5.052402116659925
+  },
+  "baseline_violation_by_kind": {
+    "motor": 1.9766728704852141,
+    "friction": 0.4742546341532788,
+    "normal": 0.2592843027726459,
+    "cop": 5.355453887090356
+  },
+  "max_slack": 5.0515714659684905,
+  "samples": [
+    {
+      "frame": 780,
+      "time_s": 3.6541666666666663,
+      "speed": 1.200000018218479,
+      "phase_acceleration": -3.163180480214578e-06
+    },
+    {
+      "frame": 782,
+      "time_s": 3.66249999996501,
+      "speed": 1.1999999918586417,
+      "phase_acceleration": -3.800478453276554
+    },
+    {
+      "frame": 784,
+      "time_s": 3.6709463026229425,
+      "speed": 1.1679000005973152,
+      "phase_acceleration": -3.0839172232635974
+    },
+    {
+      "frame": 786,
+      "time_s": 3.6796077275430195,
+      "speed": 1.141188883108286,
+      "phase_acceleration": -2.9601153141856287
+    },
+    {
+      "frame": 788,
+      "time_s": 3.688472436637418,
+      "speed": 1.1149483219621545,
+      "phase_acceleration": -1.1844603431708052
+    },
+    {
+      "frame": 790,
+      "time_s": 3.6974846036008677,
+      "speed": 1.104273767587915,
+      "phase_acceleration": 0.1224284390742838
+    },
+    {
+      "frame": 792,
+      "time_s": 3.706535787631302,
+      "speed": 1.1053818899205352,
+      "phase_acceleration": 0.4904821483052757
+    },
+    {
+      "frame": 794,
+      "time_s": 3.7155643498689503,
+      "speed": 1.1098102385229647,
+      "phase_acceleration": 0.8909114880768172
+    },
+    {
+      "frame": 796,
+      "time_s": 3.724542544846949,
+      "speed": 1.1178090155710572,
+      "phase_acceleration": 1.0570921774161306
+    },
+    {
+      "frame": 798,
+      "time_s": 3.733451091192474,
+      "speed": 1.1272261702250612,
+      "phase_acceleration": 1.5015991158259467
+    },
+    {
+      "frame": 800,
+      "time_s": 3.742270616545221,
+      "speed": 1.1404695616967502,
+      "phase_acceleration": 1.627907629152162
+    },
+    {
+      "frame": 802,
+      "time_s": 3.750984739210809,
+      "speed": 1.1546553484654287,
+      "phase_acceleration": -0.2181622487638606
+    },
+    {
+      "frame": 804,
+      "time_s": 3.759652429663707,
+      "speed": 1.1527643856246357,
+      "phase_acceleration": -2.3698707123294014
+    },
+    {
+      "frame": 806,
+      "time_s": 3.7684059925207847,
+      "speed": 1.1320195733811123,
+      "phase_acceleration": -1.7813669572394488
+    },
+    {
+      "frame": 808,
+      "time_s": 3.7773020297113895,
+      "speed": 1.1161724666793955,
+      "phase_acceleration": -1.0841261183417004
+    },
+    {
+      "frame": 810,
+      "time_s": 3.786300542845584,
+      "speed": 1.1064169435643747,
+      "phase_acceleration": 0.05281935285142936
+    },
+    {
+      "frame": 812,
+      "time_s": 3.795336777887432,
+      "speed": 1.1068942316514985,
+      "phase_acceleration": -0.005344924765417147
+    },
+    {
+      "frame": 814,
+      "time_s": 3.804371261802427,
+      "speed": 1.1068459430146784,
+      "phase_acceleration": -0.09002327579422342
+    },
+    {
+      "frame": 816,
+      "time_s": 3.8134092646618916,
+      "speed": 1.106032312390632,
+      "phase_acceleration": -0.530883220603819
+    },
+    {
+      "frame": 818,
+      "time_s": 3.8224702959275767,
+      "speed": 1.101221962930313,
+      "phase_acceleration": -0.2692738280688687
+    },
+    {
+      "frame": 820,
+      "time_s": 3.831561221640445,
+      "speed": 1.0987740145629192,
+      "phase_acceleration": -0.08194643053667505
+    },
+    {
+      "frame": 822,
+      "time_s": 3.8406653649399654,
+      "speed": 1.0980279625164293,
+      "phase_acceleration": 0.11700031766896757
+    },
+    {
+      "frame": 824,
+      "time_s": 3.849768186487756,
+      "speed": 1.0990929955292048,
+      "phase_acceleration": 0.07056698162405439
+    },
+    {
+      "frame": 826,
+      "time_s": 3.8588639417513715,
+      "speed": 1.0997348555237492,
+      "phase_acceleration": 0.09321107343015456
+    },
+    {
+      "frame": 828,
+      "time_s": 3.867953541269073,
+      "speed": 1.1005821068518444,
+      "phase_acceleration": 0.0773095366661849
+    },
+    {
+      "frame": 830,
+      "time_s": 3.8770367443689535,
+      "speed": 1.101284325074941,
+      "phase_acceleration": 0.6677950534901811
+    },
+    {
+      "frame": 832,
+      "time_s": 3.886092189735361,
+      "speed": 1.1073315066977782,
+      "phase_acceleration": 1.1018495215807462
+    },
+    {
+      "frame": 834,
+      "time_s": 3.895082694516638,
+      "speed": 1.1172376900897976,
+      "phase_acceleration": -0.36078782357525796
+    },
+    {
+      "frame": 836,
+      "time_s": 3.904046314438375,
+      "speed": 1.1140037251668782,
+      "phase_acceleration": 0.5686991198009252
+    },
+    {
+      "frame": 838,
+      "time_s": 3.913002470794257,
+      "speed": 1.1190970834032676,
+      "phase_acceleration": -0.0879194044719469
+    },
+    {
+      "frame": 840,
+      "time_s": 3.921941384774514,
+      "speed": 1.1183111794094975,
+      "phase_acceleration": -0.8406514392457183
+    },
+    {
+      "frame": 842,
+      "time_s": 3.9309136971410696,
+      "speed": 1.1107685921051904,
+      "phase_acceleration": -0.3796865189701606
+    },
+    {
+      "frame": 844,
+      "time_s": 3.9399303675743265,
+      "speed": 1.107345083895686,
+      "phase_acceleration": -0.03520147085875891
+    },
+    {
+      "frame": 846,
+      "time_s": 3.9489622727418467,
+      "speed": 1.1070271475491325,
+      "phase_acceleration": 0.24451956002375397
+    },
+    {
+      "frame": 848,
+      "time_s": 3.9579864810763805,
+      "speed": 1.1092337430006551,
+      "phase_acceleration": 0.3558329756380658
+    },
+    {
+      "frame": 850,
+      "time_s": 3.966988714981124,
+      "speed": 1.11243703467837,
+      "phase_acceleration": 0.35572152899704435
+    },
+    {
+      "frame": 852,
+      "time_s": 3.97596510506402,
+      "speed": 1.1156301298835316,
+      "phase_acceleration": 0.2500234192862436
+    },
+    {
+      "frame": 854,
+      "time_s": 3.9849196642652887,
+      "speed": 1.117868979393234,
+      "phase_acceleration": 0.734162018026268
+    },
+    {
+      "frame": 856,
+      "time_s": 3.9938391318913458,
+      "speed": 1.1244173137452997,
+      "phase_acceleration": 1.2258685344549747
+    },
+    {
+      "frame": 858,
+      "time_s": 4.002689924858479,
+      "speed": 1.1352672223486837,
+      "phase_acceleration": 1.6626621836862796
+    },
+    {
+      "frame": 860,
+      "time_s": 4.011442327863908,
+      "speed": 1.1498195118421939,
+      "phase_acceleration": 0.9125649979057187
+    },
+    {
+      "frame": 862,
+      "time_s": 4.0201095349668465,
+      "speed": 1.157728901673935,
+      "phase_acceleration": 0.14037540209740484
+    },
+    {
+      "frame": 864,
+      "time_s": 4.028742617278651,
+      "speed": 1.1589407740747943,
+      "phase_acceleration": -0.5705140356632512
+    },
+    {
+      "frame": 866,
+      "time_s": 4.037389589521051,
+      "speed": 1.1540075550445146,
+      "phase_acceleration": -0.12668139479646356
+    },
+    {
+      "frame": 868,
+      "time_s": 4.046059169495202,
+      "speed": 1.1529092805610897,
+      "phase_acceleration": 0.23202969532439965
+    },
+    {
+      "frame": 870,
+      "time_s": 4.05472532146339,
+      "speed": 1.154920085161903,
+      "phase_acceleration": 0.5430769181902377
+    },
+    {
+      "frame": 872,
+      "time_s": 4.063366373734547,
+      "speed": 1.1596128411992437,
+      "phase_acceleration": 0.10555940711068956
+    },
+    {
+      "frame": 874,
+      "time_s": 4.071986559465204,
+      "speed": 1.1605227828941558,
+      "phase_acceleration": -0.21997383881922872
+    },
+    {
+      "frame": 876,
+      "time_s": 4.080610414136855,
+      "speed": 1.1586257604766137,
+      "phase_acceleration": -0.43966025157845934
+    },
+    {
+      "frame": 878,
+      "time_s": 4.0892555089827995,
+      "speed": 1.1548248559017258,
+      "phase_acceleration": -0.12578469714433993
+    },
+    {
+      "frame": 880,
+      "time_s": 4.097918918254536,
+      "speed": 1.1537351315902429,
+      "phase_acceleration": 0.2613223510438587
+    },
+    {
+      "frame": 882,
+      "time_s": 4.106577927549732,
+      "speed": 1.1559979242569738,
+      "phase_acceleration": 0.686607738892306
+    },
+    {
+      "frame": 884,
+      "time_s": 4.1152063523209135,
+      "speed": 1.1619222674793175,
+      "phase_acceleration": -6.000000001287297
+    },
+    {
+      "frame": 886,
+      "time_s": 4.124013028032099,
+      "speed": 1.1090822132008666,
+      "phase_acceleration": -6.000000000883752
+    },
+    {
+      "frame": 888,
+      "time_s": 4.133260823213664,
+      "speed": 1.0535954421033045,
+      "phase_acceleration": -3.9993316570021946
+    },
+    {
+      "frame": 890,
+      "time_s": 4.142929560683065,
+      "speed": 1.0149269542586863,
+      "phase_acceleration": -3.1894012183017395
+    },
+    {
+      "frame": 892,
+      "time_s": 4.152939937436075,
+      "speed": 0.9829998464469762,
+      "phase_acceleration": -2.6133330314259595
+    },
+    {
+      "frame": 894,
+      "time_s": 4.1632542940437265,
+      "speed": 0.9560449976262936,
+      "phase_acceleration": -2.725311455313509
+    },
+    {
+      "frame": 896,
+      "time_s": 4.173874820883424,
+      "speed": 0.9271007541686014,
+      "phase_acceleration": -2.900975996479893
+    },
+    {
+      "frame": 898,
+      "time_s": 4.184849576719326,
+      "speed": 0.8952632509214212,
+      "phase_acceleration": -3.041796274287428
+    },
+    {
+      "frame": 900,
+      "time_s": 4.1962398798522,
+      "speed": 0.860616269288841,
+      "phase_acceleration": -3.0341535752874407
+    },
+    {
+      "frame": 902,
+      "time_s": 4.208107741007639,
+      "speed": 0.8246073559330491,
+      "phase_acceleration": -2.737415702028219
+    },
+    {
+      "frame": 904,
+      "time_s": 4.220489176568378,
+      "speed": 0.7907142198154335,
+      "phase_acceleration": -1.969904324382
+    },
+    {
+      "frame": 906,
+      "time_s": 4.233341737376846,
+      "speed": 0.7653959046994502,
+      "phase_acceleration": -2.60167444016205
+    },
+    {
+      "frame": 908,
+      "time_s": 4.246710629242976,
+      "speed": 0.7306144004380484,
+      "phase_acceleration": -1.414003248335888
+    },
+    {
+      "frame": 910,
+      "time_s": 4.260583989365831,
+      "speed": 0.7109974241589987,
+      "phase_acceleration": -1.4200360637900786
+    },
+    {
+      "frame": 912,
+      "time_s": 4.274852034618985,
+      "speed": 0.6907362853397304,
+      "phase_acceleration": -1.3539645123908102
+    },
+    {
+      "frame": 914,
+      "time_s": 4.289540803488017,
+      "speed": 0.6708482135603503,
+      "phase_acceleration": -1.1675410148668135
+    },
+    {
+      "frame": 916,
+      "time_s": 4.304645851575756,
+      "speed": 0.6532124503863785,
+      "phase_acceleration": -1.007229475181628
+    },
+    {
+      "frame": 918,
+      "time_s": 4.32013989247906,
+      "speed": 0.6376063956989018,
+      "phase_acceleration": -0.8710635096671027
+    },
+    {
+      "frame": 920,
+      "time_s": 4.335995269229352,
+      "speed": 0.6237953555796985,
+      "phase_acceleration": -0.7548697903594679
+    },
+    {
+      "frame": 922,
+      "time_s": 4.352184754092999,
+      "speed": 0.6115744025346491,
+      "phase_acceleration": -0.664079254457107
+    },
+    {
+      "frame": 924,
+      "time_s": 4.368683788664269,
+      "speed": 0.6006177359572983,
+      "phase_acceleration": -0.6114920236796522
+    },
+    {
+      "frame": 926,
+      "time_s": 4.385476870341338,
+      "speed": 0.5903489004587693,
+      "phase_acceleration": -0.5382124767320846
+    },
+    {
+      "frame": 928,
+      "time_s": 4.4025488624973335,
+      "speed": 0.5811605412777404,
+      "phase_acceleration": -0.4573518439734947
+    },
+    {
+      "frame": 930,
+      "time_s": 4.4198739182973865,
+      "speed": 0.5732368950606427,
+      "phase_acceleration": -0.3523192991808415
+    },
+    {
+      "frame": 932,
+      "time_s": 4.437413249332733,
+      "speed": 0.5670574502421686,
+      "phase_acceleration": -0.21643869505705915
+    },
+    {
+      "frame": 934,
+      "time_s": 4.455107900104881,
+      "speed": 0.5632276431195545,
+      "phase_acceleration": -0.08159108795431891
+    },
+    {
+      "frame": 936,
+      "time_s": 4.472885602281167,
+      "speed": 0.5617771410576634,
+      "phase_acceleration": 0.0443652214415593
+    },
+    {
+      "frame": 938,
+      "time_s": 4.490673761106359,
+      "speed": 0.5625663166629807,
+      "phase_acceleration": 0.11105258716935928
+    },
+    {
+      "frame": 940,
+      "time_s": 4.508418364874475,
+      "speed": 0.5645369008197253,
+      "phase_acceleration": 0.19261736950427277
+    },
+    {
+      "frame": 942,
+      "time_s": 4.5260787909816225,
+      "speed": 0.5679386056408084,
+      "phase_acceleration": 0.2998966575049735
+    },
+    {
+      "frame": 944,
+      "time_s": 4.543605226728031,
+      "speed": 0.5731947251391322,
+      "phase_acceleration": 0.4127467058897025
+    },
+    {
+      "frame": 946,
+      "time_s": 4.560943076365633,
+      "speed": 0.5803508654642631,
+      "phase_acceleration": 0.5544291906490706
+    },
+    {
+      "frame": 948,
+      "time_s": 4.578034497409163,
+      "speed": 0.5898268482004704,
+      "phase_acceleration": 0.6974768864121259
+    },
+    {
+      "frame": 950,
+      "time_s": 4.594821997846843,
+      "speed": 0.6015357417363852,
+      "phase_acceleration": 0.809596947778136
+    },
+    {
+      "frame": 952,
+      "time_s": 4.611264187117264,
+      "speed": 0.6148472879845092,
+      "phase_acceleration": 0.895436735445795
+    },
+    {
+      "frame": 954,
+      "time_s": 4.627340199289256,
+      "speed": 0.6292423398427841,
+      "phase_acceleration": 0.8424684054898144
+    },
+    {
+      "frame": 956,
+      "time_s": 4.643066760798303,
+      "speed": 0.6424914710411479,
+      "phase_acceleration": -1.968223113385747
+    },
+    {
+      "frame": 958,
+      "time_s": 4.659021050607736,
+      "speed": 0.611089869080566,
+      "phase_acceleration": -2.005639123082215
+    },
+    {
+      "frame": 960,
+      "time_s": 4.67585002008318,
+      "speed": 0.5773370294994588,
+      "phase_acceleration": -1.8866096455991226
+    },
+    {
+      "frame": 962,
+      "time_s": 4.693690992843108,
+      "speed": 0.5436780782037073,
+      "phase_acceleration": -1.6053609903319028
+    },
+    {
+      "frame": 964,
+      "time_s": 4.712612830758088,
+      "speed": 0.5133016977496162,
+      "phase_acceleration": -1.3164002439006346
+    },
+    {
+      "frame": 966,
+      "time_s": 4.732607175657611,
+      "speed": 0.48698113724725073,
+      "phase_acceleration": -1.0465675223529551
+    },
+    {
+      "frame": 968,
+      "time_s": 4.753616131076156,
+      "speed": 0.4649938468276398,
+      "phase_acceleration": -0.7121408355291763
+    },
+    {
+      "frame": 970,
+      "time_s": 4.775488115744432,
+      "speed": 0.4494179133912922,
+      "phase_acceleration": -0.464233256316227
+    },
+    {
+      "frame": 972,
+      "time_s": 4.798000886538614,
+      "speed": 0.43896673649680845,
+      "phase_acceleration": -0.2754469365238208
+    },
+    {
+      "frame": 974,
+      "time_s": 4.820946847882471,
+      "speed": 0.4326463417390491,
+      "phase_acceleration": -0.10318827746483805
+    },
+    {
+      "frame": 976,
+      "time_s": 4.844124477120838,
+      "speed": 0.4302546821022234,
+      "phase_acceleration": 0.06839255511725462
+    },
+    {
+      "frame": 978,
+      "time_s": 4.867323749008085,
+      "speed": 0.4318413395834521,
+      "phase_acceleration": 0.24294987964378834
+    },
+    {
+      "frame": 980,
+      "time_s": 4.890331496408637,
+      "speed": 0.43743106904529105,
+      "phase_acceleration": 0.4320741172124425
+    },
+    {
+      "frame": 982,
+      "time_s": 4.912939803140093,
+      "speed": 0.44719953321795297,
+      "phase_acceleration": 0.6353974795626023
+    },
+    {
+      "frame": 984,
+      "time_s": 4.934956811719251,
+      "speed": 0.46118908497665795,
+      "phase_acceleration": 0.8488998461748221
+    },
+    {
+      "frame": 986,
+      "time_s": 4.956223643273596,
+      "speed": 0.479242495011767,
+      "phase_acceleration": 0.98007777157577
+    },
+    {
+      "frame": 988,
+      "time_s": 4.9766627385449045,
+      "speed": 0.499274397958296,
+      "phase_acceleration": 1.0908796397870244
+    },
+    {
+      "frame": 990,
+      "time_s": 4.996271737956957,
+      "speed": 0.5206654561735005,
+      "phase_acceleration": 1.1756237736279456
+    },
+    {
+      "frame": 992,
+      "time_s": 5.0150786159756935,
+      "speed": 0.5427752690800478,
+      "phase_acceleration": 1.2650471625462796
+    },
+    {
+      "frame": 994,
+      "time_s": 5.033123008941874,
+      "speed": 0.5656022772017841,
+      "phase_acceleration": 1.3593050537821423
+    },
+    {
+      "frame": 996,
+      "time_s": 5.050442813341032,
+      "speed": 0.589145174852079,
+      "phase_acceleration": 1.4916637992267034
+    },
+    {
+      "frame": 998,
+      "time_s": 5.067066706599027,
+      "speed": 0.6139424346272383,
+      "phase_acceleration": 3.285227509694817
+    },
+    {
+      "frame": 1000,
+      "time_s": 5.082700906673164,
+      "speed": 0.6653043388028649,
+      "phase_acceleration": 3.518466294036312
+    },
+    {
+      "frame": 1002,
+      "time_s": 5.097177463799324,
+      "speed": 0.7162396171049485,
+      "phase_acceleration": 3.226537641376474
+    },
+    {
+      "frame": 1004,
+      "time_s": 5.1107258229154935,
+      "speed": 0.7599539077721575,
+      "phase_acceleration": 3.4788101827083864
+    },
+    {
+      "frame": 1006,
+      "time_s": 5.1235104160423885,
+      "speed": 0.804429080523784,
+      "phase_acceleration": 3.6326957199213936
+    },
+    {
+      "frame": 1008,
+      "time_s": 5.135610977856991,
+      "speed": 0.8483867396363338,
+      "phase_acceleration": 1.9877902882058436
+    },
+    {
+      "frame": 1010,
+      "time_s": 5.1472396365448665,
+      "speed": 0.8715020744409535,
+      "phase_acceleration": 3.224675612592705
+    },
+    {
+      "frame": 1012,
+      "time_s": 5.158480317123716,
+      "speed": 0.9077496229725129,
+      "phase_acceleration": 5.999999999999972
+    },
+    {
+      "frame": 1014,
+      "time_s": 5.169122288326237,
+      "speed": 0.9716014501876471,
+      "phase_acceleration": 5.291492284901338
+    },
+    {
+      "frame": 1016,
+      "time_s": 5.179141233786506,
+      "speed": 1.0246166227935039,
+      "phase_acceleration": 4.614703025177988
+    },
+    {
+      "frame": 1018,
+      "time_s": 5.188695421154168,
+      "speed": 1.06870636014217,
+      "phase_acceleration": 3.9799854501409797
+    },
+    {
+      "frame": 1020,
+      "time_s": 5.197894940300706,
+      "speed": 1.1053203124936883,
+      "phase_acceleration": 3.3834411454623208
+    },
+    {
+      "frame": 1022,
+      "time_s": 5.206820170285143,
+      "speed": 1.135518302855745,
+      "phase_acceleration": 2.8090690820502147
+    },
+    {
+      "frame": 1024,
+      "time_s": 5.215532827063081,
+      "speed": 1.1599927576331654,
+      "phase_acceleration": 2.2295516903537873
+    },
+    {
+      "frame": 1026,
+      "time_s": 5.224083309670381,
+      "speed": 1.1790565005836113,
+      "phase_acceleration": 1.6058205916999384
+    },
+    {
+      "frame": 1028,
+      "time_s": 5.232516240218889,
+      "speed": 1.19259827410678,
+      "phase_acceleration": 0.8854678298764895
+    },
+    {
+      "frame": 1030,
+      "time_s": 5.24087535349605,
+      "speed": 1.2,
+      "phase_acceleration": 1.4210854715202004e-14
+    },
+    {
+      "frame": 1032,
+      "time_s": 5.249208686829383,
+      "speed": 1.2000000000000002,
+      "phase_acceleration": 0.0
+    }
+  ]
+}

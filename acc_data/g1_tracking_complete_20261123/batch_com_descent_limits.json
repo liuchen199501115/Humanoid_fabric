@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ten_floor3_smooth16_com_minus6",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--minimum-support-acceleration",
+      "-6",
+      "--minimum-support-acceleration-metric-scale",
+      "4"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth16_com_minus6_weight16",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--minimum-support-acceleration",
+      "-6",
+      "--minimum-support-acceleration-metric-scale",
+      "16"
+    ]
+  },
+  {
+    "name": "ten_floor3_smooth16_com_minus9",
+    "parent": "ten_floor3_stop816_root_smooth16",
+    "options": [
+      "--minimum-support-acceleration",
+      "-9",
+      "--minimum-support-acceleration-metric-scale",
+      "4"
+    ]
+  }
+]

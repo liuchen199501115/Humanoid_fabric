@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ten_floor3_stop816_xy18_late",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--root-xy-tube-start",
+      "4.20",
+      "--root-xy-tube-radius",
+      ".18",
+      "--root-xy-tube-bandwidth",
+      "5"
+    ]
+  },
+  {
+    "name": "ten_floor3_sourcejoint1m_refine1",
+    "parent": "ten_floor3_linear60",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_floor3_fast18_sourcejoint1m_refine1.npz"
+    ]
+  },
+  {
+    "name": "ten_floor3_sourcejoint1m_refine1_stop816",
+    "parent": "ten_floor3_linear60_observed_stop816",
+    "options": [
+      "--reference-pose-candidate",
+      "acc_data/g1_tracking_complete_20261123/prepared_fullroot_dynamics_floor3_fast18_sourcejoint1m_refine1.npz"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "fabric_metric": {
+    "accepted": true,
+    "status": [
+      "DAQP 1; KKT polished"
+    ],
+    "native_calls": [
+      1
+    ],
+    "primal_residual": 4.547473508864641e-13
+  },
+  "baseline": {
+    "accepted": false,
+    "status": [
+      "DAQP -1; rejected"
+    ],
+    "native_calls": [
+      1
+    ],
+    "primal_residual": 6375.539478288874
+  },
+  "metric_prefix_before_original_failure": {
+    "history_time": true,
+    "history_q": true,
+    "history_qd": true,
+    "history_qdd_qp": true,
+    "servo_torque": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "full_motion_tracking_passed": false,
+  "status": "native_extension_abort",
+  "last_logged_time": 3.154,
+  "error": "Fatal Python error: notimplemented_dealloc: deallocating NotImplemented",
+  "exit_code": -6,
+  "complete_tracking_report_available": false
+}

@@ -1,0 +1,28 @@
+{
+  "name": "full_speed_attitude",
+  "returncode": 1,
+  "options": [
+    "--posture-metric-scale",
+    "10",
+    "--joint-feedback-limit",
+    "150",
+    "--qp-base-acceleration-weight",
+    "100",
+    "--source-pelvis-weight",
+    "10",
+    "--fabric-angular-feedback-limit",
+    "100"
+  ],
+  "measured_steps": 1,
+  "last_time_s": 0.25,
+  "stop_reason": "Original-source fidelity limit exceeded",
+  "fidelity_stop": {
+    "time_s": 0.25,
+    "source_frame": 50.0,
+    "joint_rmse_rad": 0.20018798112869263,
+    "root_position_m": 0.021486381068825722,
+    "root_orientation_rad": 0.13062530059507124
+  },
+  "full_motion_tracking_passed": false,
+  "peak_joint_rmse": 0.20018798112869263
+}

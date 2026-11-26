@@ -1,0 +1,15 @@
+{
+  "time": 3.8,
+  "requested": [
+    4.329371452331543,
+    1.4980452060699463,
+    -5.143880844116211
+  ],
+  "achieved": [
+    -0.4312167465686798,
+    -1.2894563674926758,
+    -4.878511428833008
+  ],
+  "exact_com_acceleration_feasible": false,
+  "solver_status": "The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible)"
+}

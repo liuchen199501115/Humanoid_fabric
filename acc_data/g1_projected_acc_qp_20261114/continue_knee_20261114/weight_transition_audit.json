@@ -1,0 +1,66 @@
+[
+  {
+    "name": "linear300_late",
+    "bitwise_equal_prefix_through_simulation_s": 0.7,
+    "equal_fields": [
+      "history_time",
+      "history_q",
+      "history_qd",
+      "history_qdd_qp",
+      "history_qdd_qp_reference",
+      "servo_torque"
+    ],
+    "recorded_cost_matches_schedule": true,
+    "one_native_qp_per_tick": true,
+    "reference_is_projected": true,
+    "peak_linear_cost": 300.0
+  },
+  {
+    "name": "linear1000_late",
+    "bitwise_equal_prefix_through_simulation_s": 0.7,
+    "equal_fields": [
+      "history_time",
+      "history_q",
+      "history_qd",
+      "history_qdd_qp",
+      "history_qdd_qp_reference",
+      "servo_torque"
+    ],
+    "recorded_cost_matches_schedule": true,
+    "one_native_qp_per_tick": true,
+    "reference_is_projected": true,
+    "peak_linear_cost": 1000.0
+  },
+  {
+    "name": "linear300_later",
+    "bitwise_equal_prefix_through_simulation_s": 1.0,
+    "equal_fields": [
+      "history_time",
+      "history_q",
+      "history_qd",
+      "history_qdd_qp",
+      "history_qdd_qp_reference",
+      "servo_torque"
+    ],
+    "recorded_cost_matches_schedule": true,
+    "one_native_qp_per_tick": true,
+    "reference_is_projected": true,
+    "peak_linear_cost": 300.0
+  },
+  {
+    "name": "baseline_final",
+    "bitwise_equal_prefix_through_simulation_s": 1.354,
+    "equal_fields": [
+      "history_time",
+      "history_q",
+      "history_qd",
+      "history_qdd_qp",
+      "history_qdd_qp_reference",
+      "servo_torque"
+    ],
+    "recorded_cost_matches_schedule": true,
+    "one_native_qp_per_tick": true,
+    "reference_is_projected": true,
+    "peak_linear_cost": 100.0
+  }
+]

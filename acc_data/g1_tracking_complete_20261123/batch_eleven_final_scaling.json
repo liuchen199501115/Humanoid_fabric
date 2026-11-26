@@ -1,0 +1,32 @@
+[
+  {
+    "name": "eleven_tube1000_pelvis4_eq2",
+    "parent": "eleven_tube1000_pelvis4",
+    "options": [
+      "--qp-final-equilibration-start",
+      "4.348",
+      "--qp-final-equilibration-cap",
+      "2"
+    ]
+  },
+  {
+    "name": "eleven_tube10000_eq2",
+    "parent": "eleven_speed24_tube10000",
+    "options": [
+      "--qp-final-equilibration-start",
+      "4.348",
+      "--qp-final-equilibration-cap",
+      "2"
+    ]
+  },
+  {
+    "name": "eleven_tube1000_eq2",
+    "parent": "eleven_speed24_tube1000",
+    "options": [
+      "--qp-final-equilibration-start",
+      "4.348",
+      "--qp-final-equilibration-cap",
+      "2"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "weight": 0.1,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "physical_violation": 3.6715164242195897e-10,
+    "tube_residual": [
+      42.64542785382053,
+      -0.05935483060529961,
+      31.51779078945212
+    ],
+    "normalized_slack": [
+      1121.510265715201,
+      0.0,
+      1101.1479304067586
+    ],
+    "root_angular_acceleration": [
+      72.83934615157398,
+      -135.65383808925156,
+      72.78886028338668
+    ],
+    "native_solve_count": [
+      1
+    ]
+  },
+  {
+    "weight": 1.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "physical_violation": 1.6255796708719572e-10,
+    "tube_residual": [
+      40.59694302255038,
+      -0.45103821223762086,
+      31.273823178364196
+    ],
+    "normalized_slack": [
+      1067.6382122958692,
+      0.0,
+      1092.624349809681
+    ],
+    "root_angular_acceleration": [
+      74.15322260849666,
+      -135.53462149898488,
+      64.34839713434882
+    ],
+    "native_solve_count": [
+      1
+    ]
+  },
+  {
+    "weight": 10.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "physical_violation": 7.10886904897734e-11,
+    "tube_residual": [
+      36.20374208912775,
+      -1.6400835925707535,
+      28.740498819344324
+    ],
+    "normalized_slack": [
+      952.103670982981,
+      0.0,
+      1004.116722685089
+    ],
+    "root_angular_acceleration": [
+      99.51418806327393,
+      -136.2559899030386,
+      -1.5214070668225048
+    ],
+    "native_solve_count": [
+      1
+    ]
+  },
+  {
+    "weight": 100.0,
+    "certified": true,
+    "status": [
+      "DAQP 1; KKT certified"
+    ],
+    "physical_violation": 1.9581891663733586e-10,
+    "tube_residual": [
+      30.762154363544006,
+      -7.008138972425589,
+      21.34893624310263
+    ],
+    "normalized_slack": [
+      808.998142368021,
+      0.0,
+      745.8751508797282
+    ],
+    "root_angular_acceleration": [
+      159.22679249161015,
+      -69.75894850758681,
+      -315.5274097107575
+    ],
+    "native_solve_count": [
+      1
+    ]
+  }
+]

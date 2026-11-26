@@ -1,0 +1,140 @@
+[
+  {
+    "trial": "ten_verify",
+    "left_loaded_20": {
+      "time_s": 3.614,
+      "source_frame": 770.36,
+      "error_m": 0.014789994806051254
+    },
+    "left_loaded_100": {
+      "time_s": 3.614,
+      "source_frame": 770.36,
+      "error_m": 0.014789994806051254
+    },
+    "left_loaded_and_4cm": {
+      "time_s": 3.614,
+      "source_frame": 770.36,
+      "error_m": 0.014789994806051254
+    },
+    "left_loaded_and_3cm_100N": {
+      "time_s": 3.614,
+      "source_frame": 770.36,
+      "error_m": 0.014789994806051254
+    },
+    "right_unloaded_after760": {
+      "time_s": 3.642,
+      "source_frame": 777.0800000000002,
+      "error_m": 0.010778263211250305
+    },
+    "verified9": {
+      "step": 9,
+      "swing": "left",
+      "source_frame": 781.88,
+      "time": 3.662,
+      "landing_error_m": 0.005920774565142606,
+      "goal": [
+        5.069326877593994,
+        -0.4765896499156952,
+        0.036331675946712494
+      ],
+      "measured_load_n": 717.53955078125,
+      "source_contact_onset_goal": [
+        5.011423587799072,
+        -0.446205198764801,
+        0.04452579468488693
+      ]
+    }
+  },
+  {
+    "trial": "ten_advance9_f8",
+    "left_loaded_20": {
+      "time_s": 3.612,
+      "source_frame": 769.8800000000001,
+      "error_m": 0.011802086606621742
+    },
+    "left_loaded_100": {
+      "time_s": 3.612,
+      "source_frame": 769.8800000000001,
+      "error_m": 0.011802086606621742
+    },
+    "left_loaded_and_4cm": {
+      "time_s": 3.612,
+      "source_frame": 769.8800000000001,
+      "error_m": 0.011802086606621742
+    },
+    "left_loaded_and_3cm_100N": {
+      "time_s": 3.612,
+      "source_frame": 769.8800000000001,
+      "error_m": 0.011802086606621742
+    },
+    "right_unloaded_after760": {
+      "time_s": 3.638,
+      "source_frame": 776.12,
+      "error_m": 0.004989652428776026
+    },
+    "verified9": {
+      "step": 9,
+      "swing": "left",
+      "source_frame": 781.4,
+      "time": 3.66,
+      "landing_error_m": 0.003641715658603172,
+      "goal": [
+        5.069347858428955,
+        -0.4762318730354309,
+        0.0361470952630043
+      ],
+      "measured_load_n": 717.1943359375,
+      "source_contact_onset_goal": [
+        5.011423587799072,
+        -0.446205198764801,
+        0.04452579468488693
+      ]
+    }
+  },
+  {
+    "trial": "ten_support9_y15",
+    "left_loaded_20": {
+      "time_s": 3.608,
+      "source_frame": 768.9200000000001,
+      "error_m": 0.027595870196819305
+    },
+    "left_loaded_100": {
+      "time_s": 3.61,
+      "source_frame": 769.4,
+      "error_m": 0.027899060398340225
+    },
+    "left_loaded_and_4cm": {
+      "time_s": 3.608,
+      "source_frame": 768.9200000000001,
+      "error_m": 0.027595870196819305
+    },
+    "left_loaded_and_3cm_100N": {
+      "time_s": 3.61,
+      "source_frame": 769.4,
+      "error_m": 0.027899060398340225
+    },
+    "right_unloaded_after760": {
+      "time_s": 3.638,
+      "source_frame": 776.12,
+      "error_m": 0.02410944178700447
+    },
+    "verified9": {
+      "step": 9,
+      "swing": "left",
+      "source_frame": 780.92,
+      "time": 3.658,
+      "landing_error_m": 0.02151478168429967,
+      "goal": [
+        5.069370269775391,
+        -0.47587648034095764,
+        0.03597145527601242
+      ],
+      "measured_load_n": 730.388671875,
+      "source_contact_onset_goal": [
+        5.011423587799072,
+        -0.446205198764801,
+        0.04452579468488693
+      ]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "method": "Offline root translation/upper-body spline fit with foot-nullspace leg coupling and exact RNEA derivatives; equal force sharing assumed in double support",
+  "solver_status": "maximum iterations reached",
+  "root_axis_bound_m": 0.03,
+  "upper_axis_bound_rad": 0.05,
+  "node_joint_correction_bound_rad": 0.25,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f",
+  "lower_limb_effort_scope": "single support only; double support load allocation not constrained",
+  "offline_solver_primal_residual": 0.0036194312896598475,
+  "offline_solver_dual_residual": 0.1576246558340312,
+  "offline_solver_iterations": 100000,
+  "offline_solver_tolerance": 5e-05,
+  "preflight_passed": false,
+  "full_tracking_passed": false
+}

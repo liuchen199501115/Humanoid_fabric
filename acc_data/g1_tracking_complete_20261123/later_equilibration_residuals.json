@@ -1,0 +1,72 @@
+[
+  {
+    "name": "root_continue41",
+    "cap": 10,
+    "valid": true,
+    "physical_residual": 2.3256463421716944e-10,
+    "stationarity": 4.1270320494390944e-12
+  },
+  {
+    "name": "root_continue41",
+    "cap": 30,
+    "valid": true,
+    "physical_residual": 7.649560984646087e-10,
+    "stationarity": 8.423484132435988e-12
+  },
+  {
+    "name": "root_continue41",
+    "cap": 100,
+    "valid": false,
+    "physical_residual": 6.222633519570309e-10,
+    "stationarity": 6.881795133750757e-11
+  },
+  {
+    "name": "root_continue41",
+    "cap": 300,
+    "valid": true,
+    "physical_residual": 3.303251006059327e-10,
+    "stationarity": 3.7600367264190027e-11
+  },
+  {
+    "name": "root_continue41",
+    "cap": 1000,
+    "valid": false,
+    "physical_residual": 6.950910957925771e-10,
+    "stationarity": 1.9963031228087402e-10
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 10,
+    "valid": true,
+    "physical_residual": 4.126521346847767e-11,
+    "stationarity": 4.296563105299356e-14
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 30,
+    "valid": true,
+    "physical_residual": 1.6606369612759408e-09,
+    "stationarity": 2.353672812205332e-13
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 100,
+    "valid": false,
+    "physical_residual": 1.6925866930250777e-08,
+    "stationarity": 826037.0418341658
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 300,
+    "valid": true,
+    "physical_residual": 8.759570846450515e-11,
+    "stationarity": 1.2394529846915248e-12
+  },
+  {
+    "name": "landing9_com4",
+    "cap": 1000,
+    "valid": false,
+    "physical_residual": 6.224731263770877e-07,
+    "stationarity": 414019.70852290065
+  }
+]

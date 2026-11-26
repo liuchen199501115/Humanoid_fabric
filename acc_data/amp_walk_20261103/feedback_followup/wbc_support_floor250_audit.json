@@ -1,0 +1,162 @@
+[
+  {
+    "time": 3.9,
+    "mode": 2,
+    "cases": [
+      {
+        "minimum_force": 250.0,
+        "status": "Solved",
+        "residual": 6.394884621840902e-14,
+        "support_force": 414.10054293628673,
+        "com_acceleration": [
+          3.8509026350851965,
+          -0.3759415162456792,
+          2.609759297162581
+        ],
+        "base_angular_acceleration": [
+          -43.35097039748102,
+          58.85522369609936,
+          -4.56081444780907
+        ],
+        "acceleration_change": 0.02385620342357697
+      },
+      {
+        "minimum_force": 300.0,
+        "status": "Solved",
+        "residual": 8.526512829121202e-14,
+        "support_force": 414.1005429356172,
+        "com_acceleration": [
+          3.8509026350780156,
+          -0.37594151623488203,
+          2.6097592971425057
+        ],
+        "base_angular_acceleration": [
+          -43.35097039751195,
+          58.85522369601093,
+          -4.560814447757221
+        ],
+        "acceleration_change": 0.023856203335149928
+      }
+    ]
+  },
+  {
+    "time": 4.0,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 250.0,
+        "status": "Solved",
+        "residual": 1.2789769243681803e-13,
+        "support_force": 250.00000000075926,
+        "com_acceleration": [
+          2.1682547862892125,
+          0.299970232798211,
+          -2.3117043217729347
+        ],
+        "base_angular_acceleration": [
+          0.37521598956591384,
+          -86.96085562625355,
+          -29.337345270175433
+        ],
+        "acceleration_change": 8.762294546170779
+      },
+      {
+        "minimum_force": 300.0,
+        "status": "Solved",
+        "residual": 1.1368683772161603e-13,
+        "support_force": 300.00000001324133,
+        "com_acceleration": [
+          1.673945446778013,
+          -0.0034942567032182487,
+          -0.8120550891087079
+        ],
+        "base_angular_acceleration": [
+          0.4880206653249513,
+          -89.62329647659489,
+          -31.400380688338732
+        ],
+        "acceleration_change": 22.03725629392096
+      }
+    ]
+  },
+  {
+    "time": 4.04,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 250.0,
+        "status": "Solved",
+        "residual": 2.2737367544323206e-12,
+        "support_force": 250.00000000007887,
+        "com_acceleration": [
+          -3.5365780751802207,
+          -2.7814072593667065,
+          -2.3120169910628863
+        ],
+        "base_angular_acceleration": [
+          49.85112949043717,
+          -234.10472591980943,
+          3.967822637321593
+        ],
+        "acceleration_change": 885.5565799939377
+      },
+      {
+        "minimum_force": 300.0,
+        "status": "Solved",
+        "residual": 9.518164034716392e-12,
+        "support_force": 300.0000000000204,
+        "com_acceleration": [
+          -4.243855038357632,
+          -3.337627537593275,
+          -0.8123655661326277
+        ],
+        "base_angular_acceleration": [
+          59.36392645607424,
+          -277.11283592995755,
+          4.320946665672692
+        ],
+        "acceleration_change": 1037.8154708754619
+      }
+    ]
+  },
+  {
+    "time": 4.06,
+    "mode": 1,
+    "cases": [
+      {
+        "minimum_force": 250.0,
+        "status": "Solved",
+        "residual": 5.684341886080802e-14,
+        "support_force": 250.00000000589932,
+        "com_acceleration": [
+          1.671844101308161,
+          -3.403945764714405,
+          -2.311671551245248
+        ],
+        "base_angular_acceleration": [
+          7.901254876285774,
+          -17.28628904956951,
+          42.84513768068212
+        ],
+        "acceleration_change": 13.627386782924784
+      },
+      {
+        "minimum_force": 300.0,
+        "status": "Solved",
+        "residual": 2.2737367544323206e-13,
+        "support_force": 300.0000000108528,
+        "com_acceleration": [
+          1.3097312184806902,
+          -4.001430794934545,
+          -0.8120233595418007
+        ],
+        "base_angular_acceleration": [
+          6.76450653979083,
+          -14.014180268101878,
+          40.29144458387553
+        ],
+        "acceleration_change": 21.385889423694266
+      }
+    ]
+  }
+]

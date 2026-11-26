@@ -1,0 +1,20 @@
+[
+  {
+    "future_reserve": 0.0,
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "right_ankle_roll_acceleration": -1937.1246901045952
+  },
+  {
+    "future_reserve": 0.0002,
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "right_ankle_roll_acceleration": -1937.1246901045952
+  },
+  {
+    "future_reserve": 0.005,
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "right_ankle_roll_acceleration": -1909.8376188388427
+  }
+]

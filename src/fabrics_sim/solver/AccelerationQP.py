@@ -68,6 +68,9 @@ class DynamicsAccelerationSolution:
     task_residuals: dict[str, Tensor] | None = None
     """Active task residuals evaluated at predicted physical acceleration."""
 
+    joint_stop_reaction: Tensor | None = None
+    """Signed passive reaction at observed stationary joint stops, [B,29]."""
+
 
 def _batched_vector(
     value: Tensor | float | None,
@@ -356,6 +359,21 @@ def build_single_support_wrench_constraints(
     return G_lambda, b_lambda
 
 
+def split_foot_wrench_constraints(G: Tensor, b: Tensor):
+    """Split the builder's equal-sized left/right blocks without assuming a cone size.
+
+    Rectangular cones have 12 rows per foot; coupled yaw cones have 20.
+    Split before replacing a block with an observed point, line, or polygon.
+    Each returned matrix retains the 12-column two-foot wrench layout.
+    """
+    if (G.ndim != 3 or G.shape[-1] != 12 or b.shape != G.shape[:2]
+            or G.shape[1] == 0 or G.shape[1] % 2):
+        raise ValueError('Expected matching [B,2*rows,12] and [B,2*rows] constraints')
+    rows = G.shape[1] // 2
+    return [(G[:, foot*rows:(foot+1)*rows], b[:, foot*rows:(foot+1)*rows])
+            for foot in range(2)]
+
+
 class G1DynamicsAccelerationQP:
     """Project a 35-D acceleration through floating-base dynamics constraints."""
 
@@ -632,6 +650,8 @@ class G1DynamicsAccelerationQP:
         priority_rows: dict[str, tuple[int, ...]] | None = None,
         priority_projections: dict[str, Tensor] | None = None,
         acceleration_constraints: tuple[Tensor, Tensor] | None = None,
+        joint_stop_directions: Tensor | None = None,
+        joint_stop_reaction_weight: float = 1e-4,
     ) -> DynamicsAccelerationSolution:
         """Solve for the closest dynamics-feasible 35-D acceleration.
 
@@ -1284,12 +1304,34 @@ class G1DynamicsAccelerationQP:
                                 lower, upper, A_eq, b_eq)
                 warm_z, warm_lam_eq = priority_solution.z, None
 
+        stop_indices = None
+        self.last_joint_stop_reaction = torch.zeros(batch_size, 29, device=device, dtype=dtype)
+        self.last_joint_stop_constraint_error = torch.zeros(batch_size, device=device, dtype=dtype)
+        if joint_stop_directions is not None:
+            if has_servo or correction.ne(0).any() or priority_stages or effort_limit is None:
+                raise ValueError('Observed joint stops require direct physical acceleration, one QP and finite effort limits')
+            from .joint_stop import augment_joint_stops
+            qp, stop_indices = augment_joint_stops(qp, joint_stop_directions, effort_limit,
+                reaction_weight=joint_stop_reaction_weight)
+            if len(stop_indices):
+                # A new passive-constraint mode has different variables and
+                # equalities. Select one cold solve; do not retry the QP.
+                warm_z = warm_lam_eq = None
         solution = self.solver.solve(
             qp,
             warm_z=warm_z,
             warm_lam_eq=warm_lam_eq,
             **({'workspace': 'tracking'} if self.solver_backend in ('osqp','daqp') else {}),
         )
+        self.last_full_solution = solution.z.clone()
+        stop_bound_error = torch.zeros(batch_size, device=device, dtype=dtype)
+        if stop_indices is not None and len(stop_indices):
+            reaction = solution.z[:, 76:]
+            signs = joint_stop_directions[:, stop_indices].to(reaction)
+            self.last_joint_stop_reaction[:, stop_indices] = (-signs*reaction).to(dtype)
+            stop_bound_error = torch.maximum((-reaction).clamp_min(0),
+                (reaction-effort_limit[:, stop_indices].to(reaction)*signs.ne(0)).clamp_min(0)).amax(1).to(dtype)
+            solution.z = solution.z[:, :76]
         solution.z = solution.z.to(dtype)
         if solution.lam_eq is not None:
             solution.lam_eq = solution.lam_eq.to(dtype)
@@ -1320,6 +1362,7 @@ class G1DynamicsAccelerationQP:
             ).squeeze(-1)
         )
         dynamics_residual[:, 6:35] -= total_joint_torque
+        dynamics_residual[:, 6:35] -= self.last_joint_stop_reaction
         contact_residual = (
             torch.bmm(Jc, predicted_acc.unsqueeze(-1)).squeeze(-1)
             + Jdot_nu
@@ -1360,6 +1403,7 @@ class G1DynamicsAccelerationQP:
             torch.clamp_min(lower - solution.z, 0.0).amax(dim=1),
             torch.clamp_min(solution.z - upper, 0.0).amax(dim=1),
         )
+        box_violation = torch.maximum(box_violation, stop_bound_error)
         if predicted_acc_limit is not None or predicted_acc_lower is not None:
             box_violation = torch.maximum(box_violation,
                 torch.maximum(prediction_lower - predicted_acc,
@@ -1380,6 +1424,10 @@ class G1DynamicsAccelerationQP:
             & (box_violation <= self.box_validation_tolerance)
         )
         self.last_acceleration_constraint_error = torch.zeros(batch_size,device=device,dtype=dtype)
+        if joint_stop_directions is not None:
+            self.last_joint_stop_constraint_error = (
+                predicted_acc[:, 6:]*joint_stop_directions.ne(0)).abs().amax(1)
+            validated &= self.last_joint_stop_constraint_error <= tolerance
         if acceleration_constraints is not None and constraint_C.shape[1]:
             self.last_acceleration_constraint_error = (
                 (constraint_C@predicted_acc[...,None]).squeeze(-1)-constraint_d).clamp_min(0).amax(-1)
@@ -1436,6 +1484,7 @@ class G1DynamicsAccelerationQP:
             task_residuals=None if task_requests is None else {
                 request.name: request.residual(predicted_acc) for request in task_requests
             },
+            joint_stop_reaction=self.last_joint_stop_reaction,
         )
 
     @torch.no_grad()

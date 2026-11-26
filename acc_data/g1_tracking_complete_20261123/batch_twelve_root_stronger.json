@@ -1,0 +1,44 @@
+[
+  {
+    "name": "twelve_rootxy900_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "10000"
+    ]
+  },
+  {
+    "name": "twelve_rootxy930_100000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--root-position-task-late-start",
+      "4.65",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xy",
+      "--root-position-task-late-weight",
+      "100000"
+    ]
+  },
+  {
+    "name": "twelve_rootxyz900_10000",
+    "parent": "eleven_pause960_search2",
+    "options": [
+      "--root-position-task-late-start",
+      "4.5",
+      "--root-position-task-late-ramp",
+      ".06",
+      "--root-position-task-late-axes",
+      "xyz",
+      "--root-position-task-late-weight",
+      "10000"
+    ]
+  }
+]

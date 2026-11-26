@@ -1,0 +1,19 @@
+{
+  "name": "late_com_xyz81_drop10",
+  "peak_required_friction_norm": 0.9375203885129184,
+  "source_frames": [
+    820,
+    1000
+  ],
+  "source_clock_speed": 1.2,
+  "peak_turn_acceleration": [
+    2.808014122526339,
+    2.5590791644153676,
+    5.078910412798054
+  ],
+  "minimum_reference_normal_force": 119.0272021865155,
+  "maximum_reference_normal_force": 465.42009274456643,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 227.02294761979962,
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,42 @@
+{
+  "next_step": {
+    "step": 8,
+    "swing": "right",
+    "missing_evidence": "landing_position",
+    "landing_window_expired": false,
+    "airborne_verified": true,
+    "peak_unloaded_clearance_m": 0.08578206267533393,
+    "best_loaded_landing_error_m": 0.16184918582439423,
+    "longest_verified_landing_hold_s": 0.0,
+    "required_clearance_m": 0.02,
+    "required_landing_hold_s": 0.05,
+    "landing_position_tolerance_m": 0.04
+  },
+  "first_fidelity_exceeded": {
+    "time_s": 3.104,
+    "source_frame": 647.64,
+    "joint_rmse_rad": 0.2000899314880371,
+    "root_position_m": 0.18354277312755585,
+    "root_orientation_rad": 0.2388162964465633
+  },
+  "right_foot_actual_minus_source_m": [
+    -0.1635589599609375,
+    0.0297834575176239,
+    -0.005831927061080933
+  ],
+  "right_foot_control_minus_source_m": [
+    -0.010457992553710938,
+    -0.029947876930236816,
+    0.00047308579087257385
+  ],
+  "largest_joint_errors_rad": {
+    "left_shoulder_pitch_joint": -0.581263542175293,
+    "right_shoulder_pitch_joint": -0.4703221917152405,
+    "right_shoulder_roll_joint": -0.4615870714187622,
+    "left_shoulder_roll_joint": -0.3950199484825134,
+    "right_knee_joint": 0.27309396862983704,
+    "right_ankle_pitch_joint": -0.17022743821144104,
+    "left_ankle_pitch_joint": 0.16334383189678192,
+    "left_shoulder_yaw_joint": -0.1527138203382492
+  }
+}

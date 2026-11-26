@@ -1,0 +1,8 @@
+{
+  "name": "early_flat_lower15",
+  "minimum_reference_normal_force": 50.31103115543606,
+  "maximum_reference_normal_force": 758.2349210790018,
+  "negative_force_samples": 0,
+  "peak_momentum_rate": 84.00241998100378,
+  "physical_tracking_certified": false
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881143564037,
+    "tube_violation": -0.1548739746143618,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.75920470058918,
+    "time": 3.7,
+    "diagnostic_skip": []
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881138897357,
+    "tube_violation": -0.15487397462350616,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.7394967144355178,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_contact_position"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881143804433,
+    "tube_violation": -0.15487397461388103,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.6831250349059701,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_contact_velocity"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.1488114263802,
+    "tube_violation": -0.15487397461619246,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.5807387055829167,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_ground"
+    ]
+  },
+  {
+    "success": false,
+    "status": "NonlinearPredictionRejected",
+    "linear_violation": 3.2473313968384154e-11,
+    "tube_violation": -0.10303569926185016,
+    "objective": 25227.25711455923,
+    "nonlinear_base_force_residual": 63.03693689412611,
+    "nonlinear_base_moment_residual": 31.10260805491215,
+    "nonlinear_joint_residual": 18.407820142257705,
+    "nonlinear_minimum_clearance": 4.3472188111418064e-05,
+    "nonlinear_support_gap": 0.011945689928110514,
+    "nonlinear_impact_residual": 0.4582475228182797,
+    "nonlinear_impact_energy_increase": 0.0,
+    "nonlinear_verified": false,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "Solved",
+        "nonlinear_base_force_residual": 63.03693689412611,
+        "nonlinear_base_moment_residual": 31.10260805491215,
+        "nonlinear_joint_residual": 18.407820142257705,
+        "nonlinear_minimum_clearance": 4.3472188111418064e-05,
+        "nonlinear_support_gap": 0.011945689928110514,
+        "nonlinear_impact_residual": 0.4582475228182797,
+        "nonlinear_impact_energy_increase": 0.0,
+        "nonlinear_verified": false
+      }
+    ],
+    "solve_seconds": 1.884051256813109,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_trust"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881143556823,
+    "tube_violation": -0.1548739746143758,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.7001322973519564,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_velocity_trust"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881134761174,
+    "tube_violation": -0.15487397463166183,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.7179977530613542,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_effort"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.14881143656373,
+    "tube_violation": -0.15487397461416774,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.7791026569902897,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_wrench"
+    ]
+  },
+  {
+    "success": false,
+    "status": "PrimalInfeasible",
+    "linear_violation": 362.1488114372021,
+    "tube_violation": -0.15487397461403835,
+    "objective": NaN,
+    "refinement_history": [
+      {
+        "iteration": 0,
+        "status": "PrimalInfeasible"
+      }
+    ],
+    "solve_seconds": 0.8369384938850999,
+    "time": 3.7,
+    "diagnostic_skip": [
+      "future_contact_position",
+      "future_contact_velocity"
+    ]
+  }
+]

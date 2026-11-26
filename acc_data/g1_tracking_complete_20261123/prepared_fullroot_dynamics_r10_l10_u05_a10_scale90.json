@@ -1,0 +1,13 @@
+{
+  "method": "Scaled independent-leg dynamics fit; nonlinear dynamics recheck required",
+  "fit": "prepared_fullroot_dynamics_r10_l10_u05_a10",
+  "scale": 0.9,
+  "maximum_foot_position_residual_m": 0.022873610002738264,
+  "maximum_foot_rotation_residual_rad": 0.16281344831560973,
+  "peak_source_joint_rmse_rad": 0.14258061349391937,
+  "maximum_leg_limit_violation_rad": -8.86917111975194e-09,
+  "full_tracking_passed": false,
+  "preflight_passed": true,
+  "parent_sha256": "e17dfd8a8dfb9f529806fe0ad17f148fc664bf6d7e8821edaf159b2c24a8065b",
+  "source_sha256": "c3831ef47b1c123e4ae41dc4e7382382e821fee3c7594f4d9482bc04b8113b4f"
+}

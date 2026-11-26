@@ -1,0 +1,1610 @@
+{
+  "candidate": "prepared_vertical_com_down_6_8",
+  "first_frame": 740,
+  "last_frame": 884,
+  "minimum_vertical_acceleration": -5.077670842578556,
+  "maximum_vertical_acceleration": 5.535088915112046,
+  "negative_required_ground_force_frames": 0,
+  "friction_necessary_condition_failed_frames": 38,
+  "maximum_friction_acceleration_excess_m_s2": 4.150744205069491,
+  "maximum_foot_position_change_after_runtime_interpolation_m": 0.0007219413678506674,
+  "peak_source_joint_rmse_rad": 0.10529015692317639,
+  "frames": [
+    {
+      "frame": 740,
+      "acceleration_m_s2": [
+        0.40476864213076374,
+        0.017471948983808244,
+        -2.180959820717817
+      ],
+      "vertical_acceleration": -2.180959820717817,
+      "required_normal_force_N": 254.3609120937336,
+      "friction_acceleration_excess_m_s2": -4.172278550202979
+    },
+    {
+      "frame": 741,
+      "acceleration_m_s2": [
+        0.19402142345709394,
+        0.04692104052352686,
+        -2.298471462261351
+      ],
+      "vertical_acceleration": -2.298471462261351,
+      "required_normal_force_N": 250.4429397640273,
+      "friction_acceleration_excess_m_s2": -4.307302752408661
+    },
+    {
+      "frame": 742,
+      "acceleration_m_s2": [
+        -0.006864741365084914,
+        0.08190765112111406,
+        -2.41067457209693
+      ],
+      "vertical_acceleration": -2.41067457209693,
+      "required_normal_force_N": 246.70195994391358,
+      "friction_acceleration_excess_m_s2": -4.357400439470997
+    },
+    {
+      "frame": 743,
+      "acceleration_m_s2": [
+        -0.19862820946531384,
+        0.12302489153694526,
+        -2.514126711382496
+      ],
+      "vertical_acceleration": -2.514126711382496,
+      "required_normal_force_N": 243.25274747572072,
+      "friction_acceleration_excess_m_s2": -4.143882603689253
+    },
+    {
+      "frame": 744,
+      "acceleration_m_s2": [
+        -0.38247815381670147,
+        0.17075036841534388,
+        -2.604799528560354
+      ],
+      "vertical_acceleration": -2.604799528560354,
+      "required_normal_force_N": 240.22961220084025,
+      "friction_acceleration_excess_m_s2": -3.9042584602289145
+    },
+    {
+      "frame": 745,
+      "acceleration_m_s2": [
+        -0.49614169900758487,
+        0.08359512634739097,
+        -2.4281742280379297
+      ],
+      "vertical_acceleration": -2.4281742280379297,
+      "required_normal_force_N": 246.11850142988357,
+      "friction_acceleration_excess_m_s2": -3.925960560151056
+    },
+    {
+      "frame": 746,
+      "acceleration_m_s2": [
+        -0.6202385019002224,
+        0.001990821263244291,
+        -2.2558705151229996
+      ],
+      "vertical_acceleration": -2.2558705151229996,
+      "required_normal_force_N": 251.86330399275357,
+      "friction_acceleration_excess_m_s2": -3.9122359939977085
+    },
+    {
+      "frame": 747,
+      "acceleration_m_s2": [
+        -0.7555341818322302,
+        -0.07409349429500012,
+        -2.090117549573817
+      ],
+      "vertical_acceleration": -2.090117549573817,
+      "required_normal_force_N": 257.38969715736505,
+      "friction_acceleration_excess_m_s2": -3.872770892741275
+    },
+    {
+      "frame": 748,
+      "acceleration_m_s2": [
+        -0.9024571535899815,
+        -0.1447101226363784,
+        -1.9329651056453039
+      ],
+      "vertical_acceleration": -1.9329651056453039,
+      "required_normal_force_N": 262.6293391091757,
+      "friction_acceleration_excess_m_s2": -3.8122351962102847
+    },
+    {
+      "frame": 749,
+      "acceleration_m_s2": [
+        -1.0611385358561272,
+        -0.20990948050712396,
+        -1.7862587117389432
+      ],
+      "vertical_acceleration": -1.7862587117389432,
+      "required_normal_force_N": 267.5206978236497,
+      "friction_acceleration_excess_m_s2": -3.732543805828632
+    },
+    {
+      "frame": 750,
+      "acceleration_m_s2": [
+        -1.2314597853890303,
+        -0.2697196037271257,
+        -1.6516139425482683
+      ],
+      "vertical_acceleration": -1.6516139425482683,
+      "required_normal_force_N": 272.00990819548616,
+      "friction_acceleration_excess_m_s2": -3.634380268047668
+    },
+    {
+      "frame": 751,
+      "acceleration_m_s2": [
+        -1.4419982807866925,
+        -0.29913821276626196,
+        -1.5490606308406805
+      ],
+      "vertical_acceleration": -1.5490606308406805,
+      "required_normal_force_N": 275.42915272575016,
+      "friction_acceleration_excess_m_s2": -3.483864496715255
+    },
+    {
+      "frame": 752,
+      "acceleration_m_s2": [
+        -1.6659353222279147,
+        -0.3327761841965656,
+        -1.4523718341354794
+      ],
+      "vertical_acceleration": -1.4523718341354794,
+      "required_normal_force_N": 278.65286762844113,
+      "friction_acceleration_excess_m_s2": -3.315730088704078
+    },
+    {
+      "frame": 753,
+      "acceleration_m_s2": [
+        -1.9031748140039702,
+        -0.37164033715147926,
+        -1.3629835159972021
+      ],
+      "vertical_acceleration": -1.3629835159972021,
+      "required_normal_force_N": 281.6331762384184,
+      "friction_acceleration_excess_m_s2": -3.129088720165762
+    },
+    {
+      "frame": 754,
+      "acceleration_m_s2": [
+        -2.153333466169258,
+        -0.41675189107691196,
+        -1.2820760678140535
+      ],
+      "vertical_acceleration": -1.2820760678140535,
+      "required_normal_force_N": 284.3307229587686,
+      "friction_acceleration_excess_m_s2": -2.92346296160795
+    },
+    {
+      "frame": 755,
+      "acceleration_m_s2": [
+        -2.4157687383850543,
+        -0.4690909738626004,
+        -1.2105318353380892
+      ],
+      "vertical_acceleration": -1.2105318353380892,
+      "required_normal_force_N": 286.71608937446155,
+      "friction_acceleration_excess_m_s2": -2.6987898123981804
+    },
+    {
+      "frame": 756,
+      "acceleration_m_s2": [
+        -2.689617755338158,
+        -0.529539134263181,
+        -1.148897610416802
+      ],
+      "vertical_acceleration": -1.148897610416802,
+      "required_normal_force_N": 288.77104482085485,
+      "friction_acceleration_excess_m_s2": -2.4554107402622787
+    },
+    {
+      "frame": 757,
+      "acceleration_m_s2": [
+        -2.832361793421291,
+        -0.4896213772402069,
+        -0.41359021426854814
+      ],
+      "vertical_acceleration": -0.41359021426854814,
+      "required_normal_force_N": 313.28703314419016,
+      "friction_acceleration_excess_m_s2": -2.7634759540685843
+    },
+    {
+      "frame": 758,
+      "acceleration_m_s2": [
+        -2.9878975991080208,
+        -0.48777604319791307,
+        0.20222771777371684
+      ],
+      "vertical_acceleration": 0.20222771777371684,
+      "required_normal_force_N": 333.81910627487406,
+      "friction_acceleration_excess_m_s2": -2.979885965323292
+    },
+    {
+      "frame": 759,
+      "acceleration_m_s2": [
+        -3.140369598195778,
+        -0.5247782926908664,
+        0.7027975962968447
+      ],
+      "vertical_acceleration": 0.7027975962968447,
+      "required_normal_force_N": 350.50867768564785,
+      "friction_acceleration_excess_m_s2": -3.123763755250902
+    },
+    {
+      "frame": 760,
+      "acceleration_m_s2": [
+        -3.275663165089222,
+        -0.5963253383566948,
+        1.0999354412280788
+      ],
+      "vertical_acceleration": 1.0999354412280788,
+      "required_normal_force_N": 363.7497069750168,
+      "friction_acceleration_excess_m_s2": -3.216460839704802
+    },
+    {
+      "frame": 761,
+      "acceleration_m_s2": [
+        -3.3828149251657083,
+        -0.6923973909532292,
+        1.4125506559668373
+      ],
+      "vertical_acceleration": 1.4125506559668373,
+      "required_normal_force_N": 374.17265524723456,
+      "friction_acceleration_excess_m_s2": -3.280582238029152
+    },
+    {
+      "frame": 762,
+      "acceleration_m_s2": [
+        -3.454901852122784,
+        -0.7970393037957755,
+        1.6661366896056586
+      ],
+      "vertical_acceleration": 1.6661366896056586,
+      "required_normal_force_N": 382.62750320907503,
+      "friction_acceleration_excess_m_s2": -3.340034194309707
+    },
+    {
+      "frame": 763,
+      "acceleration_m_s2": [
+        -2.2867445591380497,
+        -1.7151257397523372,
+        1.8258777015800174
+      ],
+      "vertical_acceleration": 1.8258777015800174,
+      "required_normal_force_N": 387.9534509757306,
+      "friction_acceleration_excess_m_s2": -4.123055529278817
+    },
+    {
+      "frame": 764,
+      "acceleration_m_s2": [
+        -1.122181597081862,
+        -2.604878421225873,
+        1.9650215610993338
+      ],
+      "vertical_acceleration": 1.9650215610993338,
+      "required_normal_force_N": 392.59266615717513,
+      "friction_acceleration_excess_m_s2": -4.2286978754935465
+    },
+    {
+      "frame": 765,
+      "acceleration_m_s2": [
+        0.027528094632050026,
+        -3.4876073074955825,
+        2.0923162176089933
+      ],
+      "vertical_acceleration": 2.0923162176089933,
+      "required_normal_force_N": 396.8368153782508,
+      "friction_acceleration_excess_m_s2": -3.653673783517722
+    },
+    {
+      "frame": 766,
+      "acceleration_m_s2": [
+        1.152775911746081,
+        -4.3878983366782025,
+        2.227081275747989
+      ],
+      "vertical_acceleration": 2.227081275747989,
+      "required_normal_force_N": 401.3300363209966,
+      "friction_acceleration_excess_m_s2": -2.685449881243616
+    },
+    {
+      "frame": 767,
+      "acceleration_m_s2": [
+        2.245756148718919,
+        -5.333762965919751,
+        2.3989259532696976
+      ],
+      "vertical_acceleration": 2.3989259532696976,
+      "required_normal_force_N": 407.059534119629,
+      "friction_acceleration_excess_m_s2": -1.5380895459244899
+    },
+    {
+      "frame": 768,
+      "acceleration_m_s2": [
+        3.3007880659740354,
+        -6.3568920624747625,
+        2.6474702710704294
+      ],
+      "vertical_acceleration": 2.6474702710704294,
+      "required_normal_force_N": 415.3462855176872,
+      "friction_acceleration_excess_m_s2": -0.31171185008642066
+    },
+    {
+      "frame": 769,
+      "acceleration_m_s2": [
+        3.17863283824943,
+        -5.968936444693831,
+        2.55329679406275
+      ],
+      "vertical_acceleration": 2.55329679406275,
+      "required_normal_force_N": 412.2064342462569,
+      "friction_acceleration_excess_m_s2": -0.6554409045478078
+    },
+    {
+      "frame": 770,
+      "acceleration_m_s2": [
+        3.045044057437693,
+        -5.641067359668408,
+        2.603591241066471
+      ],
+      "vertical_acceleration": 2.603591241066471,
+      "required_normal_force_N": 413.88330854662536,
+      "friction_acceleration_excess_m_s2": -1.037699669682028
+    },
+    {
+      "frame": 771,
+      "acceleration_m_s2": [
+        2.9046668408513674,
+        -5.359002189036686,
+        2.7866228094485077
+      ],
+      "vertical_acceleration": 2.7866228094485077,
+      "required_normal_force_N": 419.9857900621942,
+      "friction_acceleration_excess_m_s2": -1.4624020210554027
+    },
+    {
+      "frame": 772,
+      "acceleration_m_s2": [
+        2.7591220260653824,
+        -5.1079347211856305,
+        3.0945297292991043
+      ],
+      "vertical_acceleration": 3.0945297292991043,
+      "required_normal_force_N": 430.2517584058737,
+      "friction_acceleration_excess_m_s2": -1.9372246224759548
+    },
+    {
+      "frame": 773,
+      "acceleration_m_s2": [
+        2.6062768880942664,
+        -4.872759335251274,
+        3.5230390377713365
+      ],
+      "vertical_acceleration": 3.5230390377713365,
+      "required_normal_force_N": 444.5387481165384,
+      "friction_acceleration_excess_m_s2": -2.473842717241114
+    },
+    {
+      "frame": 774,
+      "acceleration_m_s2": [
+        2.439832072951507,
+        -4.638583025743809,
+        4.071133161705511
+      ],
+      "vertical_acceleration": 4.071133161705511,
+      "required_normal_force_N": 462.8128321429552,
+      "friction_acceleration_excess_m_s2": -3.0875699925353794
+    },
+    {
+      "frame": 775,
+      "acceleration_m_s2": [
+        1.73842594992997,
+        -5.554860037659526,
+        3.642805211384694
+      ],
+      "vertical_acceleration": 3.642805211384694,
+      "required_normal_force_N": 448.5318891201733,
+      "friction_acceleration_excess_m_s2": -2.2511509500125566
+    },
+    {
+      "frame": 776,
+      "acceleration_m_s2": [
+        1.079493936165118,
+        -6.281350841599788,
+        3.1954948875700198
+      ],
+      "vertical_acceleration": 3.1954948875700198,
+      "required_normal_force_N": 433.61805208685604,
+      "friction_acceleration_excess_m_s2": -1.4298617870742527
+    },
+    {
+      "frame": 777,
+      "acceleration_m_s2": [
+        0.4674430375276795,
+        -6.793096629132698,
+        2.7054627807382583
+      ],
+      "vertical_acceleration": 2.7054627807382583,
+      "required_normal_force_N": 417.2798220186185,
+      "friction_acceleration_excess_m_s2": -0.7001173085992294
+    },
+    {
+      "frame": 778,
+      "acceleration_m_s2": [
+        -0.10221360129517358,
+        -7.075202980661487,
+        2.1566897944254055
+      ],
+      "vertical_acceleration": 2.1566897944254055,
+      "required_normal_force_N": 398.9831039452221,
+      "friction_acceleration_excess_m_s2": -0.10407260797226137
+    },
+    {
+      "frame": 779,
+      "acceleration_m_s2": [
+        -0.6415834348245609,
+        -7.124840115355956,
+        1.5375611470187125
+      ],
+      "vertical_acceleration": 1.5375611470187125,
+      "required_normal_force_N": 378.34064778338507,
+      "friction_acceleration_excess_m_s2": 0.3451320190484779
+    },
+    {
+      "frame": 780,
+      "acceleration_m_s2": [
+        -1.1686762756311182,
+        -6.952419479362366,
+        0.8381847363454802
+      ],
+      "vertical_acceleration": 0.8381847363454802,
+      "required_normal_force_N": 355.022639549691,
+      "friction_acceleration_excess_m_s2": 0.6610495023535412
+    },
+    {
+      "frame": 781,
+      "acceleration_m_s2": [
+        -1.595119921116569,
+        -6.7266285765865295,
+        1.0005256612657885
+      ],
+      "vertical_acceleration": 1.0005256612657885,
+      "required_normal_force_N": 360.43527138311714,
+      "friction_acceleration_excess_m_s2": 0.42685605852018327
+    },
+    {
+      "frame": 782,
+      "acceleration_m_s2": [
+        -2.029851783989603,
+        -6.59881875243081,
+        0.9713955083762098
+      ],
+      "vertical_acceleration": 0.9713955083762098,
+      "required_normal_force_N": 359.4640388185614,
+      "friction_acceleration_excess_m_s2": 0.4351258461214673
+    },
+    {
+      "frame": 783,
+      "acceleration_m_s2": [
+        -2.4811361961837917,
+        -6.583415250676041,
+        0.7659715975526109
+      ],
+      "vertical_acceleration": 0.7659715975526109,
+      "required_normal_force_N": 352.61497103348796,
+      "friction_acceleration_excess_m_s2": 0.6898554206206002
+    },
+    {
+      "frame": 784,
+      "acceleration_m_s2": [
+        -2.956483035494059,
+        -6.691344431815898,
+        0.411333184832281
+      ],
+      "vertical_acceleration": 0.411333184832281,
+      "required_normal_force_N": 340.7909213492321,
+      "friction_acceleration_excess_m_s2": 1.1825867668065868
+    },
+    {
+      "frame": 785,
+      "acceleration_m_s2": [
+        -3.463266053092823,
+        -6.931543112138148,
+        -0.05481448488343066
+      ],
+      "vertical_acceleration": -0.05481448488343066,
+      "required_normal_force_N": 325.24902569094843,
+      "friction_acceleration_excess_m_s2": 1.8954693138528746
+    },
+    {
+      "frame": 786,
+      "acceleration_m_s2": [
+        -4.009390357523952,
+        -7.3120786836760345,
+        -0.5848496602810753
+      ],
+      "vertical_acceleration": -0.5848496602810753,
+      "required_normal_force_N": 307.57704763242003,
+      "friction_acceleration_excess_m_s2": 2.8040767638744413
+    },
+    {
+      "frame": 787,
+      "acceleration_m_s2": [
+        -4.682627622104562,
+        -5.883819635234289,
+        -0.8624626034684715
+      ],
+      "vertical_acceleration": -0.8624626034684715,
+      "required_normal_force_N": 298.32111506701887,
+      "friction_acceleration_excess_m_s2": 2.1512072744620516
+    },
+    {
+      "frame": 788,
+      "acceleration_m_s2": [
+        -5.394226076276272,
+        -4.567298375537868,
+        -1.2731199728557971
+      ],
+      "vertical_acceleration": -1.2731199728557971,
+      "required_normal_force_N": 284.6293293927164,
+      "friction_acceleration_excess_m_s2": 1.945961500207293
+    },
+    {
+      "frame": 789,
+      "acceleration_m_s2": [
+        -6.101312044795607,
+        -3.389618895543289,
+        -1.8031534470783868
+      ],
+      "vertical_acceleration": -1.8031534470783868,
+      "required_normal_force_N": 266.957408053307,
+      "friction_acceleration_excess_m_s2": 2.175542842103275
+    },
+    {
+      "frame": 790,
+      "acceleration_m_s2": [
+        -6.760622443519833,
+        -2.369051553526146,
+        -2.4198160250058987
+      ],
+      "vertical_acceleration": -2.4198160250058987,
+      "required_normal_force_N": 246.39717346420653,
+      "friction_acceleration_excess_m_s2": 2.729577288757101
+    },
+    {
+      "frame": 791,
+      "acceleration_m_s2": [
+        -7.331999952477032,
+        -1.5118575979909,
+        -3.071668483628854
+      ],
+      "vertical_acceleration": -3.071668483628854,
+      "required_normal_force_N": 224.6636680651724,
+      "friction_acceleration_excess_m_s2": 3.4432509323697316
+    },
+    {
+      "frame": 792,
+      "acceleration_m_s2": [
+        -7.780696747446936,
+        -0.8084788621029443,
+        -3.6902606689914847
+      ],
+      "vertical_acceleration": -3.6902606689914847,
+      "required_normal_force_N": 204.03909816053476,
+      "friction_acceleration_excess_m_s2": 4.150744205069491
+    },
+    {
+      "frame": 793,
+      "acceleration_m_s2": [
+        -7.000589697159381,
+        -0.41126913945903903,
+        -3.4638665866055973
+      ],
+      "vertical_acceleration": -3.4638665866055973,
+      "required_normal_force_N": 211.5873354138502,
+      "friction_acceleration_excess_m_s2": 3.204979819163923
+    },
+    {
+      "frame": 794,
+      "acceleration_m_s2": [
+        -6.191426670101878,
+        0.11151142048538332,
+        -3.237341886775453
+      ],
+      "vertical_acceleration": -3.237341886775453,
+      "required_normal_force_N": 219.13992760192494,
+      "friction_acceleration_excess_m_s2": 2.2488359155417808
+    },
+    {
+      "frame": 795,
+      "acceleration_m_s2": [
+        -5.357635227963971,
+        0.7822613222892969,
+        -3.0997871669886443
+      ],
+      "vertical_acceleration": -3.0997871669886443,
+      "required_normal_force_N": 223.7261590498582,
+      "friction_acceleration_excess_m_s2": 1.3883148395752754
+    },
+    {
+      "frame": 796,
+      "acceleration_m_s2": [
+        -4.503032396071396,
+        1.6007608613067699,
+        -3.1232084830026725
+      ],
+      "vertical_acceleration": -3.1232084830026725,
+      "required_normal_force_N": 222.9452656263392,
+      "friction_acceleration_excess_m_s2": 0.7670187376766995
+    },
+    {
+      "frame": 797,
+      "acceleration_m_s2": [
+        -3.630920941151703,
+        2.5472406389836344,
+        -3.3592837048565416
+      ],
+      "vertical_acceleration": -3.3592837048565416,
+      "required_normal_force_N": 215.07424812710633,
+      "friction_acceleration_excess_m_s2": 0.5648855165298947
+    },
+    {
+      "frame": 798,
+      "acceleration_m_s2": [
+        -2.743078483580922,
+        3.588923487556916,
+        -3.83610894003288
+      ],
+      "vertical_acceleration": -3.83610894003288,
+      "required_normal_force_N": 199.17635024237217,
+      "friction_acceleration_excess_m_s2": 0.9328383036604389
+    },
+    {
+      "frame": 799,
+      "acceleration_m_s2": [
+        -1.6971755692628931,
+        4.4735695405810585,
+        -1.8953053838121288
+      ],
+      "vertical_acceleration": -1.8953053838121288,
+      "required_normal_force_N": 263.88495724324923,
+      "friction_acceleration_excess_m_s2": 0.03587019468917507
+    },
+    {
+      "frame": 800,
+      "acceleration_m_s2": [
+        -0.5997251371105006,
+        5.452946735854224,
+        -0.17463125865880746
+      ],
+      "vertical_acceleration": -0.17463125865880746,
+      "required_normal_force_N": 321.2541976201254,
+      "friction_acceleration_excess_m_s2": -0.29539420194732635
+    },
+    {
+      "frame": 801,
+      "acceleration_m_s2": [
+        0.5567073465281986,
+        6.48893980237655,
+        1.3450976659284222
+      ],
+      "vertical_acceleration": 1.3450976659284222,
+      "required_normal_force_N": 371.92369552669015,
+      "friction_acceleration_excess_m_s2": -0.180281708817966
+    },
+    {
+      "frame": 802,
+      "acceleration_m_s2": [
+        1.7793294945330516,
+        7.5624112197414775,
+        2.7048823954981494
+      ],
+      "vertical_acceleration": 2.7048823954981494,
+      "required_normal_force_N": 417.2604713119017,
+      "friction_acceleration_excess_m_s2": 0.25998792013174654
+    },
+    {
+      "frame": 803,
+      "acceleration_m_s2": [
+        3.076515915400231,
+        8.677771002474302,
+        3.9670376053624885
+      ],
+      "vertical_acceleration": 3.9670376053624885,
+      "required_normal_force_N": 459.34216741527155,
+      "friction_acceleration_excess_m_s2": 0.940767159221366
+    },
+    {
+      "frame": 804,
+      "acceleration_m_s2": [
+        4.459274104174453,
+        9.86334361018355,
+        5.215598785364664
+      ],
+      "vertical_acceleration": 5.215598785364664,
+      "required_normal_force_N": 500.9706230383829,
+      "friction_acceleration_excess_m_s2": 1.8091810288913894
+    },
+    {
+      "frame": 805,
+      "acceleration_m_s2": [
+        4.778224301442353,
+        9.412296277657324,
+        4.801290030958901
+      ],
+      "vertical_acceleration": 4.801290030958901,
+      "required_normal_force_N": 487.157096017611,
+      "friction_acceleration_excess_m_s2": 1.788923433194304
+    },
+    {
+      "frame": 806,
+      "acceleration_m_s2": [
+        5.000118368896555,
+        8.932384326233146,
+        4.687024088243853
+      ],
+      "vertical_acceleration": 4.687024088243853,
+      "required_normal_force_N": 483.3473389934995,
+      "friction_acceleration_excess_m_s2": 1.538419439819041
+    },
+    {
+      "frame": 807,
+      "acceleration_m_s2": [
+        5.091356762666919,
+        8.394454062181213,
+        4.772215588152015
+      ],
+      "vertical_acceleration": 4.772215588152015,
+      "required_normal_force_N": 486.18772089083427,
+      "friction_acceleration_excess_m_s2": 1.0684490458518
+    },
+    {
+      "frame": 808,
+      "acceleration_m_s2": [
+        5.030895563377163,
+        7.776908584958694,
+        4.9775468079506755
+      ],
+      "vertical_acceleration": 4.9775468079506755,
+      "required_normal_force_N": 493.03369825128124,
+      "friction_acceleration_excess_m_s2": 0.38977277993984494
+    },
+    {
+      "frame": 809,
+      "acceleration_m_s2": [
+        4.8124409550012475,
+        7.070891165960211,
+        5.244213742583074
+      ],
+      "vertical_acceleration": 5.244213742583074,
+      "required_normal_force_N": 501.9246783908981,
+      "friction_acceleration_excess_m_s2": -0.4793364538134117
+    },
+    {
+      "frame": 810,
+      "acceleration_m_s2": [
+        4.4463181161775855,
+        6.281091990316577,
+        5.535088915112046
+      ],
+      "vertical_acceleration": 5.535088915112046,
+      "required_normal_force_N": 511.6227888282786,
+      "friction_acceleration_excess_m_s2": -1.5114792066742098
+    },
+    {
+      "frame": 811,
+      "acceleration_m_s2": [
+        4.008122612136193,
+        5.976207691621598,
+        5.513068857811322
+      ],
+      "vertical_acceleration": 5.513068857811322,
+      "required_normal_force_N": 510.8886149705266,
+      "friction_acceleration_excess_m_s2": -1.9980018746134798
+    },
+    {
+      "frame": 812,
+      "acceleration_m_s2": [
+        3.6055352642980854,
+        5.673733326336219,
+        5.4746578488915745
+      ],
+      "vertical_acceleration": 5.4746578488915745,
+      "required_normal_force_N": 509.6079480670018,
+      "friction_acceleration_excess_m_s2": -2.4483595552798825
+    },
+    {
+      "frame": 813,
+      "acceleration_m_s2": [
+        3.236063343940545,
+        5.372167244122144,
+        5.415317082213098
+      ],
+      "vertical_acceleration": 5.415317082213098,
+      "required_normal_force_N": 507.62945913759904,
+      "friction_acceleration_excess_m_s2": -2.8636444379018933
+    },
+    {
+      "frame": 814,
+      "acceleration_m_s2": [
+        2.897078987555225,
+        5.070549611141328,
+        5.3321800754516655
+      ],
+      "vertical_acceleration": 5.3321800754516655,
+      "required_normal_force_N": 504.8575763880484,
+      "friction_acceleration_excess_m_s2": -3.2454844161551772
+    },
+    {
+      "frame": 815,
+      "acceleration_m_s2": [
+        2.585778243777173,
+        4.7683765591362155,
+        5.224010760850237
+      ],
+      "vertical_acceleration": 5.224010760850237,
+      "required_normal_force_N": 501.2510879077161,
+      "friction_acceleration_excess_m_s2": -3.59604804876171
+    },
+    {
+      "frame": 816,
+      "acceleration_m_s2": [
+        2.2991292928555387,
+        4.465556073452845,
+        5.091169283094706
+      ],
+      "vertical_acceleration": 5.091169283094706,
+      "required_normal_force_N": 496.8220013317223,
+      "friction_acceleration_excess_m_s2": -3.918034295348388
+    },
+    {
+      "frame": 817,
+      "acceleration_m_s2": [
+        2.1425892865895566,
+        4.415264472855549,
+        4.8316580338816815
+      ],
+      "vertical_acceleration": 4.8316580338816815,
+      "required_normal_force_N": 488.16959991592324,
+      "friction_acceleration_excess_m_s2": -3.8773223357118116
+    },
+    {
+      "frame": 818,
+      "acceleration_m_s2": [
+        1.981894598057555,
+        4.380712438638345,
+        4.568439789760323
+      ],
+      "vertical_acceleration": 4.568439789760323,
+      "required_normal_force_N": 479.393603056418,
+      "friction_acceleration_excess_m_s2": -3.818888786793491
+    },
+    {
+      "frame": 819,
+      "acceleration_m_s2": [
+        1.815724879990718,
+        4.361930411185161,
+        4.301649436880389
+      ],
+      "vertical_acceleration": 4.301649436880389,
+      "required_normal_force_N": 470.49850801148216,
+      "friction_acceleration_excess_m_s2": -3.7422363614955687
+    },
+    {
+      "frame": 820,
+      "acceleration_m_s2": [
+        1.6425585146217572,
+        4.358874439638528,
+        4.031930654470689
+      ],
+      "vertical_acceleration": 4.031930654470689,
+      "required_normal_force_N": 461.50577578169896,
+      "friction_acceleration_excess_m_s2": -3.6470702811831766
+    },
+    {
+      "frame": 821,
+      "acceleration_m_s2": [
+        1.4606496491777277,
+        4.371478001596976,
+        3.7604841083228946
+      ],
+      "vertical_acceleration": 3.7604841083228946,
+      "required_normal_force_N": 452.4554379357468,
+      "friction_acceleration_excess_m_s2": -3.53324313218305
+    },
+    {
+      "frame": 822,
+      "acceleration_m_s2": [
+        1.2680150443483234,
+        4.399695868825812,
+        3.4891156299589303
+      ],
+      "vertical_acceleration": 3.4891156299589303,
+      "required_normal_force_N": 443.40770295886256,
+      "friction_acceleration_excess_m_s2": -3.4006937893647304
+    },
+    {
+      "frame": 823,
+      "acceleration_m_s2": [
+        1.396920848917961,
+        4.445203013160336,
+        3.182899423485288
+      ],
+      "vertical_acceleration": 3.182899423485288,
+      "required_normal_force_N": 433.1981049299992,
+      "friction_acceleration_excess_m_s2": -3.1362098831431
+    },
+    {
+      "frame": 824,
+      "acceleration_m_s2": [
+        1.5152611061828531,
+        4.490366906398456,
+        2.88544481481403
+      ],
+      "vertical_acceleration": 2.88544481481403,
+      "required_normal_force_N": 423.2806285777873,
+      "friction_acceleration_excess_m_s2": -2.878130767822795
+    },
+    {
+      "frame": 825,
+      "acceleration_m_s2": [
+        1.625275803280017,
+        4.5302881003065805,
+        2.593379193446561
+      ],
+      "vertical_acceleration": 2.593379193446561,
+      "required_normal_force_N": 413.5428272166149,
+      "friction_acceleration_excess_m_s2": -2.629021001579627
+    },
+    {
+      "frame": 826,
+      "acceleration_m_s2": [
+        1.7292570773314624,
+        4.560626879231413,
+        2.3042002648416737
+      ],
+      "vertical_acceleration": 2.3042002648416737,
+      "required_normal_force_N": 403.90127148880794,
+      "friction_acceleration_excess_m_s2": -2.391056927770503
+    },
+    {
+      "frame": 827,
+      "acceleration_m_s2": [
+        1.8295413688404785,
+        4.577613516802174,
+        2.0161948648813652
+      ],
+      "vertical_acceleration": 2.0161948648813652,
+      "required_normal_force_N": 394.2988425462044,
+      "friction_acceleration_excess_m_s2": -2.166034664512348
+    },
+    {
+      "frame": 828,
+      "acceleration_m_s2": [
+        1.9285085028606683,
+        4.578052866809364,
+        1.7283747334293105
+      ],
+      "vertical_acceleration": 1.7283747334293105,
+      "required_normal_force_N": 384.7025906672464,
+      "friction_acceleration_excess_m_s2": -1.9553580741696681
+    },
+    {
+      "frame": 829,
+      "acceleration_m_s2": [
+        2.114471613757934,
+        4.543230229183071,
+        1.4646164498158067
+      ],
+      "vertical_acceleration": 1.4646164498158067,
+      "required_normal_force_N": 375.90858827433715,
+      "friction_acceleration_excess_m_s2": -1.7535892584216697
+    },
+    {
+      "frame": 830,
+      "acceleration_m_s2": [
+        2.312826779429517,
+        4.510944975747683,
+        1.1924227333936317
+      ],
+      "vertical_acceleration": 1.1924227333936317,
+      "required_normal_force_N": 366.8333389181538,
+      "friction_acceleration_excess_m_s2": -1.5321546464997384
+    },
+    {
+      "frame": 831,
+      "acceleration_m_s2": [
+        2.523974270563817,
+        4.482813086180101,
+        0.9099975523389411
+      ],
+      "vertical_acceleration": 0.9099975523389411,
+      "required_normal_force_N": 357.41696084658514,
+      "friction_acceleration_excess_m_s2": -1.287481130898657
+    },
+    {
+      "frame": 832,
+      "acceleration_m_s2": [
+        2.747432795668772,
+        4.459779274240424,
+        0.6159279987117708
+      ],
+      "vertical_acceleration": 0.6159279987117708,
+      "required_normal_force_N": 347.6123460953436,
+      "friction_acceleration_excess_m_s2": -1.0174256304168763
+    },
+    {
+      "frame": 833,
+      "acceleration_m_s2": [
+        2.9818630112600863,
+        4.442129176639851,
+        0.30923786203265025
+      ],
+      "vertical_acceleration": 0.30923786203265025,
+      "required_normal_force_N": 337.3869466921919,
+      "friction_acceleration_excess_m_s2": -0.7214007901417574
+    },
+    {
+      "frame": 834,
+      "acceleration_m_s2": [
+        3.2250872860220836,
+        4.429498883824321,
+        -0.010562027610279578
+      ],
+      "vertical_acceleration": -0.010562027610279578,
+      "required_normal_force_N": 326.7244531536266,
+      "friction_acceleration_excess_m_s2": -0.40046134852909
+    },
+    {
+      "frame": 835,
+      "acceleration_m_s2": [
+        3.2957752440454344,
+        4.305130316168458,
+        -0.2872959293320919
+      ],
+      "vertical_acceleration": -0.2872959293320919,
+      "required_normal_force_N": 317.4978288345709,
+      "friction_acceleration_excess_m_s2": -0.2917886660428355
+    },
+    {
+      "frame": 836,
+      "acceleration_m_s2": [
+        3.368934569540757,
+        4.173897439958645,
+        -0.5664602038667617
+      ],
+      "vertical_acceleration": -0.5664602038667617,
+      "required_normal_force_N": 308.1901731104002,
+      "friction_acceleration_excess_m_s2": -0.18225027988328257
+    },
+    {
+      "frame": 837,
+      "acceleration_m_s2": [
+        3.443633862080006,
+        4.037795332505908,
+        -0.8488296177347113
+      ],
+      "vertical_acceleration": -0.8488296177347113,
+      "required_normal_force_N": 298.77565438052477,
+      "friction_acceleration_excess_m_s2": -0.06987593455070673
+    },
+    {
+      "frame": 838,
+      "acceleration_m_s2": [
+        3.5189867406337707,
+        3.8987424515379994,
+        -1.1349155204278696
+      ],
+      "vertical_acceleration": -1.1349155204278696,
+      "required_normal_force_N": 289.2372236689123,
+      "friction_acceleration_excess_m_s2": 0.04694515994937021
+    },
+    {
+      "frame": 839,
+      "acceleration_m_s2": [
+        3.5941609480059737,
+        3.758597357045647,
+        -1.4249700473939932
+      ],
+      "vertical_acceleration": -1.4249700473939932,
+      "required_normal_force_N": 279.5664744917908,
+      "friction_acceleration_excess_m_s2": 0.16946729546309136
+    },
+    {
+      "frame": 840,
+      "acceleration_m_s2": [
+        3.668383307297446,
+        3.6191648970482593,
+        -1.71898735154419
+      ],
+      "vertical_acceleration": -1.71898735154419,
+      "required_normal_force_N": 269.7636017977816,
+      "friction_acceleration_excess_m_s2": 0.2985846876890337
+    },
+    {
+      "frame": 841,
+      "acceleration_m_s2": [
+        3.595104466894579,
+        3.422602873397423,
+        -2.0155037481701665
+      ],
+      "vertical_acceleration": -2.0155037481701665,
+      "required_normal_force_N": 259.87740650661624,
+      "friction_acceleration_excess_m_s2": 0.28706962428077
+    },
+    {
+      "frame": 842,
+      "acceleration_m_s2": [
+        3.5207145060304796,
+        3.227423812160452,
+        -2.304822756813621
+      ],
+      "vertical_acceleration": -2.304822756813621,
+      "required_normal_force_N": 250.2311803503492,
+      "friction_acceleration_excess_m_s2": 0.2730526858074631
+    },
+    {
+      "frame": 843,
+      "acceleration_m_s2": [
+        3.4462242474490123,
+        3.034283737467242,
+        -2.5866368550189924
+      ],
+      "vertical_acceleration": -2.5866368550189924,
+      "required_normal_force_N": 240.83517647884568,
+      "friction_acceleration_excess_m_s2": 0.257641874270246
+    },
+    {
+      "frame": 844,
+      "acceleration_m_s2": [
+        3.372659623527804,
+        2.8439370613825252,
+        -2.860527153740837
+      ],
+      "vertical_acceleration": -2.860527153740837,
+      "required_normal_force_N": 231.70336113126044,
+      "friction_acceleration_excess_m_s2": 0.24198388458186937
+    },
+    {
+      "frame": 845,
+      "acceleration_m_s2": [
+        3.301063330989499,
+        2.657248777638061,
+        -3.1259652372736855
+      ],
+      "vertical_acceleration": -3.1259652372736855,
+      "required_normal_force_N": 222.8533522906751,
+      "friction_acceleration_excess_m_s2": 0.22726603281074986
+    },
+    {
+      "frame": 846,
+      "acceleration_m_s2": [
+        3.2324923927750873,
+        2.475207749675537,
+        -3.382315650761341
+      ],
+      "vertical_acceleration": -3.382315650761341,
+      "required_normal_force_N": 214.30633674769746,
+      "friction_acceleration_excess_m_s2": 0.21471110132695514
+    },
+    {
+      "frame": 847,
+      "acceleration_m_s2": [
+        3.0778509671885583,
+        2.3080459748928286,
+        -3.5356081895886144
+      ],
+      "vertical_acceleration": -3.5356081895886144,
+      "required_normal_force_N": 209.19538844005098,
+      "friction_acceleration_excess_m_s2": 0.08247328218296035
+    },
+    {
+      "frame": 848,
+      "acceleration_m_s2": [
+        2.9196669791537024,
+        2.1479518676221163,
+        -3.6816276498881453
+      ],
+      "vertical_acceleration": -3.6816276498881453,
+      "required_normal_force_N": 204.32693287652054,
+      "friction_acceleration_excess_m_s2": -0.052364461313196387
+    },
+    {
+      "frame": 849,
+      "acceleration_m_s2": [
+        2.757306754006475,
+        1.9950383515119285,
+        -3.820107872258783
+      ],
+      "vertical_acceleration": -3.820107872258783,
+      "required_normal_force_N": 199.70984411549998,
+      "friction_acceleration_excess_m_s2": -0.1905665690708429
+    },
+    {
+      "frame": 850,
+      "acceleration_m_s2": [
+        2.590108784010945,
+        1.8489415875702047,
+        -3.950613213852924
+      ],
+      "vertical_acceleration": -3.950613213852924,
+      "required_normal_force_N": 195.3586469870411,
+      "friction_acceleration_excess_m_s2": -0.33329825713370065
+    },
+    {
+      "frame": 851,
+      "acceleration_m_s2": [
+        2.4173863632630153,
+        1.7088204286605961,
+        -4.072542127701974
+      ],
+      "vertical_acceleration": -4.072542127701974,
+      "required_normal_force_N": 191.29339775405558,
+      "friction_acceleration_excess_m_s2": -0.4820990568969803
+    },
+    {
+      "frame": 852,
+      "acceleration_m_s2": [
+        2.238431818240648,
+        1.5733580836773364,
+        -4.185125999361109
+      ],
+      "vertical_acceleration": -4.185125999361109,
+      "required_normal_force_N": 187.5397228999069,
+      "friction_acceleration_excess_m_s2": -0.6388628761509296
+    },
+    {
+      "frame": 853,
+      "acceleration_m_s2": [
+        2.1142368381855743,
+        1.1712154961684544,
+        -4.2896140548055826
+      ],
+      "vertical_acceleration": -4.2896140548055826,
+      "required_normal_force_N": 184.05597180393906,
+      "friction_acceleration_excess_m_s2": -0.8952617397489084
+    },
+    {
+      "frame": 854,
+      "acceleration_m_s2": [
+        2.0055789197346585,
+        0.7669288760018756,
+        -4.410043986557296
+      ],
+      "vertical_acceleration": -4.410043986557296,
+      "required_normal_force_N": 180.04070034594628,
+      "friction_acceleration_excess_m_s2": -1.0927599009257065
+    },
+    {
+      "frame": 855,
+      "acceleration_m_s2": [
+        1.913837203148347,
+        0.36078809630579434,
+        -4.548014514923663
+      ],
+      "vertical_acceleration": -4.548014514923663,
+      "required_normal_force_N": 175.44060536510878,
+      "friction_acceleration_excess_m_s2": -1.2096438871065176
+    },
+    {
+      "frame": 856,
+      "acceleration_m_s2": [
+        1.8400159455642753,
+        -0.04722027819056773,
+        -4.704755304357121
+      ],
+      "vertical_acceleration": -4.704755304357121,
+      "required_normal_force_N": 170.21468844428094,
+      "friction_acceleration_excess_m_s2": -1.2225250652043649
+    },
+    {
+      "frame": 857,
+      "acceleration_m_s2": [
+        1.7847490516815678,
+        -0.45745714120298236,
+        -4.881135756940833
+      ],
+      "vertical_acceleration": -4.881135756940833,
+      "required_normal_force_N": 164.33396272513554,
+      "friction_acceleration_excess_m_s2": -1.1148755444061857
+    },
+    {
+      "frame": 858,
+      "acceleration_m_s2": [
+        1.7483069090614016,
+        -0.8706699839684935,
+        -5.077670842578556
+      ],
+      "vertical_acceleration": -5.077670842578556,
+      "required_normal_force_N": 157.78125852297535,
+      "friction_acceleration_excess_m_s2": -0.8862863175723674
+    },
+    {
+      "frame": 859,
+      "acceleration_m_s2": [
+        1.4652683442284535,
+        -1.015862502699388,
+        -5.013787401986941
+      ],
+      "vertical_acceleration": -5.013787401986941,
+      "required_normal_force_N": 159.9112053884666,
+      "friction_acceleration_excess_m_s2": -1.0947558975107023
+    },
+    {
+      "frame": 860,
+      "acceleration_m_s2": [
+        1.1813494082180223,
+        -1.180789157260195,
+        -4.955025510683865
+      ],
+      "vertical_acceleration": -4.955025510683865,
+      "required_normal_force_N": 161.8703939517663,
+      "friction_acceleration_excess_m_s2": -1.2427004488575717
+    },
+    {
+      "frame": 861,
+      "acceleration_m_s2": [
+        0.8972930891972579,
+        -1.3669299614378358,
+        -4.900668080974879
+      ],
+      "vertical_acceleration": -4.900668080974879,
+      "required_normal_force_N": 163.68273273553575,
+      "friction_acceleration_excess_m_s2": -1.3104745667434334
+    },
+    {
+      "frame": 862,
+      "acceleration_m_s2": [
+        0.6138821379655013,
+        -1.575170472761895,
+        -4.8494779096006555
+      ],
+      "vertical_acceleration": -4.8494779096006555,
+      "required_normal_force_N": 165.38947150935186,
+      "friction_acceleration_excess_m_s2": -1.2857472846382942
+    },
+    {
+      "frame": 863,
+      "acceleration_m_s2": [
+        0.3318485895196411,
+        -1.8057632221155435,
+        -4.799725284004462
+      ],
+      "vertical_acceleration": -4.799725284004462,
+      "required_normal_force_N": 167.04828086522244,
+      "friction_acceleration_excess_m_s2": -1.1701625690564257
+    },
+    {
+      "frame": 864,
+      "acceleration_m_s2": [
+        0.05178413681485017,
+        -2.0582981361332244,
+        -4.749223010893962
+      ],
+      "vertical_acceleration": -4.749223010893962,
+      "required_normal_force_N": 168.73208432533247,
+      "friction_acceleration_excess_m_s2": -0.9775167491995918
+    },
+    {
+      "frame": 865,
+      "acceleration_m_s2": [
+        -0.028539187487590822,
+        -2.116559095747218,
+        -4.42591086920594
+      ],
+      "vertical_acceleration": -4.42591086920594,
+      "required_normal_force_N": 179.51168035814317,
+      "friction_acceleration_excess_m_s2": -1.1137019836115494
+    },
+    {
+      "frame": 866,
+      "acceleration_m_s2": [
+        -0.10891841393906398,
+        -2.167075584488174,
+        -4.108733421587499
+      ],
+      "vertical_acceleration": -4.108733421587499,
+      "required_normal_force_N": 190.0867386847307,
+      "friction_acceleration_excess_m_s2": -1.2509489391991764
+    },
+    {
+      "frame": 867,
+      "acceleration_m_s2": [
+        -0.1905366901817865,
+        -2.208841753768123,
+        -3.796764673879057
+      ],
+      "vertical_acceleration": -3.796764673879057,
+      "required_normal_force_N": 200.48813300787944,
+      "friction_acceleration_excess_m_s2": -1.3908967388573972
+    },
+    {
+      "frame": 868,
+      "acceleration_m_s2": [
+        -0.27410639486827926,
+        -2.2407969465709123,
+        -3.4884950357833753
+      ],
+      "vertical_acceleration": -3.4884950357833753,
+      "required_normal_force_N": 210.76619479208156,
+      "friction_acceleration_excess_m_s2": -1.535403195258843
+    },
+    {
+      "frame": 869,
+      "acceleration_m_s2": [
+        -0.35990225421122685,
+        -2.2618365430055616,
+        -3.1818326249593314
+      ],
+      "vertical_acceleration": -3.1818326249593314,
+      "required_normal_force_N": 220.9906697835616,
+      "friction_acceleration_excess_m_s2": -1.6866091379035528
+    },
+    {
+      "frame": 870,
+      "acceleration_m_s2": [
+        -0.44777978781797473,
+        -2.270820609429754,
+        -2.8741126326586843
+      ],
+      "vertical_acceleration": -2.8741126326586843,
+      "required_normal_force_N": 231.25040574925077,
+      "friction_acceleration_excess_m_s2": -1.8469843049858792
+    },
+    {
+      "frame": 871,
+      "acceleration_m_s2": [
+        -0.7031095037028775,
+        -2.148389274040616,
+        -2.8291223853420515
+      ],
+      "vertical_acceleration": -2.8291223853420515,
+      "required_normal_force_N": 232.75043197454957,
+      "friction_acceleration_excess_m_s2": -1.9280090512758115
+    },
+    {
+      "frame": 872,
+      "acceleration_m_s2": [
+        -0.9698684991556329,
+        -2.03501083024233,
+        -2.7657090644425395
+      ],
+      "vertical_acceleration": -2.7657090644425395,
+      "required_normal_force_N": 234.86470451262002,
+      "friction_acceleration_excess_m_s2": -1.9722644706730388
+    },
+    {
+      "frame": 873,
+      "acceleration_m_s2": [
+        -1.2528130165550355,
+        -1.926075065912586,
+        -2.6808387996037317
+      ],
+      "vertical_acceleration": -2.6808387996037317,
+      "required_normal_force_N": 237.6943760658857,
+      "friction_acceleration_excess_m_s2": -1.9798227629540257
+    },
+    {
+      "frame": 874,
+      "acceleration_m_s2": [
+        -1.5570397362893156,
+        -1.8166302890244554,
+        -2.5704899455684034
+      ],
+      "vertical_acceleration": -2.5704899455684034,
+      "required_normal_force_N": 241.37353288002186,
+      "friction_acceleration_excess_m_s2": -1.951109462531646
+    },
+    {
+      "frame": 875,
+      "acceleration_m_s2": [
+        -1.8879116959363895,
+        -1.7014071951131249,
+        -2.429555772896931
+      ],
+      "vertical_acceleration": -2.429555772896931,
+      "required_normal_force_N": 246.07243914653262,
+      "friction_acceleration_excess_m_s2": -1.8868108480319399
+    },
+    {
+      "frame": 876,
+      "acceleration_m_s2": [
+        -2.250944985249461,
+        -1.5748544425408733,
+        -2.2517117922895573
+      ],
+      "vertical_acceleration": -2.2517117922895573,
+      "required_normal_force_N": 252.00196056136522,
+      "friction_acceleration_excess_m_s2": -1.7878071411668075
+    },
+    {
+      "frame": 877,
+      "acceleration_m_s2": [
+        -2.4786666828405766,
+        -0.91325344849909,
+        -1.591401340217678
+      ],
+      "vertical_acceleration": -1.591401340217678,
+      "required_normal_force_N": 274.01746512118416,
+      "friction_acceleration_excess_m_s2": -2.2896027634191256
+    },
+    {
+      "frame": 878,
+      "acceleration_m_s2": [
+        -2.7317827242890083,
+        -0.26574688995372187,
+        -0.9254145227482554
+      ],
+      "vertical_acceleration": -0.9254145227482554,
+      "required_normal_force_N": 296.22222618587995,
+      "friction_acceleration_excess_m_s2": -2.586073115372899
+    },
+    {
+      "frame": 879,
+      "acceleration_m_s2": [
+        -3.0067167170904336,
+        0.35690798139240354,
+        -0.2563631754439979
+      ],
+      "vertical_acceleration": -0.2563631754439979,
+      "required_normal_force_N": 318.5291621750236,
+      "friction_acceleration_excess_m_s2": -2.704356352717942
+    },
+    {
+      "frame": 880,
+      "acceleration_m_s2": [
+        -3.2994770213972373,
+        0.9434650919361663,
+        0.41689378105689984
+      ],
+      "vertical_acceleration": 0.41689378105689984,
+      "required_normal_force_N": 340.9763179776729,
+      "friction_acceleration_excess_m_s2": -2.7044202264140806
+    },
+    {
+      "frame": 881,
+      "acceleration_m_s2": [
+        -3.6056875577681824,
+        1.4820168850340933,
+        1.099011598635594
+      ],
+      "vertical_acceleration": 1.099011598635594,
+      "required_normal_force_N": 363.71890500793666,
+      "friction_acceleration_excess_m_s2": -2.647028217733774
+    },
+    {
+      "frame": 882,
+      "acceleration_m_s2": [
+        -3.9206576657776706,
+        1.9598053785721925,
+        1.7978964281316534
+      ],
+      "vertical_acceleration": 1.7978964281316534,
+      "required_normal_force_N": 387.02052336378824,
+      "friction_acceleration_excess_m_s2": -2.5815433991687575
+    },
+    {
+      "frame": 883,
+      "acceleration_m_s2": [
+        -2.76827561539692,
+        1.366994243036863,
+        3.649484665972128
+      ],
+      "vertical_acceleration": 3.649484665972128,
+      "required_normal_force_N": 448.7545897641891,
+      "friction_acceleration_excess_m_s2": -4.988293328686937
+    },
+    {
+      "frame": 884,
+      "acceleration_m_s2": [
+        -1.4826767299980426,
+        0.8077966729071593,
+        5.356216716014789
+      ],
+      "vertical_acceleration": 5.356216716014789,
+      "required_normal_force_N": 505.6589854347472,
+      "friction_acceleration_excess_m_s2": -7.411279334315236
+    }
+  ],
+  "full_tracking_passed": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "stopped_for_validated_prediction_grid_correction",
+  "pids": [
+    1006440
+  ],
+  "full_motion_tracking_passed": false,
+  "reason": "Replace 25 ms near-term grid with independently verified 10 ms near-term intervals and matching planning period."
+}

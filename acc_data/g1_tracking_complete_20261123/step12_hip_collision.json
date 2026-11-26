@@ -1,0 +1,88 @@
+{
+  "pair": [
+    "left_hip_yaw_link",
+    "right_hip_yaw_link"
+  ],
+  "native_events": [
+    [
+      "2.972",
+      "/World/G1/left_shoulder_yaw_link/collisions/left_shoulder_yaw_link/mesh",
+      "/World/G1/torso_link/collisions/torso_link_rev_1_0/mesh",
+      "-5.585679900832474e-07"
+    ],
+    [
+      "4.5520000000000005",
+      "/World/G1/left_hip_yaw_link/collisions/left_hip_yaw_link/mesh",
+      "/World/G1/right_hip_yaw_link/collisions/right_hip_yaw_link/mesh",
+      "-2.8055510483682156e-06"
+    ]
+  ],
+  "samples": [
+    {
+      "time": 4.25,
+      "measured_distance_m": 0.20470848679542542,
+      "control_distance_m": 0.17126505076885223,
+      "source_distance_m": 0.18091794848442078
+    },
+    {
+      "time": 4.3,
+      "measured_distance_m": 0.2143959105014801,
+      "control_distance_m": 0.17126499116420746,
+      "source_distance_m": 0.18091797828674316
+    },
+    {
+      "time": 4.344,
+      "measured_distance_m": 0.2149198353290558,
+      "control_distance_m": 0.17126499116420746,
+      "source_distance_m": 0.18091797828674316
+    },
+    {
+      "time": 4.4,
+      "measured_distance_m": 0.19659341871738434,
+      "control_distance_m": 0.16314758360385895,
+      "source_distance_m": 0.1744127869606018
+    },
+    {
+      "time": 4.45,
+      "measured_distance_m": 0.15911291539669037,
+      "control_distance_m": 0.16109266877174377,
+      "source_distance_m": 0.1706448793411255
+    },
+    {
+      "time": 4.5,
+      "measured_distance_m": 0.11504208296537399,
+      "control_distance_m": 0.16549882292747498,
+      "source_distance_m": 0.1649550348520279
+    },
+    {
+      "time": 4.5200000000000005,
+      "measured_distance_m": 0.07191955298185349,
+      "control_distance_m": 0.1610366553068161,
+      "source_distance_m": 0.15039768815040588
+    },
+    {
+      "time": 4.54,
+      "measured_distance_m": 0.02340266853570938,
+      "control_distance_m": 0.145920529961586,
+      "source_distance_m": 0.1392492800951004
+    },
+    {
+      "time": 4.55,
+      "measured_distance_m": 0.0003276200732216239,
+      "control_distance_m": 0.138446643948555,
+      "source_distance_m": 0.13364459574222565
+    },
+    {
+      "time": 4.5600000000000005,
+      "measured_distance_m": -0.0013187362346798182,
+      "control_distance_m": 0.1315944343805313,
+      "source_distance_m": 0.12812770903110504
+    },
+    {
+      "time": 4.57,
+      "measured_distance_m": -0.0007822637562640011,
+      "control_distance_m": 0.12467249482870102,
+      "source_distance_m": 0.12416622787714005
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "examples/test_g1.py": "3da372a3beeb3919db34f76bab0711a53e0b07f45da4838785918a2c1a96f669",
+  "examples/g1_acceleration_cost.py": "d9afc7db1fb739042f95ccd48efa5cc20b1428447f18c3df25b02452131abdb0",
+  "src/fabrics_sim/solver/dynamic_consistent_gpu.py": "d76fe9de2a9a4daef7f58abae2045ac9f4dddc62bc759b2127fba72b226922ba",
+  "src/fabrics_sim/solver/daqp_backend.py": "0753b10611fc5d9d428cf7bdfd6ccb9e0ad437fea43e574f86f3d10df6fe9482"
+}

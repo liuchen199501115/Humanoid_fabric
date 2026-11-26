@@ -1,0 +1,9 @@
+{
+  "examples/test_g1.py": "b312ca0242f1a2574dd48558159731d1fd82137b2b132ed21635163e99595905",
+  "examples/run_amp_paper_priority.sh": "b64c836443a6d624eb73f66c65b3289aef0dead939ad4f15eb8cfa5f1de88462",
+  "src/fabrics_sim/fabrics/dynamics_aware.py": "929d4c5134d7ed2a8ae6fa6138ce960483c2c0ee73a946b4853896ee978dfb47",
+  "src/fabrics_sim/fabrics/g1_pose_fabric.py": "96a7563c637c2c46721490bda3427b1145c5b22f9b6422328701df2e35105188",
+  "src/fabrics_sim/fabrics/priority.py": "51724cdccd95a66ba15d8755d21d8da638d431553999ca5eb984989a5dd0a1a6",
+  "tests/test_fabric_priority.py": "4b141fbeb3aca83771dc232634b668c00c10d11598cdaedc2cf7ecc24c621c4c",
+  "tests/test_dynamics_aware_tasks.py": "21ad767c56c22f50856f0c8f78ec5c992fe78555aa6f2b7893fea8c4730c46da"
+}

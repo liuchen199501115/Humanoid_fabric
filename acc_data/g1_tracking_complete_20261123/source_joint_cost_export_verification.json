@@ -1,0 +1,12 @@
+[
+  {
+    "reference": "prepared_fullroot_dynamics_floor3_fast18_sourcejoint1m",
+    "predicted_sum": 1.0110750888452988,
+    "exported_sum": 1.011075092767907
+  },
+  {
+    "reference": "prepared_fullroot_dynamics_floor3_fast18_sourcejoint1m_refine1",
+    "predicted_sum": 0.7634040955889867,
+    "exported_sum": 0.763404084104887
+  }
+]

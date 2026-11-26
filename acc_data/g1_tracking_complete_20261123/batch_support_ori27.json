@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ten_support_y20_ori27_320",
+    "parent": "ten_support10_com15_y20",
+    "options": [
+      "--orientation-tube-start",
+      "3.2",
+      "--orientation-tube-radius",
+      ".27"
+    ]
+  }
+]

@@ -1,0 +1,308 @@
+{
+  "scope": "Continuation in examples/test_g1.py; entire PKL requested in every physical trial",
+  "source_sha256": "a870f6642380a5d7e23ae34fbc8a9614bf4164d6a9ce0a26432ae35f3401b8c4",
+  "source_frames": 2000,
+  "expected_landings": 29,
+  "new_physical_runs": 7,
+  "tests_passed": 41,
+  "full_motion_tracking_passed": false,
+  "selected_profile_unchanged": true,
+  "trial_results": [
+    {
+      "run": "rolling_support150",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1003.88,
+      "failure": {
+        "time_s": 4.362,
+        "source_frame": 1003.88,
+        "joint_rmse_rad": 0.16489678621292114,
+        "root_position_m": 0.19683115184307098,
+        "root_orientation_rad": 0.35680368474667756
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0
+    },
+    {
+      "run": "rolling_pelvis_after12",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1002.92,
+      "failure": {
+        "time_s": 4.358,
+        "source_frame": 1002.92,
+        "joint_rmse_rad": 0.16492216289043427,
+        "root_position_m": 0.20086774230003357,
+        "root_orientation_rad": 0.2998458558123601
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0
+    },
+    {
+      "run": "rolling_contact_damping8",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1001.96,
+      "failure": {
+        "time_s": 4.354,
+        "source_frame": 1001.96,
+        "joint_rmse_rad": 0.1592087745666504,
+        "root_position_m": 0.19619303941726685,
+        "root_orientation_rad": 0.3518030821536121
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0,
+      "observed_acceleration_comparison": [
+        {
+          "start_s": 3.7,
+          "end_s": 4.1,
+          "root_acceleration_rmse": [
+            1.4522683377205954,
+            0.782228190167458,
+            1.0527453670625935,
+            11.025948442824896,
+            4.188233658645567,
+            15.498028643880929
+          ]
+        },
+        {
+          "start_s": 4.2,
+          "end_s": 4.3,
+          "root_acceleration_rmse": [
+            2.111076808099533,
+            2.7381353440174645,
+            6.8636462160703315,
+            75.09238771069045,
+            23.02926566707653,
+            13.759752318628209
+          ]
+        },
+        {
+          "start_s": 4.3,
+          "end_s": 4.354,
+          "root_acceleration_rmse": [
+            10.035296345955443,
+            33.692516512348504,
+            12.063724564324357,
+            162.58809736704316,
+            309.9157992017289,
+            76.05777321865698
+          ]
+        }
+      ]
+    },
+    {
+      "run": "rolling_stance_after12",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1005.8,
+      "failure": {
+        "time_s": 4.37,
+        "source_frame": 1005.8,
+        "joint_rmse_rad": 0.16481874883174896,
+        "root_position_m": 0.20051683485507965,
+        "root_orientation_rad": 0.35185683779957594
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0,
+      "observed_acceleration_comparison": [
+        {
+          "start_s": 3.7,
+          "end_s": 4.1,
+          "root_acceleration_rmse": [
+            1.4522683377205954,
+            0.782228190167458,
+            1.0527453670625935,
+            11.025948442824896,
+            4.188233658645567,
+            15.498028643880929
+          ]
+        },
+        {
+          "start_s": 4.2,
+          "end_s": 4.3,
+          "root_acceleration_rmse": [
+            2.1232308169601875,
+            2.683705090568852,
+            6.855432053078898,
+            75.95809580593466,
+            22.693247925404215,
+            17.233982351772582
+          ]
+        },
+        {
+          "start_s": 4.3,
+          "end_s": 4.37,
+          "root_acceleration_rmse": [
+            8.966779356200187,
+            19.55054036186895,
+            11.109199982958673,
+            149.01066075578152,
+            182.29255540321915,
+            13.296352783825144
+          ]
+        }
+      ]
+    },
+    {
+      "run": "rolling_stance_weight50",
+      "verified_prefix_landings": 11,
+      "last_source_frame": 1003.4000000000001,
+      "failure": {
+        "time_s": 4.36,
+        "source_frame": 1003.4000000000001,
+        "joint_rmse_rad": 0.15467114746570587,
+        "root_position_m": 0.19528357684612274,
+        "root_orientation_rad": 0.35579698561349915
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0,
+      "observed_acceleration_comparison": [
+        {
+          "start_s": 3.7,
+          "end_s": 4.1,
+          "root_acceleration_rmse": [
+            1.2625384567283895,
+            1.003859661761893,
+            1.1805218658262815,
+            10.599661342257384,
+            4.488748152759387,
+            13.03475718845392
+          ]
+        },
+        {
+          "start_s": 4.2,
+          "end_s": 4.3,
+          "root_acceleration_rmse": [
+            1.460634313353502,
+            2.7018190179906423,
+            9.315294684760534,
+            113.6434740197697,
+            31.64604061255484,
+            14.699683810469999
+          ]
+        },
+        {
+          "start_s": 4.3,
+          "end_s": 4.36,
+          "root_acceleration_rmse": [
+            25.301615745080362,
+            25.13975993595253,
+            21.787879460463053,
+            176.23824803224025,
+            442.70446423157154,
+            76.01216326371105
+          ]
+        }
+      ]
+    },
+    {
+      "run": "rolling_support_orientation_after12",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1002.44,
+      "failure": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.15825679898262024,
+        "root_position_m": 0.1967177391052246,
+        "root_orientation_rad": 0.355974622609796
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0,
+      "observed_acceleration_comparison": [
+        {
+          "start_s": 3.7,
+          "end_s": 4.1,
+          "root_acceleration_rmse": [
+            1.4522683377205954,
+            0.782228190167458,
+            1.0527453670625935,
+            11.025948442824896,
+            4.188233658645567,
+            15.498028643880929
+          ]
+        },
+        {
+          "start_s": 4.2,
+          "end_s": 4.3,
+          "root_acceleration_rmse": [
+            2.1095542447857683,
+            2.7529412095163837,
+            6.8806589362081345,
+            75.21501034118718,
+            23.10610863168453,
+            13.569179374325172
+          ]
+        },
+        {
+          "start_s": 4.3,
+          "end_s": 4.356,
+          "root_acceleration_rmse": [
+            9.749455082944252,
+            28.917700978507423,
+            12.648655865079785,
+            164.27956770603677,
+            271.00102333347263,
+            53.85319761270297
+          ]
+        }
+      ]
+    },
+    {
+      "run": "rolling_turn_offset_hold1070",
+      "verified_prefix_landings": 12,
+      "last_source_frame": 1002.44,
+      "failure": {
+        "time_s": 4.356,
+        "source_frame": 1002.44,
+        "joint_rmse_rad": 0.15808655321598053,
+        "root_position_m": 0.19454780220985413,
+        "root_orientation_rad": 0.3523292093046954
+      },
+      "returncode": 1,
+      "full_motion_tracking_passed": false,
+      "recorded_self_contacts": 0,
+      "observed_acceleration_comparison": [
+        {
+          "start_s": 3.7,
+          "end_s": 4.1,
+          "root_acceleration_rmse": [
+            1.4522922199087747,
+            0.7822880393624649,
+            1.052735191068186,
+            11.027223708417768,
+            4.18764549205817,
+            15.49802947937756
+          ]
+        },
+        {
+          "start_s": 4.2,
+          "end_s": 4.3,
+          "root_acceleration_rmse": [
+            2.122456275655193,
+            2.0177307855257984,
+            5.622573838810425,
+            59.69348350097139,
+            18.84782712686959,
+            21.008934520557332
+          ]
+        },
+        {
+          "start_s": 4.3,
+          "end_s": 4.356,
+          "root_acceleration_rmse": [
+            10.763774689646059,
+            29.910595230845725,
+            14.059498856696008,
+            192.44758712787234,
+            272.27962181023554,
+            42.7143058925201
+          ]
+        }
+      ]
+    }
+  ],
+  "acceleration_comparison_scope": "Finite differences of consecutive observed velocities versus previous QP prediction; includes contact impulses and discretization, not a unique cause attribution."
+}

@@ -1,0 +1,174 @@
+{
+  "source": "baseline_traced.failure.npz",
+  "reference": "recorded whole_body_reference_v/a, not original-source acceptance",
+  "interpretation": "Negative rate means that acceleration instantaneously reduces squared velocity error; it does not prove closed-loop stability.",
+  "samples": [
+    {
+      "time_s": 0.2,
+      "velocity_error_rms_rad_s": 0.5145018696784973,
+      "half_squared_velocity_error_rate": {
+        "fabric": -12.440686225891113,
+        "projected": -13.002549171447754,
+        "qp": -7.257639408111572
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 44.74174499511719,
+        "projected": 42.15859603881836,
+        "qp": 36.855716705322266
+      },
+      "joint_position_rmse_rad": 0.13905838131904602
+    },
+    {
+      "time_s": 0.4,
+      "velocity_error_rms_rad_s": 0.9508045315742493,
+      "half_squared_velocity_error_rate": {
+        "fabric": -30.182878494262695,
+        "projected": -27.6755428314209,
+        "qp": -18.14576530456543
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 44.846561431884766,
+        "projected": 40.62025451660156,
+        "qp": 33.046165466308594
+      },
+      "joint_position_rmse_rad": 0.09699904918670654
+    },
+    {
+      "time_s": 0.6,
+      "velocity_error_rms_rad_s": 0.37880197167396545,
+      "half_squared_velocity_error_rate": {
+        "fabric": -3.856865167617798,
+        "projected": -4.808022499084473,
+        "qp": -2.2505598068237305
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 53.407958984375,
+        "projected": 38.85297775268555,
+        "qp": 36.649864196777344
+      },
+      "joint_position_rmse_rad": 0.07515587657690048
+    },
+    {
+      "time_s": 0.8,
+      "velocity_error_rms_rad_s": 0.3104878067970276,
+      "half_squared_velocity_error_rate": {
+        "fabric": -0.6029226183891296,
+        "projected": -0.23800748586654663,
+        "qp": -0.05796412006020546
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 17.492551803588867,
+        "projected": 16.95334815979004,
+        "qp": 16.504972457885742
+      },
+      "joint_position_rmse_rad": 0.11770555377006531
+    },
+    {
+      "time_s": 1.0,
+      "velocity_error_rms_rad_s": 0.6644923090934753,
+      "half_squared_velocity_error_rate": {
+        "fabric": -8.086973190307617,
+        "projected": -7.127313137054443,
+        "qp": -3.3456761837005615
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 29.153438568115234,
+        "projected": 25.48832893371582,
+        "qp": 15.642623901367188
+      },
+      "joint_position_rmse_rad": 0.1603078693151474
+    },
+    {
+      "time_s": 1.2,
+      "velocity_error_rms_rad_s": 0.737801194190979,
+      "half_squared_velocity_error_rate": {
+        "fabric": -3.3452625274658203,
+        "projected": -3.199265241622925,
+        "qp": -0.2462066262960434
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 21.156620025634766,
+        "projected": 21.119396209716797,
+        "qp": 18.518463134765625
+      },
+      "joint_position_rmse_rad": 0.15441454946994781
+    },
+    {
+      "time_s": 1.25,
+      "velocity_error_rms_rad_s": 1.000524878501892,
+      "half_squared_velocity_error_rate": {
+        "fabric": -25.34795379638672,
+        "projected": -12.738910675048828,
+        "qp": -7.245894908905029
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 49.44620895385742,
+        "projected": 42.01266098022461,
+        "qp": 40.018333435058594
+      },
+      "joint_position_rmse_rad": 0.15922124683856964
+    },
+    {
+      "time_s": 1.3,
+      "velocity_error_rms_rad_s": 0.8235566020011902,
+      "half_squared_velocity_error_rate": {
+        "fabric": -24.201194763183594,
+        "projected": -2.5988214015960693,
+        "qp": 14.297783851623535
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 62.888694763183594,
+        "projected": 42.42207717895508,
+        "qp": 64.83511352539062
+      },
+      "joint_position_rmse_rad": 0.15224722027778625
+    },
+    {
+      "time_s": 1.32,
+      "velocity_error_rms_rad_s": 1.6908241510391235,
+      "half_squared_velocity_error_rate": {
+        "fabric": -76.39195251464844,
+        "projected": -0.7579441070556641,
+        "qp": 48.813106536865234
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 82.19515228271484,
+        "projected": 48.893402099609375,
+        "qp": 77.6670150756836
+      },
+      "joint_position_rmse_rad": 0.15295083820819855
+    },
+    {
+      "time_s": 1.34,
+      "velocity_error_rms_rad_s": 2.922515869140625,
+      "half_squared_velocity_error_rate": {
+        "fabric": -186.0716094970703,
+        "projected": -179.8121795654297,
+        "qp": 400.518798828125
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 77.99992370605469,
+        "projected": 75.47047424316406,
+        "qp": 290.1136474609375
+      },
+      "joint_position_rmse_rad": 0.1569049209356308
+    },
+    {
+      "time_s": 1.354,
+      "velocity_error_rms_rad_s": 4.057939529418945,
+      "half_squared_velocity_error_rate": {
+        "fabric": -353.6918640136719,
+        "projected": -332.0162048339844,
+        "qp": -8.859189987182617
+      },
+      "acceleration_rms_rad_s2": {
+        "fabric": 105.49708557128906,
+        "projected": 100.21923828125,
+        "qp": 953.3894653320312
+      },
+      "joint_position_rmse_rad": 0.16033893823623657
+    }
+  ],
+  "final_joint_velocity_prediction_error_rms_rad_s": 0.04584691300988197,
+  "final_joint_velocity_prediction_error_max_rad_s": 0.171417236328125
+}

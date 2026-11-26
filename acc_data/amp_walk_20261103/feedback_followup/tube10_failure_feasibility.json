@@ -1,0 +1,37 @@
+[
+  {
+    "removed_rows": [],
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  {
+    "removed_rows": [
+      536,
+      537,
+      538
+    ],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+    "removed_rows": [
+      536
+    ],
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+    "removed_rows": [
+      537
+    ],
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  {
+    "removed_rows": [
+      538
+    ],
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  }
+]

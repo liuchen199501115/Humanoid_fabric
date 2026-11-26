@@ -1,0 +1,15 @@
+{
+  "landing_offset_xy": [
+    0.0,
+    -0.025
+  ],
+  "peak_ik_position_error": 8.899130887608922e-08,
+  "peak_ik_orientation_error": 1.2140831846394862e-07,
+  "minimum_joint_margin": 0.042955830693244934,
+  "minimum_native_clearance": -0.001835169142347437,
+  "peak_source_joint_reference_rmse": 0.14258061349391937,
+  "maximum_joint_velocity_fraction": 0.5449954867362976,
+  "physical_tracking_certified": false,
+  "maximum_right_landing_reference_error_m": 0.03727952529319186,
+  "preflight_passed": true
+}

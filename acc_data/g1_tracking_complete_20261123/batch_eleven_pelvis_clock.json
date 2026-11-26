@@ -1,0 +1,34 @@
+[
+  {
+    "name": "eleven_speed18_pelvis4",
+    "parent": "eleven_hip_leg64_speed18",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "4",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_speed18_pelvis16",
+    "parent": "eleven_hip_leg64_speed18",
+    "options": [
+      "--pelvis-orientation-replace-start",
+      "4.5",
+      "--pelvis-orientation-replace-metric-scale",
+      "16",
+      "--pelvis-orientation-replace-feedback-limit",
+      "100"
+    ]
+  },
+  {
+    "name": "eleven_hip_leg64_speed24",
+    "parent": "eleven_hip_leg64_speed18",
+    "options": [
+      "--clock-fifth-speed",
+      "2.4"
+    ]
+  }
+]

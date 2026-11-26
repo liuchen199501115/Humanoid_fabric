@@ -1,0 +1,26 @@
+[
+  {
+    "name": "fullroot_after816_90",
+    "parent": "ten_com15_right_ang4_cap100",
+    "last_source_frame": 816,
+    "compared_fields": 163,
+    "samples": 1903,
+    "different_fields": []
+  },
+  {
+    "name": "fullroot_after816_60",
+    "parent": "ten_com15_right_ang4_cap100",
+    "last_source_frame": 816,
+    "compared_fields": 163,
+    "samples": 1903,
+    "different_fields": []
+  },
+  {
+    "name": "fullroot_after816_90_brake",
+    "parent": "ten_com15_pelvis405_brake_cap1",
+    "last_source_frame": 816,
+    "compared_fields": 165,
+    "samples": 1903,
+    "different_fields": []
+  }
+]

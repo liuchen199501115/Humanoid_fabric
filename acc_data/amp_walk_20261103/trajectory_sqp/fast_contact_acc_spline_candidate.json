@@ -1,0 +1,26 @@
+{
+  "iterations": [
+    {
+      "iteration": 0,
+      "peak_contact_acceleration": 19.550794455020167,
+      "collision_cut_count": 16547,
+      "peak_collision_barrier_violation": 55.220902257256434,
+      "minimum_collision_cover_distance": 0.025269875217534515,
+      "peak_contact_speed": 0.036015654048144885,
+      "peak_contact_height_error": 0.0009305255339498997,
+      "qp_status": "Solved",
+      "qp_iterations": 54,
+      "peak_base_force_residual": 105.31168636408225,
+      "peak_base_moment_residual": 76.69596594865564,
+      "rms_base_residual": 5.090449944109967,
+      "peak_torque_budget_ratio": 1.3605517947606742,
+      "peak_foot_position_residual": 0.05022515166150631,
+      "peak_reference_joint_rmse": 0.17497259098771653,
+      "peak_joint_speed": 21.77088631007708,
+      "peak_joint_acceleration": 2073.6452251497267,
+      "max_update": 0.04199999999968346
+    }
+  ],
+  "optimized_source_frames": 480,
+  "full_tracking_passed": false
+}

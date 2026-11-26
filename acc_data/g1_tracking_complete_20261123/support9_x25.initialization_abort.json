@@ -1,0 +1,5 @@
+{
+  "reason": "No tracking output after several minutes in scene initialization; remote visual asset wait suspected. Restart headless without remote HDRI.",
+  "pid": 141373,
+  "tracking_evidence": false
+}
